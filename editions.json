@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-07",
+      "edition_number": 3,
+      "headlines": [
+        "Anthropic gründet $1,5-Mrd.-KI-JV mit Blackstone, Goldman Sachs und Hellman & Friedman",
+        "Claude Code 2.1.129: Session-Recap, Custom Themes und neue Web-Oberfläche",
+        "Google plant neuen Abo-Tier 'AI Ultra Lite' (Codename Neon) zwischen $20 und $250",
+        "Mistral Medium 3.5 + Devstral 2 + Vibe CLI: 77,6 % SWE-Bench Verified",
+        "OpenAI launcht Workspace Agents und legt Modelle auf Amazon Bedrock"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 11,
+      "listen_time_min": 8,
+      "generated_at": "2026-05-07T18:00:00Z"
+    },
+    {
       "date": "2026-05-06",
       "edition_number": 2,
       "headlines": [

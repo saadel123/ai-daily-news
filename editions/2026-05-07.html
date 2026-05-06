@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 07.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=2">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 07. Mai 2026</span>
+    <span>⏱ ~11 min lesen · ~8 min hören</span>
+    <span class="preview-tag">Edition #3</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic greift die Consulting-Riesen an: 1,5-Mrd.-$-JV mit Blackstone und Goldman Sachs.</h1>
+    <p class="subtitle">Außerdem: Claude Code 2.1.129 mit Session-Recap und Custom Themes, Google plant "AI Ultra Lite", Mistral feuert Medium 3.5 + Devstral 2, und OpenAI landet auf Amazon Bedrock.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong> gründet $1,5-Mrd.-KI-Consulting-JV mit Blackstone, Goldman Sachs und Hellman &amp; Friedman</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Code 2.1.129</strong>: Session-Recap, Custom Themes und neue Web-Oberfläche</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Google</strong> plant neuen Abo-Tier "AI Ultra Lite" — Codename Neon — zwischen $20 und $250</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Mistral Medium 3.5</strong>: 77,6 % SWE-Bench, Devstral 2, Vibe CLI und Work-Mode in Le Chat</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI</strong> launcht Workspace Agents und legt Modelle auf Amazon Bedrock</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1554774853-719586f82d77?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic × Blackstone × Goldman Sachs · 1,5 Mrd. $</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat zusammen mit Blackstone, Hellman &amp; Friedman und Goldman Sachs ein neues KI-Dienstleistungsunternehmen aus dem Boden <mark class="vocab" data-translation="gestampft — conjured from nothing / built from scratch (lit. stomped out of the ground)">gestampft</mark> — <mark class="vocab" data-translation="dotiert — endowed / funded (as in a prize or deal)">dotiert</mark> mit 1,5 Mrd. $ und dem erklärten Ziel, mittelgroße Private-Equity-Betriebe mit Claude zu <mark class="vocab" data-translation="durchdringen — to permeate / to penetrate deeply">durchdringen</mark>. Das neue Unternehmen schickt eigene Ingenieure direkt in die Betriebe, um Workflows von Grund auf <mark class="vocab" data-translation="umzukrempeln — to overhaul / turn inside out (separable verb)">umzukrempeln</mark> — kein reines Lizenzgeschäft. Ein direkter Angriff auf McKinsey, BCG und die anderen großen Beratungshäuser.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has launched a new AI services company with Blackstone, Hellman &amp; Friedman and Goldman Sachs — backed by $1.5B and explicitly targeting private-equity-owned mid-market companies with Claude. Unlike a pure license deal, the venture embeds engineers directly inside portfolio companies to redesign workflows from the ground up. That's a direct shot at McKinsey, BCG and the rest of the big consulting firms.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener">→ anthropic.com · 04.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.129 · Session-Recap · Custom Themes</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Claude Code 2.1.129 packt gleich drei <mark class="vocab" data-translation="Hingucker — eye-catcher / showpiece (lit. something that makes you look)">Hingucker</mark> in ein Release. Session-Recap fasst zusammen, was Claude während deiner Abwesenheit im Terminal <mark class="vocab" data-translation="erledigt — done / taken care of">erledigt</mark> hat — ideal beim <mark class="vocab" data-translation="Wiedereinstieg — re-entry / getting back into something (compound noun)">Wiedereinstieg</mark> in lange Runs. Custom Themes erlauben eigene Farbpaletten über <code>/theme</code> oder ein Plugin-Archiv. Dazu: die Web-Oberfläche bekommt eine neue Sessions-Sidebar und ein Drag-and-Drop-Layout, und <code>/resume</code> bei großen Sessions ist bis zu 67 % schneller. Der Context-<mark class="vocab" data-translation="Zähler — counter / tally display">Zähler</mark> für Opus-4.7-Sessions stimmt jetzt auch wieder.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Claude Code 2.1.129 ships three headline features in one release. Session Recap summarizes what Claude did while you were away — ideal when you return to a long terminal run. Custom Themes let you build and ship your own color palettes via <code>/theme</code> or a plugin archive. On top of that: the web UI gets a new sessions sidebar and drag-and-drop layout, <code>/resume</code> is up to 67% faster on large sessions, and the context counter for Opus 4.7 sessions is accurate again.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://9to5google.com/2026/05/05/google-ai-ultra-lite-gemini-usage-limits/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google Gemini · AI Ultra Lite · Codename Neon</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google bastelt <mark class="vocab" data-translation="still und heimlich — quietly / under the radar (lit. still and secretly)">still und heimlich</mark> an einem neuen Abo-Tier, intern schon als "Google AI Ultra Lite" <mark class="vocab" data-translation="bezeichnet — labeled / referred to as">bezeichnet</mark>, Codename "Neon". Es soll sich zwischen dem 20-Dollar-Pro- und dem 250-Dollar-Ultra-Plan <mark class="vocab" data-translation="einklinken — to slot into / hook into (separable verb)">einklinken</mark> — irgendwo bei 50 bis 150 Dollar. Das Besondere: ein echtes Token-Budget mit stündlichen, wöchentlichen und globalen Obergrenzen sowie ein eigenes Dashboard. Wer sein Limit <mark class="vocab" data-translation="überschreitet — exceeds / goes over">überschreitet</mark>, kauft Zusatzkredite. Noch kein Preisschild, noch kein Launchdatum.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google is quietly building a new subscription tier codenamed "Neon" — already labeled "Google AI Ultra Lite" inside the app. It's designed to slot between the $20 Pro and the $250 Ultra plans, probably somewhere in the $50–$150 range. The key differentiator is a real token budget with hourly, weekly, and overall limits, plus a dedicated usage dashboard. Go over your cap, buy overage credits. No price or launch date yet.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5google.com/2026/05/05/google-ai-ultra-lite-gemini-usage-limits/" target="_blank" rel="noopener">→ 9to5google.com · 05.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://mistral.ai/news/devstral-2-vibe-cli" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Mistral Medium 3.5 · Devstral 2 · Vibe CLI</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Mistral hat eine <mark class="vocab" data-translation="Dreierkombination — triple combination / one-two-three punch">Dreierkombination</mark> gezündet: Mistral Medium 3.5 (128B dicht) landet bei 77,6 % auf SWE-Bench Verified und <mark class="vocab" data-translation="löst ... ab — replaces / supersedes (separable: ablösen)">löst</mark> das alte Modell als Default in Vibe und Le Chat <mark class="vocab" data-translation="ab — off (separable prefix of ablösen — to replace)">ab</mark>. Devstral 2 schärft den Fokus auf Code-Agenten. Die neue Vibe CLI bringt <mark class="vocab" data-translation="eigenständige — autonomous / independently operating">eigenständige</mark> Cloud-Agenten, die Bug-Fixes in isolierten Sandboxes abarbeiten — mit GitHub- und Slack-Integration. Le Chat bekommt einen Work-Mode für mehrstufige Workflows, der vor heiklen Aktionen explizit fragt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Mistral fired off a triple release: Mistral Medium 3.5 (128B dense) hits 77.6% on SWE-Bench Verified and replaces the previous model as the default in both Vibe and Le Chat. Devstral 2 sharpens the focus specifically on coding agents. The new Vibe CLI brings autonomous cloud agents that handle bug fixes in isolated sandboxes, with GitHub and Slack integrations. Le Chat also picks up a Work Mode for multi-step workflows that always asks before taking sensitive actions.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mistral.ai/news/devstral-2-vibe-cli" target="_blank" rel="noopener">→ mistral.ai · 02.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · Workspace Agents · Amazon Bedrock</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI baut GPTs zur nächsten Stufe aus: Workspace Agents, angetrieben von Codex, können eigenständig Berichte schreiben, Code reviewen und Nachrichten <mark class="vocab" data-translation="beantworten — to reply to / answer">beantworten</mark>. Gleichzeitig landet OpenAI auf Amazon Bedrock — GPT-5.5 und andere Modelle sind dort jetzt <mark class="vocab" data-translation="buchbar — bookable / available to use">buchbar</mark>, Codex kommt auf AWS, und Bedrock Managed Agents lassen sich von OpenAI <mark class="vocab" data-translation="speisen — to feed / to power (formal register)">speisen</mark>. Damit <mark class="vocab" data-translation="lockert — loosens / relaxes (a restriction)">lockert</mark> OpenAI die bisherige Microsoft-Exklusivität — und drängt in Territorium, in dem Anthropic und Google schon lange heimisch sind.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI is evolving GPTs into Workspace Agents — Codex-powered and capable of autonomously drafting reports, reviewing code, and responding to messages. At the same time, OpenAI landed on Amazon Bedrock: GPT-5.5 and other frontier models are now available there, Codex comes to AWS, and Bedrock Managed Agents can be powered by OpenAI. That's a deliberate loosening of the Microsoft exclusivity — and a push into territory where Anthropic and Google have long been at home.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 05.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.129 · /theme baut eigene Farbpaletten</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.129 lassen sich eigene Farbpaletten <mark class="vocab" data-translation="zusammenstellen — to assemble / put together (separable verb)">zusammenstellen</mark> und per Plugin <mark class="vocab" data-translation="ausliefern — to ship / deliver out (separable verb)">ausliefern</mark>. Ruf einfach <code>/theme</code> auf, um die aktuelle Palette zu sehen oder eine neue anzulegen. Willst du ein Theme <mark class="vocab" data-translation="teilen — to share">teilen</mark>, packst du es als JSON in ein Plugin-Verzeichnis — das <code>--plugin-dir</code>-Flag nimmt jetzt auch <code>.zip</code>-Archive entgegen. Praktisch, wenn du im Team einheitliche Terminal-Profile <mark class="vocab" data-translation="durchsetzen — to enforce / push through">durchsetzen</mark> willst, ohne in jeder Session manuell nachzusteuern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.129 lets you build and ship custom color palettes via plugin. Run <code>/theme</code> to inspect the current palette or create a new one. To share a theme, bundle it as JSON in a plugin directory — the <code>--plugin-dir</code> flag now also accepts <code>.zip</code> archives. Handy if you want to enforce consistent terminal profiles across a team without manually tweaking settings every session.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/theme
+claude --plugin-dir &lt;path&gt;</pre>
+        <dl class="cmd-flags">
+          <dt><code>/theme</code></dt>
+          <dd>inspect current palette or create a custom theme interactively</dd>
+          <dt><code>--plugin-dir &lt;path&gt;</code></dt>
+          <dd>load a plugin from a directory or <code>.zip</code> archive — can bundle a color theme</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Aktuelle Palette anzeigen · Inspect current palette</span>
+$ /theme
+
+<span class="com"># Theme-Plugin aus ZIP laden · Load theme plugin from a zip</span>
+$ claude --plugin-dir ./team-theme.zip</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aus dem Boden stampfen</div>
+        <div class="vocab-translation">to conjure from scratch · to build out of thin air</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat das neue Unternehmen zusammen mit Goldman Sachs aus dem Boden gestampft.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic conjured the new company from scratch together with Goldman Sachs.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Hingucker</div>
+        <div class="vocab-translation">eye-catcher · showpiece (lit. something that makes you look)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Release hat gleich drei Hingucker auf einmal.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The release has three showpieces all at once.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">still und heimlich</div>
+        <div class="vocab-translation">quietly · under the radar (lit. still and secretly)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google hat den neuen Plan still und heimlich in der App versteckt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google quietly buried the new plan inside the app.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomously · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Vibe-Agenten arbeiten eigenständig in isolierten Sandboxes.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Vibe agents work autonomously in isolated sandboxes.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">umkrempeln</div>
+        <div class="vocab-translation">to overhaul · to turn inside out (lit. to roll up the sleeve)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Consulting-JV will Unternehmensworkflows von Grund auf umkrempeln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The consulting JV wants to overhaul company workflows from the ground up.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">etwas aus dem Boden stampfen</div>
+      <div class="idiom-meaning">to conjure something from scratch — used when something is built incredibly fast from nothing, as if stamped out of the ground</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat das neue KI-Unternehmen innerhalb von Monaten aus dem Boden gestampft."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic conjured the new AI company from nothing in just a few months."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Unser Team hat das MVP in drei Wochen aus dem Boden gestampft — jetzt kommt der echte Test."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Our team stamped out an MVP in three weeks — now comes the real test."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">still und heimlich</div>
+      <div class="idiom-meaning">quietly, without drawing attention — used when someone does something without announcing it; equivalent of "under the radar" or "on the quiet"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Google hat das neue Abo still und heimlich im App-Code versteckt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Google quietly buried the new subscription tier in the app code."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Feature wurde still und heimlich deployed — ohne ein einziges Changelog-Wort."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The feature was deployed under the radar — without a single changelog entry."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · github.com · 9to5google.com · mistral.ai · openai.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #3 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=2" defer></script>
+
+</body>
+</html>
