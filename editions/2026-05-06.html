@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 06.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-2: #1f2937;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-2: #8b949e;
+  --accent: #d97757;
+  --accent-bg: rgba(217, 119, 87, 0.12);
+  --highlight-bg: rgba(217, 119, 87, 0.45);
+  --de-tint: rgba(220, 100, 100, 0.5);
+  --en-tint: rgba(100, 150, 220, 0.5);
+}
+[data-theme="light"] {
+  --bg: #fdfaf3;
+  --surface: #ffffff;
+  --surface-2: #f5efe1;
+  --border: #e8dec5;
+  --text: #1f1f1f;
+  --text-2: #6b6b6b;
+  --accent: #b85a36;
+  --accent-bg: rgba(184, 90, 54, 0.08);
+  --highlight-bg: rgba(184, 90, 54, 0.35);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  font-size: 15px;
+}
+.brand::before { content: '✦'; margin-right: 6px; }
+.meta {
+  display: flex;
+  gap: 18px;
+  color: var(--text-2);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.preview-tag {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.controls select, .controls button {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  max-width: 160px;
+}
+.controls select:hover, .controls button:hover {
+  border-color: var(--accent);
+}
+.controls button { width: 32px; padding: 6px 0; text-align: center; }
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+.hero {
+  margin-bottom: 56px;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.hero .subtitle {
+  color: var(--text-2);
+  font-size: 17px;
+  font-style: italic;
+}
+.glance {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 36px 28px 28px;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.glance::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+.glance h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+.glance ul { list-style: none; }
+.glance li {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: start;
+  font-size: 15px;
+}
+.glance li:last-child { border-bottom: none; }
+.glance li .dot {
+  flex-shrink: 0;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.section { margin-bottom: 88px; }
+.section-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.article { margin-bottom: 64px; }
+.article-cover {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px 32px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.article-cover .cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.72;
+}
+.article-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
+}
+.article-cover > span { position: relative; z-index: 2; }
+.article-cover.anthropic { background: linear-gradient(135deg, #d97757 0%, #c44d3a 50%, #6b1f0e 100%); }
+.article-cover.openai { background: linear-gradient(135deg, #10a37f 0%, #2d6e5d 60%, #0f2a25 100%); }
+.article-cover.google { background: linear-gradient(135deg, #4285f4 0%, #ea4335 50%, #fbbc04 100%); }
+.article-cover.mistral { background: linear-gradient(135deg, #ff7000 0%, #c94f00 60%, #5a2400 100%); }
+.article-cover.hack { background: linear-gradient(135deg, #6b46c1 0%, #9d50bb 50%, #2d1454 100%); }
+.article-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.lang { position: relative; padding-left: 18px; }
+.lang.de { border-left: 2px solid var(--de-tint); }
+.lang.en { border-left: 2px solid var(--en-tint); }
+.lang-flag {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.speak-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.speak-btn:hover { border-color: var(--accent); color: var(--accent); }
+.speak-btn.playing {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  animation: pulse 1.4s infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-bg); }
+  50% { box-shadow: 0 0 0 7px transparent; }
+}
+.tts-text { font-size: 17px; line-height: 1.8; }
+.lang.en .tts-text { font-style: normal; }
+.word.active {
+  background: var(--highlight-bg);
+  border-radius: 3px;
+  padding: 1px 2px;
+  margin: -1px -2px;
+}
+mark.vocab {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-bottom: 1px dashed currentColor;
+  padding: 0 2px;
+  border-radius: 2px;
+  cursor: help;
+  position: relative;
+  font-style: normal;
+}
+mark.vocab:hover::after {
+  content: attr(data-translation);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  z-index: 100;
+  pointer-events: none;
+  letter-spacing: 0.01em;
+}
+mark.vocab:hover::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--border);
+  z-index: 100;
+  pointer-events: none;
+}
+.source {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+  padding-bottom: 1px;
+}
+.source:hover { border-bottom-style: solid; }
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.vocab-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.vocab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.vocab-word {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+.vocab-translation {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-2);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.vocab-example {
+  font-size: 14px;
+  color: var(--text);
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 12px;
+  margin: 6px 0;
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+.vocab-example .speak-btn { width: 22px; height: 22px; font-size: 9px; margin-top: 1px; }
+.vocab-example .tts-text { font-size: 14px; line-height: 1.5; }
+.vocab-example.en .tts-text { font-style: italic; color: var(--text-2); }
+.idiom-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 32px 36px;
+  margin-bottom: 24px;
+}
+.idiom-headword {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  letter-spacing: -0.015em;
+}
+.idiom-meaning {
+  font-size: 15px;
+  color: var(--text-2);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.idiom-examples {
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 18px 22px;
+}
+.idiom-example {
+  margin: 6px 0;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  line-height: 1.6;
+}
+.idiom-example.en .tts-text { font-style: italic; color: var(--text-2); }
+pre.code {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  overflow-x: auto;
+  margin-top: 24px;
+  color: var(--text);
+  line-height: 1.6;
+}
+pre.code .kw { color: #ff7b72; }
+pre.code .str { color: #a5d6ff; }
+pre.code .com { color: #8b949e; }
+pre.code .fn { color: #d2a8ff; }
+[data-theme="light"] pre.code .kw { color: #cf222e; }
+[data-theme="light"] pre.code .str { color: #0a3069; }
+[data-theme="light"] pre.code .com { color: #6e7781; }
+[data-theme="light"] pre.code .fn { color: #8250df; }
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 24px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--text-2);
+  max-width: 1100px;
+  margin: 80px auto 0;
+  line-height: 1.7;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer .heart { color: var(--accent); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 32px; }
+  .article-body, .vocab-grid { grid-template-columns: 1fr; gap: 24px; }
+  .topbar { grid-template-columns: 1fr; gap: 12px; }
+  .controls { flex-wrap: wrap; }
+  .article-cover { height: 160px; font-size: 22px; padding: 20px 22px; }
+  main { padding: 36px 18px; }
+  .glance { padding: 22px 26px 22px 22px; }
+  .idiom-card { padding: 22px 24px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 06. Mai 2026</span>
+    <span>⏱ ~12 min lesen · ~9 min hören</span>
+    <span class="preview-tag">Edition #1</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic geht an die Wall Street — und vier weitere Stories.</h1>
+    <p class="subtitle">Finance-Agents, Voice-Cloning und ein neuer ChatGPT-Default — der Mittwoch im Schnelldurchlauf.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><span class="dot">🟧</span><span><strong>Anthropic</strong> packt 10 Finance-Agents aus + Excel/Word/PowerPoint sind GA</span></li>
+      <li><span class="dot">🟧</span><span><strong>Claude Security</strong> in Public Beta — Codescans mit Opus 4.7</span></li>
+      <li><span class="dot">🟢</span><span><strong>OpenAI</strong> tauscht den ChatGPT-Default gegen GPT-5.5 Instant</span></li>
+      <li><span class="dot">🟠</span><span><strong>xAI</strong> klont jetzt deine Stimme in unter zwei Minuten</span></li>
+      <li><span class="dot">🔵</span><span><strong>Perplexitys</strong> Personal Computer läuft 24/7 auf dem Mac mini</span></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article">
+      <div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic auf der Wall Street</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat gestern bei einem Financial-Services-Briefing in New York gleich ein ganzes Paket <mark class="vocab" data-translation="rausgehauen — to drop / release (slang)">rausgehauen</mark>: zehn fertige Finance-Agents für Pitchbooks, KYC, Earnings Reviews und Month-End-Close — plus eine Datenpartnerschaft mit Moody's. Gleichzeitig sind die Claude-Add-ins für Excel, Word und PowerPoint jetzt offiziell GA, Outlook kommt bald hinterher. Jeder Agent kommt als Reference-Architecture mit Skills, Connectoren und Subagents — also alles, was eine Bank braucht, um den Kram <mark class="vocab" data-translation="anzubinden — to integrate / hook up">anzubinden</mark>. Der Move zeigt klar, wohin Anthropic <mark class="vocab" data-translation="rüber will — wants to head over to">rüber will</mark>: Enterprise, und zwar <mark class="vocab" data-translation="im großen Stil — in a big way">im großen Stil</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">At a financial-services briefing in New York yesterday, Anthropic dropped a sizeable bundle: ten ready-to-run finance agents for pitchbooks, KYC, earnings reviews and month-end close — plus a data partnership with Moody's. The Claude add-ins for Excel, Word and PowerPoint are now officially GA, with Outlook arriving soon. Each agent template ships as a reference architecture bundling skills, connectors and subagents — exactly what a bank needs to plug Claude into its stack. The direction is clear: enterprise, and at full tilt.</p>
+        </div>
+      </div>
+      <a class="source" href="https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/" target="_blank" rel="noopener">→ fortune.com · 05.05.2026</a>
+    </article>
+
+    <article class="article">
+      <div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Security · Public Beta</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Claude Security — vorher Claude Code Security — geht in die Public Beta für Enterprise-Kunden. Das Tool läuft auf Opus 4.7 und <mark class="vocab" data-translation="klopft … ab — scans / probes">klopft</mark> Codebases nach <mark class="vocab" data-translation="Lücken — vulnerabilities / gaps">Lücken</mark> ab, statt nur nach bekannten Patterns zu greppen. Es <mark class="vocab" data-translation="verfolgt — traces / follows">verfolgt</mark> Datenflüsse über Module hinweg und schlägt direkt Patches zum Review vor. Neu sind außerdem Targeted Scans, CSV/Markdown-Export und Webhooks nach Slack oder Jira — ziemlich praktisch, wenn man den Workflow ins bestehende Triage-System reinbekommen will.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Claude Security — formerly Claude Code Security — has entered public beta for Enterprise customers. Built on Opus 4.7, it scans codebases for vulnerabilities by reasoning about how files and modules interact rather than just pattern-matching, traces data flows, and proposes targeted patches for review. New in beta: directory-scoped scans, dismissible findings, CSV and Markdown export, and webhooks into Slack or Jira — handy if you want it to slot into your existing triage flow.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.helpnetsecurity.com/2026/05/04/anthropic-claude-security-public-beta/" target="_blank" rel="noopener">→ helpnetsecurity.com · 04.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article">
+      <div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>GPT-5.5 Instant: neuer ChatGPT-Default</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat GPT-5.5 Instant <mark class="vocab" data-translation="gelauncht — launched (Anglizismus)">gelauncht</mark> und damit GPT-5.3 Instant als ChatGPT-Default ersetzt. Das Modell soll bei Recht-, Medizin- und Finance-Fragen deutlich weniger <mark class="vocab" data-translation="halluzinieren — to hallucinate (LLM)">halluzinieren</mark> — und dabei genauso <mark class="vocab" data-translation="flott — quick / snappy">flott</mark> bleiben wie der Vorgänger. Wer nichts ändert, bekommt es ab sofort automatisch beim Tippen ins ChatGPT-Fenster. Mini-Variante als Fallback nach Rate-Limit gibt's auch — heißt jetzt GPT-5.3 Instant Mini.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI launched GPT-5.5 Instant, replacing GPT-5.3 Instant as the ChatGPT default. The new model is meant to hallucinate noticeably less in sensitive domains like law, medicine and finance — while keeping the same low latency users got used to. If you don't change a thing, you'll just get it automatically the next time you type into ChatGPT. There's also a fresh fallback for rate-limited users, branded GPT-5.3 Instant Mini.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener">→ techcrunch.com · 05.05.2026</a>
+    </article>
+
+    <article class="article">
+      <div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>xAI: Grok 4.3 + Voice Cloning</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI hat Grok 4.3 mit einem ziemlich heftigen Voice-Cloning-Feature ausgerollt: aus rund einer Minute Sprachsample bastelt die Grok-API in unter zwei Minuten eine eigene Custom Voice. Dazu kommen über 80 vorgefertigte Stimmen in 28 Sprachen — und das Ganze läuft über dieselben Endpoints wie bisher, also keine extra Integration nötig. Mit dabei ist außerdem <em>grok-voice-think-fast-1.0</em>, ein Voice-Agent für Multi-Step-Workflows in Support und Sales. Ethisch ist das natürlich <mark class="vocab" data-translation="heikel — tricky / sensitive">heikel</mark> — aber technisch ein klarer Schritt nach vorn.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI rolled out Grok 4.3 with a pretty wild voice-cloning feature: from about a minute of speech, the Grok API spins up a custom voice in under two minutes. There's also a library of 80-plus prebuilt voices spanning 28 languages — and it all runs through the same endpoints as before, so no extra integration. The release also includes grok-voice-think-fast-1.0, a voice agent built for multi-step workflows in support and sales. Ethically thorny, sure — but technically a clear leap forward.</p>
+        </div>
+      </div>
+      <a class="source" href="https://winbuzzer.com/2026/05/03/xai-grok-4-3-custom-voices-voice-cloning-launch-xcxwbn/" target="_blank" rel="noopener">→ winbuzzer.com · 03.05.2026</a>
+    </article>
+
+    <article class="article">
+      <div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Perplexity: Personal Computer auf dem Mac mini</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Perplexity hat nach einem Shoutout im Apple-Earnings-Call mehr Details zu seinem Personal Computer für Mac fallen gelassen. Die Idee: ein Mac mini, der <mark class="vocab" data-translation="rund um die Uhr — 24/7 / around the clock">rund um die Uhr</mark> als persönlicher AI-Agent läuft, lokale Files, Apps und die Cloud zusammenführt — aktiviert per doppeltem Druck auf die Command-Taste. Du fängst auf dem Handy an, kommst zurück, und es ist erledigt. Verfügbar für Pro-, Max- und Enterprise-Abonnenten — die <mark class="vocab" data-translation="Anbindung — integration / connection">Anbindung</mark> übernimmt die App selbst, mit 2FA als Schutzschicht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">After a shoutout on Apple's earnings call, Perplexity went deeper on its Mac-native Personal Computer. The pitch: a Mac mini running 24/7 as a personal AI agent, fusing local files, apps and the cloud — kicked off by double-tapping the Command keys. You start on your phone, come back, and the work's done. It's available to Pro, Max and Enterprise subscribers, with the integration handled by the app itself and 2FA as a guardrail.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5mac.com/2026/05/01/following-apple-shoutout-perplexity-elaborates-on-mac-native-personal-computer-platform/" target="_blank" rel="noopener">→ 9to5mac.com · 01.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article">
+      <div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code · Plan Mode + Parallel Sessions</span></div>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit der frischen Claude-Code-Version vom 5. Mai gibt's zwei Hacks, die <mark class="vocab" data-translation="sich lohnen — are worth it">sich richtig lohnen</mark>. Erstens: <em>Shift+Tab</em> schaltet den Plan Mode an — Claude liest dein Repo, baut einen Plan und fängt erst dann an zu coden. Spart dir die typischen "halb gelösten Probleme". Zweitens: Die neue Desktop-App hat eine Session-Sidebar, mit der du mehrere Agents <mark class="vocab" data-translation="parallel — in parallel">parallel</mark> laufen lassen kannst — Drag-and-Drop-Workspace, integrierter Terminal, sogar SSH auf dem Mac. Wer mit langen Tasks arbeitet, sollte das auf jeden Fall mal <mark class="vocab" data-translation="ausprobieren — to try out">ausprobieren</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">The fresh Claude Code build from May 5 unlocks two hacks worth your time. First: Shift+Tab toggles Plan Mode — Claude reads your repo, drafts a plan, and only then starts coding. Saves you the classic "half-solved problem" trap. Second: the redesigned desktop app ships a session sidebar that lets you run multiple agents in parallel — drag-and-drop workspace, integrated terminal, even SSH on Mac. If you work with long-running tasks, this is definitely one to try.</p>
+        </div>
+      </div>
+<pre class="code"><span class="com"># Inside any Claude Code session</span>
+<span class="com"># 1) Plan first, code second:</span>
+Shift+Tab        <span class="com"># toggles Plan Mode — Claude inspects, drafts, then asks to proceed</span>
+
+<span class="com"># 2) Run parallel agents in the new desktop app:</span>
+<span class="com">#    File → New Session   (or use the sidebar)</span>
+<span class="com">#    Each session gets its own worktree + terminal</span>
+
+<span class="com"># 3) Pick effort level on Opus 4.7:</span>
+/effort xhigh    <span class="com"># between high and max — for the gnarly stuff</span></pre>
+      <a class="source" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">→ releasebot.io · Claude Code · 05.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">raushauen</div>
+        <div class="vocab-translation">to drop · to release a bunch (casual)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat heute echt was rausgehauen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic really dropped a lot today.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abklopfen</div>
+        <div class="vocab-translation">to scan · to probe · to check carefully</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wir klopfen die Codebase auf Sicherheitslücken ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We're scanning the codebase for security vulnerabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">flott</div>
+        <div class="vocab-translation">quick · snappy · nimble</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Modell antwortet richtig flott.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new model responds really snappily.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Anbindung</div>
+        <div class="vocab-translation">integration · connection (e.g. to a system)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Anbindung an Slack klappt out of the box.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The integration with Slack works out of the box.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">rund um die Uhr</div>
+        <div class="vocab-translation">24/7 · around the clock</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Agent läuft rund um die Uhr im Hintergrund.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The agent runs around the clock in the background.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">ans Eingemachte gehen</div>
+      <div class="idiom-meaning">to get down to the nitty-gritty · to get serious — wörtlich: "to go to the preserves" (zu den eingelegten Sachen im Keller)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit den Finance-Agents geht Anthropic jetzt richtig ans Eingemachte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the finance agents, Anthropic is really getting down to the nitty-gritty."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn der Bug erst im Prod auftritt, geht's ans Eingemachte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Once the bug only shows up in prod, things get serious."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to move the needle</div>
+      <div class="idiom-meaning">to make a measurable difference — German equivalent: "wirklich etwas bewegen" / "ins Gewicht fallen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"GPT-5.5 Instant has to actually move the needle on hallucinations."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"GPT-5.5 Instant muss bei Halluzinationen wirklich etwas bewegen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"That feature didn't really move the needle for our team."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Feature ist bei unserem Team kaum ins Gewicht gefallen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: fortune.com · helpnetsecurity.com · techcrunch.com · winbuzzer.com · 9to5mac.com · releasebot.io</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #1 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script>
+let voices = [];
+let voiceDe = null;
+let voiceEn = null;
+let speed = 1.0;
+
+function loadVoices() {
+  voices = speechSynthesis.getVoices();
+  if (voices.length === 0) return;
+
+  const findBest = (langPrefix) => {
+    const list = voices.filter(v => v.lang.toLowerCase().startsWith(langPrefix));
+    return list.find(v => /premium|enhanced|natural|neural/i.test(v.name))
+        || list.find(v => v.localService)
+        || list[0]
+        || null;
+  };
+
+  voiceDe = findBest('de');
+  voiceEn = findBest('en');
+
+  populateSelector('voice-de', 'de', voiceDe);
+  populateSelector('voice-en', 'en', voiceEn);
+}
+
+function populateSelector(id, langPrefix, defaultVoice) {
+  const sel = document.getElementById(id);
+  if (!sel) return;
+  sel.innerHTML = '';
+  const matching = voices.filter(v => v.lang.toLowerCase().startsWith(langPrefix));
+  if (matching.length === 0) {
+    const opt = document.createElement('option');
+    opt.textContent = '(no voice)';
+    sel.appendChild(opt);
+    sel.disabled = true;
+    return;
+  }
+  matching.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v.name;
+    opt.textContent = v.name + ' · ' + v.lang;
+    sel.appendChild(opt);
+  });
+  if (defaultVoice) sel.value = defaultVoice.name;
+}
+
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
+function wrapWords() {
+  document.querySelectorAll('.tts-text').forEach(el => {
+    if (el.dataset.wrapped) return;
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    let node;
+    while ((node = walker.nextNode())) textNodes.push(node);
+    textNodes.forEach(tn => {
+      if (!tn.nodeValue.trim()) return;
+      const frag = document.createDocumentFragment();
+      const parts = tn.nodeValue.split(/(\s+)/);
+      parts.forEach(p => {
+        if (p === '') return;
+        if (/\S/.test(p)) {
+          const span = document.createElement('span');
+          span.className = 'word';
+          span.textContent = p;
+          frag.appendChild(span);
+        } else {
+          frag.appendChild(document.createTextNode(p));
+        }
+      });
+      tn.parentNode.replaceChild(frag, tn);
+    });
+    el.dataset.wrapped = 'true';
+  });
+}
+
+function clearActive() {
+  document.querySelectorAll('.word.active').forEach(w => w.classList.remove('active'));
+  document.querySelectorAll('.speak-btn.playing').forEach(b => b.classList.remove('playing'));
+}
+
+function speak(text, lang, btn, paragraphEl) {
+  speechSynthesis.cancel();
+  clearActive();
+
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = (lang === 'de') ? voiceDe : voiceEn;
+  u.lang = (lang === 'de') ? 'de-DE' : 'en-US';
+  u.rate = speed;
+  u.pitch = 1;
+
+  const wordSpans = paragraphEl ? Array.from(paragraphEl.querySelectorAll('.word')) : [];
+  let idx = 0;
+
+  u.onboundary = (e) => {
+    if (e.name && e.name !== 'word') return;
+    clearWordHighlight();
+    if (wordSpans[idx]) {
+      wordSpans[idx].classList.add('active');
+      const rect = wordSpans[idx].getBoundingClientRect();
+      if (rect.bottom > window.innerHeight - 100 || rect.top < 80) {
+        wordSpans[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      idx++;
+    }
+  };
+
+  u.onend = () => { btn?.classList.remove('playing'); clearWordHighlight(); };
+  u.onerror = u.onend;
+
+  btn?.classList.add('playing');
+  speechSynthesis.speak(u);
+}
+
+function clearWordHighlight() {
+  document.querySelectorAll('.word.active').forEach(w => w.classList.remove('active'));
+}
+
+function bindButtons() {
+  document.querySelectorAll('.speak-btn').forEach(btn => {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = 'true';
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang || 'en';
+      let para;
+      if (btn.dataset.target) {
+        para = document.querySelector(btn.dataset.target);
+      } else {
+        para = btn.parentElement.querySelector('.tts-text');
+      }
+      if (!para) return;
+      if (btn.classList.contains('playing')) {
+        speechSynthesis.cancel();
+        clearActive();
+        return;
+      }
+      speak(para.textContent.trim(), lang, btn, para);
+    });
+  });
+}
+
+document.getElementById('speed').addEventListener('change', (e) => {
+  speed = parseFloat(e.target.value);
+});
+document.getElementById('voice-de').addEventListener('change', (e) => {
+  voiceDe = voices.find(v => v.name === e.target.value);
+});
+document.getElementById('voice-en').addEventListener('change', (e) => {
+  voiceEn = voices.find(v => v.name === e.target.value);
+});
+document.getElementById('stop').addEventListener('click', () => {
+  speechSynthesis.cancel();
+  clearActive();
+});
+document.getElementById('theme').addEventListener('click', () => {
+  const cur = document.documentElement.dataset.theme || 'dark';
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  document.getElementById('theme').textContent = next === 'dark' ? '🌙' : '☀';
+  localStorage.setItem('ai-news-theme', next);
+});
+
+const savedTheme = localStorage.getItem('ai-news-theme') || 'dark';
+document.documentElement.dataset.theme = savedTheme;
+document.getElementById('theme').textContent = savedTheme === 'dark' ? '🌙' : '☀';
+
+window.addEventListener('DOMContentLoaded', () => {
+  wrapWords();
+  bindButtons();
+});
+
+window.addEventListener('beforeunload', () => speechSynthesis.cancel());
+</script>
+
+</body>
+</html>

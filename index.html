@@ -315,7 +315,7 @@ function renderEditions(editions) {
     if (ed.vocab_count) meta.push(`${ed.vocab_count} Vokabeln`);
     if (ed.idiom_count) meta.push(`${ed.idiom_count} Redewendungen`);
     return `
-      <a href="${ed.date}.html" class="edition-card">
+      <a href="editions/${ed.date}.html" class="edition-card">
         <div class="edition-date">${d.short}</div>
         <div class="edition-day">${d.weekday}</div>
         <ul class="edition-headlines">${headlines}</ul>
