@@ -28,15 +28,22 @@ let speed = 1.0;
 function loadVoices() {
   voices = speechSynthesis.getVoices();
   if (!voices.length) return;
-  const findBest = (lang) => {
-    const list = voices.filter(v => v.lang.toLowerCase().startsWith(lang));
-    return list.find(v => /premium|enhanced|natural|neural/i.test(v.name))
-        || list.find(v => v.localService)
-        || list[0]
+  const findBest = (lang, preferredLocale) => {
+    const all = voices.filter(v => v.lang.toLowerCase().startsWith(lang));
+    const preferred = preferredLocale
+      ? voices.filter(v => v.lang.toLowerCase().startsWith(preferredLocale))
+      : all;
+    const quality = /premium|enhanced|natural|neural/i;
+    return preferred.find(v => quality.test(v.name))
+        || all.find(v => quality.test(v.name))
+        || preferred.find(v => v.localService)
+        || all.find(v => v.localService)
+        || preferred[0]
+        || all[0]
         || null;
   };
-  voiceDe = findBest('de');
-  voiceEn = findBest('en');
+  voiceDe = findBest('de', 'de-de');
+  voiceEn = findBest('en', 'en-us');
   populateSelector('voice-de', 'de', voiceDe);
   populateSelector('voice-en', 'en', voiceEn);
 }
