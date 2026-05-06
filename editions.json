@@ -3,11 +3,11 @@
     {
       "date": "2026-05-06",
       "headlines": [
-        "Anthropic Finance-Agents + Microsoft-365-Add-ins GA",
-        "Claude Security Public Beta — Codescans mit Opus 4.7",
-        "OpenAI: GPT-5.5 Instant ist neuer ChatGPT-Default",
-        "xAI Grok 4.3 mit Voice Cloning unter zwei Minuten",
-        "Perplexity Personal Computer läuft 24/7 auf Mac mini"
+        "Code with Claude: Anthropic-Konferenz in SF, London und Tokio",
+        "FIS baut Financial-Crime-Agent auf Claude — AML in Minuten",
+        "Google: MTP-Drafter für Gemma 4 bringen 3× Inferenz-Speedup",
+        "Ai2 öffnet MolmoAct 2 — Action-Reasoning-Modell für echte Roboter",
+        "CAISI bekommt Frühzugriff auf Modelle von Google, Microsoft und xAI"
       ],
       "story_count": 5,
       "vocab_count": 5,
