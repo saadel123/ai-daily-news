@@ -3,11 +3,11 @@
     {
       "date": "2026-05-06",
       "headlines": [
-        "Code with Claude: Anthropic-Konferenz in SF, London und Tokio",
-        "FIS baut Financial-Crime-Agent auf Claude — AML in Minuten",
-        "Google: MTP-Drafter für Gemma 4 bringen 3× Inferenz-Speedup",
-        "Ai2 öffnet MolmoAct 2 — Action-Reasoning-Modell für echte Roboter",
-        "CAISI bekommt Frühzugriff auf Modelle von Google, Microsoft und xAI"
+        "Claude Code 2.1.126: neuer Befehl claude project purge",
+        "Anthropic verpflichtet sich zu 200 Mrd. $ bei Google Cloud",
+        "OpenAI macht GPT-5.5 Instant zum neuen ChatGPT-Default",
+        "Gemini Embedding 2 wird GA — erstes nativ multimodales Embedding",
+        "Pentagon vergibt KI-Aufträge an 8 Big-Tech-Firmen — ohne Anthropic"
       ],
       "story_count": 5,
       "vocab_count": 5,
