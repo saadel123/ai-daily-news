@@ -449,6 +449,69 @@ pre.code .fn { color: #d2a8ff; }
 [data-theme="light"] pre.code .com { color: #6e7781; }
 [data-theme="light"] pre.code .fn { color: #8250df; }
 
+.cmd-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 24px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+.cmd-card-header {
+  padding: 10px 22px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-2) 60%, var(--bg));
+}
+.cmd-syntax {
+  margin: 0;
+  padding: 16px 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--text);
+  border-bottom: 1px dashed var(--border);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.cmd-flags {
+  margin: 0;
+  padding: 14px 22px;
+  border-bottom: 1px dashed var(--border);
+}
+.cmd-flags dt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--accent);
+  margin-top: 10px;
+}
+.cmd-flags dt:first-child { margin-top: 0; }
+.cmd-flags dt code { background: none; padding: 0; color: inherit; font-family: inherit; }
+.cmd-flags dd {
+  padding-left: 16px;
+  margin: 4px 0 0;
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.55;
+}
+.cmd-examples {
+  margin: 0;
+  padding: 16px 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow-x: auto;
+}
+.cmd-examples .com { color: var(--text-2); }
+
 .editions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -585,6 +648,12 @@ footer .heart { color: var(--accent); }
   .idiom-card { padding: 20px 22px; }
   .idiom-headword { font-size: 24px; }
   pre.code { font-size: 12px; padding: 14px 16px; }
+  .cmd-card-header { padding: 9px 16px; font-size: 10px; }
+  .cmd-syntax { padding: 14px 16px; font-size: 13px; }
+  .cmd-flags { padding: 12px 16px; }
+  .cmd-flags dt { font-size: 12px; }
+  .cmd-flags dd { font-size: 13px; padding-left: 14px; }
+  .cmd-examples { padding: 14px 16px; font-size: 12px; }
   .edition-card { padding: 18px 20px; }
   .edition-day { font-size: 22px; }
   main { padding: 28px 14px 48px; }

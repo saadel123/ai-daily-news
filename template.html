@@ -59,18 +59,30 @@
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.126 einen frischen Befehl: <code>claude project purge [path]</code> <mark class="vocab" data-translation="putzt … weg — wipes / cleans away">putzt</mark> den kompletten Claude-Code-Zustand für ein Projekt <mark class="vocab" data-translation="weg — away (with putzt)">weg</mark> — Transcripts, Tasks, File-History, Config-Eintrag. Mit <code>--dry-run</code> kannst du erst mal anschauen, was <mark class="vocab" data-translation="rausfliegt — gets kicked out / removed">rausfliegt</mark>, bevor du wirklich löschst. Praktisch, wenn du alte Repos <mark class="vocab" data-translation="entrümpeln — to declutter / clean out">entrümpeln</mark> willst oder ein Projekt von Grund auf neu setzen möchtest. Auch dabei: <code>--all</code>, <code>-y/--yes</code> und ein interaktiver Modus.</p>
+          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.126 einen frischen Befehl, der den kompletten Claude-Code-Zustand für ein Projekt <mark class="vocab" data-translation="wegputzen — to wipe / clean away (separable verb)">wegputzt</mark> — Transcripts, Tasks, File-History, Config-Eintrag. Im Dry-Run kannst du erst mal anschauen, was <mark class="vocab" data-translation="rausfliegen — to get kicked out / removed (casual)">rausfliegt</mark>, bevor du wirklich löschst. Praktisch, wenn du alte Repos <mark class="vocab" data-translation="entrümpeln — to declutter / clear out">entrümpeln</mark> willst oder ein Projekt von Grund auf neu setzen möchtest. Es gibt außerdem einen Schalter zum Aufräumen aller Projekte <mark class="vocab" data-translation="auf einen Schlag — in one go / at once">auf einen Schlag</mark> und einen interaktiven Modus.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
-          <p class="tts-text" id="a1-en">Claude Code 2.1.126 ships a brand-new command: <code>claude project purge [path]</code> deletes all Claude Code state for a project — transcripts, tasks, file history, the config entry. Pair it with <code>--dry-run</code> first to preview what would go before you actually wipe anything. Handy for cleaning up stale repos or starting a project's setup from a clean slate. It also supports <code>--all</code>, <code>-y/--yes</code> and an interactive mode.</p>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.126 ships a brand-new command that deletes all Claude Code state for a project — transcripts, tasks, file history, the config entry. In dry-run mode you can preview what would go before you actually wipe anything. Handy for cleaning up stale repos or starting a project's setup from a clean slate. There's also a switch to clean up all projects in one go and an interactive mode.</p>
         </div>
       </div>
-<pre class="code"><span class="com"># 1) Trockenlauf — zeigt, was geputzt würde, ohne wirklich zu löschen</span>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude project purge [path] [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--dry-run</code></dt>
+          <dd>preview what would be deleted, without actually deleting</dd>
+          <dt><code>--all</code></dt>
+          <dd>wipe state for all projects in one go</dd>
+          <dt><code>-y, --yes</code></dt>
+          <dd>skip the confirmation prompt</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Trockenlauf · Dry run</span>
 $ claude project purge --dry-run ~/code/old-experiment
 
-<span class="com"># 2) Wirklich putzen, ohne Rückfragen</span>
+<span class="com"># Wirklich putzen, ohne Rückfragen · Wipe for real, no prompts</span>
 $ claude project purge -y ~/code/old-experiment</pre>
+      </section>
       <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.126" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 01.05.2026</a>
     </article>
 
@@ -146,18 +158,23 @@ $ claude project purge -y ~/code/old-experiment</pre>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.128 gibt's einen kleinen, aber fröhlichen Trick: <code>/color</code> ohne Argumente <mark class="vocab" data-translation="würfelt — rolls (dice) / picks at random">würfelt</mark> eine zufällige Session-Farbe. Praktisch, wenn du mehrere Sessions parallel offen hast und sie auf einen Blick <mark class="vocab" data-translation="auseinanderhalten — tell apart / distinguish">auseinanderhalten</mark> willst. <mark class="vocab" data-translation="Bonus — bonus / extra">Bonus</mark>: <code>/mcp</code> zeigt jetzt die Tool-Anzahl pro Server und markiert Server, die mit 0 Tools verbunden sind — perfekt zum <mark class="vocab" data-translation="Debuggen — debugging">Debuggen</mark> kaputter Setups.</p>
+          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.128 gibt's einen kleinen, aber fröhlichen Trick: ein Slash-Command ohne Argumente <mark class="vocab" data-translation="würfeln — to roll dice / pick at random">würfelt</mark> eine zufällige Session-Farbe. Praktisch, wenn du mehrere Sessions parallel offen hast und sie auf einen Blick <mark class="vocab" data-translation="auseinanderhalten — to tell apart / distinguish (separable verb)">auseinanderhalten</mark> willst. Bonus: die MCP-Übersicht zeigt jetzt die Tool-Anzahl pro Server und markiert Server, die mit 0 Tools verbunden sind — perfekt zum <mark class="vocab" data-translation="Debuggen — debugging (English noun used in German)">Debuggen</mark> kaputter Setups.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
-          <p class="tts-text" id="h1-en">Claude Code 2.1.128 lands a small but fun tip: bare <code>/color</code> (no args) picks a random session color. Handy when you've got several sessions open in the same terminal layout and want to tell them apart at a glance. Bonus: <code>/mcp</code> now shows tool count per server and flags any server that connected with zero tools — perfect for spotting broken setups.</p>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.128 lands a small but fun tip: a no-args slash command picks a random session color. Handy when you've got several sessions open in the same terminal layout and want to tell them apart at a glance. Bonus: the MCP overview now shows tool count per server and flags any server that connected with zero tools — perfect for spotting broken setups.</p>
         </div>
       </div>
-<pre class="code"><span class="com"># 1) Würfelt eine zufällige Session-Farbe — easy to spot</span>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/color
+/mcp</pre>
+<pre class="cmd-examples"><span class="com"># Würfelt eine zufällige Session-Farbe · Pick a random session color</span>
 $ /color
 
-<span class="com"># 2) Zeigt Tool-Anzahl pro MCP-Server, flaggt 0-Tool-Server</span>
+<span class="com"># MCP-Übersicht mit Tool-Anzahl · MCP overview with tool counts per server</span>
 $ /mcp</pre>
+      </section>
       <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.128" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 04.05.2026</a>
     </article>
   </section>
