@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Archiv · Archive</title>
+<meta name="description" content="Tägliche AI-News in Deutsch und Englisch — mit Vorlesefunktion, Vokabeln und Redewendungen. Daily AI news in German and English with read-aloud, vocabulary, and idioms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-2: #1f2937;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-2: #8b949e;
+  --accent: #d97757;
+  --accent-bg: rgba(217, 119, 87, 0.12);
+}
+[data-theme="light"] {
+  --bg: #fdfaf3;
+  --surface: #ffffff;
+  --surface-2: #f5efe1;
+  --border: #e8dec5;
+  --text: #1f1f1f;
+  --text-2: #6b6b6b;
+  --accent: #b85a36;
+  --accent-bg: rgba(184, 90, 54, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  gap: 16px;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  font-size: 15px;
+}
+.brand::before { content: '✦'; margin-right: 6px; }
+.controls { display: flex; gap: 6px; }
+.controls button {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.controls button:hover { border-color: var(--accent); }
+main {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+  flex: 1;
+}
+.hero {
+  margin-bottom: 64px;
+  text-align: center;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', serif;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.hero h1 .accent { color: var(--accent); }
+.hero .subtitle {
+  color: var(--text-2);
+  font-size: 19px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.hero .meta-row {
+  margin-top: 28px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.hero .meta-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.section-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.editions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+.edition-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.edition-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.edition-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+.edition-card:hover::before { opacity: 1; }
+.edition-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.edition-day {
+  font-family: 'Source Serif 4', serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+.edition-headlines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.edition-headlines li {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 4px 0;
+  color: var(--text);
+}
+.edition-headlines li::before {
+  content: '·';
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: bold;
+}
+.edition-meta {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.empty-state {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  padding: 48px 32px;
+  text-align: center;
+  color: var(--text-2);
+  font-style: italic;
+}
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--text-2);
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.7;
+}
+footer a { color: var(--accent); text-decoration: none; }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 38px; }
+  .hero .subtitle { font-size: 16px; }
+  main { padding: 36px 18px 60px; }
+  .edition-card { padding: 20px 22px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">AI Daily</div>
+  <div class="controls">
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>AI Daily<br><span class="accent">in zwei Sprachen.</span></h1>
+    <p class="subtitle">Tägliche KI-News auf Deutsch und Englisch — mit Vorlesefunktion, Vokabel-Highlights und Redewendungen. Lesen, hören und gleichzeitig lernen.</p>
+    <div class="meta-row">
+      <span>📅 Mo–Fr · 08:00 Europe/Berlin</span>
+      <span>🔊 Klick zum Vorlesen</span>
+      <span>📚 Vokabeln & Redewendungen</span>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="section-header">📰 Ausgaben · Editions</h2>
+    <div id="editions" class="editions-grid">
+      <div class="empty-state">Lade Ausgaben…</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Generated daily by Claude · <a href="https://github.com/saadel123/ai-daily-news">Source on GitHub</a></p>
+  <p style="margin-top: 8px">✦ Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script>
+const WEEKDAY_DE = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const WEEKDAY_EN = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const MONTH_DE = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+
+function formatDate(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  return {
+    weekday: WEEKDAY_DE[dt.getUTCDay()],
+    formatted: `${d}. ${MONTH_DE[m - 1]} ${y}`,
+    short: `${String(d).padStart(2,'0')}.${String(m).padStart(2,'0')}.${y}`
+  };
+}
+
+async function loadEditions() {
+  try {
+    const res = await fetch('editions.json?_=' + Date.now());
+    if (!res.ok) throw new Error('Failed to load editions.json');
+    const data = await res.json();
+    renderEditions(data.editions || []);
+  } catch (err) {
+    document.getElementById('editions').innerHTML =
+      `<div class="empty-state">Konnte editions.json nicht laden: ${err.message}</div>`;
+  }
+}
+
+function renderEditions(editions) {
+  const container = document.getElementById('editions');
+  if (!editions.length) {
+    container.innerHTML = '<div class="empty-state">Noch keine Ausgaben veröffentlicht. Die erste erscheint morgen früh um 08:00.</div>';
+    return;
+  }
+  editions.sort((a, b) => b.date.localeCompare(a.date));
+  container.innerHTML = editions.map(ed => {
+    const d = formatDate(ed.date);
+    const headlines = (ed.headlines || []).slice(0, 5).map(h => `<li>${escapeHtml(h)}</li>`).join('');
+    const meta = [];
+    if (ed.story_count) meta.push(`${ed.story_count} Stories`);
+    if (ed.vocab_count) meta.push(`${ed.vocab_count} Vokabeln`);
+    if (ed.idiom_count) meta.push(`${ed.idiom_count} Redewendungen`);
+    return `
+      <a href="${ed.date}.html" class="edition-card">
+        <div class="edition-date">${d.short}</div>
+        <div class="edition-day">${d.weekday}</div>
+        <ul class="edition-headlines">${headlines}</ul>
+        ${meta.length ? `<div class="edition-meta">${meta.map(m => `<span>${m}</span>`).join('')}</div>` : ''}
+      </a>`;
+  }).join('');
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+document.getElementById('theme').addEventListener('click', () => {
+  const cur = document.documentElement.dataset.theme || 'dark';
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  document.getElementById('theme').textContent = next === 'dark' ? '🌙' : '☀';
+  localStorage.setItem('ai-news-theme', next);
+});
+
+const savedTheme = localStorage.getItem('ai-news-theme') || 'dark';
+document.documentElement.dataset.theme = savedTheme;
+document.getElementById('theme').textContent = savedTheme === 'dark' ? '🌙' : '☀';
+
+loadEditions();
+</script>
+
+</body>
+</html>

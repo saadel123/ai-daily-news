@@ -1,0 +1,18 @@
+{
+  "editions": [
+    {
+      "date": "2026-05-06",
+      "headlines": [
+        "Claude 4.7 Sonnet released — 30 % schneller beim Coding",
+        "Memory-API von Anthropic in Public Beta",
+        "OpenAI kündigt GPT-6 mini an",
+        "Google Gemini 3 in Workspace integriert",
+        "Mistral 70B Reasoning-Modell als Open Weights"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "is_sample": true
+    }
+  ]
+}
