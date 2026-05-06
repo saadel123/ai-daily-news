@@ -7,486 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --surface-2: #1f2937;
-  --border: #30363d;
-  --text: #e6edf3;
-  --text-2: #8b949e;
-  --accent: #d97757;
-  --accent-bg: rgba(217, 119, 87, 0.12);
-  --highlight-bg: rgba(217, 119, 87, 0.45);
-  --de-tint: rgba(220, 100, 100, 0.5);
-  --en-tint: rgba(100, 150, 220, 0.5);
-}
-[data-theme="light"] {
-  --bg: #fdfaf3;
-  --surface: #ffffff;
-  --surface-2: #f5efe1;
-  --border: #e8dec5;
-  --text: #1f1f1f;
-  --text-2: #6b6b6b;
-  --accent: #b85a36;
-  --accent-bg: rgba(184, 90, 54, 0.08);
-  --highlight-bg: rgba(184, 90, 54, 0.35);
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Source Serif 4', Georgia, serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.75;
-  font-size: 17px;
-  -webkit-font-smoothing: antialiased;
-  transition: background 0.3s, color 0.3s;
-}
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
-  padding: 12px 24px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 24px;
-  align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-}
-.brand {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--accent);
-  font-size: 15px;
-}
-.brand::before { content: '✦'; margin-right: 6px; }
-.meta {
-  display: flex;
-  gap: 18px;
-  color: var(--text-2);
-  align-items: center;
-  flex-wrap: wrap;
-}
-.preview-tag {
-  background: var(--accent-bg);
-  color: var(--accent);
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-.controls {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.controls select, .controls button {
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--border);
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 0.15s;
-  max-width: 160px;
-}
-.controls select:hover, .controls button:hover {
-  border-color: var(--accent);
-}
-.controls button { width: 32px; padding: 6px 0; text-align: center; }
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 56px 24px;
-}
-.hero {
-  margin-bottom: 56px;
-}
-.hero h1 {
-  font-family: 'Source Serif 4', serif;
-  font-size: 44px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 12px;
-}
-.hero .subtitle {
-  color: var(--text-2);
-  font-size: 17px;
-  font-style: italic;
-}
-.glance {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 28px 36px 28px 28px;
-  margin-bottom: 80px;
-  position: relative;
-  overflow: hidden;
-}
-.glance::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 4px;
-  background: linear-gradient(180deg, var(--accent), transparent);
-}
-.glance h2 {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 18px;
-}
-.glance ul { list-style: none; }
-.glance li {
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--border);
-  display: flex;
-  gap: 12px;
-  align-items: start;
-  font-size: 15px;
-}
-.glance li:last-child { border-bottom: none; }
-.glance li .dot {
-  flex-shrink: 0;
-  font-size: 10px;
-  margin-top: 8px;
-}
-.section { margin-bottom: 88px; }
-.section-header {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 32px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.article { margin-bottom: 64px; }
-.article-cover {
-  width: 100%;
-  height: 220px;
-  border-radius: 12px;
-  margin-bottom: 28px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  padding: 28px 32px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
-.article-cover .cover-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.72;
-}
-.article-cover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-  z-index: 1;
-}
-.article-cover > span { position: relative; z-index: 2; }
-.article-cover.anthropic { background: linear-gradient(135deg, #d97757 0%, #c44d3a 50%, #6b1f0e 100%); }
-.article-cover.openai { background: linear-gradient(135deg, #10a37f 0%, #2d6e5d 60%, #0f2a25 100%); }
-.article-cover.google { background: linear-gradient(135deg, #4285f4 0%, #ea4335 50%, #fbbc04 100%); }
-.article-cover.mistral { background: linear-gradient(135deg, #ff7000 0%, #c94f00 60%, #5a2400 100%); }
-.article-cover.hack { background: linear-gradient(135deg, #6b46c1 0%, #9d50bb 50%, #2d1454 100%); }
-.article-cover-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-.article-cover-link .article-cover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-.article-cover-link:hover .article-cover { transform: translateY(-3px); box-shadow: 0 18px 44px rgba(0,0,0,0.35); }
-.article-cover-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 14px; }
-.article-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-.lang { position: relative; padding-left: 18px; }
-.lang.de { border-left: 2px solid var(--de-tint); }
-.lang.en { border-left: 2px solid var(--en-tint); }
-.lang-flag {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.speak-btn {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-2);
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 11px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.15s;
-  flex-shrink: 0;
-}
-.speak-btn:hover { border-color: var(--accent); color: var(--accent); }
-.speak-btn.playing {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
-  animation: pulse 1.4s infinite;
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 var(--accent-bg); }
-  50% { box-shadow: 0 0 0 7px transparent; }
-}
-.tts-text { font-size: 17px; line-height: 1.8; }
-.lang.en .tts-text { font-style: normal; }
-.word.active {
-  background: var(--highlight-bg);
-  border-radius: 3px;
-  padding: 1px 2px;
-  margin: -1px -2px;
-}
-mark.vocab {
-  background: var(--accent-bg);
-  color: var(--accent);
-  border-bottom: 1px dashed currentColor;
-  padding: 0 2px;
-  border-radius: 2px;
-  cursor: help;
-  position: relative;
-  font-style: normal;
-}
-mark.vocab:hover::after {
-  content: attr(data-translation);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--border);
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  white-space: nowrap;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-  z-index: 100;
-  pointer-events: none;
-  letter-spacing: 0.01em;
-}
-mark.vocab:hover::before {
-  content: '';
-  position: absolute;
-  bottom: calc(100% + 2px);
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: var(--border);
-  z-index: 100;
-  pointer-events: none;
-}
-.source {
-  display: inline-block;
-  margin-top: 24px;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px dashed currentColor;
-  padding-bottom: 1px;
-}
-.source:hover { border-bottom-style: solid; }
-.vocab-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
-}
-.vocab-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px 24px;
-  transition: border-color 0.15s, transform 0.15s;
-}
-.vocab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.vocab-word {
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 4px;
-  letter-spacing: -0.01em;
-}
-.vocab-translation {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: var(--text-2);
-  margin-bottom: 14px;
-  font-weight: 500;
-}
-.vocab-example {
-  font-size: 14px;
-  color: var(--text);
-  border-left: 2px solid var(--border);
-  padding: 4px 0 4px 12px;
-  margin: 6px 0;
-  display: flex;
-  gap: 8px;
-  align-items: start;
-}
-.vocab-example .speak-btn { width: 22px; height: 22px; font-size: 9px; margin-top: 1px; }
-.vocab-example .tts-text { font-size: 14px; line-height: 1.5; }
-.vocab-example.en .tts-text { font-style: italic; color: var(--text-2); }
-.idiom-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 12px;
-  padding: 32px 36px;
-  margin-bottom: 24px;
-}
-.idiom-headword {
-  font-family: 'Inter', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 6px;
-  letter-spacing: -0.015em;
-}
-.idiom-meaning {
-  font-size: 15px;
-  color: var(--text-2);
-  margin-bottom: 20px;
-  font-style: italic;
-}
-.idiom-examples {
-  background: var(--surface-2);
-  border-radius: 10px;
-  padding: 18px 22px;
-}
-.idiom-example {
-  margin: 6px 0;
-  display: flex;
-  gap: 10px;
-  align-items: start;
-  line-height: 1.6;
-}
-.idiom-example.en .tts-text { font-style: italic; color: var(--text-2); }
-pre.code {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 18px 22px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
-  overflow-x: auto;
-  margin-top: 24px;
-  color: var(--text);
-  line-height: 1.6;
-}
-pre.code .kw { color: #ff7b72; }
-pre.code .str { color: #a5d6ff; }
-pre.code .com { color: #8b949e; }
-pre.code .fn { color: #d2a8ff; }
-[data-theme="light"] pre.code .kw { color: #cf222e; }
-[data-theme="light"] pre.code .str { color: #0a3069; }
-[data-theme="light"] pre.code .com { color: #6e7781; }
-[data-theme="light"] pre.code .fn { color: #8250df; }
-footer {
-  border-top: 1px solid var(--border);
-  padding: 40px 24px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  color: var(--text-2);
-  max-width: 1100px;
-  margin: 80px auto 0;
-  line-height: 1.7;
-}
-footer a { color: var(--accent); text-decoration: none; }
-footer .heart { color: var(--accent); }
-@media (max-width: 768px) {
-  .topbar {
-    grid-template-columns: 1fr;
-    gap: 6px;
-    padding: 8px 12px;
-  }
-  .brand { font-size: 14px; }
-  .meta { display: none; }
-  .controls {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    gap: 4px;
-    padding-bottom: 2px;
-  }
-  .controls::-webkit-scrollbar { display: none; }
-  .controls select {
-    padding: 4px 6px;
-    font-size: 11px;
-    max-width: 130px;
-    flex-shrink: 0;
-  }
-  .controls button { width: 28px; height: 28px; padding: 4px 0; flex-shrink: 0; font-size: 13px; }
-  .hero { margin-bottom: 40px; }
-  .hero h1 { font-size: 30px; }
-  .hero .subtitle { font-size: 15px; }
-  .glance { padding: 20px 24px 20px 22px; margin-bottom: 56px; }
-  .glance li { font-size: 14px; padding: 8px 0; }
-  .section { margin-bottom: 56px; }
-  .section-header { margin-bottom: 24px; }
-  .article { margin-bottom: 40px; }
-  .article-cover { height: 160px; font-size: 22px; padding: 18px 22px; }
-  .article-body, .vocab-grid { grid-template-columns: 1fr; gap: 20px; }
-  .lang { padding-left: 14px; }
-  .tts-text { font-size: 16px; }
-  .vocab-card { padding: 18px 22px; }
-  .idiom-card { padding: 20px 22px; }
-  .idiom-headword { font-size: 24px; }
-  pre.code { font-size: 12px; padding: 14px 16px; }
-  main { padding: 28px 14px 48px; }
-}
-</style>
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
@@ -515,18 +36,18 @@ footer .heart { color: var(--accent); }
 <main>
 
   <div class="hero">
-    <h1>Anthropic geht auf Tour, Google macht Gemma 4 schneller.</h1>
-    <p class="subtitle">Plus FIS bei den Banken, ein offener Roboter aus Seattle und Washington schaut bei Frontier-Modellen genauer hin.</p>
+    <h1>Anthropic geht aufs Ganze: 200 Mrd. $ Cloud-Deal und neue Claude-Code-Befehle.</h1>
+    <p class="subtitle">Außerdem: GPT-5.5 Instant ist jetzt der ChatGPT-Default, Gemini Embedding 2 wird GA und das Pentagon lässt Anthropic links liegen.</p>
   </div>
 
   <section class="glance">
     <h2>📋 Heute auf einen Blick · At a glance</h2>
     <ul>
-      <li><span class="dot">🟧</span><span><strong>Code with Claude</strong> — Anthropic-Konferenz in SF, London und Tokio</span></li>
-      <li><span class="dot">🟧</span><span><strong>FIS</strong> baut Financial-Crime-Agent auf Claude — AML in Minuten</span></li>
-      <li><span class="dot">🔵</span><span><strong>Google</strong>: MTP-Drafter für Gemma 4 bringen 3× Inferenz-Speedup</span></li>
-      <li><span class="dot">🟠</span><span><strong>Ai2</strong> öffnet MolmoAct 2 — Action-Reasoning-Modell für echte Roboter</span></li>
-      <li><span class="dot">🟢</span><span><strong>CAISI</strong> bekommt Frühzugriff auf Modelle von Google, Microsoft und xAI</span></li>
+      <li><span class="dot">🟧</span><span><strong>Claude Code 2.1.126</strong>: neuer Befehl <code>claude project purge</code> putzt den Projektzustand weg</span></li>
+      <li><span class="dot">🟧</span><span><strong>Anthropic</strong> verpflichtet sich zu 200 Mrd. $ bei Google Cloud — fünf Jahre TPUs</span></li>
+      <li><span class="dot">🟢</span><span><strong>OpenAI</strong> macht GPT-5.5 Instant zum neuen ChatGPT-Default</span></li>
+      <li><span class="dot">🔵</span><span><strong>Gemini Embedding 2</strong> wird GA — erstes nativ multimodales Embedding</span></li>
+      <li><span class="dot">🟠</span><span><strong>Pentagon</strong> vergibt KI-Aufträge an 8 Big-Tech-Firmen — ohne Anthropic</span></li>
     </ul>
   </section>
 
@@ -534,33 +55,38 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🟧 Anthropic & Claude</h2>
 
     <article class="article">
-      <a class="article-cover-link" href="https://claude.com/blog/code-with-claude-san-francisco-london-tokyo" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://claude.com/_next/image?url=%2Fimages%2Fblog%2Fcode-with-claude-cities-2026.png&w=1920&q=75" alt="" loading="lazy" onerror="this.remove()"><span>Code with Claude — SF, London, Tokio</span></div></a>
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.126" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.126 · project purge</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a1-de">Anthropic <mark class="vocab" data-translation="bringt … rüber — brings (here: takes on tour)">bringt</mark> seine Developer-Konferenz Code with Claude diesen Frühling in drei Städte: San Francisco am 6. Mai, London am 19. Mai und Tokio am 10. Juni. Auf dem Plan stehen Hands-on-Workshops zu Claude Code, dem MCP-Ökosystem und Production-Reliability — dazu Office Hours mit Engineers und Live-Demos. Wer nicht <mark class="vocab" data-translation="vor Ort — on site / in person">vor Ort</mark> sein kann, bekommt einen globalen Livestream und Recordings, also <mark class="vocab" data-translation="lohnt sich — is worth it">lohnt sich</mark> auf jeden Fall der Blick rein. Speaker sind unter anderem Ami Vora, Boris Cherny und Angela Jiang.</p>
+          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.126 einen frischen Befehl: <code>claude project purge [path]</code> <mark class="vocab" data-translation="putzt … weg — wipes / cleans away">putzt</mark> den kompletten Claude-Code-Zustand für ein Projekt <mark class="vocab" data-translation="weg — away (with putzt)">weg</mark> — Transcripts, Tasks, File-History, Config-Eintrag. Mit <code>--dry-run</code> kannst du erst mal anschauen, was <mark class="vocab" data-translation="rausfliegt — gets kicked out / removed">rausfliegt</mark>, bevor du wirklich löschst. Praktisch, wenn du alte Repos <mark class="vocab" data-translation="entrümpeln — to declutter / clean out">entrümpeln</mark> willst oder ein Projekt von Grund auf neu setzen möchtest. Auch dabei: <code>--all</code>, <code>-y/--yes</code> und ein interaktiver Modus.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
-          <p class="tts-text" id="a1-en">Anthropic is putting Code with Claude on the road this spring — San Francisco on May 6, London on May 19 and Tokyo on June 10. The track covers hands-on workshops on Claude Code, the MCP ecosystem and production-reliability practices, with office hours and live capability demos. If you can't make it in person, the global livestream and recordings make it easy to follow along. Confirmed speakers include Ami Vora, Boris Cherny and Angela Jiang.</p>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.126 ships a brand-new command: <code>claude project purge [path]</code> deletes all Claude Code state for a project — transcripts, tasks, file history, the config entry. Pair it with <code>--dry-run</code> first to preview what would go before you actually wipe anything. Handy for cleaning up stale repos or starting a project's setup from a clean slate. It also supports <code>--all</code>, <code>-y/--yes</code> and an interactive mode.</p>
         </div>
       </div>
-      <a class="source" href="https://claude.com/blog/code-with-claude-san-francisco-london-tokyo" target="_blank" rel="noopener">→ claude.com · 04.05.2026</a>
+<pre class="code"><span class="com"># 1) Trockenlauf — zeigt, was geputzt würde, ohne wirklich zu löschen</span>
+$ claude project purge --dry-run ~/code/old-experiment
+
+<span class="com"># 2) Wirklich putzen, ohne Rückfragen</span>
+$ claude project purge -y ~/code/old-experiment</pre>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.126" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 01.05.2026</a>
     </article>
 
     <article class="article">
-      <a class="article-cover-link" href="https://thenextweb.com/news/anthropic-financial-services-agents-claude-opus-4-7-fis" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/05/anthropic-fis-claude.jpg" alt="" loading="lazy" onerror="this.remove()"><span>FIS × Claude · AML in Minuten</span></div></a>
+      <a class="article-cover-link" href="https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic × Google Cloud · 200 Mrd. $</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a2-de">FIS und Anthropic haben einen Financial-Crime-Agent auf Claude <mark class="vocab" data-translation="rausgebracht — released / shipped (casual)">rausgebracht</mark>, der AML-Untersuchungen von Tagen auf Minuten <mark class="vocab" data-translation="zusammenstaucht — compresses / squashes">zusammenstaucht</mark>. BMO und Amalgamated Bank sind die ersten Banken, die den Agent produktiv einsetzen — der breite Roll-out kommt in der zweiten Jahreshälfte. Als nächste Agenten kündigt FIS Credit Decisioning, Fraud Prevention und Deposit Retention an. Für Compliance-Teams ist das ein klarer <mark class="vocab" data-translation="Hebel — lever / leverage">Hebel</mark>: weniger Klick-Arbeit, mehr Zeit für die echten Fälle.</p>
+          <p class="tts-text" id="a2-de">Anthropic hat sich laut The Information <mark class="vocab" data-translation="verpflichtet — committed / pledged">verpflichtet</mark>, in den nächsten fünf Jahren 200 Mrd. $ bei Google Cloud auszugeben — vor allem für TPUs und Compute. Das ist einer der größten Cloud-Verträge der Geschichte und zeigt, wie ernst Anthropic den Compute-Hunger fürs Claude-Training nimmt. Im selben <mark class="vocab" data-translation="Atemzug — breath (here: at the same time)">Atemzug</mark> nahm Anthropic weitere 40 Mrd. $ von Google und 5 Mrd. $ von Amazon an Bord. Wer geglaubt hat, der Ramp-up sei <mark class="vocab" data-translation="durch — done / over">durch</mark>, hat sich getäuscht — der echte Run beginnt erst.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
-          <p class="tts-text" id="a2-en">FIS and Anthropic shipped a Financial Crimes AI Agent built on Claude that compresses AML investigations from hours or days into minutes. BMO and Amalgamated Bank are the first banks running it; broader availability is planned for the second half of 2026. Credit decisioning, fraud prevention and deposit retention agents are next on FIS's roadmap. For compliance teams that's a real lever — less click-work, more time on the actual cases.</p>
+          <p class="tts-text" id="a2-en">Anthropic has reportedly committed to spending $200B with Google Cloud over the next five years — mostly TPUs and raw compute, according to The Information. It's one of the biggest cloud deals on record and shows how seriously Anthropic takes the compute hunger of training Claude. In the same breath, Anthropic took another $40B from Google and $5B from Amazon. If you thought the ramp-up was over, think again — the real run is just starting.</p>
         </div>
       </div>
-      <a class="source" href="https://thenextweb.com/news/anthropic-financial-services-agents-claude-opus-4-7-fis" target="_blank" rel="noopener">→ thenextweb.com · 05.05.2026</a>
+      <a class="source" href="https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports" target="_blank" rel="noopener">→ usnews.com · 05.05.2026</a>
     </article>
   </section>
 
@@ -568,75 +94,71 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🌐 Allgemein · General AI</h2>
 
     <article class="article">
-      <a class="article-cover-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-4-mtp-drafters_hero.max-1300x1300.png" alt="" loading="lazy" onerror="this.remove()"><span>Gemma 4 MTP-Drafter · 3× Inferenz</span></div></a>
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · GPT-5.5 Instant ist Default</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a3-de">Google hat Multi-Token-Prediction-Drafter für die Gemma-4-Familie <mark class="vocab" data-translation="veröffentlicht — released / published">veröffentlicht</mark> — unter Apache 2.0, auf Hugging Face und Kaggle, mit Support für transformers, MLX, vLLM, SGLang und Ollama. Ein leichter Drafter sagt mehrere Tokens auf einmal voraus, das große Modell verifiziert sie in einem einzigen Forward-Pass — ohne Qualitätsverlust. In der Praxis bringt das bis zu 3× schnellere Inferenz, je nach Hardware und Batch-Size. Der <mark class="vocab" data-translation="Aufwand — effort / cost">Aufwand</mark> für die Integration ist <mark class="vocab" data-translation="überschaubar — manageable / reasonable">überschaubar</mark>, weil die gängigen Runtimes das schon mitbringen.</p>
+          <p class="tts-text" id="a3-de">OpenAI hat GPT-5.5 Instant <mark class="vocab" data-translation="veröffentlicht — released / published">veröffentlicht</mark> — das neue Default-Modell in ChatGPT. Es ist schneller, <mark class="vocab" data-translation="halluziniert — hallucinates (LLM term)">halluziniert</mark> weniger und holt sich auf Wunsch frühere Chats, hochgeladene Dateien und Gmail rein, um persönlicher zu antworten. Plus- und Pro-User bekommen es zuerst, in der API läuft es als <code>chat-latest</code>. Wer GPT-5.3 noch <mark class="vocab" data-translation="braucht — needs">braucht</mark>, hat als zahlender User drei Monate <mark class="vocab" data-translation="Übergangszeit — transition window">Übergangszeit</mark>.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
-          <p class="tts-text" id="a3-en">Google released Multi-Token Prediction (MTP) drafters for the Gemma 4 family — Apache 2.0, on Hugging Face and Kaggle, with support across transformers, MLX, vLLM, SGLang and Ollama. A lightweight drafter predicts several tokens at once and the heavy target model verifies them in a single forward pass — no quality loss, up to 3× faster inference depending on hardware and batch size. Integration cost is low, since the common runtimes already wire it up.</p>
+          <p class="tts-text" id="a3-en">OpenAI shipped GPT-5.5 Instant as the new default model for ChatGPT. It's faster, hallucinates less, and can pull in past chats, uploaded files and Gmail to give more personalized answers. Plus and Pro users see it first; in the API it lives as <code>chat-latest</code>. If you still need GPT-5.3, paid users get a three-month grace window before it's gone.</p>
         </div>
       </div>
-      <a class="source" href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/" target="_blank" rel="noopener">→ blog.google · 05.05.2026</a>
+      <a class="source" href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener">→ techcrunch.com · 05.05.2026</a>
     </article>
 
     <article class="article">
-      <a class="article-cover-link" href="https://allenai.org/blog/molmoact2" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://allenai.org/_next/static/blog/molmoact2-og.png" alt="" loading="lazy" onerror="this.remove()"><span>Ai2 MolmoAct 2 · Open Robotics</span></div></a>
+      <a class="article-cover-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2-generally-available/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Gemini Embedding 2 · GA</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a4-de">Ai2 hat MolmoAct 2 <mark class="vocab" data-translation="freigegeben — released / made open">freigegeben</mark> — ein vollständig offenes Action-Reasoning-Modell für echte Roboter, mit Open Weights, Trainings-Code, Action-Tokenizer und kompletten Trainings-Daten. Auf einem Franka-Arm schlägt es Physical Intelligence's π0.5 in jeder getesteten Aufgabe und läuft bis zu 37× schneller als der Vorgänger. Dazu kommt der MolmoAct-2-Bimanual-YAM-Datensatz mit über 720 Stunden Demonstrationen — das größte offene bimanuelle Tabletop-Manipulation-Dataset bisher. Wer im Robotics-Bereich <mark class="vocab" data-translation="bastelt — tinkers / builds">bastelt</mark>, sollte sich das auf jeden Fall mal <mark class="vocab" data-translation="anschauen — to look at / check out">anschauen</mark>.</p>
+          <p class="tts-text" id="a4-de">Google hat Gemini Embedding 2 in die General Availability <mark class="vocab" data-translation="gehoben — lifted / promoted">gehoben</mark> — verfügbar über die Gemini API und Vertex AI. Das Modell mappt Text, Bilder, Video, Audio und Dokumente in einen einzigen Embedding-Space, mit Support für über 100 Sprachen. Für RAG-Pipelines, die Modalitäten <mark class="vocab" data-translation="mischen — mix / blend">mischen</mark>, ist das ein echter <mark class="vocab" data-translation="Befreiungsschlag — liberating move / breakthrough">Befreiungsschlag</mark> — kein Stitching mehr aus drei verschiedenen Embedding-Modellen. Wer multimodale Suche bauen will, sollte den Wechsel auf jeden Fall mal <mark class="vocab" data-translation="durchrechnen — to crunch / run the numbers">durchrechnen</mark>.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
-          <p class="tts-text" id="a4-en">Ai2 released MolmoAct 2, a fully open Action Reasoning Model for real-world robot deployment — open weights, training code, action tokenizer and complete training data. On a Franka arm it beats Physical Intelligence's π0.5 on every evaluated task and runs up to 37× faster than its predecessor. Ai2 also published the MolmoAct 2-Bimanual YAM dataset with 720+ hours of demonstrations, the largest open bimanual tabletop manipulation set out there. If you tinker with robotics, this is one to check out.</p>
+          <p class="tts-text" id="a4-en">Google moved Gemini Embedding 2 into general availability — accessible via the Gemini API and Vertex AI. The model maps text, images, video, audio and documents into one embedding space, with 100+ languages supported. For multimodal RAG pipelines, that's a clean break — no more stitching three embedding models together. If you build multimodal search, the migration is worth a serious look.</p>
         </div>
       </div>
-      <a class="source" href="https://allenai.org/blog/molmoact2" target="_blank" rel="noopener">→ allenai.org · 05.05.2026</a>
+      <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2-generally-available/" target="_blank" rel="noopener">→ blog.google · 01.05.2026</a>
     </article>
 
     <article class="article">
-      <a class="article-cover-link" href="https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2026/05/05/caisi-frontier-ai-testing.png" alt="" loading="lazy" onerror="this.remove()"><span>CAISI · Frontier-AI-Testing</span></div></a>
+      <a class="article-cover-link" href="https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Pentagon · 8 Big-Tech-Deals · ohne Anthropic</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a5-de">Das CAISI im US-Handelsministerium hat neue Frontier-AI-Testing-Vereinbarungen mit Google DeepMind, Microsoft und xAI <mark class="vocab" data-translation="unterzeichnet — signed">unterzeichnet</mark>. Die drei reihen sich damit hinter OpenAI und Anthropic ein, die der Behörde schon länger Pre-Deployment-Reviews <mark class="vocab" data-translation="gewähren — grant / give">gewähren</mark> — teils mit reduzierten oder entfernten Safeguards für die Tests. Hintergrund ist Trumps AI Action Plan und der Fokus auf nationale Sicherheit. Für Anbieter heißt das praktisch: Modelle <mark class="vocab" data-translation="durchleuchten — to scrutinise / x-ray">durchleuchten</mark> lassen, bevor der Knopf zum Launch gedrückt wird.</p>
+          <p class="tts-text" id="a5-de">Das Pentagon hat KI-Verträge mit acht Tech-Firmen <mark class="vocab" data-translation="abgeschlossen — concluded / signed">abgeschlossen</mark> — OpenAI, Google, Microsoft, Nvidia, AWS, Oracle, SpaceX und Reflection. Anthropic wurde dabei explizit <mark class="vocab" data-translation="ausgeschlossen — excluded / shut out">ausgeschlossen</mark> und sogar als "supply chain risk" <mark class="vocab" data-translation="eingestuft — classified / categorised">eingestuft</mark>, weil sie sich gegen Klauseln zu Domestic Surveillance und autonomen Waffen <mark class="vocab" data-translation="gewehrt — pushed back / resisted">gewehrt</mark> haben. Anthropic klagt mittlerweile gegen die Trump-Administration; ein Bundesrichter in Kalifornien hat den Schritt vorerst gestoppt. Ein spannender Präzedenzfall dafür, wie weit AI-Firmen ihre Use-Policy verteidigen können.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
-          <p class="tts-text" id="a5-en">CAISI at the US Commerce Department signed new frontier-AI testing agreements with Google DeepMind, Microsoft and xAI. The trio joins OpenAI and Anthropic, which already give the agency pre-deployment access — sometimes with reduced or removed safeguards for evaluation. The push fits Trump's AI Action Plan and a sharper national-security focus. In practice it means letting CAISI scrutinise models before any public launch.</p>
+          <p class="tts-text" id="a5-en">The Pentagon signed AI deals with eight tech firms — OpenAI, Google, Microsoft, Nvidia, AWS, Oracle, SpaceX and Reflection. Anthropic was explicitly cut and even labeled a "supply chain risk" because it pushed back on clauses around domestic surveillance and autonomous weapons. Anthropic is now suing the Trump administration; a federal judge in California has paused the move for now. Quite a precedent for how far AI firms can defend their usage policies.</p>
         </div>
       </div>
-      <a class="source" href="https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing" target="_blank" rel="noopener">→ nist.gov · 05.05.2026</a>
+      <a class="source" href="https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic" target="_blank" rel="noopener">→ cnn.com · 01.05.2026</a>
     </article>
   </section>
 
   <section class="section">
     <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
     <article class="article">
-      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code · .zip-Plugins + /mcp</span></div></a>
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.128" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.128 · /color würfelt</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="h1-de">Mit der frischen Claude-Code-Version vom 5. Mai gibt's zwei kleine Änderungen, die echt was <mark class="vocab" data-translation="bringen — make a difference / pay off">bringen</mark>. Erstens: <code>--plugin-dir</code> akzeptiert jetzt auch <code>.zip</code>-Plugin-Archive — Plugins committen, ausrollen, fertig. Zweitens: <code>/mcp</code> zeigt pro Server die Tool-Anzahl an und markiert Server, die 0 Tools liefern — perfekt zum Debuggen kaputter Setups. Auf jeden Fall mal <mark class="vocab" data-translation="reinschauen — to look into / check out">reinschauen</mark>, wenn ihr mit MCP-Servern oder Plugin-Distribution zu tun habt.</p>
+          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.128 gibt's einen kleinen, aber fröhlichen Trick: <code>/color</code> ohne Argumente <mark class="vocab" data-translation="würfelt — rolls (dice) / picks at random">würfelt</mark> eine zufällige Session-Farbe. Praktisch, wenn du mehrere Sessions parallel offen hast und sie auf einen Blick <mark class="vocab" data-translation="auseinanderhalten — tell apart / distinguish">auseinanderhalten</mark> willst. <mark class="vocab" data-translation="Bonus — bonus / extra">Bonus</mark>: <code>/mcp</code> zeigt jetzt die Tool-Anzahl pro Server und markiert Server, die mit 0 Tools verbunden sind — perfekt zum <mark class="vocab" data-translation="Debuggen — debugging">Debuggen</mark> kaputter Setups.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
-          <p class="tts-text" id="h1-en">The fresh Claude Code build from May 5 ships two small changes that actually pay off. First: --plugin-dir now also accepts .zip plugin archives — commit a plugin zip to your repo and roll it out by script, done. Second: /mcp now shows per-server tool counts and flags any server returning zero tools — perfect for spotting broken setups at a glance. Definitely worth a look if you deal with MCP servers or plugin distribution.</p>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.128 lands a small but fun tip: bare <code>/color</code> (no args) picks a random session color. Handy when you've got several sessions open in the same terminal layout and want to tell them apart at a glance. Bonus: <code>/mcp</code> now shows tool count per server and flags any server that connected with zero tools — perfect for spotting broken setups.</p>
         </div>
       </div>
-<pre class="code"><span class="com"># 1) List connected MCP servers + tool counts</span>
-<span class="com">#    Servers returning 0 tools are flagged — likely broken</span>
-/mcp
+<pre class="code"><span class="com"># 1) Würfelt eine zufällige Session-Farbe — easy to spot</span>
+$ /color
 
-<span class="com"># 2) Distribute plugins as zips — no need to unpack</span>
-claude-code --plugin-dir ./plugins/my-plugin.zip
-
-<span class="com"># 3) Bonus: sub-agent progress summaries now hit prompt cache,</span>
-<span class="com">#    cutting cache_creation roughly 3× in long sessions.</span></pre>
-      <a class="source" href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 05.05.2026</a>
+<span class="com"># 2) Zeigt Tool-Anzahl pro MCP-Server, flaggt 0-Tool-Server</span>
+$ /mcp</pre>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.128" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 04.05.2026</a>
     </article>
   </section>
 
@@ -645,67 +167,67 @@ claude-code --plugin-dir ./plugins/my-plugin.zip
     <div class="vocab-grid">
 
       <div class="vocab-card">
-        <div class="vocab-word">rausbringen</div>
-        <div class="vocab-translation">to release · to ship (casual)</div>
+        <div class="vocab-word">entrümpeln</div>
+        <div class="vocab-translation">to declutter · to clean out</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">FIS hat den Agent in unter vier Wochen rausgebracht.</span>
+          <span class="tts-text">Am Wochenende will ich endlich meine alten Repos entrümpeln.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">FIS shipped the agent in under four weeks.</span>
+          <span class="tts-text">This weekend I finally want to clean out my old repos.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">zusammenstauchen</div>
-        <div class="vocab-translation">to compress · to squash (e.g. time)</div>
+        <div class="vocab-word">aufs Ganze gehen</div>
+        <div class="vocab-translation">to go all in · to bet the farm</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Der Agent staucht AML-Untersuchungen auf Minuten zusammen.</span>
+          <span class="tts-text">Anthropic geht bei TPUs aufs Ganze.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">The agent compresses AML investigations into minutes.</span>
+          <span class="tts-text">Anthropic is going all in on TPUs.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">überschaubar</div>
-        <div class="vocab-translation">manageable · not too bad</div>
+        <div class="vocab-word">links liegen lassen</div>
+        <div class="vocab-translation">to ignore · to leave aside</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Der Aufwand für die Integration ist überschaubar.</span>
+          <span class="tts-text">Das Pentagon lässt Anthropic erstmal links liegen.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">The integration effort is pretty manageable.</span>
+          <span class="tts-text">The Pentagon is leaving Anthropic out for now.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">unterzeichnen</div>
-        <div class="vocab-translation">to sign (formal · contracts, agreements)</div>
+        <div class="vocab-word">würfeln</div>
+        <div class="vocab-translation">to roll (dice) · to pick at random</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Drei Anbieter haben die CAISI-Vereinbarung unterzeichnet.</span>
+          <span class="tts-text">Mit <code>/color</code> würfelt Claude Code eine zufällige Session-Farbe.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">Three providers signed the CAISI agreement.</span>
+          <span class="tts-text">With <code>/color</code>, Claude Code rolls a random session color.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">sich lohnen</div>
-        <div class="vocab-translation">to be worth it · to pay off</div>
+        <div class="vocab-word">durchrechnen</div>
+        <div class="vocab-translation">to crunch the numbers · to work through</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Ein Blick in die neuen Release-Notes lohnt sich auf jeden Fall.</span>
+          <span class="tts-text">Den Wechsel auf das neue Embedding solltest du erst durchrechnen.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">A look at the new release notes is definitely worth it.</span>
+          <span class="tts-text">You should crunch the numbers before switching to the new embedding.</span>
         </div>
       </div>
 
@@ -716,47 +238,47 @@ claude-code --plugin-dir ./plugins/my-plugin.zip
     <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
 
     <div class="idiom-card">
-      <div class="idiom-headword">auf einen grünen Zweig kommen</div>
-      <div class="idiom-meaning">to make real progress · to actually get somewhere — wörtlich: "to come to a green branch"</div>
+      <div class="idiom-headword">jemanden links liegen lassen</div>
+      <div class="idiom-meaning">to ignore someone · to leave them out in the cold — wörtlich: "to let them lie on the left"</div>
       <div class="idiom-examples">
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Mit MCP und der neuen Claude-Code-Version kommt man im Team endlich auf einen grünen Zweig."</span>
+          <span class="tts-text">"Das Pentagon lässt Anthropic einfach links liegen — und vergibt acht andere Verträge."</span>
         </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"With MCP and the new Claude Code build, the team is finally getting somewhere."</span>
+          <span class="tts-text">"The Pentagon is just leaving Anthropic out — and signing eight other deals."</span>
         </div>
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Ohne klare Eval-Pipeline kommt man bei Agents nicht auf einen grünen Zweig."</span>
+          <span class="tts-text">"Den alten Branch kannst du erstmal links liegen lassen, der ist eh überholt."</span>
         </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"Without a clear eval pipeline, you won't really make progress with agents."</span>
+          <span class="tts-text">"You can just ignore the old branch for now — it's outdated anyway."</span>
         </div>
       </div>
     </div>
 
     <div class="idiom-card">
-      <div class="idiom-headword">to ship it</div>
-      <div class="idiom-meaning">to release something now rather than polish forever — German equivalent: "es rausbringen"</div>
+      <div class="idiom-headword">to go all in</div>
+      <div class="idiom-meaning">to commit fully, betting everything on one move — German equivalent: "aufs Ganze gehen"</div>
       <div class="idiom-examples">
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"Don't polish forever — just ship it."</span>
+          <span class="tts-text">"Anthropic is going all in on TPUs with that 200-billion-dollar deal."</span>
         </div>
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Nicht ewig polieren — einfach rausbringen."</span>
+          <span class="tts-text">"Anthropic geht mit dem 200-Milliarden-Deal bei TPUs aufs Ganze."</span>
         </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"We're shipping the new agent template tomorrow."</span>
+          <span class="tts-text">"If we ship today, we go all in — no rollback plan."</span>
         </div>
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Wir bringen das neue Agent-Template morgen raus."</span>
+          <span class="tts-text">"Wenn wir heute releasen, gehen wir aufs Ganze — kein Rollback-Plan."</span>
         </div>
       </div>
     </div>
@@ -765,186 +287,13 @@ claude-code --plugin-dir ./plugins/my-plugin.zip
 </main>
 
 <footer>
-  <p>Quellen · Sources: claude.com · thenextweb.com · blog.google · allenai.org · nist.gov · github.com</p>
+  <p>Quellen · Sources: github.com · usnews.com · techcrunch.com · blog.google · cnn.com</p>
   <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
   <p style="margin-top: 10px">Edition #2 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
   <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
 </footer>
 
-<script>
-let voices = [];
-let voiceDe = null;
-let voiceEn = null;
-let speed = 1.0;
-
-function loadVoices() {
-  voices = speechSynthesis.getVoices();
-  if (voices.length === 0) return;
-
-  const findBest = (langPrefix) => {
-    const list = voices.filter(v => v.lang.toLowerCase().startsWith(langPrefix));
-    return list.find(v => /premium|enhanced|natural|neural/i.test(v.name))
-        || list.find(v => v.localService)
-        || list[0]
-        || null;
-  };
-
-  voiceDe = findBest('de');
-  voiceEn = findBest('en');
-
-  populateSelector('voice-de', 'de', voiceDe);
-  populateSelector('voice-en', 'en', voiceEn);
-}
-
-function populateSelector(id, langPrefix, defaultVoice) {
-  const sel = document.getElementById(id);
-  if (!sel) return;
-  sel.innerHTML = '';
-  const matching = voices.filter(v => v.lang.toLowerCase().startsWith(langPrefix));
-  if (matching.length === 0) {
-    const opt = document.createElement('option');
-    opt.textContent = '(no voice)';
-    sel.appendChild(opt);
-    sel.disabled = true;
-    return;
-  }
-  matching.forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v.name;
-    opt.textContent = v.name + ' · ' + v.lang;
-    sel.appendChild(opt);
-  });
-  if (defaultVoice) sel.value = defaultVoice.name;
-}
-
-speechSynthesis.onvoiceschanged = loadVoices;
-loadVoices();
-
-function wrapWords() {
-  document.querySelectorAll('.tts-text').forEach(el => {
-    if (el.dataset.wrapped) return;
-    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
-    const textNodes = [];
-    let node;
-    while ((node = walker.nextNode())) textNodes.push(node);
-    textNodes.forEach(tn => {
-      if (!tn.nodeValue.trim()) return;
-      const frag = document.createDocumentFragment();
-      const parts = tn.nodeValue.split(/(\s+)/);
-      parts.forEach(p => {
-        if (p === '') return;
-        if (/\S/.test(p)) {
-          const span = document.createElement('span');
-          span.className = 'word';
-          span.textContent = p;
-          frag.appendChild(span);
-        } else {
-          frag.appendChild(document.createTextNode(p));
-        }
-      });
-      tn.parentNode.replaceChild(frag, tn);
-    });
-    el.dataset.wrapped = 'true';
-  });
-}
-
-function clearActive() {
-  document.querySelectorAll('.word.active').forEach(w => w.classList.remove('active'));
-  document.querySelectorAll('.speak-btn.playing').forEach(b => b.classList.remove('playing'));
-}
-
-function speak(text, lang, btn, paragraphEl) {
-  speechSynthesis.cancel();
-  clearActive();
-
-  const u = new SpeechSynthesisUtterance(text);
-  u.voice = (lang === 'de') ? voiceDe : voiceEn;
-  u.lang = (lang === 'de') ? 'de-DE' : 'en-US';
-  u.rate = speed;
-  u.pitch = 1;
-
-  const wordSpans = paragraphEl ? Array.from(paragraphEl.querySelectorAll('.word')) : [];
-  let idx = 0;
-
-  u.onboundary = (e) => {
-    if (e.name && e.name !== 'word') return;
-    clearWordHighlight();
-    if (wordSpans[idx]) {
-      wordSpans[idx].classList.add('active');
-      const rect = wordSpans[idx].getBoundingClientRect();
-      if (rect.bottom > window.innerHeight - 100 || rect.top < 80) {
-        wordSpans[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      idx++;
-    }
-  };
-
-  u.onend = () => { btn?.classList.remove('playing'); clearWordHighlight(); };
-  u.onerror = u.onend;
-
-  btn?.classList.add('playing');
-  speechSynthesis.speak(u);
-}
-
-function clearWordHighlight() {
-  document.querySelectorAll('.word.active').forEach(w => w.classList.remove('active'));
-}
-
-function bindButtons() {
-  document.querySelectorAll('.speak-btn').forEach(btn => {
-    if (btn.dataset.bound) return;
-    btn.dataset.bound = 'true';
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang || 'en';
-      let para;
-      if (btn.dataset.target) {
-        para = document.querySelector(btn.dataset.target);
-      } else {
-        para = btn.parentElement.querySelector('.tts-text');
-      }
-      if (!para) return;
-      if (btn.classList.contains('playing')) {
-        speechSynthesis.cancel();
-        clearActive();
-        return;
-      }
-      speak(para.textContent.trim(), lang, btn, para);
-    });
-  });
-}
-
-document.getElementById('speed').addEventListener('change', (e) => {
-  speed = parseFloat(e.target.value);
-});
-document.getElementById('voice-de').addEventListener('change', (e) => {
-  voiceDe = voices.find(v => v.name === e.target.value);
-});
-document.getElementById('voice-en').addEventListener('change', (e) => {
-  voiceEn = voices.find(v => v.name === e.target.value);
-});
-document.getElementById('stop').addEventListener('click', () => {
-  speechSynthesis.cancel();
-  clearActive();
-});
-document.getElementById('theme').addEventListener('click', () => {
-  const cur = document.documentElement.dataset.theme || 'dark';
-  const next = cur === 'dark' ? 'light' : 'dark';
-  document.documentElement.dataset.theme = next;
-  document.getElementById('theme').textContent = next === 'dark' ? '🌙' : '☀';
-  localStorage.setItem('ai-news-theme', next);
-});
-
-const savedTheme = localStorage.getItem('ai-news-theme') || 'dark';
-document.documentElement.dataset.theme = savedTheme;
-document.getElementById('theme').textContent = savedTheme === 'dark' ? '🌙' : '☀';
-
-window.addEventListener('DOMContentLoaded', () => {
-  wrapWords();
-  bindButtons();
-});
-
-window.addEventListener('beforeunload', () => speechSynthesis.cancel());
-</script>
+<script src="../assets/site.js" defer></script>
 
 </body>
 </html>

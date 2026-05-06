@@ -2,6 +2,7 @@
   "editions": [
     {
       "date": "2026-05-06",
+      "edition_number": 2,
       "headlines": [
         "Claude Code 2.1.126: neuer Befehl claude project purge",
         "Anthropic verpflichtet sich zu 200 Mrd. $ bei Google Cloud",
@@ -11,7 +12,10 @@
       ],
       "story_count": 5,
       "vocab_count": 5,
-      "idiom_count": 2
+      "idiom_count": 2,
+      "reading_time_min": 12,
+      "listen_time_min": 9,
+      "generated_at": "2026-05-06T12:19:00Z"
     }
   ]
 }
