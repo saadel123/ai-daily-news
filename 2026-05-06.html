@@ -199,13 +199,23 @@ main {
   line-height: 1.1;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
+.article-cover .cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.72;
+}
 .article-cover::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.4));
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
 }
-.article-cover > * { position: relative; z-index: 1; }
+.article-cover > span { position: relative; z-index: 2; }
 .article-cover.anthropic { background: linear-gradient(135deg, #d97757 0%, #c44d3a 50%, #6b1f0e 100%); }
 .article-cover.openai { background: linear-gradient(135deg, #10a37f 0%, #2d6e5d 60%, #0f2a25 100%); }
 .article-cover.google { background: linear-gradient(135deg, #4285f4 0%, #ea4335 50%, #fbbc04 100%); }
@@ -484,7 +494,7 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🟧 Anthropic & Claude</h2>
 
     <article class="article">
-      <div class="article-cover anthropic"><span>Claude 4.7 Sonnet released</span></div>
+      <div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude 4.7 Sonnet released</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
@@ -499,7 +509,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover anthropic"><span>Memory API · Public Beta</span></div>
+      <div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Memory API · Public Beta</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
@@ -518,7 +528,7 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🌐 Allgemein · General AI</h2>
 
     <article class="article">
-      <div class="article-cover openai"><span>OpenAI: GPT-6 mini</span></div>
+      <div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI: GPT-6 mini</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
@@ -533,7 +543,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover google"><span>Gemini 3 in Workspace</span></div>
+      <div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Gemini 3 in Workspace</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
@@ -548,7 +558,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover mistral"><span>Mistral · 70B Open Weights</span></div>
+      <div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Mistral · 70B Open Weights</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
@@ -566,7 +576,7 @@ footer .heart { color: var(--accent); }
   <section class="section">
     <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
     <article class="article">
-      <div class="article-cover hack"><span>Prompt Caching</span></div>
+      <div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Prompt Caching</span></div>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
