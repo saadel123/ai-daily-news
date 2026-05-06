@@ -221,6 +221,14 @@ main {
 .article-cover.google { background: linear-gradient(135deg, #4285f4 0%, #ea4335 50%, #fbbc04 100%); }
 .article-cover.mistral { background: linear-gradient(135deg, #ff7000 0%, #c94f00 60%, #5a2400 100%); }
 .article-cover.hack { background: linear-gradient(135deg, #6b46c1 0%, #9d50bb 50%, #2d1454 100%); }
+.article-cover-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.article-cover-link .article-cover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.article-cover-link:hover .article-cover { transform: translateY(-3px); box-shadow: 0 18px 44px rgba(0,0,0,0.35); }
+.article-cover-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 14px; }
 .article-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -494,7 +502,7 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🟧 Anthropic & Claude</h2>
 
     <article class="article">
-      <div class="article-cover anthropic"><img class="cover-img" src="https://claude.com/_next/image?url=%2Fimages%2Fblog%2Fcode-with-claude-cities-2026.png&w=1920&q=75" alt="" loading="lazy" onerror="this.remove()"><span>Code with Claude — SF, London, Tokio</span></div>
+      <a class="article-cover-link" href="https://claude.com/blog/code-with-claude-san-francisco-london-tokyo" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://claude.com/_next/image?url=%2Fimages%2Fblog%2Fcode-with-claude-cities-2026.png&w=1920&q=75" alt="" loading="lazy" onerror="this.remove()"><span>Code with Claude — SF, London, Tokio</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
@@ -509,7 +517,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover anthropic"><img class="cover-img" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/05/anthropic-fis-claude.jpg" alt="" loading="lazy" onerror="this.remove()"><span>FIS × Claude · AML in Minuten</span></div>
+      <a class="article-cover-link" href="https://thenextweb.com/news/anthropic-financial-services-agents-claude-opus-4-7-fis" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/05/anthropic-fis-claude.jpg" alt="" loading="lazy" onerror="this.remove()"><span>FIS × Claude · AML in Minuten</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
@@ -528,7 +536,7 @@ footer .heart { color: var(--accent); }
     <h2 class="section-header">🌐 Allgemein · General AI</h2>
 
     <article class="article">
-      <div class="article-cover google"><img class="cover-img" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-4-mtp-drafters_hero.max-1300x1300.png" alt="" loading="lazy" onerror="this.remove()"><span>Gemma 4 MTP-Drafter · 3× Inferenz</span></div>
+      <a class="article-cover-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-4-mtp-drafters_hero.max-1300x1300.png" alt="" loading="lazy" onerror="this.remove()"><span>Gemma 4 MTP-Drafter · 3× Inferenz</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
@@ -543,7 +551,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover mistral"><img class="cover-img" src="https://allenai.org/_next/static/blog/molmoact2-og.png" alt="" loading="lazy" onerror="this.remove()"><span>Ai2 MolmoAct 2 · Open Robotics</span></div>
+      <a class="article-cover-link" href="https://allenai.org/blog/molmoact2" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://allenai.org/_next/static/blog/molmoact2-og.png" alt="" loading="lazy" onerror="this.remove()"><span>Ai2 MolmoAct 2 · Open Robotics</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
@@ -558,7 +566,7 @@ footer .heart { color: var(--accent); }
     </article>
 
     <article class="article">
-      <div class="article-cover openai"><img class="cover-img" src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2026/05/05/caisi-frontier-ai-testing.png" alt="" loading="lazy" onerror="this.remove()"><span>CAISI · Frontier-AI-Testing</span></div>
+      <a class="article-cover-link" href="https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2026/05/05/caisi-frontier-ai-testing.png" alt="" loading="lazy" onerror="this.remove()"><span>CAISI · Frontier-AI-Testing</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
@@ -576,7 +584,7 @@ footer .heart { color: var(--accent); }
   <section class="section">
     <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
     <article class="article">
-      <div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code · .zip-Plugins + /mcp</span></div>
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code · .zip-Plugins + /mcp</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
