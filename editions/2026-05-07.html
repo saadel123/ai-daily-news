@@ -7,15 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=2">
+<link rel="stylesheet" href="../assets/style.css?v=3">
 </head>
 <body>
 
 <header class="topbar">
   <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
   <div class="meta">
-    <span class="date">Donnerstag · 07. Mai 2026</span>
-    <span>⏱ ~11 min lesen · ~8 min hören</span>
+    <span class="date">Donnerstag · 7. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
     <span class="preview-tag">Edition #3</span>
   </div>
   <div class="controls">
@@ -36,18 +36,18 @@
 <main>
 
   <div class="hero">
-    <h1>Anthropic greift die Consulting-Riesen an: 1,5-Mrd.-$-JV mit Blackstone und Goldman Sachs.</h1>
-    <p class="subtitle">Außerdem: Claude Code 2.1.129 mit Session-Recap und Custom Themes, Google plant "AI Ultra Lite", Mistral feuert Medium 3.5 + Devstral 2, und OpenAI landet auf Amazon Bedrock.</p>
+    <h1>Anthropic zapft SpaceX an — Limits verdoppelt, Mythos warnt vor Sicherheitslücken.</h1>
+    <p class="subtitle">Außerdem: OpenAI veröffentlicht ein offenes GPU-Protokoll, härtet ChatGPT-Accounts ab — und xAI bringt Grok endlich zum Sprechen.</p>
   </div>
 
   <section class="glance">
     <h2>📋 Heute auf einen Blick · At a glance</h2>
     <ul>
-      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong> gründet $1,5-Mrd.-KI-Consulting-JV mit Blackstone, Goldman Sachs und Hellman &amp; Friedman</span></a></li>
-      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Code 2.1.129</strong>: Session-Recap, Custom Themes und neue Web-Oberfläche</span></a></li>
-      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Google</strong> plant neuen Abo-Tier "AI Ultra Lite" — Codename Neon — zwischen $20 und $250</span></a></li>
-      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Mistral Medium 3.5</strong>: 77,6 % SWE-Bench, Devstral 2, Vibe CLI und Work-Mode in Le Chat</span></a></li>
-      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI</strong> launcht Workspace Agents und legt Modelle auf Amazon Bedrock</span></a></li>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic × SpaceX</strong>: 300 MW Colossus-1-Compute — Claude Code limits verdoppelt</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Mythos findet 300 Firefox-Lücken</strong>: Dario warnt vor 6–12-Monat-Zeitfenster</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI MRC</strong>: offenes GPU-Netzprotokoll mit AMD, Nvidia, Intel und Co.</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Advanced Account Security</strong>: Phishing-sicheres Login für ChatGPT und Codex</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>xAI Grok</strong>: STT/TTS-APIs für Entwickler — grok-voice-think-fast-1.0</span></a></li>
     </ul>
   </section>
 
@@ -55,116 +55,118 @@
     <h2 class="section-header">🟧 Anthropic & Claude</h2>
 
     <article class="article" id="article-1">
-      <a class="article-cover-link" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1554774853-719586f82d77?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic × Blackstone × Goldman Sachs · 1,5 Mrd. $</span></div></a>
+      <a class="article-cover-link" href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic × SpaceX · 300 MW Colossus-1 & doppelte Limits</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a1-de">Anthropic hat zusammen mit Blackstone, Hellman &amp; Friedman und Goldman Sachs ein neues KI-Dienstleistungsunternehmen aus dem Boden <mark class="vocab" data-translation="gestampft — conjured from nothing / built from scratch (lit. stomped out of the ground)">gestampft</mark> — <mark class="vocab" data-translation="dotiert — endowed / funded (as in a prize or deal)">dotiert</mark> mit 1,5 Mrd. $ und dem erklärten Ziel, mittelgroße Private-Equity-Betriebe mit Claude zu <mark class="vocab" data-translation="durchdringen — to permeate / to penetrate deeply">durchdringen</mark>. Das neue Unternehmen schickt eigene Ingenieure direkt in die Betriebe, um Workflows von Grund auf <mark class="vocab" data-translation="umzukrempeln — to overhaul / turn inside out (separable verb)">umzukrempeln</mark> — kein reines Lizenzgeschäft. Ein direkter Angriff auf McKinsey, BCG und die anderen großen Beratungshäuser.</p>
+          <p class="tts-text" id="a1-de">Anthropic hat mit SpaceX einen Compute-Deal <mark class="vocab" data-translation="geschlossen — concluded / signed (a deal)">geschlossen</mark> und damit Zugang zu über 300 Megawatt am Colossus-1-Rechenzentrum in Memphis gesichert — mehr als 220 000 NVIDIA-GPUs, die innerhalb eines Monats <mark class="vocab" data-translation="bereitstehen — become available / come online">bereitstehen</mark>. Die direkte Folge für Entwickler: Die Fünf-Stunden-Limits bei Claude Code für Pro-, Max-, Team- und Enterprise-Pläne werden <mark class="vocab" data-translation="verdoppelt — doubled">verdoppelt</mark>, Peak-Hour-Drosselungen fallen komplett weg und die Opus-API-Limits steigen deutlich. Als <mark class="vocab" data-translation="Draufgabe — bonus / extra on top (lit. 'added on')">Draufgabe</mark> plant Anthropic gemeinsam mit SpaceX orbitale Compute-Kapazitäten in Gigawatt-Größenordnung — Rechenpower direkt aus dem Orbit. Wer bisher ständig gegen die Limits angestanden hat, kann jetzt wieder durchatmen.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
-          <p class="tts-text" id="a1-en">Anthropic has launched a new AI services company with Blackstone, Hellman &amp; Friedman and Goldman Sachs — backed by $1.5B and explicitly targeting private-equity-owned mid-market companies with Claude. Unlike a pure license deal, the venture embeds engineers directly inside portfolio companies to redesign workflows from the ground up. That's a direct shot at McKinsey, BCG and the rest of the big consulting firms.</p>
+          <p class="tts-text" id="a1-en">Anthropic has signed a compute deal with SpaceX, securing access to over 300 megawatts at the Colossus 1 data center in Memphis — more than 220,000 NVIDIA GPUs coming online within the month. The immediate upshot for developers: five-hour limits on Claude Code for Pro, Max, Team, and Enterprise plans are doubling, peak-hour throttling for Pro and Max is gone entirely, and Opus API limits get a major lift. Bonus: Anthropic also expressed interest in co-developing orbital compute capacity in the gigawatt range with SpaceX — compute from orbit. For power users who kept bumping into the old caps, this is genuinely good news.</p>
         </div>
       </div>
-      <a class="source" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener">→ anthropic.com · 04.05.2026</a>
+      <a class="source" href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">→ anthropic.com · 06.05.2026</a>
     </article>
 
     <article class="article" id="article-2">
-      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.129 · Session-Recap · Custom Themes</span></div></a>
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic Mythos · 300 Firefox-Lücken · Moment of Danger</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a2-de">Claude Code 2.1.129 packt gleich drei <mark class="vocab" data-translation="Hingucker — eye-catcher / showpiece (lit. something that makes you look)">Hingucker</mark> in ein Release. Session-Recap fasst zusammen, was Claude während deiner Abwesenheit im Terminal <mark class="vocab" data-translation="erledigt — done / taken care of">erledigt</mark> hat — ideal beim <mark class="vocab" data-translation="Wiedereinstieg — re-entry / getting back into something (compound noun)">Wiedereinstieg</mark> in lange Runs. Custom Themes erlauben eigene Farbpaletten über <code>/theme</code> oder ein Plugin-Archiv. Dazu: die Web-Oberfläche bekommt eine neue Sessions-Sidebar und ein Drag-and-Drop-Layout, und <code>/resume</code> bei großen Sessions ist bis zu 67 % schneller. Der Context-<mark class="vocab" data-translation="Zähler — counter / tally display">Zähler</mark> für Opus-4.7-Sessions stimmt jetzt auch wieder.</p>
+          <p class="tts-text" id="a2-de">Dario Amodei warnte auf einem Anthropic-Finanzgipfel öffentlich: Das neue Sicherheitsmodell Mythos hat allein in Firefox fast 300 Sicherheitslücken <mark class="vocab" data-translation="aufgedeckt — uncovered / exposed">aufgedeckt</mark> — und in der gesamten Softwarelandschaft summieren sich die noch ungepatchten Lücken auf Zehntausende. Das <mark class="vocab" data-translation="Zeitfenster — time window / window of opportunity">Zeitfenster</mark> für Reaktionen sei auf sechs bis zwölf Monate begrenzt; danach könnten feindliche Akteure dieselbe KI-Fähigkeit nutzen, um die Lücken <mark class="vocab" data-translation="auszubeuten — to exploit / to weaponize">auszubeuten</mark>. Amodei nannte das einen "Moment of Danger" — aber einen mit <mark class="vocab" data-translation="Ausweg — way out / exit">Ausweg</mark>, sofern Entwickler und Firmen jetzt handeln. Mythos erkennt Schwachstellen wie ein erfahrener Entwickler, nicht wie ein klassischer Scanner.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
-          <p class="tts-text" id="a2-en">Claude Code 2.1.129 ships three headline features in one release. Session Recap summarizes what Claude did while you were away — ideal when you return to a long terminal run. Custom Themes let you build and ship your own color palettes via <code>/theme</code> or a plugin archive. On top of that: the web UI gets a new sessions sidebar and drag-and-drop layout, <code>/resume</code> is up to 67% faster on large sessions, and the context counter for Opus 4.7 sessions is accurate again.</p>
+          <p class="tts-text" id="a2-en">Dario Amodei issued a public warning at an Anthropic financial summit: Anthropic's new security model, Mythos, has already uncovered nearly 300 vulnerabilities in Firefox alone — and the total count of unpatched issues across the broader software landscape runs into the tens of thousands. The window to respond is only six to twelve months; after that, adversaries could exploit the same AI capabilities to weaponize those gaps. Amodei called it a "moment of danger" — but one with a way out, if developers and companies act now. Mythos finds flaws the way a developer thinks, not the way a scanner sweeps.</p>
         </div>
       </div>
-      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+      <a class="source" href="https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html" target="_blank" rel="noopener">→ cnbc.com · 05.05.2026</a>
     </article>
+
   </section>
 
   <section class="section">
     <h2 class="section-header">🌐 Allgemein · General AI</h2>
 
     <article class="article" id="article-3">
-      <a class="article-cover-link" href="https://9to5google.com/2026/05/05/google-ai-ultra-lite-gemini-usage-limits/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google Gemini · AI Ultra Lite · Codename Neon</span></div></a>
+      <a class="article-cover-link" href="https://openai.com/index/mrc-supercomputer-networking/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI MRC · Offenes GPU-Netzprotokoll für KI-Cluster</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a3-de">Google bastelt <mark class="vocab" data-translation="still und heimlich — quietly / under the radar (lit. still and secretly)">still und heimlich</mark> an einem neuen Abo-Tier, intern schon als "Google AI Ultra Lite" <mark class="vocab" data-translation="bezeichnet — labeled / referred to as">bezeichnet</mark>, Codename "Neon". Es soll sich zwischen dem 20-Dollar-Pro- und dem 250-Dollar-Ultra-Plan <mark class="vocab" data-translation="einklinken — to slot into / hook into (separable verb)">einklinken</mark> — irgendwo bei 50 bis 150 Dollar. Das Besondere: ein echtes Token-Budget mit stündlichen, wöchentlichen und globalen Obergrenzen sowie ein eigenes Dashboard. Wer sein Limit <mark class="vocab" data-translation="überschreitet — exceeds / goes over">überschreitet</mark>, kauft Zusatzkredite. Noch kein Preisschild, noch kein Launchdatum.</p>
+          <p class="tts-text" id="a3-de">OpenAI hat gemeinsam mit AMD, Broadcom, Intel, Microsoft und NVIDIA das Multipath Reliable Connection Protocol (MRC) <mark class="vocab" data-translation="veröffentlicht — published / released open-source">veröffentlicht</mark> — ein offenes Netzwerkprotokoll, das speziell für große GPU-Cluster beim KI-Training entwickelt wurde. MRC reduziert die Zeit, in der GPUs <mark class="vocab" data-translation="untätig warten — idle / waiting without doing work">untätig warten</mark> müssen, weil Pakete verloren gehen oder Verbindungen <mark class="vocab" data-translation="flackern — to flicker / to become unstable">flackern</mark>; in OpenAIs eigenen Clustern ist es bereits auf allen NVIDIA-GB200-Supercomputern <mark class="vocab" data-translation="im Einsatz — deployed / in active use">im Einsatz</mark>. Das Protokoll wird über das Open Compute Project freigegeben — damit kann es jeder einsetzen, nicht nur OpenAI. Ein seltener Moment, in dem Infrastruktur-Know-how direkt in der Community landet.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
-          <p class="tts-text" id="a3-en">Google is quietly building a new subscription tier codenamed "Neon" — already labeled "Google AI Ultra Lite" inside the app. It's designed to slot between the $20 Pro and the $250 Ultra plans, probably somewhere in the $50–$150 range. The key differentiator is a real token budget with hourly, weekly, and overall limits, plus a dedicated usage dashboard. Go over your cap, buy overage credits. No price or launch date yet.</p>
+          <p class="tts-text" id="a3-en">OpenAI has published the Multipath Reliable Connection protocol (MRC) jointly with AMD, Broadcom, Intel, Microsoft, and NVIDIA — an open networking protocol built specifically for large GPU clusters during AI training. MRC cuts the idle time GPUs spend waiting on lost packets or flickering connections; OpenAI is already running it on all of its NVIDIA GB200 supercomputers. The protocol ships via the Open Compute Project, so anyone in the industry can adopt it. A rare moment of OpenAI sharing infrastructure know-how directly with the community.</p>
         </div>
       </div>
-      <a class="source" href="https://9to5google.com/2026/05/05/google-ai-ultra-lite-gemini-usage-limits/" target="_blank" rel="noopener">→ 9to5google.com · 05.05.2026</a>
+      <a class="source" href="https://openai.com/index/mrc-supercomputer-networking/" target="_blank" rel="noopener">→ openai.com · 06.05.2026</a>
     </article>
 
     <article class="article" id="article-4">
-      <a class="article-cover-link" href="https://mistral.ai/news/devstral-2-vibe-cli" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Mistral Medium 3.5 · Devstral 2 · Vibe CLI</span></div></a>
+      <a class="article-cover-link" href="https://openai.com/index/advanced-account-security/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · Advanced Account Security für ChatGPT & Codex</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a4-de">Mistral hat eine <mark class="vocab" data-translation="Dreierkombination — triple combination / one-two-three punch">Dreierkombination</mark> gezündet: Mistral Medium 3.5 (128B dicht) landet bei 77,6 % auf SWE-Bench Verified und <mark class="vocab" data-translation="löst ... ab — replaces / supersedes (separable: ablösen)">löst</mark> das alte Modell als Default in Vibe und Le Chat <mark class="vocab" data-translation="ab — off (separable prefix of ablösen — to replace)">ab</mark>. Devstral 2 schärft den Fokus auf Code-Agenten. Die neue Vibe CLI bringt <mark class="vocab" data-translation="eigenständige — autonomous / independently operating">eigenständige</mark> Cloud-Agenten, die Bug-Fixes in isolierten Sandboxes abarbeiten — mit GitHub- und Slack-Integration. Le Chat bekommt einen Work-Mode für mehrstufige Workflows, der vor heiklen Aktionen explizit fragt.</p>
+          <p class="tts-text" id="a4-de">OpenAI hat ein optionales Sicherheitspaket für ChatGPT-Accounts gestartet: Advanced Account Security bündelt Phishing-resistente Anmeldung, strengere Wiederherstellungskontrollen, kürzere Sessions und Login-Alerts in einer einzigen Einstellung. Wer es aktiviert, schützt automatisch auch seinen Codex-Account — und wer zur Trusted-Access-for-Cyber-Gruppe gehört, muss das Feature ab dem 1. Juni sowieso <mark class="vocab" data-translation="verpflichtend — mandatorily / required by policy">verpflichtend</mark> aktivieren. Für Teams, die KI-Zugänge mit <mark class="vocab" data-translation="sensiblen — sensitive">sensiblen</mark> Code-Repos oder Firmen-Secrets verbinden, ist das ein <mark class="vocab" data-translation="überfälliger — overdue (lit. 'past-due')">überfälliger</mark> Schritt. Das Setup ist opt-in und lässt sich in wenigen Klicks abschließen — <mark class="vocab" data-translation="lohnenswert — worthwhile / worth doing">lohnenswert</mark> auch ohne Pflicht.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
-          <p class="tts-text" id="a4-en">Mistral fired off a triple release: Mistral Medium 3.5 (128B dense) hits 77.6% on SWE-Bench Verified and replaces the previous model as the default in both Vibe and Le Chat. Devstral 2 sharpens the focus specifically on coding agents. The new Vibe CLI brings autonomous cloud agents that handle bug fixes in isolated sandboxes, with GitHub and Slack integrations. Le Chat also picks up a Work Mode for multi-step workflows that always asks before taking sensitive actions.</p>
+          <p class="tts-text" id="a4-en">OpenAI has launched an optional security package for ChatGPT accounts: Advanced Account Security bundles phishing-resistant sign-in, tighter recovery controls, shorter session lengths, and login alerts into a single toggle. Enabling it automatically covers your Codex account too — and members of OpenAI's Trusted Access for Cyber tier will have it required from June 1 anyway. For teams connecting AI access to sensitive code repos or company secrets, this is an overdue step. The setup is opt-in and takes just a few clicks — worth doing even without a mandate.</p>
         </div>
       </div>
-      <a class="source" href="https://mistral.ai/news/devstral-2-vibe-cli" target="_blank" rel="noopener">→ mistral.ai · 02.05.2026</a>
+      <a class="source" href="https://openai.com/index/advanced-account-security/" target="_blank" rel="noopener">→ openai.com · 01.05.2026</a>
     </article>
 
     <article class="article" id="article-5">
-      <a class="article-cover-link" href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · Workspace Agents · Amazon Bedrock</span></div></a>
+      <a class="article-cover-link" href="https://x.ai/news" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>xAI Grok · Speech-to-Text &amp; Text-to-Speech APIs</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="a5-de">OpenAI baut GPTs zur nächsten Stufe aus: Workspace Agents, angetrieben von Codex, können eigenständig Berichte schreiben, Code reviewen und Nachrichten <mark class="vocab" data-translation="beantworten — to reply to / answer">beantworten</mark>. Gleichzeitig landet OpenAI auf Amazon Bedrock — GPT-5.5 und andere Modelle sind dort jetzt <mark class="vocab" data-translation="buchbar — bookable / available to use">buchbar</mark>, Codex kommt auf AWS, und Bedrock Managed Agents lassen sich von OpenAI <mark class="vocab" data-translation="speisen — to feed / to power (formal register)">speisen</mark>. Damit <mark class="vocab" data-translation="lockert — loosens / relaxes (a restriction)">lockert</mark> OpenAI die bisherige Microsoft-Exklusivität — und drängt in Territorium, in dem Anthropic und Google schon lange heimisch sind.</p>
+          <p class="tts-text" id="a5-de">xAI hat <mark class="vocab" data-translation="eigenständige — standalone / independent">eigenständige</mark> Speech-to-Text- und Text-to-Speech-APIs für Grok veröffentlicht — inklusive einem neuen Flaggschiff-Voice-Modell namens grok-voice-think-fast-1.0, das komplexe, mehrstufige Workflows über Sprache steuern kann. Die STT-API unterstützt Echtzeit- und Batch-Transkription, mehrsprachige Eingabe, Speaker Diarization und Timestamps; die TTS-Seite <mark class="vocab" data-translation="liefert — delivers / provides">liefert</mark> expressive Speech Tags und intelligente Normalisierung für Zahlen, Daten und Währungen. Für Entwickler, die Voice-Apps bauen oder Call-Center-Workflows automatisieren wollen, ist das ein <mark class="vocab" data-translation="konkurrenzfähiges — competitive">konkurrenzfähiges</mark> Angebot neben Whisper und ElevenLabs. Parallel erscheint SuperGrok Heavy mit Zugang zum Grok-Heavy-Modell und deutlich höheren Rate <mark class="vocab" data-translation="Limits — (rate) limits (English term used in German developer speech)">Limits</mark>.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
-          <p class="tts-text" id="a5-en">OpenAI is evolving GPTs into Workspace Agents — Codex-powered and capable of autonomously drafting reports, reviewing code, and responding to messages. At the same time, OpenAI landed on Amazon Bedrock: GPT-5.5 and other frontier models are now available there, Codex comes to AWS, and Bedrock Managed Agents can be powered by OpenAI. That's a deliberate loosening of the Microsoft exclusivity — and a push into territory where Anthropic and Google have long been at home.</p>
+          <p class="tts-text" id="a5-en">xAI has released standalone Speech-to-Text and Text-to-Speech APIs for Grok — including a new flagship voice model called grok-voice-think-fast-1.0 that handles complex, multi-step workflows. The STT API covers real-time and batch transcription, multilingual input, speaker diarization, and timestamps; the TTS side adds expressive speech tags and intelligent normalization for numbers, dates, and currencies. For developers building voice apps or automating call-center workflows, this is a competitive offering right alongside Whisper and ElevenLabs. Also shipping: SuperGrok Heavy with access to the Grok Heavy model and significantly higher rate limits.</p>
         </div>
       </div>
-      <a class="source" href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 05.05.2026</a>
+      <a class="source" href="https://x.ai/news" target="_blank" rel="noopener">→ x.ai · 02.05.2026</a>
     </article>
+
   </section>
 
   <section class="section">
     <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
     <article class="article" id="hack">
-      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.129 · /theme baut eigene Farbpaletten</span></div></a>
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.132" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.132 · Session-ID in Hooks &amp; Alternate-Screen opt-out</span></div></a>
       <div class="article-body">
         <div class="lang de">
           <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
-          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.129 lassen sich eigene Farbpaletten <mark class="vocab" data-translation="zusammenstellen — to assemble / put together (separable verb)">zusammenstellen</mark> und per Plugin <mark class="vocab" data-translation="ausliefern — to ship / deliver out (separable verb)">ausliefern</mark>. Ruf einfach <code>/theme</code> auf, um die aktuelle Palette zu sehen oder eine neue anzulegen. Willst du ein Theme <mark class="vocab" data-translation="teilen — to share">teilen</mark>, packst du es als JSON in ein Plugin-Verzeichnis — das <code>--plugin-dir</code>-Flag nimmt jetzt auch <code>.zip</code>-Archive entgegen. Praktisch, wenn du im Team einheitliche Terminal-Profile <mark class="vocab" data-translation="durchsetzen — to enforce / push through">durchsetzen</mark> willst, ohne in jeder Session manuell nachzusteuern.</p>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.132 macht Hooks intelligenter: Die Session-ID steht jetzt auch in Bash-Subprozessen als Umgebungsvariable zur Verfügung, sodass dein Hook-Skript immer weiß, in welcher Session es läuft — nützlich, wenn du mehrere parallele Agenten oder Workflows koordinierst. Außerdem gibt es einen neuen Env-Schalter, mit dem du den vollständigen Alternate-Screen-Renderer abschalten kannst; das ist praktisch für Setups wie Emacs eat oder andere Terminals, die lieber im nativen Scrollback bleiben. Beide Variablen sind simpel in der Shell oder der Config zu setzen.</p>
         </div>
         <div class="lang en">
           <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
-          <p class="tts-text" id="h1-en">Claude Code 2.1.129 lets you build and ship custom color palettes via plugin. Run <code>/theme</code> to inspect the current palette or create a new one. To share a theme, bundle it as JSON in a plugin directory — the <code>--plugin-dir</code> flag now also accepts <code>.zip</code> archives. Handy if you want to enforce consistent terminal profiles across a team without manually tweaking settings every session.</p>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.132 makes hooks smarter: the session ID is now available as an environment variable in Bash subprocess environments, so your hook script always knows which session it's running in — useful when coordinating multiple parallel agents or workflows. There's also a new env switch to disable the fullscreen alternate-screen renderer entirely; handy for setups like Emacs eat or other terminals that prefer native scrollback. Both variables are simple to set in the shell or config.</p>
         </div>
       </div>
       <section class="cmd-card">
         <header class="cmd-card-header">BEFEHL · COMMAND</header>
-        <pre class="cmd-syntax">/theme
-claude --plugin-dir &lt;path&gt;</pre>
+        <pre class="cmd-syntax">CLAUDE_CODE_SESSION_ID
+CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1</pre>
         <dl class="cmd-flags">
-          <dt><code>/theme</code></dt>
-          <dd>inspect current palette or create a custom theme interactively</dd>
-          <dt><code>--plugin-dir &lt;path&gt;</code></dt>
-          <dd>load a plugin from a directory or <code>.zip</code> archive — can bundle a color theme</dd>
+          <dt><code>CLAUDE_CODE_SESSION_ID</code></dt>
+          <dd>auto-injected by Claude Code into the Bash subprocess environment — read it in hook scripts</dd>
+          <dt><code>CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1</code></dt>
+          <dd>opt out of the fullscreen alternate-screen renderer; terminal stays in native scrollback</dd>
         </dl>
-<pre class="cmd-examples"><span class="com"># Aktuelle Palette anzeigen · Inspect current palette</span>
-$ /theme
+<pre class="cmd-examples"><span class="com"># Session-ID im Hook-Skript auslesen · Read the session ID inside a hook script</span>
+$ echo "Aktive Session: $CLAUDE_CODE_SESSION_ID"
 
-<span class="com"># Theme-Plugin aus ZIP laden · Load theme plugin from a zip</span>
-$ claude --plugin-dir ./team-theme.zip</pre>
+<span class="com"># Alternate-Screen deaktivieren beim Start · Disable fullscreen renderer on launch</span>
+$ CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1 claude</pre>
       </section>
-      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.132" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
     </article>
   </section>
 
@@ -173,67 +175,67 @@ $ claude --plugin-dir ./team-theme.zip</pre>
     <div class="vocab-grid">
 
       <div class="vocab-card">
-        <div class="vocab-word">aus dem Boden stampfen</div>
-        <div class="vocab-translation">to conjure from scratch · to build out of thin air</div>
+        <div class="vocab-word">verdoppeln</div>
+        <div class="vocab-translation">to double · to multiply by two</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Anthropic hat das neue Unternehmen zusammen mit Goldman Sachs aus dem Boden gestampft.</span>
+          <span class="tts-text">Anthropic hat die Claude-Code-Limits für alle bezahlten Pläne verdoppelt.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">Anthropic conjured the new company from scratch together with Goldman Sachs.</span>
+          <span class="tts-text">Anthropic doubled the Claude Code limits for all paid plans.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">Hingucker</div>
-        <div class="vocab-translation">eye-catcher · showpiece (lit. something that makes you look)</div>
+        <div class="vocab-word">Zeitfenster</div>
+        <div class="vocab-translation">time window · window of opportunity</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Das Release hat gleich drei Hingucker auf einmal.</span>
+          <span class="tts-text">Laut Dario haben wir nur sechs bis zwölf Monate im Zeitfenster.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">The release has three showpieces all at once.</span>
+          <span class="tts-text">According to Dario, we only have a six-to-twelve-month time window.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">still und heimlich</div>
-        <div class="vocab-translation">quietly · under the radar (lit. still and secretly)</div>
+        <div class="vocab-word">aufdecken</div>
+        <div class="vocab-translation">to uncover · to expose</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Google hat den neuen Plan still und heimlich in der App versteckt.</span>
+          <span class="tts-text">Mythos hat in Firefox allein fast 300 Sicherheitslücken aufgedeckt.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">Google quietly buried the new plan inside the app.</span>
+          <span class="tts-text">Mythos uncovered nearly 300 vulnerabilities in Firefox alone.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">eigenständig</div>
-        <div class="vocab-translation">autonomously · independently</div>
+        <div class="vocab-word">überfällig</div>
+        <div class="vocab-translation">overdue · past due (lit. 'past-fallen')</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Die Vibe-Agenten arbeiten eigenständig in isolierten Sandboxes.</span>
+          <span class="tts-text">Der Hardware-Key-Support war für viele Teams schon lange überfällig.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">The Vibe agents work autonomously in isolated sandboxes.</span>
+          <span class="tts-text">Hardware-key support was long overdue for many teams.</span>
         </div>
       </div>
 
       <div class="vocab-card">
-        <div class="vocab-word">umkrempeln</div>
-        <div class="vocab-translation">to overhaul · to turn inside out (lit. to roll up the sleeve)</div>
+        <div class="vocab-word">Draufgabe</div>
+        <div class="vocab-translation">bonus · extra on top (lit. 'added on top')</div>
         <div class="vocab-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">Das Consulting-JV will Unternehmensworkflows von Grund auf umkrempeln.</span>
+          <span class="tts-text">Als Draufgabe plant Anthropic orbitale GPU-Kapazitäten mit SpaceX.</span>
         </div>
         <div class="vocab-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">The consulting JV wants to overhaul company workflows from the ground up.</span>
+          <span class="tts-text">As a bonus, Anthropic is planning orbital GPU capacity with SpaceX.</span>
         </div>
       </div>
 
@@ -244,62 +246,55 @@ $ claude --plugin-dir ./team-theme.zip</pre>
     <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
 
     <div class="idiom-card">
-      <div class="idiom-headword">etwas aus dem Boden stampfen</div>
-      <div class="idiom-meaning">to conjure something from scratch — used when something is built incredibly fast from nothing, as if stamped out of the ground</div>
+      <div class="idiom-headword">die Kurve kriegen</div>
+      <div class="idiom-meaning">to manage in time · to pull through at the last moment — wörtlich: "to get the curve" (like cornering at speed without crashing)</div>
       <div class="idiom-examples">
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Anthropic hat das neue KI-Unternehmen innerhalb von Monaten aus dem Boden gestampft."</span>
+          <span class="tts-text">"Wenn wir die Patches schnell genug ausrollen, kriegen wir die Kurve noch vor dem Angriff."</span>
         </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"Anthropic conjured the new AI company from nothing in just a few months."</span>
+          <span class="tts-text">"If we roll out the patches fast enough, we'll pull through before the attack."</span>
         </div>
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Unser Team hat das MVP in drei Wochen aus dem Boden gestampft — jetzt kommt der echte Test."</span>
+          <span class="tts-text">"Das Release war knapp, aber das Team hat die Kurve gekriegt."</span>
         </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"Our team stamped out an MVP in three weeks — now comes the real test."</span>
+          <span class="tts-text">"The release was tight, but the team pulled it off."</span>
         </div>
       </div>
     </div>
 
     <div class="idiom-card">
-      <div class="idiom-headword">still und heimlich</div>
-      <div class="idiom-meaning">quietly, without drawing attention — used when someone does something without announcing it; equivalent of "under the radar" or "on the quiet"</div>
+      <div class="idiom-headword">to read the room</div>
+      <div class="idiom-meaning">to sense the mood and respond appropriately — German equivalent: "die Stimmung lesen"</div>
       <div class="idiom-examples">
-        <div class="idiom-example de">
-          <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Google hat das neue Abo still und heimlich im App-Code versteckt."</span>
-        </div>
         <div class="idiom-example en">
           <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"Google quietly buried the new subscription tier in the app code."</span>
+          <span class="tts-text">"OpenAI read the room with its account security launch — power users had been asking for hardware-key support for months."</span>
         </div>
         <div class="idiom-example de">
           <button class="speak-btn" data-lang="de">🔊</button>
-          <span class="tts-text">"Das Feature wurde still und heimlich deployed — ohne ein einziges Changelog-Wort."</span>
-        </div>
-        <div class="idiom-example en">
-          <button class="speak-btn" data-lang="en">🔊</button>
-          <span class="tts-text">"The feature was deployed under the radar — without a single changelog entry."</span>
+          <span class="tts-text">"OpenAI hat die Stimmung richtig gelesen: Power-User wollten Hardware-Key-Support seit Monaten."</span>
         </div>
       </div>
     </div>
+
   </section>
 
 </main>
 
 <footer>
-  <p>Quellen · Sources: anthropic.com · github.com · 9to5google.com · mistral.ai · openai.com</p>
+  <p>Quellen · Sources: anthropic.com · cnbc.com · openai.com · x.ai</p>
   <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
   <p style="margin-top: 10px">Edition #3 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
   <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
 </footer>
 
-<script src="../assets/site.js?v=2" defer></script>
+<script src="../assets/site.js?v=3" defer></script>
 
 </body>
 </html>
