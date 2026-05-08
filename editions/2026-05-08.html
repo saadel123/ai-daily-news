@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 08.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 08. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #4</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic greift Wall Street an — und OpenAI lässt Stimmen denken.</h1>
+    <p class="subtitle">Dazu: AlphaEvolve knackt Quantenprobleme, Gemini Flash-Lite wird GA und Claude Code lädt Plugins direkt aus dem Web.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic Finance Agents</strong>: 10 Opus-4.7-Agenten für Banken und Asset Manager</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic + Blackstone + Goldman</strong>: 1,5-Mrd.-$-JV für Enterprise-KI-Services</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI GPT-Realtime-2</strong>: Echtzeit-Voice mit GPT-5-Reasoning und Live-Übersetzung</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>AlphaEvolve</strong>: 10× niedrigere Fehlerrate bei Googles Quantenprozessor-Schaltkreisen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Gemini 3.1 Flash-Lite</strong> wird GA — 2,5× schneller, 45 % mehr Output-Tempo</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/finance-agents" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · 10 Agenten für den Finanzsektor</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat zehn <mark class="vocab" data-translation="vorkonfiguriert — pre-configured / ready to use">vorkonfigurierte</mark> KI-Agenten für den Finanzsektor veröffentlicht, gebaut auf Claude Opus 4.7 — dem bislang stärksten Claude-Modell für anspruchsvolle Finanzarbeit. Die Templates reichen vom Pitch Builder, der Vergleichsmodelle und Pitchbook-Entwürfe <mark class="vocab" data-translation="aufbereitet — prepares / compiles / processes">aufbereitet</mark>, bis hin zum Earnings Reviewer, der Transkripte liest und Modell-Updates markiert. FIS, Moody's und weitere Finanzdienstleister sind bereits als Partner an Bord. Der Markt hat nicht gezögert: FactSet <mark class="vocab" data-translation="verlor — lost / dropped (past tense of verlieren)">verlor</mark> 8 % und S&P Global gab nach — ein klares Signal, dass zehn fertige Agenten für Finanzanalysten kein Buzzword sind.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic launched ten pre-configured AI agents for the financial sector, powered by Claude Opus 4.7 — the most capable Claude model for high-stakes financial work so far. The templates range from a pitch builder that assembles comps models and pitchbook drafts, to an earnings reviewer that reads transcripts and flags relevant model updates. FIS, Moody's, and other financial service firms are already on board as partners. The market didn't hesitate: FactSet dropped 8% and S&P Global gave back earlier gains — a clear signal that ten ready-made agents for financial analysts is not just a buzzword.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/finance-agents" target="_blank" rel="noopener">→ anthropic.com · 05.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic + Blackstone + Goldman · 1,5 Mrd. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat gemeinsam mit Blackstone, Goldman Sachs, Hellman &amp; Friedman und General Atlantic ein neues KI-Dienstleistungsunternehmen <mark class="vocab" data-translation="gegründet — founded / co-founded">gegründet</mark>, das mittelgroße Firmen dabei unterstützen soll, Claude in ihre wichtigsten Geschäftsprozesse zu integrieren. Das <mark class="vocab" data-translation="Konsortium — consortium / group of investors">Konsortium</mark> umfasst außerdem Apollo Global Management, GIC und Sequoia Capital — insgesamt stehen 1,5 Mrd. $ bereit. Während Anthropic bislang vor allem mit Hyperscalern und Tech-Konzernen arbeitete, zielt dieses Vehikel auf den Mid-Market ab: klassische Industrie, Finanzwesen, Gesundheit. Ein weiterer Beweis dafür, dass Anthropic den Sprung vom Modell-Anbieter zum Enterprise-KI-Partner <mark class="vocab" data-translation="ernst nimmt — takes seriously">ernst nimmt</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has co-founded a new AI services company alongside Blackstone, Goldman Sachs, Hellman &amp; Friedman, and General Atlantic to help mid-sized firms integrate Claude into their most critical operations. The consortium also includes Apollo Global Management, GIC, and Sequoia Capital, with $1.5 billion committed in total. While Anthropic has mostly worked with hyperscalers and tech companies until now, this vehicle targets the mid-market — traditional industry, finance, and healthcare. Further proof that Anthropic is serious about the leap from model provider to enterprise AI partner.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener">→ anthropic.com · 04.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-Realtime-2 · Voice API</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat drei neue Audio-Modelle für die API vorgestellt: GPT-Realtime-2, GPT-Realtime-Translate und GPT-Realtime-Whisper. Der Star ist GPT-Realtime-2 — ein einziges Modell, das Audio direkt verarbeitet und ausgibt, mit GPT-5-Reasoning mitten im Audio-Loop statt zwischen Transkription und Synthese. Das <mark class="vocab" data-translation="Kontextfenster — context window">Kontextfenster</mark> wuchs von 32K auf 128K, was längere Sessions und komplexe agentenbasierte Flows erst <mark class="vocab" data-translation="ermöglicht — enables / makes possible">ermöglicht</mark>. GPT-Realtime-Translate liefert <mark class="vocab" data-translation="Echtzeitübersetzung — live / real-time translation">Echtzeitübersetzung</mark> aus über 70 Sprachen in 13 Ausgabesprachen — ideal für multilinguale Voice-Agenten. GPT-Realtime-Whisper streamt Transkription live, während der User noch spricht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI introduced three new audio models for the API: GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper. The headliner is GPT-Realtime-2 — a single model that takes audio in and puts audio out, with GPT-5-class reasoning happening inside the audio loop rather than between transcription and synthesis steps. The context window grew from 32K to 128K, making longer sessions and complex agentic flows feasible without external state stitching. GPT-Realtime-Translate delivers live translation from 70+ input languages into 13 output languages — ideal for multilingual voice agents. GPT-Realtime-Whisper streams transcription live as the speaker talks.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener">→ openai.com · 07.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://deepmind.google/blog/alphaevolve-impact/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>AlphaEvolve · Quantenphysik · Genomik</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google DeepMind hat neue Ergebnisse seines Gemini-gestützten Coding-Agents AlphaEvolve vorgestellt, der seit einem Jahr wissenschaftliche Entdeckungen <mark class="vocab" data-translation="beschleunigt — accelerates / speeds up">beschleunigt</mark>. In der Quantenphysik optimierte AlphaEvolve <mark class="vocab" data-translation="Quantenschaltkreise — quantum circuits (technical compound noun)">Quantenschaltkreise</mark> für Googles Willow-Prozessor und schlug Designs mit 10× niedrigerer Fehlerrate vor als alle bisherigen Baselines. In der Genomik wurde DeepConsensus, ein Modell zur DNA-Sequenzkorrektur, um 30 % genauer bei der Variantenerkennung. In der Strombilanzierung stieg die Lösungsquote für das AC Optimal Power Flow-Problem von 14 % auf über 88 % — ein <mark class="vocab" data-translation="Durchbruch — breakthrough">Durchbruch</mark> für die Netzplanung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google DeepMind showcased new results from AlphaEvolve, its Gemini-powered coding agent that has been accelerating scientific discoveries for the past year. In quantum physics, AlphaEvolve optimized circuits for Google's Willow quantum processor, proposing designs with 10× lower error rates than all previous baseline optimizations. In genomics, it improved DeepConsensus — a DNA sequencing correction model — by 30% in variant detection accuracy. In grid optimization, it lifted the feasibility rate for the AC Optimal Power Flow problem from 14% to over 88% — a breakthrough for power grid planning.</p>
+        </div>
+      </div>
+      <a class="source" href="https://deepmind.google/blog/alphaevolve-impact/" target="_blank" rel="noopener">→ deepmind.google · 07.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini 3.1 Flash-Lite · GA · 2,5× schneller</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google hat Gemini 3.1 Flash-Lite in die General Availability <mark class="vocab" data-translation="ausgerollt — rolled out / deployed to production">ausgerollt</mark>. Das Modell liefert 2,5× schnellere Antwortzeiten und 45 % höhere Output-Rate als frühere Gemini-Versionen — bei 0,25 $ pro Million Input-Tokens, einer der günstigsten Preispunkte im Frontier-Bereich. Ideal für Anwendungen, bei denen Geschwindigkeit und Kosten mehr zählen als maximale Reasoning-Tiefe: Klassifizierung, Routing, Zusammenfassungen im großen Maßstab. Wer bislang ältere Flash-Modelle in der Produktion hat, sollte den Wechsel <mark class="vocab" data-translation="einpreisen — to price in / to plan and budget for">einpreisen</mark> — die Einsparung ist <mark class="vocab" data-translation="spürbar — noticeable / tangible">spürbar</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google rolled out Gemini 3.1 Flash-Lite into general availability. The model delivers 2.5× faster response times and 45% higher output rate than earlier Gemini versions — at $0.25 per million input tokens, one of the lowest price points in the frontier space. Ideal for applications where speed and cost matter more than maximum reasoning depth: classification, routing, large-scale summarization. If you still run older Flash models in production, the migration is worth planning for — the cost savings are tangible.</p>
+        </div>
+      </div>
+      <a class="source" href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available" target="_blank" rel="noopener">→ cloud.google.com · 07.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.129 · Plugins direkt aus dem Web</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.129 bringt einen neuen Flag, mit dem du ein Plugin direkt als ZIP-Archiv von einer URL laden kannst — ohne den Code erst lokal herunterladen zu müssen. Besonders nützlich in einer CI/CD-Pipeline oder auf einer Remote-Maschine, auf der du kein Dateisystem verwalten willst. Außerdem meldet Claude Code jetzt automatisch, wenn über Homebrew oder WinGet ein Update <mark class="vocab" data-translation="bereitsteht — is ready / is available">bereitsteht</mark>, und bietet an, die neue Version im Hintergrund zu installieren. Wer mehrere Setups betreibt, hat damit ein deutlich entspannteres Update-Erlebnis.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.129 ships a new flag that lets you load a plugin directly as a ZIP archive from a URL — no need to download the code locally first. Especially useful in a CI/CD pipeline or on a remote machine where you don't want to manage a filesystem. Claude Code also now notifies you automatically when an update is available via Homebrew or WinGet, offering to install the new version in the background. Managing multiple setups just got a lot less tedious.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --plugin-url &lt;url&gt; [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--plugin-url &lt;url&gt;</code></dt>
+          <dd>fetch a plugin .zip archive from a URL for the current session</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Plugin direkt aus dem Netz laden · Load a plugin directly from the web</span>
+$ claude --plugin-url https://example.com/my-plugin.zip
+
+<span class="com"># Mit Modell-Auswahl kombinieren · Combine with model selection</span>
+$ claude --plugin-url https://example.com/my-plugin.zip -m claude-opus-4-7</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">ankurbeln</div>
+        <div class="vocab-translation">to kick-start · to rev up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Joint-Venture soll das Enterprise-Geschäft ordentlich ankurbeln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new joint venture is supposed to kick-start the enterprise business properly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Echtzeitübersetzung</div>
+        <div class="vocab-translation">live translation · real-time translation</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GPT-Realtime-Translate liefert Echtzeitübersetzung aus über 70 Sprachen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GPT-Realtime-Translate delivers live translation from over 70 languages.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Quantenschaltkreis</div>
+        <div class="vocab-translation">quantum circuit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">AlphaEvolve hat Quantenschaltkreise mit 10× niedrigerer Fehlerrate entworfen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AlphaEvolve designed quantum circuits with 10× lower error rates.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einpreisen</div>
+        <div class="vocab-translation">to price in · to factor into the budget</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Den Migration-Aufwand solltest du bei der Jahresplanung fest einpreisen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You should firmly price in the migration effort when doing your yearly planning.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google rollt Gemini 3.1 Flash-Lite jetzt in die General Availability aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google is now rolling out Gemini 3.1 Flash-Lite into general availability.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">Neuland betreten</div>
+      <div class="idiom-meaning">to break new ground · to venture into uncharted territory — wörtlich: "to step onto new land"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"AlphaEvolve betritt mit der Quantenschaltkreis-Optimierung echtes Neuland."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"AlphaEvolve is genuinely breaking new ground with quantum circuit optimization."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit Plugins aus dem Netz betritt Claude Code ein Stück weit Neuland."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With plugins loaded from the web, Claude Code is breaking a bit of new ground."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to go all in</div>
+      <div class="idiom-meaning">to commit fully, betting everything on one move — German equivalent: "aufs Ganze gehen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic is going all in on financial services — agents, a joint venture, and a new model all at once."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic geht im Finanzbereich aufs Ganze — Agenten, Joint-Venture und neues Modell auf einmal."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If we migrate the whole pipeline today, we go all in — make sure the rollback plan is solid."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn wir heute die ganze Pipeline migrieren, gehen wir aufs Ganze — der Rollback-Plan muss sitzen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · openai.com · deepmind.google · cloud.google.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #4 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
