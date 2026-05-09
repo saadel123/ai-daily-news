@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 09.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 09. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #5</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Agenten träumen, Claude schreibt deine Mails: KI rückt näher an den Alltag.</h1>
+    <p class="subtitle">Außerdem: OpenAI baut ein Sicherheitsmodell für akkreditierte Verteidiger, Mistral springt ans SWE-Benchmark-Podest und ChatGPT zeigt, welche Erinnerungen deine Antworten prägen.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic Dreaming</strong>: Claude-Agenten konsolidieren Erfahrungen automatisch — klüger mit jeder Session</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude für Microsoft 365</strong>: Excel-, Word- und PowerPoint-Add-ins GA, Outlook startet als Public Beta</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI GPT-5.5-Cyber</strong>: spezialisiertes Sicherheitsmodell für akkreditierte Defender im Trusted-Access-Programm</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>Mistral Medium 3.5</strong>: 128-Milliarden-Open-Weight-Modell, 77,6% SWE-Bench Verified — knapp hinter der Spitze</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT Memory Sources</strong>: Nutzer sehen jetzt, welche Erinnerungen ihre Antworten beeinflusst haben</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://siliconangle.com/2026/05/06/anthropic-letting-claude-agents-dream-dont-sleep-job/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Dreaming · Agenten lernen im Schlaf</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat auf der Code-with-Claude-Konferenz in San Francisco ein neues Feature für Managed Agents vorgestellt: Dreaming. Zwischen zwei Sessions läuft ein automatischer Prozess, der vergangene Transcripts scannt, Muster <mark class="vocab" data-translation="zusammenführen — to merge / consolidate">zusammenführt</mark> und die Erinnerungen des Agenten <mark class="vocab" data-translation="einschleifen — to ingrain / internalize">einschleift</mark> — ähnlich wie das Gehirn im REM-Schlaf. Dreaming löst automatisch aus, sobald fünf oder mehr Sessions seit dem letzten <mark class="vocab" data-translation="Durchlauf — pass / run cycle">Durchlauf</mark> vergangen oder 24 Stunden verstrichen sind. Entwickler können die vorgeschlagenen Änderungen reviewen, bevor sie <mark class="vocab" data-translation="angewendet — applied / committed">angewendet</mark> werden — kein unkontrollierter Self-Improvement.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic unveiled Dreaming at its Code with Claude conference in San Francisco — a new research-preview feature for Managed Agents. Between sessions, a background process scans past transcripts, merges patterns, and consolidates the agent's memory — much like the brain during REM sleep. Dreaming triggers automatically when five or more sessions have elapsed since the last run, or 24 hours have passed. Developers can review the proposed memory changes before they're applied — no unchecked self-improvement allowed.</p>
+        </div>
+      </div>
+      <a class="source" href="https://siliconangle.com/2026/05/06/anthropic-letting-claude-agents-dream-dont-sleep-job/" target="_blank" rel="noopener">→ siliconangle.com · 06.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude für Microsoft 365 · Excel, Word, PowerPoint, Outlook</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat die Claude-Add-ins für Excel, Word und PowerPoint am 7. Mai in die General Availability <mark class="vocab" data-translation="heben — to lift / promote into GA">gehoben</mark> und Outlook gleichzeitig als Public Beta <mark class="vocab" data-translation="ausrollen — to roll out / deploy">ausgerollt</mark>. Das Alleinstellungsmerkmal ist der Cross-App-Kontext: Du fasst eine E-Mail in Outlook zusammen, wechselst zu Excel — und Claude weiß bereits, was in der Nachricht stand. Pro-, Team- und Enterprise-Nutzer bekommen die Add-ins über den Microsoft Marketplace ohne <mark class="vocab" data-translation="Aufpreis — extra charge / surcharge">Aufpreis</mark>. Ein echter Gewinn für alle, die täglich zwischen Outlook, Excel und Word <mark class="vocab" data-translation="jonglieren — to juggle / keep multiple things in the air">jonglieren</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic pushed the Claude add-ins for Excel, Word and PowerPoint to general availability on May 7, and simultaneously released an Outlook add-in in public beta. The standout feature is cross-app context: summarize an email in Outlook, switch to Excel — and Claude already knows what the message said. Pro, Team and Enterprise users get all add-ins at no extra charge via the Microsoft Marketplace. A genuine quality-of-life upgrade for anyone juggling Outlook, Excel and Word every day.</p>
+        </div>
+      </div>
+      <a class="source" href="https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook" target="_blank" rel="noopener">→ claude.com · 07.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI GPT-5.5-Cyber · Trusted Access for Cyber</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat GPT-5.5-Cyber in einem <mark class="vocab" data-translation="eingeschränkt — restricted / limited">eingeschränkten</mark> Vorschau-Programm namens Trusted Access for Cyber gestartet. <mark class="vocab" data-translation="akkreditiert — accredited / vetted / approved">Akkreditierte</mark> Defender dürfen damit Exploit-Proofs validieren, Malware <mark class="vocab" data-translation="auseinandernehmen — to take apart / reverse-engineer">auseinandernehmen</mark> und simulierte Angriffe gegen ihre eigene Infrastruktur fahren. Das Modell ist weniger restriktiv als die öffentliche GPT-5.5-Version, läuft nur für geprüfte Partner und erfordert ab dem 1. Juni Advanced Account Security. OpenAI schlägt damit einen ähnlichen Weg ein wie Anthropic mit Project Glasswing.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI launched GPT-5.5-Cyber in restricted preview through a program called Trusted Access for Cyber. Vetted defenders can use it to validate exploit proofs-of-concept, reverse-engineer malware, and run simulated attacks against their own infrastructure. The model is less restricted than public GPT-5.5, available only to approved partners, and will require Advanced Account Security from June 1. OpenAI is following a similar playbook to Anthropic's Project Glasswing.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/" target="_blank" rel="noopener">→ openai.com · 07.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://mistral.ai/news/mistral-medium-3-5" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral Medium 3.5 · 128B Open-Weight</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Mistral hat Medium 3.5 <mark class="vocab" data-translation="veröffentlichen — to release / publish">veröffentlicht</mark> — das bisher größte Open-Weight-Modell des Unternehmens: 128 Milliarden Parameter, 256.000-Token-Kontext und multimodale Eingabe inklusive Bild-Support. Mit 77,6 Prozent auf SWE-Bench Verified kommt es der <mark class="vocab" data-translation="Spitze — top / leader">Spitze</mark> nahe, knapp hinter Googles Gemini 3.1 Pro Preview mit 78,8 Prozent. Gleichzeitig startet in Vibes Cloud-Editor ein Remote-Agent-Modus, bei dem Medium 3.5 asynchron Code schreibt und Pull Requests öffnet. Die <mark class="vocab" data-translation="Gewichte — weights (ML term)">Gewichte</mark> sind unter einer modifizierten MIT-Lizenz frei <mark class="vocab" data-translation="zugänglich — accessible / publicly available">zugänglich</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Mistral released Medium 3.5 — its largest open-weight model to date: 128 billion parameters, a 256K token context window, and multimodal input with image support. At 77.6% on SWE-Bench Verified, it's closing in on the top, just behind Google's Gemini 3.1 Pro Preview at 78.8%. Vibe's cloud editor simultaneously ships a Remote Agent mode powered by Medium 3.5 for async, overnight coding sessions. Model weights are freely available under a modified MIT license.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mistral.ai/news/mistral-medium-3-5" target="_blank" rel="noopener">→ mistral.ai · 02.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Memory Sources · Warum sagt die KI das?</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat Memory Sources in alle kostenpflichtigen ChatGPT-Consumer-Pläne <mark class="vocab" data-translation="ausrollen — to roll out / deploy">ausgerollt</mark>: Nutzer sehen jetzt unter jeder <mark class="vocab" data-translation="personalisiert — personalized / tailored">personalisierten</mark> Antwort ein Quellen-Symbol und können nachschauen, welche gespeicherten Erinnerungen oder vergangenen Chats die Antwort beeinflusst haben. Was veraltet oder falsch ist, lässt sich direkt <mark class="vocab" data-translation="korrigieren — to correct / fix">korrigieren</mark> oder löschen. Der Memory-Kontext wurde zudem auf Gmail-Verläufe und hochgeladene Dateien <mark class="vocab" data-translation="erweitern — to expand / extend">erweitert</mark>. Geteilte Chats zeigen die Memory-Sources nicht — eine kluge Privacy-Entscheidung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI rolled out Memory Sources to all paid ChatGPT consumer plans: users now see a Sources icon below any personalized response and can check which saved memories or past chats shaped the answer. Anything outdated or incorrect can be corrected or deleted on the spot. Memory context has also been expanded to include Gmail history and uploaded files. Shared chats won't show Memory Sources — a thoughtful privacy call.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">→ openai.com · 05.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code v2.1.129 · Plugins als .zip aus URL laden</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code hat diese Woche zwei <mark class="vocab" data-translation="verwandt — related / closely connected">verwandte</mark> Plugin-Updates bekommen. Erstens akzeptiert das Plugin-Verzeichnis-Flag jetzt auch gezippte Archive — kein manuelles Entpacken mehr nötig. Zweitens lässt sich mit einem neuen Flag ein Plugin direkt aus einer URL für die aktuelle Session <mark class="vocab" data-translation="beziehen — to fetch / pull / source">beziehen</mark>, ohne es global zu installieren. Perfekt, um Community-Plugins schnell <mark class="vocab" data-translation="ausprobieren — to try out / test">auszuprobieren</mark> oder einen frischen Plugin-Build in einem CI-Schritt von einem Bucket zu laden. Die Änderungen kamen mit v2.1.128 und v2.1.129.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code received two closely related plugin updates this week. First, the plugin-directory flag now accepts .zip archives — no manual extraction needed. Second, a new flag lets you fetch a plugin from a URL for the current session only, without installing it globally. Perfect for quickly testing a community plugin or pulling a fresh plugin build from a storage bucket in a CI step. Both changes landed in v2.1.128 and v2.1.129.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --plugin-url &lt;url&gt; [options]
+claude --plugin-dir &lt;path-or-zip&gt; [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--plugin-url &lt;url&gt;</code></dt>
+          <dd>fetch and load a plugin .zip archive from a URL — active for the current session only</dd>
+          <dt><code>--plugin-dir &lt;path&gt;</code></dt>
+          <dd>load a plugin from a local directory or a .zip archive</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Plugin einmalig aus URL laden · Load a plugin from URL for this session</span>
+$ claude --plugin-url https://example.com/my-plugin.zip
+
+<span class="com"># Gezipptes Plugin lokal einbinden · Load a local .zip plugin archive</span>
+$ claude --plugin-dir ./my-plugin.zip</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">einschleifen</div>
+        <div class="vocab-translation">to ingrain · to internalize over time</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gute Commit-Gewohnheiten schleifen sich mit der Zeit ein — fast ohne, dass man es merkt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Good commit habits ingrain themselves over time — almost without you noticing.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufholen</div>
+        <div class="vocab-translation">to catch up · to close the gap</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mistral holt bei Coding-Benchmarks deutlich auf — nur noch knapp hinter der Spitze.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Mistral is catching up fast on coding benchmarks — just barely behind the leader.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auseinandernehmen</div>
+        <div class="vocab-translation">to take apart · to reverse-engineer</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Security-Team nimmt die verdächtige Binary auseinander, um den Exploit zu verstehen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The security team is taking apart the suspicious binary to understand the exploit.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">vernetzen</div>
+        <div class="vocab-translation">to link up · to interconnect across apps</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Microsoft-365-Integration vernetzt Claude nahtlos mit Excel, Outlook und Word.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Microsoft 365 integration seamlessly links Claude across Excel, Outlook and Word.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">konsolidieren</div>
+        <div class="vocab-translation">to consolidate · to bundle and compact</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Dreaming konsolidiert die Agenten-Erinnerungen automatisch — ähnlich wie REM-Schlaf im Gehirn.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Dreaming automatically consolidates agent memories — similar to REM sleep in the brain.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">eine Nacht drüber schlafen</div>
+      <div class="idiom-meaning">to sleep on it — wörtlich: "to sleep one night over it" — take time to think before deciding</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich wollte den API-Key schon wechseln — aber ich schlafe lieber noch eine Nacht drüber."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I was going to rotate the API key — but I'd rather sleep on it first."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Claude-Agenten schlafen jetzt buchstäblich eine Nacht drüber — und werden dabei klüger."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Claude agents now literally sleep on it overnight — and get smarter while they do."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pick someone's brain</div>
+      <div class="idiom-meaning">to ask targeted questions to extract knowledge — German equivalent: "jemanden löchern" (to pepper someone with questions)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I'm going to pick the security researcher's brain about the GPT-5.5-Cyber access criteria."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich löchere den Security-Researcher mal zu den GPT-5.5-Cyber-Zugangskriterien."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Pick my brain on the plugin architecture — I've been deep in it all week."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Löcher mich ruhig zur Plugin-Architektur — da stecke ich die ganze Woche drin."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: siliconangle.com · claude.com · openai.com · mistral.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #5 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
