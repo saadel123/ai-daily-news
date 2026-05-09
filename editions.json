@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-09",
+      "edition_number": 5,
+      "headlines": [
+        "Anthropic Dreaming: Claude-Agenten konsolidieren Erfahrungen automatisch — klüger mit jeder Session",
+        "Claude für Microsoft 365: Excel-, Word- und PowerPoint-Add-ins GA, Outlook als Public Beta",
+        "OpenAI GPT-5.5-Cyber: spezialisiertes Sicherheitsmodell für akkreditierte Defender",
+        "Mistral Medium 3.5: 128-Milliarden-Open-Weight-Modell, 77,6% SWE-Bench Verified",
+        "ChatGPT Memory Sources: Nutzer sehen, welche Erinnerungen ihre Antworten beeinflusst haben"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-09T16:06:41Z"
+    },
+    {
       "date": "2026-05-08",
       "edition_number": 4,
       "headlines": [
