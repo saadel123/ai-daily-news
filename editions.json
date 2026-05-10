@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-10",
+      "edition_number": 6,
+      "headlines": [
+        "Claude Security in der Public Beta: Opus 4.7 scannt Codebases auf Schwachstellen und schlägt Patches vor",
+        "Apple iOS 27 öffnet Siri für Drittanbieter — Claude, Gemini und ChatGPT als wählbare KI-Modelle",
+        "Gemini 3.2 Flash taucht vor dem I/O in iOS-App und AI Studio auf — $0,25 pro Million Tokens",
+        "ChatGPT Trusted Contact: Nutzer benennen Vertrauensperson für Krisensituationen",
+        "ChatGPT-Werbung rollt nach UK, Mexiko, Brasilien, Japan und Südkorea aus"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-10T16:00:00Z"
+    },
+    {
       "date": "2026-05-09",
       "edition_number": 5,
       "headlines": [
@@ -24,7 +41,7 @@
         "Anthropic Finance Agents: 10 Opus-4.7-Agenten für Banken und Asset Manager",
         "Anthropic + Blackstone + Goldman: 1,5-Mrd.-$-JV für Enterprise-KI-Services",
         "OpenAI GPT-Realtime-2: Echtzeit-Voice mit GPT-5-Reasoning und Live-Übersetzung",
-        "AlphaEvolve: 10× niedrigere Fehlerrate bei Googles Quantenprozessor-Schaltkreisen",
+        "AlphaEvolve: 10× niedrigere Fehlerrate bei Googles Quantenprozissor-Schaltkreisen",
         "Gemini 3.1 Flash-Lite wird GA — 2,5× schneller, 45 % mehr Output-Tempo"
       ],
       "story_count": 5,
