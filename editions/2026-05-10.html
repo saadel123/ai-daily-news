@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 10.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 10. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #6</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude kann jetzt deinen Code sichern — und dein iPhone wählt bald die KI selbst.</h1>
+    <p class="subtitle">Außerdem: Gemini 3.2 Flash schleicht sich vor dem I/O ein, ChatGPT bekommt einen Vertrauenskontakt und zeigt Werbung in fünf neuen Ländern.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Security</strong>: Opus 4.7 scannt Codebases auf Schwachstellen und schlägt Patches direkt vor</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟣</span><span><strong>Apple iOS 27</strong> öffnet Siri für Drittanbieter — Claude, Gemini und ChatGPT als wählbare KI-Modelle</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Gemini 3.2 Flash</strong> taucht vor dem I/O in iOS-App und AI Studio auf — $0,25/1M Tokens im Blick</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>ChatGPT Trusted Contact</strong>: Nutzer benennen eine Vertrauensperson für Krisensituationen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT-Werbung</strong> rollt nach UK, Mexiko, Brasilien, Japan und Südkorea aus</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.helpnetsecurity.com/2026/05/04/anthropic-claude-security-public-beta/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Security · Public Beta · Opus 4.7</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Claude Security für Enterprise-Kunden in die öffentliche Beta <mark class="vocab" data-translation="schicken — to send / push into (here: to release)">geschickt</mark> — der erste KI-Agent, der deinen Code wie ein echter Security-Researcher <mark class="vocab" data-translation="durchforsten — to comb through / scan thoroughly">durchforstet</mark>: kein Pattern-Matching, sondern echtes Dataflow-Tracing über mehrere Dateien hinweg. Jede gefundene <mark class="vocab" data-translation="die Schwachstelle — vulnerability / weak point">Schwachstelle</mark> bekommt einen Confidence-Score, ein Severity-Level, Reproduktionsschritte und direkt einen vorgeschlagenen Fix. Über Webhooks <mark class="vocab" data-translation="landen — to land in / end up in (casual)">landen</mark> die Befunde in Jira, Slack oder als CSV-Export — ganz ohne eigene API-Integration. Team- und Max-Kunden kommen bald dran; aktuell ist der Zugang auf Enterprise beschränkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic moved Claude Security into public beta for Enterprise customers — the first AI agent that reads your codebase like a real security researcher: no pattern matching, just genuine dataflow tracing across files and modules. Every finding ships with a confidence rating, severity level, reproduction steps, and a proposed fix right out of the box. Webhook integrations push results to Jira, Slack, or a CSV export — no custom API wiring needed. Team and Max access is coming; Enterprise-only for now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.helpnetsecurity.com/2026/05/04/anthropic-claude-security-public-beta/" target="_blank" rel="noopener">→ helpnetsecurity.com · 04.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://9to5mac.com/2026/05/05/ios-27-will-let-you-choose-between-gemini-claude-and-more-for-ai-features-report/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Apple iOS 27 · Claude &amp; Gemini in Siri</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Apple plant, iOS 27 für KI-Modelle von <mark class="vocab" data-translation="der Drittanbieter — third-party vendor / external provider">Drittanbietern</mark> zu öffnen — eine neue Extensions-Schnittstelle soll erlauben, Claude, Gemini oder ChatGPT als Standard-KI für Siri, Writing Tools und Image Playground <mark class="vocab" data-translation="einsetzen — to deploy / put to use">einzusetzen</mark>. Nutzer können sogar Siri-Stimmen von Drittanbietern wählen, damit <mark class="vocab" data-translation="auf Anhieb — right away / straight off / immediately">auf Anhieb</mark> klar ist, ob gerade Apple oder ein fremdes Modell antwortet. Die offizielle Ankündigung ist für die WWDC 2026 (8.–12. Juni) <mark class="vocab" data-translation="vorgesehen — planned / scheduled / intended">vorgesehen</mark>; iOS 27 selbst erscheint im Herbst. Für Entwickler, die Claude in iOS-Apps integrieren: Jetzt wäre der richtige Zeitpunkt, die Extensions-API auf dem Radar zu haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Apple is planning to open iOS 27 to third-party AI models — a new Extensions framework will let users set Claude, Gemini, or ChatGPT as the default AI for Siri, Writing Tools, Image Playground, and more. Users will even be able to choose third-party voices for Siri, making it immediately clear whether Apple or an outside model is responding. The official reveal is slated for WWDC 2026 (June 8–12); iOS 27 itself ships in fall. For developers integrating Claude into iOS apps, now is the moment to put the Extensions API on your radar.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5mac.com/2026/05/05/ios-27-will-let-you-choose-between-gemini-claude-and-more-for-ai-features-report/" target="_blank" rel="noopener">→ 9to5mac.com · 05.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://piunikaweb.com/2026/05/05/gemini-3-2-flash-3-1-lite-ios-liquid-glass/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini 3.2 Flash · Pre-I/O-Leak</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google hat Gemini 3.2 Flash noch nicht offiziell <mark class="vocab" data-translation="ankündigen — to announce / reveal officially">angekündigt</mark>, aber es taucht bereits auf: erst im Model-Picker der iOS-App (Build 1.2026.1710205), dann in AI Studio — inklusive Preisschild von 0,25 $ Input und 2,00 $ Output pro Million Tokens. Das liegt performancemäßig <mark class="vocab" data-translation="auf Augenhöhe — on par with / at eye level">auf Augenhöhe</mark> mit Gemini 3.1 Pro, aber für einen <mark class="vocab" data-translation="der Bruchteil — fraction / small portion">Bruchteil</mark> des Preises. Auf der Eleuther AI Arena — die Google <mark class="vocab" data-translation="traditionell — traditionally / as is custom">traditionell</mark> für Vorstart-Stresstests nutzt — schlägt das neue Modell seinen Vorgänger beim Coding. Offizieller Release wahrscheinlich beim Google I/O am 19.–20. Mai.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google hasn't officially announced Gemini 3.2 Flash yet, but it's already surfacing: first in the iOS app's model picker (build 1.2026.1710205), then in AI Studio — complete with a $0.25/$2.00 per million token price tag already attached. That puts it on par with Gemini 3.1 Pro in performance at a fraction of the price. On Eleuther AI Arena — which Google traditionally uses for pre-launch stress testing — the new model beats its predecessor at coding. Official release expected at Google I/O, May 19–20.</p>
+        </div>
+      </div>
+      <a class="source" href="https://piunikaweb.com/2026/05/05/gemini-3-2-flash-3-1-lite-ios-liquid-glass/" target="_blank" rel="noopener">→ piunikaweb.com · 05.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-trusted-contact-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT · Trusted Contact · Krisenfunktion</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat für ChatGPT den Trusted Contact eingeführt: Wer möchte, kann in den Einstellungen eine erwachsene <mark class="vocab" data-translation="die Vertrauensperson — trusted person / confidant">Vertrauensperson</mark> <mark class="vocab" data-translation="benennen — to designate / name / appoint">benennen</mark>, die von ChatGPT kontaktiert wird, wenn automatisierte Systeme und geschulte Reviewer ein ernstes Selbstverletzungsrisiko erkennen. Die Vertrauensperson erhält keine Gesprächsprotokolle — nur eine kurze <mark class="vocab" data-translation="die Benachrichtigung — notification / alert">Benachrichtigung</mark> per E-Mail, SMS oder In-App-Meldung. Das Feature ist <mark class="vocab" data-translation="freiwillig — voluntary / opt-in">freiwillig</mark>, global verfügbar (nicht für Minderjährige) und ersetzt professionelle Krisenberatung ausdrücklich nicht — aber es ist ein seltenes Zeichen, dass ein KI-Unternehmen an Sicherheit ohne Massenüberwachung denkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI introduced Trusted Contact for ChatGPT: users can optionally designate one trusted adult in their settings who may be notified if automated systems and trained reviewers detect a serious self-harm risk. The contact receives no conversation logs — just a brief notification via email, text, or in-app message. The feature is opt-in, globally available (not for minors), and OpenAI explicitly states it does not replace professional crisis services — but it's a rare sign of an AI company thinking about safety without mass surveillance.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-trusted-contact-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 07.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/testing-ads-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Ads · UK · Japan · Global</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat den Werbe-Piloten in ChatGPT auf fünf neue Märkte <mark class="vocab" data-translation="ausweiten — to expand / extend / widen">ausgeweitet</mark>: UK, Mexiko, Brasilien, Japan und Südkorea kommen zu den bisherigen Pilotmärkten USA, Kanada, Australien und Neuseeland hinzu. Gleichzeitig startet eine Self-Serve-Ads-Manager-Beta mit Cost-per-Click-Geboten und erweiterten Measurement-Tools für <mark class="vocab" data-translation="der Werbetreibende — advertiser">Werbetreibende</mark>. Werbung in ChatGPT nutzt Gesprächskontext und vergangene Interaktionen zum Targeting, beeinflusst laut OpenAI jedoch nicht die eigentlichen Antworten. Nutzer können Anzeigen melden, Personalisierung deaktivieren und Werbedaten mit einem Tap löschen — das Developer-API bleibt weiterhin werbefrei.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI expanded its ChatGPT advertising pilot to five new markets: UK, Mexico, Brazil, Japan, and South Korea, joining the existing pilots in the US, Canada, Australia, and New Zealand. At the same time, a beta Self-Serve Ads Manager launches with CPC bidding and expanded measurement tools for advertisers. Ads target based on conversation context and past interactions, but OpenAI says they don't influence the actual answers ChatGPT gives. Users can dismiss ads, disable personalization, and delete ad data in one tap — and the developer API stays ad-free.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/testing-ads-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 07.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.129 · --plugin-url</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.129 bringt ein neues Flag, mit dem du eine Plugin-ZIP-Datei direkt aus einer URL für die aktuelle Session laden kannst — kein manueller Download, kein globales Installieren. Praktisch, wenn du ein Plugin schnell ausprobieren oder einem Kollegen eine URL schicken willst, ohne den normalen Publish-Flow zu durchlaufen. Bonus aus derselben Version: Ctrl+R durchsucht wieder standardmäßig alle Projekte und Sessions (wie vor Version 2.1.124), und über eine neue Umgebungsvariable lässt sich das automatische Upgrade via Homebrew oder WinGet <mark class="vocab" data-translation="einschalten — to switch on / enable">einschalten</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.129 ships a new flag that loads a plugin ZIP directly from a URL for the current session — no manual download, no global install required. Handy for quickly testing a plugin or sharing one with a colleague via a single URL, without going through the normal publish flow. Same-release bonus: Ctrl+R is back to searching all projects and sessions by default (as it was before 2.1.124), and a new environment variable lets Homebrew and WinGet users enable automatic background upgrades.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --plugin-url &lt;url&gt; [session args]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--plugin-url &lt;url&gt;</code></dt>
+          <dd>fetch a plugin .zip archive from a URL and activate it for the current session only</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Plugin aus URL laden · Load plugin from URL</span>
+$ claude --plugin-url https://example.com/my-plugin.zip
+
+<span class="com"># Mit Projekt-Pfad kombinieren · Combined with a project path</span>
+$ claude --plugin-url https://example.com/my-plugin.zip ~/code/my-project</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.129" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">durchforsten</div>
+        <div class="vocab-translation">to comb through · to scan thoroughly</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Vor dem Release müssen wir noch mal die gesamte Codebasis durchforsten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Before the release we need to comb through the entire codebase one more time.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Drittanbieter</div>
+        <div class="vocab-translation">third-party vendor · external provider</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alle Drittanbieter-Libraries haben wir auf bekannte Sicherheitslücken geprüft.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We checked all third-party libraries for known security vulnerabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auf Anhieb</div>
+        <div class="vocab-translation">right away · at first try · straight off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Modell hat den Benchmark auf Anhieb übertroffen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new model beat the benchmark straight off.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Benachrichtigung</div>
+        <div class="vocab-translation">notification · alert · message</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn der Build fehlschlägt, bekommt das Team sofort eine Benachrichtigung in Slack.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">When the build fails the team gets an immediate Slack notification.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausweiten</div>
+        <div class="vocab-translation">to expand · to extend · to widen</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wir wollen das Beta-Programm schrittweise auf weitere Märkte ausweiten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We plan to gradually expand the beta program to more markets.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">eine Katze im Sack kaufen</div>
+      <div class="idiom-meaning">to buy something without examining it first — wörtlich: "to buy a cat in a sack"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ein Modell ohne Benchmarks zu adopten wäre, als würde man eine Katze im Sack kaufen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Adopting a model without benchmarks would be buying a pig in a poke."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lass uns die API erst testen, bevor wir den Vertrag unterschreiben — ich kauf keine Katze im Sack."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Let's test the API before signing the contract — I'm not buying a pig in a poke."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to buy a pig in a poke</div>
+      <div class="idiom-meaning">to agree to something without checking it first — German equivalent: "eine Katze im Sack kaufen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Signing a year-long GPU contract before testing latency is buying a pig in a poke."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Einen Jahresvertrag für GPU-Zeit unterschreiben, ohne die Latenz zu testen — das ist die Katze im Sack kaufen."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: helpnetsecurity.com · 9to5mac.com · piunikaweb.com · openai.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #6 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
