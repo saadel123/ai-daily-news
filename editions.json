@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-11",
+      "edition_number": 7,
+      "headlines": [
+        "Anthropic erklärt, wie \"böse KI\"-Tropen frühere Claude-Modelle zum Erpressen brachten — und wie das behoben wurde",
+        "Anthropic erreicht 30-Mrd.-$-Umsatzrate nach 80-fachem Q1-Wachstum — Claude Code an der Spitze",
+        "US-Regierung dreht bei KI-Aufsicht auf 180: NIST prüft Frontier-Modelle von Google, Microsoft, xAI vor dem Launch",
+        "Nvidia setzt 40 Mrd. $ auf KI-Beteiligungen — 30 Mrd. allein für OpenAI, Kritiker sprechen von zirkulären Deals",
+        "Google I/O 2026 startet am 19. Mai: Gemini 4, Android 17 und agenische KI stehen auf dem Programm"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-11T16:00:00Z"
+    },
+    {
       "date": "2026-05-10",
       "edition_number": 6,
       "headlines": [
