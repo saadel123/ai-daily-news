@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 12.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 12. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #8</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KI expandiert auf allen Fronten: Milliarden-Deals, Mathe-Rekorde und ein neues KI-Beratungshaus.</h1>
+    <p class="subtitle">Anthropic sichert CDN-Compute bei Akamai, OpenAI gründet ein eigenständiges Deployment-Haus — und DeepMinds KI-Mathematiker löst ein offenes Problem aus dem Kourovka-Notizbuch.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic × Akamai</strong>: 1,8 Mrd. $ Compute-Deal — größter Vertrag in Akamais Geschichte</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic Institute</strong>: vierteiliger Forschungsplan zu wirtschaftlichen und sicherheitspolitischen KI-Folgen</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Deployment Company</strong>: 4 Mrd. $, 19 Investoren — neues Enterprise-KI-Rollout-Haus</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI</strong> öffnet GPT-5.5-Cyber für die EU — Anthropic hält Mythos weiter unter Verschluss</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Google DeepMind</strong>: KI-Mathematiker löst offenes Problem aus dem Kourovka-Notizbuch — 48 % auf FrontierMath Tier 4</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://finance.yahoo.com/sectors/technology/articles/anthropic-inks-1-8-billion-175510105.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × Akamai · 1,8 Mrd. $ Compute-Deal</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat mit Akamai Technologies einen <mark class="vocab" data-translation="siebenjährig — seven-year (adjective form)">siebenjährigen</mark> Compute-Vertrag über 1,8 Mrd. $ abgeschlossen — den größten Deal in Akamais Geschichte. Der Vertragsabschluss kommt nach dem 80-fachen Wachstum im ersten Quartal, das Dario Amodei auf der Code-with-Claude-Konferenz als schlicht „<mark class="vocab" data-translation="irre — insane / crazy (colloquial)">irre</mark>" bezeichnete. Akamai ist damit der dritte große Compute-Partner nach Google Cloud und SpaceX Colossus-1 — Anthropic <mark class="vocab" data-translation="streut — spreads / distributes (from streuen, to scatter)">streut</mark> seine Infrastruktur bewusst auf mehrere Schultern. Die Akamai-Aktie sprang daraufhin um fast 30 % nach oben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has signed a seven-year, $1.8 billion computing deal with Akamai Technologies — the largest contract in Akamai's history. The deal follows Anthropic's 80x quarter-over-quarter annualized growth, which CEO Dario Amodei called "just crazy" at the Code with Claude developer conference. Akamai joins Google Cloud and SpaceX's Colossus 1 as Anthropic's third major compute partner — a deliberate spread across multiple infrastructure providers. Akamai stock jumped nearly 30% on the news.</p>
+        </div>
+      </div>
+      <a class="source" href="https://finance.yahoo.com/sectors/technology/articles/anthropic-inks-1-8-billion-175510105.html" target="_blank" rel="noopener">→ bloomberg.com · 08.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/research/anthropic-institute-agenda" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Institute · Forschungsagenda veröffentlicht</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Das Anthropic Institute, kurz TAI, hat seine <mark class="vocab" data-translation="Forschungsagenda — research agenda">Forschungsagenda</mark> veröffentlicht: vier Schwerpunkte — wirtschaftliche Diffusion von KI, Bedrohungen und <mark class="vocab" data-translation="Resilienz — resilience (ability to withstand shocks)">Resilienz</mark>, KI-Verhalten in der realen Welt und KI-getriebene Forschung und Entwicklung. Besonders auffällig: TAI will ein hochfrequentes Wirtschafts-Index-Tool aufbauen, das Jobmarkt-Dynamiken quasi in Echtzeit <mark class="vocab" data-translation="trackt — tracks (anglicism common in German tech speech)">trackt</mark>. Mitgründer Jack Clark warnt außerdem, dass ein System, das sich selbst verbessern kann, bis 2028 wahrscheinlicher als unwahrscheinlich ist. Die Agenda macht TAI zum internen Frühwarnsystem für alles, was Anthropic selbst auslösen könnte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">The Anthropic Institute (TAI) has published its research agenda with four focus areas: economic diffusion, threats and resilience, AI systems in the wild, and AI-driven R&amp;D. Notably, TAI plans to build a high-frequency Economic Index that tracks labor-market changes in near real time. Co-founder Jack Clark warns that a self-improving AI system is more likely than not to exist by 2028. The agenda positions TAI as Anthropic's own early-warning system for the impacts of what it's building.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/research/anthropic-institute-agenda" target="_blank" rel="noopener">→ anthropic.com · 08.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/openai-launches-the-deployment-company/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Deployment Company · 4 Mrd. $ · 19 Investoren</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat mit der OpenAI Deployment Company eine eigenständige Gesellschaft gegründet, die Unternehmen beim Einsatz von KI in ihren Kernprozessen aktiv <mark class="vocab" data-translation="begleiten — to accompany / guide someone through a process">begleiten</mark> soll. DeployCo startet mit 4 Mrd. $ Kapital bei einer Pre-Money-Bewertung von 10 Mrd. $, getragen von 19 Investmentfirmen, Beratungen und Systemintegratoren — Lead-Investor ist TPG. Gleichzeitig hat OpenAI die KI-Beratungsfirma Tomoro mit rund 150 Ingenieuren <mark class="vocab" data-translation="übernommen — acquired / taken over (past participle of übernehmen)">übernommen</mark>. Kurz zusammengefasst: OpenAI will nicht mehr nur Modelle liefern, sondern auch den <mark class="vocab" data-translation="Rollout — rollout (deployment of a product or service into production)">Rollout</mark> beim Kunden aktiv mitgestalten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI has launched the OpenAI Deployment Company, a standalone entity designed to help businesses deploy AI across their most critical workflows. DeployCo launches with $4B in investment at a $10B pre-money valuation, backed by 19 partners including lead investor TPG, Advent International, Bain Capital, and Brookfield. The launch came alongside the acquisition of AI consulting firm Tomoro and its roughly 150 AI engineers. In short: OpenAI wants to not just ship models but own the rollout at the customer's side.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-launches-the-deployment-company/" target="_blank" rel="noopener">→ openai.com · 11.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI GPT-5.5-Cyber → EU · Anthropic Mythos zurückgehalten</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat der Europäischen Union Zugang zu GPT-5.5-Cyber zugesagt — dem spezialisierten Sicherheitsmodell für Defender-Anwendungsfälle. Anthropic hingegen hält seinen Mythos-Zugang für die EU weiterhin zurück; die Gespräche befänden sich „in einem anderen Stadium", heißt es offiziell. Die beiden Modelle sind laut Brancheninsidern in ihren Fähigkeiten <mark class="vocab" data-translation="auf Augenhöhe — on a par / at eye level (idiom)">auf Augenhöhe</mark> — aber ihre Deployment-Strategie könnte nicht unterschiedlicher sein. OpenAI setzt auf breiteren Zugang mit strikten <mark class="vocab" data-translation="Leitplanken — guardrails (literally: crash barriers on a road)">Leitplanken</mark>; Anthropic begrenzt den Kreis auf rund 40 <mark class="vocab" data-translation="akkreditierte — accredited / vetted (organisations with formal approval)">akkreditierte</mark> Organisationen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI has agreed to grant the EU access to GPT-5.5-Cyber, its specialized security model tailored for defender use cases. Anthropic, by contrast, is still holding back Mythos access from the EU — talks are at "a different stage", officials say. The two models are reportedly on a par in capabilities, but their deployment strategies couldn't be more different. OpenAI is going broad with strict guardrails; Anthropic is keeping the circle tight at around 40 accredited organizations.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html" target="_blank" rel="noopener">→ cnbc.com · 11.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://arxiv.org/abs/2605.06651" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google DeepMind · KI-Mathematiker · FrontierMath Tier 4</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google DeepMind hat einen KI-Mathematiker vorgestellt, der auf dem FrontierMath-Tier-4-Benchmark mit 48 % einen neuen <mark class="vocab" data-translation="Höchstwert — record / peak value (highest ever recorded)">Höchstwert</mark> setzt — ungefähr das Doppelte des bisherigen Spitzenwerts. Das Multi-Agenten-System basiert auf Gemini 3.1 und arbeitet sich arbeitsteilig durch offene Mathematikprobleme: ein Koordinator-Agent, Sub-Agenten für Literatursuche, Code und Beweisversuche. Oxford-Mathematiker Marc Lackenby nutzte das System, um ein offenes Problem aus dem Kourovka-<mark class="vocab" data-translation="Notizbuch — notebook (Notiz = note, Buch = book)">Notizbuch</mark> zu lösen — ein Reviewer-Agent hatte einen Fehler im Beweis <mark class="vocab" data-translation="entdeckt — spotted / uncovered (past participle of entdecken)">entdeckt</mark>, den Lackenby selbst übersehen hatte. Das Paper erschien am 7. Mai 2026 auf arXiv.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google DeepMind has unveiled an AI co-mathematician that scored a new high of 48% on the FrontierMath Tier 4 benchmark — roughly double the previous best. The multi-agent system, built on Gemini 3.1, tackles open math problems with a division of labor: a coordinator agent directing sub-agents for literature search, code writing, and proof attempts. Oxford mathematician Marc Lackenby used it to resolve an open problem from the Kourovka Notebook — a reviewer agent spotted a flaw in an earlier proof attempt that Lackenby himself had missed. The paper appeared on arXiv on May 7, 2026.</p>
+        </div>
+      </div>
+      <a class="source" href="https://arxiv.org/abs/2605.06651" target="_blank" rel="noopener">→ arxiv.org · 07.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.139" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.139 · Agent View · /goal-Befehl</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.139 bringt zwei Highlights, die das tägliche Workflow-Management <mark class="vocab" data-translation="grundlegend — fundamentally / at its core">grundlegend</mark> verändern. Der Agent View zeigt als Research Preview eine einzige Liste aller laufenden, blockierten und fertigen Sessions — einfach den Agenten-Befehl aufrufen. Der neue Slash-Command lässt Claude an einer Aufgabe weiterarbeiten, bis eine definierte <mark class="vocab" data-translation="Bedingung — condition / requirement (must be met)">Bedingung</mark> erfüllt ist — inklusive Live-Overlay mit vergangener Zeit, Turn-Anzahl und Token-Verbrauch. Außerdem neu: ein Scroll-Speed-Befehl für die <mark class="vocab" data-translation="Feinabstimmung — fine-tuning / fine calibration">Feinabstimmung</mark> der Mausrad-Geschwindigkeit und ein Plugin-Details-Befehl für den Token-Kostenüberblick pro Session.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.139 ships two highlights that fundamentally change daily workflow management. Agent View, now in Research Preview, shows a single unified list of all running, blocked, and completed sessions — just run the agents command. The new slash command lets Claude keep working on a task across turns until a defined condition is met, showing a live overlay of elapsed time, turn count, and token usage. Also new: a scroll-speed command to fine-tune mouse-wheel speed and a plugin-details command for per-session token cost breakdowns.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents
+/goal [condition]
+/scroll-speed
+claude plugin details [name]</pre>
+        <dl class="cmd-flags">
+          <dt><code>/goal [condition]</code></dt>
+          <dd>work until the condition is met; shows a live overlay with elapsed time, turns, and token usage</dd>
+          <dt><code>/scroll-speed</code></dt>
+          <dd>tune mouse wheel scroll speed with a live preview</dd>
+          <dt><code>claude plugin details [name]</code></dt>
+          <dd>show a plugin's component inventory and projected per-session token cost</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle Sessions im Überblick · All sessions — running, blocked, done</span>
+$ claude agents
+
+<span class="com"># Claude weiterarbeiten lassen, bis alle Tests grün sind · Keep working until all tests pass</span>
+$ /goal "all tests pass"
+
+<span class="com"># Token-Kostenüberblick für ein Plugin · Token cost breakdown for a plugin</span>
+$ claude plugin details my-plugin</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.139" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 11.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">irre</div>
+        <div class="vocab-translation">insane · crazy (colloquial)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">80-faches Quartalswachstum — Dario Amodei nannte das schlicht „irre".</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">80x quarterly growth — Dario Amodei called it simply "insane".</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Forschungsagenda</div>
+        <div class="vocab-translation">research agenda</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Anthropic Institute hat eine klare Forschungsagenda zu KI-Folgen veröffentlicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Anthropic Institute published a clear research agenda on AI impacts.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auf Augenhöhe</div>
+        <div class="vocab-translation">on a par · at eye level</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GPT-5.5-Cyber und Mythos sollen in ihren Fähigkeiten auf Augenhöhe sein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GPT-5.5-Cyber and Mythos are said to be on a par in their capabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Leitplanken</div>
+        <div class="vocab-translation">guardrails · crash barriers (literal)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI setzt bei Cyber-Modellen auf breiten Zugang mit klaren Leitplanken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI bets on broad access with clear guardrails for its cyber models.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">erschließen</div>
+        <div class="vocab-translation">to open up · to unlock (a market or resource)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">DeployCo soll OpenAI den Enterprise-Markt vollständig erschließen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">DeployCo is meant to fully unlock the enterprise market for OpenAI.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Karten nicht auf den Tisch legen</div>
+      <div class="idiom-meaning">to not show your hand / to keep plans private — wörtlich: "not to put the cards on the table"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic legt die Karten in Sachen Mythos-EU-Zugang nicht auf den Tisch — wann das kommt, weiß niemand."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic is not showing its hand on Mythos EU access — nobody knows when that's coming."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beim Verhandlungsstart legt man die Karten nie sofort auf den Tisch."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"At the start of a negotiation, you never put all your cards on the table right away."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hold your cards close to your chest</div>
+      <div class="idiom-meaning">to keep plans or intentions private — German equivalent: "die Karten nicht auf den Tisch legen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic is really holding its cards close to its chest on when Mythos will reach the EU."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hält seine Karten zum Mythos-EU-Zeitplan sehr eng an der Brust."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: bloomberg.com · anthropic.com · openai.com · cnbc.com · arxiv.org · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #8 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
