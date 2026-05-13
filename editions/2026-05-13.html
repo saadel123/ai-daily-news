@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 13.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 13. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #9</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Agents von morgen sind heute live: /goal, Agent View und Gemini Intelligence.</h1>
+    <p class="subtitle">Dazu: Anthropic strebt eine 900-Mrd.-$-Bewertung an, Claude landet nativ bei AWS und Grok 4.3 startet mit einem Million-Token-Kontext durch.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.139</strong>: /goal setzt Fertigstellungsbedingungen — Claude arbeitet eigenständig bis zur Erfüllung</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Platform on AWS</strong>: jetzt GA — voller API-Zugang über bestehende AWS-Abrechnung und IAM</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟧</span><span><strong>Anthropic</strong> in Gesprächen: 30 Mrd. $ bei 900-Mrd.-$-Bewertung — über OpenAIs letzter Runde</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Google Android Show</strong>: Gemini Intelligence macht Android zum proaktiven Agenten — Googlebook angekündigt</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Grok 4.3</strong> jetzt voll im API: 1-Mio.-Token-Kontext, natives Video, 40 % günstiger</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.139" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.139 · /goal + Agent View</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.139 bringt zwei lang <mark class="vocab" data-translation="ersehnt — long-awaited / much-anticipated">ersehnte</mark> Features: Der neue Slash-Command /goal setzt eine Fertigstellungsbedingung, und Claude arbeitet dann <mark class="vocab" data-translation="eigenständig — autonomously / independently">eigenständig</mark> Turn für Turn weiter, bis das Ziel erreicht ist — komplett mit Live-Overlay für Zeit, Turns und Token-Verbrauch. Gleichzeitig startet die Agent View als Research Preview: Sie <mark class="vocab" data-translation="bündeln — to consolidate / bundle together">bündelt</mark> alle laufenden, wartenden und fertigen Sessions in einer einzigen Übersicht, abrufbar mit dem Befehl claude agents. Dazu kommt /scroll-speed zum <mark class="vocab" data-translation="Feintuning — fine-tuning / precise adjustment">Feintuning</mark> der Scrollgeschwindigkeit und claude plugin details für Kosten- und Tokenschätzungen pro Plugin — eine der feature-reichsten Releases seit Monaten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.139 ships two long-awaited features: the new /goal slash command sets a completion condition and Claude works autonomously turn by turn until it's met — complete with a live overlay showing elapsed time, turns, and token usage. Simultaneously, the Agent View launches in Research Preview: it consolidates all running, blocked, and finished sessions into a single list, accessible via the claude agents command. Rounding it out: /scroll-speed for fine-tuning scroll behavior and claude plugin details for token-cost estimates per plugin — one of the most feature-packed releases in months.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/goal &lt;completion condition&gt;
+claude agents</pre>
+<pre class="cmd-examples"><span class="com"># Ziel setzen — Claude arbeitet weiter bis zur Erfüllung · Set a goal — Claude keeps working until it's done</span>
+$ /goal all tests in src/api pass and coverage is above 80 %
+
+<span class="com"># Agent View starten — alle Sessions auf einen Blick · Launch Agent View — all sessions at a glance</span>
+$ claude agents</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.139" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 11.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://claude.com/blog/claude-platform-on-aws" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Platform on AWS · GA</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat die Claude Platform direkt ins AWS-Ökosystem <mark class="vocab" data-translation="eingebettet — embedded / integrated (past participle of einbetten)">eingebettet</mark>: Claude Platform on AWS ist jetzt allgemein <mark class="vocab" data-translation="verfügbar — available / accessible">verfügbar</mark> und gibt AWS-Kunden Zugriff auf die vollständige Anthropic-API — Messages, Files, Managed Agents, Agent Skills und Code Execution — über ihre bestehende AWS-Abrechnung und IAM-Authentifizierung. Kein <mark class="vocab" data-translation="separates — separate / distinct">separates</mark> Anthropic-Konto, keine eigenen Zugangsdaten, kein extra Vertrag. Das ergänzt Bedrock als von Anthropic betriebenen Direkt-Kanal, ideal für Teams ohne strikte Data-Residency-Anforderungen. Als erster Cloud-Anbieter weltweit bietet AWS damit nativen Zugang zur Anthropic-Plattform — der <mark class="vocab" data-translation="Integrationsaufwand — integration effort / setup overhead">Integrationsaufwand</mark> sinkt erheblich.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has embedded the Claude Platform directly into the AWS ecosystem: Claude Platform on AWS is now generally available, giving AWS customers full access to the Anthropic API — Messages, Files, Managed Agents, Agent Skills, and Code Execution — through their existing AWS billing and IAM authentication. No separate Anthropic account, no extra credentials, no new contract. It complements Bedrock as a direct, Anthropic-operated channel suited for teams without strict data-residency requirements. As the first cloud provider to offer native Claude Platform access, AWS significantly lowers integration overhead.</p>
+        </div>
+      </div>
+      <a class="source" href="https://claude.com/blog/claude-platform-on-aws" target="_blank" rel="noopener">→ claude.com · 11.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · $30 Mrd. · $900 Mrd. Bewertung</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Laut Bloomberg ist Anthropic in Gesprächen, mindestens 30 Mrd. $ frisches Kapital bei einer Bewertung von über 900 Mrd. $ <mark class="vocab" data-translation="einzuwerben — to raise (capital) / to bring in investment">einzuwerben</mark> — was das Unternehmen oberhalb von OpenAIs letzter Runde von 852 Mrd. $ <mark class="vocab" data-translation="positionieren — to position / to place competitively">positionieren</mark> würde. Als Hintergrund: Anthropics <mark class="vocab" data-translation="Jahresumsatz — annualized revenue / annual turnover">Jahresumsatz</mark> ist auf über 44 Mrd. $ gestiegen, mit einer Bruttomarge von mehr als 70 %. Die Runde soll bis Ende Mai abgeschlossen sein und unter anderem den Aufbau weiterer Compute-Kapazitäten <mark class="vocab" data-translation="finanzieren — to finance / to fund">finanzieren</mark>. Ein IPO steht für Oktober 2026 im Gespräch.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">According to Bloomberg, Anthropic is in talks to raise at least $30 billion at a valuation above $900 billion — which would place it ahead of OpenAI's last round at $852 billion. For context: Anthropic's annualized revenue has grown to over $44 billion with gross margins above 70%. The round is expected to close by the end of May and would partly fund further compute buildout. An IPO is reportedly on the table for October 2026.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation" target="_blank" rel="noopener">→ bloomberg.com · 12.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google Android Show · Gemini Intelligence</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Beim Android Show: I/O Edition am 12. Mai hat Google Gemini Intelligence <mark class="vocab" data-translation="vorgestellt — introduced / presented (past participle)">vorgestellt</mark> — ein Framework, das Android von einem klassischen Betriebssystem zu einem <mark class="vocab" data-translation="proaktiven — proactive / anticipatory">proaktiven</mark> Agenten verwandelt: Gemini navigiert eigenständig durch Apps, bucht Termine, füllt Formulare aus und baut den Einkaufskorb direkt aus einem Screenshot heraus. Neu <mark class="vocab" data-translation="angekündigt — announced / unveiled">angekündigt</mark> wurde auch das Googlebook — eine Laptop-Linie von Acer, Asus, Dell, HP und Lenovo mit Gemini als zentralem Interface, die diesen Herbst auf den Markt kommt. Der Roll-out von Gemini Intelligence startet im Sommer mit dem Samsung Galaxy S26 und Google Pixel 10 und wird später auf weitere Geräte, Smartwatches und Laptops <mark class="vocab" data-translation="ausgeweitet — expanded / extended">ausgeweitet</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">At the Android Show: I/O Edition on May 12, Google unveiled Gemini Intelligence — a framework that turns Android from a traditional OS into a proactive AI agent: Gemini navigates across apps on its own, books appointments, fills out forms, and builds a shopping cart from a grocery-list screenshot. Also announced was Googlebook — a new laptop line from Acer, Asus, Dell, HP, and Lenovo with Gemini at its core, launching this fall. The Gemini Intelligence rollout kicks off this summer with Samsung Galaxy S26 and Google Pixel 10, later expanding to more devices, smartwatches, and laptops.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/" target="_blank" rel="noopener">→ blog.google · 12.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://grok.com/release-notes" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Grok 4.3 · 1M-Kontext · 40 % günstiger</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Grok 4.3 ist seit dem 6. Mai vollständig über die xAI API <mark class="vocab" data-translation="verfügbar — available / accessible via API">verfügbar</mark> — mit einem Millionen-Token-<mark class="vocab" data-translation="Kontextfenster — context window (technical term)">Kontextfenster</mark>, nativem Video-Verständnis und einem API-Preis von 1,25 $ pro Million Input-Tokens, was einem 40-%-<mark class="vocab" data-translation="Preisschnitt — price cut / price reduction">Preisschnitt</mark> gegenüber dem Vorgänger entspricht. Mit Score 53 auf dem Intelligence Index (Median 35) und Platz 1 auf CaseLaw v2 sowie CorpFin eignet sich das Modell dank des großen Kontexts besonders für umfangreiche Dokument- und Codeanalysen. Gleichzeitig stellt xAI acht <mark class="vocab" data-translation="veraltete — outdated / legacy (adjective)">veraltete</mark> Modelle zum 15. Mai ein — wer noch auf älteren Endpunkten läuft, sollte jetzt migrieren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Grok 4.3 has been fully available via the xAI API since May 6th — with a million-token context window, native video understanding, and a price of $1.25 per million input tokens: a 40% cut versus the previous version. Scoring 53 on the Intelligence Index (median: 35) and ranking #1 on CaseLaw v2 and CorpFin, the model is especially capable for large document and code analysis tasks thanks to its large context. Simultaneously, xAI is retiring eight legacy models on May 15th — if you're still on older endpoints, now's the time to migrate.</p>
+        </div>
+      </div>
+      <a class="source" href="https://grok.com/release-notes" target="_blank" rel="noopener">→ grok.com · 06.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Codex sicher betreiben · OpenAI's Sandbox-Playbook</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Am 8. Mai hat OpenAI einen <mark class="vocab" data-translation="detaillierten — detailed / in-depth">detaillierten</mark> Einblick gegeben, wie Codex intern sicher betrieben wird — und die Erkenntnisse lassen sich direkt auf Claude Code, Cline oder jeden anderen Coding-Agenten übertragen. Das Rezept: striktes Netzwerk-Whitelisting (nur erwartete Ziele erlaubt), fein <mark class="vocab" data-translation="granulare — granular / fine-grained">granulare</mark> Sandbox-Grenzen (welche Pfade der Agent schreiben darf), ein Auto-Review-Modus für Low-Risk-Aktionen und <mark class="vocab" data-translation="unveränderliche — immutable / unchangeable">unveränderliche</mark> Telemetrie-Logs zum Nachvollziehen, was der Agent wirklich getan hat. Wer Coding-Agenten im Team-Setup oder in der CI/CD-Pipeline betreibt, sollte sich dieses <mark class="vocab" data-translation="Playbook — playbook / operational guide (loanword)">Playbook</mark> durchlesen — die Kombination aus Sandbox und Audit-Trail ist das Minimum für Produktivsysteme.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">On May 8th, OpenAI published a detailed look at how they run Codex safely in production — and the lessons map directly onto Claude Code, Cline, or any other coding agent. The recipe: strict network whitelisting (only expected destinations allowed), fine-grained sandbox boundaries (which paths the agent may write), an auto-review mode for low-risk actions, and immutable telemetry logs for auditing what the agent actually did. If you run coding agents in a team environment or CI/CD pipeline, this playbook is worth a close read — sandbox plus audit trail is the minimum for production systems.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener">→ openai.com · 08.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomously · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit /goal arbeitet Claude eigenständig weiter, bis das Ziel erfüllt ist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With /goal, Claude keeps working autonomously until the objective is met.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einbetten</div>
+        <div class="vocab-translation">to embed · to integrate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Claude API ist jetzt direkt ins AWS-Ökosystem eingebettet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Claude API is now embedded directly in the AWS ecosystem.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einwerben</div>
+        <div class="vocab-translation">to raise (capital) · to attract investment</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Startup will 30 Mrd. $ bei Investoren einwerben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The startup wants to raise $30 billion from investors.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">proaktiv</div>
+        <div class="vocab-translation">proactive · anticipatory</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini Intelligence macht Android zu einem proaktiven Assistenten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini Intelligence turns Android into a proactive assistant.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">unveränderlich</div>
+        <div class="vocab-translation">immutable · unchangeable</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Unveränderliche Telemetrie-Logs machen Agenten-Aktionen nachvollziehbar.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Immutable telemetry logs make agent actions traceable.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Latte höher legen</div>
+      <div class="idiom-meaning">to raise the bar — wörtlich: "to place the bar higher"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit einer Bewertung von über 900 Mrd. $ legt Anthropic die Latte für die ganze Branche höher."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With a valuation above $900 billion, Anthropic is raising the bar for the whole industry."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Grok 4.3 hat beim Kontextfenster die Latte deutlich höher gelegt — eine Million Tokens zum kleinen Preis."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Grok 4.3 has raised the bar on context windows — a million tokens at a low price."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to get the ball rolling</div>
+      <div class="idiom-meaning">to start something, to kick off a process — German equivalent: "den Stein ins Rollen bringen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The Android Show got the ball rolling for the Google I/O season — more announcements to follow on May 19."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem Android Show bringt Google den Stein ins Rollen — I/O folgt am 19. Mai."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Someone has to get the ball rolling — just ship the first draft and iterate."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Irgendwer muss den Stein ins Rollen bringen — einfach den ersten Draft rausschicken und iterieren."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · claude.com · bloomberg.com · blog.google · grok.com · openai.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #9 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
