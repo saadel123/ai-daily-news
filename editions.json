@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-13",
+      "edition_number": 9,
+      "headlines": [
+        "Claude Code 2.1.139: /goal setzt Fertigstellungsbedingungen — Claude arbeitet eigenständig bis zur Erfüllung",
+        "Claude Platform on AWS jetzt GA — voller API-Zugang über bestehende AWS-Abrechnung und IAM",
+        "Anthropic in Gesprächen: 30 Mrd. $ bei 900-Mrd.-$-Bewertung — über OpenAIs letzter Runde",
+        "Google Android Show: Gemini Intelligence macht Android zum proaktiven Agenten — Googlebook angekündigt",
+        "Grok 4.3 jetzt voll im API: 1-Mio.-Token-Kontext, natives Video, 40 % günstiger"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-13T16:06:44Z"
+    },
+    {
       "date": "2026-05-12",
       "edition_number": 8,
       "headlines": [
