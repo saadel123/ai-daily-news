@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 14.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 14. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #10</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Kluge Allianzen: KI steuert SAP, erklärt dem Kongress und sucht globale Regeln.</h1>
+    <p class="subtitle">Anthropic bringt Claude in 200 SAP-Agenten und erklärt Mythos dem Homeland-Security-Komitee — OpenAI schlägt gleichzeitig eine IAEO für Künstliche Intelligenz vor.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.141</strong>: Agenten-Dashboard mit Directory-Scope, Rewind bekommt 'Summarize up to here'</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude für Kleinbetriebe</strong>: 15 fertige Workflows in QuickBooks, HubSpot und 5 weiteren Apps</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟣</span><span><strong>SAP Sapphire</strong>: 200+ Claude-Agenten eingebettet — größter KI-Launch in SAPs Geschichte</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI</strong> schlägt US-geführte KI-Aufsichtsbehörde mit China als Mitglied vor — am Trump-Xi-Gipfeltag</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟧</span><span><strong>Anthropic</strong> briefte US-Kongress vertraulich über Mythos-Capabilities</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.141" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.141 · Agenten-Dashboard &amp; Rewind</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.141 liefert drei <mark class="vocab" data-translation="praxisnahe — practical / hands-on">praxisnahe</mark> Verbesserungen: Der neue Flag beim Agenten-Dashboard schränkt die Session-Liste auf ein bestimmtes Verzeichnis ein — kein Scrollen mehr durch alle Projekte, nur die Sessions des aktuellen Repos. Im Rewind-Menü gibt es jetzt 'Summarize up to here', das ältere Turns <mark class="vocab" data-translation="komprimiert — compresses / condenses">komprimiert</mark>, ohne die frischen Turns <mark class="vocab" data-translation="anzutasten — to touch / to interfere with">anzutasten</mark>. Und Background-Agenten, die du per <mark class="vocab" data-translation="Tastenkürzel — keyboard shortcut">Tastenkürzel</mark> in den Hintergrund schickst, übernehmen jetzt deinen Permission-Mode statt auf den Default zurückzufallen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.141 delivers three practical improvements: the new flag on the agent dashboard scopes the session list to a specific directory — no more scrolling through all projects, just the sessions for the current repo. The Rewind menu gains 'Summarize up to here', which compresses older turns without touching the fresh context turns. And background agents you launch with the keyboard shortcut now inherit your current permission mode instead of reverting to the default on start.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents [--cwd &lt;path&gt;]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--cwd &lt;path&gt;</code></dt>
+          <dd>show only sessions whose working directory is under &lt;path&gt;</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Sessions im aktuellen Verzeichnis · Sessions in the current directory</span>
+$ claude agents --cwd .
+
+<span class="com"># Sessions eines bestimmten Projekts · Sessions for a specific project</span>
+$ claude agents --cwd ~/code/my-api</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.141" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 13.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude für Kleinbetriebe · 15 fertige Workflows</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic <mark class="vocab" data-translation="hält Einzug — makes inroads / is arriving (set phrase)">hält Einzug</mark> bei Kleinunternehmen: 15 fertige Workflows für Payroll-Planung, <mark class="vocab" data-translation="Rechnungsmahnungen — invoice reminders / invoice-chasing">Rechnungsmahnungen</mark>, Lead-Triage und mehr — eingebettet in QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace und Microsoft 365. Das Ganze ist ein Toggle-Install in Claude Cowork, Anthropics <mark class="vocab" data-translation="Automatisierungsplattform — automation platform">Automatisierungsplattform</mark> für Business-Nutzer. Ab heute startet eine Roadshow durch zehn US-Städte — <mark class="vocab" data-translation="Auftakt — opening / first stop / curtain-raiser">Auftakt</mark> in Chicago, 100 Kleinunternehmer pro Station, kostenlos.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic is making inroads with small businesses: 15 ready-to-run workflows for payroll planning, invoice chasing, lead triage, and more — embedded in QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, and Microsoft 365. The whole thing is a toggle install inside Claude Cowork, Anthropic's automation platform for business users. Starting today, a roadshow kicks off across ten US cities — first stop Chicago, 100 small business owners per stop, free of charge.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">→ anthropic.com · 13.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SAP Sapphire · Autonomous Enterprise mit Claude</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Auf der Sapphire-Konferenz in Orlando hat SAP die größte KI-<mark class="vocab" data-translation="Produktoffensive — product offensive / major product launch campaign">Produktoffensive</mark> in seiner 53-jährigen Geschichte angekündigt: über 200 eingebettete KI-Agenten in den Kerngeschäftsanwendungen, mit Claude als primärem Reasoning-Modell. Daniela Amodei bestätigte die Partnerschaft per <mark class="vocab" data-translation="Video-Zuschaltung — video link-in / joining via video call">Video-Zuschaltung</mark>. Die Agenten sollen komplexe Aufgaben <mark class="vocab" data-translation="eigenständig — autonomously / independently">eigenständig</mark> erledigen — von der <mark class="vocab" data-translation="Quartalsbuchführung — quarter-end accounting / quarterly close">Quartalsbuchführung</mark> bis zur Lieferkettensteuerung — koordiniert über SAP S/4HANA, SuccessFactors und Ariba.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">At its Sapphire conference in Orlando, SAP unveiled the largest AI product launch in its 53-year history: 200+ embedded AI agents across core business applications, with Claude as the primary reasoning model. Daniela Amodei confirmed the partnership via video. The agents are set to handle complex tasks autonomously — from quarter-end accounting to supply chain rerouting — coordinated across SAP S/4HANA, SuccessFactors, and Ariba.</p>
+        </div>
+      </div>
+      <a class="source" href="https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/" target="_blank" rel="noopener">→ news.sap.com · 13.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Globale KI-Aufsicht nach IAEO-Vorbild</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Zeitgleich mit dem Treffen von Trump und Xi schlug OpenAIs VP Chris Lehane eine internationale KI-<mark class="vocab" data-translation="Aufsichtsbehörde — oversight body / regulatory authority">Aufsichtsbehörde</mark> nach dem <mark class="vocab" data-translation="Vorbild — model / template (nach dem Vorbild = modeled after)">Vorbild</mark> der IAEO vor — mit den USA an der Spitze, China als Mitglied. Die Organisation würde Safety-Standards setzen und nationale KI-Sicherheitsinstitute <mark class="vocab" data-translation="vernetzen — to connect / to network / to link together">vernetzen</mark>. Ob die Trump-Regierung mitmacht, ist ungewiss; das Weiße Haus hat globale KI-Governance bisher kategorisch abgelehnt. KI gilt als das Feld, bei dem Supermächte noch am ehesten <mark class="vocab" data-translation="Spielraum für Kompromisse — room for compromise / leeway for deals">Spielraum für Kompromisse</mark> finden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Timed to the Trump-Xi summit, OpenAI's VP Chris Lehane proposed a US-led international AI oversight body modeled after the IAEA — with China as a member. The organization would set safety standards and link national AI safety institutes worldwide. Whether the Trump administration would play along is uncertain; the White House has so far categorically rejected global AI governance. AI is currently seen as the one area where superpowers still have the most room for compromise.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china" target="_blank" rel="noopener">→ bloomberg.com · 13.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://thehill.com/policy/technology/5875253-house-briefing-anthropic-mythos/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Mythos-Briefing im US-Kongress</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Am 13. Mai hat Anthropic das House Committee on Homeland Security in einer <mark class="vocab" data-translation="Closed-Door-Session — closed-door meeting / non-public briefing">Closed-Door-Session</mark> über die Fähigkeiten von Mythos <mark class="vocab" data-translation="gebrieft — briefed (from English, used as German verb)">gebrieft</mark> — das erste Mal, dass ein KI-Labor sein <mark class="vocab" data-translation="umstrittenstes — most controversial">umstrittenstes</mark> Modell dem Kongress direkt vorgestellt hat. Logan Graham, Chef des Frontier Red Teams, und Josh Tilstra aus dem National-Security-Policy-Team führten die Präsentation. Auf dem Tisch: Capabilities, nationale Sicherheitsimplikationen und <mark class="vocab" data-translation="Policy-Überlegungen — policy considerations">Policy-Überlegungen</mark>. Eine öffentliche Anhörung gilt als wahrscheinliche nächste Stufe.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">On May 13, Anthropic briefed the House Committee on Homeland Security behind closed doors on Mythos' capabilities — the first time an AI lab has presented its most controversial model directly to Congress. Logan Graham, head of Anthropic's Frontier Red Team, and Josh Tilstra from the national security policy team led the session. On the table: capabilities, national security implications, and policy considerations. A public hearing is widely seen as the likely next step.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thehill.com/policy/technology/5875253-house-briefing-anthropic-mythos/" target="_blank" rel="noopener">→ thehill.com · 13.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.141" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.141 · Rewind 'Summarize up to here'</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Wer täglich lange Claude-Code-Sessions führt, kennt das Problem: Der Kontext <mark class="vocab" data-translation="quillt über — overflows / bursts at the seams (idiom)">quillt über</mark>, Claude vergisst frühe Entscheidungen und Zusammenhänge. Das neue 'Summarize up to here' im Rewind-Menü von Version 2.1.141 <mark class="vocab" data-translation="bündelt — bundles / packages together">bündelt</mark> ältere Turns in ein kompaktes Summary — die frischen Turns bleiben <mark class="vocab" data-translation="unangetastet — untouched / intact">unangetastet</mark>. Das Kontext-Budget wird so wieder <mark class="vocab" data-translation="freigegeben — freed up / released">freigegeben</mark> und der aktuelle Arbeitsstand bleibt vollständig erhalten. Öffne das Rewind-Menü an dem Turn, bis zu dem du komprimieren möchtest — fertig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Anyone running long Claude Code sessions daily knows the problem: context overflows, Claude starts forgetting early decisions and context. The new 'Summarize up to here' option in the Rewind menu in version 2.1.141 bundles older turns into a compact summary — the fresh turns remain untouched. The context budget is freed up again and your current working state stays fully intact. Open the Rewind menu at the turn where you want to compress — done.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.141" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 13.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">komprimieren</div>
+        <div class="vocab-translation">to compress · to condense</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Rewind-Menü komprimiert ältere Turns, ohne den frischen Kontext zu löschen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Rewind menu compresses older turns without deleting the fresh context.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Aufsichtsbehörde</div>
+        <div class="vocab-translation">regulatory body · oversight authority</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Eine globale KI-Aufsichtsbehörde soll Sicherheitsstandards weltweit koordinieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A global AI oversight body is supposed to coordinate safety standards worldwide.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomous · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die SAP-Agenten erledigen komplexe Buchführungsaufgaben jetzt eigenständig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The SAP agents now handle complex accounting tasks autonomously.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Spielraum</div>
+        <div class="vocab-translation">leeway · room to manoeuvre</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">KI ist derzeit das Thema, bei dem Supermächte noch am meisten Spielraum für Kompromisse sehen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AI is currently the topic where superpowers see the most room for compromise.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Vorbild</div>
+        <div class="vocab-translation">model · template · role model</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die IAEO dient als Vorbild für eine mögliche internationale KI-Behörde.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The IAEA serves as the model for a possible international AI authority.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Weichen stellen</div>
+      <div class="idiom-meaning">to set the course / to set things in motion — wörtlich: "to position the railway switches"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit seinem Governance-Vorschlag will OpenAI die Weichen für eine globale KI-Regulierung stellen, bevor andere es tun."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With its governance proposal, OpenAI wants to set the course for global AI regulation before others do."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Briefing im Kongress stellt die Weichen für eine öffentliche Anhörung zu Mythos."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The Congressional briefing sets the course for a public hearing on Mythos."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to read the room</div>
+      <div class="idiom-meaning">to sense the mood and act accordingly — German equivalent: "den Wind spüren"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Chris Lehane read the room perfectly — the Trump-Xi summit was the ideal moment to pitch global AI governance."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Chris Lehane hat den Wind gespürt — der Trump-Xi-Gipfel war der ideale Moment, globale KI-Governance vorzuschlagen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"A good developer reads the room: when the team is burned out, you don't push for a major refactor."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ein guter Entwickler spürt den Wind: Wenn das Team ausgebrannt ist, drückt man kein großes Refactoring durch."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · anthropic.com · news.sap.com · bloomberg.com · thehill.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #10 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
