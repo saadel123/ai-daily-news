@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-15",
+      "edition_number": 11,
+      "headlines": [
+        "Anthropic × Gates Foundation: 200 Mio. $ für KI in Gesundheit, Bildung und Landwirtschaft",
+        "Thinking Machines: 200-ms-Echtzeit-KI — Mira Murati bricht das Turn-Prinzip auf",
+        "Google Magic Pointer: KI-Mauszeiger versteht 'das da' — erstes Cursor-Redesign seit 50 Jahren",
+        "OpenAI Codex bekommt neue Windows-Sandbox — zwei isolierte Accounts, Firewall per Default",
+        "Mini Shai-Hulud: TanStack-npm-Angriff trifft OpenAI, Mistral und 160+ Pakete"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-15T16:00:00Z"
+    },
+    {
       "date": "2026-05-14",
       "edition_number": 10,
       "headlines": [
