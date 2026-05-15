@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 15.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 15. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #11</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic baut Brücken, Mira Murati bricht das Turn-Prinzip — und Googles Mauszeiger denkt mit.</h1>
+    <p class="subtitle">Dazu: OpenAI isoliert Codex auf Windows, die npm-Lieferkette wird zur Gefahrenzone und Claude Code 2.1.142 gibt Background-Agenten volle Kontrolle.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic × Gates Foundation</strong>: 200 Mio. $ für KI in Gesundheit, Bildung und Landwirtschaft</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟣</span><span><strong>Thinking Machines</strong> zeigt 200-ms-KI — Mira Murati bricht das Turn-Prinzip auf</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Google Magic Pointer</strong>: KI-Mauszeiger versteht "das da" — erstes Cursor-Redesign seit 50 Jahren</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Codex</strong> bekommt neue Windows-Sandbox — zwei isolierte Accounts, Firewall per Default</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔴</span><span><strong>Mini Shai-Hulud</strong>: TanStack-npm-Angriff trifft OpenAI, Mistral und 160+ Pakete</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × Gates Foundation · 200 Mio. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic und die Gates Foundation starten eine Partnerschaft für vier Jahre und 200 Millionen Dollar — mit Schwerpunkt auf globaler Gesundheit, Bildung und Landwirtschaft in <mark class="vocab" data-translation="Entwicklungsland — developing country / low-income country">Entwicklungsländern</mark>. Claude soll die Entwicklung neuer Impfstoffe und Therapien beschleunigen, Bildungs-Apps in Subsahara-Afrika und Indien antreiben und lokale <mark class="vocab" data-translation="Kleinbauern — smallholder farmers">Kleinbauern</mark> mit regional angepassten KI-Crop-Modellen unterstützen. Besonders <mark class="vocab" data-translation="bemerkenswert — noteworthy / remarkable">bemerkenswert</mark>: Anthropic will afrikanische Sprachen in Grundlagenmodellen deutlich besser abdecken, die bisher oft <mark class="vocab" data-translation="unterrepräsentiert — underrepresented">unterrepräsentiert</mark> waren. Ein klares Signal, dass Anthropic KI-Potenzial jenseits klassischer Enterprise-Märkte ernst nimmt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic and the Gates Foundation are launching a four-year, $200 million partnership focused on global health, education, and agriculture in lower-income countries. Claude will help accelerate vaccine and therapy development, power education apps in sub-Saharan Africa and India, and assist smallholder farmers with regionally-specific AI crop models. Notably, Anthropic is committing to better coverage of African languages, which have historically been underrepresented in foundation models. A clear signal that Anthropic is taking AI's potential beyond classic enterprise markets seriously.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" rel="noopener">→ anthropic.com · 13.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Thinking Machines · Interaction Models</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Mira Murati, frühere CTO von OpenAI, präsentiert mit ihrer Thinking Machines Lab eine Research-Preview <mark class="vocab" data-translation="sogenannte — so-called">sogenannter</mark> Interaction Models — eine neue Klasse von KI-Modellen, die das klassische <mark class="vocab" data-translation="Turn-Prinzip — turn-based request/response cycle">Turn-Prinzip</mark> auflöst. Ihr Modell TML-Interaction-Small antwortet in 0,40 Sekunden — ungefähr so schnell wie ein Mensch im Gespräch reagiert. Die Architektur teilt die Last auf: ein Interaction-Modell läuft live mit dem Nutzer, ein Background-Modell übernimmt <mark class="vocab" data-translation="rechenintensiv — computationally intensive">rechenintensive</mark> Tool-Calls <mark class="vocab" data-translation="asynchron — asynchronously">asynchron</mark>. Audio, Video und Text werden gleichzeitig verarbeitet, sodass das Modell unterbrechen, auf visuelle Hinweise reagieren und parallel Tool-Calls starten kann.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Mira Murati, formerly OpenAI's CTO, previews Thinking Machines Lab's first "interaction models" — a new class of AI systems that dissolve the classic request/response turn cycle. Their model TML-Interaction-Small responds in 0.40 seconds, roughly the speed of natural human conversation. The architecture splits the load: one model stays live with the user while a background model handles compute-intensive tool calls asynchronously. Audio, video, and text are processed simultaneously, letting the model interrupt, react to on-screen cues, and fire tool calls mid-conversation.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noopener">→ thinkingmachines.ai · 11.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.theregister.com/software/2026/05/13/googles-ai-enabled-mouse-pointer-understands-this-and-that/5240005" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google Magic Pointer · KI-Mauszeiger</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google DeepMind-Forscher haben den <mark class="vocab" data-translation="Mauszeiger — mouse cursor / pointer">Mauszeiger</mark> neu erfunden — zum ersten Mal seit 50 Jahren: Der "Magic Pointer" versteht nicht nur, wohin du zeigst, sondern was du damit <mark class="vocab" data-translation="vorhaben — to intend / plan to do">vorhast</mark>. Gemeinsam mit dem Mikrofon löst er Pronomen wie "das da" oder "dieses hier" direkt in Gemini-Aktionen auf. Das Feature startet zunächst auf Googles Googlebook-Laptop und soll Gemini-in-Chrome-Nutzern erlauben, auf Teile einer Webseite zu zeigen, statt einen vollständigen Prompt zu tippen. Ein echter <mark class="vocab" data-translation="Paradigmenwechsel — paradigm shift">Paradigmenwechsel</mark> für die Mensch-Computer-Interaktion — falls er sich im Alltag <mark class="vocab" data-translation="durchsetzen — to catch on / establish itself">durchsetzt</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google DeepMind researchers have reinvented the mouse cursor for the first time in 50 years: the "Magic Pointer" understands not just where you're pointing but what you intend to do. Combined with the microphone, it resolves pronouns like "this" and "that" directly into Gemini actions. The feature launches first on Google's upcoming Googlebook laptop and will let Gemini-in-Chrome users point at parts of a webpage instead of composing a full text prompt. A genuine paradigm shift for human-computer interaction — if it catches on in everyday use.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.theregister.com/software/2026/05/13/googles-ai-enabled-mouse-pointer-understands-this-and-that/5240005" target="_blank" rel="noopener">→ theregister.com · 13.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/building-codex-windows-sandbox/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Codex · Windows Sandbox</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Nach einem holprigen Windows-Launch im März 2026 hat OpenAI die Codex-Sandbox von Grund auf <mark class="vocab" data-translation="überarbeiten — to rework / revamp">überarbeitet</mark>. Das neue Design führt zwei <mark class="vocab" data-translation="dediziert — dedicated / purpose-built">dedizierte</mark> lokale Accounts ein: CodexSandboxOffline für den Default-Betrieb ohne jegliche Netzwerkverbindung und CodexSandboxOnline, wenn Nutzer breitere Konnektivität ausdrücklich autorisieren. Der Schreibzugriff bleibt auf den aktiven Workspace beschränkt; ausgehende Verbindungen sind per Default gesperrt und erfordern explizite <mark class="vocab" data-translation="Genehmigung — approval / authorization">Genehmigung</mark>. Die Lösung kombiniert Windows-ACLs, eingeschränkte Token und Firewall-Regeln, ohne den normalen Entwicklungsworkflow einzuschränken.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">After a rocky Windows launch in March 2026, OpenAI has reworked the Codex sandbox architecture from the ground up. The new design introduces two dedicated local accounts: CodexSandboxOffline for default operation with all outbound traffic blocked at the OS level, and CodexSandboxOnline for when users explicitly authorize broader connectivity. Write access is scoped to the active workspace, and the agent must request approval before acting outside defined boundaries. The solution combines Windows ACLs, restricted tokens, and firewall rules without breaking ordinary development workflows.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/building-codex-windows-sandbox/" target="_blank" rel="noopener">→ openai.com · 14.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mini Shai-Hulud · TanStack npm Angriff</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Ein koordinierter <mark class="vocab" data-translation="Lieferketten-Angriff — supply chain attack">Lieferketten-Angriff</mark> namens "Mini Shai-Hulud" hat am 11. Mai innerhalb von sechs Minuten 84 <mark class="vocab" data-translation="schadhaft — malicious / harmful">schadhafte</mark> Versionen in 42 @tanstack/*-npm-Pakete injiziert — und damit OpenAI, Mistral AI und über 160 weitere npm- und PyPI-Pakete getroffen. Zwei OpenAI-Mitarbeiter-Geräte wurden <mark class="vocab" data-translation="kompromittieren — to compromise (security)">kompromittiert</mark>; OpenAI findet keine Hinweise auf betroffene Produktivsysteme oder Nutzerdaten, muss aber seine macOS-Signatur-Zertifikate bis zum 12. Juni erneuern. Der Angriff kombinierte GitHub Actions Cache Poisoning mit OIDC-Token-Diebstahl — zugeschrieben der Gruppe TeamPCP. Action Item für alle Entwickler: @tanstack/*-Abhängigkeiten sofort auf gepatchte Versionen aktualisieren und npm audit <mark class="vocab" data-translation="ausführen — to run / execute">ausführen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">A coordinated supply chain attack dubbed "Mini Shai-Hulud" injected 84 malicious versions across 42 @tanstack/* npm packages in just six minutes on May 11 — hitting OpenAI, Mistral AI, and over 160 npm and PyPI packages in total. Two OpenAI employee devices were compromised; OpenAI found no evidence of production systems or user data being accessed, but must rotate its macOS signing certificates by June 12. The attack combined GitHub Actions cache poisoning with OIDC token extraction, attributed to the TeamPCP threat actor. Action item: audit all @tanstack/* dependencies and update to patched versions immediately.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/" target="_blank" rel="noopener">→ openai.com · 15.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.142" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.142 · agents flags</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code bekommt mit Version 2.1.142 acht neue Flags für den Dispatch-Befehl, der Hintergrund-Agenten startet — du kannst jetzt direkt beim Start das Arbeitsverzeichnis, die Settings-Datei, den MCP-Server, das Plugin-Verzeichnis, den Permission-Mode, das Modell und den <mark class="vocab" data-translation="Effort-Level — effort level (compute budget for the session)">Effort-Level</mark> festlegen. Außerdem läuft der Fast Mode ab sofort per Default auf Opus 4.7 statt Opus 4.6 — für alle, die schnellere Ausgaben brauchen, ohne das Modell manuell zu <mark class="vocab" data-translation="wechseln — to switch / change">wechseln</mark>. Und wer ein Plugin mit einer SKILL.md im Root-Ordner hat, muss kein eigenes Skills-Unterverzeichnis mehr anlegen: Claude Code erkennt es <mark class="vocab" data-translation="automatisch — automatically">automatisch</mark> als Skill.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.142 ships eight new flags for the command that dispatches background agents — you can now set the working directory, settings file, MCP config, plugin directory, permission mode, model, and effort level directly at dispatch time, without editing a config file first. Fast mode now defaults to Opus 4.7 instead of Opus 4.6, so you get faster output without a manual model switch. And if your plugin has a SKILL.md in its root with no skills/ subdirectory, Claude Code now surfaces it as a skill automatically.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--add-dir &lt;path&gt;</code></dt>
+          <dd>add a working directory to the dispatched background session</dd>
+          <dt><code>--settings &lt;file&gt;</code></dt>
+          <dd>use a specific settings file for the background session</dd>
+          <dt><code>--mcp-config &lt;file&gt;</code></dt>
+          <dd>load a specific MCP config into the dispatched session</dd>
+          <dt><code>--plugin-dir &lt;path&gt;</code></dt>
+          <dd>add a plugin directory to the dispatched background session</dd>
+          <dt><code>--permission-mode &lt;mode&gt;</code></dt>
+          <dd>set the permission mode (e.g. auto, ask) for the background session</dd>
+          <dt><code>--model &lt;id&gt;</code></dt>
+          <dd>override the model for this dispatched background session</dd>
+          <dt><code>--effort &lt;level&gt;</code></dt>
+          <dd>set the effort level: low, normal, high, xhigh, or max</dd>
+          <dt><code>--dangerously-skip-permissions</code></dt>
+          <dd>skip all permission prompts in the background session</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Agent mit Opus 4.7, xhigh-Effort und eigenem MCP-Config · Agent with Opus 4.7, xhigh effort, custom MCP</span>
+$ claude agents --model claude-opus-4-7 --effort xhigh --mcp-config ./mcp-prod.json
+
+<span class="com"># Background-Agent im Auto-Mode starten · Dispatch a background agent in auto-mode</span>
+$ claude agents --permission-mode auto --add-dir ./src</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.142" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Paradigmenwechsel</div>
+        <div class="vocab-translation">paradigm shift · a fundamental change in approach</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Magic Pointer könnte einen echten Paradigmenwechsel in der Mensch-Computer-Interaktion einleiten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Magic Pointer could trigger a genuine paradigm shift in human-computer interaction.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">rechenintensiv</div>
+        <div class="vocab-translation">computationally intensive · compute-heavy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Rechenintensive Tool-Calls laufen im Hintergrund, damit die Unterhaltung flüssig bleibt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Compute-intensive tool calls run in the background so the conversation stays fluid.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Lieferkette</div>
+        <div class="vocab-translation">supply chain</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein Angriff auf die npm-Lieferkette kann tausende Entwickler gleichzeitig treffen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">An attack on the npm supply chain can hit thousands of developers at once.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">kompromittieren</div>
+        <div class="vocab-translation">to compromise · to breach (security context)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zwei Mitarbeiter-Geräte wurden kompromittiert, bevor der Angriff entdeckt wurde.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Two employee devices were compromised before the attack was discovered.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">unterrepräsentiert</div>
+        <div class="vocab-translation">underrepresented</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Afrikanische Sprachen sind in den meisten Grundlagenmodellen stark unterrepräsentiert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">African languages are severely underrepresented in most foundation models.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Hochtouren laufen</div>
+      <div class="idiom-meaning">to be in full swing · running at full speed — wörtlich: "to be running at high revs"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach dem Gates-Foundation-Deal läuft das Anthropic-Team auf Hochtouren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After the Gates Foundation deal, the Anthropic team is running at full speed."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Deployment-Prozess lief auf Hochtouren, als der TanStack-Angriff entdeckt wurde."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The deployment pipeline was in full swing when the TanStack attack was discovered."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pull the plug</div>
+      <div class="idiom-meaning">to shut something down · to cut off power — German equivalent: "den Stecker ziehen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI had to pull the plug on its old signing certificates after the supply chain breach."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI musste nach dem Supply-Chain-Angriff den Stecker bei den alten Signatur-Zertifikaten ziehen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If a background agent starts misbehaving, just pull the plug with Ctrl+C."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn ein Hintergrund-Agent anfängt, Blödsinn zu machen, einfach den Stecker ziehen mit Ctrl+C."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · thinkingmachines.ai · theregister.com · openai.com · wiz.io</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #11 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
