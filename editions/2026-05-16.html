@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 16. Mai 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 16. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #12</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic geht ins Enterprise: PwC schult 30.000 Leute, und Claude Code bekommt Opus 4.7 als Fast-Mode-Standard.</h1>
+    <p class="subtitle">Außerdem: ChatGPT will deine Kontonummer — und Gemini denkt jetzt für Wissenschaftler.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.142</strong>: Fast Mode läuft jetzt auf Opus 4.7, Plugins bekommen eine SKILL.md-Abkürzung</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic × PwC</strong>: 30.000 Claude-zertifizierte Berater, Office of the CFO als erstes Claude-only Business Unit</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>ChatGPT Personal Finance</strong>: Konten über Plaid einbinden, 12.000+ Banken, nur für Pro-Subscriber in den USA</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Codex</strong> kommt aufs Handy: iOS- und Android-Preview, Fernsteuerung für den Desktop-Client</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Gemini 3 Deep Think</strong>: Großes Upgrade für Wissenschaft — Chemie, Physik und Forschung jetzt vollwertig dabei</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.142" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.142 · Fast Mode auf Opus 4.7</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.142 bringt einen Wechsel, der alle Fast-Mode-Nutzer sofort trifft: Statt Opus 4.6 läuft Fast Mode jetzt <mark class="vocab" data-translation="standardmäßig — by default">standardmäßig</mark> mit Opus 4.7, das bei schwierigen Engineering-Aufgaben messbar besser ist. Plugins brauchen keine eigene Skills-Ordnerstruktur mehr — eine einzige SKILL.md im Root <mark class="vocab" data-translation="reicht aus — is sufficient / does the job">reicht aus</mark>, damit der Marketplace die Fähigkeiten erkennt. Dazu kommen neue Flags für den Agenten-Dashboard-Start, mit denen du Modell, Permission-Mode und Working Directory direkt beim Launch <mark class="vocab" data-translation="festlegst — you define / you set (separable verb)">festlegst</mark>. Wer mehrere Hintergrund-Sessions gleichzeitig steuert, spart sich damit viele manuelle Konfigurationsschritte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.142 flips a switch that touches every Fast Mode user immediately: instead of Opus 4.6, Fast Mode now runs on Opus 4.7 by default, showing measurable improvements on difficult engineering tasks. Plugins no longer need a dedicated skills folder structure — a single SKILL.md in the root is enough for the marketplace to pick up its skills. On top of that, new flags for the agent dashboard launch let you pin the model, permission mode and working directory right at startup. Anyone juggling multiple background sessions will save a lot of manual setup steps.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--model &lt;name&gt;</code></dt>
+          <dd>set the default model for sessions dispatched from the dashboard</dd>
+          <dt><code>--permission-mode &lt;mode&gt;</code></dt>
+          <dd>set the default permission mode for all dispatched sessions</dd>
+          <dt><code>--effort &lt;level&gt;</code></dt>
+          <dd>set the default effort level for dispatched sessions</dd>
+          <dt><code>--add-dir &lt;path&gt;</code></dt>
+          <dd>add a working directory to the dashboard and all dispatched sessions</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Dashboard mit Opus 4.7 im Auto-Modus starten · Launch dashboard with Opus 4.7 in auto mode</span>
+$ claude agents --model claude-opus-4-7 --permission-mode auto
+
+<span class="com"># Sessions auf ein Projektverzeichnis einschränken · Scope sessions to a project directory</span>
+$ claude agents --cwd ~/code/my-project</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.142" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/pwc-expanded-partnership" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × PwC · 30.000 Claude-zertifiziert</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">PwC und Anthropic haben ihre strategische Allianz <mark class="vocab" data-translation="erheblich — considerably / substantially">erheblich</mark> <mark class="vocab" data-translation="ausgebaut — expanded / scaled up (separable: ausbaut, ausgebaut)">ausgebaut</mark>: 30.000 PwC-Berater werden auf Claude <mark class="vocab" data-translation="zertifiziert — certified">zertifiziert</mark>, und der Rollout von Claude Code sowie Claude Cowork startet in den US-Teams. Als erstes eigenständiges Geschäftsfeld entsteht ein Office of the CFO, das vollständig auf Anthropics Produkten aufgebaut ist. Bereits in Produktion laufen Projekte in professionellen Sportbetrieben, Versicherungs-Underwriting und Mainframe-Modernisierung — Lieferzeiten sollen laut PwC um bis zu 70 Prozent gesunken sein. Anthropic positioniert sich damit als bevorzugter KI-Stack für die Big-Four-Beratung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">PwC and Anthropic have substantially expanded their strategic alliance: 30,000 PwC consultants will be certified on Claude, and the rollout of Claude Code and Claude Cowork starts with US teams. The first standalone business unit built entirely on Anthropic's products is a new Office of the CFO practice. Already in production across professional sports operations, insurance underwriting and mainframe modernization — delivery times reportedly cut by up to 70%. Anthropic is cementing itself as the preferred AI stack for the Big Four.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/pwc-expanded-partnership" target="_blank" rel="noopener">→ anthropic.com · 14.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Personal Finance · Bankkonten via Plaid</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI <mark class="vocab" data-translation="launcht — launches (English verb naturalised in German tech speech)">launcht</mark> persönliche Finanz-Tools für ChatGPT Pro: US-Nutzer können ihre Bank-Accounts über Plaid <mark class="vocab" data-translation="einbinden — to link in / to connect">einbinden</mark>, den Dienst, der in den USA über 12.000 Finanzinstitutionen <mark class="vocab" data-translation="abdeckt — covers / encompasses">abdeckt</mark>. Danach lässt sich ChatGPT fragen, was im letzten Quartal am meisten Geld gekostet hat, wie ein realistisches Budget für das nächste Jahr aussieht oder wo sich am leichtesten sparen lässt. OpenAI betont, dass Transaktionsdaten nicht fürs Training verwendet werden. Für den Fintech-Sektor sitzt damit ein ernsthafter Mitbewerber direkt in der App der weltgrößten KI-Plattform.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is launching personal finance tools for ChatGPT Pro: US users can connect their bank accounts via Plaid, covering over 12,000 financial institutions in the US. After linking up, you can ask ChatGPT what you spent the most on last quarter, how a realistic budget for next year might look, or where to cut costs most easily. OpenAI stresses that transaction data won't be used for training. For the fintech sector, a serious competitor has just moved into the world's largest AI platform.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/" target="_blank" rel="noopener">→ techcrunch.com · 15.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Codex · iOS &amp; Android Preview</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI bringt Codex als Preview in die ChatGPT-App auf iOS und Android — kostenlos für alle Plan-Stufen, auch Free und Go. Das Handy <mark class="vocab" data-translation="fungiert als — acts as / serves as">fungiert</mark> dabei als <mark class="vocab" data-translation="Fernbedienung — remote control">Fernbedienung</mark> für den Codex-Desktop-Client auf dem Mac: Tasks starten, Commands genehmigen, Status checken. Gleichzeitig geht Remote SSH für alle Pläne in die General Availability, womit sich Codex direkt in firmeneigene Entwicklungsumgebungen einbinden lässt — inklusive eigenem Compute, Credentials und Firewall. Windows-Support für den mobilen Client ist <mark class="vocab" data-translation="angekündigt — announced / on the roadmap">angekündigt</mark>, ein konkreter Termin fehlt noch.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI is rolling out Codex as a preview inside the ChatGPT mobile app for iOS and Android — free for every plan tier, including Free and Go. The phone acts as a remote control for the Codex desktop client on Mac: kick off tasks, approve commands, check status. At the same time, Remote SSH goes generally available for all plans, letting you dock Codex directly into company-owned dev environments with their own compute, credentials and firewall. Windows support for the mobile client is announced but undated.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/" target="_blank" rel="noopener">→ techcrunch.com · 14.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini 3 Deep Think · Upgrade für Wissenschaft</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google hat Gemini 3 Deep Think mit einem großen Upgrade für Wissenschaft und Forschung <mark class="vocab" data-translation="versehen — to furnish with / to equip with">versehen</mark>: Das Reasoning-Modell unterstützt jetzt <mark class="vocab" data-translation="vollwertig — full-fledged / proper / comprehensive">vollwertig</mark> Chemie und Physik, nachdem es sich bisher vor allem auf Mathematik und Competitive Coding konzentriert hatte. Google AI Ultra-Abonnenten bekommen ab sofort Zugang, für API-Zugang gibt es ein Early-Access-Programm für Forschungseinrichtungen und Unternehmen. Das Modell wurde eng mit echten Wissenschaftlern entwickelt, die Probleme mit unvollständigen Daten und fehlenden Lösungspfaden einbrachten — typische Bedingungen echter Laborarbeit. Wer KI in wissenschaftliche Workflows <mark class="vocab" data-translation="einbetten — to embed / to integrate into">einbetten</mark> will, bekommt hier einen deutlich ernsthafteren Partner.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google has given Gemini 3 Deep Think a major upgrade aimed at science and research: the reasoning model now properly covers chemistry and physics, extending beyond its earlier focus on maths and competitive coding. Google AI Ultra subscribers get access right away; an early access program for enterprises and research institutions covers the API. The model was built in close collaboration with scientists who contributed real-world problems with incomplete data and no clear solution path. For teams embedding AI into scientific workflows, this is a considerably more serious partner.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank" rel="noopener">→ blog.google · 11.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.143 · Plugin-Abhängigkeiten &amp; Kontext-Kosten</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.143 macht das Plugin-Ökosystem robuster: Wenn du ein Plugin deaktivieren willst, von dem ein anderes <mark class="vocab" data-translation="abhängt — depends on (separable: hängt ab)">abhängt</mark>, <mark class="vocab" data-translation="verweigert — refuses / denies">verweigert</mark> Claude Code das Disable und gibt dir direkt den passenden Befehl, um die ganze Kette abzuschalten. Im Plugin-Marketplace siehst du jetzt außerdem eine Schätzung, wie viel Kontext-Tokens ein Plugin pro Turn und pro Invocation verbraucht — nützlich, bevor du es installierst. Für Repos, bei denen Git-Worktrees schlicht nicht funktionieren, gibt es mit dem neuen Setting worktree.bgIsolation auf none eine saubere <mark class="vocab" data-translation="Hintertür — escape hatch / back door">Hintertür</mark>: Hintergrund-Sessions bearbeiten dann direkt die Working Copy, ohne den EnterWorktree-Schritt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.143 hardens the plugin ecosystem: if you try to disable a plugin that another enabled plugin depends on, Claude Code now refuses and hands you a copy-pasteable command to disable the whole dependency chain. The plugin marketplace now also shows projected context token costs per turn and per invocation — useful to check before you install. For repos where Git worktrees simply don't work, the new worktree.bgIsolation "none" setting is a clean escape hatch: background sessions then edit the working copy directly, skipping the EnterWorktree step.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude plugin disable &lt;name&gt;</pre>
+<pre class="cmd-examples"><span class="com"># Schlägt fehl und zeigt Disable-Kette an · Refuses and prints the disable chain</span>
+$ claude plugin disable my-util-plugin
+
+<span class="com"># Worktree-Isolation deaktivieren (settings.json) · Disable worktree isolation</span>
+$ claude config set worktree.bgIsolation none</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 15.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausbauen</div>
+        <div class="vocab-translation">to expand · to scale up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic baut die Partnerschaft mit PwC weiter aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic is scaling up the partnership with PwC.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einbinden</div>
+        <div class="vocab-translation">to connect · to link in</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst dein Bankkonto direkt in ChatGPT einbinden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can link your bank account directly into ChatGPT.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Fernbedienung</div>
+        <div class="vocab-translation">remote control</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Handy wird zur Fernbedienung für den Desktop-Codex.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The phone becomes a remote control for the desktop Codex client.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einbetten</div>
+        <div class="vocab-translation">to embed · to integrate into</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini Deep Think lässt sich in wissenschaftliche Workflows einbetten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini Deep Think can be embedded into scientific workflows.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abhängen von</div>
+        <div class="vocab-translation">to depend on · to hinge on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn Plugin B von Plugin A abhängt, kannst du A nicht einfach abschalten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">If Plugin B depends on Plugin A, you can't simply disable A.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Kurve kriegen</div>
+      <div class="idiom-meaning">to pull it off at the last moment · to navigate a tight turn — wörtlich: "to get the curve"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat beim Fast Mode die Kurve gekriegt — Opus 4.7 als neuer Standard macht einen spürbaren Unterschied."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic pulled it off with Fast Mode — Opus 4.7 as the new default makes a noticeable difference."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Deploy hätte schiefgehen können, aber wir haben rechtzeitig die Kurve gekriegt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The deploy could have gone sideways, but we managed to pull it off just in time."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to cut to the chase</div>
+      <div class="idiom-meaning">to get straight to the point — German equivalent: "auf den Punkt kommen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Let me cut to the chase: Codex is now on your phone, free for every plan."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Kurz auf den Punkt: Codex ist jetzt auf dem Handy, kostenlos für alle Pläne."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Our retro ran way too long — someone needs to cut to the chase next time."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Unser Retro hat viel zu lang gedauert — beim nächsten Mal sollte jemand schneller auf den Punkt kommen."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · anthropic.com · techcrunch.com · blog.google</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #12 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
