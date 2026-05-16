@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-16",
+      "edition_number": 12,
+      "headlines": [
+        "Claude Code 2.1.142: Fast Mode läuft jetzt auf Opus 4.7, Plugins bekommen eine SKILL.md-Abkürzung",
+        "Anthropic × PwC: 30.000 Claude-zertifizierte Berater, Office of the CFO als erstes Claude-only Business Unit",
+        "ChatGPT Personal Finance: Konten über Plaid einbinden, 12.000+ Banken, nur für Pro-Subscriber in den USA",
+        "OpenAI Codex kommt aufs Handy: iOS- und Android-Preview, Fernsteuerung für den Desktop-Client",
+        "Gemini 3 Deep Think: Großes Upgrade für Wissenschaft — Chemie, Physik und Forschung jetzt vollwertig dabei"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-16T16:00:00Z"
+    },
+    {
       "date": "2026-05-15",
       "edition_number": 11,
       "headlines": [
