@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 17.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 17. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #13</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Plugins mit Köpfchen, OpenAI klagt Apple an und Google schlägt den ersten KI-Zero-Day zurück.</h1>
+    <p class="subtitle">Außerdem: Anthropics neuer Agenten-Token-Zähler und OpenAIs Cybersecurity-Plattform Daybreak.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.143</strong>: Plugin-Abhängigkeitsprüfung blockiert blinde Deinstallationen, /plugin zeigt Kostenschätzungen</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Agenten-Tool-Nutzung auf Paid-Plänen bekommt eigenen Credit-Zähler</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI vs. Apple</strong>: Klage wegen Siri-ChatGPT-Integration, die kein Wachstum brachte</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Daybreak</strong>: KI-Plattform findet und patcht Sicherheitslücken automatisch</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Google</strong> schlägt ersten KI-generierten Zero-Day zurück — 2FA-Bypass für Massenangriff vereitelt</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.143 · Plugin-Dependencies &amp; Kostencheck</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.143 bringt eine wichtige Änderung für alle, die mit mehreren Plugins arbeiten: Der Plugin-Deaktivierungsbefehl <mark class="vocab" data-translation="blockieren — to block / refuse an operation">blockiert</mark> jetzt, wenn ein anderes aktiviertes Plugin vom Ziel <mark class="vocab" data-translation="abhängen — to depend on (separable verb)">abhängt</mark> — und gibt dir direkt einen Copy-paste-fertigen Hinweis, in welcher Reihenfolge du die Kette sauber abbaust. Gleichzeitig zieht Enable alle transitiven <mark class="vocab" data-translation="Abhängigkeiten — dependencies (plural)">Abhängigkeiten</mark> automatisch mit hoch, sodass du nicht mehr manuell die ganze Kette aktivieren musst. Neu im Plugin-Marketplace: <mark class="vocab" data-translation="Kostenschätzungen — cost estimates">Kostenschätzungen</mark> pro Turn und pro Invocation, damit du siehst, was ein Plugin im Kontext wirklich kostet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.143 ships an important change for anyone managing multiple plugins: the plugin disable command now blocks if another enabled plugin depends on the target — and hands you a ready-to-copy hint showing the exact chain to disable. Plugin enable now force-enables all transitive dependencies automatically, so you no longer have to manually activate the whole chain. New in the plugin marketplace: projected context cost per turn and per invocation, so you can see exactly what a plugin costs in a session before committing to it.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude plugin disable &lt;name&gt;
+claude plugin enable &lt;name&gt;</pre>
+<pre class="cmd-examples"><span class="com"># Prüft Abhängigkeiten, blockiert mit Disable-Ketten-Hinweis · Checks deps, blocks with disable-chain hint</span>
+$ claude plugin disable my-plugin
+
+<span class="com"># Aktiviert Plugin und alle transitiven Abhängigkeiten · Enables plugin and all transitive dependencies</span>
+$ claude plugin enable my-plugin</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 15.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Agenten-Token-Zähler für Paid-Pläne</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat die Nutzungsbedingungen für Agenten-Calls überarbeitet: Wer auf Paid-Plänen externe Tools und Agenten-Workflows in Claude <mark class="vocab" data-translation="einbinden — to integrate / plug in (separable verb)">einbindet</mark>, bekommt ab sofort einen eigenen Credit-Zähler — getrennt vom normalen <mark class="vocab" data-translation="Kontingent — quota / allowance">Kontingent</mark>. Hintergrund ist der wachsende <mark class="vocab" data-translation="Wettbewerb — competition">Wettbewerb</mark> mit OpenAI, das aktiv Agenten-User abwirbt. Anthropic will damit die Kosten für intensivere Nutzung fairer abbilden, statt sie ins reguläre Limit zu <mark class="vocab" data-translation="quetschen — to squeeze / cram into">quetschen</mark>. Für die meisten Entwickler ändert sich im Alltag wenig — bei intensiven Multi-Agenten-Setups lohnt es sich aber, die neue Abrechnung genau im Blick zu behalten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has revised how it meters outside agent tool usage: on paid plans, agentic workflows and external tool calls now run against a separate credit meter rather than the main message allowance. The move comes as OpenAI actively tries to win over agentic users. Anthropic says the change lets them price intensive usage more fairly instead of jamming it into the flat quota. For most developers with moderate workloads nothing changes day-to-day, but anyone running heavy multi-agent setups should keep a close eye on the new billing.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens" target="_blank" rel="noopener">→ axios.com · 14.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI vs. Apple · Klage wegen Siri-Integration</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI erwägt laut Bloomberg-Bericht rechtliche Schritte gegen Apple — weil die ChatGPT-Siri-Integration die erhofften Subscriber einfach nicht gebracht hat. ChatGPT ist in iOS nur in wenigen Bereichen aktiv und muss oft explizit beim Namen genannt werden, statt nahtlos aus Siri heraus zu kommen. OpenAI-Anwälte arbeiten gemeinsam mit einer externen <mark class="vocab" data-translation="Kanzlei — law firm">Kanzlei</mark> an verschiedenen Optionen — von einer <mark class="vocab" data-translation="Vertragsbruch-Mahnung — breach-of-contract notice">Vertragsbruch-Mahnung</mark> bis zur vollständigen Klage. Finale Entscheidungen seien noch nicht gefallen — OpenAI hofft offenbar noch auf eine <mark class="vocab" data-translation="außergerichtliche Einigung — out-of-court settlement">außergerichtliche Einigung</mark>, aber die <mark class="vocab" data-translation="Geduld — patience">Geduld</mark> ist sichtlich am Ende.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is reportedly exploring legal action against Apple over its lackluster ChatGPT–Siri integration, according to Bloomberg. ChatGPT ended up buried in iOS — active in just a few areas and often needing to be explicitly invoked by name rather than flowing naturally from Siri. OpenAI lawyers are working with an outside firm on options ranging from a breach-of-contract notice to a full lawsuit. No final decision has been made yet, and OpenAI reportedly still hopes for an out-of-court resolution — but its patience appears to be running out.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/" target="_blank" rel="noopener">→ techcrunch.com · 14.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/daybreak/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Daybreak · KI-gestützte Schwachstellen-Erkennung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat Daybreak gelauncht — eine neue Cybersecurity-Plattform, die Codex Security mit Frontier-Modell-Fähigkeiten kombiniert, um <mark class="vocab" data-translation="Schwachstellen — vulnerabilities / security weaknesses">Schwachstellen</mark> automatisch zu finden und zu patchen. Das System scannt Codebases proaktiv, validiert Patches auf korrekte Wirkung und prüft die Supply Chain auf <mark class="vocab" data-translation="kompromittierte — compromised">kompromittierte</mark> Dependencies. Damit baut OpenAI auf dem im März 2026 gestarteten Codex Security auf und positioniert sich klar im B2B-Sicherheitsmarkt. Für Entwicklerteams, die ihre Dependency-Chains schon mal sorgenvoll angestarrt haben, klingt das nach einem interessanten Ansatz — zumal die API für <mark class="vocab" data-translation="akkreditierte — accredited / authorized">akkreditierte</mark> Security-Teams offen ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI launched Daybreak, a new cybersecurity platform combining Codex Security with frontier-model capabilities to automatically find and patch vulnerabilities. The system proactively scans codebases, validates whether patches have the intended effect, and checks supply chains for compromised dependencies. Daybreak builds on Codex Security from March 2026 and positions OpenAI firmly in the B2B security market. For developer teams that have stared anxiously at their dependency trees, this looks like a meaningful offering — and the API is open for accredited security teams.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/daybreak/" target="_blank" rel="noopener">→ openai.com · 12.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google · Erster KI-generierter Zero-Day abgewehrt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Googles Threat Intelligence Group hat den mutmaßlich ersten KI-generierten Zero-Day-Exploit <mark class="vocab" data-translation="abgewehrt — thwarted / warded off (past participle)">abgewehrt</mark>: Eine Hackergruppe nutzte ein verfügbares KI-Tool, um eine unbekannte 2FA-Bypass-<mark class="vocab" data-translation="Schwachstelle — vulnerability / security flaw">Schwachstelle</mark> zu finden und <mark class="vocab" data-translation="auszunutzen — to exploit (separable infinitive)">auszunutzen</mark> — geplant als Grundlage für ein Massenexploitation-Ereignis. Google hat das Angriffsmuster proaktiv entdeckt und veröffentlicht; der Einsatz dürfte damit <mark class="vocab" data-translation="vereitelt — foiled / prevented">vereitelt</mark> worden sein. Das Gemini-Modell selbst war laut Google nicht beteiligt. Der Vorfall unterstreicht, was viele Sicherheitsforscher seit Monaten warnen: KI macht Zero-Day-Entwicklung schneller und zugänglicher — und wir stehen damit noch am Anfang.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google's Threat Intelligence Group says it disrupted what is likely the first documented AI-generated zero-day exploit: a hacker group used a publicly available AI tool to find and exploit an unknown 2FA-bypass vulnerability, planning to deploy it in a mass exploitation campaign. Google spotted the attack pattern proactively and published its findings, which may have prevented the attack from launching. Google's own Gemini model was not involved, the company says. The incident underscores what security researchers have been warning for months: AI makes zero-day development faster and more accessible, and we are only at the beginning.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html" target="_blank" rel="noopener">→ cnbc.com · 11.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.143 · Worktree-Isolation abschalten</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.143 bringt eine nützliche Einstellung für alle, die Background-Sessions in Repos nutzen, wo Git-Worktrees <mark class="vocab" data-translation="unpraktisch — impractical / inconvenient">unpraktisch</mark> sind — zum Beispiel in Monorepos, auf Netzlaufwerken oder bei komplexen Submodule-Setups. Mit dem neuen Wert none für die Worktree-Hintergrund-Isolation arbeiten Background-Sessions direkt im Working-Copy, ohne einen separaten Worktree <mark class="vocab" data-translation="anzulegen — to create / set up (separable infinitive)">anzulegen</mark>. Das spart Disk-Space und <mark class="vocab" data-translation="umgeht — bypasses / works around">umgeht</mark> Umgebungen, bei denen der Worktree-Layer schlicht nicht funktioniert. Einfach in die .claude/settings.json eintragen — und Background-Agents laufen, als wäre gar kein Isolation-Layer da.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.143 adds a handy setting for teams running background sessions in repos where Git worktrees are impractical — think monorepos, network-mounted drives, or complex submodule setups. Setting the worktree background isolation to none makes background sessions work directly in the working copy, skipping the separate worktree entirely. It saves disk space and sidesteps environments where the worktree layer simply does not work. Drop it in your .claude/settings.json and background agents run as if there is no isolation layer at all.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.143" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 15.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">abwehren</div>
+        <div class="vocab-translation">to thwart · to ward off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google hat den Zero-Day-Angriff rechtzeitig abgewehrt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google thwarted the zero-day attack in time.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einkalkulieren</div>
+        <div class="vocab-translation">to factor in · to budget for</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Agenten-Token-Kosten muss ich ab jetzt einkalkulieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">I need to factor in the agent token costs from now on.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausnutzen</div>
+        <div class="vocab-translation">to exploit · to take advantage of</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Gruppe wollte die Sicherheitslücke in großem Stil ausnutzen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The group wanted to exploit the security gap on a massive scale.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufräumen</div>
+        <div class="vocab-translation">to clean up · to tidy up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Endlich kann ich meine Plugin-Abhängigkeiten sauber aufräumen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Finally I can cleanly tidy up my plugin dependencies.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">klagen</div>
+        <div class="vocab-translation">to sue · to file a lawsuit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI erwägt, gegen Apple zu klagen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI is considering suing Apple.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">im Trüben fischen</div>
+      <div class="idiom-meaning">to exploit a murky or unclear situation for personal gain — wörtlich: "to fish in murky water"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Solange die Lücke unbekannt war, haben die Angreifer schön im Trüben gefischt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"While the gap was unknown, the attackers were happily fishing in murky waters."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bei veralteten Dependencies fischen Angreifer besonders gern im Trüben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With outdated dependencies, attackers love to fish in murky waters."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to cover one's tracks</div>
+      <div class="idiom-meaning">to hide evidence of one's actions — German equivalent: "seine Spuren verwischen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After the exploit, the group tried to cover their tracks before Google detected them."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach dem Exploit versuchte die Gruppe, ihre Spuren zu verwischen, bevor Google sie entdeckte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Good logging makes it much harder for attackers to cover their tracks."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Gutes Logging macht es Angreifern viel schwerer, ihre Spuren zu verwischen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · axios.com · techcrunch.com · openai.com · cnbc.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #13 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
