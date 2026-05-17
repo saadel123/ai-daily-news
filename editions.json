@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-17",
+      "edition_number": 13,
+      "headlines": [
+        "Claude Code 2.1.143: Plugin-Abhängigkeitsprüfung blockiert blinde Deinstallationen, /plugin zeigt Kostenschätzungen",
+        "Anthropic: Agenten-Tool-Nutzung auf Paid-Plänen bekommt eigenen Credit-Zähler",
+        "OpenAI vs. Apple: Klage wegen Siri-ChatGPT-Integration, die kein Wachstum brachte",
+        "OpenAI Daybreak: KI-Plattform findet und patcht Sicherheitslücken automatisch",
+        "Google schlägt ersten KI-generierten Zero-Day zurück — 2FA-Bypass für Massenangriff vereitelt"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-17T16:00:00Z"
+    },
+    {
       "date": "2026-05-16",
       "edition_number": 12,
       "headlines": [
