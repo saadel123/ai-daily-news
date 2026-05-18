@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-18",
+      "edition_number": 14,
+      "headlines": [
+        "Claude for Legal: Anthropic bringt 20+ MCP-Connectoren und 12 spezialisierte Plugins für Law Firms",
+        "Grok Build: xAIs Terminal-Coding-Agent mit 8 parallelen Sub-Agenten tritt gegen Claude Code an",
+        "Microsoft-AI-Chef Suleyman: Alle Büro-Jobs in 18 Monaten durch KI automatisiert",
+        "Google I/O morgen: Gemini 4.0 erwartet — Android-XR-Brillen und Gemini Omni bestätigt",
+        "Meta Avocado verfehlt die Mai-Deadline — intern unter GPT-5.5 und Opus 4.7"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-18T16:14:11Z"
+    },
+    {
       "date": "2026-05-17",
       "edition_number": 13,
       "headlines": [
