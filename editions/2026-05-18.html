@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 18.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 18. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #14</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Wettbewerb im Terminal und Disruption am Schreibtisch</h1>
+    <p class="subtitle">xAI fordert Claude Code heraus, Microsoft-AI-Chef zählt die Tage bis zur Office-AGI — und morgen beginnt Google I/O.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude for Legal</strong>: Anthropic bringt 20+ MCP-Connectoren und 12 Plugins für Law Firms</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔴</span><span><strong>Grok Build</strong>: xAIs Terminal-Coding-Agent mit 8 parallelen Sub-Agenten tritt gegen Claude Code an</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>Suleyman / Microsoft</strong>: KI automatisiert alle Büro-Jobs in 18 Monaten — das Ziel heißt professionelle AGI</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Google I/O morgen</strong>: Gemini 4.0 oder 3.5 erwartet — Android-XR-Brillen und Gemini Omni bestätigt</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Meta Avocado</strong>: Flagship verfehlt die Mai-Deadline — intern unter GPT-5.5 und Opus 4.7</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Claude for Legal · 20+ MCP-Connectoren · 12 Plugins</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic bringt Claude tief in den Rechtsalltag: Mit mehr als 20 neuen MCP-Connectoren und 12 Practice-Area-Plugins können Law Firms und Legal-Departments Claude jetzt nahtlos in ihre bestehenden Workflows <mark class="vocab" data-translation="einbetten — embed / integrate (lit. to bed something into a fabric)">einbetten</mark>. Anbindungen gibt es unter anderem für iManage, NetDocuments, LexisNexis und Thomson Reuters CoCounsel — also genau die Tools, die in <mark class="vocab" data-translation="Großkanzleien — large law firms (lit. big chancelleries)">Großkanzleien</mark> täglich laufen. Freshfields, Quinn Emanuel und Holland &amp; Knight gehören zu den Partnern, die Claude bereits auf echten <mark class="vocab" data-translation="Mandaten — matters / mandates (legal cases)">Mandaten</mark> einsetzen. Kostenfreie Zugänge für Legal-Aid-Organisationen wie das Free Law Project signalisieren, dass das Ganze kein reiner Großkanzlei-Deal ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic is pushing Claude deep into the legal world: more than 20 new MCP connectors and 12 practice-area plugins let law firms and legal departments embed Claude directly into their existing workflows. Integrations include iManage, NetDocuments, LexisNexis, and Thomson Reuters CoCounsel — exactly the tools that large firms already run on. Freshfields, Quinn Emanuel, and Holland &amp; Knight are among the partners already using Claude on live matters. Free connector access for legal aid organizations like the Free Law Project signals this isn't just a BigLaw deal.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/" target="_blank" rel="noopener">→ techcrunch.com · 12.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://x.ai/news/grok-build" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI Grok Build · Terminal-Coding-Agent · Claude-Code-Konkurrent</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">xAI hat mit Grok Build einen Terminal-Coding-Agenten vorgestellt, der sich direkt gegen Claude Code positioniert. Das Herzstück: bis zu acht <mark class="vocab" data-translation="gleichzeitig — simultaneously / at the same time">gleichzeitig</mark> laufende Sub-Agenten, die auf eigenen Branches arbeiten — ein Plan-Modus pausiert jeden Schritt, bis du ausdrücklich freigibst. Mit 70,8 Prozent auf SWE-Bench Verified und einem 256-K-Token-Kontext landet Grok Build in der ersten Riege der Coding-Tools. Der Early Beta ist aktuell SuperGrok-Heavy-Abonnenten vorbehalten; der günstige <mark class="vocab" data-translation="Einführungspreis — intro price / launch price">Einführungspreis</mark> in den ersten sechs Monaten ist offensichtlich als Wechsel-Incentive <mark class="vocab" data-translation="gedacht — intended / designed (lit. thought out as)">gedacht</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">xAI has launched Grok Build, a terminal-based coding agent positioned directly against Claude Code. The core feature: up to eight sub-agents working simultaneously on separate branches, with a plan mode that pauses at each step until you explicitly approve. Scoring 70.8% on SWE-Bench Verified and shipping a 256K-token context window, Grok Build lands in the top tier of today's coding tools. The early beta is currently exclusive to SuperGrok Heavy subscribers; the discounted intro price for the first six months is clearly designed as a switching incentive.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">grok build [task] [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--plan</code></dt>
+          <dd>show an implementation plan and wait for approval before editing any files</dd>
+          <dt><code>-p</code></dt>
+          <dd>headless / pipe mode — no interactive prompts, suitable for scripts and CI</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Aufgabe interaktiv starten · Start a task interactively</span>
+$ grok build "Add unit tests for the AuthService"
+
+<span class="com"># Plan anzeigen, erst dann Dateien ändern · Show plan before touching files</span>
+$ grok build --plan "Refactor the payment module"
+
+<span class="com"># In CI / Skript ohne Rückfragen · Run headless in scripts or CI</span>
+$ grok build -p "Fix the failing lint errors"</pre>
+      </section>
+      <a class="source" href="https://x.ai/news/grok-build" target="_blank" rel="noopener">→ x.ai · 15.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Microsoft AI · Suleyman · 18 Monate bis zur Office-AGI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Microsoft-AI-Chef Mustafa Suleyman hat im FT-Interview erklärt, KI werde in 12 bis 18 Monaten praktisch alle Aufgaben erledigen, für die man sich bislang an den Rechner setzt — Buchhaltung, Marketing, <mark class="vocab" data-translation="Projektmanagement — project management (English compound noun used in German)">Projektmanagement</mark>, Recht. Er spricht von professioneller AGI als dem konkreten nächsten Ziel für Microsoft. Das ist eine der direktesten Zeitprognosen von einem <mark class="vocab" data-translation="amtierenden — sitting / incumbent (adj. from amtieren, to hold office)">amtierenden</mark> AI-CEO — und kommt vom Haus, das mit OpenAI am engsten <mark class="vocab" data-translation="verknüpft — connected / intertwined (lit. knotted together)">verknüpft</mark> ist. Wie immer gilt: Ankündigungen sind das eine, <mark class="vocab" data-translation="Rollouts — rollouts (English loanword widely used in German tech)">Rollouts</mark> das andere.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Microsoft AI CEO Mustafa Suleyman told the Financial Times that AI will handle virtually all professional computer-based tasks — accounting, marketing, project management, legal — within 12 to 18 months, calling the goal "professional-grade AGI." It's one of the most direct timeline predictions from a sitting AI CEO, and it comes from the house most deeply intertwined with OpenAI. As always: predictions are one thing, rollouts another.</p>
+        </div>
+      </div>
+      <a class="source" href="https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/" target="_blank" rel="noopener">→ fortune.com · 16.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google I/O morgen · Gemini 4.0 · Android XR · Gemini Omni</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Morgen öffnet der Google-I/O-Keynote in Mountain View — und nach allem, was <mark class="vocab" data-translation="durchgesickert — leaked (lit. seeped through)">durchgesickert</mark> ist, wird es ein Gemini-Moment: Gerüchte zeigen sowohl auf ein Gemini 3.5 als auch auf ein vollwertiges Gemini 4.0 mit 2-Millionen-Token-Kontext und Sub-Sekunden-Latenz. Android-XR-Brillen in zwei Varianten sind offiziell bestätigt — eine ohne Display, eine mit In-Lens-Projektion für Navigation und Live-Übersetzung. Das Gemini-Omni-Videotool tauchte bereits im App-UI auf, bevor es offiziell vorgestellt wurde. <mark class="vocab" data-translation="Analysten — analysts">Analysten</mark> erwarten, dass der neue Gemini hinter Mythos und GPT-5.5 bleibt — Google muss zeigen, dass es nicht nur <mark class="vocab" data-translation="aufholt — catches up (separable verb: aufholen)">aufholt</mark>, sondern anführt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Tomorrow the Google I/O keynote opens in Mountain View, and by all accounts it's shaping up as a Gemini moment: leaks point to either a Gemini 3.5 or a full Gemini 4.0 with a 2M-token context window and sub-second latency. Android XR glasses in two variants are officially confirmed — one without a display, one with in-lens projection for navigation and live translation. The Gemini Omni video tool already surfaced in the Gemini app UI before its official introduction. Analysts expect the new Gemini to land behind Mythos and GPT-5.5 — Google needs to show it can lead, not just catch up.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/" target="_blank" rel="noopener">→ androidauthority.com · 17.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://mlq.ai/news/meta-postpones-avocado-ai-model-launch-to-may-amid-performance-gaps-with-competitors/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meta Avocado · Mai-Deadline verpasst · Benchmarks unter Opus 4.7</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Metas nächstes Flagship-Modell mit dem Codenamen Avocado sollte eigentlich im Mai erscheinen — doch Mitte Mai ist es immer noch nicht da. Interne Benchmarks sollen das Modell unter GPT-5.5 und Claude Opus 4.7 <mark class="vocab" data-translation="einordnen — rank / classify (lit. to sort something into order)">einordnen</mark>. Meta hat den Start mehrfach <mark class="vocab" data-translation="verschoben — postponed / delayed (from verschieben)">verschoben</mark> und erwägt Berichten zufolge sogar, Googles Gemini-Technologie zu lizenzieren, bis der eigene Nachfolger Watermelon bereitsteht. Das Unternehmen gibt dieses Jahr 115 bis 135 Milliarden Dollar für KI-Infrastruktur aus — ein Signal, dass man auf lange Sicht <mark class="vocab" data-translation="kämpft — fights / competes (here: playing the long game)">kämpft</mark>, auch wenn kurzfristig nichts zu liefern ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Meta's next flagship model, codenamed Avocado, was supposed to ship in May — but mid-May has come and gone with no announcement. Internal benchmarks apparently rank it below GPT-5.5 and Claude Opus 4.7. Meta has pushed the launch date multiple times and reportedly even discussed licensing Google's Gemini technology until its own successor model, codenamed Watermelon, is ready. The company is spending $115–135 billion on AI infrastructure this year — a signal it's fighting for the long game, even when there's nothing to deliver in the near term.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mlq.ai/news/meta-postpones-avocado-ai-model-launch-to-may-amid-performance-gaps-with-competitors/" target="_blank" rel="noopener">→ mlq.ai · 18.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.140" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.140 · Plugin-Konflikte sichtbar in /doctor</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.140 löst einen häufigen Silent-Fail in Plugins: Wenn du in der plugin.json einen Ordner wie commands explizit setzt, wird der gleichnamige <mark class="vocab" data-translation="Standardordner — default folder (lit. standard folder)">Standardordner</mark> still ignoriert — und deine Befehle tauchen nirgendwo auf. Ab 2.1.140 werden diese Konflikte <mark class="vocab" data-translation="explizit — explicitly">explizit</mark> in /doctor, beim Slash-Command /plugin und beim Aufruf claude plugin list angezeigt. Wer also Plugin-Befehle <mark class="vocab" data-translation="vermisst — is missing / notices the absence of">vermisst</mark>, sollte als Erstes dort nachschauen — das spart langes Rätselraten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.140 surfaces a common silent failure in plugins: if you explicitly set a folder like commands in plugin.json, any default folder with the same name is quietly ignored — and your commands vanish. From 2.1.140, these conflicts are flagged explicitly in /doctor, in the /plugin slash command, and when running claude plugin list. If your plugin commands are missing, that's the first place to check — saves a lot of head-scratching.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/doctor
+claude plugin list</pre>
+<pre class="cmd-examples"><span class="com"># Plugin-Konfigurationskonflikte sehen · Spot plugin.json conflicts</span>
+$ /doctor
+
+<span class="com"># Alle geladenen Komponenten eines Plugins auflisten · List a plugin's loaded components</span>
+$ claude plugin list</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.140" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">tüfteln</div>
+        <div class="vocab-translation">to tinker · to hack away at</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wir tüfteln noch an der Agentic-Pipeline, bis alles rund läuft.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We're still tinkering with the agentic pipeline until everything runs smoothly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausliefern</div>
+        <div class="vocab-translation">to ship · to deliver (software)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Team hat das neue Feature pünktlich ausgeliefert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The team shipped the new feature on time.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">sinnvoll</div>
+        <div class="vocab-translation">sensible · meaningful · worth it</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein Plan-Modus ist besonders bei destruktiven Operationen sinnvoll.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A plan mode is especially sensible for destructive operations.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nachziehen</div>
+        <div class="vocab-translation">to follow suit · to catch up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nach Claude Code zieht jetzt auch xAI mit einem Terminal-Agenten nach.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">After Claude Code, xAI is now following suit with a terminal agent.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einordnen</div>
+        <div class="vocab-translation">to classify · to rank · to put in context</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Dieses Modell lässt sich nur schwer in eine Kategorie einordnen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">This model is hard to classify into a single category.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Rad neu erfinden</div>
+      <div class="idiom-meaning">to reinvent the wheel — wörtlich: "to invent the wheel anew"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir müssen das Rad nicht neu erfinden — es gibt schon einen MCP-Connector dafür."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We don't have to reinvent the wheel — there's already an MCP connector for that."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Grok Build erfindet das Rad nicht neu, aber es dreht es erheblich schneller."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Grok Build doesn't reinvent the wheel, but it spins it considerably faster."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to endure a painful but necessary situation — German equivalent: "die Kröte schlucken" (lit. swallow the toad)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We'll just have to bite the bullet and migrate the entire auth system to the new API."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir müssen die Kröte schlucken und das gesamte Auth-System auf die neue API migrieren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Meta bit the bullet and discussed licensing Gemini while Avocado catches up."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Meta schluckt die Kröte und diskutiert eine Gemini-Lizenz, bis Avocado aufgeholt hat."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · x.ai · fortune.com · androidauthority.com · mlq.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #14 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
