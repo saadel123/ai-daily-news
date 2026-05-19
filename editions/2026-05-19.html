@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 19.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 19. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #15</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Google läutet die KI-Ära der Betriebssysteme ein — I/O 2026 bringt Gemini 4, Aluminium OS und XR-Brillen.</h1>
+    <p class="subtitle">Außerdem: Anthropic sichert Agenten-Infra mit MCP-Tunneln und Self-Hosted Sandboxes, Meta chattet jetzt spurlos off-the-record — und xAI lässt Colossus 2 für Grok sprechen.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Managed Agents</strong>: MCP-Tunnel verbinden Agenten mit privaten Netzwerken — kein offener Firewall-Port nötig</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Google I/O 2026</strong>: Gemini 4, Gemini Spark Agent, Aluminium OS und Android-XR-Brillen mit vier Hardware-Partnern</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Meta Incognito Chat</strong>: KI-Gespräche ohne Server-Log auf WhatsApp — verschlüsselt in Trusted Execution Environments</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI GPT-5.2-Codex</strong>: spezialisiertes Coding-Modell jetzt für alle zahlenden Nutzer auf allen Codex-Surfaces</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>xAI SuperGrok Heavy &amp; Grok auf Colossus 2</strong>: erstes xAI-Modell auf dem weltgrößten 1-GW-Cluster trainiert</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://claude.com/blog/claude-managed-agents-updates" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Managed Agents · MCP-Tunnel &amp; Self-Hosted Sandboxes</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic rüstet die Managed Agents heute mit zwei sicherheitsrelevanten Features auf: MCP-Tunneln und Self-Hosted Sandboxes. Ein MCP-Tunnel lässt deine Agenten private MCP-Server im Firmennetz erreichen, ohne dass du auch nur einen einzigen Port nach außen <mark class="vocab" data-translation="freischalten — to open / unlock (e.g. a port or feature)">freischalten</mark> musst — ein schlankes Gateway baut die ausgehende Verbindung auf, der Rest bleibt hinter der Firewall und ist end-to-end verschlüsselt. Mit Self-Hosted Sandboxes verbleibt die Agenten-Orchestrierung bei Anthropic, während du die Tool-Ausführung in deine eigene Infra oder zu Cloudflare, Daytona, Modal oder Vercel <mark class="vocab" data-translation="auslagern — to outsource / offload to an external provider">auslagern</mark> kannst. Gerade für Teams mit Compliance-Anforderungen ist das eine elegante Lösung: sensible Daten verlassen nie den eigenen <mark class="vocab" data-translation="Perimeter — security perimeter / controlled boundary">Perimeter</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic today adds two security-focused capabilities to Claude Managed Agents: MCP tunnels and self-hosted sandboxes. An MCP tunnel lets your agents reach private MCP servers on your internal network without opening a single inbound firewall port — a lightweight gateway makes one outbound connection, traffic is end-to-end encrypted, and everything stays behind your firewall. Self-hosted sandboxes keep the agent orchestration loop on Anthropic's side while you direct tool execution to your own infrastructure or to providers like Cloudflare, Daytona, Modal, or Vercel. For teams with compliance requirements, it's a clean architecture: sensitive data never leaves your perimeter.</p>
+        </div>
+      </div>
+      <a class="source" href="https://claude.com/blog/claude-managed-agents-updates" target="_blank" rel="noopener">→ claude.com · 19.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google I/O 2026 · Gemini 4 · Aluminium OS · Android XR</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Google I/O 2026 liefert heute den bisher größten KI-Auftritt des Konzerns: Gemini 4.0 hebt die Modell-Familie auf ein neues Tier, und der neue Gemini-Spark-Agent erledigt E-Mails, Docs und komplexe Mehrstufenaufgaben <mark class="vocab" data-translation="eigenständig — autonomously / independently, without requiring confirmation at every step">eigenständig</mark> — er kann sogar wiederkehrende Skills anlegen. Auf Hardware-Seite kommen Android-XR-Brillen mit Kamera, Mikrofon, Lautsprecher und optionalem In-Lens-Display: vier Partner (Samsung, XREAL, Warby Parker, Gentle Monster) bringen die ersten Geräte noch in diesem Jahr. Aluminium OS debütiert als Googles Merger von Android und ChromeOS zu einem einzigen Desktop-Betriebssystem — neue Googlebook-Laptops von Acer, Asus, Dell, HP und Lenovo kommen im Herbst. Android 17 schließt den Kreis: Gemini Intelligence ist tief ins System <mark class="vocab" data-translation="eingewoben — woven in / deeply integrated">eingewoben</mark> und macht das Betriebssystem zum proaktiven Assistenten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google I/O 2026 delivers the company's biggest-ever AI showcase: Gemini 4.0 takes the model family to a new tier, and the new Gemini Spark agent handles emails, docs, and complex multi-step tasks autonomously — it can even create reusable skills for recurring workflows. On the hardware front, Android XR glasses arrive with camera, microphone, speakers, and an optional in-lens display, with four partner brands (Samsung, XREAL, Warby Parker, Gentle Monster) shipping devices this year. Aluminium OS debuts as Google's merger of Android and ChromeOS into one unified desktop OS, launching on new Googlebook laptops from Acer, Asus, Dell, HP, and Lenovo this fall. Android 17 ties it together: Gemini Intelligence is woven deep into the system, turning the OS itself into a proactive assistant.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news" target="_blank" rel="noopener">→ androidcentral.com · 19.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.macrumors.com/2026/05/13/meta-ai-incognito-chat/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meta Incognito Chat · Kein Server-Log · End-to-End-Verschlüsselt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Meta startet Incognito Chat für die Meta-AI-App und WhatsApp: Gespräche laufen in einer Trusted Execution Environment, die selbst Metas eigene Ingenieure nicht einsehen können — kein Server-Log, keine Ad-Infrastruktur. Sobald du die Session <mark class="vocab" data-translation="verlässt — leaves / exits a session">verlässt</mark>, verschwinden alle Inhalte <mark class="vocab" data-translation="spurlos — without a trace / leaving no trace behind">spurlos</mark> vom Gerät und von den Servern. Zuckerberg nennt es das erste KI-Produkt ohne serverseitige Logs und damit einen Paradigmenwechsel. Pikant: Nur fünf Tage zuvor hatte Meta die Ende-zu-Ende-Verschlüsselung für Instagram-DMs stillschweigend <mark class="vocab" data-translation="abschalten — to turn off / deactivate">abgeschaltet</mark> — Datenschutz mit zwei Geschwindigkeiten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Meta launches Incognito Chat for the Meta AI app and WhatsApp: conversations run inside a Trusted Execution Environment that even Meta's own engineers cannot access — no server logs, no ad infrastructure. The moment you leave the session, all content vanishes without a trace from both device and server. Zuckerberg calls it the first major AI product with no server-side logs, framing it as a privacy paradigm shift. The pointed detail: just five days earlier, Meta had quietly removed end-to-end encryption from Instagram DMs — a two-speed approach to privacy.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.macrumors.com/2026/05/13/meta-ai-incognito-chat/" target="_blank" rel="noopener">→ macrumors.com · 13.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-gpt-5-2-codex/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI GPT-5.2-Codex · GA für alle zahlenden Nutzer</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI rollt GPT-5.2-Codex an alle zahlenden Nutzer seiner Codex-Surfaces aus — ein auf Softwareentwicklung <mark class="vocab" data-translation="zugeschnitten — tailored / purpose-built for a specific use case">zugeschnittenes</mark> Modell, das nicht auf allgemeine Konversation ausgelegt ist, sondern auf Repository-Level-Aufgaben: Code generieren, debuggen, refaktorieren und erklären. Die 5.2-Versionsnummer zeigt eine eigenständige Coding-Modell-Linie neben dem Chat-Hauptstamm — ein ähnlicher Ansatz wie Anthropics Optimierungen speziell für Claude Code. Wer bisher auf den Beta-Zugang gewartet hat, kann das Modell ab heute in der Codex-Web-App, der CLI und der API nutzen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI rolls out GPT-5.2-Codex to all paid users across its Codex surfaces — a model purpose-built for software engineering rather than general conversation, optimized specifically for repository-level work: code generation, debugging, refactoring, and explanation. The 5.2 version number signals a dedicated coding branch running alongside the main chat line, mirroring how Anthropic maintains Claude Code-specific optimizations. Those waiting on the beta can use the model starting today in the Codex web app, CLI, and API.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-gpt-5-2-codex/" target="_blank" rel="noopener">→ openai.com · 14.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://x.ai/news" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI · SuperGrok Heavy · Neues Grok auf Colossus 2</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">xAI legt diese Woche doppelt nach: Mit SuperGrok Heavy gibt es eine neue Premium-Stufe, die Zugang zum Grok-Heavy-Modell mit deutlich höheren Rate-Limits <mark class="vocab" data-translation="freischaltet — unlocks / activates access to a feature or resource">freischaltet</mark>. Gleichzeitig bestätigt Elon Musk eine neue Grok-Version, die als erstes xAI-Modell auf dem Colossus-2-Cluster trainiert wurde — dem weltweit ersten Gigawatt-Cluster mit über einer Million GPUs. Das ist kein Detail am Rande: Mehr Compute bedeutet bei Frontier-Modellen meist skalierbar bessere Reasoning-Fähigkeiten. Grok 5, der eigentliche Flaggschiff-Nachfolger, trainiert ebenfalls auf Colossus 2 und soll laut xAI-Roadmap in den nächsten Monaten erscheinen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">xAI delivers two announcements this week: SuperGrok Heavy launches as a new premium subscription tier, unlocking access to the Grok Heavy model with substantially higher rate limits. Separately, Elon Musk confirms a new Grok release as the first xAI model trained on the Colossus 2 cluster — the world's first gigawatt-scale GPU cluster with over one million GPUs. That detail matters for frontier AI: more training compute typically yields scalable gains in reasoning quality. Grok 5, the main next-generation flagship, is also training on Colossus 2 and is expected to ship within months according to the xAI roadmap.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news" target="_blank" rel="noopener">→ x.ai · 18.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.144" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.144 · /resume · session-lokales /model · /usage-credits</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.144 räumt heute ein spürbares Workflow-Problem aus dem Weg: Der neue Slash-Command Resume holt jede laufende Background-Session direkt in den Vordergrund — sie erscheinen im Session-Picker neben den interaktiven Sessions, ein kleines bg-Badge markiert sie als Hintergrund-Job. Das Model-Command agiert ab sofort session-lokal: Ein Wechsel gilt nur für die aktuelle Sitzung; wer einen neuen Standard dauerhaft setzen will, drückt im Model-Picker einfach die Taste d. Praktisch für Teams, die mehrere Agenten mit unterschiedlichen Modellen parallel betreiben. Bonus: der frühere Extra-Usage-Command heißt jetzt Usage Credits — der alte Name funktioniert noch, aber der neue macht auf einen Blick klar, was der Befehl anzeigt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.144 resolves a real workflow friction point: a new slash command called Resume lets you jump into any running background session right from the prompt — background sessions appear in the session picker alongside interactive ones, flagged with a bg badge. The model command is now session-local: switching models only affects the current session. To persist a model choice as the default for new sessions, hit d in the model picker. Handy for teams running multiple agents with different models in parallel. Bonus: the old extra-usage command is now usage-credits — the old name still works, but the new one makes the purpose immediately obvious.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/resume
+/usage-credits</pre>
+        <dl class="cmd-flags">
+          <dt><code>d</code></dt>
+          <dd>in the /model picker: set the selected model as default for new sessions</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Background-Session auswählen und fortsetzen · Pick and resume a background session</span>
+$ /resume
+
+<span class="com"># Verbrauchte Credits des aktuellen Monats prüfen · Check this month's usage credits</span>
+$ /usage-credits
+
+<span class="com"># Modell nur für diese Session wechseln (d im Picker = dauerhaft) · Change model for this session (d = persist as default)</span>
+$ /model</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.144" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">auslagern</div>
+        <div class="vocab-translation">to outsource · to offload</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Tool-Ausführung in die eigene Infra auslagern — Anthropic behält die Kontrolle, du behältst deine Daten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Offload tool execution to your own infra — Anthropic keeps the orchestration, you keep your data.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomous · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini Spark erledigt Mehrstufenaufgaben eigenständig, ohne bei jedem Schritt auf Bestätigung zu warten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini Spark handles multi-step tasks autonomously, without waiting for confirmation at every step.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">spurlos</div>
+        <div class="vocab-translation">without a trace · leaving nothing behind</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Incognito-Chat verschwindet spurlos, sobald du die Session verlässt — kein Log, kein Cache.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Incognito Chat vanishes without a trace once you leave the session — no log, no cache.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zugeschnitten</div>
+        <div class="vocab-translation">tailored · purpose-built</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GPT-5.2-Codex ist auf Coding-Aufgaben zugeschnitten, nicht auf allgemeine Konversation.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GPT-5.2-Codex is tailored for coding tasks, not general conversation.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufstocken</div>
+        <div class="vocab-translation">to scale up · to expand capacity</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">xAI stockt den Colossus-Cluster stetig auf — von 100.000 auf über eine Million GPUs.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">xAI steadily scales up the Colossus cluster — from 100,000 to over one million GPUs.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Stecker ziehen</div>
+      <div class="idiom-meaning">to pull the plug — wörtlich: "to pull out the plug"; used for cutting something off cleanly and completely</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Incognito-Modus zieht am Ende der Session automatisch den Stecker — du musst nichts nachräumen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Incognito mode automatically pulls the plug at the end of the session — no cleanup needed."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn der Deploy schief läuft, musst du manchmal einfach den Stecker ziehen und neu anfangen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When a deploy goes sideways, you sometimes just have to pull the plug and start fresh."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">under the hood</div>
+      <div class="idiom-meaning">referring to hidden mechanisms that do the work invisibly — German equivalent: "unter der Haube"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"MCP tunnels work entirely under the hood — one outbound connection, zero inbound firewall rules."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"MCP-Tunnel arbeiten komplett unter der Haube — eine ausgehende Verbindung, keine offenen Firewall-Regeln."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Gemini Spark does all the scheduling under the hood — you just see the finished result."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Gemini Spark übernimmt die gesamte Planung unter der Haube — du siehst nur das fertige Ergebnis."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: claude.com · androidcentral.com · macrumors.com · openai.com · x.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #15 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
