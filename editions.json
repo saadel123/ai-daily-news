@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-19",
+      "edition_number": 15,
+      "headlines": [
+        "Claude Managed Agents: MCP-Tunnel verbinden Agenten mit privaten Netzwerken — kein offener Firewall-Port nötig",
+        "Google I/O 2026: Gemini 4, Gemini Spark Agent, Aluminium OS und Android-XR-Brillen mit vier Hardware-Partnern",
+        "Meta Incognito Chat: KI-Gespräche ohne Server-Log auf WhatsApp — verschlüsselt in Trusted Execution Environments",
+        "OpenAI GPT-5.2-Codex: spezialisiertes Coding-Modell jetzt für alle zahlenden Nutzer auf allen Codex-Surfaces",
+        "xAI SuperGrok Heavy und neues Grok auf Colossus-2-Cluster — erstmals auf 1-GW-Infrastruktur trainiert"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-19T16:05:00Z"
+    },
+    {
       "date": "2026-05-18",
       "edition_number": 14,
       "headlines": [
