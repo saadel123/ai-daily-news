@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 20.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 20. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #16</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KPMG geht all-in, Musk scheitert vor Gericht und Google räumt die Suchleiste auf.</h1>
+    <p class="subtitle">Außerdem: Gemini 3.5 Flash ist live, OpenAI bringt Codex on-premises und Claude Code weiß jetzt, wie viele Sessions auf dich warten.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>KPMG × Anthropic</strong>: Digital Gateway mit Claude für 276.000 Mitarbeitende weltweit</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>Musk</strong>: Klage gegen OpenAI in unter zwei Stunden abgewiesen — 134 Mrd. $ Forderung scheitert</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Google Search</strong>: Suchleiste zum ersten Mal seit 25 Jahren grundlegend neu gedacht</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Gemini 3.5 Flash</strong>: günstiger als Pro, für Agenten-Pipelines optimiert, sofort live</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI × Dell</strong>: Codex zieht ins Rechenzentrum — on-premises für regulierte Branchen</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>KPMG × Anthropic · Digital Gateway für 276.000</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">KPMG hat gestern seine globale <mark class="vocab" data-translation="die Allianz — the alliance">Allianz</mark> mit Anthropic offiziell gemacht und bringt Claude in die eigene Digital-Gateway-Plattform — für alle 276.000 Mitarbeitenden weltweit. Der Fokus liegt zunächst auf <mark class="vocab" data-translation="die Steuerberatung — tax consulting">Steuerberatung</mark> und Private-Equity-Kunden: Agentische Workflows, die früher wochenlang dauerten, sollen in Minuten stehen — dank Cowork und Managed Agents direkt in der Plattform. Für PE-Portfoliounternehmen gibt es außerdem KPMG Blaze, das Claude Code direkt in IT-Modernisierungsprojekte einbettet und <mark class="vocab" data-translation="der Entwicklungszyklus — the development cycle">Entwicklungszyklen</mark> stark verkürzt. Damit ist KPMG nach PwC und SAP das dritte Enterprise-Schwergewicht in wenigen Wochen, das komplett auf Claude setzt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">KPMG officially launched its global alliance with Anthropic yesterday, embedding Claude into its Digital Gateway platform for all 276,000 employees worldwide. The initial focus is on tax clients and private equity firms: agentic workflows that used to take weeks can now be built in minutes using Cowork and Managed Agents directly in the platform. For PE portfolio companies, KPMG Blaze brings Claude Code into IT modernization projects to slash development cycles. That makes KPMG the third major enterprise platform — after PwC and SAP — to go all-in on Claude within weeks.</p>
+        </div>
+      </div>
+      <a class="source" href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html" target="_blank" rel="noopener">→ kpmg.com · 19.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.axios.com/2026/05/18/musk-loses-ai-trial-openai-altman" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Musk verliert · OpenAI-Klage in unter 2 Stunden abgewiesen</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Ein neunköpfiges <mark class="vocab" data-translation="das Geschworenengremium — the jury panel">Geschworenengremium</mark> in Oakland brauchte keine zwei Stunden, um Elon Musks Klage gegen OpenAI und Sam Altman vollständig abzuweisen — alle Ansprüche scheiterten an der <mark class="vocab" data-translation="die Verjährungsfrist — statute of limitations">Verjährungsfrist</mark>. Musk hatte 134 Milliarden Dollar <mark class="vocab" data-translation="der Schadensersatz — damages (legal term)">Schadensersatz</mark> und Altmans Abgang gefordert, dem Unternehmen vorwerfend, seine gemeinnützige Gründungsmission zugunsten von Profit aufgegeben zu haben. Das Gericht urteilte, die Drei-Jahres-Frist sei bereits <mark class="vocab" data-translation="abgelaufen — expired / elapsed">abgelaufen</mark> gewesen, als Musk 2024 klagte. Wenige Stunden nach dem Urteil kündigte er per Post auf X seine Berufung an.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">A nine-person jury in Oakland needed under two hours to throw out Elon Musk's lawsuit against OpenAI and Sam Altman entirely — every claim failed on statute of limitations grounds. Musk had sought $134 billion in damages and Altman's removal, accusing the company of abandoning its nonprofit founding mission in pursuit of profit. The court ruled the three-year filing window had already closed when Musk launched his case in 2024. Within hours of the verdict he posted on X that he plans to appeal.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.axios.com/2026/05/18/musk-loses-ai-trial-openai-altman" target="_blank" rel="noopener">→ axios.com · 18.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google Search · Suchleiste neu gedacht nach 25 Jahren</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google hat bei I/O 2026 das größte Redesign der Suchleiste seit 25 Jahren vorgestellt: Das Eingabefeld wächst dynamisch mit, während man tippt, und zeigt KI-gestützte <mark class="vocab" data-translation="der Vorschlag — the suggestion">Vorschläge</mark>, die echte Nutzerabsichten <mark class="vocab" data-translation="antizipieren — to anticipate">antizipieren</mark> — weit über klassisches Autocomplete hinaus. AI Mode läuft jetzt auf Gemini 3.5 Flash und hat über eine Milliarde aktive Nutzer pro Monat, merkt sich frühere Suchen und verbessert damit <mark class="vocab" data-translation="die Folgefrage — the follow-up question">Folgefragen</mark>. Direkt unter dem Suchfeld gibt es neue Shortcuts für AI Mode, Talk und Kamera-Upload über Google Lens. Google macht damit klar: der klassische Keyword-Query ist nur noch ein <mark class="vocab" data-translation="das Überbleibsel — the remnant / leftover">Überbleibsel</mark> — Konversation ist der neue Standard.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google unveiled the biggest Search bar redesign in 25 years at I/O 2026: the input field expands as you type and surfaces AI-powered suggestions that go well beyond autocomplete to genuinely anticipate user intent. AI Mode, now powered by Gemini 3.5 Flash, has over one billion monthly active users and remembers past searches to sharpen follow-up queries. New shortcuts below the box give quick access to AI Mode, Talk, and camera upload via Google Lens. Google is making it clear: classic keyword queries are becoming a legacy input — conversation is the new default.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank" rel="noopener">→ blog.google · 19.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://llm-stats.com/blog/research/gemini-3.5-flash-launch" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Gemini 3.5 Flash · günstiger, agentic, sofort live</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Parallel zum Search-Redesign hat Google bei I/O 2026 Gemini 3.5 Flash <mark class="vocab" data-translation="launchen — to launch (English loanword)">gelauncht</mark>: ein schlankes Modell, das speziell für agentic Workflows und Coding-Pipelines optimiert ist und seit gestern in der Gemini API, AI Studio, Vertex AI und der Gemini App verfügbar ist. Die Preise liegen bei 1,50 Dollar pro Million Input-Tokens und 9 Dollar pro Million Output-Tokens — 40 Prozent günstiger als Gemini 3.1 Pro auf dem Input. Außerdem senkt Google das Ultra-<mark class="vocab" data-translation="das Abo — the subscription">Abo</mark> von 250 auf 200 Dollar und führt einen neuen Developer-Tier für 100 Dollar im Monat ein. Für Entwickler, die Agent-Pipelines und Coding-Assistenten bauen, ist das ein klar <mark class="vocab" data-translation="kalkuliert — deliberately priced / calculated">kalkuliertes</mark> Angebot.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Alongside the Search redesign, Google officially launched Gemini 3.5 Flash at I/O 2026: a lean model optimized for agentic workflows and coding pipelines, available from launch day across the Gemini API, AI Studio, Vertex AI, and the Gemini app. Pricing lands at $1.50 per million input tokens and $9.00 per million output tokens — 40% cheaper than Gemini 3.1 Pro on input. Google also cut the Ultra subscription from $250 to $200 and introduced a new Developer tier at $100 per month. For developers building agent pipelines and coding assistants, that's a deliberately targeted value play.</p>
+        </div>
+      </div>
+      <a class="source" href="https://llm-stats.com/blog/research/gemini-3.5-flash-launch" target="_blank" rel="noopener">→ llm-stats.com · 19.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/dell-codex-enterprise-partnership/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI × Dell · Codex jetzt on-premises</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI und Dell haben gestern bekannt gegeben, dass Codex über die Dell AI Data Platform und den Dell AI Factory auch in hybriden und vollständig lokalen Umgebungen läuft — OpenAIs erster <mark class="vocab" data-translation="explizit — explicit / deliberate">expliziter</mark> On-Premises-Move. Das ist besonders relevant für Finanzdienstleister, <mark class="vocab" data-translation="die Behörde — the government authority / agency">Behörden</mark> und den Gesundheitssektor in Europa, die Daten regulatorisch nicht in die Public Cloud schicken dürfen. Codex geht dabei über klassisches Code-Generieren hinaus in agentic Workflows: Context-Gathering, Reporting, Lead-<mark class="vocab" data-translation="die Qualifizierung — the qualification / screening">Qualifizierung</mark> und Feedback-Routing. Über vier Millionen Entwickler nutzen Codex bereits wöchentlich — die Dell-Integration öffnet den Markt jetzt auch für stark regulierte Branchen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI and Dell announced yesterday that Codex will now run in hybrid and fully on-premises environments via the Dell AI Data Platform and the Dell AI Factory — OpenAI's first explicit on-prem enterprise play. The deal targets European financial services, government agencies, and healthcare customers whose regulations prevent data from leaving local infrastructure. Codex extends beyond code generation into agentic workflows: context-gathering, reporting, lead qualification, and feedback routing. With over four million developers already using Codex weekly, the Dell integration opens the door to heavily regulated industries.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/dell-codex-enterprise-partnership/" target="_blank" rel="noopener">→ openai.com · 19.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.145 · agents --json</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.145 bringt einen neuen Flag für den agents-Befehl: Die JSON-Ausgabe liefert alle laufenden Sessions als strukturiertes Objekt — ideal für <mark class="vocab" data-translation="das Shell-Skript — the shell script">Shell-Skripte</mark>, tmux-Resurrect-Integrationen oder eigene Status-Bars im Terminal. Das Tab-Fenster des Agent-Views zeigt jetzt außerdem die Anzahl der wartenden Eingaben an — so weißt du auf einen Blick, wann eine Session deine Aufmerksamkeit braucht, ohne das Fenster fokussiert halten zu müssen. Der Plugin-Browser listet jetzt alle Commands, Agents, Skills, Hooks und MCP-Server eines Plugins <mark class="vocab" data-translation="vor der Installation — before installation">vor der Installation</mark> auf — kein blindes <mark class="vocab" data-translation="einrichten — to set up / configure">Einrichten</mark> mehr. Und der Status-Line-JSON-Feed enthält jetzt GitHub-Repo- und PR-Informationen, wenn ein Repo erkannt wird.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.145 ships a new flag for the agents command: JSON output mode dumps all live sessions as structured objects — perfect for shell scripts, tmux-resurrect setups, or custom terminal status bars. The agent view tab title now shows the count of sessions awaiting your input, so you can glance at an alt-tabbed window and instantly know whether something needs attention. The plugin browser now lists a plugin's full manifest — commands, agents, skills, hooks, and MCP servers — before you commit to installing. The status line JSON feed also gains GitHub repo and PR information when a repository is detected.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents [--json]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--json</code></dt>
+          <dd>output all live sessions as structured JSON for scripting</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle Sessions als JSON ausgeben · List all sessions as JSON</span>
+$ claude agents --json
+
+<span class="com"># Wartende Sessions filtern · Filter sessions awaiting input</span>
+$ claude agents --json | jq '.[] | select(.state=="awaiting_input") | .name'</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Allianz</div>
+        <div class="vocab-translation">the alliance · the partnership</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Eine globale Allianz lässt sich schnell ankündigen, aber schwer umsetzen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A global alliance is easy to announce but hard to execute.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Verjährungsfrist</div>
+        <div class="vocab-translation">statute of limitations · filing deadline</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Gericht prüfte zuerst, ob die Verjährungsfrist bereits abgelaufen war.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The court first checked whether the statute of limitations had already expired.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">antizipieren</div>
+        <div class="vocab-translation">to anticipate · to foresee</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gute KI kann Nutzerwünsche antizipieren, bevor sie ausgesprochen werden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Good AI can anticipate user intentions before they are even expressed.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Abo</div>
+        <div class="vocab-translation">the subscription · the plan</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google senkt das Ultra-Abo von 250 auf 200 Dollar im Monat.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google cut the Ultra subscription from $250 to $200 a month.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Behörde</div>
+        <div class="vocab-translation">the government authority · the agency</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Viele Behörden dürfen Daten regulatorisch nicht in die Public Cloud schicken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Many government agencies are not permitted to send data to the public cloud.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">jemandem den Wind aus den Segeln nehmen</div>
+      <div class="idiom-meaning">to take the wind out of someone's sails — wörtlich: "den Wind aus den Segeln nehmen" — jemanden entwaffnen, bevor er richtig loslegen kann</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Urteil hat Musks Kampagne den Wind aus den Segeln genommen — alle Ansprüche weg in unter zwei Stunden."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The verdict took the wind right out of Musk's campaign — every claim dismissed in under two hours."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ein schneller Feature-Release kann dem Wettbewerber den Wind aus den Segeln nehmen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"A fast feature release can take the wind right out of a competitor's sails."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">reading the room</div>
+      <div class="idiom-meaning">sensing the mood and expectations before acting — German equivalent: "den Puls fühlen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Developers reading the room right now are betting everything on agentic systems."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer jetzt den Puls der KI-Community fühlt, setzt alles auf agentic Systeme."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"KPMG was clearly reading the room when it chose Claude over every other option."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"KPMG hat den Puls gut gefühlt, als es sich für Claude entschieden hat."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: kpmg.com · axios.com · blog.google · llm-stats.com · openai.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #16 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
