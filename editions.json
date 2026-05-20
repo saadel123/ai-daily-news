@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-20",
+      "edition_number": 16,
+      "headlines": [
+        "KPMG × Anthropic: Digital Gateway mit Claude für 276.000 Mitarbeitende weltweit",
+        "Musks Klage gegen OpenAI in unter zwei Stunden abgewiesen — 134 Mrd. $ Forderung scheitert",
+        "Google baut die Suchleiste zum ersten Mal seit 25 Jahren grundlegend neu",
+        "Gemini 3.5 Flash live: günstiger als Pro, für Agenten-Pipelines optimiert",
+        "OpenAI × Dell: Codex zieht ins Rechenzentrum — on-premises für regulierte Branchen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-20T16:01:49Z"
+    },
+    {
       "date": "2026-05-19",
       "edition_number": 15,
       "headlines": [
