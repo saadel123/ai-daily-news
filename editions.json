@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-21",
+      "edition_number": 17,
+      "headlines": [
+        "Claude Code 2.1.146: /code-review mit optionalem Effort-Level ersetzt /simplify",
+        "Anthropic: Multiagent Orchestration und Outcomes — KI, die sich selbst auf Kurs hält",
+        "OpenAI widerlegt 80 Jahre alte Erdős-Vermutung in diskreter Geometrie",
+        "Cohere Command A+: erstes Apache-2.0-Enterprise-Modell — 218B Parameter, läuft auf zwei H100s",
+        "Hack: claude agents --json — laufende Sessions als JSON fürs Skripten"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-21T16:20:37Z"
+    },
+    {
       "date": "2026-05-20",
       "edition_number": 16,
       "headlines": [
