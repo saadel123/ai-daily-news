@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 21. Mai 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 21. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #17</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KI widerlegt Erdős, Claude orchestriert Flotten — und Cohere teilt den Quellcode.</h1>
+    <p class="subtitle">Außerdem: /simplify heißt jetzt /code-review, Anthropic verdoppelt Limits und erklärt, warum Claude sich selbst prompten soll.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.146</strong>: /code-review mit optionalem Effort-Level ersetzt /simplify</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Multiagent Orchestration und Outcomes — KI, die sich selbst auf Kurs hält</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI</strong> widerlegt 80 Jahre alte Erdős-Vermutung in diskreter Geometrie</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>Cohere Command A+</strong>: erstes Apache-2.0-Enterprise-Modell — 218B Parameter, läuft auf zwei H100s</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>Hack</strong>: claude agents --json — laufende Sessions als JSON fürs Skripten</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.146" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.146 · /code-review</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.146 bringt eine längst fällige Umbenennung: /simplify wird zu /code-review und bekommt dabei ein optionales Effort-Level. Damit reviewst du so <mark class="vocab" data-translation="gründlich — thorough, meticulous">gründlich</mark> wie nötig — von einem schnellen Sanity-Check bis zur tiefen Analyse, direkt per Argument. Kein Config-Wechsel, kein Umweg. Das Release räumt außerdem einen alten <mark class="vocab" data-translation="Stolperstein — stumbling block, snag">Stolperstein</mark> aus dem Weg: Der Auto-Modus <mark class="vocab" data-translation="unterdrücken — to suppress, to silence">unterdrückte</mark> bisher manchmal Rückfragen, auch wenn ein Skill oder User explizit darauf angewiesen war.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.146 ships a long-overdue rename: /simplify becomes /code-review and gains an optional effort level along the way. Pick how thorough you want the review — a quick sanity-check or a full deep-dive — right at call time, no config changes needed. The release also clears a long-standing snag: auto mode was suppressing AskUserQuestion prompts even when a skill or user explicitly relied on them.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/code-review [effort]</pre>
+<pre class="cmd-examples"><span class="com"># Schneller Überblick · Quick sanity-check</span>
+$ /code-review low
+
+<span class="com"># Standard-Review · Balanced review (default)</span>
+$ /code-review
+
+<span class="com"># Tiefenanalyse · Full deep-dive</span>
+$ /code-review high</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.146" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 21.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Multiagent Orchestration &amp; Outcomes</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Auf der Code w/ Claude London-Konferenz hat Anthropic seine Agenten-Vision <mark class="vocab" data-translation="konkretisieren — to make concrete, to flesh out">konkretisiert</mark>: Multiagent Orchestration ermöglicht es, ganze Flotten von Subagenten aufzusetzen, die komplexe Aufgaben selbst aufteilen und <mark class="vocab" data-translation="eigenständig — autonomous, independently">eigenständig</mark> bearbeiten. Das neue Outcomes-Feature erlaubt es, Erfolgskriterien zu definieren — der Agent <mark class="vocab" data-translation="iterieren — to iterate">iteriert</mark>, bis er sie erreicht, ohne dass du ihn dabei anfassen musst. Die Nutzungslimits wurden verdoppelt. Boris Cherny, Head of Claude Code, auf der Bühne: "Der neue Default ist nicht: Ich prompte Claude — der neue Default ist: Claude promptet sich selbst."</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">At Code with Claude London, Anthropic put concrete shape on its agents-first vision. Multiagent Orchestration lets you spin up entire fleets of sub-agents that break complex tasks into pieces and handle them independently. The new Outcomes feature lets you define success criteria — the agent iterates until it hits them, no hand-holding required. Rate limits have been doubled. Boris Cherny, head of Claude Code, captured the direction on stage: "The default isn't I'm going to prompt Claude — the default is now I'm going to have Claude prompt itself."</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">→ technologyreview.com · 21.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Erdős-Vermutung widerlegt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Ein allgemeines OpenAI-Reasoning-Modell hat die Planar-Unit-Distance-Vermutung von Paul Erdős aus dem Jahr 1946 <mark class="vocab" data-translation="widerlegen — to disprove, to refute">widerlegt</mark>: Es fand eine unendliche Klasse von Punktanordnungen, die polynomial mehr Einheitsabstände erzeugen als das bis dahin optimale Quadratgitter. Das Ergebnis wurde von externen Mathematikern unabhängig <mark class="vocab" data-translation="verifizieren — to verify, to confirm">verifiziert</mark> — und ist umso <mark class="vocab" data-translation="bemerkenswert — remarkable, noteworthy">bemerkenswerter</mark>, weil das Modell nicht für Mathematik spezialisiert wurde. Der Beweis nutzt Werkzeuge aus der algebraischen Zahlentheorie, konkret das Golod-Shafarevich-Theorem aus den 1960er-Jahren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">An OpenAI general-purpose reasoning model has disproved Paul Erdős's 1946 planar unit distance conjecture: it found an infinite family of point arrangements producing polynomially more unit-distance pairs than the square grid previously thought optimal. External mathematicians independently verified the result — making it all the more remarkable that the model was not trained specifically for mathematics. The proof draws on tools from algebraic number theory, specifically the 1960s Golod-Shafarevich theorem.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank" rel="noopener">→ openai.com · 20.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://cohere.com/blog/command-a-plus" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Cohere Command A+ · Apache 2.0 · 218B</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Cohere veröffentlicht Command A+ als erstes vollständig <mark class="vocab" data-translation="quelloffen — open-source">quelloffenes</mark> Enterprise-Modell unter Apache-2.0-Lizenz: 218 Milliarden Gesamtparameter, 25 Milliarden aktiv im Mixture-of-Experts-Design, läuft auf gerade mal zwei H100s oder einem einzigen Blackwell-GPU. Das Highlight für <mark class="vocab" data-translation="souverän — sovereign, self-reliant (here: on-premises/private)">souveräne</mark> Deployments sind native Quellenangaben — jede Faktenbehauptung wird direkt mit dem <mark class="vocab" data-translation="Quelldokument — source document">Quelldokument</mark> oder der Datenbankzeile verknüpft, ohne Post-Processing. Regulierte Branchen, die Daten nicht die eigenen Grenzen verlassen lassen dürfen, haben damit erstmals eine ernsthafte Open-Weight-Alternative.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Cohere releases Command A+ as the first fully open-source enterprise model under the Apache 2.0 license: 218B total parameters, 25B active in a mixture-of-experts design that runs on as little as two H100s or a single Blackwell GPU. The standout for sovereign deployments is native citations — every factual claim is linked directly to the source document or database row, no post-processing required. For regulated industries that can't let data cross borders, this is the first serious open-weight alternative.</p>
+        </div>
+      </div>
+      <a class="source" href="https://cohere.com/blog/command-a-plus" target="_blank" rel="noopener">→ cohere.com · 20.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.145 · claude agents --json</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.145 macht Session-Monitoring richtig <mark class="vocab" data-translation="skriptfähig — scriptable">skriptfähig</mark>: Der neue JSON-Flag für claude agents liefert alle laufenden Sessions als <mark class="vocab" data-translation="maschinell — machine-readable, automated">maschinell</mark> auswertbares JSON — ideal für tmux-resurrect, eigene Dashboards oder Session-Picker. Dazu zeigt der Tab-Titel jetzt die Anzahl wartender Agenten, sodass du auf einen Blick siehst, wer auf dich wartet, ohne den Fokus zu wechseln. Und der Discover-Screen im Plugin-Browser zeigt Befehle, Agenten, Skills, Hooks und MCP-Server eines Plugins bereits vor der Installation — kein <mark class="vocab" data-translation="Blindkauf — blind purchase, buying without knowing what you get">Blindkauf</mark> mehr.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.145 makes session monitoring truly scriptable: the new JSON flag for claude agents dumps all live sessions as machine-readable JSON — perfect for tmux-resurrect, custom dashboards, or session pickers. The agents tab title now shows how many sessions are waiting for your input, so you know at a glance without switching context. And the Plugin Discovery screen now previews every command, agent, skill, hook, and MCP server a plugin provides before you install — no more buying blind.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--json</code></dt>
+          <dd>output all live sessions as machine-readable JSON (agent_id, status, model, cwd)</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle Sessions als JSON ausgeben · Dump all live sessions as JSON</span>
+$ claude agents --json
+
+<span class="com"># Nur wartende Sessions herausfiltern · Filter to sessions waiting for input</span>
+$ claude agents --json | jq '.[] | select(.status == "waiting")'</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">widerlegen</div>
+        <div class="vocab-translation">to disprove · to refute</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Reasoning-Modell hat eine jahrzehntealte Vermutung widerlegt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The reasoning model disproved a decades-old conjecture.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomous · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit Outcomes arbeitet der Agent eigenständig weiter, bis er das Ziel erreicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With Outcomes, the agent keeps working autonomously until it reaches its goal.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">quelloffen</div>
+        <div class="vocab-translation">open-source</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Command A+ ist das erste quelloffene Enterprise-Modell von Cohere.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Command A+ is Cohere's first open-source enterprise model.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Stolperstein</div>
+        <div class="vocab-translation">stumbling block · snag</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Update räumt einen alten Stolperstein im Auto-Modus aus dem Weg.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The update clears a long-standing snag in auto mode.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">orchestrieren</div>
+        <div class="vocab-translation">to orchestrate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mehrere Subagenten lassen sich zu einem komplexen Workflow orchestrieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Multiple sub-agents can be orchestrated into a complex workflow.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">am Ball bleiben</div>
+      <div class="idiom-meaning">to stay on the ball · to keep at it — wörtlich: den Ball nicht aus den Augen verlieren (Fußball-Metapher)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit Outcomes bleibt der Agent am Ball, bis die definierten Erfolgskriterien wirklich erfüllt sind."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Outcomes, the agent stays on the ball until the defined success criteria are actually met."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beim Debugging einfach am Ball bleiben — irgendwann findet man den Fehler."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Just keep at it when debugging — eventually you'll find the bug."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to raise the bar</div>
+      <div class="idiom-meaning">to set a higher standard · German equivalent: "die Latte höher legen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Cohere raised the bar for open-source enterprise AI with Command A+."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Cohere hat mit Command A+ die Latte für quelloffene Enterprise-KI höher gelegt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI's math result raised the bar for what general-purpose reasoning models can achieve."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAIs Mathe-Ergebnis hat die Latte für General-Purpose-Reasoning-Modelle spürbar höher gelegt."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com, technologyreview.com, openai.com, cohere.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #17 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
