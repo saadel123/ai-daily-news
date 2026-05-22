@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-22",
+      "edition_number": 18,
+      "headlines": [
+        "Claude Code 2.1.147: Sessions mit Ctrl+T anpinnen — Hintergrundagenten bleiben dauerhaft am Leben",
+        "Anthropic kauft Stainless für 300 Mio. $ — SDK-Infrastruktur zieht ins Haus, Konkurrenten verlieren die Basis",
+        "OpenAI reicht vertrauliche IPO-Anmeldung ein — Goldman & Morgan Stanley, 852 Mrd. $ Bewertung, Börsengang im Herbst",
+        "Gemini Omni Flash live: Video aus Text, Bild und Audio — sofort in der Gemini-App und YouTube Shorts",
+        "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas' gemeinsam mit Anthropic-Mitgründer"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-22T16:10:59Z"
+    },
+    {
       "date": "2026-05-21",
       "edition_number": 17,
       "headlines": [
