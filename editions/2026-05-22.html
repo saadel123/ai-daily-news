@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 22. Mai 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 22. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #18</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>OpenAI geht an die Börse, Anthropic kauft Stainless — und der Papst spricht über KI.</h1>
+    <p class="subtitle">Gemini Omni Flash dreht Videos aus allem, Claude Code 2.1.147 heftet Sessions an, und eine päpstliche Enzyklika bekommt einen Tech-Mitautor aus dem Valley.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.147</strong>: Sessions mit Ctrl+T anpinnen — Hintergrundagenten bleiben dauerhaft am Leben</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic kauft Stainless</strong> für 300 Mio. $ — SDK-Infrastruktur zieht ins Haus, Konkurrenten verlieren die Basis</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI reicht vertrauliche IPO-Anmeldung ein</strong> — Goldman &amp; Morgan Stanley, 852 Mrd. $ Bewertung, Börsengang im Herbst</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Gemini Omni Flash</strong> live: Video aus Text, Bild und Audio — sofort in der Gemini-App und YouTube Shorts</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟧</span><span><strong>Papst Leo XIV.</strong> veröffentlicht erste KI-Enzyklika "Magnifica Humanitas" gemeinsam mit Anthropic-Mitgründer</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.147" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.147 · Pinned Sessions</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.147 bringt eine echte Neuerung für alle, die mehrere Hintergrund-Sessions parallel laufen lassen: Mit einem Tastendruck im Agenten-View <mark class="vocab" data-translation="anheften — to pin / tack onto something (separable verb)">heftest du</mark> eine Session an den laufenden Prozess. Angeheftete Sessions bleiben am Leben, auch wenn Claude Code gerade im <mark class="vocab" data-translation="Ruhezustand — sleep mode / idle state (noun, m.)">Ruhezustand</mark> ist, und werden beim nächsten Update direkt in den Prozess <mark class="vocab" data-translation="einspielen — to roll in / apply in-place (separable verb)">eingespielt</mark> statt neu gestartet. Wer gerade einen langen Agenten-Run läuft, verliert so keinen Kontext mehr. Unter Speicherdruck räumt Claude Code unangeheftete Sessions zuerst weg — angeheftete bleiben, bis du sie selbst schließt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.147 brings a genuine quality-of-life upgrade for anyone running multiple background sessions in parallel: a single keypress in the agent view pins a session to the live process. Pinned sessions stay alive even when Claude Code is idle, and during updates they are restarted in place rather than from scratch — so you lose no context. Running a long agent job? You now get a real pause-and-resume guarantee. Under memory pressure, Claude Code evicts non-pinned sessions first — pinned ones stay until you close them yourself.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents</pre>
+<pre class="cmd-examples"><span class="com"># Agenten-Übersicht öffnen · Open the session manager</span>
+$ claude agents
+
+<span class="com"># Aktive Session anpinnen (im Agenten-View) · Pin the selected session (inside agent view)</span>
+Ctrl+T</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.147" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 21.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic kauft Stainless · 300 Mio. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat Stainless <mark class="vocab" data-translation="übernehmen — to acquire / take over (separable verb)">übernommen</mark> — das New Yorker Startup, das jahrelang SDK-Generatoren für die halbe KI-Industrie gebaut hat, inklusive OpenAI und Google. Der Kaufpreis liegt laut The Information über 300 Mio. $. Jetzt kommt der strategische <mark class="vocab" data-translation="Kniff — trick / clever move (noun, m.)">Kniff</mark>: Anthropic stellt den gehosteten Stainless-Dienst ein, sodass Konkurrenten die SDK-Infrastruktur neu aufbauen müssen. Die eigenen Anthropic-SDKs laufen unverändert weiter — sie wurden von Anfang an mit Stainless generiert. Für Entwickler, die Stainless genutzt haben, gilt: Eure generierten SDKs <mark class="vocab" data-translation="verbleiben — to remain / stay under (formal verb)">verbleiben</mark> unter eurer Kontrolle.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has acquired Stainless — the New York startup that spent years building SDK generators for half the AI industry, OpenAI and Google included. The price reportedly exceeds $300M according to The Information. Now the strategic move: Anthropic is shutting down the hosted Stainless service, forcing competitors to rebuild that SDK infrastructure from scratch. Anthropic's own SDKs keep running unchanged — they've been generated with Stainless from the start. For developers who used Stainless: your generated SDKs stay yours and remain under your full control.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">→ anthropic.com · 18.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/20/openai-ipo-filing.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Vertrauliche IPO-Anmeldung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat am 22. Mai seine vertrauliche IPO-Anmeldung bei der SEC <mark class="vocab" data-translation="einreichen — to file / submit (separable verb)">eingereicht</mark> — betreut von Goldman Sachs, Morgan Stanley und JPMorgan. Die angestrebte Bewertung liegt zwischen 852 Mrd. und 1 Bio. Dollar; ein Börsengang ist für Herbst 2026 geplant und wäre die größte KI-<mark class="vocab" data-translation="Börseneinführung — IPO / stock market listing (compound noun)">Börseneinführung</mark> aller Zeiten. Die Finanzzahlen sind <mark class="vocab" data-translation="nüchtern — sobering / sober / level-headed">nüchtern</mark>: 25 Mrd. $ annualisierter Umsatz, aber Verluste bis 2030 und 600 Mrd. $ zugesagte Ausgaben. Mit dem vollständigen <mark class="vocab" data-translation="Freispruch — acquittal / verdict of not guilty (noun, m.)">Freispruch</mark> im Musk-Prozess ist der letzte große rechtliche Schatten gefallen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI filed its confidential IPO draft registration with the SEC on May 22, backed by Goldman Sachs, Morgan Stanley, and JPMorgan. Target valuation: between $852B and $1 trillion, with a public listing aimed for autumn 2026 that would be the biggest AI IPO in history. The financials are sobering: $25B in annualized revenue, but projected losses through 2030 and $600B in committed future spend. With a jury unanimously acquitting OpenAI in the Musk lawsuit, the last major legal cloud has lifted.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/20/openai-ipo-filing.html" target="_blank" rel="noopener">→ cnbc.com · 20.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://9to5google.com/2026/05/19/gemini-omni-create-anything-model-video/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini Omni Flash · Video aus allem</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google hat beim I/O-Keynote Gemini Omni Flash gestartet — sofort verfügbar in der Gemini-App, Google Flow und YouTube Shorts. Das Modell nimmt Text, Bilder, Audio und Video als Eingabe und liefert <mark class="vocab" data-translation="physikbewusst — physics-aware (compound adjective)">physikbewusstes</mark>, konsistentes Video zurück. Das Besondere: Editieren geht per <mark class="vocab" data-translation="Sprachbefehl — voice command (compound noun, m.)">Sprachbefehl</mark>, Szene für Szene, ohne den Rest neu zu rendern — jede Anweisung kennt den gesamten <mark class="vocab" data-translation="Kontext — context (noun, m., from Latin)">Kontext</mark> der vorherigen Schritte. Auf YouTube Shorts ist es kostenlos; in der Gemini-App ab Google AI Plus. API-Zugang für Entwickler folgt in den nächsten Wochen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google launched Gemini Omni Flash at the I/O keynote — immediately available in the Gemini app, Google Flow, and YouTube Shorts. The model takes text, images, audio, and video as input and returns physics-aware, consistent video. The key trick: editing works via voice command, scene by scene, without re-rendering everything else — each instruction understands the full context of all previous steps. Free on YouTube Shorts; in the Gemini app from Google AI Plus upwards. Developer API access follows in the coming weeks.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5google.com/2026/05/19/gemini-omni-create-anything-model-video/" target="_blank" rel="noopener">→ 9to5google.com · 19.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.pbs.org/newshour/world/pope-leo-xiv-to-launch-his-first-encylical-a-document-on-artificial-intelligence-with-anthropics-co-founder" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Papst Leo XIV. · KI-Enzyklika "Magnifica Humanitas"</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Papst Leo XIV. hat seine erste <mark class="vocab" data-translation="Enzyklika — encyclical (formal papal teaching document, from Greek)">Enzyklika</mark> „Magnifica Humanitas" am 15. Mai unterzeichnet — genau 135 Jahre auf den Tag nach Rerum Novarum, dem päpstlichen Klassiker zur Arbeiterfrage. Die Veröffentlichung am 25. Mai wird gemeinsam mit Christopher Olah, Mitgründer von Anthropic, präsentiert. Leo sieht die KI-Revolution als moralische <mark class="vocab" data-translation="Bewährungsprobe — proving ground / test of character (compound noun, f.)">Bewährungsprobe</mark> unserer Zeit — vergleichbar mit der Industrialisierung. <mark class="vocab" data-translation="bemerkenswert — remarkable / noteworthy (adjective)">Bemerkenswert</mark>: Zum ersten Mal in der Geschichte präsentiert ein Papst eine Sozialenzyklika gemeinsam mit einer Persönlichkeit aus der Technologiebranche.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Pope Leo XIV signed his first encyclical, 'Magnifica Humanitas,' on May 15 — exactly 135 years to the day after Rerum Novarum, the papal landmark on workers' rights. The May 25 publication will be co-presented with Christopher Olah, co-founder of Anthropic. Leo frames the AI revolution as the defining moral test of our era, comparable to industrialization. Notably: for the first time in history, a pope is presenting a social encyclical alongside a figure from the technology industry.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.pbs.org/newshour/world/pope-leo-xiv-to-launch-his-first-encylical-a-document-on-artificial-intelligence-with-anthropics-co-founder" target="_blank" rel="noopener">→ pbs.org · 19.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://www.infoq.com/news/2026/05/code-with-claude/" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Advisor-Strategie · Haiku fragt, Opus antwortet</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Beim Code-with-Claude-London-Event vorgestelltes Muster für kosteneffiziente Agenten: Anstatt jeden Agenten-Schritt mit Opus durchzuführen, arbeitest du mit einem <mark class="vocab" data-translation="günstig — cheap / affordable (also: favorable, lucky)">günstigeren</mark> Executor-Modell wie Haiku oder Sonnet, das einfache Aufgaben selbst erledigt. Nur wenn ein Schritt zu komplex wird, konsultiert der Executor kurz einen Opus-Advisor. Die meisten Agenten-Schritte sind repetitiv und brauchen keine Frontier-Intelligenz — der Advisor übernimmt nur die wirklich <mark class="vocab" data-translation="knifflig — tricky / fiddly (casual adjective)">kniffligen</mark> Fälle. Anthropics internes Team berichtet, dass die Methode Kosten und Fehlerquote gleichzeitig senkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">A cost-efficient agent pattern introduced at Code with Claude London: instead of routing every agent step through Opus, run a cheaper executor model — Haiku or Sonnet — that handles straightforward tasks itself. Only when a step gets too complex does the executor briefly consult an Opus-class advisor. Most agent steps are repetitive and don't need frontier-level intelligence — the advisor only steps in for the genuinely tricky cases. Anthropic's internal team reports that this approach reduces both cost and error rate at the same time.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.infoq.com/news/2026/05/code-with-claude/" target="_blank" rel="noopener">→ infoq.com · 21.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">anheften</div>
+        <div class="vocab-translation">to pin · to tack on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ich hefte die wichtigste Session an, damit sie beim Update nicht verloren geht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">I pin the most important session so it doesn't get lost during an update.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einreichen</div>
+        <div class="vocab-translation">to file · to submit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Morgen muss ich den Antrag fristgerecht beim Amt einreichen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Tomorrow I have to file the application on time at the office.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschmelzen</div>
+        <div class="vocab-translation">to fuse · to merge · to blend</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Bild, Ton und Text verschmelzen in Gemini Omni zu einem nahtlosen Video.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Image, audio, and text fuse into a seamless video in Gemini Omni.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">bemerkenswert</div>
+        <div class="vocab-translation">remarkable · noteworthy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Es ist bemerkenswert, wie schnell KI-Themen in der Gesellschaft ankommen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">It's remarkable how quickly AI topics are reaching society at large.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">übernehmen</div>
+        <div class="vocab-translation">to acquire · to take over</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat das Startup kurzerhand übernommen und integriert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic simply acquired the startup and integrated it.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">aufs Parkett gehen</div>
+      <div class="idiom-meaning">to make a public debut / to go public on the stock market — wörtlich: "to step onto the parquet floor" (of a stock exchange)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI will noch in diesem Jahr aufs Parkett gehen — mit einer Bewertung von fast einer Billion Dollar."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI wants to go public this year — at a valuation of nearly a trillion dollars."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nicht jedes Startup, das davon träumt, aufs Parkett zu gehen, ist wirklich bereit dafür."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Not every startup that dreams of going public is really ready for it."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pin down</div>
+      <div class="idiom-meaning">to establish firmly / to nail something in place — German equivalent: "festnageln" / "festsetzen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Can you pin down exactly when the feature ships?"</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Kannst du genau festnageln, wann das Feature kommt?"</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We finally pinned down the root cause of the outage."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben die Ursache des Ausfalls endlich festgenagelt."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · anthropic.com · cnbc.com · 9to5google.com · pbs.org · infoq.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #18 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
