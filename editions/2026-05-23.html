@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 23.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 23. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #19</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic schreibt erstmals schwarze Zahlen — und Trump kippt sein eigenes KI-Dekret.</h1>
+    <p class="subtitle">Außerdem: Code with Claude London zeigt 17-faches API-Wachstum, Grok öffnet sich für Vercel und Canva, und Claude Code weiß jetzt, wer dein Limit aufbraucht.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong> schreibt erstmals schwarze Zahlen — 10,9 Mrd. $ Q2-Umsatz und erster operativer Gewinn</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Code with Claude London</strong>: API-Volumen 17-fach gewachsen — Mercado Libre plant 90 % autonomes Coding</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Trump</strong> zieht eigene KI-Exekutivorder zurück — Stunden vor der Unterzeichnung</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>Grok</strong> öffnet sich: Vercel, Canva und Gamma direkt aus dem Chat heraus nutzbar</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>Hack</strong>: <code>/usage</code> zeigt jetzt, welche Skills und Sub-Agenten dein Limit aufbrauchen</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · Erstes profitables Quartal</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Investoren mitgeteilt, dass das Unternehmen im zweiten Quartal 2026 erstmals <mark class="vocab" data-translation="schwarze Zahlen schreiben — to be profitable / in the black">schwarze Zahlen</mark> schreiben wird — mit einem erwarteten Umsatz von rund 10,9 Milliarden Dollar, mehr als doppelt so viel wie im Vorquartal. Der operative Gewinn bleibt allerdings <mark class="vocab" data-translation="vorübergehend — temporary / transient">vorübergehend</mark>: In der zweiten Jahreshälfte sollen die Compute-Kosten für das Modelltraining stark ansteigen und die Marge wieder <mark class="vocab" data-translation="auffressen — to eat up / consume (informal)">auffressen</mark>. Gleichzeitig läuft eine neue Finanzierungsrunde bei einer Bewertung von 900 Milliarden Dollar — das Selbstverständnis der Branche als nur noch ein Research Lab ist damit endgültig <mark class="vocab" data-translation="vorbei — over / done with">vorbei</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has told investors it will hit its first-ever operating profit in Q2 2026, projecting revenue of roughly $10.9 billion — more than double the prior quarter. The profitability window is likely to be short-lived: compute costs for model training are expected to ramp up sharply in H2 2026, potentially erasing the margin. At the same time, a new funding round is reportedly underway at a $900 billion valuation, making Anthropic's 'just a research lab' framing well and truly a thing of the past.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/" target="_blank" rel="noopener">→ techcrunch.com · 20.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Code with Claude London · 17× API-Wachstum</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Beim Code-with-Claude-Event in London haben Anthropic und ihre Kunden beeindruckende Zahlen <mark class="vocab" data-translation="publik machen — to make public / to put on record">publik gemacht</mark>: Das API-Volumen auf der Plattform hat sich im Jahresvergleich versiebzehnfacht. Mercado Libre, mit 23.000 Entwicklern einer der größten Tech-Arbeitgeber Lateinamerikas, peilt für Q3 2026 einen autonomen Coding-Anteil von 90 Prozent an — und zwar <mark class="vocab" data-translation="ernsthaft — seriously / genuinely">ernsthaft</mark>, nicht als Marketing-Slide. Besonders <mark class="vocab" data-translation="aufhorchen lassen — to make people take notice">aufhorchen lässt</mark> aber die Meta-Aussage: Der Großteil des Claude-Code-Codes wird inzwischen <mark class="vocab" data-translation="eigenständig — autonomously / self-directed">eigenständig</mark> von Claude selbst geschrieben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">At the Code with Claude event in London, Anthropic and its customers shared some striking numbers: API volume on the platform grew 17x year-over-year. Mercado Libre, with 23,000 engineers one of Latin America's largest tech employers, is seriously targeting 90% autonomous coding by Q3 2026 — not just a slide deck aspiration. The most remarkable detail, though, is the meta-layer: most of Claude Code's own codebase is now written by Claude itself.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">→ technologyreview.com · 21.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Trump · KI-Exekutivorder auf Eis gelegt</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">US-Präsident Trump hat eine wegweisende Exekutivorder zur KI-Regulierung Stunden vor der geplanten Unterzeichnung <mark class="vocab" data-translation="auf Eis legen — to shelve / put on ice">auf Eis gelegt</mark>. Das Dekret hätte führende KI-Firmen zu freiwilligen Sicherheitstests vor einem Modell-Launch verpflichtet und Bundesbehörden zur Stärkung ihrer Cybersicherheit angewiesen. Trump begründete die <mark class="vocab" data-translation="Kehrtwende — U-turn / reversal">Kehrtwende</mark> damit, bestimmte Aspekte nicht zu mögen und den KI-Vorsprung der USA nicht <mark class="vocab" data-translation="gefährden — to jeopardize / put at risk">gefährden</mark> zu wollen. Die Episode zeigt, wie fragil der <mark class="vocab" data-translation="Rechtsrahmen — regulatory framework / legal framework">Rechtsrahmen</mark> für KI-Governance in den USA derzeit noch ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">President Trump shelved a landmark AI executive order just hours before the planned White House signing ceremony. The order would have required leading AI companies to voluntarily test advanced models before release and directed federal agencies to strengthen cybersecurity defenses. Trump said he didn't like 'certain aspects' and didn't want to jeopardize America's AI lead. The episode underscores just how fragile the regulatory framework for AI governance in the U.S. currently remains.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html" target="_blank" rel="noopener">→ cnbc.com · 21.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://x.ai/news" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Grok · Vercel, Canva &amp; Gamma an Bord</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI hat Grok um eine Reihe von Drittanbieter-Integrationen erweitert: Über Vercel können Nutzer direkt Websites <mark class="vocab" data-translation="deployen — to deploy (English verb used in German)">deployen</mark>, Canva ermöglicht Design-Arbeit, Gamma erstellt Präsentationen und S&amp;P Global liefert Live-Marktdaten — alles ohne die Plattform zu <mark class="vocab" data-translation="verlassen — to leave / exit">verlassen</mark>. Der Unterschied zu früheren Plugin-Ansätzen: Grok soll diese Aktionen jetzt in echten <mark class="vocab" data-translation="agentischen Workflows — agentic workflows">agentischen Workflows</mark> ausführen, nicht nur als statische Abfragen <mark class="vocab" data-translation="weiterleiten — to forward / to route">weiterleiten</mark>. Musk positioniert Grok damit als universellen Produktivitäts-Hub und tritt direkt gegen Claude Code und Codex an.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI has added a fresh round of third-party integrations to Grok: Vercel for deploying websites, Canva for design work, Gamma for presentations, and S&amp;P Global for live market data — all without leaving the Grok interface. The key difference from earlier plugin approaches is that Grok now executes these integrations inside agentic workflows rather than just forwarding static queries. Musk is positioning Grok as a universal productivity hub, taking direct aim at Claude Code and Codex.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news" target="_blank" rel="noopener">→ x.ai · 22.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.149 · /usage nach Kategorie</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.149 macht das Limit-Tracking endlich <mark class="vocab" data-translation="aussagekräftig — informative / meaningful">aussagekräftig</mark>: Der Slash-Command zeigt jetzt, wie sich dein Verbrauch auf Skills, Sub-Agenten, Plugins und einzelne MCP-Server <mark class="vocab" data-translation="aufschlüsseln — to break down / itemize">aufschlüsselt</mark>. Bisher war nur die Gesamtzahl sichtbar — jetzt kannst du <mark class="vocab" data-translation="aufspüren — to track down / spot">aufspüren</mark>, welches Plugin deinen Kontext frisst oder welcher Sub-Agent besonders viel Compute verbraucht. Bonus: den Diff-View kannst du jetzt mit der Tastatur scrollen, und Markdown rendert GFM-Task-Checkboxen korrekt statt als Fließtext.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.149 makes limit tracking genuinely useful: the /usage command now shows a per-category breakdown — skills, subagents, plugins, and individual MCP servers each get their own line. Previously you only got a total; now you can spot exactly which plugin is eating your context or which subagent is the most expensive. Bonus: the diff view can now be scrolled with keyboard shortcuts, and Markdown renders GFM task-list checkboxes properly instead of as plain text.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/usage</pre>
+<pre class="cmd-examples"><span class="com"># Verbrauch nach Kategorie aufschlüsseln · Break down usage by category</span>
+$ /usage
+
+<span class="com"># Diff-View mit Tastatur scrollen · Scroll diff view with keyboard (↑/↓, j/k, PgUp/PgDn)</span>
+$ /diff</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 22.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">schwarze Zahlen schreiben</div>
+        <div class="vocab-translation">to be profitable · to be in the black</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic schreibt im zweiten Quartal 2026 erstmals schwarze Zahlen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic is turning a profit for the very first time in Q2 2026.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auf Eis legen</div>
+        <div class="vocab-translation">to put on ice · to shelve</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Trump hat das KI-Dekret kurz vor der Unterzeichnung auf Eis gelegt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Trump shelved the AI executive order right before signing it.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufschlüsseln</div>
+        <div class="vocab-translation">to break down · to itemize</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit <code>/usage</code> kannst du deinen Verbrauch nach Skills aufschlüsseln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With <code>/usage</code> you can break down your consumption by skills.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomous · self-directed · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude schreibt den Großteil des Claude-Code-Codes inzwischen eigenständig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude now writes most of the Claude Code codebase autonomously.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Kehrtwende</div>
+        <div class="vocab-translation">U-turn · reversal · about-face</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Trumps Kehrtwende bei der KI-Regulierung überraschte viele Beobachter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Trump's U-turn on AI regulation surprised many observers.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Stecker ziehen</div>
+      <div class="idiom-meaning">to pull the plug · to abruptly cancel something — wörtlich: "to pull the plug"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Trump hat kurz vor der Unterzeichnung den Stecker gezogen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Trump pulled the plug right before the signing."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Unser CTO hat beim alten Monolith den Stecker gezogen — wir migrieren auf Microservices."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Our CTO pulled the plug on the old monolith — we're migrating to microservices."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to endure something difficult and just do it · German equivalent: "in den sauren Apfel beißen" (literally: to bite the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We bit the bullet and rewrote the whole authentication layer from scratch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben in den sauren Apfel gebissen und den ganzen Auth-Layer neu geschrieben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Bite the bullet: upgrade to the new API version now, before the old one is deprecated."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beiß in den sauren Apfel und steig jetzt auf die neue API-Version um, bevor die alte deprecated wird."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · technologyreview.com · cnbc.com · x.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #19 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
