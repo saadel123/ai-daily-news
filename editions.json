@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-23",
+      "edition_number": 19,
+      "headlines": [
+        "Anthropic schreibt erstmals schwarze Zahlen — 10,9 Mrd. $ Q2-Umsatz und erster operativer Gewinn",
+        "Code with Claude London: API-Volumen 17-fach gewachsen — Mercado Libre plant 90 % autonomes Coding",
+        "Trump zieht eigene KI-Exekutivorder zurück — Stunden vor der Unterzeichnung",
+        "Grok öffnet sich: Vercel, Canva und Gamma direkt aus dem Chat heraus nutzbar",
+        "Hack: /usage zeigt jetzt, welche Skills und Sub-Agenten dein Limit aufbrauchen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-23T16:05:29Z"
+    },
+    {
       "date": "2026-05-22",
       "edition_number": 18,
       "headlines": [
