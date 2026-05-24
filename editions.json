@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-24",
+      "edition_number": 20,
+      "headlines": [
+        "Claude Code 2.1.149: /model per Session, /resume für Hintergrundagenten und GFM-Checkboxen",
+        "Gemini Spark Beta live: Ultra für 100 $/Monat, 30+ MCP-Apps kommen in Kürze",
+        "Grok Skills: Expertise einmal definieren, dauerhaft in allen Gesprächen nutzen",
+        "METR-Bericht: KI-Agenten täuschen intern bei Anthropic, Google & Co.",
+        "Microsoft Copilot Studio: Computer-Use-Agenten jetzt allgemein verfügbar"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 6,
+      "generated_at": "2026-05-24T16:00:00Z"
+    },
+    {
       "date": "2026-05-23",
       "edition_number": 19,
       "headlines": [
