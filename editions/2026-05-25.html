@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 25.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 25. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #21</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Karpathy wechselt die Fronten — und Silicon trifft Silicon.</h1>
+    <p class="subtitle">Außerdem: Zuckerberg-Audio aufgetaucht, OpenAI baut Google-Wasserzeichen ein und der SpaceX-Börsengang zeigt, was Anthropic wirklich zahlt.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Karpathy zu Anthropic</strong>: OpenAI-Mitgründer und KI-Lehrer der Nation wechselt zum Pre-Training-Team</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic × Microsoft</strong>: Verhandlungen über Maia-200-Chip — Custom Silicon für Claude-Inference</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Meta-Audio-Leak</strong>: Zuckerberg trackte Mitarbeiter fürs KI-Training, bevor 8.000 entlassen wurden</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI + SynthID</strong>: Jedes ChatGPT-Bild trägt ab jetzt C2PA- und Google-Wasserzeichen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>SpaceX-IPO</strong>: Prospekt legt offen — Anthropic zahlt 1,25 Mrd. $/Monat für Colossus-Compute</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Andrej Karpathy joins Anthropic</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Andrej Karpathy, <mark class="vocab" data-translation="Mitgründer — co-founder">Mitgründer</mark> von OpenAI und wohl die beliebteste Lehrperson im KI-Umfeld — bekannt für seinen YouTube-Kurs "Neural Networks: Zero to Hero" mit Millionen Aufrufen — wechselt zu Anthropic. Er stößt zum Pre-Training-Team unter Nick Joseph und wird an Claudes <mark class="vocab" data-translation="Grundlagenforschung — foundational research">Grundlagenforschung</mark> mitarbeiten. Karpathy war seit seinem OpenAI-Abgang 2023 selbstständig; dieser Wechsel gilt als einer der <mark class="vocab" data-translation="prominentesten — most prominent">prominentesten</mark> Seitenwechsel der laufenden KI-Ära. Er plant, seine Lehrtätigkeit wieder aufzunehmen, sobald er sich bei Anthropic <mark class="vocab" data-translation="eingelebt — settled in">eingelebt</mark> hat.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Andrej Karpathy, OpenAI co-founder and arguably the most beloved AI educator alive — known for his "Neural Networks: Zero to Hero" YouTube course watched by millions — is joining Anthropic. He joins the pre-training team under Nick Joseph and will work on foundational Claude research. Karpathy has been independent since leaving OpenAI in 2023; this is one of the most prominent career shifts in the current AI era. He plans to resume his teaching work once he's settled in at Anthropic.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noopener">→ techcrunch.com · 19.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × Microsoft Maia 200</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic <mark class="vocab" data-translation="verhandelt — is negotiating">verhandelt</mark> laut CNBC und Bloomberg über den Einsatz von Microsofts <mark class="vocab" data-translation="maßgeschneidertem — custom-built, tailor-made">maßgeschneidertem</mark> Maia-200-Chip für Inference-Workloads. Würde der Deal abgeschlossen, wäre Anthropic der erste externe Hauptkunde für Microsofts Custom-Silicon-Programm — das seit über zwei Jahren auf einen externen Beweis wartet. Anthropic setzt bewusst auf eine Multi-Silicon-Strategie, um keine Vendor-<mark class="vocab" data-translation="Abhängigkeit — dependency, lock-in">Abhängigkeit</mark> aufzubauen. Microsofts Maia 200 soll laut CEO Satya Nadella über 30 % mehr Tokens pro Dollar liefern als das aktuelle GPU-Fleet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic is in talks to use Microsoft's custom Maia 200 chip for inference workloads, according to CNBC and Bloomberg. If the deal closes, Anthropic would become the first major external customer for Microsoft's custom silicon program — which has been waiting over two years for outside validation. Anthropic deliberately runs a multi-silicon strategy to avoid vendor lock-in. Microsoft CEO Satya Nadella claims the Maia 200 delivers over 30% better tokens per dollar than the current GPU fleet.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html" target="_blank" rel="noopener">→ cnbc.com · 21.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://winbuzzer.com/2026/05/25/leaked-zuckerberg-audio-revives-meta-staff-tracking-xcxwbn/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meta · Zuckerberg-Audio · 8.000 Entlassungen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Ein <mark class="vocab" data-translation="geleaktes — leaked (informal, from the English 'to leak')">geleaktes</mark> Audio eines internen Meta-All-Hands-Meetings hat für <mark class="vocab" data-translation="Aufruhr — uproar, commotion">Aufruhr</mark> gesorgt: Zuckerberg erklärte offen, dass das Unternehmen Mitarbeiteraktivitäten — Tastenanschläge, Mausklicks, Screenshots — systematisch <mark class="vocab" data-translation="erfasst — captured, recorded, logged">erfasst</mark> hat, um KI-Modelle zu trainieren. Das geschah kurz bevor rund 8.000 Stellen abgebaut wurden. Das interne Programm nennt sich "Model Capability Initiative" und lief auf allen Firmen-Laptops; über 1.000 Mitarbeiter haben eine <mark class="vocab" data-translation="Petition — petition (same word, different pronunciation)">Petition</mark> dagegen unterzeichnet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">A leaked audio recording of an internal Meta all-hands meeting has caused an uproar: Zuckerberg openly explained that the company systematically captured employee activity — keystrokes, mouse clicks, screenshots — to train AI models. This happened right before around 8,000 jobs were cut. The internal program is called the "Model Capability Initiative" and ran on all company laptops; more than 1,000 employees signed a petition against it.</p>
+        </div>
+      </div>
+      <a class="source" href="https://winbuzzer.com/2026/05/25/leaked-zuckerberg-audio-revives-meta-staff-tracking-xcxwbn/" target="_blank" rel="noopener">→ winbuzzer.com · 25.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.resultsense.com/news/2026-05-20-openai-c2pa-synthid-content-provenance/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI × SynthID · C2PA-Wasserzeichen in jedem Bild</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat zum 19. Mai jeden Bild-Output aus ChatGPT, Codex und der API mit zwei unsichtbaren Signalen <mark class="vocab" data-translation="versehen — tagged with, equipped with">versehen</mark>: C2PA-Metadaten und Googles SynthID-<mark class="vocab" data-translation="Wasserzeichen — watermark">Wasserzeichen</mark>. Beide Signale überleben Komprimierung, Screenshots und <mark class="vocab" data-translation="Formatkonvertierungen — format conversions">Formatkonvertierungen</mark>. Dazu kommt ein öffentliches Verify-Tool, mit dem man beliebige Bilder auf KI-Ursprung prüfen kann. Für Branchen wie Journalismus oder Recht, die KI-generierten Content kennzeichnen müssen, ist das ein echter <mark class="vocab" data-translation="Fortschritt — progress, advancement">Fortschritt</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">As of May 19, OpenAI embeds two invisible signals in every image output from ChatGPT, Codex, and the API: C2PA metadata and Google's SynthID watermark. Both signals survive compression, screenshots, and format conversions. OpenAI also launched a public Verify tool that lets anyone check an image for AI-origin signals. For industries like journalism or law that must label AI-generated content, this is genuine progress.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.resultsense.com/news/2026-05-20-openai-c2pa-synthid-content-provenance/" target="_blank" rel="noopener">→ resultsense.com · 20.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.axios.com/2026/05/20/anthropic-spacex-compute" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SpaceX-IPO · Anthropic zahlt 45 Mrd. $ für Colossus</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Der SpaceX-<mark class="vocab" data-translation="Börsenprospekt — IPO prospectus">Börsenprospekt</mark> hat eine Zahl <mark class="vocab" data-translation="offengelegt — disclosed, laid bare">offengelegt</mark>, die man sich zweimal anschaut: Anthropic zahlt 1,25 Milliarden Dollar pro Monat für Rechenleistung auf Colossus und Colossus II — bis zu 45 Milliarden Dollar bis Mai 2029. Das umfasst über 220.000 NVIDIA-GPUs, 300 Megawatt Leistung und neue GB200-Hardware auf Colossus 2. SpaceX plant die Börsennotierung unter dem Kürzel SPCX an der Nasdaq — möglicherweise ab dem 12. Juni, bei einer angestrebten <mark class="vocab" data-translation="Bewertung — valuation">Bewertung</mark> von 1,75 Billionen Dollar.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">SpaceX's IPO prospectus disclosed a figure worth a double-take: Anthropic pays $1.25 billion per month for compute on Colossus and Colossus II — up to $45 billion through May 2029. That covers over 220,000 NVIDIA GPUs, 300 megawatts of capacity, and next-gen GB200 hardware on Colossus 2. SpaceX plans to list under ticker SPCX on the Nasdaq — potentially as early as June 12 — targeting a $1.75 trillion valuation.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.axios.com/2026/05/20/anthropic-spacex-compute" target="_blank" rel="noopener">→ axios.com · 20.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.149 · /diff jetzt mit Tastatur scrollbar</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Kleines Update für alle, die Diffs in Claude Code direkt im Terminal reviewen: Die Detail-Ansicht von /diff lässt sich seit Version 2.1.149 mit der Tastatur scrollen — Pfeiltasten, j und k im Vim-Stil, PgUp und PgDn, Space sowie Home und End. Wer längere Diffs prüft, muss jetzt nicht mehr zur Maus greifen. Besonders nützlich in Remote- und SSH-Sessions, wo Maus-Scrolling oft zuverlässig versagt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">A small but welcome update for anyone reviewing diffs inside Claude Code: the /diff detail view now scrolls with the keyboard as of version 2.1.149 — arrow keys, Vim-style j and k, PgUp and PgDn, Space, and Home and End. When checking longer diffs, you no longer need the mouse. Especially useful in remote and SSH sessions where mouse scrolling reliably breaks down.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 22.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Mitgründer</div>
+        <div class="vocab-translation">co-founder</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Als Mitgründer kennt Karpathy OpenAIs Frühgeschichte aus erster Hand.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">As a co-founder, Karpathy knows OpenAI's early history firsthand.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Wasserzeichen</div>
+        <div class="vocab-translation">watermark</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das eingebettete Wasserzeichen überlebt selbst starke Bildkomprimierung.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The embedded watermark survives even heavy image compression.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Börsenprospekt</div>
+        <div class="vocab-translation">IPO prospectus</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Im Börsenprospekt steht schwarz auf weiß, was Anthropic monatlich überweist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The IPO prospectus spells out in black and white what Anthropic wires monthly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">maßgeschneidert</div>
+        <div class="vocab-translation">custom-built · tailor-made</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Maßgeschneiderte Chips sind im Betrieb oft effizienter als Hardware von der Stange.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Custom-built chips are often more efficient to run than off-the-shelf hardware.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Aufruhr</div>
+        <div class="vocab-translation">uproar · commotion</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das geleakte Audio sorgte sofort für Aufruhr in der Tech-Community.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The leaked audio immediately caused an uproar in the tech community.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "die Katze aus dem Sack lassen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"SpaceX hat mit dem Börsenprospekt ungewollt die Katze aus dem Sack gelassen — jetzt kennt jeder Anthropics Monatsrechnung."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"SpaceX accidentally let the cat out of the bag with its IPO prospectus — now everyone knows Anthropic's monthly bill."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Zuckerberg-Audio hat die Katze aus dem Sack gelassen, bevor Meta die Entlassungen offiziell ankündigen konnte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The Zuckerberg audio let the cat out of the bag before Meta could officially announce the layoffs."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to rain on someone's parade</div>
+      <div class="idiom-meaning">to spoil someone's excitement or plans — German equivalent: "jemandem den Wind aus den Segeln nehmen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The leaked audio really rained on Meta's parade, right when they were riding a wave of AI momentum."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Audio-Mitschnitt hat Meta ordentlich den Wind aus den Segeln genommen — mitten im Wachstumskurs."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't rain on their parade — they just shipped the feature, let them celebrate first."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nimm ihnen jetzt nicht den Wind aus den Segeln — sie haben das Feature gerade geshippt, lass sie erst feiern."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · cnbc.com · winbuzzer.com · resultsense.com · axios.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #21 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
