@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-25",
+      "edition_number": 21,
+      "headlines": [
+        "Karpathy zu Anthropic: OpenAI-Mitgründer und KI-Lehrer der Nation wechselt zum Pre-Training-Team",
+        "Anthropic x Microsoft: Verhandlungen über Maia-200-Chip — Custom Silicon für Claude-Inference",
+        "Meta-Audio-Leak: Zuckerberg trackte Mitarbeiter fürs KI-Training, bevor 8.000 entlassen wurden",
+        "OpenAI + SynthID: Jedes ChatGPT-Bild trägt ab jetzt C2PA- und Google-Wasserzeichen",
+        "SpaceX-IPO: Prospekt legt offen — Anthropic zahlt 1,25 Mrd. $/Monat für Colossus-Compute"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-25T16:00:00Z"
+    },
+    {
       "date": "2026-05-24",
       "edition_number": 20,
       "headlines": [
