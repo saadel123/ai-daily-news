@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-26",
+      "edition_number": 22,
+      "headlines": [
+        "Claude Mythos: claude-mythos-1-preview taucht in Claude Code auf — Enterprise-Rollout steht bevor",
+        "Anthropic integriert 28 Security- und Compliance-Tools — von CrowdStrike bis Cloudflare",
+        "BNP Paribas × Mistral: Europas größte Bank rüstet sich für Mythos-ähnliche KI-Bedrohungen",
+        "OpenAI Codex steuert jetzt gesperrte Macs — Appshots per Doppel-Command-Taste",
+        "SpaceX plant Cursor-Übernahme für 60 Mrd. $ — 30 Tage nach dem IPO"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-26T16:00:00Z"
+    },
+    {
       "date": "2026-05-25",
       "edition_number": 21,
       "headlines": [
