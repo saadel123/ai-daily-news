@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 27.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 27. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #23</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic knackt die 900-Milliarden-Schallmauer — und Claude Code bekommt sein bisher größtes Release.</h1>
+    <p class="subtitle">Außerdem: DeepMind saugt Contextual-AI-Team ein, Mistral kauft Physik-KI aus Wien, ClickUp schickt 22 % der Belegschaft nach Hause und setzt 3.000 KI-Agenten ein, YouTube kennzeichnet KI-Videos ab sofort automatisch.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong> schließt 30-Mrd.-$-Runde bei 900-Mrd.-Bewertung ab — erstmals vor OpenAI</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>DeepMind × Contextual AI</strong>: 90-Mio.-$-Acquihire — Douwe Kiela wechselt zu Google</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Mistral × Emmi AI</strong>: Physik-KI aus Wien kommt zu Mistral — Digitale Zwillinge in Echtzeit</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>ClickUp</strong> entlässt 22 % — und ersetzt sie durch 3.000 interne KI-Agenten</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>YouTube</strong> kennzeichnet KI-generierte Videos automatisch — unabhängig vom Creator</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-eyes-900-billion-valuation-as-quarterly-revenue-doubles/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · 900 Mrd. $ · Wertvollstes privates KI-Start-up</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic schließt eine neue <mark class="vocab" data-translation="die Finanzierungsrunde — funding round">Finanzierungsrunde</mark> von über 30 Mrd. Dollar ab — bei einer Pre-Money-<mark class="vocab" data-translation="die Bewertung — valuation">Bewertung</mark> von über 900 Mrd. Dollar, angeführt von Sequoia Capital, Dragoneer, Altimeter und Greenoaks. Damit <mark class="vocab" data-translation="überbietet — outbids, surpasses">überbietet</mark> die Claude-Mutter OpenAIs letzte private Runde bei 852 Mrd. Dollar und wird erstmals zum wertvollsten privaten KI-Unternehmen der Welt. Das ist Anthropics zweite 30-Mrd.-Runde in diesem Jahr; die erste schloss im Februar ab. Noch stehen letzte Formalitäten aus — aber Claudes wachsende Enterprise-Präsenz bei KPMG, SAP und BNP Paribas treibt die Bewertung in bisher <mark class="vocab" data-translation="unbekannte Höhen — uncharted territory, unprecedented heights">unbekannte Höhen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic is closing a new funding round of more than $30 billion at a pre-money valuation exceeding $900 billion, led by Sequoia Capital, Dragoneer, Altimeter, and Greenoaks Capital Partners. This briefly makes Anthropic the world's most valuable private AI company, surpassing OpenAI's last private valuation of $852 billion. It's Anthropic's second $30 billion raise of the year — the first closed in February. Final formalities are still outstanding, but Claude's growing enterprise footprint at KPMG, SAP, and BNP Paribas is driving the valuation into previously uncharted territory.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-eyes-900-billion-valuation-as-quarterly-revenue-doubles/" target="_blank" rel="noopener">→ pymnts.com · 26.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-05-19/google-hires-staff-from-bezos-backed-contextual-ai-in-licensing-deal" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google DeepMind × Contextual AI · 90-Mio.-$-Acquihire</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Google DeepMind <mark class="vocab" data-translation="sichert sich — secures, acquires">sichert sich</mark> über 20 Forscher von Contextual AI in einem Lizenz- und Talenttransfer im Wert von 80–90 Mio. Dollar — darunter Gründer und CEO Douwe Kiela. Der Deal strukturiert sich als <mark class="vocab" data-translation="der Acquihire — talent acquisition deal (English portmanteau widely used in German tech)">Acquihire</mark>, nicht als klassische Übernahme, um kartellrechtliche Risiken zu minimieren. Contextual AI hatte sich auf Enterprise-RAG spezialisiert — ein Bereich, den DeepMind jetzt direkt ins Forscherteam <mark class="vocab" data-translation="integriert — integrates, folds in">integriert</mark>. Das <mark class="vocab" data-translation="das Muster — the pattern">Muster</mark> ist klar: In derselben Woche haben auch Mistral, Anthropic und Meta je ein KI-Start-up einverleibt — die Konsolidierungsphase hat begonnen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google DeepMind has locked in over 20 researchers from Contextual AI in an $80–90 million talent-and-licensing deal, including founder and CEO Douwe Kiela. The deal is structured as an acquihire rather than a traditional acquisition, sidestepping potential antitrust scrutiny. Contextual AI specialized in enterprise RAG — a capability DeepMind is folding directly into its research team. The pattern is unmistakable: in the same week, Mistral, Anthropic, and Meta each absorbed an AI startup in similar fashion — the consolidation phase has arrived.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-05-19/google-hires-staff-from-bezos-backed-contextual-ai-in-licensing-deal" target="_blank" rel="noopener">→ bloomberg.com · 20.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://mistral.ai/news/accelerate-ai-native-industry" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Mistral × Emmi AI · Physik-KI · Digitale Zwillinge für die Industrie</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Mistral AI <mark class="vocab" data-translation="übernimmt — acquires, takes over">übernimmt</mark> Emmi AI aus Wien — ein Start-up, das KI-Modelle mit den Gesetzen der Physik trainiert und damit Luftströmungen, Wärmetransfer und Materialspannungen in Echtzeit simuliert. Das 30-köpfige Team wechselt zu Mistral, und Linz wird ein offizielles Mistral-Büro. Ziel ist ein umfassender KI-Stack für <mark class="vocab" data-translation="Industrieengineering — industrial engineering">Industrieengineering</mark> — inklusive echter <mark class="vocab" data-translation="Digitale Zwillinge — digital twins">Digitaler Zwillinge</mark>, die jahrelange Simulations-Hürden für Ingenieure <mark class="vocab" data-translation="überwinden — overcome, break through">überwinden</mark>. Europa bekommt damit endlich einen ernsthaften Mitspieler im Physical-AI-Segment — getrieben von einem französischen Start-up mit Wiener Wurzeln.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Mistral AI is acquiring Emmi AI, a Vienna-based startup that trains models on the laws of physics to simulate airflow, heat transfer, and material stress in real time. The 30-strong team joins Mistral, with Linz becoming an official Mistral office. The goal is a comprehensive AI stack for industrial engineering — including genuine digital twins that break through long-standing simulation barriers for engineers and manufacturers. Europe finally has a serious player in physical AI — driven by a French startup with Viennese roots.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mistral.ai/news/accelerate-ai-native-industry" target="_blank" rel="noopener">→ mistral.ai · 22.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>ClickUp · 22 % entlassen · 3.000 KI-Agenten als Ersatz</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">ClickUp hat 22 % seiner <mark class="vocab" data-translation="die Belegschaft — workforce, staff">Belegschaft</mark> entlassen — und erklärt den Schritt nicht als Kostensenkung, sondern als radikalen KI-<mark class="vocab" data-translation="der Umbau — restructuring, overhaul">Umbau</mark>. Statt Menschen übernehmen jetzt rund 3.000 interne KI-Agenten komplexe Aufgaben; die verbleibenden Mitarbeiter <mark class="vocab" data-translation="steuern — direct, steer">steuern</mark> die Agenten und reviewen deren Output. Das ist einer der bisher konkretesten öffentlichen Belege dafür, wie Unternehmen KI-Agenten nicht nur als Assistenten, sondern als eigenständige <mark class="vocab" data-translation="Arbeitskräfte — workforce, workers">Arbeitskräfte</mark> einsetzen. Ob das Modell skaliert oder zu einer Qualitätskrise führt, bleibt die offene Frage der Branche.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">ClickUp has laid off 22% of its workforce — framing the move not as cost-cutting but as a radical AI transformation. Roughly 3,000 internal AI agents now handle complex tasks that employees used to do; remaining staff directs the agents and reviews their output. This is one of the most concrete public examples of companies deploying AI agents not just as assistants but as full-fledged workers. Whether the model scales or triggers a quality crisis remains the industry's open question.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/" target="_blank" rel="noopener">→ techcrunch.com · 25.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>YouTube · Automatische KI-Labels · Kein Creator-Opt-in mehr</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">YouTube verlässt sich nicht mehr allein auf Creator-Angaben, wenn es um KI-generierte Inhalte geht: Die Plattform <mark class="vocab" data-translation="kennzeichnet — labels, marks">kennzeichnet</mark> Videos ab sofort automatisch, sobald sie signifikante fotorealistische KI-Elemente erkennt. Das ist eine direkte Reaktion auf zunehmende Fehlinformationen und Deepfakes, bei denen viele Creator die <mark class="vocab" data-translation="die Offenlegungspflicht — disclosure requirement">Offenlegungspflicht</mark> ignorierten. Die Labels erscheinen unter dem Video und im Info-Panel — sichtbar, aber nicht <mark class="vocab" data-translation="aufdringlich — intrusive, obtrusive">aufdringlich</mark>. Für Entwickler, die KI-generierte Inhalte auf YouTube <mark class="vocab" data-translation="verteilen — distribute, publish">verteilen</mark>: Transparenz wird Plattformpolitik, ob man will oder nicht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">YouTube is no longer relying solely on creator disclosures for AI-generated content: the platform now automatically labels videos when it detects significant photorealistic AI elements. This is a direct response to rising misinformation and deepfakes, where many creators were ignoring the disclosure requirement. Labels appear below the video and in the info panel — visible but not intrusive. For developers distributing AI-generated content on YouTube, the message is clear: transparency is now platform policy, whether you opt in or not.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/" target="_blank" rel="noopener">→ techcrunch.com · 27.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.152 · /code-review --fix · Review und Fix in einem Schritt</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.152 macht den Review-Fix-Workflow deutlich runder: Ein neues Flag auf dem Review-Befehl wendet Vereinfachungen, Wiederverwendungsvorschläge und Effizienz-Fixes direkt im Working Tree an — Review und Fixen in einem einzigen Zug. Der bisherige Simplify-Befehl ist jetzt ein Alias dafür. Außerdem gibt es einen neuen Slash-Command zum Neu-Einlesen von Skills ohne Session-Neustart — praktisch für Plugin-Entwickler, die Skills on the fly anpassen wollen. Noch bequemer: Claude Code wechselt automatisch zum konfigurierten Fallback-Modell, wenn das Primärmodell nicht antwortet, statt jede Anfrage abzubrechen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.152 rounds off the review-fix workflow: a new flag on the code-review command applies simplification, reuse, and efficiency findings directly to your working tree — reviewing and fixing in one step. The old simplify command is now an alias for this. There's also a new slash command to reload skills without restarting the session — handy for plugin developers who tweak skills on the fly. Claude Code also now automatically falls back to your configured fallback model when the primary is unavailable, instead of failing every request.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/code-review [effort-level] [--fix] [--comment]
+/simplify
+/reload-skills</pre>
+        <dl class="cmd-flags">
+          <dt><code>--fix</code></dt>
+          <dd>apply review findings directly to the working tree after the review</dd>
+          <dt><code>--comment</code></dt>
+          <dd>post findings as inline GitHub PR comments instead of printing them</dd>
+          <dt><code>low | medium | high | max</code></dt>
+          <dd>effort level controlling review depth; defaults to medium</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Review und direkt fixen · Review diff and apply fixes in one step</span>
+$ /code-review --fix
+
+<span class="com"># Gründliches Review ohne Autofix · Thorough review, no auto-fix</span>
+$ /code-review high
+
+<span class="com"># Befunde als PR-Kommentare posten · Post findings as PR inline comments</span>
+$ /code-review --comment
+
+<span class="com"># Skills neu laden ohne Neustart · Reload skills without restarting the session</span>
+$ /reload-skills</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 27.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Finanzierungsrunde</div>
+        <div class="vocab-translation">funding round</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ohne frische Finanzierungsrunde würde selbst das beste Modell kein Compute bekommen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Without a fresh funding round, even the best model wouldn't get any compute.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Bewertung</div>
+        <div class="vocab-translation">valuation</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Bei einer Bewertung von 900 Mrd. Dollar ist Anthropic wertvoller als die meisten DAX-Konzerne zusammen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">At a $900 billion valuation, Anthropic is worth more than most DAX companies combined.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Übernahme</div>
+        <div class="vocab-translation">acquisition · takeover</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Übernahme eines KI-Startups läuft heute oft als Talent-Deal — so umgeht man den Kartellprüfer.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Acquiring an AI startup today often happens as a talent deal — that's how you sidestep the antitrust regulator.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Belegschaft</div>
+        <div class="vocab-translation">workforce · staff</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn 22 % der Belegschaft gehen und 3.000 KI-Agenten kommen, nennt das das Management einen Umbau.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">When 22% of your workforce leaves and 3,000 AI agents move in, management calls it a transformation.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">kennzeichnen</div>
+        <div class="vocab-translation">to label · to mark</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">YouTube kennzeichnet KI-Videos jetzt automatisch — auch wenn der Creator es vergessen hätte.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">YouTube now labels AI videos automatically — even if the creator would have forgotten to do it.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Rennen machen</div>
+      <div class="idiom-meaning">to win the race · to come out on top — wörtlich: "to make the race"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"In der Bewertungsliga der KI-Firmen macht gerade Anthropic das Rennen — erstmals vor OpenAI."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"In the AI valuation league, Anthropic is currently winning the race — ahead of OpenAI for the first time."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer bei Physical AI das Rennen macht — Mistral oder ein US-Player — ist noch völlig offen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Who wins the race in physical AI — Mistral or a US player — is still completely up in the air."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to have skin in the game</div>
+      <div class="idiom-meaning">to personally have stakes in an outcome — German equivalent: "mit im Boot sein"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When Sequoia and Dragoneer have skin in the game, the pressure on Anthropic to deliver is immense."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn Sequoia und Dragoneer mit im Boot sind, ist der Druck auf Anthropic, zu liefern, enorm."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Every founder should have skin in the game — otherwise the incentives just aren't aligned."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Gründer sollten immer mit im Boot sein — sonst stimmen die Anreize einfach nicht."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: pymnts.com · bloomberg.com · mistral.ai · techcrunch.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #23 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
