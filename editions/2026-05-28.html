@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 28.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 28. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #24</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Reviews, die sich selbst einpflegen — und Budgets, die sich selbst verbrennen.</h1>
+    <p class="subtitle">Claude Code 2.1.152 schließt den Reviewloop, Microsoft bricht am Token-Preis, und Cisco beweist: kein Frontier-Modell übersteht echte Kettenangriffe. Plus: KPMG gibt 276.000 Mitarbeitern Claude.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.152–153</strong>: /code-review --fix spielt Reviewvorschläge direkt in den Working Tree ein</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>KPMG × Anthropic</strong>: 276.000 Mitarbeiter bekommen Claude — die Big Four wetten auf KI statt gegen sie</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI × Thrive</strong>: Steuer-KI mit 97 % Genauigkeit verbessert sich nach jedem Fehler selbst</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Cisco-Studie</strong>: Multi-Turn-Angriffe knacken alle Frontier-Modelle — Standard-Benchmarks versagen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Microsoft</strong> kündigt Claude Code — Token-Kosten haben den Jahres-KI-Etat aufgefressen</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.152–153 · /code-review --fix &amp; MessageDisplay Hook</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code bekommt in Version 2.1.152 und 2.1.153 einen handfesten Upgrade-Schub beim Reviewen. Der größte Sprung: ein neues Flag, das Reviewvorschläge direkt in den Working Tree <mark class="vocab" data-translation="einspielen — to feed in / apply changes (separable verb)">einspielt</mark> — man schaut sie sich im Editor an und nimmt sie mit einem Tastendruck an, statt alles manuell <mark class="vocab" data-translation="abtippen — to type out by hand / transcribe">abzutippen</mark>. Für Teams, die Pull-Request-Qualität stramm halten wollen, gibt es außerdem die Option, Befunde direkt als Inline-Kommentare zu posten. Neu ist ein Hook, der den Antworttext des Assistenten umschreiben oder <mark class="vocab" data-translation="unterdrücken — to suppress / to stifle">unterdrücken</mark> kann, bevor er am Bildschirm erscheint — ideal für <mark class="vocab" data-translation="maßgeschneidert — tailor-made / custom-fit">maßgeschneiderte</mark> Team-Setups. Wer neue Skills hinzufügt, muss die Session nicht mehr neu starten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.152 and 2.1.153 deliver a solid review workflow upgrade. The biggest step: a new flag that writes review suggestions straight into your working tree — you approve or reject them in the editor without typing anything out manually. For teams keeping PR quality tight, findings can also be posted directly as inline comments. A new MessageDisplay hook lets you transform or suppress assistant response text before it hits the screen — handy for custom team setups. And you can now reload skills without restarting your session.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/code-review [effort] [--fix] [--comment]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--fix</code></dt>
+          <dd>apply review findings directly to the working tree after the review</dd>
+          <dt><code>--comment</code></dt>
+          <dd>post findings as inline comments on the current GitHub pull request</dd>
+          <dt><code>effort</code></dt>
+          <dd>review depth: low | medium | high | max (default: medium)</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Review starten und Ergebnis anzeigen · Run a review and see results</span>
+$ /code-review high
+
+<span class="com"># Ergebnisse direkt in den Code einpflegen · Apply findings to the working tree</span>
+$ /code-review high --fix
+
+<span class="com"># Als Inline-PR-Kommentare posten · Post as inline PR comments</span>
+$ /code-review medium --comment</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 27.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://fortune.com/2026/05/26/kpmg-anthropic-claude-partnership-big-four-ai/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>KPMG × Anthropic · 276.000 Mitarbeiter, zwei KI-Albträume</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">KPMG, einer der vier größten Beratungskonzerne der Welt, hat Claude in sein Digital Gateway <mark class="vocab" data-translation="integriert — integrated / embedded (past participle)">integriert</mark> — und gibt damit 276.000 Mitarbeitern weltweit Zugang zum Modell. Fortune beleuchtet den Deal aus einer <mark class="vocab" data-translation="ungemütlich — uncomfortable / unpleasant">ungemütlichen</mark> Perspektive: Die Big Four stehen vor zwei KI-Albträumen gleichzeitig. Erstens könnte KI die Arbeit erledigen, für die Kunden bisher Berater gebucht haben. Zweitens könnten KI-Firmen selbst zu Konkurrenten im Beratungsmarkt werden. KPMGs Antwort auf beide <mark class="vocab" data-translation="die Drohung — threat / menace">Drohungen</mark> ist dieselbe <mark class="vocab" data-translation="die Wette — bet / wager">Wette</mark>: lieber früh und tief auf Claude setzen, als abwarten und zuschauen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">KPMG, one of the Big Four global consulting firms, has embedded Claude in its Digital Gateway — giving 276,000 employees worldwide access to the model. Fortune frames the deal around an uncomfortable truth: the Big Four face two AI nightmares at once. First, AI could do the work clients used to pay consultants for. Second, AI companies could become consulting competitors themselves. KPMG's answer to both threats is the same bet: go deep on Claude early, rather than wait and see how the market shifts.</p>
+        </div>
+      </div>
+      <a class="source" href="https://fortune.com/2026/05/26/kpmg-anthropic-claude-partnership-big-four-ai/" target="_blank" rel="noopener">→ fortune.com · 26.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/building-self-improving-tax-agents-with-codex/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI × Thrive · Steuer-KI mit 97 % — und sie lernt dazu</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI und Thrive Holdings haben gemeinsam eine Steuer-KI entwickelt, die sich nach jedem Fehler selbst verbessert. Das System verarbeitet Steuerformulare, sammelt <mark class="vocab" data-translation="die Rückmeldung — feedback / response">Rückmeldungen</mark> von echten Steuerberatern und schickt sie durch einen Codex-Loop, der den eigenen Code anpasst und neu <mark class="vocab" data-translation="bewerten — to evaluate / assess">bewertet</mark>. Ergebnis: Die Trefferquote <mark class="vocab" data-translation="klettern — to climb">kletterte</mark> in sechs Wochen von 25 auf 86 Prozent. Mit 97 Prozent Genauigkeit auf 7.000 echten Steuerfällen und einem <mark class="vocab" data-translation="der Zeitgewinn — time saving / time gained">Zeitgewinn</mark> von einem Drittel ist das kein Prototyp mehr — das läuft in Produktion.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI and Thrive Holdings co-built a tax AI that improves itself after every mistake. The system processes tax returns, collects corrections from real accountants, and feeds them through a Codex loop that patches and re-evaluates its own code. Result: accuracy climbed from 25% to 86% of returns hitting the target threshold in just six weeks. At 97% accuracy across 7,000 real tax returns and a one-third time saving, this is no longer a prototype — it's running in production.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/building-self-improving-tax-agents-with-codex/" target="_blank" rel="noopener">→ openai.com · 27.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.networkworld.com/article/4177648/cisco-research-finds-standard-ai-safety-benchmarks-miss-the-real-threat.html" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Cisco-Studie · Kein Frontier-Modell übersteht Multi-Turn-Angriffe</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Cisco hat alle führenden Frontier-Modelle unter <mark class="vocab" data-translation="mehrstufig — multi-stage / multi-step">mehrstufigen</mark> Angriffen getestet — und keines hat bestanden. Echte Angreifer hören nach einer <mark class="vocab" data-translation="ablehnen — to refuse / reject (separable verb)">abgelehnten</mark> Anfrage nicht auf: Sie formulieren neu, wechseln die Rolle und <mark class="vocab" data-translation="steigern — to escalate / increase">steigern</mark> den Druck über mehrere Turns. Genau das hat Cisco simuliert — Erfolgsraten zwischen 7,9 und 88,3 Prozent, je nach Modell. Anthropics Claude schnitt beim Einzelangriff am besten ab, trotzdem lag die Rate bei Kettenangriffen bei bis zu 16 Prozent. Standard-Benchmarks testen immer nur einen einzigen Prompt und sind für echte Bedrohungslagen schlicht <mark class="vocab" data-translation="unbrauchbar — inadequate / unusable">unbrauchbar</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Cisco tested all major frontier models under multi-turn attacks in a large study — and none passed. Real attackers don't stop at one refusal: they rephrase, switch roles, and escalate pressure across multiple turns. That's exactly what Cisco simulated — attack success rates between 7.9% and 88.3%, depending on the model. Claude had the lowest single-turn success rate, but still reached up to 16% under chained attacks. Standard benchmarks test only a single prompt and are simply inadequate for real-world threat patterns.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.networkworld.com/article/4177648/cisco-research-finds-standard-ai-safety-benchmarks-miss-the-real-threat.html" target="_blank" rel="noopener">→ networkworld.com · 27.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Microsoft · Claude Code gekündigt — Token-Kosten sprengen das Budget</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Microsoft hat seine internen Claude-Code-Lizenzen gekündigt — zum 30. Juni läuft die Nutzung aus. Offiziell heißt es "Toolchain-Vereinheitlichung", doch die token-basierte Abrechnung hat den kompletten Jahres-<mark class="vocab" data-translation="der Etat — budget / appropriation (formal term)">Etat</mark> in wenigen Monaten <mark class="vocab" data-translation="auffressen — to devour / eat up (colloquial for consuming resources)">aufgefressen</mark>. Das macht die Entscheidung besonders <mark class="vocab" data-translation="bitter — bitter / harsh">bitter</mark>: Claude Code war bei den eigenen Entwicklern beliebter als Microsofts hauseigenes Copilot CLI — die Leute haben das Drittanbieter-Tool dem eigenen vorgezogen. Uber soll seinen gesamten KI-Etat von 3,4 Mrd. $ sogar in nur vier Monaten <mark class="vocab" data-translation="verbrennen — to burn (through) · to torch">verbrannt</mark> haben. Enterprise-KI ist teuer — vor allem wenn Entwickler sie wirklich nutzen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Microsoft is cancelling its internal Claude Code licenses — usage ends June 30. Officially it's "toolchain unification," but token-based billing burned through the entire annual AI budget in a matter of months. What makes it especially harsh: Claude Code was actually more popular among Microsoft engineers than the company's own Copilot CLI — developers chose the third-party tool over their own. Uber reportedly torched its entire $3.4B AI budget in just four months. Enterprise AI is expensive — especially when developers actually use it.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives" target="_blank" rel="noopener">→ windowscentral.com · 22.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.149 · /usage schlüsselt auf — Wer frisst dein Budget?</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.149 macht den Gesamtverbrauch endlich <mark class="vocab" data-translation="durchsichtig — transparent / clear">durchsichtig</mark>: Der Befehl <mark class="vocab" data-translation="aufschlüsseln — to break down / itemize (separable verb)">schlüsselt</mark> jetzt auf, wie viel jede Kategorie kostet — Skills, Subagenten, Plugins und jeder MCP-Server einzeln. Wer mit vielen Tools arbeitet und <mark class="vocab" data-translation="rätseln — to puzzle over / wonder why">rätselt</mark>, warum die Rechnung so hoch ist, bekommt erstmals einen klaren Fingerzeig. Praktisch: Die Daten helfen auch dabei, teure Subagenten-Setups zu erkennen und zu optimieren, bevor das Monats-Budget <mark class="vocab" data-translation="Geschichte sein — to be history / done (colloquial)">Geschichte ist</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.149 finally makes total usage transparent: the command now breaks down how much each category costs — skills, subagents, plugins, and each MCP server individually. If you're running a lot of tools and wondering why the bill is climbing, this gives you a clear pointer for the first time. Practical bonus: the data also helps spot expensive subagent setups so you can optimize before your monthly budget is toast.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/usage</pre>
+<pre class="cmd-examples"><span class="com"># Gesamtverbrauch mit Aufschlüsselung anzeigen · Show usage with per-category breakdown</span>
+$ /usage</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.149" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 22.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufschlüsseln</div>
+        <div class="vocab-translation">to break down · to itemize</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit dem Befehl kannst du aufschlüsseln, welches Plugin die meisten Tokens verbraucht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With the command you can break down which plugin is consuming the most tokens.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abtippen</div>
+        <div class="vocab-translation">to type out by hand · to transcribe</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Statt Codevorschläge manuell abzutippen, spielt das Flag sie direkt ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Instead of typing out code suggestions manually, the flag applies them directly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">mehrstufig</div>
+        <div class="vocab-translation">multi-stage · multi-step</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mehrstufige Angriffe sind viel gefährlicher als ein einzelner Prompt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Multi-stage attacks are far more dangerous than a single prompt.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Etat</div>
+        <div class="vocab-translation">budget · appropriation (formal)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Team hat seinen KI-Etat für das Jahr bereits im März aufgebraucht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The team already burned through its AI budget for the year by March.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auffressen</div>
+        <div class="vocab-translation">to devour · to eat up (resources, colloquial)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Token-Kosten können ein Jahresbudget in wenigen Monaten auffressen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Token costs can devour an annual budget in just a few months.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Geldhahn abdrehen</div>
+      <div class="idiom-meaning">to cut off funding · to turn off the money tap — wörtlich: "to turn off the money faucet"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Microsoft dreht bei Claude Code den Geldhahn ab — zu viele Token, zu wenig Budget."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Microsoft is cutting off Claude Code's funding — too many tokens, too little budget."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn das Projekt nach Q2 keinen Mehrwert zeigt, drehen wir den Geldhahn ab."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the project doesn't show value after Q2, we'll cut off the funding."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to draw the line</div>
+      <div class="idiom-meaning">to set a firm limit · to stop tolerating something — German equivalent: "die Grenze ziehen" / "einen Strich darunter machen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Microsoft finally drew the line after months of runaway AI token costs."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Microsoft hat nach monatelang unkontrollierten Token-Kosten die Grenze gezogen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"You have to draw the line somewhere — otherwise every engineer spins up a new agent."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Irgendwo musst du die Grenze ziehen — sonst startet jeder Entwickler einen neuen Agenten."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · fortune.com · openai.com · networkworld.com · windowscentral.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #24 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
