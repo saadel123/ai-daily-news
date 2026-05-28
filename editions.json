@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-28",
+      "edition_number": 24,
+      "headlines": [
+        "Claude Code 2.1.152–153: /code-review --fix spielt Reviewvorschläge direkt in den Working Tree ein",
+        "KPMG × Anthropic: 276.000 Mitarbeiter bekommen Claude — die Big Four wetten auf KI statt gegen sie",
+        "OpenAI × Thrive: Steuer-KI mit 97 % Genauigkeit verbessert sich nach jedem Fehler selbst",
+        "Cisco-Studie: Multi-Turn-Angriffe knacken alle Frontier-Modelle — Standard-Benchmarks versagen",
+        "Microsoft kündigt Claude Code — Token-Kosten haben den Jahres-KI-Etat aufgefressen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-28T16:00:00Z"
+    },
+    {
       "date": "2026-05-27",
       "edition_number": 23,
       "headlines": [
