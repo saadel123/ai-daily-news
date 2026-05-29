@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 29.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 29. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #25</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Opus 4.8, 65 Milliarden Dollar und Mythos ante portas — Anthropic hält heute den Rekord.</h1>
+    <p class="subtitle">Außerdem: OpenAI legt EU-Compliance offen und ein npm-Paket hatte Claude-Nutzer im Visier.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.154</strong>: Opus 4.8 ist Standard — Dynamic Workflows orchestrieren Hunderte paralleler Agenten</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic Series H</strong>: 65 Mrd. $ bei 965 Mrd. $ Bewertung — 47-Mrd.-$-Run-Rate und IPO in Sicht</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Mythos für alle</strong>: Anthropic kündigt öffentliches Rollout in Wochen an — UK AI Security Institute hat freigegeben</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Frontier Governance Framework</strong>: EU-AI-Act- und Kalifornien-Compliance erstmals dokumentiert</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Malware-Slop</strong>: npm-Paket stiehlt Claude-Dateien — Angreifer verrät sich durch eigenen GitHub-Token</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.154 · Opus 4.8 + Dynamic Workflows</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code v2.1.154 setzt Opus 4.8 als neues Standard-Modell — mit einem Agentic-Coding-Score von 69,2 % statt zuvor 64,3 % und viermal weniger <mark class="vocab" data-translation="verschwiegenen — concealed / silently ignored">verschwiegenen</mark> Code-Fehlern. Der größte Neuzugang ist aber das Dynamic-Workflows-Feature in der Research Preview: Claude kann jetzt Hunderte <mark class="vocab" data-translation="parallele — parallel / simultaneous">parallele</mark> Subagenten auf einmal <mark class="vocab" data-translation="orchestrieren — to orchestrate / coordinate">orchestrieren</mark>, Ergebnisse prüfen und alles im Workflow-View verfolgen. Wer besonders knifflige Aufgaben hat, kann das volle Denkbudget per Effort-Slider <mark class="vocab" data-translation="ausschöpfen — to exhaust / make full use of">ausschöpfen</mark>. Im Fast Mode ist Opus 4.8 außerdem 2,5-mal schneller als Opus 4.7 — beim gleichen Preis.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code v2.1.154 ships Opus 4.8 as the new default model, lifting the agentic coding score from 64.3% to 69.2% and making the model four times less likely to silently hide code flaws. The headline feature is Dynamic Workflows in research preview: Claude now fans out across hundreds of parallel sub-agents at once, validates results, and lets you track everything in the workflow view. For the hardest tasks you can crank the effort slider to extra-high to unlock the full reasoning budget. Fast mode on Opus 4.8 is also 2.5x quicker than 4.7 — at the same price.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/workflows
+/effort [level]</pre>
+        <dl class="cmd-flags">
+          <dt><code>xhigh</code></dt>
+          <dd>extra-high effort — full reasoning budget, best for hard multi-step problems</dd>
+          <dt><code>max</code></dt>
+          <dd>maximum effort — highest token spend, absolute best results</dd>
+          <dt><code>faster</code></dt>
+          <dd>speed-optimized — less thinking, snappier responses</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Workflow-Übersicht öffnen · Open the workflows dashboard</span>
+$ /workflows
+
+<span class="com"># Höchste Denktiefe für komplexe Aufgaben · Max reasoning for tough tasks</span>
+$ /effort xhigh</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 28.05.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Series H · 65 Mrd. $ · 965 Mrd. $ Bewertung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat in einer Series-H-Runde 65 Mrd. $ <mark class="vocab" data-translation="eingesammelt — raised / collected">eingesammelt</mark> — bei einer Post-Money-Bewertung von 965 Mrd. $, womit das Unternehmen OpenAI (zuletzt mit 730 Mrd. $ bewertet) deutlich hinter sich lässt. Co-Lead-Investoren sind Altimeter, Dragoneer, Sequoia, Coatue und D.E. Shaw, dazu Samsung, SK Hynix und Micron als strategische Infrastruktur-Partner. Das Kapital fließt in Compute, Interpretierbarkeitsforschung und Produktausbau. Der Run-Rate-Umsatz hat diese Woche die <mark class="vocab" data-translation="Marke — mark / threshold">Marke</mark> von 47 Mrd. $ geknackt — und Anthropic deutet an, dass dies die letzte große Private-Runde vor dem Börsengang sein dürfte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has closed a $65B Series H at a $965B post-money valuation, clearly leapfrogging OpenAI, most recently valued at $730B. Co-leads include Altimeter, Dragoneer, Sequoia, Coatue, and D.E. Shaw, plus Samsung, SK Hynix, and Micron as strategic infrastructure partners. The capital goes into compute, interpretability research, and product expansion. Run-rate revenue crossed the $47B mark this week, and Anthropic signals this is likely the last major private fundraise before an IPO.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/" target="_blank" rel="noopener">→ techcrunch.com · 28.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://news.bloomberglaw.com/business-and-practice/anthropic-plans-wide-release-of-mythos-level-ai-models-in-weeks" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Mythos für alle · Rollout in Wochen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Anthropic hat angekündigt, die Mythos-Klasse innerhalb weniger Wochen für alle Kunden <mark class="vocab" data-translation="freizuschalten — to unlock / make available">freizuschalten</mark> — sieben Wochen nachdem das Modell als zu gefährlich für eine öffentliche Veröffentlichung eingestuft wurde. Das UK AI Security Institute hat die Evaluation abgeschlossen; Anthropic erklärt, die Sicherheitsmechanismen seien jetzt stark genug. Mythos kann autonom Zero-Day-Lücken in allen gängigen Betriebssystemen und Browsern finden und ausnutzen, was es zum leistungsfähigsten öffentlich zugänglichen Modell der Welt macht — sobald es live geht. Der Rollout erfolgt schrittweise über Project Glasswing und <mark class="vocab" data-translation="wird ausgeweitet — will be expanded / scaled up">wird ausgeweitet</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Anthropic plans to make Mythos-class models available to all customers within weeks — seven weeks after initially deeming them too dangerous to release. The UK AI Security Institute has completed its evaluation, and Anthropic says its safety mechanisms are now strong enough for a wide release. Mythos can autonomously find and exploit zero-day vulnerabilities across all major operating systems and browsers, making it the most capable publicly accessible model in the world once it goes live. The rollout is happening gradually via Project Glasswing and will be scaled up from there.</p>
+        </div>
+      </div>
+      <a class="source" href="https://news.bloomberglaw.com/business-and-practice/anthropic-plans-wide-release-of-mythos-level-ai-models-in-weeks" target="_blank" rel="noopener">→ bloomberglaw.com · 29.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/openai-frontier-governance-framework/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Frontier Governance Framework · EU AI Act</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat das Frontier Governance Framework <mark class="vocab" data-translation="veröffentlicht — published / released">veröffentlicht</mark> — ein Compliance-Dokument, das erklärt, wie die internen Sicherheitspraktiken mit dem California Transparency in Frontier AI Act und dem EU AI Act Code of Practice für General-Purpose-Modelle übereinstimmen. Abgedeckt werden Bereiche wie Cyber-Offense-Risiken, CBRN-Bedrohungen, <mark class="vocab" data-translation="schädliche — harmful / damaging">schädliche</mark> Manipulation und Loss-of-Control-Szenarien, außerdem Incident-Response und externe Expertenbeteiligung. Für Unternehmen, die GPT-Modelle in regulierten Branchen einsetzen oder für EU-Märkte bauen, ist das Framework eine handfeste Grundlage für eigene Compliance-Argumente. OpenAI kündigt regelmäßige Updates an, wenn sich Modelle und Regulierung weiterentwickeln.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI published its Frontier Governance Framework — a compliance document mapping internal safety practices to the California Transparency in Frontier AI Act and the EU AI Act's Code of Practice for general-purpose AI models. Coverage areas include cyber offense risks, CBRN threats, harmful manipulation, and loss-of-control scenarios, plus incident response and external expert input. For companies deploying GPT models in regulated sectors or building for EU markets, the framework is a solid foundation for their own compliance arguments. OpenAI commits to regular updates as models and regulations evolve.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-frontier-governance-framework/" target="_blank" rel="noopener">→ openai.com · 29.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://thehackernews.com/2026/05/malicious-npm-package-stole-files-from.html" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Malware-Slop · npm stiehlt Claude-Nutzerdaten</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Sicherheitsforscher haben ein bösartiges npm-Paket namens «mouse5212-super-formatter» entdeckt, das gezielt das Claude-AI-Benutzerverzeichnis <mark class="vocab" data-translation="ausspioniert — spied on / snooped on">ausspioniert</mark> — dort wo Claude Code Uploads und Outputs ablegt. Das Paket <mark class="vocab" data-translation="schleust — smuggles in / sneaks past">schleust</mark> sich beim Installieren ein, holt sich einen GitHub-Token aus der Umgebung und lädt alle Workspace-Dateien in ein Repository des Angreifers hoch. Der irre Twist: Der Angreifer hat seinen eigenen privaten GitHub-Token im Paketcode eingebettet und damit sein gesamtes Konto <mark class="vocab" data-translation="preisgegeben — exposed / given away">preisgegeben</mark>. Das Paket wurde rund 676-mal heruntergeladen, bevor es entfernt wurde — eine <mark class="vocab" data-translation="Erinnerung — reminder / wake-up call">Erinnerung</mark>, npm-Abhängigkeiten vor dem Einbinden zu prüfen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Security researchers uncovered a malicious npm package called "mouse5212-super-formatter" that specifically targeted the Claude AI user directory — where Claude Code stores its uploads and outputs. The package fires a postinstall script that grabs a GitHub token from the environment and uploads all workspace files to an attacker-controlled repository. The ironic twist: the attacker hard-coded their own private GitHub token in the package, exposing their entire account. The package was downloaded around 676 times before removal — a reminder to audit npm dependencies before bringing them in.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thehackernews.com/2026/05/malicious-npm-package-stole-files-from.html" target="_blank" rel="noopener">→ thehackernews.com · 27.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.154 · ! Shell-Befehl als Hintergrundsession</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">In der Agents-Ansicht von Claude Code gibt es seit v2.1.154 einen praktischen Trick: Mit einem Ausrufezeichen gefolgt vom Befehl startet Claude Code den Shell-Befehl als eigenständige Hintergrundsession — mit eigenem Status-Eintrag, den du wie jeden anderen Agenten <mark class="vocab" data-translation="an- und abkoppeln — to attach and detach">an- und abkoppeln</mark> kannst. Ideal, wenn du einen lang laufenden Build oder eine Test-Suite im Blick behalten willst, während du in anderen Sessions weitermachst. Alternativ startest du die gleiche Session direkt beim Launch von Claude Code über ein entsprechendes <mark class="vocab" data-translation="Flag — command-line flag">Flag</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Since v2.1.154, the claude agents view has a handy trick: type an exclamation mark followed by a shell command and Claude Code launches it as an independent background session — with its own status entry you can attach to and detach from just like any other agent. Perfect for keeping an eye on a long-running build or test suite while you continue work in other sessions. The same behavior is also available as a startup flag when launching Claude Code directly.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">! &lt;shell-command&gt;
+claude --bg --exec '&lt;shell-command&gt;'</pre>
+        <dl class="cmd-flags">
+          <dt><code>--bg</code></dt>
+          <dd>start as a detached background session visible in the agents view</dd>
+          <dt><code>--exec</code></dt>
+          <dd>shell command to run as the background session</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Im Agents-View einen Build als Hintergrundsession starten · Start a build as background session</span>
+$ ! npm run build
+
+<span class="com"># Direkt beim Launch als Hintergrundsession starten · Launch as background session at startup</span>
+$ claude --bg --exec 'npm test -- --watch'</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 28.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">orchestrieren</div>
+        <div class="vocab-translation">to orchestrate · to coordinate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Dynamic Workflows orchestrieren Hunderte Agenten auf einmal.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Dynamic Workflows orchestrate hundreds of agents at once.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausschöpfen</div>
+        <div class="vocab-translation">to exhaust · to make full use of</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit hoher Effort-Stufe schöpfst du das gesamte Denkbudget aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With a high effort level you exhaust the full reasoning budget.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einsammeln</div>
+        <div class="vocab-translation">to raise · to collect (funds)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat in einer Runde 65 Milliarden Dollar eingesammelt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic raised 65 billion dollars in a single round.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausspionieren</div>
+        <div class="vocab-translation">to spy on · to snoop on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Paket hat versucht, Claude-Workspace-Dateien auszuspionieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The package tried to spy on Claude workspace files.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">preisgeben</div>
+        <div class="vocab-translation">to expose · to give away</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Angreifer hat versehentlich seinen eigenen Token preisgegeben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The attacker accidentally gave away their own token.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the sack"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem Mythos-Rollout lässt Anthropic endlich die Katze aus dem Sack."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the Mythos rollout, Anthropic is finally letting the cat out of the bag."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das npm-Paket ließ die Katze aus dem Sack — der eigene GitHub-Token war im Code versteckt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The npm package let the cat out of the bag — the attacker's own GitHub token was hidden in the code."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to endure something difficult and move forward — German equivalent: "den sauren Apfel schlucken" (to swallow the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic had to bite the bullet and wait seven weeks before releasing Mythos."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic musste den sauren Apfel schlucken und sieben Wochen auf den Mythos-Release warten."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sometimes you bite the bullet and migrate your whole codebase to a new framework."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Manchmal schluckst du den sauren Apfel und migrierst die gesamte Codebase auf ein neues Framework."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · techcrunch.com · bloomberglaw.com · openai.com · thehackernews.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #25 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
