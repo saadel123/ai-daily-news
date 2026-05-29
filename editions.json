@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-29",
+      "edition_number": 25,
+      "headlines": [
+        "Claude Code 2.1.154: Opus 4.8 ist Standard — Dynamic Workflows orchestrieren Hunderte paralleler Agenten",
+        "Anthropic Series H: 65 Mrd. $ bei 965 Mrd. $ Bewertung — 47-Mrd.-$-Run-Rate und IPO in Sicht",
+        "Mythos für alle: Anthropic kündigt öffentliches Rollout in Wochen an — UK AI Security Institute hat freigegeben",
+        "OpenAI Frontier Governance Framework: EU-AI-Act- und Kalifornien-Compliance erstmals dokumentiert",
+        "Malware-Slop: npm-Paket stiehlt Claude-Dateien — Angreifer verrät sich durch eigenen GitHub-Token"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-29T16:00:00Z"
+    },
+    {
       "date": "2026-05-28",
       "edition_number": 24,
       "headlines": [
