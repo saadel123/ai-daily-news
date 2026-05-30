@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-30",
+      "edition_number": 26,
+      "headlines": [
+        "Claude Code 2.1.157: Plugins im Skills-Ordner laden sich automatisch — kein Marketplace-Eintrag mehr nötig",
+        "Hassabis: \"Vorberge der Singularität\" — DeepMind-Chef setzt AGI für 2029 bis 2030 an",
+        "Altman revidiert Job-Prognose — \"begeistert, falsch gelegen zu haben\" — OpenAI-IPO wartet",
+        "DeepSeek V4-Pro: 75-%-Preissenkung dauerhaft — Frontier-Inference wird Commodity",
+        "Mistral erkundet eigene Chips und schließt Deals mit Airbus und BMW an einem Tag"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-05-30T16:11:15Z"
+    },
+    {
       "date": "2026-05-29",
       "edition_number": 25,
       "headlines": [
