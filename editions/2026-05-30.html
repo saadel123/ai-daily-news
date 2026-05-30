@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 30.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 30. Mai 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #26</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Plugins einfach ablegen: Claude Code räumt den Marketplace-Umweg weg.</h1>
+    <p class="subtitle">Außerdem: Hassabis sieht die Singularität am Horizont, Altman revidiert sein Jobpanorama, DeepSeek macht Frontier-Preise dauerhaft billig und Mistral träumt von eigenen Chips.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.157</strong>: Plugins im Skills-Ordner laden sich jetzt automatisch — kein Marketplace-Eintrag mehr nötig</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Hassabis</strong>: "Vorberge der Singularität" — DeepMind-Chef setzt AGI für 2029 bis 2030 an</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>Altman</strong> revidiert Job-Prognose — "begeistert, falsch gelegen zu haben" — OpenAI-IPO wartet</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟡</span><span><strong>DeepSeek V4-Pro</strong>: 75-%-Preissenkung dauerhaft — Frontier-Inference wird Commodity</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟣</span><span><strong>Mistral</strong> erkundet eigene Chips und schließt Deals mit Airbus und BMW an einem Tag</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.157" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.157 · Plugin-System</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code bringt in Version 2.1.157 ein <mark class="vocab" data-translation="beachtliches Upgrade — a notable / significant upgrade">beachtliches Upgrade</mark> für das Plugin-System: Wer seine Plugins im lokalen Skills-Ordner <mark class="vocab" data-translation="ablegt — drops in / deposits (separable verb: ablegen)">ablegt</mark>, bekommt sie ab sofort automatisch geladen — ganz ohne Marketplace-Eintrag und ohne manuellen Setup-Schritt. Ein neuer Init-Befehl legt ein frisches Plugin-Gerüst direkt an der richtigen Stelle an, sodass man in Sekunden startklar ist. Der Plugin-Slash-Command kennt jetzt außerdem Autocomplete für alle <mark class="vocab" data-translation="Unterbefehle — subcommands">Unterbefehle</mark>, installierte Plugin-Namen und bekannte Marketplace-Einträge. Und der Agents-Dispatch <mark class="vocab" data-translation="schlägt vor — suggests / proposes (separable verb: vorschlagen)">schlägt</mark> ab sofort native Slash-Commands sowie Bundled Skills vor, statt nur auf Projekt-Skills beschränkt zu sein.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.157 ships a notable upgrade to the plugin system: plugins you drop into your local skills directory are now automatically loaded — no marketplace entry required, no manual setup step. A brand-new init command scaffolds a fresh plugin right where it belongs so you're ready in seconds. The plugin slash command also gains autocomplete for all subcommands, installed plugin names, and known marketplace entries. And the agents dispatch now suggests native slash commands and bundled skills, no longer limited to project-only skills.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude plugin init &lt;name&gt;
+claude plugin enable &lt;name&gt;
+claude plugin list</pre>
+<pre class="cmd-examples"><span class="com"># Neues Plugin anlegen · Scaffold a new plugin</span>
+$ claude plugin init my-tool
+
+<span class="com"># Plugin aus dem Skills-Ordner aktivieren · Enable a plugin from the skills folder</span>
+$ claude plugin enable my-tool
+
+<span class="com"># Alle installierten Plugins anzeigen · List all installed plugins</span>
+$ claude plugin list</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.157" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 29.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://stanforddaily.com/2026/05/29/deepmind-ceo-warns-about-ai/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DeepMind · Hassabis · "Vorberge der Singularität"</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Google-DeepMind-Chef Demis Hassabis hat beim Google I/O die vielleicht <mark class="vocab" data-translation="kühnste Aussage — boldest statement">kühnste Aussage</mark> der Woche fallen lassen: Wir stehen an den <mark class="vocab" data-translation="Vorbergen — foothills (lit. fore-mountains)">Vorbergen</mark> der Singularität — und die Gesellschaft habe nur wenige Jahre, sich darauf vorzubereiten. Er setzt AGI für 2029 bis 2030 an, nicht als Science-Fiction, sondern als seinen ehrlichsten technischen <mark class="vocab" data-translation="Schätzwert — best estimate / educated guess">Schätzwert</mark>. Mit der Contextual-AI-Übernahme (über 20 Forscher) und Gemini 3.5 Flash setzt DeepMind dabei auf Tempo statt auf Abwarten. Yann LeCun widerspricht <mark class="vocab" data-translation="entschieden — decisively / firmly">entschieden</mark>: Heutige KI sei noch weit von echter Intelligenz entfernt — die Debatte ist wieder offen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google DeepMind CEO Demis Hassabis dropped what may be the boldest line of the week at Google I/O: we are standing in the foothills of the singularity — and society has only a few years left to prepare. He now puts AGI at 2029 or 2030, not as science fiction but as his honest technical best estimate. DeepMind is backing that conviction with speed: the Contextual AI acquihire (20+ researchers) and Gemini 3.5 Flash both landed this month. Yann LeCun disagrees decisively — calling today's AI far from real intelligence — the debate is officially back on.</p>
+        </div>
+      </div>
+      <a class="source" href="https://stanforddaily.com/2026/05/29/deepmind-ceo-warns-about-ai/" target="_blank" rel="noopener">→ stanforddaily.com · 29.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://time.com/article/2026/05/26/sam-altman-ai-job-losses-openAI-/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Sam Altman · Job-Apokalypse ausgeblieben</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Sam Altman hat bei einer Konferenz in Sydney etwas Bemerkenswertes gesagt: Die KI-Job-Apokalypse, die er selbst einmal <mark class="vocab" data-translation="prophezeit hat — prophesied / predicted (past tense of prophezeien)">prophezeit hat</mark>, ist <mark class="vocab" data-translation="ausgeblieben — failed to materialize / did not happen">ausgeblieben</mark> — und er sei "begeistert, falsch gelegen zu haben". Er glaube jetzt, der menschliche Faktor in der Arbeit sei schwerer zu ersetzen als gedacht; Menschen wollten schlicht mit anderen Menschen zusammenarbeiten. Der Zeitpunkt ist <mark class="vocab" data-translation="pikant — piquant / pointed (here: awkward or suspicious timing)">pikant</mark>: OpenAI soll vertraulich IPO-Unterlagen eingereicht haben, und ein Unternehmen mit über 1 Bio. $ Bewertung kann schlecht mit Massenarbeitslosigkeitsprognosen an die Börse gehen. Fortune nennt es ein taktisches <mark class="vocab" data-translation="Zurückrudern — walking back / backpedaling (lit. rowing backwards)">Zurückrudern</mark> — andere sehen es als ehrliche Überraschung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">At a conference in Sydney, Sam Altman said something remarkable: the AI jobs apocalypse he once predicted hasn't materialized — and he's "delighted to be wrong." He now believes the human element in work is harder to replace than expected; people genuinely want to work with other people. The timing is pointed: OpenAI reportedly filed its IPO paperwork confidentially, and a company valued at over $1 trillion can't go public while its CEO predicts mass unemployment from its own products. Fortune frames it as a tactical walk-back — others call it genuine surprise.</p>
+        </div>
+      </div>
+      <a class="source" href="https://time.com/article/2026/05/26/sam-altman-ai-job-losses-openAI-/" target="_blank" rel="noopener">→ time.com · 26.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.infoworld.com/article/4176709/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DeepSeek V4-Pro · 75 % Preissenkung dauerhaft</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">DeepSeek hat seinen V4-Pro-API-Preis dauerhaft um 75 Prozent gesenkt — keine <mark class="vocab" data-translation="Promo-Aktion — promotional deal / temporary offer">Promo-Aktion</mark>, sondern ein Effizienzgewinn, der direkt <mark class="vocab" data-translation="weitergegeben wird — is passed through / passed on">weitergegeben wird</mark>. Das Modell kostet jetzt ab rund 0,36 Cent pro Million Token (Cache-Hit) — ein Preisniveau, das Frontier-KI endgültig in die Commodity-Zone schiebt und den Inference-Markt neu kalibriert. Für budgetbewusste Entwickler und Startups, die auf Masse skalieren wollen, ist das ein echter Rückenwind; für OpenAI, Anthropic und Google ist es klarer Druck, die eigene Preisstrategie zu <mark class="vocab" data-translation="überdenken — to reconsider / rethink">überdenken</mark>. Der Preiskampf in der Inference-Schicht ist ab jetzt <mark class="vocab" data-translation="strukturell — structural / systemic (not a one-off)">strukturell</mark> — kein Ausreißer, sondern ein neuer Normalzustand.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">DeepSeek has made its V4-Pro API price cut permanent — a 75% reduction that the company frames not as a promo but as an efficiency gain being passed straight through. The model now starts at around $0.0035 per million tokens on cache hits — a level that pushes frontier AI firmly into commodity territory and recalibrates the inference market. For budget-conscious developers and startups scaling at volume, that's a real tailwind; for OpenAI, Anthropic and Google, it's clear pressure to rethink their pricing strategies. The inference pricing war is now structural — not a one-off, but a new normal.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.infoworld.com/article/4176709/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war.html" target="_blank" rel="noopener">→ infoworld.com · 23.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral · Eigene Chips + Airbus- und BMW-Deals</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Mistral-CEO Arthur Mensch hat in einem CNBC-Interview erstmals offen über <mark class="vocab" data-translation="Chip-Ambitionen — chip ambitions / semiconductor plans">Chip-Ambitionen</mark> gesprochen: Das Unternehmen <mark class="vocab" data-translation="erkundet — explores / investigates">erkundet</mark>, eigene KI-Chips zu designen, um die Inference-Kosten langfristig selbst steuern zu können — aktuell ist man noch auf Nvidia angewiesen, aber das müsse nicht so bleiben. Am gleichen Tag vermeldete Mistral Deals mit Airbus und BMW, die beide auf Vibe setzen, Mistrals kombinierten Work-und-Code-Agenten für Defence und Safety-Systeme. Mit 4 Mrd. Euro in Rechenzentren in Frankreich und Schweden ist Mistral längst keine French-Tech-Hoffnung mehr, sondern eine ernsthafte <mark class="vocab" data-translation="Infrastruktur-Wette — infrastructure bet / long-term infrastructure commitment">Infrastruktur-Wette</mark>. CNBC listet Mistral dieses Jahr <mark class="vocab" data-translation="erstmals — for the first time">erstmals</mark> in den Disruptor 50.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Mistral CEO Arthur Mensch told CNBC the company is exploring designing its own AI chips to control inference costs directly — currently relying on Nvidia but not ruling out going further. On the same day Mistral announced deals with Airbus and BMW, both deploying Vibe, its combined work-and-code agent, for defence and safety systems. With €4 billion committed to data centres in France and Sweden, Mistral is no longer just a French-tech hopeful — it's a serious infrastructure bet. CNBC placed Mistral in the Disruptor 50 for the first time this year.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html" target="_blank" rel="noopener">→ cnbc.com · 28.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.158 · Auto-Modus auf Bedrock / Vertex / Foundry</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.158 öffnet den Auto-Modus für Cloud-Deployments: Wer Claude Code über Bedrock, Vertex oder Foundry <mark class="vocab" data-translation="betreibt — operates / runs">betreibt</mark>, kann ihn jetzt mit einer einzigen Umgebungsvariable aktivieren. Das bedeutet automatische Modellauswahl je nach Task — Claude wählt <mark class="vocab" data-translation="eigenständig — autonomously / on its own">eigenständig</mark> zwischen Opus 4.7 und 4.8, je nachdem, was der Auftrag verlangt. Bisher war Auto Mode nur direkt über Anthropic <mark class="vocab" data-translation="verfügbar — available">verfügbar</mark> — für Enterprise-Teams in AWS- oder GCP-Umgebungen ein echter Blocker. Variable setzen, neu starten — fertig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.158 brings Auto mode to cloud deployments: Bedrock, Vertex and Foundry users can now activate it with a single environment variable. That means automatic model selection per task — Claude picks autonomously between Opus 4.7 and 4.8 depending on what the job needs. Until now Auto mode was only available directly through Anthropic; for enterprise teams deploying through AWS or GCP, that was a real blocker. Set the variable, restart — done.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">export CLAUDE_CODE_ENABLE_AUTO_MODE=1</pre>
+<pre class="cmd-examples"><span class="com"># In der Shell dauerhaft setzen · Set persistently in the shell</span>
+$ export CLAUDE_CODE_ENABLE_AUTO_MODE=1
+
+<span class="com"># Für eine einzelne Session · For a single session only</span>
+$ CLAUDE_CODE_ENABLE_AUTO_MODE=1 claude</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 30.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Team hat den Auto-Modus auf Bedrock ausgerollt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The team rolled out Auto mode to Bedrock.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zurückrudern</div>
+        <div class="vocab-translation">to walk back · to backpedal (lit. to row backwards)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Altman rudert beim Thema Jobs zurück — der IPO-Termin rückt näher.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Altman is walking back his stance on jobs — the IPO date is getting closer.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Vorberge</div>
+        <div class="vocab-translation">the foothills (lit. fore-mountains)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Laut Hassabis stehen wir gerade an den Vorbergen der KI-Singularität.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">According to Hassabis, we're now standing in the foothills of the AI singularity.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ablegen</div>
+        <div class="vocab-translation">to drop · to set down · to deposit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Plugin einfach im Skills-Ordner ablegen — Claude Code lädt es automatisch.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Just drop the plugin in the skills folder — Claude Code loads it automatically.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überdenken</div>
+        <div class="vocab-translation">to rethink · to reconsider</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nach der DeepSeek-Preisnachricht müssen viele Anbieter ihre Preisstrategie überdenken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">After DeepSeek's price news, many providers need to rethink their pricing strategy.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf eigene Faust</div>
+      <div class="idiom-meaning">on one's own initiative · going it alone — wörtlich: "on one's own fist"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mistral geht beim Chip-Design auf eigene Faust — ohne langfristige Nvidia-Abhängigkeit."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Mistral is going it alone on chip design — without a long-term Nvidia dependency."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Plugin kannst du auf eigene Faust in den Skills-Ordner legen — kein Marketplace-Eintrag nötig."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"You can drop the plugin into the skills folder on your own — no marketplace entry needed."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to walk back</div>
+      <div class="idiom-meaning">to retract a statement or position — German equivalent: "zurückrudern"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Altman walked back his AI jobs apocalypse prediction at the Sydney conference."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Altman hat seine Job-Apokalypsen-Prognose beim Sydney-Kongress zurückgerudert."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before the IPO, the CEO walked back several controversial predictions."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Vor dem Börsengang hat der CEO mehrere umstrittene Prognosen zurückgerudert."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · stanforddaily.com · time.com · infoworld.com · cnbc.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #26 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
