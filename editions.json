@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-05-31",
+      "edition_number": 27,
+      "headlines": [
+        "Anthropic Project Glasswing: Mythos-KI findet 10.000+ kritische Lücken in systemisch wichtiger Open-Source-Software",
+        "Gemini Spark live: Google rollt 24/7-KI-Agent für US Ultra-Abonnenten aus — Gmail, Docs und MCP-Integrationen von Tag eins",
+        "Grok Build verlässt die Beta: xAIs Terminal-Coding-Agent jetzt für alle SuperGrok- und X Premium+-Nutzer offen",
+        "OpenAI Rosalind Biodefense: GPT-Rosalind für staatlich geprüfte Forscher und US-Regierungspartner zugänglich",
+        "Figure AI Figure 03: 200 Stunden autonom, 249.560 Pakete sortiert — humanoides Roboter-Meilenstein ohne Hardware-Ausfall"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-05-31T16:17:22Z"
+    },
+    {
       "date": "2026-05-30",
       "edition_number": 26,
       "headlines": [
