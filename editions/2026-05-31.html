@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 31. Mai 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 31. Mai 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #27</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KI-Sicherheit als Waffe: Mythos jagt Schwachstellen, Grok geht in Produktion.</h1>
+    <p class="subtitle">Außerdem: Gemini Spark ist live, OpenAI sichert die Bioabwehr und ein Roboter sortiert 249.000 Pakete ohne Unterbrechung.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Project Glasswing</strong>: Anthropics Mythos-KI findet 10.000+ kritische Lücken in systemisch wichtiger Open-Source-Software</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Gemini Spark</strong> rollt für US Ultra-Abonnenten aus — Gmail, Docs und MCP-Integrationen von Tag eins</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Grok Build</strong> verlässt die Beta: xAIs Terminal-Coding-Agent jetzt für alle SuperGrok- und X Premium+-Nutzer</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI Rosalind Biodefense</strong>: GPT-Rosalind für staatlich geprüfte Forscher und US-Regierungspartner zugänglich</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Figure AI Figure 03</strong>: 200 Stunden autonom, 249.560 Pakete sortiert — humanoides Roboter-Meilenstein ohne Hardware-Ausfall</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Project Glasswing · Mythos findet 10.000+ Schwachstellen in kritischer OSS</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat den ersten Fortschrittsbericht zu Project Glasswing veröffentlicht: In 30 Tagen deckte Mythos Preview zusammen mit rund 50 Partnerorganisationen über 10.000 <mark class="vocab" data-translation="hochkritisch — high-severity / critical">hochkritische</mark> Schwachstellen in systemisch wichtiger Open-Source-Software auf. Darunter ist eine wolfSSL-Lücke, die das Fälschen von TLS-Zertifikaten erlaubt, eine 16 Jahre alte FFmpeg-Schwachstelle und mehrere Linux-Kernel-Privilege-Escalation-Chains. Über 90 % der rund 23.000 <mark class="vocab" data-translation="aufgedeckt — uncovered / exposed">aufgedeckten</mark> Issues wurden von unabhängigen Security-Firmen als echte Treffer <mark class="vocab" data-translation="bestätigt — confirmed / validated">bestätigt</mark>. Dass KI jetzt Schwachstellen findet, die selbst Top-Experten jahrelang <mark class="vocab" data-translation="entgangen sind — slipped past / went unnoticed">entgangen sind</mark>, ist ein echter Wendepunkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic published the first progress update for Project Glasswing: in 30 days, Mythos Preview and roughly 50 partner organizations uncovered more than 10,000 high- or critical-severity vulnerabilities in systemically important open-source software. The finds include a wolfSSL flaw that lets an attacker forge TLS certificates, a 16-year-old FFmpeg vulnerability, and multiple Linux kernel privilege-escalation chains. More than 90% of the ~23,000 issues were validated as true positives by independent security firms. The fact that AI can now surface flaws that top human experts missed for years marks a genuine inflection point.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" rel="noopener">→ anthropic.com/research · 26.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://9to5google.com/2026/05/29/gemini-spark-ultra-us/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google Gemini Spark · Live für US Ultra-Abonnenten</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Google hat Gemini Spark am 29. Mai für alle US-Abonnenten des neuen AI Ultra-Tiers <mark class="vocab" data-translation="ausgerollt — rolled out / deployed">ausgerollt</mark> — ab 99 Dollar im Monat. Der 24/7-KI-Agent erledigt <mark class="vocab" data-translation="im Hintergrund — in the background / behind the scenes">im Hintergrund</mark> Aufgaben in Gmail, Google Docs, Sheets und Slides, ohne dass du aktiv dabei sein musst. Von Haus aus sind MCP-Verbindungen zu Canva, OpenTable und Instacart dabei; Adobe, Samsung und Spotify kommen im Sommer <mark class="vocab" data-translation="hinzu — additionally / on top">hinzu</mark>. Für Teams, die bereits auf MCP-basierte Agenten setzen, ist das ein direkter <mark class="vocab" data-translation="Gamechanger — game-changer (English loanword used widely in German)">Gamechanger</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google rolled out Gemini Spark on May 29 for all US subscribers on the new AI Ultra tier — starting at $99/month. The 24/7 AI agent handles tasks inside Gmail, Google Docs, Sheets and Slides in the background, without you needing to be actively involved. Built in on day one: MCP connections to Canva, OpenTable and Instacart; Adobe, Samsung and Spotify integrations follow this summer. For teams already building on MCP-based agents, this is a direct game-changer.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5google.com/2026/05/29/gemini-spark-ultra-us/" target="_blank" rel="noopener">→ 9to5google.com · 29.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://x.ai/news" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Grok Build · Aus der Beta in die Produktion</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">xAIs Terminal-Coding-Agent Grok Build hat am 26. Mai die geschlossene Beta <mark class="vocab" data-translation="verlassen — exited / left">verlassen</mark> und ist jetzt für alle SuperGrok- und X Premium+-Abonnenten verfügbar. Das heißt: CLI-Zugang, Imagine für Bild- und Code-Generierung sowie der Orchestrator, der mehrere parallele <mark class="vocab" data-translation="Sub-Agenten — sub-agents (English compound used in German tech talk)">Sub-Agenten</mark> koordiniert. Während der Beta veröffentlichte xAI täglich Release Notes — ein gutes Zeichen für das <mark class="vocab" data-translation="Entwicklungstempo — development pace / velocity">Entwicklungstempo</mark>. Für Claude-Code-Nutzer ist das der erste ernst zu nehmende <mark class="vocab" data-translation="Konkurrent — competitor">Konkurrent</mark> auf Terminal-Ebene.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">xAI's terminal coding agent Grok Build exited closed beta on May 26 and is now available to all SuperGrok and X Premium+ subscribers. That means: full CLI access, Imagine for image and code generation, and an Orchestrator that coordinates multiple parallel sub-agents. During the beta, xAI shipped daily release notes — a solid signal for development pace. For Claude Code users, this is the first genuinely serious competitor at the terminal level.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news" target="_blank" rel="noopener">→ x.ai/news · 26.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/rosalind-biodefense/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Rosalind Biodefense · GPT-Rosalind für geprüfte Forscher</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat am 29. Mai den Zugang zu GPT-Rosalind für Biodefense-Forscher und US-Regierungspartner <mark class="vocab" data-translation="erweitert — expanded / broadened">erweitert</mark>. Das Modell ist spezialisiert auf Pathogen-Analyse, Ausbruchsmodellierung und Pandemie-Vorsorge und nicht für die breite <mark class="vocab" data-translation="Öffentlichkeit — public / general public">Öffentlichkeit</mark> zugänglich. Developer-Zugänge werden per Bewerbungsverfahren vergeben, Daten bleiben unter strikten <mark class="vocab" data-translation="Datenschutzauflagen — data protection requirements">Datenschutzauflagen</mark>. OpenAI positioniert sich damit in einem sicherheitskritischen Segment, das bislang vor allem klassischen <mark class="vocab" data-translation="Rüstungskonzernen — defense contractors">Rüstungskonzernen</mark> vorbehalten war.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI expanded access to GPT-Rosalind on May 29 for vetted biodefense developers and US government partners. The model is specialized for pathogen analysis, outbreak modeling, and pandemic preparedness — it's not publicly accessible. Developer slots are awarded through an application process, with data subject to strict privacy constraints. OpenAI is positioning itself in a security-critical segment previously dominated by traditional defense contractors.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/rosalind-biodefense/" target="_blank" rel="noopener">→ openai.com · 29.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://interestingengineering.com/ai-robotics/figure-03-humanoid-robot-200-hour-shift" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Figure AI Figure 03 · 200-Stunden-Autonomielauf ohne Ausfall</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Figure AIs humanoider Roboter Figure 03 hat eine <mark class="vocab" data-translation="kontinuierlich — continuous / uninterrupted">kontinuierliche</mark> 200-Stunden-Teststrecke in einem Paketzentrum absolviert, ohne einen einzigen Hardware-Ausfall. Dabei wurden 249.560 Pakete sortiert — das entspricht nahezu <mark class="vocab" data-translation="menschlichem Tempo — human-level pace / throughput">menschlichem Tempo</mark>. Der Test begann als 8-Stunden-Challenge und wurde immer weiter verlängert, weil das System <mark class="vocab" data-translation="zuverlässiger — more reliably / more stable">zuverlässiger</mark> lief als erwartet. Für Logistik- und Fertigungsunternehmen ist das ein klares Signal: humanoide Roboter sind kein Laborprojekt mehr, sondern <mark class="vocab" data-translation="produktionsreif — production-ready">produktionsreif</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Figure AI's humanoid robot Figure 03 completed a continuous 200-hour run at a packaging facility with zero hardware failures. During that time, it sorted 249,560 packages — approaching human-level throughput. The test started as an 8-hour endurance challenge and kept getting extended as the system performed more reliably than expected. For logistics and manufacturing companies, the message is clear: humanoid robots are no longer a lab project, they're production-ready.</p>
+        </div>
+      </div>
+      <a class="source" href="https://interestingengineering.com/ai-robotics/figure-03-humanoid-robot-200-hour-shift" target="_blank" rel="noopener">→ interestingengineering.com · 26.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.158 · Auto-Mode auf Bedrock, Vertex &amp; Foundry</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit Version 2.1.158 ist der Auto-Mode in Claude Code jetzt auch auf Bedrock, Vertex und Foundry <mark class="vocab" data-translation="verfügbar — available / accessible">verfügbar</mark> — bisher war das auf Enterprise-Plattformen nicht <mark class="vocab" data-translation="unterstützt — supported">unterstützt</mark>. Du aktivierst ihn über eine <mark class="vocab" data-translation="Umgebungsvariable — environment variable">Umgebungsvariable</mark>, und Claude wählt dann automatisch je nach Aufgabe zwischen Opus 4.7 und 4.8. Das ist besonders nützlich für Teams, die Enterprise-Deployments <mark class="vocab" data-translation="betreiben — operate / run">betreiben</mark> und ihre Modellkosten optimieren wollen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.158 brings Auto mode to Bedrock, Vertex, and Foundry — previously this was only available through the standard Anthropic API. You enable it with a single environment variable, and Claude then automatically picks between Opus 4.7 and 4.8 based on the task at hand. Particularly useful for teams running enterprise deployments who want to optimize model costs without manually switching models.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">CLAUDE_CODE_ENABLE_AUTO_MODE=1 claude [command]</pre>
+<pre class="cmd-examples"><span class="com"># Auto-Mode aktivieren und Claude starten · Enable Auto mode and start Claude</span>
+$ CLAUDE_CODE_ENABLE_AUTO_MODE=1 claude
+
+<span class="com"># Dauerhaft in der Shell-Umgebung setzen · Set persistently in your shell environment</span>
+$ export CLAUDE_CODE_ENABLE_AUTO_MODE=1</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 30.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufdecken</div>
+        <div class="vocab-translation">to uncover · to expose</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Security-Team hat eine kritische Lücke im Produktions-Build aufgedeckt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The security team uncovered a critical flaw in the production build.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wir rollen das Feature heute Nacht für alle Regionen aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We're rolling out the feature tonight for all regions.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Meilenstein</div>
+        <div class="vocab-translation">milestone</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zweihundert Stunden ohne Ausfall — das ist ein echter Meilenstein für die Robotik.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Two hundred hours without a failure — that's a genuine milestone for robotics.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">produktionsreif</div>
+        <div class="vocab-translation">production-ready</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der neue Inference-Stack ist endlich produktionsreif — wir deployen am Montag.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new inference stack is finally production-ready — we deploy on Monday.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Datenschutzauflage</div>
+        <div class="vocab-translation">data protection requirement</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">API-Zugang gibt es nur unter strengen Datenschutzauflagen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">API access is granted only under strict data protection requirements.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the bag"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic lässt mit Glasswing die Katze aus dem Sack: Mythos kann sich in kritische Infrastruktur eingraben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Glasswing, Anthropic is letting the cat out of the bag: Mythos can dig deep into critical infrastructure."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wann lasst ihr endlich die Katze aus dem Sack und postet das offizielle Release-Datum?"</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When are you finally going to let the cat out of the bag and post the official release date?"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hit the ground running</div>
+      <div class="idiom-meaning">to start at full speed from day one — German equivalent: "vom ersten Tag an Vollgas geben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Figure 03 really hit the ground running — 200 hours straight, zero hardware failures."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Figure 03 hat vom ersten Tag an Vollgas gegeben — 200 Stunden am Stück, kein einziger Ausfall."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"New team member just shipped three features in week one — they really hit the ground running."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das neue Teammitglied hat in Woche eins drei Features geshippt — die geben vom ersten Tag an Vollgas."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · 9to5google.com · x.ai · openai.com · interestingengineering.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #27 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
