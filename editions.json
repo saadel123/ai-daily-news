@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-01",
+      "edition_number": 28,
+      "headlines": [
+        "GitHub Copilot stellt heute auf AI Credits um — tokenbasiertes Billing für alle bezahlten Pläne",
+        "Microsoft Build: Project Polaris und Copilot Super App treten gegen Claude Code an",
+        "Mistral Vibe: ein Agent für Work und Code, vom Inbox bis zum Pull Request",
+        "OpenAI verabschiedet GPT-4.5 am 27. Juni und o3 am 26. August aus ChatGPT",
+        "Anthropic eröffnet Mailand-Büro und ernennt Korea-CEO — sechstes EU-Land in einem Jahr"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-01T16:00:00Z"
+    },
+    {
       "date": "2026-05-31",
       "edition_number": 27,
       "headlines": [
