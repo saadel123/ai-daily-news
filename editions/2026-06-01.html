@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 01.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 01. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #28</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Copilot rechnet nach Tokens ab, Polaris will Claude Code verdrängen.</h1>
+    <p class="subtitle">Heute startet GitHubs AI-Credits-Billing, Microsoft bringt einen Coding-Rivalen an den Start — und Mistral liefert einen Agenten für Work und Code.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟠</span><span><strong>GitHub Copilot</strong> stellt heute auf AI Credits um — tokenbasiertes Billing für alle bezahlten Pläne</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Microsoft Build</strong>: Project Polaris und Copilot Super App treten gegen Claude Code an</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟣</span><span><strong>Mistral Vibe</strong>: ein Agent für Work und Code, vom Inbox bis zum Pull Request</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI</strong> verabschiedet GPT-4.5 am 27. Juni und o3 am 26. August aus ChatGPT</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟧</span><span><strong>Anthropic</strong> eröffnet Mailand-Büro und ernennt Korea-CEO — sechstes EU-Land in einem Jahr</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>GitHub Copilot · AI Credits Billing ab heute</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">GitHub stellt Copilot heute auf ein tokenbasiertes Abrechnungsmodell um: Weg von der <mark class="vocab" data-translation="Flatrate — flat-rate subscription (lump-sum pricing)">Flatrate</mark>, hin zu "GitHub AI Credits" — 1 Credit entspricht 0,01 $. Jeder bezahlte Plan bringt ein monatliches Credit-Budget mit, das sich nach dem Abo richtet: Pro+ mit 39 Credits, Business mit 19 Credits pro User monatlich. Code-Completions und Next-Edit-Suggestions bleiben unlimited und <mark class="vocab" data-translation="verbrauchen — to consume / use up">verbrauchen</mark> keine Credits — der Billing-Schock trifft nur KI-intensive Aktionen wie Chat und Agents. Admins bekommen Budget-Controls auf Enterprise-, Team- und User-Ebene; wer das Budget <mark class="vocab" data-translation="ausschöpft — exhausts / uses up completely">ausschöpft</mark>, entscheidet selbst, ob weitere Nutzung auf eigene Kosten zugelassen wird.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">GitHub is switching Copilot to usage-based billing starting today: goodbye flat subscription, hello AI Credits — 1 credit equals $0.01. Every paid plan ships with a monthly credit pool sized to the tier: Pro+ at $39, Business at $19 per user per month. Code completions and next-edit suggestions stay unlimited and don't consume credits — billing shock only hits AI-intensive actions like chat and agents. Admins get budget controls at enterprise, team, and user level; once the pool runs out, you decide whether usage keeps running at metered pay-as-you-go or stops.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank" rel="noopener">→ github.blog · 01.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://fortune.com/2026/05/29/microsoft-working-on-super-app/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Microsoft Build · Project Polaris und Copilot Super App</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Microsoft kommt zur Build-Konferenz am 2. Juni mit zwei Ankündigungen: Project Polaris ist ein neues Coding-Modell mit Chain-of-Thought- und Tree-of-Thought-Reasoning für komplexe Multi-File-Refactors — explizit auf Claude Code gemünzt, GA-Termin August 2026. Gleichzeitig <mark class="vocab" data-translation="enthüllte — revealed / unveiled (past tense of enthüllen)">enthüllte</mark> Fortune exklusiv den Copilot Super App, der Chat, GitHub Copilot, Microsoft 365 und einen <mark class="vocab" data-translation="dauerlaufend — always-on / continuously running">dauerlaufenden</mark> Scout-Agenten unter einer Oberfläche vereinen soll. Hintergrund: Nachdem Claude Code Copilot als beliebtestes Developer-KI-Tool <mark class="vocab" data-translation="abgelöst — replaced / overtaken (past participle of ablösen)">abgelöst</mark> hat, zieht Microsoft alle Register. Eine Preview des Super Apps wird zum Build erwartet, GA ist für Ende Sommer geplant.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Microsoft arrives at Build on June 2 with two headline moves: Project Polaris is a new chain-of-thought and tree-of-thought reasoning coding model targeting complex multi-file refactors — explicitly aimed at reclaiming ground from Claude Code, with GA planned for August. Fortune exclusively revealed the Copilot super app, which unifies chat, GitHub Copilot, Microsoft 365, and an always-running Scout agent under one surface. The context: since Claude Code overtook Copilot in developer adoption, Microsoft has pulled every lever it has. A super app preview is expected at Build; GA is planned for end of summer.</p>
+        </div>
+      </div>
+      <a class="source" href="https://fortune.com/2026/05/29/microsoft-working-on-super-app/" target="_blank" rel="noopener">→ fortune.com · 29.05.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://mistral.ai/news/vibe-agent/" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Mistral Vibe · ein Agent für Work und Code</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Mistral stellt Vibe vor — einen Agenten für lang laufende, <mark class="vocab" data-translation="mehrstufige — multi-step / multi-stage">mehrstufige</mark> Aufgaben in zwei Modi. Im Work Mode <mark class="vocab" data-translation="übernimmt — takes over / handles (third-person singular of übernehmen)">übernimmt</mark> Vibe Inbox-Management, Deep-Research, Kalenderplanung und wiederkehrende Prozesse automatisch. Im Code Mode liest sich der Agent ins Projekt ein, schreibt Features, fixt Bugs, refactort und öffnet direkt reviewbare Pull Requests — via Web App, neue VS Code Extension und aktualisierte CLI. Vibe kombiniert damit, was bisher mehrere Tools brauchten: ein Alltags-Assistent und ein Terminal-Coding-Agent in einer einzigen Oberfläche.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Mistral launched Vibe, a new agentic assistant built for long-running, multi-step work in two modes. Work Mode handles inbox management, deep research, calendar scheduling, and recurring processes automatically. Code Mode reads the project context, builds features, fixes bugs, refactors, and ships reviewable pull requests — across the web app, a new VS Code extension, and an updated CLI. Vibe combines what previously needed separate tools: an everyday assistant and a terminal coding agent in a single surface.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mistral.ai/news/vibe-agent/" target="_blank" rel="noopener">→ mistral.ai · 28.05.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · GPT-4.5 und o3 bekommen ein Abschiedsdatum</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat die letzten Pre-GPT-5-Modelle in ChatGPT <mark class="vocab" data-translation="terminiert — scheduled for retirement / set a deadline for (past participle)">terminiert</mark>: GPT-4.5 geht am 27. Juni vom Netz, o3 folgt am 26. August — nach 30- bzw. 90-tägigen <mark class="vocab" data-translation="Übergangsfenstern — transition windows / grace periods">Übergangsfenstern</mark>. Beide Modelle sind derzeit nur noch für zahlende Nutzer über die Model-Settings erreichbar; die API bleibt vorerst unangetastet. Mit GPT-5.5 Instant als neuem Default verabschiedet sich OpenAI offiziell aus der GPT-4-<mark class="vocab" data-translation="Ära — era / epoch">Ära</mark> — einer Generation, die 2023 den Maßstab gesetzt hat. Nutzer, die GPT-4.5 für Schreibaufgaben bevorzugen, haben noch knapp vier Wochen Zeit.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI announced sunset dates for its last pre-GPT-5 models in ChatGPT: GPT-4.5 retires June 27 and o3 retires August 26 — following 30- and 90-day wind-down windows respectively. Both models are currently available only to paid users via model settings; the API is unaffected for now. With GPT-5.5 Instant now the default, OpenAI is officially closing the GPT-4 chapter — a generation that set the bar starting in 2023. Users who prefer GPT-4.5 for writing tasks have about four weeks left.</p>
+        </div>
+      </div>
+      <a class="source" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">→ help.openai.com · 28.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · Mailand und Seoul in zwei Tagen</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Anthropic hat in zwei <mark class="vocab" data-translation="aufeinanderfolgenden — consecutive / back-to-back">aufeinanderfolgenden</mark> Tagen zwei neue internationale <mark class="vocab" data-translation="Niederlassungen — offices / subsidiaries (plural of Niederlassung)">Niederlassungen</mark> angekündigt: Am 26. Mai wurde KiYoung Choi als Representative Director für Korea ernannt, am 27. Mai öffnete das sechste europäische Büro in Mailand. In Südkorea nutzt die Bevölkerung Claude 3,5-mal so häufig wie es die Marktgröße erwarten ließe — mit starkem Fokus auf technische und kreative Arbeit. Mailand ist nach Paris und München Anthropics drittes Büro in der EU-Kernzone und <mark class="vocab" data-translation="unterstreicht — underlines / emphasizes (third-person singular)">unterstreicht</mark> den Anspruch, regulierungsnahe Präsenz in Europa aufzubauen. Zwei Kontinente, zwei Tage — Anthropics globale Expansion nimmt weiter Fahrt auf.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Anthropic announced two new international offices on back-to-back days: on May 26, KiYoung Choi was appointed Representative Director for Korea ahead of the Seoul office opening; on May 27, the sixth European office launched in Milan. South Koreans use Claude at 3.5× the rate their population size would suggest, skewing heavily toward technical and creative work. Milan follows Paris and Munich as Anthropic's third office in the EU core zone, signaling a push for regulatory-proximity presence across Europe. Two continents, two days — Anthropic's global expansion is picking up pace.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific" target="_blank" rel="noopener">→ anthropic.com · 27.05.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.158 · Auto Mode auf Bedrock, Vertex und Foundry</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code bringt Auto-Mode jetzt auch auf unternehmenseigene Deployments — AWS Bedrock, Google Vertex und Azure Foundry. Aktiviert wird der Modus per Umgebungsvariable, die man entweder in der Shell-Session setzt oder dauerhaft in der Konfiguration <mark class="vocab" data-translation="verankert — anchored / set permanently (past participle of verankern)">verankert</mark>. Der Auto-Mode lässt Claude eigenständig entscheiden, welche Tools er aufruft, ohne bei jedem Schritt um Erlaubnis zu fragen — nützlich für vollautomatisierte Pipelines. Damit steht das Feature, das bisher exklusiv in der direkten Anthropic-Cloud lief, jetzt auch für Teams bereit, die ihren Compute selbst betreiben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code now brings Auto mode to enterprise-owned deployments on AWS Bedrock, Google Vertex, and Azure Foundry. Activate it by setting an environment variable — either export it for the current session or anchor it permanently in your shell config. Auto mode lets Claude decide which tools to call without prompting for permission at every step, useful for fully automated pipelines. The feature, previously exclusive to direct Anthropic Cloud connections, is now available to any team running their own compute infrastructure.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">export CLAUDE_CODE_ENABLE_AUTO_MODE=1</pre>
+<pre class="cmd-examples"><span class="com"># Für die aktuelle Shell-Session · For the current shell session</span>
+$ export CLAUDE_CODE_ENABLE_AUTO_MODE=1
+
+<span class="com"># Dauerhaft in der Shell-Konfiguration verankern · Persist in shell config</span>
+$ echo 'export CLAUDE_CODE_ENABLE_AUTO_MODE=1' >> ~/.bashrc</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.158" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 30.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Flatrate</div>
+        <div class="vocab-translation">flat-rate subscription · lump-sum pricing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die alte Flatrate war planbar — das neue tokenbasierte Modell zählt jeden API-Aufruf.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The old flat rate was predictable — the new token-based model counts every API call.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufeinanderfolgend</div>
+        <div class="vocab-translation">consecutive · back-to-back</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zwei Büros wurden an aufeinanderfolgenden Tagen angekündigt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Two offices were announced on consecutive days.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abkündigen</div>
+        <div class="vocab-translation">to retire · to deprecate · to sunset</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI kündigt GPT-4.5 als letztes der GPT-4-Ära-Modelle ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI is retiring GPT-4.5 as the last of the GPT-4-era models.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">mehrstufig</div>
+        <div class="vocab-translation">multi-step · multi-stage</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Vibe ist für mehrstufige Aufgaben ausgelegt — vom Research bis zum Pull Request.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Vibe is designed for multi-step tasks — from research all the way to pull requests.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verankern</div>
+        <div class="vocab-translation">to anchor · to embed permanently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Umgebungsvariable in der bashrc zu verankern spart Zeit beim nächsten Login.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anchoring the environment variable in bashrc saves time on the next login.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">alle Register ziehen</div>
+      <div class="idiom-meaning">to pull out all the stops — wörtlich: "to pull all the organ registers"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Microsoft zieht alle Register, um Claude Code das Terrain abzunehmen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Microsoft is pulling out all the stops to reclaim ground from Claude Code."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn der Release-Termin näher rückt, ziehen wir alle Register."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When the release deadline draws near, we pull out all the stops."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hit the ground running</div>
+      <div class="idiom-meaning">to start something with full energy from the very beginning — German equivalent: "direkt durchstarten"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the new budget controls, teams can hit the ground running without billing shock."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit den neuen Budget-Controls können Teams direkt durchstarten — ohne Billing-Schock."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The new colleague hit the ground running and opened a pull request on day one."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der neue Kollege hat direkt durchgestartet und am ersten Tag einen PR geöffnet."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.blog · fortune.com · mistral.ai · help.openai.com · anthropic.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #28 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
