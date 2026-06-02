@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-02",
+      "edition_number": 29,
+      "headlines": [
+        "Claude Code 2.1.160: Keyword-Umbenennung — workflow heißt jetzt ultracode, Edit läuft nach Grep ohne separates Read",
+        "Anthropic reicht S-1 beim SEC ein — IPO-Countdown bei 965-Mrd.-$-Bewertung offiziell gestartet",
+        "OpenAI auf Amazon Bedrock GA — GPT-5.5, GPT-5.4 und Codex für Enterprise-Kunden über AWS",
+        "SoftBank investiert 75 Mrd. € in Frankreich — 5 GW KI-Rechenzentren bis 2031",
+        "Meta One startet: KI-Abo für 7,99 $ mit Thinking Mode in ersten Testmärkten"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-02T16:07:16Z"
+    },
+    {
       "date": "2026-06-01",
       "edition_number": 28,
       "headlines": [
