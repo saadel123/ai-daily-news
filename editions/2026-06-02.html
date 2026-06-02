@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 02.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 02. Juni 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #29</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Der IPO-Countdown läuft: Anthropic reicht S-1 ein, SoftBank baut Europas größten KI-Campus.</h1>
+    <p class="subtitle">Außerdem: OpenAI landet auf Bedrock, Claude Code lernt das Keyword ultracode — und Cognition verrät, wie viel Code sein eigener Agent schreibt.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.160</strong>: Keyword-Umbenennung — workflow heißt jetzt ultracode, Edit läuft nach Grep ohne separates Read</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong> reicht S-1 beim SEC ein — IPO-Countdown bei 965-Mrd.-$-Bewertung offiziell gestartet</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI auf Amazon Bedrock</strong> GA — GPT-5.5, GPT-5.4 und Codex für Enterprise-Kunden über AWS</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>SoftBank</strong> investiert 75 Mrd. € in Frankreich — 5 GW KI-Rechenzentren bis 2031</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Meta One</strong> startet: KI-Abo für 7,99 $ mit Thinking Mode in ersten Testmärkten</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.160" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://opengraph.githubassets.com/3b9de0784ec4becc1e40c7fa289d196597e8e981a39c311d20b52894b9462d14/anthropics/claude-code/releases/tag/v2.1.160" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.160 · ultracode</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.160 bringt eine Änderung, die sofort <mark class="vocab" data-translation="auffällt — stands out / catches attention (auffallen, sep. verb)">auffällt</mark>: das Magic-Keyword für Dynamic Workflows heißt ab jetzt ultracode — wer weiterhin das Wort workflow in seine Prompts schreibt, löst damit keinen Run mehr aus. Die Umbenennung ist <mark class="vocab" data-translation="bewusst — deliberate / intentional">bewusst</mark> gewählt, weil der Begriff zu generisch war und Workflow-Runs ungewollt startete; im Prompt-Feld erscheint das Keyword jetzt violett, wenn Claude es erkennt. Daneben <mark class="vocab" data-translation="entfällt — drops away / is no longer required (entfallen)">entfällt</mark> eine nervige Hürde: nach einem Grep auf eine einzelne Datei gilt diese als gelesen — Edit kann direkt loslegen, ohne ein separates Read <mark class="vocab" data-translation="dazwischen — in between / in the middle">dazwischen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.160 brings a change you'll notice right away: the magic keyword for Dynamic Workflows is now ultracode — typing the word workflow in your prompts no longer fires a run. The rename is deliberate; the generic term was accidentally triggering workflow runs, so the keyword now glows violet in the prompt input when Claude recognizes it. On top of that, a small friction point disappears: after a single-file grep, that file counts as already read — Edit can jump in immediately without a separate Read step in between.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/effort ultracode
+/workflows</pre>
+        <dl class="cmd-flags">
+          <dt><code>/effort ultracode</code></dt>
+          <dd>set effort level to ultracode — equivalent to typing the trigger keyword in your prompt</dd>
+          <dt><code>/workflows</code></dt>
+          <dd>list running and completed dynamic workflow runs for the current session</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Keyword im Prompt — kein Slash nötig · Keyword in prompt — no slash needed</span>
+ultracode: alle Services in src/ mit Unit-Tests abdecken
+
+<span class="com"># Effort-Level manuell setzen · Set effort level explicitly</span>
+$ /effort ultracode
+
+<span class="com"># Laufende und fertige Runs anzeigen · View running and completed runs</span>
+$ /workflows</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.160" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · S-1 Einreichung · IPO</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat dem US-Wertpapieraufseher SEC einen <mark class="vocab" data-translation="vertraulich — confidential / under seal">vertraulichen</mark> Börsenprospekt <mark class="vocab" data-translation="eingereicht — filed / submitted (einreichen, sep. verb)">eingereicht</mark> und bringt das Unternehmen damit offiziell auf IPO-Kurs. Der Prospektinhalt bleibt vorerst <mark class="vocab" data-translation="unter Verschluss — sealed / kept from the public (idiom)">unter Verschluss</mark>; die SEC kennt die Zahlen, die breite Öffentlichkeit aber noch nicht. Intern dreht Anthropic eine Jahresumsatzrate von 47 Mrd. $ und kommt auf eine <mark class="vocab" data-translation="Bewertung — valuation (also: assessment, rating)">Bewertung</mark> von rund 965 Mrd. $. Konkrete Termine oder Preisspannen gibt es noch nicht — die vertrauliche Route lässt Korrekturen mit der SEC zu, bevor der Prospekt öffentlich wird.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has filed a confidential draft S-1 with the SEC, officially putting the company on an IPO path. The prospectus content stays sealed for now; the SEC can see the numbers but the public cannot yet. Internally Anthropic is running at a $47B annualized revenue rate and a valuation of roughly $965B. No pricing or timeline has been set — the confidential route lets Anthropic work through SEC review and make corrections before going public.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html" target="_blank" rel="noopener">→ cnbc.com · 01.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI × Amazon Bedrock · GA</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAIs Frontier-Modelle GPT-5.5 und GPT-5.4 sind ab sofort als Generally Available auf Amazon Bedrock <mark class="vocab" data-translation="buchbar — available to order / accessible">buchbar</mark> — <mark class="vocab" data-translation="mitsamt — along with / inclusive of">mitsamt</mark> Codex, dem autonomen Coding-Agenten, der von mehr als fünf Millionen Entwicklern pro Woche genutzt wird. Enterprise-Kunden profitieren von nativer AWS-Sicherheitsarchitektur, IAM-Berechtigungen und bestehenden Compliance-Frameworks, ohne die eigene Cloud verlassen zu müssen. Die Preise entsprechen dem Direkttarif von OpenAI, und die Ausgaben werden auf bestehende AWS-Commitments <mark class="vocab" data-translation="angerechnet — credited / counted toward (anrechnen, sep. verb)">angerechnet</mark>. GPT-5.5 startet in US East (Ohio), GPT-5.4 zusätzlich in US West (Oregon).</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI's frontier models GPT-5.5 and GPT-5.4 are now generally available on Amazon Bedrock — along with Codex, the autonomous coding agent used by more than 5 million developers weekly. Enterprise customers get native AWS security architecture, IAM permissions and existing compliance frameworks without leaving their cloud. Pricing matches OpenAI's first-party rates and spending counts toward existing AWS commitments. GPT-5.5 is live in US East (Ohio); GPT-5.4 is additionally available in US West (Oregon).</p>
+        </div>
+      </div>
+      <a class="source" href="https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/" target="_blank" rel="noopener">→ aws.amazon.com · 01.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>SoftBank · 75 Mrd. € · Frankreich</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">SoftBank hat beim 'Choose France'-Gipfel einen Plan von bis zu 75 Mrd. € vorgelegt, um in Frankreich 5 Gigawatt KI-Rechenzentren zu <mark class="vocab" data-translation="errichten — to build / to erect (infrastructure)">errichten</mark> — Europas bisher größter angekündigter Infrastruktur-Deal im KI-Bereich. Die erste Phase umfasst 45 Mrd. € für 3,1 GW in Nordfrankreich (Dünkirchen, Bouchain, Bosquel) und soll bis 2031 stehen. Masayoshi Son und Emmanuel Macron unterzeichneten eine gemeinsame <mark class="vocab" data-translation="Erklärung — statement / declaration">Erklärung</mark>; für Frankreich ist das ein Beweis, dass europäische KI-Souveränität und US-Kapital sich nicht <mark class="vocab" data-translation="ausschließen — to be mutually exclusive / to preclude one another">ausschließen</mark>. SoftBank sitzt damit mitten auf dem globalen Compute-Schachbrett.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">SoftBank announced at the 'Choose France' summit a plan worth up to €75 billion to build 5 gigawatts of AI data center capacity across France — Europe's largest single announced AI infrastructure commitment. The first phase covers €45 billion for 3.1 GW in northern France (Dunkirk, Bouchain, Bosquel), targeted for 2031. Masayoshi Son and Emmanuel Macron signed a joint statement; for France it's proof that European AI sovereignty and US capital aren't mutually exclusive. SoftBank now sits squarely on the global compute chessboard.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/" target="_blank" rel="noopener">→ techcrunch.com · 30.05.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Meta One · KI-Abo · Thinking Mode</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Meta startet die weltweite <mark class="vocab" data-translation="Einführung — rollout / introduction">Einführung</mark> eines Abo-Modells unter dem Namen Meta One: Plus für 7,99 $ und Premium für 19,99 $ pro Monat beinhalten erweiterten KI-Reasoning (das sogenannte Thinking Mode) und <mark class="vocab" data-translation="großzügigere — more generous / more liberal (großzügig)">großzügigere</mark> Bildgenerierung über alle Meta-Apps hinweg. Die KI-Tiers werden zunächst in Singapur, Guatemala und Bolivien <mark class="vocab" data-translation="erprobt — tested / trialed (erproben)">erprobt</mark>; die Basis-App-Abos für Instagram, Facebook und WhatsApp starten bereits global. Für Entwickler ist das interessant, weil Meta damit eine KI-API aufbaut, hinter der Milliarden Nutzerprofile stehen — die Frage ist nur, ob Thinking Mode mehr als ein Marketing-Label ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Meta is rolling out a paid subscription model under the name Meta One: Plus at $7.99 and Premium at $19.99 per month include enhanced AI reasoning (called Thinking Mode) and more generous image generation across all Meta apps. The AI tiers enter testing in Singapore, Guatemala, and Bolivia first; base app subscriptions for Instagram, Facebook and WhatsApp go live globally. For developers, the interesting angle is that Meta is building an AI API backed by billions of user profiles — the only question is whether Thinking Mode is more than a marketing label.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/" target="_blank" rel="noopener">→ techcrunch.com · 27.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Cognition Devin · 1 Mrd. $ · 90 % KI-Code</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Cognition, der Hersteller des autonomen KI-Entwicklers Devin, hat gerade eine Milliarde Dollar bei einer Bewertung von 26 Mrd. $ <mark class="vocab" data-translation="eingesammelt — raised (funds) / collected">eingesammelt</mark> — und gibt dabei eine Zahl preis, die in der Branche <mark class="vocab" data-translation="nachhallen — to echo / to resonate long after">nachhallen</mark> wird: 90 % der eigenen Codebasis werden von Devin selbst geschrieben. Die ARR liegt bei fast 500 Mio. $, das Monatswachstum bei 50 % — sechs Monate in Folge. Wer wissen will, wie eine wirklich agentic Coding-Welt aussieht, sollte Cognition als <mark class="vocab" data-translation="Fallstudie — case study">Fallstudie</mark> nehmen: nicht als Bedrohung, sondern als Beweis, dass es funktioniert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Cognition, maker of the autonomous AI developer Devin, just raised $1 billion at a $26 billion valuation — and dropped a number that's going to echo through the industry: 90% of its own codebase is now written by Devin. ARR is approaching $500M with 50% month-over-month growth for six consecutive months. If you want to understand what a genuinely agentic coding world looks like in practice, Cognition is the case study to watch — not as a threat, but as proof that it actually works.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/" target="_blank" rel="noopener">→ techcrunch.com · 27.05.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">einreichen</div>
+        <div class="vocab-translation">to file · to submit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat den S-1 vertraulich beim SEC eingereicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic filed the S-1 confidentially with the SEC.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">vertraulich</div>
+        <div class="vocab-translation">confidential · under seal</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Einreichung erfolgte vertraulich — die Öffentlichkeit sieht die Zahlen noch nicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The filing was confidential — the public can't see the numbers yet.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auslösen</div>
+        <div class="vocab-translation">to trigger · to set off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Keyword ultracode löst einen Dynamic Workflow aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new keyword ultracode triggers a Dynamic Workflow.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Rechenzentrum</div>
+        <div class="vocab-translation">the data center</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">SoftBank baut fünf Gigawatt Rechenzentren in Frankreich.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">SoftBank is building five gigawatts of data centers in France.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nachhallen</div>
+        <div class="vocab-translation">to echo · to resonate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Devins Zahl — 90 Prozent — wird in der Branche noch lange nachhallen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Devin's number — 90 percent — will echo through the industry for a long time.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the sack" / to reveal a secret</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat die Katze aus dem Sack gelassen — der S-1 ist beim SEC."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic let the cat out of the bag — the S-1 is with the SEC."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lass die Katze nicht zu früh aus dem Sack — wir sind noch in der Verhandlungsphase."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't let the cat out of the bag yet — we're still in the negotiation phase."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to file under seal</div>
+      <div class="idiom-meaning">to submit confidentially, keeping contents from the public — German equivalent: "vertraulich einreichen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic filed its S-1 under seal — the SEC gets to see it, the street doesn't."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat den S-1 vertraulich eingereicht — die SEC sieht ihn, die Öffentlichkeit nicht."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · cnbc.com · aws.amazon.com · techcrunch.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #29 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
