@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-03",
+      "edition_number": 30,
+      "headlines": [
+        "Claude Code 2.1.161: parallele Tool-Calls laufen jetzt unabhängig — kein Fehlschlag bricht mehr den Batch",
+        "Anthropic Partner Network: Services Track mit drei Tiers und neues Partner-Hub-Portal live",
+        "Trump unterzeichnet KI-Exekutivorder: NIST-Standards, Cybersicherheit und schärfere Chip-Exportkontrollen",
+        "Microsoft Build: Aion 1.0 Plan kommt eingebaut mit Windows — lokales Agenten-Reasoning ohne Cloud",
+        "ChatGPT Codex Computer Use erreicht Windows — Cross-Device-Coding jetzt auch für Windows-Entwickler"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-03T16:07:05Z"
+    },
+    {
       "date": "2026-06-02",
       "edition_number": 29,
       "headlines": [
