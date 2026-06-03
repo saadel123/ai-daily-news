@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 03.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 03. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #30</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KI zieht in Windows ein — und Washington schreibt neue Regeln.</h1>
+    <p class="subtitle">Außerdem: Claude Code 2.1.161 macht parallele Tool-Calls robuster, Anthropic startet den Services Track für Partner, und Codex Computer Use landet auf Windows.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.161</strong>: parallele Tool-Calls laufen jetzt unabhängig — kein Fehlschlag bricht mehr den Batch</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic Partner Network</strong>: Services Track mit drei Tiers und neues Partner-Hub-Portal live</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Trump</strong> unterzeichnet KI-Exekutivorder: NIST-Standards, Cybersicherheit und schärfere Chip-Exportkontrollen</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Microsoft Build</strong>: Aion 1.0 Plan kommt eingebaut mit Windows — lokales Agenten-Reasoning ohne Cloud</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT Codex</strong> Computer Use erreicht Windows — Cross-Device-Coding jetzt auch für Windows-Entwickler</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.161" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.161 · Parallel Tool-Calls · /mcp · OTEL</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.161 bringt einen Zuverlässigkeitsgewinn, der im Alltag sofort <mark class="vocab" data-translation="spürbar — noticeable / palpable">spürbar</mark> ist: Wenn einer von mehreren parallel laufenden Bash-Befehlen fehlschlägt, werden die anderen jetzt nicht mehr abgebrochen — jedes Tool gibt sein eigenes Ergebnis zurück. Die /mcp-Übersicht <mark class="vocab" data-translation="kollabiert — collapses / folds down">kollabiert</mark> jetzt claude.ai-Konnektoren, bei denen du noch nie eingeloggt warst, hinter einer aufklappbaren Zeile, damit der Überblick auch bei vielen Konnektoren sauber bleibt. Neu ist außerdem, dass OTEL_RESOURCE_ATTRIBUTES-Werte als Labels auf Metrik-Datenpunkten landen, damit du den Claude-Code-Verbrauch nach Team oder Repo <mark class="vocab" data-translation="aufschlüsseln — to break down / to slice">aufschlüsseln</mark> kannst. Und bei claude agents siehst du jetzt done/total-Zähler, wenn Arbeit <mark class="vocab" data-translation="aufgefächert — fanned out / spread across multiple agents">aufgefächert</mark> wird.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.161 delivers a reliability win you'll notice right away: when one of several parallel Bash commands fails, the others are no longer cancelled — each tool now returns its own result independently. The /mcp view collapses claude.ai connectors you've never signed into behind a 'Show unused connectors' row, keeping things manageable no matter how many connectors you have. OTEL_RESOURCE_ATTRIBUTES values now land as labels on metric data points, so you can slice Claude Code usage by team or repo. And in claude agents, fanned-out work now shows done/total counts so you always know where things stand.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.161" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/services-track-partner-hub" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Partner Network · Services Track · Partner Hub</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat heute den Services Track und das Partner-Hub-Portal des Claude Partner Networks <mark class="vocab" data-translation="gestartet — launched / kicked off">gestartet</mark>. Das dreistufige System — Select, Preferred und Global Premier — <mark class="vocab" data-translation="bewertet — evaluates / assesses">bewertet</mark>, wie viel ein <mark class="vocab" data-translation="Beratungsunternehmen — consulting firm">Beratungsunternehmen</mark> tatsächlich mit Claude aufgebaut und in Produktion gebracht hat, statt nur einen Kurs <mark class="vocab" data-translation="abzuhaken — to tick off / to check a box">abzuhaken</mark>. Im Partner Hub können Firmen ihren Tier-Status einsehen, und Kunden finden dort die qualifiziertesten Implementierungspartner für ihr Vorhaben. Seit dem Start des Programms im März haben sich über 40.000 Firmen beworben und mehr als 10.000 Berater haben eine Claude-Zertifizierung abgeschlossen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic officially launched the Services Track and Partner Hub portal of the Claude Partner Network today. The three-tier structure — Select, Preferred and Global Premier — assesses how much a consultancy has actually built and deployed with Claude in production, rather than just ticking a training box. Partner Hub is the new portal where firms track their tier status and customers find the most qualified implementation partners for their project. Since the programme started in March, over 40,000 firms have applied and more than 10,000 consultants have completed a Claude certification.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/services-track-partner-hub" target="_blank" rel="noopener">→ anthropic.com · 03.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Trump unterzeichnet KI-Exekutivorder · Innovation &amp; Security</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Präsident Trump hat heute eine Exekutivorder zu KI-Innovation und -Sicherheit unterzeichnet — Wochen nachdem eine frühere Order noch am Tag der Unterzeichnung <mark class="vocab" data-translation="zurückgezogen — withdrawn / pulled back">zurückgezogen</mark> worden war. Die neue Order <mark class="vocab" data-translation="weist an — directs / instructs">weist</mark> Bundesbehörden an, KI für Cybersicherheitsaufgaben einzusetzen, stärkt US-amerikanische KI-Infrastruktur und <mark class="vocab" data-translation="beauftragt — tasks / commissions">beauftragt</mark> das NIST, aktualisierte Sicherheitsstandards für Frontier-Modelle zu erarbeiten. Exportkontrollen für KI-Chips und Modelle in bestimmte Länder werden <mark class="vocab" data-translation="verschärft — tightened / intensified">verschärft</mark>. Für Entwickler, die mit Bundesbehörden arbeiten, bedeutet das: KI-Compliance-Anforderungen werden in den nächsten zwölf Monaten konkreter.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">President Trump signed an executive order on AI innovation and security today — weeks after a previous order was abruptly withdrawn on the very day it was meant to be signed. The new order directs federal agencies to use AI for cybersecurity tasks, strengthens US AI infrastructure and tasks NIST to develop updated safety standards for frontier models. Export controls on AI chips and models to certain countries are tightened. For developers working with federal agencies, AI compliance requirements will become much more concrete over the next twelve months.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank" rel="noopener">→ whitehouse.gov · 03.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://visualstudiomagazine.com/articles/2026/06/02/at-build-2026-microsoft-sets-up-windows-as-an-os-for-ai-agents.aspx" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Microsoft Build 2026 · Aion 1.0 Plan · Windows-native AI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Microsoft hat auf der Build 2026 Aion 1.0 vorgestellt — zwei Modelle, die auf kompatiblen Geräten direkt in Windows <mark class="vocab" data-translation="eingebaut — built-in / baked in by default">eingebaut</mark> sind und ohne Cloud-Verbindung laufen. Aion 1.0 Instruct übernimmt schnelle Text-Aufgaben wie Zusammenfassung, Umformulierung und <mark class="vocab" data-translation="Barrierefreiheit — accessibility">Barrierefreiheit</mark>, während Aion 1.0 Plan mit 14 Milliarden Parametern und 32K Kontext Reasoning, Tool-Aufrufe und Sub-Agenten-Orchestrierung lokal auf dem Gerät ermöglicht. Die Windows AI-APIs wurden gleichzeitig auf CPUs und GPUs <mark class="vocab" data-translation="ausgeweitet — extended / broadened">ausgeweitet</mark> — nicht mehr nur NPUs. Damit wird Windows zur ersten großen Desktop-Plattform mit eingebautem Agenten-Reasoning, ohne <mark class="vocab" data-translation="Cloudabhängigkeit — cloud dependency">Cloudabhängigkeit</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">At Microsoft Build 2026, Microsoft unveiled Aion 1.0 — two models that ship in-box with Windows on capable devices and run entirely offline. Aion 1.0 Instruct handles fast text tasks like summarisation, rewriting and accessibility, while Aion 1.0 Plan — 14 billion parameters, 32K context — brings reasoning, tool calls and sub-agent orchestration directly on-device. Windows AI APIs were simultaneously extended from NPUs to CPUs and GPUs. This makes Windows the first major desktop platform with built-in agent reasoning, with zero cloud dependency.</p>
+        </div>
+      </div>
+      <a class="source" href="https://visualstudiomagazine.com/articles/2026/06/02/at-build-2026-microsoft-sets-up-windows-as-an-os-for-ai-agents.aspx" target="_blank" rel="noopener">→ visualstudiomagazine.com · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Codex Computer Use · Windows · Cross-Device</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat Codex Computer Use jetzt auch auf Windows <mark class="vocab" data-translation="ausgerollt — rolled out / released">ausgerollt</mark> — wer auf einem Windows-Rechner arbeitet, kann die ChatGPT-App auf iOS oder Android zur Hand nehmen, um den Fortschritt zu verfolgen, den Thread <mark class="vocab" data-translation="weiterzuführen — to continue / to carry on">weiterzuführen</mark> und Eingabeaufforderungen zu beantworten, während Codex weiterläuft. Codex sieht dabei tatsächlich den Bildschirm, klickt und tippt in Windows-Apps. Das schließt die <mark class="vocab" data-translation="Lücke — gap / void">Lücke</mark>, die nach dem Mac-Launch und dem Mobile-Preview noch offen war, und bringt das Cross-Device-Coding-Erlebnis endlich zu Windows-only-Entwicklern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI has rolled out Codex Computer Use to Windows — if you're working on a Windows machine, you can pick up the ChatGPT app on iOS or Android to check progress, continue the thread and respond to prompts while Codex keeps running. Codex actually sees the screen, clicks and types in Windows apps. This closes the gap that remained after the Mac launch and the mobile preview, and finally brings the cross-device coding experience to Windows-only developers.</p>
+        </div>
+      </div>
+      <a class="source" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">→ help.openai.com · 03.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://9to5mac.com/2026/06/01/openai-enhances-chatgpt-app-with-this-hidden-feature/" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT-Hack · Lang drücken · Instant / Thinking / Extended</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">In der ChatGPT-App auf iOS und Android gibt es jetzt einen <mark class="vocab" data-translation="versteckten — hidden / concealed">versteckten</mark> Shortcut: Den Senden-Pfeil lang drücken, und ein Menü mit den Optionen Instant, Thinking und Extended erscheint — ohne <mark class="vocab" data-translation="Umweg — detour / roundabout way">Umweg</mark> über die Einstellungen. Instant antwortet ohne Chain-of-Thought und ist <mark class="vocab" data-translation="blitzschnell — lightning fast">blitzschnell</mark>, Thinking lässt das Modell kurz nachdenken, Extended gibt ihm so viel Zeit wie nötig. Praktisch, wenn du schnell einen ersten Entwurf brauchst und dann für die nächste Iteration in den Thinking-Modus wechselst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">The ChatGPT app on iOS and Android now has a hidden shortcut: long-press the send arrow and a picker pops up with Instant, Thinking and Extended options — no trip to settings needed. Instant replies without chain-of-thought and is lightning fast, Thinking lets the model reason briefly, Extended gives it as long as it needs. Great for quick first drafts that you then refine by switching into Thinking mode for the next iteration.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5mac.com/2026/06/01/openai-enhances-chatgpt-app-with-this-hidden-feature/" target="_blank" rel="noopener">→ 9to5mac.com · 01.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufschlüsseln</div>
+        <div class="vocab-translation">to break down · to slice</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst die API-Kosten nach Team und Projekt aufschlüsseln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can break down the API costs by team and project.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausweiten</div>
+        <div class="vocab-translation">to expand · to extend</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Unternehmen hat seinen KI-Service auf CPUs und GPUs ausgeweitet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The company expanded its AI service to CPUs and GPUs.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eingebaut</div>
+        <div class="vocab-translation">built-in · baked in</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Modell kommt eingebaut — kein Extra-Download nötig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The model comes built-in — no extra download required.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">blitzschnell</div>
+        <div class="vocab-translation">lightning fast · in a flash</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Instant-Modus antwortet blitzschnell — ideal für kurze Fragen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Instant mode replies lightning fast — ideal for quick questions.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschärfen</div>
+        <div class="vocab-translation">to tighten · to intensify</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Exportkontrollen für KI-Chips werden weiter verschärft.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Export controls on AI chips are being tightened further.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Kurs bleiben</div>
+      <div class="idiom-meaning">to stay on course · to keep going in the right direction — wörtlich: "to remain on course"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit der neuen Exekutivorder will die US-Regierung bei KI-Innovation auf Kurs bleiben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the new executive order, the US government wants to stay on course with AI innovation."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Auch wenn ein Bash-Befehl fehlschlägt, bleibt der Rest deiner Tool-Calls auf Kurs."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Even if one Bash command fails, the rest of your tool calls stay on course."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">ships in-box</div>
+      <div class="idiom-meaning">comes included out of the box, no extra purchase or download — German equivalent: "ab Werk dabei sein"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Aion 1.0 now ships in-box with Windows — no subscription, no extra download."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Aion 1.0 kommt jetzt ab Werk bei Windows dabei — kein Abo, kein Extra-Download."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Features that ship in-box get adoption — the rest sit in docs nobody reads."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Was ab Werk dabei ist, wird benutzt — alles andere steht in Docs, die niemand liest."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · anthropic.com · whitehouse.gov · visualstudiomagazine.com · help.openai.com · 9to5mac.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #30 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
