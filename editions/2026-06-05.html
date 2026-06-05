@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 05.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 05. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #31</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Plugins, Gedächtnis und Unabhängigkeit: Die KI-Welt dreht an drei Rädern gleichzeitig.</h1>
+    <p class="subtitle">Von Claude-Code-Plugin-Management bis zu Microsofts Ausbruch aus dem OpenAI-Orbit — und ChatGPT denkt jetzt selbst mit.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.163</strong>: /plugin list — Plugins direkt im Terminal verwalten, kein Marketplace nötig</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong>: ab 15. Juni eigener Credit-Pool für den Agent-SDK — Pro-User starten mit 20 $ monatlich</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Dreaming V3</strong>: ChatGPT-Gedächtnis aktualisiert sich nach Gesprächen automatisch</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Microsoft MAI</strong>: 7 eigene KI-Modelle — MAI-Thinking-1 soll GPT-5.5 auf Kosten schlagen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>US-Kongress</strong>: 269-seitiger KI-Entwurf — Bundesrecht soll staatliche KI-Gesetze drei Jahre aushebeln</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.163" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.163 · /plugin list</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.163 liefert einen lang ersehnten Überblick über das Plugin-Ökosystem: Mit dem neuen Slash-Command siehst du auf einen Blick, welche Plugins geladen sind — <mark class="vocab" data-translation="aktiv — enabled / active">aktive</mark> und deaktivierte lassen sich bequem <mark class="vocab" data-translation="herausfiltern — to filter out">herausfiltern</mark>. Wer viele Plugins im Einsatz hat, war bisher auf manuelles Durchsuchen der Skills-Ordner angewiesen. Hinzu kommen neue Managed-Settings-Felder, mit denen Admins eine Mindest- und Höchstversion für Claude Code <mark class="vocab" data-translation="vorgeben — to mandate / to prescribe">vorgeben</mark> können — startet ein Client außerhalb des erlaubten Bereichs, verweigert Claude Code den Start und verweist auf die freigegebene Version. Im /btw-Panel gibt es außerdem ein neues Kürzel, das die Antwort als formatiertes Markdown direkt in die <mark class="vocab" data-translation="Zwischenablage — clipboard">Zwischenablage</mark> kopiert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.163 brings a long-awaited window into your plugin ecosystem: the new slash command shows at a glance which plugins are loaded, with optional filters for enabled or disabled only. Anyone running lots of plugins was previously stuck manually browsing Skills folders. There are also new managed-settings fields that let admins mandate a minimum and maximum version for Claude Code — if a client starts outside the allowed range, Claude Code refuses to launch and points users to the approved version. The /btw panel also gains a shortcut that copies the answer as formatted Markdown straight to the clipboard.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/plugin list [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--enabled</code></dt>
+          <dd>show only enabled plugins</dd>
+          <dt><code>--disabled</code></dt>
+          <dd>show only disabled plugins</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle Plugins anzeigen · List all plugins</span>
+$ /plugin list
+
+<span class="com"># Nur aktive Plugins · Enabled plugins only</span>
+$ /plugin list --enabled</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.163" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 04.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://thenewstack.io/anthropic-agent-sdk-credits/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Agent-SDK-Credits ab 15. Juni</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Ab dem 15. Juni läuft programmatische Claude-Nutzung über einen eigenen monatlichen Credit-Pool — getrennt vom normalen Abo-<mark class="vocab" data-translation="Kontingent — allowance / quota">Kontingent</mark>. Betroffen sind der Agent-SDK, das nicht-interaktive Terminal-Flag, Claude-Code-GitHub-Actions und Drittanbieter-Agenten, die sich über den SDK authentifizieren. Pro-User starten mit 20 Dollar <mark class="vocab" data-translation="Guthaben — credit balance">Guthaben</mark> pro Monat, Max-5x-User mit 100 Dollar, Max-20x-User mit 200 Dollar — abgerechnet zu regulären API-Preisen, kein <mark class="vocab" data-translation="Übertrag — rollover / carryover">Übertrag</mark>. Wer interaktiv im Terminal arbeitet, bleibt unberührt; wer automatisierte Coding-Pipelines betreibt, sollte jetzt den monatlichen Token-Verbrauch <mark class="vocab" data-translation="durchrechnen — to crunch the numbers">durchrechnen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Starting June 15, programmatic Claude usage shifts to a separate monthly credit pool, split from your standard subscription allowance. Affected: the Agent SDK, the non-interactive launch flag, Claude Code GitHub Actions, and any third-party agent that authenticates through the SDK. Pro users start with $20 of credit per month, Max 5x with $100, Max 20x with $200 — all billed at regular API list rates, no rollover. Interactive terminal use is unaffected; if you're running automated coding pipelines, now is the time to estimate your monthly token spend.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thenewstack.io/anthropic-agent-sdk-credits/" target="_blank" rel="noopener">→ thenewstack.io · 02.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.iclarified.com/101066/openai-launches-dreaming-v3-memory-system-for-chatgpt" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Dreaming V3 · ChatGPT-Gedächtnis</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat am 4. Juni das bisher größte Upgrade an ChatGPTs Gedächtnissystem <mark class="vocab" data-translation="ausrollen — to roll out">ausgerollt</mark>: Dreaming V3 ist ein Hintergrundprozess, der nach jedem Gespräch Präferenzen, laufende Projekte und zeitkritischen Kontext automatisch <mark class="vocab" data-translation="konsolidieren — to consolidate">konsolidiert</mark> — ohne dass Nutzer etwas manuell speichern müssen. Das alte System wartete auf explizite Anweisungen; das neue schreibt Erinnerungen selbstständig um, sobald sie <mark class="vocab" data-translation="veraltet — outdated / stale">veraltet</mark> sind — "User fährt im Juli nach Singapur" wird nach der Reise automatisch angepasst. Plus- und Pro-User in den USA bekommen das Update zuerst; Free- und Go-User folgen in den nächsten Wochen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI rolled out its biggest ChatGPT memory upgrade yet on June 4: Dreaming V3 is a background process that automatically consolidates preferences, ongoing projects and time-sensitive context after each conversation — no manual saving required. The old system waited for explicit instructions; the new one rewrites memories on its own once they go stale — "User is travelling to Singapore in July" updates itself after the trip ends. Plus and Pro users in the US get it first; Free and Go users follow over the coming weeks.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.iclarified.com/101066/openai-launches-dreaming-v3-memory-system-for-chatgpt" target="_blank" rel="noopener">→ iclarified.com · 04.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Microsoft MAI · 7 eigene KI-Modelle</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Microsoft hat auf der Build-Konferenz sieben eigene KI-Modelle unter dem MAI-Label präsentiert — und macht damit seinen Kurs zur OpenAI-Unabhängigkeit <mark class="vocab" data-translation="offiziell — official / public">offiziell</mark>. Das <mark class="vocab" data-translation="Flaggschiff — flagship">Flaggschiff</mark> MAI-Thinking-1 ist ein Reasoning-Modell, das laut Microsoft bei zehnfach besserer Kosten-Effizienz gegen GPT-5.5 <mark class="vocab" data-translation="nachzieht — follows suit / catches up">nachzieht</mark>; MAI-Code-1-Flash generiert Anwendungscode aus Klartextbeschreibungen. Alle Modelle laufen auf Microsofts eigener Azure-Infrastruktur — das reduziert das Lizenzrisiko gegenüber OpenAI erheblich. CEO Satya Nadella nannte es "eine ziemlich bedeutsame Verschiebung", ein Satz, der OpenAI-Investoren nicht gefallen dürfte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Microsoft unveiled seven in-house AI models under the MAI label at its Build conference — making its pivot away from OpenAI official. The flagship MAI-Thinking-1 is a reasoning model that matches GPT-5.5 quality at ten times the cost efficiency, according to Microsoft; MAI-Code-1-Flash generates application code from plain-text descriptions. All models run on Microsoft's own Azure infrastructure, meaningfully cutting the licensing risk from OpenAI. CEO Satya Nadella called it "a pretty significant shift" — a sentence OpenAI investors won't enjoy.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" rel="noopener">→ cnbc.com · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>US-Kongress · Great American AI Act</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Zwei parteiübergreifende Abgeordnete haben einen 269-seitigen <mark class="vocab" data-translation="Gesetzentwurf — bill / draft law">Gesetzentwurf</mark> vorgelegt: The Great American Artificial Intelligence Act würde für drei Jahre staatliche Gesetze <mark class="vocab" data-translation="aushebeln — to override / to circumvent">aushebeln</mark>, die sich explizit auf die Entwicklung von KI-Modellen beziehen — Anwendungsgesetze, Bürgerrechte und Datenschutz bleiben dagegen unangetastet. Frontier-Entwickler mit mehr als 500 Millionen Dollar Jahresumsatz müssen öffentliche KI-Rahmenwerke veröffentlichen, inklusive einer Risikoeinschätzung für <mark class="vocab" data-translation="katastrophal — catastrophic">katastrophale</mark> Szenarien. Der Entwurf kommt nur wenige Tage nach Trumps KI-Exekutivorder und wird als ernsthafter Ausgangspunkt für einen bipartisanen Konsens gewertet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Two bipartisan members of Congress have tabled a 269-page draft bill: the Great American Artificial Intelligence Act would preempt state laws specifically regulating AI model development for three years — while leaving laws governing AI use, civil rights and privacy intact. Frontier developers with more than $500 million in annual revenue must publish public AI frameworks including a risk assessment for "catastrophic" scenarios. The draft arrives just days after Trump's executive order and is being treated as a serious foundation for bipartisan consensus.</p>
+        </div>
+      </div>
+      <a class="source" href="https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/" target="_blank" rel="noopener">→ rollcall.com · 04.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.162" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.162 · agents --json waitingFor</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Seit Claude Code 2.1.162 trägt das JSON-Ausgabeformat für laufende Sessions ein neues Feld, das anzeigt, auf was ein Agent gerade <mark class="vocab" data-translation="wartet — is waiting / blocked on">wartet</mark> — typischerweise ein offener Berechtigungshinweis. Wer mehrere Hintergrundagenten parallel <mark class="vocab" data-translation="betreibt — runs / operates">betreibt</mark>, kann damit per Pipe sofort erkennen, welche Session tatsächlich blockiert ist und welche noch läuft. Das lässt sich gut in Monitoring-Skripte einbauen oder in einem einfachen Dashboard zusammenfassen — kein manuelles Durchklicken durch die <mark class="vocab" data-translation="Agentenliste — agent list">Agentenliste</mark> mehr nötig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Since Claude Code 2.1.162, the JSON output for running sessions includes a new field that shows what an agent is waiting on — typically a pending permission prompt. Anyone running multiple background agents in parallel can now pipe the output to immediately spot which session is blocked and which is still progressing. It's a clean fit for monitoring scripts or a simple dashboard — no more clicking through the agent list manually.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents --json</pre>
+<pre class="cmd-examples"><span class="com"># Alle Sessions als JSON · All sessions as JSON</span>
+$ claude agents --json
+
+<span class="com"># Blockierte Sessions herausfiltern · Filter only blocked sessions</span>
+$ claude agents --json | jq '.[] | select(.waitingFor != null)'</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.162" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 03.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">deckeln</div>
+        <div class="vocab-translation">to cap · to put a ceiling on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Admins können die erlaubte Claude-Code-Version nach oben deckeln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Admins can cap the maximum allowed Claude Code version.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Guthaben</div>
+        <div class="vocab-translation">credit balance · credits</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Guthaben läuft monatlich ab und wird nicht auf den nächsten Monat übertragen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The credit balance expires monthly and doesn't carry over to the next month.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aushebeln</div>
+        <div class="vocab-translation">to override · to circumvent</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Bundesgesetz würde staatliche KI-Regeln für drei Jahre aushebeln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new federal law would override state AI rules for three years.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auffrischen</div>
+        <div class="vocab-translation">to refresh · to update</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Dreaming V3 frischt alte Erinnerungen von selbst auf, sobald sie nicht mehr aktuell sind.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Dreaming V3 refreshes old memories on its own once they're no longer current.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nachziehen</div>
+        <div class="vocab-translation">to follow suit · to catch up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Microsoft zieht mit eigenen Frontier-Modellen nach und senkt damit sein OpenAI-Risiko.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Microsoft follows suit with its own frontier models, cutting its OpenAI risk.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf eigenen Beinen stehen</div>
+      <div class="idiom-meaning">to stand on one's own two feet — to be self-sufficient — wörtlich: "to stand on one's own legs"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Microsoft will bei KI endlich auf eigenen Beinen stehen — und präsentiert sieben hauseigene Modelle."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Microsoft wants to finally stand on its own two feet in AI — and debuts seven in-house models."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Sobald das Abo-Guthaben aufgebraucht ist, muss dein Agent auf eigenen Beinen stehen oder Overflow-Billing aktivieren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Once the subscription credit runs out, your agent has to fend for itself — or you enable overflow billing."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to do something unpleasant that must be done — German equivalent: "in den sauren Apfel beißen" (to bite the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If your pipeline hits the Agent SDK hard, you'll have to bite the bullet and estimate your June-15 credit spend."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn deine Pipeline den Agent-SDK stark trifft, musst du in den sauren Apfel beißen und den Guthaben-Verbrauch ab dem 15. Juni abschätzen."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com/anthropics/claude-code, thenewstack.io, iclarified.com, cnbc.com, rollcall.com</p>
+  <p><a href="../index.html">← Alle Editionen · All editions</a></p>
+  <p>Edition #31 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+</footer>
+<script src="../assets/site.js?v=3" defer></script>
+</body>
+</html>
