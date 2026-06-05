@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-05",
+      "edition_number": 31,
+      "headlines": [
+        "Claude Code 2.1.163: /plugin list — Plugins direkt im Terminal verwalten, kein Marketplace nötig",
+        "Anthropic: ab 15. Juni eigener Credit-Pool für den Agent-SDK — Pro-User starten mit 20 $ monatlich",
+        "OpenAI Dreaming V3 live: ChatGPT-Gedächtnis aktualisiert sich nach Gesprächen automatisch",
+        "Microsoft startet 7 eigene KI-Modelle — MAI-Thinking-1 soll GPT-5.5 auf Kosten schlagen",
+        "US-Kongress legt 269-seitigen KI-Entwurf vor — Bundesrecht soll staatliche KI-Gesetze 3 Jahre aushebeln"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-05T16:07:19Z"
+    },
+    {
       "date": "2026-06-03",
       "edition_number": 30,
       "headlines": [
