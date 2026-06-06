@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 06.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 06. Juni 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #32</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude 166 macht Failover zur Routine — und Europa baut sein Chip-Deck neu.</h1>
+    <p class="subtitle">Außerdem: ChatGPT-Gedächtnis jetzt für alle, Alibabas multimodaler GUI-Agent im Lowcost-Modus und OpenAI-Session-Sicherheit.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.166</strong>: fallbackModel — bis zu drei Ersatzmodelle automatisch im Puffer</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>OpenAI Dreaming V3</strong> für Free-User — eine fünffache Effizienzsteigerung machts möglich</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>EU Tech-Souveränitätspaket</strong>: Chips Act 2.0 und Cloud &amp; AI Development Act brechen US-Abhängigkeit</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Qwen3.7-Plus GA</strong>: Alibabas multimodaler GUI-Agent kostet ein Sechstel von Qwen Max</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT Active Sessions</strong>: alle eingeloggten Sitzungen auf einen Blick — einzeln abmelden möglich</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.166" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.166 · fallbackModel</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.166 bringt den lang ersehnten <mark class="vocab" data-translation="Fallback — fallback model, tried automatically when the primary fails">Fallback</mark>-Schalter: In der settings.json oder per Flag lassen sich bis zu drei Ersatzmodelle in Reihenfolge definieren, die Claude automatisch versucht, wenn das Primärmodell <mark class="vocab" data-translation="überlastet — overloaded, under too much load">überlastet</mark> oder nicht erreichbar ist. Wer viel mit Agentic-Pipelines arbeitet, kennt den Frust: ein kurzer Kapazitätsspike, und der gesamte Lauf hängt. Dank Fallback läuft die Arbeit still auf einem Alternativmodell weiter, ohne dass man <mark class="vocab" data-translation="eingreifen — to step in / intervene (separable verb)">eingreift</mark>. Ebenfalls neu: das thinking-Flag und die Env-Var deaktivieren jetzt auch bei Modellen, die standardmäßig denken, zuverlässig den Reasoning-Modus.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.166 ships the long-awaited fallbackModel setting: define up to three backup models in order in settings.json or via the --fallback-model flag, and Claude will silently try them if the primary model is overloaded or unavailable. Anyone running agentic pipelines knows the frustration — a brief capacity spike and the whole run stalls. With fallback configured, work continues on the alternative model without manual intervention. Also new: the thinking flag and env var now reliably disable reasoning mode even on models that think by default.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --fallback-model &lt;model&gt; [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--fallback-model &lt;model&gt;</code></dt>
+          <dd>model to try if the primary is overloaded or returns an unexpected error (repeatable, up to 3)</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Interaktive Session mit Fallback · Interactive session with one fallback</span>
+$ claude --fallback-model claude-sonnet-4-6
+
+<span class="com"># Nicht-interaktiver Lauf mit Fallback · Non-interactive run with fallback</span>
+$ claude -p "Run migration check" --fallback-model claude-sonnet-4-6</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.166" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://dataconomy.com/2026/06/05/chatgpt-memory-dreaming-architecture-upgrade/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Dreaming V3 · Free für alle</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">OpenAI <mark class="vocab" data-translation="ausrollen — to roll out (a feature to users)">rollt</mark> das Dreaming-V3-Gedächtnis ab dem 4. Juni auch für Free-User aus — möglich wurde das durch eine rund fünffache Reduktion des Rechenaufwands. Dreaming lässt ChatGPT Erinnerungen im Hintergrund neu <mark class="vocab" data-translation="zusammenfassen — to synthesize / summarize (separable)">zusammenfassen</mark>: War letzte Woche noch "du planst deine Reise nach Singapur", heißt es danach automatisch "du warst in Singapur". Paid-User bekommen außerdem eine Seite, auf der sie nachvollziehen können, welche Erinnerungen ihre Antworten <mark class="vocab" data-translation="beeinflussen — to influence / shape">beeinflussen</mark>. Der globale Rollout läuft stufenweise; europäische Nutzer dürften die Funktion erst im Juli sehen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">OpenAI is rolling out Dreaming V3 memory to Free-tier ChatGPT users as of June 4 — made possible by a roughly five-fold cut in the compute required. Dreaming lets ChatGPT synthesize memories in the background: last week's "you're planning a Singapore trip" automatically becomes "you went to Singapore" after the fact. Paid users also get a page to review which memories influence their replies. The global rollout is staged; European users likely won't see it until July.</p>
+        </div>
+      </div>
+      <a class="source" href="https://dataconomy.com/2026/06/05/chatgpt-memory-dreaming-architecture-upgrade/" target="_blank" rel="noopener">→ dataconomy.com · 05.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://commission.europa.eu/news-and-media/news/strengthening-europes-tech-sovereignty-2026-06-03_en" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>EU Tech-Souveränitätspaket · Chips Act 2.0 + CADA</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Die EU-Kommission hat am 3. Juni ein Technologie-Souveränitätspaket vorgelegt, das Europa unabhängiger von US-Tech-Konzernen machen soll. Herzstücke sind der Chips Act 2.0 zur Stärkung der europäischen <mark class="vocab" data-translation="Halbleiter — semiconductor">Halbleiter</mark>-Fertigung und der Cloud and AI Development Act, der die EU-Rechenzentrumskapazität bis 2035 verdreifachen soll. Dazu kommt eine Open-Source-Strategie für Cloud, KI und Cybersicherheit — inklusive Investitionen in Startups. Der Hintergrund: Über 80 Prozent der europäischen digitalen Produkte stammen von nicht-europäischen Anbietern, und drei US-Hyperscaler kontrollieren mehr als 70 Prozent des europäischen <mark class="vocab" data-translation="Cloudmarkt — cloud market">Cloudmarkts</mark>. Brüssel nennt das offen eine <mark class="vocab" data-translation="strukturelle Abhängigkeit — structural dependency">strukturelle Abhängigkeit</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">The European Commission unveiled a tech sovereignty package on June 3 aimed at cutting Europe's dependence on US tech giants. Core pieces are Chips Act 2.0 to build EU semiconductor capacity and the Cloud and AI Development Act, which targets tripling EU data center capacity by 2035. An Open Source Strategy for cloud, AI, and cybersecurity rounds it out — with investments in startups. The backdrop: over 80% of European digital products come from non-EU providers, and three US hyperscalers hold more than 70% of the EU cloud market. Brussels calls it a structural dependency.</p>
+        </div>
+      </div>
+      <a class="source" href="https://commission.europa.eu/news-and-media/news/strengthening-europes-tech-sovereignty-2026-06-03_en" target="_blank" rel="noopener">→ commission.europa.eu · 03.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Qwen3.7-Plus GA · Alibabas multimodaler Agent</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Alibabas Qwen-Team hat Qwen3.7-Plus in die <mark class="vocab" data-translation="allgemeine Verfügbarkeit (GA) — general availability, no longer in preview">allgemeine Verfügbarkeit</mark> gehoben — den multimodalen Agenten-Ableger des textbasierten Qwen-3.7-Max-Modells. Der Ableger versteht nicht nur Text, sondern auch Bilder, Videos und GUI-Elemente, kann selbstständig Browser <mark class="vocab" data-translation="steuern — to control / drive">steuern</mark> und Terminal-Aufgaben ausführen. Auf ScreenSpot Pro erreicht er 79 Prozent, auf Terminal-Bench 70,3 — zu etwa einem Sechstel des Preises von Qwen 3.7 Max. Wer günstige Multimodal-Agenten für Web-Automation oder GUI-Testing sucht, sollte Qwen3.7-Plus auf dem <mark class="vocab" data-translation="Zettel — list / radar (informal: auf dem Zettel haben = to keep in mind)">Zettel</mark> haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Alibaba's Qwen team moved Qwen3.7-Plus into general availability — the multimodal agent variant built on the text-focused Qwen 3.7 Max backbone. It understands not just text but images, video, and GUI elements, and can autonomously drive browsers and execute terminal tasks. It scores 79% on ScreenSpot Pro and 70.3 on Terminal-Bench, at roughly one-sixth the per-token cost of Qwen 3.7 Max. If you're building multimodal agents for web automation or GUI testing, Qwen3.7-Plus is worth evaluating.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/" target="_blank" rel="noopener">→ marktechpost.com · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://cipherssecurity.com/openai-advanced-account-security-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Active Sessions · Session-Sicherheit</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat Active Sessions in ChatGPT eingeführt — eine Sicherheitsfunktion, mit der Nutzer alle aktuell <mark class="vocab" data-translation="angemeldeten Sitzungen — active / logged-in sessions">angemeldeten Sitzungen</mark> einsehen und gezielt oder komplett <mark class="vocab" data-translation="abmelden — to sign out / log out (separable verb)">abmelden</mark> können. Unter Settings &gt; Security &gt; Active Sessions sieht man Gerät, App, ungefähren Standort, Anmeldezeit und ob es die aktive Sitzung ist. Damit lassen sich unbekannte oder vergessene Sessions sofort <mark class="vocab" data-translation="beenden — to terminate / end">beenden</mark> — praktisch nach einem Gerätewechsel oder einem Credential-Leak. Achtung: Konten mit organisatorischem SSO-Login sind von der Funktion ausgeschlossen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI has launched Active Sessions in ChatGPT — a security feature letting users review all currently logged-in sessions and sign out of individual ones or all at once. Under Settings &gt; Security &gt; Active Sessions you see device, app, approximate location, sign-in time, and whether it's the current session. That lets you instantly terminate unfamiliar or forgotten sessions — handy after a device change or a credential leak. One caveat: accounts using organizational SSO sign-in are excluded from the feature.</p>
+        </div>
+      </div>
+      <a class="source" href="https://cipherssecurity.com/openai-advanced-account-security-chatgpt/" target="_blank" rel="noopener">→ cipherssecurity.com · 02.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.166" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.166 · --thinking disabled</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit Claude Code 2.1.166 funktioniert ein bisher <mark class="vocab" data-translation="unzuverlässig — unreliable / inconsistent">unzuverlässiges</mark> Toggle endlich sauber: Der Flag und die Env-Var schalten den Reasoning-Modus jetzt auch bei Modellen wie claude-opus-4-8 zuverlässig ab, die standardmäßig denken. In automatisierten Pipelines, wo man die Antwortlatenz minimieren oder schlicht Token-Kosten kontrollieren will, war das fehlende Toggle ein echter Schmerzpunkt. Jetzt kann man einen ganzen Claude-Code-Lauf mit einer einzigen Env-Var in den schnellen Instruct-Modus <mark class="vocab" data-translation="schalten — to switch / flip">schalten</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.166 fixes a previously unreliable toggle: the flag and env var now cleanly disable reasoning mode even on models that think by default, like claude-opus-4-8. For automated pipelines where you want to minimize response latency or control token spend, the broken toggle was a real pain. Now you can flip an entire Claude Code run into fast instruct mode with a single env var.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --thinking disabled [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--thinking disabled</code></dt>
+          <dd>turn off extended reasoning for this session, even on models that think by default</dd>
+          <dt><code>MAX_THINKING_TOKENS=0</code></dt>
+          <dd>env-var equivalent — set in CI/CD or .env to disable thinking across all runs</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Reasoning für eine Session deaktivieren · Disable reasoning for one session</span>
+$ claude --thinking disabled
+
+<span class="com"># Per Env-Var in CI-Pipelines · Via env var in CI pipelines</span>
+$ MAX_THINKING_TOKENS=0 claude -p "Run smoke tests and report"</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.166" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Fallback</div>
+        <div class="vocab-translation">the fallback · the backup option</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude wechselt automatisch auf den Fallback, wenn das Primärmodell nicht antwortet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude automatically switches to the fallback when the primary model stops responding.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überlastet</div>
+        <div class="vocab-translation">overloaded · under too much load</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn das Primärmodell überlastet ist, springt der Fallback automatisch ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">When the primary model is overloaded, the fallback kicks in automatically.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Halbleiter</div>
+        <div class="vocab-translation">the semiconductor · the chip</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Europa produziert derzeit nur zehn Prozent der weltweiten Halbleiter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Europe currently produces only ten percent of the world's semiconductors.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">stufenweise</div>
+        <div class="vocab-translation">gradually · in stages</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Feature wird stufenweise für alle Nutzer ausgerollt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new feature is being rolled out gradually to all users.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abmelden</div>
+        <div class="vocab-translation">to sign out · to log out</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst dich mit einem Klick von allen aktiven Sitzungen abmelden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can sign out of all active sessions with a single click.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Handtuch schmeißen</div>
+      <div class="idiom-meaning">to throw in the towel — wörtlich: "das Wischtuch werfen" — used when someone gives up after trying hard</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach dem dritten Kapazitätsausfall in Reihe hätte ich fast das Handtuch geschmissen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After the third capacity failure in a row, I almost threw in the towel."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Gut, dass Claude automatisch auf den Fallback umschwenkt — sonst schmeißt man irgendwann das Handtuch."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Good thing Claude switches to the fallback automatically — otherwise you'd eventually throw in the towel."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hit the ground running</div>
+      <div class="idiom-meaning">to start a task immediately and energetically, without a warm-up — German equivalent: "sofort loslegen" / "mit voller Fahrt einsteigen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With fallbackModel configured, your pipeline hits the ground running even on overloaded days."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit konfiguriertem Fallback läuft die Pipeline sofort los — auch wenn das Primärmodell überlastet ist."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"She hit the ground running on day one — the whole codebase documented by lunch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Sie ist sofort losgelegt — bis zum Mittagessen war die gesamte Codebase dokumentiert."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · dataconomy.com · commission.europa.eu · marktechpost.com · cipherssecurity.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #32 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
