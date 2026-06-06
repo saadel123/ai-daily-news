@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-06",
+      "edition_number": 32,
+      "headlines": [
+        "Claude Code 2.1.166: fallbackModel — bis zu drei Ersatzmodelle automatisch im Puffer",
+        "OpenAI Dreaming V3 für Free-User — eine fünffache Effizienzsteigerung machts möglich",
+        "EU Tech-Souveränitätspaket: Chips Act 2.0 und Cloud & AI Development Act brechen US-Abhängigkeit",
+        "Qwen3.7-Plus GA: Alibabas multimodaler GUI-Agent kostet ein Sechstel von Qwen Max",
+        "ChatGPT Active Sessions: alle eingeloggten Sitzungen auf einen Blick — einzeln abmelden möglich"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-06T16:00:00Z"
+    },
+    {
       "date": "2026-06-05",
       "edition_number": 31,
       "headlines": [
