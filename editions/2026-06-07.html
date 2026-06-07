@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 07.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 07. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #33</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude schreibt sich selbst — und Glasswing wächst: die Woche, in der KI die Grenzen verschob.</h1>
+    <p class="subtitle">Dazu: Codex für jede Rolle, ChatGPT lernt abzuriegeln und Gemma 4 passt in ein Gigabyte.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Project Glasswing</strong>: Anthropic weitet Mythos auf 150 Orgs in 15+ Ländern aus — NATO und Samsung dabei</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Claude schrieb im Mai 80 % des Produktions-Codes — Engineers mergen 8× mehr</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Codex</strong>: 6 rollenspezifische Plugins, Codex Sites und 5 Mio. wöchentliche Nutzer</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>ChatGPT Lockdown Mode</strong>: neuer Sicherheitsschalter gegen Prompt-Injection-Exfiltration live</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Google Gemma 4 QAT</strong>: 1-GB-On-Device-Modell mit 70+ Sprachen per Quantization-Aware Training</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Project Glasswing · 150 Orgs · 15+ Länder</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Project Glasswing auf 150 neue Organisationen in über 15 Ländern <mark class="vocab" data-translation="ausweiten — to expand / scale up">ausgeweitet</mark> — darunter NATO, ENISA, Samsung, SK Hynix und SK Telecom sowie <mark class="vocab" data-translation="der Betreiber — operator / provider">Betreiber</mark> kritischer Infrastruktur in den Bereichen Strom, Wasser, Gesundheit und Kommunikation. Mythos läuft jetzt in diesen Sektoren, nach mehrwöchiger Zusammenarbeit mit Regierungen und dem UK AI Security Institute. Die ersten <mark class="vocab" data-translation="die Kohorte — cohort (first group of participants)">Kohorten</mark> haben bereits über 10.000 kritische Sicherheitslücken identifiziert — und Anthropic will den Kreis weiter ziehen: Als nächstes kommen mehr Infrastruktur-Betreiber und Maintainer kritischer Open-Source-Software.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has expanded Project Glasswing to 150 new organizations across more than 15 countries — including NATO, ENISA, Samsung, SK Hynix, SK Telecom, and operators in power, water, healthcare, and communications. Mythos is now running in these sectors following weeks of collaboration with governments and the UK AI Security Institute. Early cohorts have already identified over 10,000 critical vulnerabilities — and Anthropic plans to widen the circle: critical infrastructure providers and open-source software maintainers are next in line.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">→ anthropic.com · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic: Claude schreibt 80 % des eigenen Produktions-Codes</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat enthüllt, dass im Mai 2026 über 80 Prozent des in die eigene Produktion <mark class="vocab" data-translation="zusammenführen — to merge (code into a codebase)">zusammengeführten</mark> Codes von Claude geschrieben wurde — hochgeklettert von einem niedrigen einstelligen Prozentsatz, als Claude Code im Februar 2025 startete. Typische Engineers mergen täglich rund acht Mal so viel Code wie 2024, und bei komplexen Open-End-Aufgaben klettert Claudes Erfolgsrate auf 76 Prozent — ein Plus von 50 Punkten in sechs Monaten. Anthropic nutzt die Zahlen auch für ein breiteres Argument: Wenn KI sich selbst baut, braucht die Welt einen verlässlichen Plan zur <mark class="vocab" data-translation="die Notbremse — the emergency brake">Notbremse</mark> — bevor <mark class="vocab" data-translation="rekursive Selbstverbesserung — recursive self-improvement">rekursive Selbstverbesserung</mark> von der Theorie in die Praxis wechselt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic revealed that in May 2026 more than 80% of code merged into its own production codebase was authored by Claude — up from low single digits when Claude Code launched in February 2025. Typical engineers now merge about eight times as much code per day as in 2024, and on complex open-ended tasks Claude's success rate has climbed to 76% — a 50-point jump in six months. Anthropic is also making a broader argument: if AI builds itself, the world needs a verifiable emergency-brake plan before recursive self-improvement moves from theory to practice.</p>
+        </div>
+      </div>
+      <a class="source" href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" target="_blank" rel="noopener">→ venturebeat.com · 04.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/codex-for-every-role-tool-workflow/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Codex · Für jede Rolle · Sites Preview</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat sechs <mark class="vocab" data-translation="rollenspezifisch — role-specific (tailored to a job type)">rollenspezifische</mark> Codex-Plugins geshippt — für Datenanalyse, Creative Production, Sales, Product Design, Public Equity Investing und Investment Banking — insgesamt mit 62 Apps und 110 Skills ausgestattet. Dazu kommt Codex Sites im Preview: ein Prompt-to-App-Builder, der interne Web-Apps direkt aus einem Prompt generiert und <mark class="vocab" data-translation="hosten — to host / serve (deploy a web app)">hostet</mark>. Über fünf Millionen Menschen nutzen Codex mittlerweile wöchentlich — und Non-Developers wachsen dreimal schneller als Developer-User: Analysten, Marketer und Designer entdecken Codex als ihr Werkzeug.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI shipped six role-specific Codex plugins covering data analytics, creative production, sales, product design, public equity investing, and investment banking — 62 apps and 110 skills combined. Alongside it comes Codex Sites in preview: a prompt-to-app builder that generates and hosts internal web apps directly from a prompt. Over 5 million people now use Codex weekly — and non-developers are growing three times faster than developer users: analysts, marketers, and designers are discovering Codex as their tool of choice.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/codex-for-every-role-tool-workflow/" target="_blank" rel="noopener">→ openai.com · 02.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Lockdown Mode · Prompt Injection Defense</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat den Lockdown Mode für ChatGPT eingeführt — ein Sicherheitsschalter, der beim Aktivieren Web-Browsing, Agent Mode, Deep Research, File Downloads, Canvas-Networking und Live-Connectors deaktiviert. Das Ziel: ausgehende Netzwerkanfragen bei Prompt-Injection-Angriffen <mark class="vocab" data-translation="unterbinden — to cut off / prevent">unterbinden</mark>, bevor sensible Daten <mark class="vocab" data-translation="abfließen — to leak out / flow away">abfließen</mark> können. Der Modus rollt für alle Account-Typen aus — Free, Go, Plus, Pro und Business. Wichtig: Lockdown Mode verhindert nicht das Einschleusen von Prompt Injections — er <mark class="vocab" data-translation="absichern — to secure / lock down">sichert</mark> nur den Exfiltrations-Pfad ab.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI launched Lockdown Mode for ChatGPT — a security toggle that disables live web browsing, agent mode, deep research, file downloads, canvas networking, and live connectors when enabled. The goal: cut off outbound network requests before sensitive data can leak through a prompt-injection attack. The mode rolls out to all account types — Free, Go, Plus, Pro, and Business. Important caveat: Lockdown Mode does not stop prompt injections from appearing in content — it only secures the exfiltration path.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 06.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://aitoolly.com/ai-news/article/2026-06-06-google-deepmind-launches-gemma-4-qat-models-to-enhance-ai-efficiency-on-mobile-and-laptop-devices" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google Gemma 4 QAT · 1 GB · On-Device · 70+ Sprachen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google DeepMind hat neue Gemma-4-Modell-Checkpoints mit Quantization-Aware Training veröffentlicht — ein Ansatz, der Quantisierung direkt ins Training einbaut statt sie nachträglich anzuwenden. Das Ergebnis: der Speicherbedarf schrumpft deutlich, ohne die Qualität zu gefährden. Highlight ist ein neuartiges mobiles Quantisierungsformat, das den Gemma-4-E2B-<mark class="vocab" data-translation="der Fußabdruck — footprint (memory or compute size)">Fußabdruck</mark> auf nur noch ein Gigabyte <mark class="vocab" data-translation="komprimieren — to compress / quantize down">komprimiert</mark> hat. Die Modelle unterstützen über 70 Sprachen und lassen sich direkt auf Smartphones und Laptops ausführen — kein Cloud-Call nötig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google DeepMind released new Gemma 4 model checkpoints trained with Quantization-Aware Training — an approach that bakes quantization into the training process rather than applying it post-hoc. The result: dramatically reduced memory requirements with no quality loss. The headline feature is a novel mobile quantization format that compresses the Gemma 4 E2B footprint to just one gigabyte. The models support 70+ languages and run directly on smartphones and laptops — no cloud call needed.</p>
+        </div>
+      </div>
+      <a class="source" href="https://aitoolly.com/ai-news/article/2026-06-06-google-deepmind-launches-gemma-4-qat-models-to-enhance-ai-efficiency-on-mobile-and-laptop-devices" target="_blank" rel="noopener">→ aitoolly.com · 06.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.162" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.162 · agents JSON · Autocomplete fills</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.162 bringt gleich zwei praktische Quality-of-Life-Änderungen. Erstens: Wenn du im Slash-Command-Autocomplete einen Eintrag anklickst, wird er jetzt ins Eingabefeld eingetippt statt sofort ausgeführt — kein <mark class="vocab" data-translation="versehentlich — accidental / inadvertent">versehentliches</mark> Triggern mehr, du drückst erst Enter, wenn du wirklich bereit bist. Zweitens: die JSON-Ausgabe von claude agents enthält jetzt ein neues Feld, das zeigt, worauf eine wartende Session gerade blockiert ist — zum Beispiel ein Permission-Prompt. Für Skripte, die mehrere Background-Agenten überwachen, ist das ein echter Gewinn: du siehst auf einen Blick, welcher Agent auf Freigabe wartet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.162 ships two quality-of-life improvements. First: clicking a slash command in the autocomplete menu now fills it into your input instead of running it immediately — no more accidental triggers; press Enter when you are actually ready. Second: the JSON output of claude agents now includes a new field showing what a waiting session is blocked on — for example, a permission prompt. For scripts that monitor multiple background agents this is a genuine win: see at a glance which agent is waiting for approval.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents --json</pre>
+        <dl class="cmd-flags">
+          <dt><code>--json</code></dt>
+          <dd>output all agent sessions as JSON, including the new waitingFor field</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Welcher Agent wartet auf Freigabe? · Which agent is waiting for approval?</span>
+$ claude agents --json | jq '.[] | select(.waitingFor != null) | {name, waitingFor}'</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.162" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 03.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausweiten</div>
+        <div class="vocab-translation">to expand · to scale up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic weitet den Zugang zu Mythos schrittweise auf mehr Länder aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic is gradually scaling up Mythos access to more countries.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Notbremse</div>
+        <div class="vocab-translation">the emergency brake</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Bevor KI sich selbst verbessert, braucht die Welt eine verlässliche Notbremse.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Before AI improves itself, the world needs a reliable emergency brake.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">unterbinden</div>
+        <div class="vocab-translation">to cut off · to prevent</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Lockdown Mode unterbindet ausgehende Verbindungen, bevor Daten abfließen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Lockdown Mode cuts off outbound connections before data can leak.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Fußabdruck</div>
+        <div class="vocab-translation">footprint (memory or compute size)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">QAT hat den Fußabdruck des Modells auf ein einziges Gigabyte gedrückt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">QAT compressed the model's footprint down to a single gigabyte.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zusammenführen</div>
+        <div class="vocab-translation">to merge · to combine</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Engineers führen dank KI täglich achtmal mehr Code zusammen als früher.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Thanks to AI, engineers merge eight times more code per day than before.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Notbremse ziehen</div>
+      <div class="idiom-meaning">to hit the emergency brake / to stop before disaster — wörtlich: "to pull the emergency brake"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic sagt, die Welt muss die Notbremse ziehen können, bevor KI sich selbst verbessert."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic says the world must be able to hit the emergency brake before AI improves itself."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir mussten die Notbremse ziehen, nachdem der automatisierte Deploy die Datenbank erwischt hatte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We had to hit the emergency brake after the automated deploy took out the database."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to lock something down</div>
+      <div class="idiom-meaning">to restrict all access / make something fully secure — German equivalent: "etwas abriegeln" or "etwas absichern"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Lock down the demo environment before the audit — no live data, no outbound calls."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Riegle die Demo-Umgebung ab, bevor das Audit beginnt — keine Live-Daten, keine Verbindungen nach außen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"ChatGPT locked down its network stack so data cannot leak through prompt injection."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"ChatGPT hat seinen Netzwerk-Stack abgeriegelt, damit keine Daten über Prompt Injection abfließen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · venturebeat.com · openai.com · aitoolly.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #33 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
