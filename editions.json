@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-07",
+      "edition_number": 33,
+      "headlines": [
+        "Project Glasswing auf 150 Orgs in 15+ Ländern ausgeweitet — NATO, ENISA und Samsung mit an Bord",
+        "Anthropic: Claude schrieb im Mai 80 % des Produktions-Codes — Engineers mergen 8× mehr",
+        "OpenAI: Codex für jede Rolle — 6 Plugins, Codex Sites und 5 Mio. wöchentliche Nutzer",
+        "ChatGPT Lockdown Mode blockiert Agent Mode und Downloads — Schutz gegen Prompt Injection",
+        "Google Gemma 4 QAT: 1-GB-Modell für On-Device-KI mit 70+ Sprachen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-07T16:00:00Z"
+    },
+    {
       "date": "2026-06-06",
       "edition_number": 32,
       "headlines": [
