@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-09",
+      "edition_number": 34,
+      "headlines": [
+        "Claude Code 2.1.169: --safe-mode startet ohne CLAUDE.md, Plugins und Hooks — perfekt zum Debuggen",
+        "WWDC 2026: Apples LanguageModel-Protokoll lässt iOS-27-Apps zwischen Claude, Gemini und On-Device wählen",
+        "Anthropic: Sonnet 4 und Opus 4 gehen am 15. Juni offline — sechs Tage zur Migration",
+        "ChatGPT Aria: OpenAIs größter Umbau ever — Agenten, Codex und Stripe-Checkout in einer Oberfläche",
+        "CodeMender: Google DeepMinds KI-Sicherheitsagent patcht OSS-Lücken eigenständig — 72 Fixes in 6 Monaten"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-09T16:05:56Z"
+    },
+    {
       "date": "2026-06-07",
       "edition_number": 33,
       "headlines": [
