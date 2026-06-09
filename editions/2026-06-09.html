@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 09.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 9. Juni 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #34</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>WWDC, Aria und ein harter Stichtag — die KI-Welt dreht heute auf Hochtouren.</h1>
+    <p class="subtitle">Claude bekommt iOS-27-Support, ChatGPT mutiert zur Super-App und du hast noch sechs Tage für die Sonnet-4-Migration.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.169</strong>: neuer Safe-Mode startet ohne CLAUDE.md, Plugins und Hooks — perfekt zum Debuggen</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>WWDC 2026</strong>: Apples LanguageModel-Protokoll lässt iOS-27-Apps zwischen Claude, Gemini und On-Device wählen</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Sonnet 4 und Opus 4 gehen am 15. Juni offline — sechs Tage zur Migration</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>ChatGPT Aria</strong>: OpenAIs größter Umbau ever — Agenten, Codex und Stripe-Checkout in einer Oberfläche</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>CodeMender</strong>: Google DeepMinds KI-Sicherheitsagent patcht OSS-Lücken eigenständig — 72 Fixes in 6 Monaten</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.169" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.169 · --safe-mode &amp; /cd</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.169 einen lang <mark class="vocab" data-translation="herbeigewünscht — long-awaited / wished for">herbeigewünschten</mark> Debug-Modus: ein neuer Flag startet die App ohne jede Anpassung — CLAUDE.md, Plugins, Skills, Hooks und MCP-Server bleiben alle deaktiviert. So lässt sich schnell <mark class="vocab" data-translation="einkreisen — to narrow down / zero in on">einkreisen</mark>, ob ein Problem an der Config liegt oder an Claude selbst. Neu ist außerdem ein Slash-Command, der eine laufende Session <mark class="vocab" data-translation="nahtlos — seamlessly">nahtlos</mark> in ein anderes Verzeichnis wechselt, ohne den Prompt-Cache zu brechen. Wer eingebaute Slash-Commands vor dem Modell <mark class="vocab" data-translation="ausblenden — to hide / fade out">ausblenden</mark> will, hat jetzt auch dafür einen eigenen Schalter.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.169 ships a long-awaited debug mode: a new flag starts the app with all customizations disabled — CLAUDE.md, plugins, skills, hooks, and MCP servers stay off. This makes it fast to zero in on whether a problem comes from your config or from Claude itself. There's also a new slash command that moves a running session to a different working directory without breaking the prompt cache. And if you want to hide the built-in slash commands from the model entirely, there's now a dedicated toggle for that too.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --safe-mode [path]
+/cd &lt;new-directory&gt;</pre>
+        <dl class="cmd-flags">
+          <dt><code>--safe-mode</code></dt>
+          <dd>start with all CLAUDE.md, plugins, skills, hooks, and MCP servers disabled</dd>
+          <dt><code>CLAUDE_CODE_SAFE_MODE=1</code></dt>
+          <dd>env-var equivalent of --safe-mode, useful in CI or wrapper scripts</dd>
+          <dt><code>/cd</code></dt>
+          <dd>move the running session to a new working directory without breaking the prompt cache</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Troubleshooting ohne Config · Debug with all customizations off</span>
+$ claude --safe-mode ~/myproject
+
+<span class="com"># Gleicher Effekt per Umgebungsvariable · Same via env var (for CI)</span>
+$ CLAUDE_CODE_SAFE_MODE=1 claude
+
+<span class="com"># Verzeichnis wechseln, Cache bleibt · Change dir, keep prompt cache</span>
+/cd ~/projects/other-repo</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.169" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 08.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>WWDC 2026 · LanguageModel-Protokoll</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Apple hat auf der WWDC 2026 das neue LanguageModel-Protokoll vorgestellt — ein öffentliches Swift-Interface, über das iOS-27-Apps zwischen On-Device-Modellen, Claude und Gemini wechseln können, ohne eine Zeile Session-Code <mark class="vocab" data-translation="anfassen — to touch / modify">anzufassen</mark>. Anthropic und Google haben dazu offiziell Swift Packages <mark class="vocab" data-translation="veröffentlicht — published / released">veröffentlicht</mark>. Xcode 27 nutzt den gleichen Mechanismus intern: eine lokale Neural Engine für Swift-Vorschläge, für schwerere Aufgaben routet es <mark class="vocab" data-translation="wahlweise — optionally / at your discretion">wahlweise</mark> zu Claude, Gemini oder OpenAI. Developer Betas sind seit dem 8. Juni im <mark class="vocab" data-translation="Umlauf — circulation / available">Umlauf</mark> — WWDC läuft noch bis Freitag.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Apple introduced the new LanguageModel protocol at WWDC 2026 — a public Swift interface that lets iOS 27 apps switch between on-device models, Claude, and Gemini without touching a single line of session code. Both Anthropic and Google have already published official Swift packages. Xcode 27 uses the same mechanism internally: a local Neural Engine for real-time Swift suggestions, with heavier analysis routed to Claude, Gemini, or OpenAI as configured. Developer betas have been live since June 8 — WWDC runs through Friday.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" target="_blank" rel="noopener">→ apple.com/newsroom · 09.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Sonnet 4 &amp; Opus 4 Deprecation 15. Juni</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Am 15. Juni werden claude-sonnet-4-20250514 und claude-opus-4-20250514 auf der Claude API <mark class="vocab" data-translation="abgeklemmt — shut off / disconnected (informal)">abgeklemmt</mark> — Calls schlagen danach sofort fehl, ohne Fallback auf ein neueres Modell. Du hast noch sechs Tage, um gepinnte Model-IDs in deinen Builds <mark class="vocab" data-translation="aufzuspüren — to track down / hunt out">aufzuspüren</mark>. Die Migration ist ein Einzeiler: einfach den Model-String auf claude-sonnet-4-6 bzw. claude-opus-4-8 <mark class="vocab" data-translation="umstellen — to switch over / migrate">umstellen</mark>. Prompt-Styles, Tool-Use-Konventionen und JSON-Response-Formate bleiben <mark class="vocab" data-translation="stabil — stable / consistent">stabil</mark> über alle 4.x-Generationen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">On June 15, claude-sonnet-4-20250514 and claude-opus-4-20250514 will be cut off on the Claude API — calls after that date fail immediately with no automatic fallback to a newer model. You have six days left to hunt down any pinned model IDs in your builds. The migration is a one-liner: swap the model string to claude-sonnet-4-6 or claude-opus-4-8. Prompting styles, tool-use conventions, and JSON response formats are stable across all 4.x generations.</p>
+        </div>
+      </div>
+      <a class="source" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener">→ platform.claude.com · 05.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟢 OpenAI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://decrypt.co/370467/openai-chagpt-chatbot-superapp" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Aria · Super-App-Launch</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat heute den bislang größten Umbau von ChatGPT gestartet — intern unter dem Codenamen Aria. Aus dem Chatbot wird eine Plattform: KI-Agenten, Codex, Bildgenerierung und Drittanbieter-Apps wie Canva und Booking.com sind direkt in die Hauptoberfläche <mark class="vocab" data-translation="eingebettet — embedded / integrated">eingebettet</mark>. Das kommerzielle Kernstück ist das zusammen mit Stripe entwickelte Agentic Commerce Protocol: es gibt einem Agenten ein Einmal-Token, damit er auf deiner Karte bezahlen kann — ohne Checkout-Formular. Alle 900 Millionen Wochennutzer bekommen das Update; Expedia, Figma und Spotify sollen in Kürze <mark class="vocab" data-translation="nachziehen — to follow suit">nachziehen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI kicked off the biggest ChatGPT overhaul to date today — internally known as Aria. The chatbot becomes a platform: AI agents, Codex, image generation, and third-party apps like Canva and Booking.com are embedded directly in the main interface. The commercial centerpiece is the Agentic Commerce Protocol, co-developed with Stripe: it hands an agent a single-use token so it can pay on your card — no checkout form needed. All 900 million weekly users get the update; Expedia, Figma, and Spotify are set to follow suit shortly.</p>
+        </div>
+      </div>
+      <a class="source" href="https://decrypt.co/370467/openai-chagpt-chatbot-superapp" target="_blank" rel="noopener">→ decrypt.co · 09.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🔵 Google & DeepMind</h2>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://deepmind.google/blog/introducing-codemender-an-ai-agent-for-code-security/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google DeepMind CodeMender</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google DeepMind hat CodeMender vorgestellt — einen KI-Sicherheitsagenten, der Schwachstellen im Code nicht nur findet, sondern sie auch <mark class="vocab" data-translation="eigenständig — autonomously / independently">eigenständig</mark> patcht. Das System kombiniert statische und dynamische Analyse, Fuzzing und SMT-Solver, um Root Causes wirklich zu <mark class="vocab" data-translation="durchleuchten — to illuminate / examine thoroughly">durchleuchten</mark>, bevor es Fixes vorschlägt. In den letzten sechs Monaten hat CodeMender bereits 72 Patches in Open-Source-Projekten mit Millionen Zeilen Code <mark class="vocab" data-translation="eingereicht — submitted / filed">eingereicht</mark>. Alle Patches werden vor dem Einreichen von Entwicklern <mark class="vocab" data-translation="abgesegnet — approved / signed off on">abgesegnet</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google DeepMind introduced CodeMender — an AI security agent that not only finds vulnerabilities in code but autonomously patches them too. The system combines static and dynamic analysis, fuzzing, and SMT solvers to really dig into root causes before proposing fixes. Over the past six months, CodeMender has already submitted 72 patches to open-source projects spanning millions of lines of code. All patches go through developer review before being submitted.</p>
+        </div>
+      </div>
+      <a class="source" href="https://deepmind.google/blog/introducing-codemender-an-ai-agent-for-code-security/" target="_blank" rel="noopener">→ deepmind.google · 09.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">⚡ Dev Hack</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://stripe.com/newsroom/news/stripe-openai-instant-checkout" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Stripe × OpenAI · Agentic Commerce Protocol</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#ah-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="ah-de">Stripe und OpenAI haben das Agentic Commerce Protocol (ACP) als offenen Standard <mark class="vocab" data-translation="veröffentlicht — published / released">veröffentlicht</mark> — ein Protokoll, das einem KI-Agenten über die Stripe-API ein Einmal-Payment-Token ausstellt, damit er auf Benutzeranfrage echte Käufe tätigen kann. Das erste Live-Beispiel ist Instant Checkout in ChatGPT: der Agent bucht Flüge, Hotels und Kurse direkt, ohne Checkout-Formular. ACP ist offen <mark class="vocab" data-translation="spezifiziert — specified / defined">spezifiziert</mark> und soll auch in anderen MCP-kompatiblen Agenten laufen — nicht nur in ChatGPT. Für Entwickler: die Stripe-Docs zeigen, wie man ACP in drei API-Calls in einen bestehenden Agenten integriert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#ah-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="ah-en">Stripe and OpenAI published the Agentic Commerce Protocol (ACP) as an open standard — a protocol that issues a single-use payment token via the Stripe API so an AI agent can make real purchases on the user's behalf. The first live example is Instant Checkout in ChatGPT: the agent books flights, hotels, and courses directly with no checkout form. ACP is openly specified and is designed to work with other MCP-compatible agents too — not just ChatGPT. For developers: the Stripe docs walk through integrating ACP in three API calls.</p>
+        </div>
+      </div>
+      <a class="source" href="https://stripe.com/newsroom/news/stripe-openai-instant-checkout" target="_blank" rel="noopener">→ stripe.com/newsroom · 09.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📖 Vokabeln · Vocabulary</h2>
+
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">einkreisen</div>
+        <div class="vocab-translation">to narrow down · to zero in on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit dem Safe-Mode kannst du einkreisen, ob das Problem an der Config liegt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With safe mode you can zero in on whether the problem comes from your config.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nahtlos</div>
+        <div class="vocab-translation">seamlessly · without a seam</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der neue Slash-Command wechselt das Verzeichnis nahtlos, ohne den Cache zu brechen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new slash command switches directories seamlessly without breaking the cache.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nachziehen</div>
+        <div class="vocab-translation">to follow suit · to catch up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Expedia und Figma sollen beim Superapp-Launch in Kürze nachziehen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Expedia and Figma are set to follow suit with the superapp rollout shortly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomously · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">CodeMender patcht Schwachstellen eigenständig, ohne dass du jede Zeile reviewen musst.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">CodeMender patches vulnerabilities autonomously, without you reviewing every line.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">absegnen</div>
+        <div class="vocab-translation">to approve · to sign off on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alle Patches werden von Entwicklern abgesegnet, bevor CodeMender sie einreicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">All patches are signed off by developers before CodeMender submits them.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Stecker ziehen</div>
+      <div class="idiom-meaning">to pull the plug — wörtlich: "to pull the socket/outlet"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic zieht am 15. Juni den Stecker für Sonnet 4 und Opus 4 — Zeit, den Model-String zu wechseln."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic is pulling the plug on Sonnet 4 and Opus 4 on June 15 — time to swap your model string."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bevor du den Stecker ziehst, check noch mal alle gepinnten Model-IDs in deinem Build."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before pulling the plug, double-check all the pinned model IDs in your build."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to ship</div>
+      <div class="idiom-meaning">to release / send out — German equivalent: "rausschicken · releasen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We need to ship the migration before the June 15 deadline."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir müssen die Migration noch vor dem Stichtag am 15. Juni rausschicken."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The team shipped the protocol fix just before the cutover."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Team hat den Protocol-Fix kurz vor dem Cutover rausgeschickt."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · apple.com · platform.claude.com · decrypt.co · deepmind.google · stripe.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #34 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
