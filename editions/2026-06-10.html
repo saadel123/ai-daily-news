@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 10.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 10. Juni 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #35</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Fable 5 ist draußen: Anthropics mächtigstes Modell steht ab heute jedem offen.</h1>
+    <p class="subtitle">Außerdem: GPT-Rosalind bekommt ein Codex-Plugin für 50+ Science-Tools, xAI verwandelt Standbilder in 720p-Clips, und Gemini 3.5 Pro steht kurz vor dem Start.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Fable 5</strong>: Anthropics erste öffentliche Mythos-Klasse — 80,3 % auf SWE-Bench Pro</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>GPT-Rosalind Update</strong>: Codex-Plugin für 50+ Science-Tools und 31 % weniger Tokens</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟡</span><span><strong>xAI Grok Imagine Video 1.5</strong>: Bild zu 720p-Video mit nativer Tonspur — Platz eins im Arena-Leaderboard</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Gemini 3.5 Pro</strong> nähert sich dem Launch: 2-Mio.-Token-Fenster und Deep-Think-Modus</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>Hack:</strong> Claude /cd wechselt das Arbeitsverzeichnis ohne Prompt-Cache-Unterbrechung</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Fable 5 · Erste öffentliche Mythos-Klasse</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Claude Fable 5 veröffentlicht — das erste öffentlich zugängliche Modell der Mythos-Klasse, die intern noch über der Opus-Linie <mark class="vocab" data-translation="angesiedelt — positioned / situated above">angesiedelt</mark> ist. Auf SWE-Bench Pro kommt Fable 5 auf 80,3 Prozent; der nächstbeste Wettbewerber liegt elf Punkte zurück. Weniger als fünf Prozent aller Sessions lösen die Sicherheitsvorkehrung aus, die bei heiklen Anfragen still auf Opus 4.8 <mark class="vocab" data-translation="zurückfällt — falls back (separable verb)">zurückfällt</mark>. Das Modell steht über die Claude API, Amazon Bedrock, Vertex AI und Microsoft Foundry bereit; auf Pro- und Max-Plänen läuft es bis zum 22. Juni <mark class="vocab" data-translation="kostenlos — free of charge">kostenlos</mark>, danach kosten Eingabe zehn Dollar und Ausgabe fünfzig Dollar pro Million Tokens.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has released Claude Fable 5, the first publicly available Mythos-class model — a tier that sits above the Opus line internally. On SWE-Bench Pro it scores 80.3%, eleven points ahead of the next competitor. Under 5% of sessions trigger the safety guardrail that silently falls back to Opus 4.8 for sensitive queries. The model is available via the Claude API, Amazon Bedrock, Vertex AI, and Microsoft Foundry; on Pro and Max plans it runs free until June 22, after which pricing is $10 per million input tokens and $50 per million output tokens.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">→ anthropic.com · 09.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI GPT-Rosalind · Life Sciences Update</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">OpenAI hat GPT-Rosalind für die Biowissenschaften <mark class="vocab" data-translation="aufgestockt — upgraded / beefed up">aufgestockt</mark>: Das Update kombiniert GPT-5.5-Agentenfähigkeiten mit tieferem Know-how in Medizinischer Chemie und Genomik. Auf MedChemBench erreicht Rosalind 27,5 Prozent gegenüber 25,1 Prozent von GPT-5.5 — und das bei 31 Prozent weniger <mark class="vocab" data-translation="Tokenverbrauch — token usage / token consumption">Tokenverbrauch</mark> in quantitativen Biologie-Analysen. Dazu kommt ein kostenloses Codex-Plugin, das Zugang zu über 50 wissenschaftlichen Tools und Datenquellen <mark class="vocab" data-translation="bündelt — bundles / consolidates">bündelt</mark>, von Genomik über Proteinstruktur bis hin zu klinischer Evidenz. Das Modell steht in Research Preview für geeignete Organisationen weltweit zur Verfügung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">OpenAI has upgraded GPT-Rosalind for the life sciences: the update combines GPT-5.5's agentic coding capabilities with deeper expertise in medicinal chemistry and genomics. On MedChemBench it scores 27.5% against GPT-5.5's 25.1% — while using 31% fewer tokens on quantitative biology analyses. There's also a free Codex plugin that bundles access to 50+ scientific tools and data sources, from genomics and protein structure to clinical evidence. The model is available in research preview to eligible organizations globally.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/" target="_blank" rel="noopener">→ openai.com · 04.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://x.ai/news/grok-imagine-1-5" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI Grok Imagine Video 1.5 · Platz 1 im Leaderboard</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">xAI hat Grok Imagine Video 1.5 in die API-Preview <mark class="vocab" data-translation="geschickt — sent out / launched">geschickt</mark> — ein Modell, das aus einem Standbild und einem Textprompt einen animierten Clip macht. Mit 720p und 24 Frames pro Sekunde plus synchronisiertem Originalton kletterte es sofort auf Platz eins des Image-to-Video-Arena-Leaderboards, 52 Elo-Punkte vor Version 1.0. Das Modell unterstützt außerdem Multi-Shot-Sequenzen, mit denen du mehrere Einstellungen zu einer <mark class="vocab" data-translation="zusammenhängend — cohesive / continuous">zusammenhängenden</mark> Szene <mark class="vocab" data-translation="verketten — to chain together">verketten</mark> kannst. Per API kostet eine Sekunde Video bei 480p acht Cent, bei 720p vierzehn Cent.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">xAI launched Grok Imagine Video 1.5 into API preview — a model that takes a single still image and a text prompt and animates it into a video clip. At 720p and 24 fps with synchronized native audio, it immediately topped the Image-to-Video Arena leaderboard, 52 Elo points clear of version 1.0. The model also supports multi-shot sequencing, letting you chain several shots into one cohesive scene. Via API, pricing is $0.08 per second at 480p and $0.14 per second at 720p.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news/grok-imagine-1-5" target="_blank" rel="noopener">→ x.ai · 04.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini 3.5 Pro · 2M-Token-Kontext · Deep Think</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google nähert sich dem Launch von Gemini 3.5 Pro — und die Details lassen <mark class="vocab" data-translation="aufhorchen — to prick up one's ears / to take notice">aufhorchen</mark>. Das Modell soll mit einem 2-Millionen-Token-Kontext und einem neuen Deep-Think-Modus kommen, der sich gezielt für komplexe Aufgaben aktivieren lässt. In internen Benchmarks schlägt es Gemini 3.5 Flash bereits in allen wichtigen Kategorien. Aktuell ist Pro noch für ausgewählte Vertex-Kunden in begrenzter Vorschau; der allgemeine Launch ist für Juni <mark class="vocab" data-translation="anvisiert — targeted / aimed for">anvisiert</mark> — er könnte also buchstäblich jeden Moment eintreffen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google is closing in on the launch of Gemini 3.5 Pro — and the details are turning heads. The model is expected to ship with a 2-million-token context window and a new Deep Think reasoning mode that can be toggled on for complex tasks. In internal benchmarks it already beats Gemini 3.5 Flash across all major categories. Currently Pro is in limited preview for select Vertex customers; general availability is targeted for June — meaning it could literally ship any day now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm" target="_blank" rel="noopener">→ techtimes.com · 06.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.169" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.169 · /cd · disableBundledSkills</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.169 hat im Schatten der --safe-mode-Schlagzeile zwei praktische Extras versteckt. Der Slash-Command /cd wechselt das Arbeitsverzeichnis einer laufenden Session, ohne den Prompt-Cache zu <mark class="vocab" data-translation="zerreißen — to tear apart / disrupt">zerreißen</mark> — praktisch, wenn du mitten im Gespräch von einem Repo zum nächsten schwenkst und den Kontext behalten willst. Außerdem gibt es eine neue Einstellung, die alle eingebauten Slash-Commands, Workflows und Skills aus der Modellansicht <mark class="vocab" data-translation="ausblendet — hides / masks (separable)">ausblendet</mark>, wenn du eine <mark class="vocab" data-translation="schlankere — leaner / more streamlined">schlankere</mark> Umgebung bevorzugst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.169 hid two handy extras in the shadow of its --safe-mode headline. The /cd slash command changes the working directory of a running session without tearing the prompt cache — handy when you pivot from one repo to another mid-conversation and want to keep your context intact. There's also a new setting that hides all built-in slash commands, workflows, and skills from the model's view if you prefer a leaner environment.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/cd [path]</pre>
+<pre class="cmd-examples"><span class="com"># Arbeitsverzeichnis wechseln ohne Cache-Verlust · Change directory without losing cache</span>
+$ /cd ~/projects/new-repo
+
+<span class="com"># Zurück ins Home-Verzeichnis · Go back to home directory</span>
+$ /cd ~</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.169" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 08.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">angesiedelt</div>
+        <div class="vocab-translation">positioned · situated</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Fable 5 ist eine Stufe oberhalb der Opus-Linie angesiedelt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Fable 5 is positioned one tier above the Opus line.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufstocken</div>
+        <div class="vocab-translation">to upgrade · to beef up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI hat GPT-Rosalind um neue Genomik-Fähigkeiten aufgestockt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI upgraded GPT-Rosalind with new genomics capabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Spitzenreiter</div>
+        <div class="vocab-translation">the frontrunner · the top dog</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Grok Imagine Video 1.5 ist der neue Spitzenreiter im Image-to-Video-Leaderboard.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Grok Imagine Video 1.5 is the new frontrunner in the image-to-video leaderboard.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufhorchen</div>
+        <div class="vocab-translation">to prick up one's ears · to take notice</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini 3.5 Pro lässt die Dev-Community aufhorchen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini 3.5 Pro is making the dev community take notice.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zerreißen</div>
+        <div class="vocab-translation">to tear apart · to disrupt</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">/cd wechselt den Ordner, ohne den Prompt-Cache zu zerreißen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">/cd changes the folder without tearing apart the prompt cache.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">Neuland betreten</div>
+      <div class="idiom-meaning">to enter uncharted territory · to do something for the very first time — wörtlich: "to enter new land"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit Fable 5 betritt Anthropic Neuland: Ein Mythos-Modell für jedermann — das gab es noch nie."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Fable 5, Anthropic enters uncharted territory: a Mythos-class model for everyone — that's never been done before."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Immer wenn du ein neues Framework ausprobierst, betrittst du Neuland — und das ist gut so."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Every time you try a new framework, you're entering uncharted territory — and that's a good thing."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to be ahead of the curve</div>
+      <div class="idiom-meaning">to be more advanced than the current trend — German equivalent: "die Nase vorn haben" (literally: to have your nose in front)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Fable 5, Anthropic is clearly ahead of the curve on the safety-capability tradeoff."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beim Thema Safety vs. Capability hat Anthropic mit Fable 5 klar die Nase vorn."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Teams that integrated AI early are consistently ahead of the curve."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Teams, die KI früh integriert haben, haben konsequent die Nase vorn."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · openai.com · x.ai · techtimes.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #35 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
