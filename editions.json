@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-10",
+      "edition_number": 35,
+      "headlines": [
+        "Claude Fable 5: Anthropics erste öffentliche Mythos-Klasse — 80,3 % auf SWE-Bench Pro",
+        "GPT-Rosalind Update: Codex-Plugin für 50+ Science-Tools und 31 % weniger Tokens",
+        "xAI Grok Imagine Video 1.5: Bild zu 720p-Video mit nativer Tonspur — Platz eins im Arena-Leaderboard",
+        "Gemini 3.5 Pro nähert sich dem Launch: 2-Mio.-Token-Fenster und Deep-Think-Modus",
+        "Hack: Claude /cd wechselt das Arbeitsverzeichnis ohne Prompt-Cache-Unterbrechung"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-10T16:00:00Z"
+    },
+    {
       "date": "2026-06-09",
       "edition_number": 34,
       "headlines": [
