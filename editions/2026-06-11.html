@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 11.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 11. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #36</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Rekursive Agents, zwei IPOs und sieben neue Microsoft-Modelle.</h1>
+    <p class="subtitle">Dario Amodei warnt vor Jobverlust durch KI, Claude-Agents können Sub-Agents spawnen, und ChatGPT lernt endlich nicht mehr vergessen.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Dario warnt vor systemischem Jobverlust — 200 Mio. $ für Wirtschaftsforschung</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Code 2.1.172</strong>: Sub-Agents spawnen jetzt Sub-Agents — rekursiv, 5 Ebenen tief</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI</strong> reicht vertrauliche S-1 ein — Börsendebüt bis Ende 2026, Bewertung 852 Mrd. $</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>ChatGPT Dreaming V3</strong>: Gedächtnis-Upgrade — Faktenabruf steigt auf 82,8 %, 2× Kapazität</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Microsoft MAI</strong>: 7 neue Modelle auf einmal — von Reasoning bis Voice</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://fortune.com/2026/06/11/anthropic-dario-amodei-ai-jobs-tax-displacement-fund/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · Dario Amodei · KI-Jobs & 200 Mio. $</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic-CEO Dario Amodei hat einen langen Essay veröffentlicht, in dem er schreibt, dass der Jobabbau durch KI womöglich eine <mark class="vocab" data-translation="systemimmanente Eigenschaft — an intrinsic / built-in property of the system">systemimmanente Eigenschaft</mark> der Technologie sei — und nicht bloß ein temporärer Übergangsschmerz. Er schlägt Lohnversicherung für Jobwechsler und im Extremfall ein Grundeinkommen vor, das über Steuern auf KI-Firmen oder höhere Kapitalertragssteuern <mark class="vocab" data-translation="gegenfinanziert — offset / counter-financed (by other sources)">gegenfinanziert</mark> wird. Passend dazu kündigt Anthropic einen Economic Futures Research Fund mit 200 Mio. $ an, der politische Pilotprojekte und Feldversuche finanzieren soll — plus 150 Mio. $ für ein <mark class="vocab" data-translation="Stipendienprogramm — fellowship / scholarship programme">Stipendienprogramm</mark> für Berufseinsteiger in den USA. Ein <mark class="vocab" data-translation="ungewohnt — unusually / uncommonly (adj/adv)">ungewohnt</mark> selbstkritischer Schritt für ein KI-Lab, das damit offen einräumt, womit es rechnet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic CEO Dario Amodei published a lengthy essay arguing that job displacement from AI may be an intrinsic property of the technology — not just a temporary adjustment phase. He proposes wage insurance for workers who take lower-paying jobs and, at the extreme end, universal basic income financed by taxes on AI companies or higher capital gains taxes. Alongside the essay, Anthropic is launching a $200M Economic Futures Research Fund to back policy pilots and field trials, plus a $150M fellowship program for early-career professionals in the US. An unusually self-critical move from an AI lab openly accounting for the disruption it expects to cause.</p>
+        </div>
+      </div>
+      <a class="source" href="https://fortune.com/2026/06/11/anthropic-dario-amodei-ai-jobs-tax-displacement-fund/" target="_blank" rel="noopener">→ fortune.com · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.172" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.172 · Sub-Agent-Rekursion</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Claude Code 2.1.172 bringt eine der interessantesten Neuerungen seit Langem: Sub-Agents können jetzt selbst Sub-Agents spawnen — <mark class="vocab" data-translation="rekursiv — recursive / self-referential">rekursiv</mark> bis zu fünf Ebenen tief. Das eröffnet echten Fan-out für komplexe Aufgaben: ein Orchestrator-Agent kann spezialisierte Teams hochziehen, die ihrerseits Workers starten und <mark class="vocab" data-translation="Teilaufgaben — sub-tasks / partial tasks">Teilaufgaben</mark> weiterleiten. Außerdem liest der Bedrock-Connector die AWS-Region jetzt direkt aus den lokalen Config-Dateien — kein manuelles Setzen von AWS_REGION mehr nötig. Kleines, aber feines Extra: der Plugin-Marketplace hat jetzt eine Suchleiste, damit du bei 200+ Plugins nicht mehr endlos <mark class="vocab" data-translation="scrollst — scroll (2nd person of 'scrollen', colloquial German tech verb)">scrollst</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Claude Code 2.1.172 lands one of the most interesting changes in a while: sub-agents can now spawn their own sub-agents, recursively up to five levels deep. That unlocks real fan-out for complex jobs — an orchestrator agent can spin up specialized teams that themselves launch workers and pass sub-tasks down the chain. Bedrock also now reads the AWS region from local config files, matching AWS SDK precedence — no more manually setting AWS_REGION. Small but welcome bonus: the plugin marketplace now has a search bar, so you don't have to scroll endlessly through 200+ plugins.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.172" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 10.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · Vertrauliches IPO-Filing · 852 Mrd. $</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat am 9. Juni eine <mark class="vocab" data-translation="vertraulich — confidential / not for public release">vertrauliche</mark> S-1-Anmeldung bei der SEC eingereicht — ein wichtiger Schritt Richtung Börsengang. Das Unternehmen <mark class="vocab" data-translation="peilt an — aims for / has its sights on (separable verb)">peilt</mark> einen Debüt bis Ende 2026 an, ließ sich aber ein Hintertürchen offen: "Wir haben noch keinen Zeitplan <mark class="vocab" data-translation="festgelegt — fixed / set in stone (past participle)">festgelegt</mark> — es könnte noch eine Weile dauern." OpenAI wurde zuletzt mit 852 Mrd. $ bewertet und generiert monatlich 2 Mrd. $ Umsatz. Die Meldung kommt eine Woche nach Anthropics eigenem Filing — 2026 entwickelt sich zum großen KI-<mark class="vocab" data-translation="Börsengang — IPO / stock market listing">Börsengang</mark>-Jahr.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI submitted a confidential S-1 registration statement to the SEC on June 9, taking a meaningful step toward a public listing. The company is eyeing a debut by end of 2026, though it left itself wiggle room: "We haven't decided on timing yet — it may be a while." OpenAI's last valuation stood at $852B with $2B in monthly revenue. The filing comes one week after Anthropic's own confidential registration — 2026 is shaping up to be the year of the AI IPO.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html" target="_blank" rel="noopener">→ cnbc.com · 08.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://dataconomy.com/2026/06/05/chatgpt-memory-dreaming-architecture-upgrade/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · ChatGPT Dreaming V3 · Gedächtnis-Upgrade</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat Anfang Juni die Dreaming-V3-Architektur für das ChatGPT-Gedächtnis <mark class="vocab" data-translation="ausgerollt — rolled out / deployed to users (separable verb: ausrollen)">ausgerollt</mark> — die Zahlen sprechen für sich: Faktenabruf springt von 67,9 auf 82,8 Prozent, <mark class="vocab" data-translation="Präferenzstabilität — preference adherence / how reliably the chat remembers your preferences">Präferenzstabilität</mark> klettert von 55 auf 71 Prozent. Plus- und Pro-User bekommen doppelt so viel Speicherkapazität, während OpenAI den Rechenaufwand gleichzeitig um den Faktor 5 gesenkt hat. Das System hält Erinnerungen automatisch <mark class="vocab" data-translation="aktuell — up to date / current">aktuell</mark>: aus "Du fliegst im Juli nach Singapur" wird nach der Reise automatisch "Du warst im Juli 2026 in Singapur". Dazu gibt's eine neue <mark class="vocab" data-translation="Übersichtsseite — overview / summary page">Übersichtsseite</mark>, auf der du Einträge korrigieren, ergänzen oder streichen kannst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI rolled out its Dreaming V3 memory architecture for ChatGPT in early June, and the numbers are striking: factual recall jumps from 67.9% to 82.8%, preference adherence climbs from 55% to 71%. Plus and Pro users get 2× the memory capacity while compute costs drop by a factor of 5. The system now keeps memories current over time — "You're flying to Singapore in July" automatically updates to "You went to Singapore in July 2026" after the trip. There's also a new memory summary page where you can review, correct, and delete any entry.</p>
+        </div>
+      </div>
+      <a class="source" href="https://dataconomy.com/2026/06/05/chatgpt-memory-dreaming-architecture-upgrade/" target="_blank" rel="noopener">→ dataconomy.com · 05.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Microsoft MAI · 7 neue Modelle</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Microsoft hat am 8. Juni sieben neue MAI-Modelle <mark class="vocab" data-translation="vorgestellt — introduced / unveiled (past participle of vorstellen)">vorgestellt</mark> und damit klar signalisiert, dass man im KI-Rennen vorne mitspielen will. Das <mark class="vocab" data-translation="Flaggschiff — flagship / lead product">Flaggschiff</mark> MAI-Thinking-1 ist ein mittelgroßes Reasoning-Modell mit 35 Mrd. aktiven Parametern und Mixture-of-Experts-Architektur, das laut Microsoft bei Software-Engineering-Benchmarks mit den besten Modellen <mark class="vocab" data-translation="gleichzieht — draws level with / keeps pace with (separable verb)">gleichzieht</mark> und Sonnet 4.6 in Blind-Evaluierungen schlägt. MAI-Code-1-Flash ist auf GitHub Copilot und VS Code zugeschnitten, MAI-Image-2.5 beherrscht Text-to-Image und Bildbearbeitung, MAI-Transcribe-1.5 reklamiert den Transkriptions-Thron — und die Liste geht weiter. Sieben Modelle in einer <mark class="vocab" data-translation="Ansage — bold statement / declaration (colloquial)">Ansage</mark>: Microsoft meint es ernst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Microsoft unveiled seven new MAI models on June 8, signaling that it intends to compete at the frontier rather than just follow the leaders. The flagship MAI-Thinking-1 is a medium-sized reasoning model with 35B active parameters and a Mixture of Experts architecture that reportedly matches top models on software engineering benchmarks and beats Sonnet 4.6 in blind side-by-side evaluations. MAI-Code-1-Flash is tailor-made for GitHub Copilot and VS Code; MAI-Image-2.5 handles text-to-image and editing; MAI-Transcribe-1.5 claims the top transcription spot — and the lineup goes further. Seven models in one announcement: Microsoft means business.</p>
+        </div>
+      </div>
+      <a class="source" href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/" target="_blank" rel="noopener">→ microsoft.ai · 08.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.163" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.163 · /plugin list · Version-Enforcement</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.163 bringt zwei praktische Neuerungen für Teams mit Enterprise-Setup. Erstens gibt es jetzt einen Slash-Command, mit dem du auf einen Blick siehst, welche Plugins in deiner Session aktiv oder deaktiviert sind — <mark class="vocab" data-translation="unerlässlich — indispensable / essential">unerlässlich</mark>, wenn du mehrere Plugins verwaltest und den Überblick behalten willst. Zweitens können Admins mit neuen Managed Settings eine Mindest- und Höchstversion für Claude Code <mark class="vocab" data-translation="vorschreiben — to mandate / to prescribe (separable verb)">vorschreiben</mark>: wer mit einer Version außerhalb des erlaubten Bereichs startet, wird direkt auf die zugelassene Version hingewiesen. Das ist vor allem in CI-Pipelines und <mark class="vocab" data-translation="Unternehmensumgebungen — enterprise / corporate environments (plural)">Unternehmensumgebungen</mark> Gold wert, wo Versionsdisziplin zählt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.163 adds two practical features for teams running enterprise setups. First, there's a new slash command that shows at a glance which plugins are active or disabled in your session — essential when you're juggling multiple plugins and need to stay on top of what's loaded. Second, admins can now use new managed settings to mandate a minimum and maximum Claude Code version: anyone starting outside the allowed range gets pointed straight to an approved version. Especially valuable in CI pipelines and corporate environments where version discipline matters.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/plugin list [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--enabled</code></dt>
+          <dd>show only currently enabled plugins</dd>
+          <dt><code>--disabled</code></dt>
+          <dd>show only currently disabled plugins</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle installierten Plugins anzeigen · List all installed plugins</span>
+$ /plugin list
+
+<span class="com"># Nur aktive Plugins · Active plugins only</span>
+$ /plugin list --enabled</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.163" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 04.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">abrücken von</div>
+        <div class="vocab-translation">to back away from · to distance oneself</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic rückt nicht von seinen Nutzungsbedingungen ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic isn't backing away from its usage policies.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Börsengang</div>
+        <div class="vocab-translation">IPO · stock market listing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Börsengang von OpenAI könnte noch dieses Jahr stattfinden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI's IPO could still happen before the end of this year.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">rekursiv</div>
+        <div class="vocab-translation">recursive · self-referential</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Eine Funktion, die sich selbst aufruft, nennt man rekursiv.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A function that calls itself is called recursive.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy to users</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Feature wird schrittweise an alle Nutzer ausgerollt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The feature is being rolled out to all users gradually.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verdrängen</div>
+        <div class="vocab-translation">to displace · to push out</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Werden KI-Tools bestimmte Berufsbilder wirklich verdrängen?</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Will AI tools actually displace certain job profiles?</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the sack" — etwas enthüllen, was vorher geheim gehalten wurde</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI ließ die Katze aus dem Sack — der Börsengang kommt noch 2026."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI let the cat out of the bag — the IPO is happening in 2026."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich lass jetzt mal die Katze aus dem Sack: das Feature ist seit drei Monaten fertig."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Let me let the cat out of the bag: the feature has been done for three months."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to move the goalposts</div>
+      <div class="idiom-meaning">to change requirements mid-way — German equivalent: "die Anforderungen verschieben" / "die Ziele nachjustieren"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"They keep moving the goalposts on the API design — we can't ship like this."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die verschieben ständig die Anforderungen ans API-Design — so können wir nicht shippen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Moving the goalposts mid-sprint is a morale killer."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mitten im Sprint die Anforderungen zu ändern tötet die Motivation."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: fortune.com · github.com · cnbc.com · dataconomy.com · microsoft.ai</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #36 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
