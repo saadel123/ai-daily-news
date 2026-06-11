@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-11",
+      "edition_number": 36,
+      "headlines": [
+        "Anthropic: Dario warnt vor systemischem Jobverlust — 200 Mio. $ für Wirtschaftsforschung",
+        "Claude Code 2.1.172: Sub-Agents spawnen jetzt Sub-Agents — rekursiv, 5 Ebenen tief",
+        "OpenAI reicht vertrauliche S-1 ein — Börsendebüt bis Ende 2026, Bewertung 852 Mrd. $",
+        "ChatGPT Dreaming V3: Gedächtnis-Upgrade — Faktenabruf steigt auf 82,8 %, 2× Kapazität",
+        "Microsoft MAI: 7 neue Modelle auf einmal — von Reasoning bis Voice"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-11T16:04:23Z"
+    },
+    {
       "date": "2026-06-10",
       "edition_number": 35,
       "headlines": [
