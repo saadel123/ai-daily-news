@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-12",
+      "edition_number": 37,
+      "headlines": [
+        "Anthropic dreht bei: Fable-5-Beschränkungen für KI-Forscher werden transparent statt versteckt",
+        "Claude Corps: 1.000 Fellows bei Nonprofits — 150 Mio. $ Programm gegen Job-Angst",
+        "OpenAI kauft Ona: Kieler Cloud-Startup bringt persistente Agent-Sandboxes in Codex",
+        "Grok V9-Medium in Tesla und auf X — xAIs 1,5-Billionen-Parameter-Modell geht in Produktion",
+        "Mistral verhandelt auf 20 Mrd. € — Wert hat sich in wenigen Monaten fast verdoppelt"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-12T16:00:05Z"
+    },
+    {
       "date": "2026-06-11",
       "edition_number": 36,
       "headlines": [
