@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 12.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 12. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #37</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic macht eine Kehrtwende: Fable-5-Beschränkungen werden sichtbar — und Claude Corps startet.</h1>
+    <p class="subtitle">Außerdem: OpenAI kauft die Kieler Cloud-Firma Ona, Grok V9-Medium läuft in Tesla-Autos, und Mistral verhandelt auf 20-Mrd.-€-Basis.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong>: Fable-5-Beschränkungen für KI-Forscher werden transparent statt versteckt</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Corps</strong>: 1.000 Fellows bei Nonprofits — 150 Mio. $ Programm gegen Job-Angst</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI</strong> kauft Ona: Kieler Cloud-Startup bringt persistente Agent-Sandboxes in Codex</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Grok V9-Medium</strong> in Tesla und auf X — xAIs 1,5-Billionen-Parameter-Modell geht in Produktion</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔴</span><span><strong>Mistral</strong> verhandelt auf 20 Mrd. € — Wert hat sich in wenigen Monaten fast verdoppelt</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://cryptobriefing.com/anthropic-revises-ai-restriction-policy/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Fable-5-Policy-Wende</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Als Anthropic Fable 5 am 9. Juni veröffentlichte, steckte tief im 319-seitigen System-Card eine unschöne Überraschung: Das Modell <mark class="vocab" data-translation="verschleierte — concealed / obscured silently">verschleierte</mark> bei bestimmten Frontier-KI-Forschungsaufgaben seine wahren Fähigkeiten — wer an Pretraining-Pipelines, Distributed-Training-Infrastruktur oder ML-Accelerator-Design arbeitete, bekam still schlechtere Outputs, ohne je darüber informiert zu werden. Nach einem lauten <mark class="vocab" data-translation="Aufschrei — uproar / public outcry">Aufschrei</mark> in der Forschungs-Community <mark class="vocab" data-translation="ruderte zurück — walked back / backpedaled (lit. rowed backward)">ruderte Anthropic zurück</mark> und kündigte an, diese Einschränkungen künftig <mark class="vocab" data-translation="sichtbar — visible / transparent to the user">sichtbar</mark> zu machen. Ein wichtiger Schritt, denn Vertrauen in ein Modell braucht Transparenz — nicht versteckte Regler im Hintergrund.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">When Anthropic released Fable 5 on June 9, a paragraph buried deep in the 319-page system card contained an uncomfortable surprise: the model was silently degrading its responses for certain frontier AI research tasks — anyone working on pretraining pipelines, distributed training infrastructure, or ML accelerator design was getting worse outputs without being told. After a loud backlash from the research community, Anthropic walked back the policy and announced it would make these restrictions visible going forward. An important step — trust in a model requires transparency, not hidden knobs in the background.</p>
+        </div>
+      </div>
+      <a class="source" href="https://cryptobriefing.com/anthropic-revises-ai-restriction-policy/" target="_blank" rel="noopener">→ cryptobriefing.com · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="http://www.techtimes.com/articles/318249/20260611/claude-corps-fellowship-pays-85k-anthropic-admits-its-ai-will-displace-workers.htm" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Claude Corps · 150 Mio. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic legt 150 Mio. $ auf den Tisch und startet Claude Corps — ein Fellowship-Programm, das rund 1.000 <mark class="vocab" data-translation="Berufseinsteiger — early-career professionals / recent graduates">Berufseinsteiger</mark> mit etwa 85.000 $ Jahresgehalt für je ein Jahr bei gemeinnützigen Organisationen <mark class="vocab" data-translation="einbettet — embeds / places on-site">einbettet</mark>, damit diese KI-Werkzeuge besser nutzen können. Die Fellows werden intensiv in der Arbeit mit Claude geschult und sollen genau die Jobs <mark class="vocab" data-translation="stemmen — to shoulder / to tackle (an effort)">stemmen</mark>, die KI ermöglicht — nicht nur die, die sie bedroht. Es ist Anthropics direkter Schritt vom Warnen zum <mark class="vocab" data-translation="Handeln — acting / taking concrete action">Handeln</mark>: Statt nur vor Jobverlusten zu warnen, baut das Unternehmen ein Programm, das Berufseinsteiger und Nonprofits gleichzeitig voranbringt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic is putting $150M on the table to launch Claude Corps — a fellowship program that embeds around 1,000 early-career professionals at nonprofits for one year at roughly $85K, helping those organizations use AI tools more effectively. Fellows are trained extensively in working with Claude and are meant to take on exactly the jobs that AI enables — not just the ones it threatens. It's Anthropic's direct move from warning to doing: instead of only raising alarms about job losses, the company is building a program that advances early-career professionals and nonprofits at the same time.</p>
+        </div>
+      </div>
+      <a class="source" href="http://www.techtimes.com/articles/318249/20260611/claude-corps-fellowship-pays-85k-anthropic-admits-its-ai-will-displace-workers.htm" target="_blank" rel="noopener">→ techtimes.com · 11.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/openai-to-acquire-ona/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI × Ona · Codex-Übernahme</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI <mark class="vocab" data-translation="übernimmt — acquires / takes over (company purchase)">übernimmt</mark> Ona, ein Kieler Cloud-Startup, das sichere, <mark class="vocab" data-translation="reproduzierbare — reproducible / consistent across runs">reproduzierbare</mark> Execution-Environments für Entwickler baut — bereits über zwei Millionen Nutzer setzen Ona-Sandboxes ein. Mit der Übernahme wandert die Infrastruktur direkt in Codex: Agenten können künftig Aufgaben ausführen, die Stunden oder Tage dauern, ohne dass der Nutzer am Gerät bleiben muss. Das Modell von Ona — der Kunde kontrolliert die Execution-Umgebung, OpenAI liefert die Intelligenz — gibt Unternehmen mehr Kontrolle über ihre Daten und Sicherheitsgrenzen. Mit über fünf Millionen wöchentlichen Codex-Nutzern, <mark class="vocab" data-translation="viermal so viele — four times as many">viermal so vielen</mark> wie noch Anfang des Jahres, kommt die Akquisition zum richtigen Zeitpunkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is acquiring Ona, a Kiel-based cloud startup that builds secure, reproducible execution environments for developers — over two million developers already run Ona sandboxes. With the acquisition, the infrastructure moves directly into Codex: agents will be able to run tasks that take hours or days without requiring the user to stay at their device. Ona's model — customer-controlled execution environment, OpenAI provides the intelligence — gives organizations greater control over their data and security boundaries. With more than five million weekly Codex users, four times as many as earlier this year, the acquisition comes at exactly the right moment.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-to-acquire-ona/" target="_blank" rel="noopener">→ openai.com · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/318165/20260610/grok-v9-rolls-tesla-cars-x-why-musks-distribution-flywheel-worries-ai-rivals.htm" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI · Grok V9-Medium · Tesla &amp; X</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI rollt sein bisher größtes Modell in Teslas Fahrzeugflotte und auf X <mark class="vocab" data-translation="aus — (here) out / into production (ausrollen = to roll out)">aus</mark>: Grok V9-Medium hat 1,5 Billionen Parameter — <mark class="vocab" data-translation="dreifach — triple / three times larger">dreifach</mark> so groß wie das bisherige Produktionssystem und explizit auf echten Cursor-Entwickler-Workflows trainiert. Das Modell soll bei komplexen Coding-Aufgaben Claude Code und ChatGPT Codex direkt <mark class="vocab" data-translation="angreifen — to challenge / go after a competitor">angreifen</mark>. Wenn 2,5 Milliarden vernetzter Tesla-Autos und Hunderte Millionen X-Nutzer täglich Grok nutzen, hat xAI einen <mark class="vocab" data-translation="gewaltigen Vertriebsvorteil — massive distribution advantage">gewaltigen Vertriebsvorteil</mark> gegenüber OpenAI und Anthropic — Musks Wette: nicht das beste Modell, sondern das am weitesten verteilte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI is rolling out its largest model yet into Tesla's vehicle fleet and across X: Grok V9-Medium at 1.5 trillion parameters — three times the size of the current production system, trained explicitly on real-world Cursor developer workflows. The model is designed to shine on complex coding tasks and directly challenge Claude Code and ChatGPT Codex. With 2.5 billion connected Tesla cars and hundreds of millions of X users running Grok daily, xAI has a massive distribution advantage over OpenAI and Anthropic — Musk's bet: not necessarily the best model, but the most widely distributed one.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/318165/20260610/grok-v9-rolls-tesla-cars-x-why-musks-distribution-flywheel-worries-ai-rivals.htm" target="_blank" rel="noopener">→ techtimes.com · 10.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://thenextweb.com/news/mistral-funding-talks-20-billion-valuation" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral · 20 Mrd. € Bewertung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Mistral befindet sich laut Bloomberg in <mark class="vocab" data-translation="Verhandlungen — negotiations / talks (formal)">Verhandlungen</mark> über eine neue Finanzierungsrunde von rund 3 Mrd. €, die das Unternehmen bei einer Bewertung von 20 Mrd. € einschätzen würde — fast doppelt so viel wie die 11,7 Mrd. € vom September. Damit wäre Mistral eines der am schnellsten wachsenden privaten Tech-Unternehmen Europas. Frisches Kapital soll in neue Chips, Infrastruktur und internationale Expansion fließen; gleichzeitig <mark class="vocab" data-translation="stockt auf — tops up / increases (aufstocken)">stockt</mark> Mistral sein Portfolio mit neuen Partnerschaften bei Airbus und BMW sowie einer neuen Inference-Anlage in Les Ulis <mark class="vocab" data-translation="auf — up (here part of aufstocken = to top up)">auf</mark>, die im dritten Quartal öffnen soll. Europas KI-Champion macht <mark class="vocab" data-translation="deutlich — clear / unmistakably clear">deutlich</mark>, dass er im globalen Wettbewerb mitspielen will — und immer noch wächst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Mistral is in talks for a new €3 billion funding round at a €20 billion valuation, according to Bloomberg — nearly double the €11.7 billion it commanded in September. That would make Mistral one of the fastest-growing private tech companies in Europe. Fresh capital is earmarked for new chips, infrastructure, and international expansion; meanwhile Mistral is reinforcing its portfolio with new partnerships at Airbus and BMW and a new inference facility in Les Ulis scheduled to open in Q3. Europe's AI champion is making clear it intends to compete globally — and it is still growing fast.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thenextweb.com/news/mistral-funding-talks-20-billion-valuation" target="_blank" rel="noopener">→ thenextweb.com · 12.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.175" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.174–175 · /usage Attribution</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.174 bringt für VSCode-Nutzer eine echte Verbesserung im Account-&amp;-Usage-Dialog: Die Ansicht <mark class="vocab" data-translation="schlüsselt auf — breaks down / itemizes (aufschlüsseln)">schlüsselt</mark> jetzt auf, woher deine Token-Kosten wirklich kommen — Cache-Misses, Long-Context-Nutzung, Subagenten und, besonders praktisch, einzelne Skills, Agenten, Plugins und MCP-Server — wahlweise für die letzten 24 Stunden oder 7 Tage. Version 2.1.175 liefert dazu den neuen Managed-Setting-Schlüssel enforceAvailableModels: Einmal aktiviert, sorgt er dafür, dass der Default-Slot immer innerhalb der Org-<mark class="vocab" data-translation="Allowlist — allowlist (list of permitted models in managed settings)">Allowlist</mark> bleibt und User-Settings die Modellauswahl nicht mehr <mark class="vocab" data-translation="ausweiten — widen / expand beyond the approved set">ausweiten</mark> können. Für Teams, die Modell-Konsistenz <mark class="vocab" data-translation="durchsetzen — enforce / push through consistently">durchsetzen</mark> müssen, ist das eine willkommene Möglichkeit, den Wildwuchs an Session-Konfigurationen zu zähmen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.174 brings a real improvement for VSCode users inside the Account &amp; Usage dialog: the view now breaks down exactly where your token costs are coming from — cache misses, long-context usage, subagents, and most usefully individual skills, agents, plugins, and MCP servers — with a toggle for the last 24 hours or 7 days. Version 2.1.175 adds a new managed settings key, enforceAvailableModels: once enabled, it ensures the Default model slot always stays within the org allowlist and user settings can no longer widen the permitted model set. For teams that need to enforce model consistency, this is a welcome tool for taming the sprawl of per-session configurations.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.175" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">zurückrudern</div>
+        <div class="vocab-translation">to walk back · to backpedal</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nach dem Leak musste das Team seine Aussage zurückrudern.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">After the leak, the team had to walk back its statement.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschleiern</div>
+        <div class="vocab-translation">to conceal · to obscure</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die stille Beschränkung verschleierte das echte Modellverhalten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The silent restriction concealed the model's true behavior.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einbetten</div>
+        <div class="vocab-translation">to embed · to integrate on-site</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Fellows sind für ein Jahr fest bei den Nonprofits eingebettet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The fellows are embedded at the nonprofits for a full year.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufstocken</div>
+        <div class="vocab-translation">to top up · to increase (a budget)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mistral stockt das Budget mit einer Milliarden-Runde deutlich auf.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Mistral is significantly topping up its budget with a billion-euro round.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">wegweisend</div>
+        <div class="vocab-translation">groundbreaking · landmark</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Transparenz-Entscheidung war ein wegweisender Schritt für die ganze Branche.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The transparency decision was a groundbreaking step for the whole industry.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">Farbe bekennen</div>
+      <div class="idiom-meaning">to show your true colors · to take a clear public stance — wörtlich: "to declare a color" (as in naming your suit in a card game)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Als die Policy publik wurde, musste Anthropic endlich Farbe bekennen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Once the policy went public, Anthropic finally had to show its true colors."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"In Sachen Transparenz hat das Startup jetzt Farbe bekannt — keine versteckten Einschränkungen mehr."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"On transparency, the startup has now taken a clear stance — no more hidden restrictions."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to walk back</div>
+      <div class="idiom-meaning">to publicly reverse a statement or policy — German equivalent: "zurückrudern" (literally: to row backward)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic walked back its Fable 5 covert restriction policy after the research community pushed back."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic ruderte mit seiner heimlichen Fable-5-Einschränkung zurück, nachdem die Forschungs-Community Druck gemacht hatte."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cryptobriefing.com · techtimes.com · openai.com · thenextweb.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #37 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
