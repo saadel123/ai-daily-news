@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-13",
+      "edition_number": 38,
+      "headlines": [
+        "TCS × Anthropic: 50.000 Mitarbeitende und dediziertes Business-Unit für regulierte Branchen",
+        "Ramp AI Index: Anthropic erstmals auf Platz eins — 41 % der US-Firmen setzen auf Claude",
+        "xAI Grok Build Marketplace: MongoDB, Vercel und Sentry direkt im Terminal installieren",
+        "OpenAI auf Oracle Cloud: GPT und Codex per Universal Credits — kein neuer Procurement-Kanal",
+        "Perplexity Deep Research läuft jetzt als Computer-Agent — Reports und Decks aus 20+ Modellen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-06-13T16:00:00Z"
+    },
+    {
       "date": "2026-06-12",
       "edition_number": 37,
       "headlines": [
