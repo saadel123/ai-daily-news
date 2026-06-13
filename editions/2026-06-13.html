@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 13. Juni 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 13. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #38</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic ist die neue Nummer eins im Enterprise — und xAI baut den Marketplace aus.</h1>
+    <p class="subtitle">Außerdem: TCS bringt Claude in regulierte Branchen, OpenAI nutzt Oracle-Credits und Perplexity denkt jetzt mit dem Rechner.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>TCS × Anthropic</strong>: 50.000 Mitarbeitende und dediziertes Business-Unit für regulierte Branchen</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Ramp AI Index</strong>: Anthropic erstmals auf Platz eins — 41 % der US-Firmen setzen auf Claude</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>xAI Grok Build Marketplace</strong>: MongoDB, Vercel und Sentry direkt im Terminal installieren</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI auf Oracle Cloud</strong>: GPT und Codex per Universal Credits — kein neuer Procurement-Kanal</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Perplexity Deep Research</strong>: läuft jetzt als Computer-Agent — Reports und Decks aus 20+ Modellen</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/tcs-anthropic-partnership" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>TCS × Anthropic · 50.000 Mitarbeitende, regulierte Branchen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">TCS hat eine Global-Premier-Partnerschaft mit Anthropic <mark class="vocab" data-translation="abschließen — to conclude / sign (a deal)">abgeschlossen</mark> und bringt Claude damit an 50.000 eigene Mitarbeitende in 56 Ländern. Eine neue Business Unit kümmert sich exklusiv um Claude-basierte Produkte für regulierte Branchen — Finance, Healthcare, Aviation und Telekommunikation — mit Early Access auf neue Claude-Modelle. Für Anthropic ist TCS nach KPMG und PwC der nächste große IT-Dienstleister, der <mark class="vocab" data-translation="an Bord kommen — to come on board / join">an Bord kommt</mark>: Service-Partner, die selbst Produkte bauen, nicht nur weiterverkaufen. Das <mark class="vocab" data-translation="das Abkommen — the agreement / the deal">Abkommen</mark> zeigt, wie ernst regulierte Branchen KI mittlerweile nehmen — und dass Anthropic dort als <mark class="vocab" data-translation="sicherer Hafen — safe harbour / trusted partner">sicherer Hafen</mark> gilt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">TCS has signed a Global Premier Partnership with Anthropic, rolling Claude out to 50,000 of its own employees across 56 countries. A dedicated business unit will focus exclusively on Claude-powered products for regulated industries — finance, healthcare, aviation and telecommunications — with early access to new Claude models built in. For Anthropic, TCS is the latest major IT services company to come on board after KPMG and PwC: service partners that build their own products on Claude, not just resellers. The deal signals how seriously regulated industries now take AI — and that Anthropic is seen as the safe harbour of choice.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/tcs-anthropic-partnership" target="_blank" rel="noopener">→ anthropic.com · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://ramp.com/data/ai-index" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Ramp AI Index · Anthropic #1 in US Enterprise</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Der aktuelle Ramp AI Index macht es <mark class="vocab" data-translation="offiziell — official / confirmed">offiziell</mark>: Anthropic ist erstmals die Nummer eins in der US-Geschäftswelt — 41 Prozent der US-Unternehmen setzen inzwischen auf Claude, OpenAI liegt dahinter. Ramp <mark class="vocab" data-translation="verfolgen — to track / to follow">verfolgt</mark> Zahlungen von über 50.000 US-Firmen und gilt damit als zuverlässiger <mark class="vocab" data-translation="der Lagebericht — the status report / situation report">Lagebericht</mark> für den echten Markt. Der Aufstieg war <mark class="vocab" data-translation="rasant — meteoric / rapid / at breakneck speed">rasant</mark>: Vor einem Jahr war Anthropic noch kaum auf dem Radar, heute gewinnt Claude 70 Prozent der Head-to-Head-Vergleiche gegen OpenAI bei Neukunden. Entscheidend war die Kombination aus Early-Adopter-Engineers und dem gezielten Vorstoß in regulierte Enterprise-Branchen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">The latest Ramp AI Index makes it official: Anthropic is number one in US business adoption for the first time — 41% of US companies now use Claude, putting OpenAI in second place. Ramp tracks payments from more than 50,000 US firms, making it one of the most reliable reads on the real market. The rise has been meteoric: a year ago Anthropic was barely on the radar, and today Claude wins 70% of head-to-head comparisons against OpenAI among new business customers. The key has been combining an early-adopter engineering base with a deliberate push into regulated enterprise verticals.</p>
+        </div>
+      </div>
+      <a class="source" href="https://ramp.com/data/ai-index" target="_blank" rel="noopener">→ ramp.com · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://x.ai/news/grok-plugin-marketplace" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI Grok Build · Plugin Marketplace live</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">xAI hat den Grok Build Plugin Marketplace gestartet — sechs Launch-Plugins direkt im Terminal: MongoDB, Vercel, Sentry, Chrome DevTools, Cloudflare und Superpowers. Jedes Plugin <mark class="vocab" data-translation="bündeln — to bundle / consolidate into one">bündelt</mark> Skills, Slash-Commands, Agenten, Hooks, MCP-Server und LSPs in einem einzigen Install. Das Sicherheitsmodell ist bemerkenswert: Jeder Remote-Plugin <mark class="vocab" data-translation="pinnen — to pin / anchor to a specific version">pinnt</mark> eine 40-Zeichen-SHA, die Grok Build nach dem Klonen automatisch <mark class="vocab" data-translation="nachprüfen — to re-verify / double-check">nachprüft</mark> — kein blindes Vertrauen in Dritte. Neue Plugins kommen per Pull Request in den <mark class="vocab" data-translation="der Katalog — the catalog / directory">Katalog</mark>; xAI überprüft sie selbst aber nicht inhaltlich.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">xAI has launched the Grok Build Plugin Marketplace — six launch plugins available directly in the terminal: MongoDB, Vercel, Sentry, Chrome DevTools, Cloudflare and Superpowers. Each plugin bundles skills, slash commands, agents, hooks, MCP servers and LSPs into a single install. The security model is noteworthy: every remote plugin pins a 40-character commit SHA that Grok Build re-verifies after cloning — no blind trust in third-party code. New plugins enter the catalog via pull request, though xAI does not verify them directly.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news/grok-plugin-marketplace" target="_blank" rel="noopener">→ x.ai · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/openai-on-oracle-cloud/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI × Oracle Cloud · GPT &amp; Codex via Universal Credits</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI und Oracle haben angekündigt, dass Enterprise-Kunden demnächst ihre Oracle Universal Credits direkt für GPT-Modelle und Codex einlösen können — ohne einen eigenen <mark class="vocab" data-translation="der Beschaffungskanal — the procurement channel / purchasing pipeline">Beschaffungskanal</mark> aufzubauen. Für große Firmen mit bestehenden OCI-Verträgen heißt das: KI-Budget und Cloud-Budget laufen künftig durch dieselbe Buchhaltung, was viele <mark class="vocab" data-translation="der Freigabeprozess — the approval process / sign-off workflow">Freigabeprozesse</mark> stark vereinfacht. Die Verfügbarkeit startet in den nächsten Wochen; der Oracle-Account-Manager ist der erste Ansprechpartner. Anthropic, das bereits AWS Bedrock und Azure abdeckt, dürfte <mark class="vocab" data-translation="nachziehen — to follow suit / to catch up">nachziehen</mark> — OCI wäre die logische <mark class="vocab" data-translation="die Ergänzung — the addition / the complement">Ergänzung</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI and Oracle have announced that enterprise customers will soon be able to apply Oracle Universal Credits toward GPT models and Codex — no separate procurement channel required. For large firms with existing OCI commitments, it means AI spend and cloud spend flow through the same accounting, dramatically simplifying many approval processes. Availability starts in the coming weeks; your Oracle account manager is the first point of contact. Anthropic, which already covers AWS Bedrock and Azure, is the natural candidate to follow suit — OCI would be the logical complement.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-on-oracle-cloud/" target="_blank" rel="noopener">→ openai.com · 10.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.marktechpost.com/2026/06/11/perplexity-moves-deep-research-into-computer-routing-research-subtasks-across-20-frontier-models-for-reports-decks-and-dashboards/" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Perplexity Deep Research · Computer-Agent, Reports aus 20+ Modellen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Perplexity hat Deep Research in einen echten Computer-Agenten <mark class="vocab" data-translation="verwandeln — to transform / turn into">verwandelt</mark>: Das System <mark class="vocab" data-translation="routieren — to route / dispatch to different models">routiert</mark> Unteraufgaben jetzt über mehr als 20 Frontier-Modelle und liefert am Ende Reports, Decks und Dashboards — vollständig formatierte Dokumente, keine rohen Zusammenfassungen. Ein einzelner Prompt startet eine Recherche-Kette, die selbstständig Tabs öffnet, Zwischenergebnisse <mark class="vocab" data-translation="aggregieren — to aggregate / collect together">aggregiert</mark> und weiterdenkt. Für Analysten und Berater, die täglich strukturierte Briefings produzieren, ändert das den Workflow fundamental. Perplexity <mark class="vocab" data-translation="positionieren — to position / to place in the market">positioniert</mark> es damit direkt gegen OpenAI Operator und Anthropics Claude in Computer-Use-Szenarien.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Perplexity has upgraded Deep Research into a genuine computer agent: the system now routes subtasks across more than 20 frontier models and delivers finished reports, slide decks and dashboards — fully formatted documents, not raw summaries. A single prompt kicks off a research chain that independently opens tabs, aggregates intermediate results and continues reasoning. For analysts and consultants producing structured briefings daily, this fundamentally changes the workflow. Perplexity is positioning it directly against OpenAI Operator and Anthropic's Claude in computer-use scenarios.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.marktechpost.com/2026/06/11/perplexity-moves-deep-research-into-computer-routing-research-subtasks-across-20-frontier-models-for-reports-decks-and-dashboards/" target="_blank" rel="noopener">→ marktechpost.com · 11.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.174–176 · Language-Setting und Usage-Aufschlüsselung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code hat in den letzten Tagen zwei nützliche Einstellungen nachgeschoben. Mit dem neuen Language-Setting merkt sich die CLI, in welcher Sprache Session-Titles generiert werden sollen — ein einmaliger Config-Eintrag und alle neuen Sessions bekommen automatisch die richtige Sprache, ohne dass Claude jedes Mal neu raten muss. Noch praktischer für Multi-Agent-Builds: Der VSCode-Account-Dialog unter dem Usage-Befehl zeigt jetzt genau, wie viel vom täglichen Limit auf welche Skills, Sub-Agenten, Plugins oder MCP-Server entfällt — <mark class="vocab" data-translation="aufgeschlüsselt — broken down / itemized">aufgeschlüsselt</mark> nach den letzten 24 Stunden oder sieben Tagen. Wer wissen will, warum ein langer Coding-Sprint so viele Credits <mark class="vocab" data-translation="fressen — to eat up / devour (casual)">frisst</mark>, findet hier die Antwort auf einen Blick.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code quietly shipped two handy settings this week. The new language config key tells the CLI which language to use for session titles — set it once, and every new session gets the right language automatically without Claude guessing every time. Even more useful for multi-agent builds: the VSCode account dialog under the usage command now shows exactly how much of your daily quota went to which skills, sub-agents, plugins or MCP servers — broken down over the past 24 hours or seven days. If you've ever wondered why a long coding sprint burned through your credits, this is where you find out at a glance.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude config set language [lang-code]
+/usage</pre>
+        <dl class="cmd-flags">
+          <dt><code>language</code></dt>
+          <dd>ISO language code to pin for session title generation (e.g. de, en, fr, ja); omit key to restore auto-detect</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Sprache für Session-Titles auf Deutsch fixieren · Pin session titles to German</span>
+$ claude config set language de
+
+<span class="com"># Usage-Aufschlüsselung öffnen (VSCode) · Open usage breakdown in VSCode</span>
+$ /usage</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">an Bord holen</div>
+        <div class="vocab-translation">to bring on board · to enlist / recruit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit TCS holt sich Anthropic Indiens größten IT-Dienstleister an Bord.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With TCS, Anthropic has brought India's largest IT services company on board.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">rasant</div>
+        <div class="vocab-translation">meteoric · rapid / at breakneck speed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropics Aufstieg in der Enterprise-Welt war geradezu rasant.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic's rise in the enterprise world has been absolutely meteoric.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Aufschlüsselung</div>
+        <div class="vocab-translation">the breakdown · the itemization</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Aufschlüsselung im Usage-Dialog zeigt genau, wohin dein Limit geflossen ist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The breakdown in the usage dialog shows exactly where your quota went.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">nachziehen</div>
+        <div class="vocab-translation">to follow suit · to catch up / mirror a move</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn OpenAI Oracle-Credits einführt, wird Anthropic früher oder später nachziehen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Once OpenAI introduces Oracle Credits, Anthropic will follow suit sooner or later.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">bündeln</div>
+        <div class="vocab-translation">to bundle · to consolidate into one</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Plugin bündelt Hooks, MCP-Server und Slash-Commands in einem einzigen Install.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The plugin bundles hooks, MCP servers and slash commands into a single install.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Zünglein an der Waage</div>
+      <div class="idiom-meaning">the deciding factor / the tipping point — wörtlich: "the little tongue on the scale"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Ramp-Index war das Zünglein an der Waage — mit 41 Prozent steht Anthropic jetzt offiziell vorn."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The Ramp Index was the deciding factor — at 41 percent, Anthropic is officially in front."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Im engen Rennen um Enterprise-Deals kann ein einziger großer Partner das Zünglein an der Waage sein."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"In a tight race for enterprise deals, a single major partner can be the tipping point."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to follow suit</div>
+      <div class="idiom-meaning">to do the same as someone else — German equivalent: "nachziehen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI is on Oracle now, so expect Anthropic to follow suit with OCI integration."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI ist auf Oracle — also wird Anthropic bei der OCI-Integration nachziehen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When one cloud provider lands a big AI deal, the others always follow suit within months."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn ein Cloud-Anbieter einen großen KI-Deal landet, ziehen die anderen innerhalb von Monaten nach."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · ramp.com · x.ai · openai.com · marktechpost.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #38 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
