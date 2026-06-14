@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 14.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 14. Juni 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #39</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Washington dreht ab, DeepMind denkt voraus — und Anthropics Nutzer kommen zu Wort.</h1>
+    <p class="subtitle">Exportkontrolle, Superintelligenz und 52.000 Meinungen — ein langer Sonntag für KI-Enthusiasten.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>US-Exportkontrolle</strong>: Washington dreht Anthropic den Stecker für Fable 5 und Mythos 5 aus — weltweit</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic Public Record</strong>: 52.000 Befragte — 64 % fürchten KI-Jobverlust, 48 % hoffen auf Krebs-Heilung</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>G7-Gipfel (15.–17. Juni)</strong>: Altman, Amodei und Hassabis erstmals gemeinsam am Tisch</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>DiffusionGemma 26B</strong>: Google generiert Text wie Bilder — 1.000 Tokens/s auf H100, Apache 2.0</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>DeepMind: Von AGI zu ASI</strong> — Legg und Hutter legen vier Pfade zur Superintelligenz vor</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>US-Exportkontrolle · Fable 5 &amp; Mythos 5 abgeschaltet</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Die US-Regierung hat Anthropic am 12. Juni per <mark class="vocab" data-translation="Exportkontroll-Anweisung — export control directive">Exportkontroll-Anweisung</mark> gezwungen, den Zugang zu Fable 5 und Mythos 5 weltweit <mark class="vocab" data-translation="abzuschalten — to shut down / switch off">abzuschalten</mark> — nicht nur für ausländische Nutzer, sondern für alle. Anthropic hat den Befehl <mark class="vocab" data-translation="befolgt — complied with / followed">befolgt</mark>, aber öffentlich Widerspruch signalisiert: Das Unternehmen hält die Entscheidung für falsch. Hintergrund sind nationale Sicherheitsbedenken der Behörden, die Fable 5 als zu mächtig für eine unkontrollierte Verbreitung <mark class="vocab" data-translation="einstufen — to classify / rate">einstufen</mark>. Für Entwickler, die auf die Modelle gesetzt haben, bedeutet das sofortigen Ausfall — kein Rollback, kein Zeitpuffer.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">The US government on June 12th forced Anthropic via an export control order to shut down access to Fable 5 and Mythos 5 worldwide — not just for foreign nationals, but for everyone. Anthropic complied but publicly signaled its disagreement: the company believes the decision was wrong. The background is national security concerns from authorities who classify Fable 5 as too powerful for uncontrolled distribution. For developers who had built on these models, it means an immediate outage — no rollback window, no grace period.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/" target="_blank" rel="noopener">→ techcrunch.com · 12.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/anthropic-public-record" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic Public Record · 52.000 Stimmen zur KI</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat zum ersten Mal Ergebnisse aus dem Public Record <mark class="vocab" data-translation="veröffentlicht — published / released">veröffentlicht</mark> — einer <mark class="vocab" data-translation="Befragung — survey / poll">Befragung</mark> von knapp 52.000 Amerikanern zu ihrer Einstellung gegenüber KI. Zwei Zahlen stechen heraus: 64 % fürchten den Verlust ihres Jobs durch <mark class="vocab" data-translation="Automatisierung — automation">Automatisierung</mark>, 48 % hoffen gleichzeitig, dass KI Krebs oder Alzheimer heilen hilft. Beim Thema Regulierung überrascht der breite Konsens — über 70 % wollen staatliche Eingriffe, und zwar <mark class="vocab" data-translation="parteiübergreifend — bipartisan / cross-party">parteiübergreifend</mark>. Nur 15 % vertrauen KI-Firmen als alleinigen Entscheidern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic published the first results from its Public Record — a survey of nearly 52,000 Americans on their attitudes toward AI. Two numbers stand out: 64% fear job loss from automation, while 48% hope AI will cure cancer or Alzheimer's. On regulation, the broad consensus is striking — over 70% want government involvement, and that support is bipartisan. Only 15% trust AI companies as the sole decision-makers. The gap between public expectations and corporate accountability is wider than many in the industry might like to think.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/anthropic-public-record" target="_blank" rel="noopener">→ anthropic.com · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://thenextweb.com/news/g7-ai-summit-altman-amodei-hassabis" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>G7-Gipfel · Altman · Amodei · Hassabis</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Erstmals werden am G7-Gipfel vom 15. bis 17. Juni in Évian-les-Bains alle drei großen KI-Labore durch ihre CEOs <mark class="vocab" data-translation="vertreten — represented">vertreten</mark> sein: Sam Altman für OpenAI, Dario Amodei für Anthropic und Demis Hassabis für Google DeepMind. Auf der Agenda stehen freiwillige <mark class="vocab" data-translation="Selbstverpflichtungen — self-commitments / voluntary pledges">Selbstverpflichtungen</mark> der Branche, Jugendschutz im Netz sowie Risiken in Cybersicherheit und Biologie. Macron hat Altman persönlich eingeladen — es ist das erste Mal, dass der OpenAI-Chef an einem G7-Treffen <mark class="vocab" data-translation="teilnimmt — participates / attends (separable verb)">teilnimmt</mark>. Was dabei herauskommt, könnte den Rahmen für globale KI-Regulierung auf Jahre hinaus <mark class="vocab" data-translation="prägen — to shape / leave a lasting mark on">prägen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">For the first time, all three major AI labs will be represented by their CEOs at the G7 summit in Évian-les-Bains, June 15–17: Sam Altman for OpenAI, Dario Amodei for Anthropic, and Demis Hassabis for Google DeepMind. On the agenda: voluntary industry commitments, youth safety online, and risks in cyber and biological domains. Macron personally invited Altman — the first time the OpenAI CEO will attend a G7 meeting. Whatever emerges could set the frame for global AI regulation for years to come.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thenextweb.com/news/g7-ai-summit-altman-amodei-hassabis" target="_blank" rel="noopener">→ thenextweb.com · 12.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>DiffusionGemma 26B · Text wie ein Bild generieren</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google DeepMind hat DiffusionGemma <mark class="vocab" data-translation="veröffentlicht — released / published (here: an open-weights model)">veröffentlicht</mark> — ein experimentelles Open-Weights-Modell mit 26 Milliarden Parametern, das Text wie Bilder generiert: statt Token für Token startet es mit zufälligen <mark class="vocab" data-translation="Platzhaltern — placeholders">Platzhaltern</mark> und <mark class="vocab" data-translation="verfeinert — refines / polishes them in place">verfeinert</mark> sie parallel in einem 256-Token-Fenster. Das Ergebnis ist bis zu viermal schneller als klassische Modelle — über 1.000 Tokens pro Sekunde auf einer H100. Das Modell läuft ab Tag eins in vLLM, Transformers und MLX und ist unter Apache 2.0 auf Hugging Face, Kaggle und Vertex AI verfügbar. Für Produktion <mark class="vocab" data-translation="empfiehlt — recommends">empfiehlt</mark> Google weiterhin Gemma 4 — das ist ein Forschungsmodell.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google DeepMind released DiffusionGemma — an experimental open-weights model with 26 billion parameters that generates text the way image models generate images: instead of token by token, it starts from random placeholders and refines them in parallel across a 256-token window. The result is up to four times faster than classical autoregressive models — over 1,000 tokens per second on a single H100. It runs out of the box in vLLM, Transformers, and MLX and is available under Apache 2.0 on Hugging Face, Kaggle, and Vertex AI. Google still recommends Gemma 4 for production — this is a research model.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/" target="_blank" rel="noopener">→ marktechpost.com · 10.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/318343/20260613/google-deepmind-maps-road-agi-superintelligence-four-paths-hard-limits.htm" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>DeepMind · Von AGI zu ASI · Vier Pfade zur Superintelligenz</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google DeepMind hat ein <mark class="vocab" data-translation="Forschungspapier — research paper">Forschungspapier</mark> mit dem Titel „From AGI to ASI" veröffentlicht — verfasst von Shane Legg, einem der Mitgründer von DeepMind, und Marcus Hutter, dem Erfinder des AIXI-Universalintelligenz-Modells. Das Paper fragt, was nach menschenähnlicher KI kommt: wie sie weiter wachsen könnte, was sie <mark class="vocab" data-translation="bremsen — to slow down / put the brakes on">bremsen</mark> würde und wo harte Grenzen liegen. Die Autoren beschreiben vier mögliche <mark class="vocab" data-translation="Pfade — paths / routes">Pfade</mark> zur Superintelligenz und warnen vor Risiken, die selbst gut <mark class="vocab" data-translation="ausgerichtete — aligned / well-calibrated">ausgerichtete</mark> Systeme nicht vermeiden können. Eine ungewöhnlich nüchterne Analyse aus dem Inneren der Branche.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google DeepMind published a research paper titled "From AGI to ASI" — written by Shane Legg, one of DeepMind's co-founders, and Marcus Hutter, creator of the AIXI universal intelligence model. The paper asks what comes after human-level AI: how it might keep growing, what could put the brakes on it, and where hard limits lie. The authors describe four possible paths to superintelligence and warn of risks that even well-aligned systems may not be able to avoid. An unusually sober analysis from inside the industry.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/318343/20260613/google-deepmind-maps-road-agi-superintelligence-four-paths-hard-limits.htm" target="_blank" rel="noopener">→ techtimes.com · 13.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.176 · Session-Sprache &amp; Footer-Links</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code bringt mit Version 2.1.176 zwei <mark class="vocab" data-translation="praktische — practical / handy">praktische</mark> Settings. Erstens werden Session-Titel jetzt automatisch in der Sprache deines Gesprächs <mark class="vocab" data-translation="generiert — generated">generiert</mark> — wer auf Englisch tippt, bekommt englische Titel, wer auf Deutsch schreibt, bekommt deutsche. Wer die Sprache <mark class="vocab" data-translation="festlegen — to pin / lock in (separable verb)">festlegen</mark> will, setzt die neue language-Einstellung in den User-Settings. Zweitens ist footerLinksRegexes neu — damit definierst du Regex-Muster, die passende URLs in der Footer-Zeile als anklickbare Badges anzeigen, konfigurierbar über User- oder Managed-Settings. Nützlich, wenn du Build-Status-Links oder interne Dashboards immer im Blick behalten willst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.176 ships two practical settings. First: session titles are now automatically generated in the language of your conversation — type in English and you get English titles, write in German and the titles follow. To lock in a specific language, set the new language key in your user settings. Second, footerLinksRegexes is new — it lets you define regex patterns that match URLs and display them as clickable badges in the footer row, configurable via user or managed settings. Handy when you want build-status links or internal dashboards always visible at a glance.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">abschalten</div>
+        <div class="vocab-translation">to shut down · to switch off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Behörde hat Anthropic gezwungen, beide Modelle sofort abzuschalten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The authority forced Anthropic to shut down both models immediately.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Exportkontrolle</div>
+        <div class="vocab-translation">export control</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Exportkontrolle trifft KI-Modelle jetzt genauso wie Chips und Software.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Export control now hits AI models just as it hits chips and software.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Gipfel</div>
+        <div class="vocab-translation">summit · peak · top</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Beim G7-Gipfel sitzen zum ersten Mal alle drei KI-CEOs mit am Tisch.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">At the G7 summit, all three AI CEOs are sitting at the table for the first time.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verfeinern</div>
+        <div class="vocab-translation">to refine · to polish</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">DiffusionGemma verfeinert einen Zufalls-Text Schritt für Schritt, bis er Sinn ergibt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">DiffusionGemma refines a random text step by step until it makes sense.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">festlegen</div>
+        <div class="vocab-translation">to pin · to set · to lock in</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">In den User-Settings kannst du jetzt deine bevorzugte Sprache für Session-Titel festlegen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In user settings, you can now pin your preferred language for session titles.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Reißleine ziehen</div>
+      <div class="idiom-meaning">to pull the ripcord / take drastic emergency action — wörtlich: "to pull the rip cord"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Bund hat die Reißleine gezogen und Fable 5 vom Netz genommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The government pulled the ripcord and took Fable 5 offline."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn der Deploy crasht, einfach die Reißleine ziehen und rollbacken."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the deploy blows up, just pull the ripcord and roll back."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pull the plug</div>
+      <div class="idiom-meaning">to abruptly end or shut down something — German equivalent: "den Stecker ziehen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Washington pulled the plug on Anthropic's two newest models."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Washington hat bei Anthropics zwei neusten Modellen den Stecker gezogen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After three failed PRs, we pulled the plug on the whole migration."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach drei fehlgeschlagenen PRs haben wir bei der Migration den Stecker gezogen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · anthropic.com · thenextweb.com · marktechpost.com · techtimes.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #39 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
