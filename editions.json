@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-14",
+      "edition_number": 39,
+      "headlines": [
+        "US-Regierung dreht Anthropic den Stecker für Fable 5 und Mythos 5 aus — weltweit",
+        "52.000 Befragte: 64 % der Amerikaner fürchten KI-Jobverlust, 48 % hoffen auf Krebs-Heilung",
+        "G7-Gipfel (15.–17. Juni): Altman, Amodei und Hassabis erstmals gemeinsam am Tisch",
+        "DiffusionGemma 26B: Google generiert Text wie Bilder — 1.000 Tokens/s, Apache 2.0",
+        "DeepMind: Von AGI zu ASI — Legg und Hutter legen vier Pfade zur Superintelligenz vor"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-14T16:09:22Z"
+    },
+    {
       "date": "2026-06-13",
       "edition_number": 38,
       "headlines": [
