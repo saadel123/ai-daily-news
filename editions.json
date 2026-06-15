@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-15",
+      "edition_number": 40,
+      "headlines": [
+        "Claude Code 2.1.176: Sitzungstitel automatisch in deiner Sprache — VS Code zeigt jetzt Token-Herkunft pro Skill, Agent und Plugin",
+        "Sonnet 4.0 und Opus 4.0 sind heute abgeschaltet — API-Calls auf alte Model-IDs geben ab jetzt Fehler zurück",
+        "OpenAI Codex: eigener Git-Branch und Worktree pro Thread, /goal-Support auf Mobile und Token-Charts im Profil",
+        "Google DeepMind und ARIA stecken 10 Mio. $ in Multi-Agent-Safety — vier Forschungsbereiche, Deadline August",
+        "G7-Gipfel in Évian eröffnet: USA blockiert KI-Governance, EU und Kanada streiten öffentlich über Souveränität"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-15T16:19:59Z"
+    },
+    {
       "date": "2026-06-14",
       "edition_number": 39,
       "headlines": [
