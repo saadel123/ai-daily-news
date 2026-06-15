@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 15. Juni 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 15. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #40</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>G7, Sunset und Multi-Agent-Safety: Der KI-Sommer läuft auf Hochtouren.</h1>
+    <p class="subtitle">Heute gehen Sonnet 4.0 und Opus 4.0 endgültig vom Netz, Évian debattiert KI-Souveränität und DeepMind finanziert die nächste Front der Safety-Forschung.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.176</strong>: Sitzungstitel automatisch in deiner Sprache — VS Code zeigt jetzt Token-Herkunft pro Skill, Agent und Plugin</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Sonnet 4.0 und Opus 4.0</strong> sind heute abgeschaltet — API-Calls auf alte Model-IDs geben ab jetzt Fehler zurück</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Codex</strong>: eigener Git-Branch und Worktree pro Thread, /goal-Support auf Mobile und Token-Charts im Profil</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Google DeepMind und ARIA</strong> stecken 10 Mio. $ in Multi-Agent-Safety — vier Forschungsbereiche, Deadline August</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>G7-Gipfel in Évian</strong> eröffnet: USA blockiert KI-Governance, EU und Kanada streiten öffentlich über Souveränität</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.176 · Sprach-Setting &amp; Usage-Attribution</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.176 zwei handliche Neuerungen für den Alltag: Session-Titel werden ab sofort automatisch in der Sprache deines Gesprächs <mark class="vocab" data-translation="generiert — generated">generiert</mark> — wer immer auf Deutsch arbeitet, sieht deutsche Titel im Session-Log. Mit dem neuen language-Eintrag in den Settings lässt sich eine Sprache <mark class="vocab" data-translation="festlegen — to define, to lock in">festlegen</mark>, falls du gemischte Sprachen in Titeln vermeiden möchtest. Für VS-Code-Nutzer gibt es zusätzlich eine starke Neuerung: Das Account-&amp;-Usage-Panel zeigt jetzt die genaue Token-<mark class="vocab" data-translation="Herkunft — origin, provenance">Herkunft</mark> — <mark class="vocab" data-translation="aufgeschlüsselt — broken down, itemized">aufgeschlüsselt</mark> nach Cache-Misses, langen Kontexten, Sub-Agenten sowie einzelnen Skills, Plugins und MCP-Servern, wählbar für 24 Stunden oder sieben Tage. Wer schon immer wissen wollte, welcher Plugin oder welcher MCP-Server seinen Credit-Pool auffrisst, hat jetzt endlich eine klare Antwort.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.176 ships two handy everyday improvements: session titles are now auto-generated in the language of your conversation, so if you always work in German, your session log shows German titles. A new language setting lets you pin a specific language if you want to avoid mixed-language titles in multilingual projects. VS Code users get an additional upgrade: the Account &amp; Usage panel now shows a full token attribution breakdown — by cache misses, long context, sub-agents, and individual skills, plugins, and MCP servers, switchable between last 24h and last 7 days. If you've ever wondered which plugin or MCP server is draining your credit pool, now you have a real answer.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Sonnet 4.0 &amp; Opus 4.0 sind heute offline</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Heute ist <mark class="vocab" data-translation="Stichtag — cutoff date, deadline">Stichtag</mark>: Claude Sonnet 4.0 und Claude Opus 4.0 gehen endgültig vom Netz — API-Calls mit den alten Model-Strings geben ab sofort Fehlermeldungen zurück, kein automatisches Fallback, keine verlängerte Übergangsfrist. Die Migration ist eine <mark class="vocab" data-translation="Einzeiler — one-liner (in code)">Einzeiler</mark>-Änderung: auf Sonnet 4.6, Haiku 4.5 oder Opus 4.8 wechseln. Claude.ai und Claude Code sind nicht betroffen, weil Anthropic dort die Modellauswahl automatisch <mark class="vocab" data-translation="übernimmt — takes over, handles automatically">übernimmt</mark>. Die Warnung kam sechs Tage früher — wer sie <mark class="vocab" data-translation="verschlafen — to sleep through, to miss (a deadline)">verschlafen</mark> hat, sollte jetzt sofort handeln.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Today is the cutoff: Claude Sonnet 4.0 and Claude Opus 4.0 are officially retired — API calls using the old model identifier strings will now return errors, with no automatic fallback and no extended grace period. The migration is a one-liner: switch to Sonnet 4.6, Haiku 4.5, or Opus 4.8, which are fully backward-compatible. Claude.ai and Claude Code users are unaffected since Anthropic handles model selection automatically in those products. The six-day warning went out last week — if you missed it, the time to act is right now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener">→ platform.claude.com · 15.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟢 OpenAI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/products/release-notes/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Codex · Branch, Worktree, Mobile /goal</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat Codex am 9. Juni mit einem <mark class="vocab" data-translation="Rundumschlag — sweeping upgrade, all-around improvement">Rundumschlag</mark> aufgerüstet: Jeder neue Thread kann jetzt in einem eigenen Git-Branch und Worktree starten, sodass parallele Experimente sich nicht mehr gegenseitig in die <mark class="vocab" data-translation="Quere kommen — to get in each other's way, to interfere">Quere kommen</mark>. Außerdem lassen sich Setup-Skripte für neue Threads hinterlegen, damit der Kontext von Anfang an sauber ist. Als <mark class="vocab" data-translation="Zugabe — bonus, something extra thrown in">Zugabe</mark> gibt es in der Codex-Mobile-App den lang ersehnten /goal-Support, mit dem Ziele direkt vom Handy gesetzt und verfolgt werden können. Ein neues Profil-Screen rundet das Update ab und zeigt Token-Charts sowie Nutzungsstatistiken auf einen Blick.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI shipped a sweeping Codex upgrade on June 9: each new thread can now launch in its own Git branch and worktree, so parallel experiments no longer step on each other. You can also define an environment setup script for new threads, ensuring a clean context from the first message. As a bonus, the long-awaited /goal support lands in Codex Mobile, letting you create and track goals directly from your phone. A new profile screen rounds things out with token activity charts and usage stats at a glance.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/products/release-notes/" target="_blank" rel="noopener">→ openai.com · 09.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🔵 Google &amp; DeepMind</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DeepMind + ARIA · 10 Mio. $ für Multi-Agent-Safety</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google DeepMind, Schmidt Sciences und ARIA haben gemeinsam einen 10-Millionen-Dollar-Forschungsfonds für Multi-Agent-KI-Safety <mark class="vocab" data-translation="ausgeschrieben — opened as a call for proposals, put out for bids">ausgeschrieben</mark>. Die Begründung ist plausibel: Bald werden Millionen von KI-Agenten verschiedener Anbieter miteinander interagieren, doch die Sicherheitsforschung <mark class="vocab" data-translation="hinkt hinterher — is lagging behind, struggling to keep up">hinkt deutlich hinterher</mark>. Das Geld fließt in vier Bereiche: Sandboxes und Testbeds, Agent Network Science, Agent Infrastructure sowie Oversight und Control. Anträge sind bis zum 8. August 2026 möglich, einzelne Projekte werden mit bis zu einer Million Dollar <mark class="vocab" data-translation="gefördert — funded, supported (by grants)">gefördert</mark> — die Vergabe erfolgt im Herbst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google DeepMind, Schmidt Sciences and ARIA have jointly opened a $10 million research funding call for multi-agent AI safety. The rationale is compelling: millions of AI agents from different providers will soon be interacting across digital environments, but safety research is visibly lagging behind. The funding targets four areas: sandboxes and testbeds, agent network science, agent infrastructure, and oversight and control. Applications are open until August 8, 2026, with individual grants up to $1 million — award decisions in autumn.</p>
+        </div>
+      </div>
+      <a class="source" href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/" target="_blank" rel="noopener">→ deepmind.google · 11.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟠 KI-Politik · AI Policy</h2>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.techpolicy.press/g7-summit-set-to-kick-off-amidst-allies-widening-rift-over-ai-sovereignty/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>G7-Gipfel Évian · KI-Souveränität als Streitthema</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">In Évian-les-Bains hat heute der G7-Gipfel eröffnet, und KI-Souveränität ist zum offenen <mark class="vocab" data-translation="Zankapfel — bone of contention, apple of discord">Zankapfel</mark> unter Verbündeten geworden. Während EU und Kanada auf einen multilateralen KI-Governance-Rahmen dringen, blockieren die USA jede Vereinbarung, die ihren industriellen Vorsprung gefährden könnte — entsprechende Passagen im abschließenden Kommuniqué werden bereits als <mark class="vocab" data-translation="verwässert — diluted, watered down">verwässert</mark> erwartet. Erstmals sitzen Altman, Amodei und Hassabis gemeinsam am Tisch — ein Zeichen für den wachsenden Einfluss der KI-Industrie auf Geopolitik. Was bis Mittwoch konkret herauskommt, <mark class="vocab" data-translation="bleibt abzuwarten — remains to be seen">bleibt abzuwarten</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">The G7 summit opened today in Évian-les-Bains with AI sovereignty emerging as an open fault line among allies. While the EU and Canada are pushing for a multilateral AI governance framework, the US is blocking any agreement that could undermine its industrial lead — corresponding passages in the closing communiqué are already expected to be watered down. For the first time, Altman, Amodei and Hassabis are all seated at the same table, signaling the growing influence of the AI industry on geopolitics. What concrete outcomes will emerge by Wednesday remains to be seen.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techpolicy.press/g7-summit-set-to-kick-off-amidst-allies-widening-rift-over-ai-sovereignty/" target="_blank" rel="noopener">→ techpolicy.press · 15.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code · language-Setting für einheitliche Session-Titel</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.176 <mark class="vocab" data-translation="spendiert — throws in as a bonus, treats to">spendiert</mark> Vielsprachigen einen kleinen, aber nützlichen Trick: Mit dem neuen language-Eintrag in den User-Settings kannst du die Sprache für alle Session-Titel <mark class="vocab" data-translation="festnageln — to nail down, to pin in place">festnageln</mark> — unabhängig davon, in welcher Sprache du gerade schreibst. Setz language auf "de", und jede neue Session bekommt automatisch einen deutschen Titel im Archiv. Ohne den Eintrag erkennt Claude Code die Sprache deiner Nachrichten dynamisch — was bei internationalen Projekten manchmal zu gemischten Titeln führt. Wer einheitliche Logs haben will, trägt die Einstellung einfach in die ~/.claude/settings.json ein.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.176 throws in a small but useful perk for multilingual users: the new <code>language</code> setting in user settings lets you pin the language for all session titles — no matter what language you're actually writing in. Set it to <code>"de"</code> and every new session will be titled consistently in German. Without the setting, Claude Code dynamically detects your message language and picks titles accordingly — which can lead to mixed-language archives on international projects. If you want clean, uniform logs, it's a two-minute fix in <code>~/.claude/settings.json</code>.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.176" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 12.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschlafen</div>
+        <div class="vocab-translation">to sleep through · to miss (a deadline)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wer die Deprecation-Warnung verschlafen hat, bekommt heute Fehler in der API.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">If you slept through the deprecation warning, you'll be seeing errors in the API today.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Rundumschlag</div>
+        <div class="vocab-translation">sweeping upgrade · all-around improvement</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Codex-Update ist ein echter Rundumschlag: Branch, Worktree, Mobile und Profil auf einmal.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new Codex update is a real sweeping upgrade: branch, worktree, mobile and profile all at once.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">hinkt hinterher</div>
+        <div class="vocab-translation">is lagging behind · struggling to keep up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die KI-Sicherheitsforschung hinkt bei Multi-Agent-Systemen noch deutlich hinterher.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AI safety research is still visibly lagging behind when it comes to multi-agent systems.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Zankapfel</div>
+        <div class="vocab-translation">bone of contention · apple of discord</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">KI-Governance ist beim G7-Gipfel der größte Zankapfel zwischen EU und USA.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AI governance is the biggest bone of contention between the EU and US at the G7 summit.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verwässern</div>
+        <div class="vocab-translation">to dilute · to water down</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zu viele Kompromisse verwässern ein technisches Konzept bis zur Unkenntlichkeit.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Too many compromises dilute a technical concept beyond recognition.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">Karten auf den Tisch legen</div>
+      <div class="idiom-meaning">to lay one's cards on the table — to be fully transparent about intentions or facts — wörtlich: "to lay the cards on the table"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"EU und USA müssen beim G7-Gipfel endlich Karten auf den Tisch legen, statt sich hinter Absichtserklärungen zu verstecken."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The EU and US need to finally lay their cards on the table at the G7 summit instead of hiding behind declarations of intent."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bevor wir das Modell deployen, sollten wir Karten auf den Tisch legen: Welche Testdaten haben wir wirklich?"</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before we deploy the model, let's lay our cards on the table: what test data do we actually have?"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to accept an unpleasant but necessary situation and get on with it — German equivalent: "in den sauren Apfel beißen" (to bite into the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Developers have to bite the bullet today and update their model identifiers — the old ones are gone."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Entwickler müssen heute in den sauren Apfel beißen und ihre Model-Strings aktualisieren — die alten sind weg."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sometimes you just have to bite the bullet and rewrite the whole test suite from scratch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Manchmal muss man einfach in den sauren Apfel beißen und die gesamte Test-Suite neu schreiben."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · platform.claude.com · openai.com · deepmind.google · techpolicy.press</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #40 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
