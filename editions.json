@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-16",
+      "edition_number": 41,
+      "headlines": [
+        "Claude Code 2.1.178: feinkörnige Parameter-Syntax für Permission-Regeln — gezielt Opus-Subagenten blockieren",
+        "Sammelklage gegen Anthropic: Claude-Max-Limits angeblich niedriger als beworben — 100 $/200 $ pro Monat",
+        "DXC × Anthropic: 50.000 Claude-zertifizierte Ingenieure für Banken, Airlines und Behörden",
+        "SpaceX kauft Cursor (Anysphere) für 60 Mrd. $ — Claude Codes direkter Rivale wechselt ins xAI-Lager",
+        "Hack: Von Cursor zu Claude Code migrieren — CLAUDE.md statt .cursorrules, npm-install, Schritt für Schritt"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-06-16T16:00:00Z"
+    },
+    {
       "date": "2026-06-15",
       "edition_number": 40,
       "headlines": [
