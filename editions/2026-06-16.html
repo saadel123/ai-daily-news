@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 16.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 16. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #41</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>SpaceX kauft Cursor für 60 Mrd. $ — Claude Codes Rivale wechselt ins xAI-Lager.</h1>
+    <p class="subtitle">Außerdem: feinkörnige Permission-Regeln in Claude Code 2.1.178, Sammelklage gegen Claude Max und 50.000 neue Claude-Ingenieure bei DXC.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.178</strong>: neue Parameter-Syntax für Permission-Regeln — blockiere gezielt Opus-Subagenten ohne alles zu sperren</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Sammelklage</strong> gegen Anthropic: Claude-Max-Limits angeblich niedriger als beworben — 100 $/200 $ pro Monat im Fokus</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟧</span><span><strong>DXC × Anthropic</strong>: 50.000 Claude-zertifizierte Ingenieure sollen Claude in Banken, Airlines und Behörden einbetten</span></a></li>
+      <li><a href="#article-4"><span class="dot">🌐</span><span><strong>SpaceX kauft Cursor</strong> für 60 Mrd. $ — Claude Codes direkter Rivale wechselt als All-Stock-Deal ins xAI-Lager</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>Hack:</strong> Von Cursor zu Claude Code migrieren — CLAUDE.md statt .cursorrules, Schritt für Schritt</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.178" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.178 · Tool(param:value) Permissions</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.178 erweitert die Permission-Regeln um eine <mark class="vocab" data-translation="feinkörnig — fine-grained / granular">feinkörnige</mark> Parameter-Syntax: Du kannst eine Erlaubnis jetzt direkt an den Eingabewert eines Tools <mark class="vocab" data-translation="knüpfen — to tie / to link">knüpfen</mark> — zum Beispiel lässt sich so gezielt nur der Start von Opus-Subagenten blockieren, während andere Subagenten weiter normal laufen. Gleichzeitig laden verschachtelte Skill-Ordner automatisch, wenn du in diesem Unterverzeichnis arbeitest; bei einem Namenskonflikt erscheinen beide Versionen unter eigenen Namen nebeneinander. Im Auto-Modus prüft der Classifier Subagent-Starts jetzt vor dem Launch und schließt eine <mark class="vocab" data-translation="Lücke — gap / loophole">Lücke</mark>, über die ein Subagent bisher ungeprüft blockierte Aktionen starten konnte. Für Teams mit komplexen Subagenten-Workflows ein spürbarer <mark class="vocab" data-translation="Sicherheitsgewinn — security gain / safety improvement">Sicherheitsgewinn</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.178 adds a fine-grained parameter syntax to permission rules: you can now tie an allow or deny decision directly to a tool's input value — for example, you can block only Opus subagents while letting all other subagents keep running normally. Nested skills directories now auto-load when you're working inside that subdirectory; on a name clash, both skill versions surface under distinct qualified names side by side. In auto mode, the classifier now screens subagent spawns before launch, closing a gap where a subagent could previously have requested a blocked action without review. A meaningful security improvement for teams running complex multi-subagent workflows.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">Tool(param:value)</pre>
+        <dl class="cmd-flags">
+          <dt><code>Tool</code></dt>
+          <dd>name of the tool to constrain (Agent, Bash, Read, Edit, WebFetch, …)</dd>
+          <dt><code>param</code></dt>
+          <dd>the input parameter to match against (e.g. model, command, file_path)</dd>
+          <dt><code>value</code></dt>
+          <dd>the value pattern to match; use * as a wildcard</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># In settings.json — Opus-Subagenten blockieren · Block Opus subagents</span>
+"deny": ["Agent(model:opus)"]
+
+<span class="com"># Gefährliche Bash-Muster sperren · Block dangerous Bash patterns</span>
+"deny": ["Bash(command:rm*)", "Bash(command:sudo*)"]</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.178" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 15.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.engadget.com/2194626/anthropic-hit-with-lawsuit-over-its-claude-max-usage-limits/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Sammelklage über Claude-Max-Limits</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Karl Kahn hat am 15. Juni beim Northern District of California Klage gegen Anthropic <mark class="vocab" data-translation="einreichen — to file / to submit (official, legal)">eingereicht</mark> — er wirft dem Unternehmen vor, die echten Nutzungslimits der Max-5x-Stufe (100 $/Monat) und des Max-20x-Tarifs (200 $/Monat) bewusst zu verschleiern. Konkret fraß eine einzige Fünf-Stunden-Arbeitssession <mark class="vocab" data-translation="angeblich — allegedly / supposedly">angeblich</mark> 15 % seines wöchentlichen <mark class="vocab" data-translation="Kontingent — allotment / quota / allowance">Kontingents</mark> auf — und zwang ihn, entweder aufzuhören oder nachzuladen. Die <mark class="vocab" data-translation="Sammelklage — class action lawsuit">Sammelklage</mark> richtet sich an alle US-Nutzer mit einem Max-Abo seit dem Start der Tarife; Anthropic lehnte eine Stellungnahme ab. Ein Urteil dürfte noch Monate dauern, aber der Druck auf mehr Transparenz bei Usage-Limits wächst spürbar.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Karl Kahn filed a federal lawsuit against Anthropic on June 15 in the Northern District of California, alleging the company deliberately obscures the true usage limits of its Max 5x ($100/month) and Max 20x ($200/month) tiers. Specifically: a single five-hour work session allegedly consumed 15% of his weekly allotment, forcing him to either stop or buy more credits. The class action targets all US subscribers who've held a Max plan since the tiers launched; Anthropic declined to comment. A ruling is still months away, but the pressure for clearer usage-limit transparency is visibly building.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.engadget.com/2194626/anthropic-hit-with-lawsuit-over-its-claude-max-usage-limits/" target="_blank" rel="noopener">→ engadget.com · 15.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://dxc.com/newsroom/06112026-dxc-and-anthropic-announce-multi-year-global-alliance-to-bring-ai-into-mission-critical-enterprise-systems" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DXC × Anthropic · Global-Premier-Partnerschaft</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Anthropic und DXC Technology haben am 11. Juni eine mehrjährige globale Allianz angekündigt: DXC wird 50.000 Claude-zertifizierte Forward-Deployed Engineers <mark class="vocab" data-translation="ausbilden — to train / to educate (systematically)">ausbilden</mark>, die Claude direkt in die Kernsysteme <mark class="vocab" data-translation="einbetten — to embed / to deeply integrate">einbetten</mark>, auf die Banken, Airlines, Versicherungen und Behörden <mark class="vocab" data-translation="angewiesen sein — to be reliant on / to depend on">angewiesen</mark> sind. DXC ist damit neben TCS einer der ersten Global-Premier-Partner im Claude Partner Network. Die DXC-OASIS-Plattform — das KI-native Orchestrierungs-Tool für Managed Services — läuft bereits mit Claude und hat die Software-<mark class="vocab" data-translation="Auslieferung — delivery / rollout (of software)">Auslieferung</mark> laut DXC um den Faktor 10 beschleunigt, bei über 95 % KI-generiertem Code vor der Review. Für Anbieter in regulierten Branchen entsteht damit ein Zertifizierungs- und Vertriebskanal, den es so bisher nicht gab.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Anthropic and DXC Technology announced a multi-year global alliance on June 11: DXC will train 50,000 Claude-certified forward-deployed engineers who embed Claude directly into the infrastructure that banks, airlines, insurers, and governments rely on daily. DXC joins TCS as one of the first Global Premier partners in the Claude Partner Network. DXC's OASIS platform — its AI-native managed-services orchestrator — already runs on Claude and has reportedly accelerated software delivery 10x, with 95 %+ of code AI-generated before human review. For vendors in regulated industries, this opens a certification and distribution path that simply didn't exist before.</p>
+        </div>
+      </div>
+      <a class="source" href="https://dxc.com/newsroom/06112026-dxc-and-anthropic-announce-multi-year-global-alliance-to-bring-ai-into-mission-critical-enterprise-systems" target="_blank" rel="noopener">→ dxc.com · 11.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-06-16/spacex-cements-60-billion-deal-to-take-over-ai-startup-cursor" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SpaceX kauft Cursor · 60 Mrd. $ All-Stock-Deal</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">SpaceX <mark class="vocab" data-translation="aufkaufen — to buy up / to acquire (a company)">kauft</mark> Anysphere, den Entwickler des Coding-Assistenten Cursor, für 60 Milliarden Dollar in einem reinen Aktien-Deal — der Abschluss ist für das dritte Quartal geplant, <mark class="vocab" data-translation="vorbehaltlich — subject to / pending (formal)">vorbehaltlich</mark> behördlicher Genehmigungen. Cursor erzielte zuletzt rund 2,6 Milliarden Dollar Jahresumsatz und ist Claude Codes direkter Rivale im Markt der KI-nativen Editoren; xAIs Colossus-Cluster hat in den letzten Monaten bereits gemeinsam mit Cursor trainiert. Langfristig dürfte Cursor tiefer ins xAI-Ökosystem integriert und weniger als <mark class="vocab" data-translation="eigenständig — independent / standalone">eigenständiges</mark> Produkt auftreten — Musk nennt den Deal einen gezielten Schritt zur Enterprise-Expansion. Wer heute noch beide Tools evaluiert, hat damit eine sehr klare <mark class="vocab" data-translation="Weichenstellung — pivotal decision / turning point (lit: track-switching)">Weichenstellung</mark> vor Augen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">SpaceX is acquiring Anysphere, the maker of AI coding assistant Cursor, in a $60 billion all-stock deal — expected to close in Q3, pending regulatory approval. Cursor sits at roughly $2.6 billion in annualized revenue and is Claude Code's direct rival in the AI-native editor market; xAI's Colossus cluster has already been jointly training with Cursor for months. Long-term, Cursor is likely to be pulled deeper into xAI's ecosystem and become less of a standalone product — Musk describes the deal as a deliberate step toward enterprise expansion. If you're evaluating both tools today, the direction of travel just got a lot clearer.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-06-16/spacex-cements-60-billion-deal-to-take-over-ai-startup-cursor" target="_blank" rel="noopener">→ bloomberg.com · 16.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Von Cursor zu Claude Code · Migration Guide</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">SpaceX hat Cursor übernommen — ein guter Zeitpunkt, den eigenen Editor-Stack zu überdenken. Claude Code installiert sich mit einem einzigen npm-Befehl und bringt alles mit, was du aus Cursor kennst: regelbasierte Steuerung über CLAUDE.md statt .cursorrules, direkte Terminal-Integration ohne VSCode-Extension und den claude-Befehl als zentralen Einstiegspunkt. Der Wechsel verläuft <mark class="vocab" data-translation="nahtlos — seamless / without friction">nahtloser</mark> als erwartet — viele .cursorrules-Einträge lassen sich fast eins zu eins in CLAUDE.md <mark class="vocab" data-translation="überführen — to transfer / to migrate">überführen</mark>. Wer Cursor für Hintergrundagenten nutzte, sollte außerdem einen Blick auf den /workflow-Befehl werfen — Claude Codes Antwort auf <mark class="vocab" data-translation="langläufig — long-running">langläufige</mark> Agenten-Tasks im Hintergrund.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">SpaceX just acquired Cursor — a good moment to reconsider your editor stack. Claude Code installs with a single npm command and covers everything you know from Cursor: rule-based control via CLAUDE.md instead of .cursorrules, native terminal integration without a VS Code extension, and the claude command as your single entry point. The migration is smoother than you'd expect — most .cursorrules entries translate almost 1:1 into CLAUDE.md. If you relied on Cursor for background agents, also check out the /workflow command — that's Claude Code's answer to long-running background agent tasks.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">npm install -g @anthropic-ai/claude-code
+claude
+/init</pre>
+        <dl class="cmd-flags">
+          <dt><code>CLAUDE.md</code></dt>
+          <dd>replaces .cursorrules — project instructions and behavioral rules for Claude</dd>
+          <dt><code>/init</code></dt>
+          <dd>scaffolds a starter CLAUDE.md for the current project</dd>
+          <dt><code>/workflow</code></dt>
+          <dd>launches long-running background agent tasks, analogous to Cursor background agents</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Installieren · Install Claude Code globally</span>
+$ npm install -g @anthropic-ai/claude-code
+
+<span class="com"># Starten und CLAUDE.md anlegen · Launch and scaffold project rules</span>
+$ claude
+/init</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 16.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufkaufen</div>
+        <div class="vocab-translation">to buy up · to acquire (a company)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">SpaceX kauft Cursor für 60 Mrd. $ auf — Claude Codes härtester Rivale wechselt den Besitzer.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">SpaceX buys up Cursor for $60B — Claude Code's toughest rival changes hands.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">feinkörnig</div>
+        <div class="vocab-translation">fine-grained · granular</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die neuen Permission-Regeln in Claude Code sind feinkörniger als je zuvor.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new permission rules in Claude Code are more fine-grained than ever.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">angeblich</div>
+        <div class="vocab-translation">allegedly · supposedly</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Nutzungslimits seien angeblich niedriger als auf der Anthropic-Website beworben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The usage limits are allegedly lower than advertised on Anthropic's website.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einbetten</div>
+        <div class="vocab-translation">to embed · to deeply integrate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">DXC bettet Claude in die Kernsysteme von Banken, Airlines und Behörden ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">DXC embeds Claude into the core systems of banks, airlines, and government agencies.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">klagen</div>
+        <div class="vocab-translation">to sue · to take legal action</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Karl Kahn klagt gegen Anthropic wegen unklarer Nutzungslimits bei Claude Max.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Karl Kahn is suing Anthropic over unclear usage limits in Claude Max.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze im Sack kaufen</div>
+      <div class="idiom-meaning">to buy a pig in a poke — wörtlich: "to buy the cat in the sack" · to buy something without knowing what you're really getting</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer ein Claude-Max-Abo abschließt, ohne die echten Limits zu kennen, kauft die Katze im Sack."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Signing up for Claude Max without knowing the real limits? That's buying a pig in a poke."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Kauf kein KI-Tool, bevor du es getestet hast — sonst kaufst du die Katze im Sack."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't buy an AI tool before testing it — otherwise you're buying a pig in a poke."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to read the fine print</div>
+      <div class="idiom-meaning">to check the small, easy-to-miss details before committing — German equivalent: "das Kleingedruckte lesen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before upgrading to Claude Max, always read the fine print — especially the usage-limit clauses."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Vor dem Upgrade auf Claude Max immer das Kleingedruckte lesen — besonders die Klauseln zu den Nutzungslimits."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"SpaceX sealed the Cursor deal, but developers should read the fine print before assuming the pricing stays the same."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"SpaceX hat den Cursor-Deal besiegelt — aber Entwickler sollten das Kleingedruckte lesen, bevor sie davon ausgehen, dass die Preise gleich bleiben."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · engadget.com · dxc.com · bloomberg.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #41 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
