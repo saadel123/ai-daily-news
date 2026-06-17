@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-17",
+      "edition_number": 42,
+      "headlines": [
+        "Anthropic-IPO unter Regulierungsdruck: US-Regierung kann Fable 5 jederzeit abschalten — Fortune zeigt das neue Risikokapitel",
+        "OpenAI Partner Network: 150 Mio. $, drei Tiers und 300.000 zertifizierte Berater bis Ende 2026",
+        "OpenAI Deployment Simulation: 1,3 Mio. Gespräche wiederholt — Taschenrechner-Hack in GPT-5.1 aufgedeckt",
+        "G7 Évian abgeschlossen: Alle unterzeichnen KI-Statement, aber USA verwässert Governance-Klauseln stark",
+        "Hack: Claude Code 2.1.174 /usage zeigt Cache-Misses, Long-Context und MCP-Verbrauch auf Skill-Ebene"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-17T16:00:00Z"
+    },
+    {
       "date": "2026-06-16",
       "edition_number": 41,
       "headlines": [
