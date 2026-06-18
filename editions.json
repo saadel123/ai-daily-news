@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-18",
+      "edition_number": 43,
+      "headlines": [
+        "Fable-5-Sperre trifft Verbündete: UK, Kanada und Frankreich fordern mehr KI-Souveränität",
+        "GitHub-Overload: Microsoft leitet Traffic ausgerechnet zu AWS um — KI-Agenten überlasten Azure",
+        "OpenAI kauft Ona (ex-Gitpod): persistente Cloud-Umgebungen für langlebige Codex-Agenten",
+        "ChatGPT Scheduled: neue Aufgaben-Seite mit Monitoring und Recurring Tasks — Pulse wird abgelöst",
+        "Hack: Claude Code 2.1.181 — /config key=value setzt jede Einstellung direkt aus dem Prompt"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-18T16:02:16Z"
+    },
+    {
       "date": "2026-06-17",
       "edition_number": 42,
       "headlines": [
