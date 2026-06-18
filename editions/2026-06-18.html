@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 18.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 18. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #43</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Souveränität, Skalierung und Schluss mit Gemini CLI — die KI-Welt baut gerade alles um.</h1>
+    <p class="subtitle">Außerdem: GitHub läuft auf AWS, Anthropics Verbündete wachen auf, und OpenAI kauft eine neue Coding-Infrastruktur.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Fable-5-Sperre trifft Verbündete</strong>: UK, Kanada und Frankreich fordern mehr KI-Souveränität</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>GitHub-Overload</strong>: Microsoft leitet Traffic ausgerechnet zu AWS um — KI-Agenten überlasten Azure</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI kauft Ona</strong> (ex-Gitpod): persistente Cloud-Umgebungen für langlebige Codex-Agenten</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>ChatGPT Scheduled</strong>: neue Aufgaben-Seite mit Monitoring und Recurring Tasks — Pulse wird abgelöst</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Google Antigravity CLI</strong>: Gemini CLI stirbt heute für alle außer Enterprise</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://foreignpolicy.com/2026/06/16/anthropic-trump-fight-mythos-fable-5-hegseth/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Fable 5 · Verbündete fordern KI-Souveränität</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Die USA haben Fable 5 und Mythos 5 von Anthropic per Export-Kontrolle <mark class="vocab" data-translation="eingefroren — frozen / suspended (access)">eingefroren</mark> — für alle außerhalb der USA und für ausländische <mark class="vocab" data-translation="Staatsbürger — citizen / national">Staatsbürger</mark> im Land. Jetzt melden sich UK, Kanada, Frankreich und die Niederlande zu Wort: Frontier-Modelle seien kritische Infrastruktur, und wer sie jederzeit abschalten kann, hält auch die KI-<mark class="vocab" data-translation="Souveränität — sovereignty">Souveränität</mark> seiner <mark class="vocab" data-translation="Verbündeten — allies">Verbündeten</mark> in der Hand. Kein Land zeigt mit dem Finger auf die USA direkt — aber die stille Botschaft ist laut: nationale KI-Programme müssen unabhängiger werden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">The US has frozen Fable 5 and Mythos 5 under export controls — cutting off everyone outside the US and foreign nationals inside it. Now UK, Canada, France, and the Netherlands are speaking up: frontier models are critical infrastructure, and whoever can shut them down at will is also holding their allies' AI sovereignty. No country points directly at the US — but the quiet message is clear: national AI programs need to become more independent.</p>
+        </div>
+      </div>
+      <a class="source" href="https://foreignpolicy.com/2026/06/16/anthropic-trump-fight-mythos-fable-5-hegseth/" target="_blank" rel="noopener">→ foreignpolicy.com · 16.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/318481/20260616/githubs-ai-agent-crisis-forces-microsoft-tap-aws-outages-break-enterprise-slas.htm" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GitHub · KI-Overload treibt Microsoft zu AWS</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Microsoft hat es offiziell <mark class="vocab" data-translation="bestätigt — confirmed / verified">bestätigt</mark>: GitHub leitet einen Teil seines Traffics über Amazon Web Services — <mark class="vocab" data-translation="ausgerechnet — of all things / ironically (emphasis)">ausgerechnet</mark> den Konkurrenten. Grund ist der explosive Anstieg von KI-Agenten-Commits: von einer Milliarde im ganzen Jahr 2025 auf ein erwartetes 14-Milliarden-Volumen in 2026. Azure kommt beim Ausbau nicht hinterher, Pull Requests von KI-Agenten stiegen von 4 Millionen im September 2025 auf 17 Millionen im März 2026. Das ist ein Warnsignal für alle, die ihre Infrastruktur noch nicht für <mark class="vocab" data-translation="autonome Agenten — autonomous agents">autonome Agenten</mark> ausgelegt haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Microsoft has officially confirmed it: GitHub is routing some traffic through Amazon Web Services — a direct competitor. The reason is the explosive rise in AI agent commits: from one billion in all of 2025 to an expected 14 billion in 2026. Azure can't keep pace with the expansion; pull requests from AI agents jumped from 4 million in September 2025 to 17 million in March 2026. A warning signal for anyone whose infrastructure isn't yet designed for autonomous agents.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/318481/20260616/githubs-ai-agent-crisis-forces-microsoft-tap-aws-outages-break-enterprise-slas.htm" target="_blank" rel="noopener">→ techtimes.com · 16.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/openai-to-acquire-ona/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI kauft Ona · Codex bekommt Cloud-Heimat</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI <mark class="vocab" data-translation="erwirbt — acquires / purchases">erwirbt</mark> Ona — ehemals bekannt als Gitpod, ein deutsches Startup aus Kiel. Das Ziel: <mark class="vocab" data-translation="persistente — persistent / long-lived">persistente</mark> Cloud-Umgebungen für lange laufende Codex-Agenten. Wer mit Codex komplexe Aufgaben automatisiert, kennt das Problem: nach ein paar Stunden ist die Verbindung weg, der Kontext verloren. Ona gibt Agenten einen echten Workspace, der Stunden oder Tage überleben kann. Über fünf Millionen Menschen nutzen Codex inzwischen wöchentlich — viermal so viele wie zu Jahresbeginn.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is acquiring Ona — formerly known as Gitpod, a German startup from Kiel. The goal: persistent cloud environments for long-running Codex agents. Anyone automating complex tasks with Codex knows the problem: after a few hours the connection drops and the context is gone. Ona gives agents a real workspace that can survive hours or even days. Codex now has over five million weekly users — four times as many as at the start of the year.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-to-acquire-ona/" target="_blank" rel="noopener">→ openai.com · 11.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://9to5mac.com/2026/06/17/openai-launches-scheduled-tasks-in-chatgpt-details-here/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Scheduled · Pulse wird abgelöst</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI rollt eine neue Seite in ChatGPT aus: Scheduled — der zentrale Ort für alle geplanten Aufgaben. Statt Erinnerungen im Chat zu verlieren, hast du jetzt eine <mark class="vocab" data-translation="Übersicht — overview / dashboard">Übersicht</mark>: wann läuft was, was ist pausiert, was kommt als nächstes. Tasks können auf feste Zeiten oder lockere Fenster <mark class="vocab" data-translation="terminiert — scheduled / timed">terminiert</mark> werden — morgens, nachmittags, abends. Monitoring-Tasks durchsuchen das Web und verbundene Apps und <mark class="vocab" data-translation="benachrichtigen — notify / alert">benachrichtigen</mark> nur dann, wenn es wirklich etwas zu melden gibt. Pulse, das alte Proactive-Feature, wird in 14 Tagen <mark class="vocab" data-translation="abgelöst — replaced / succeeded">abgelöst</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI is rolling out a new page in ChatGPT: Scheduled — the central hub for all planned tasks. Instead of losing reminders in the chat, you now have a clear dashboard: what runs when, what's paused, what's next. Tasks can be scheduled to specific times or broad windows — morning, afternoon, evening. Monitoring tasks search the web and connected apps and only notify you when there's actually something worth reporting. Pulse, the old proactive feature, will be replaced in 14 days.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5mac.com/2026/06/17/openai-launches-scheduled-tasks-in-chatgpt-details-here/" target="_blank" rel="noopener">→ 9to5mac.com · 17.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google Antigravity CLI · Gemini CLI abgeschaltet</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Heute ist es offiziell: Gemini CLI stellt für Free- und Paid-Tier-Nutzer den Betrieb <mark class="vocab" data-translation="einstellen — to cease / shut down (operations)">ein</mark>. Google <mark class="vocab" data-translation="ersetzt — replaces / succeeds">ersetzt</mark> es mit dem Antigravity CLI — neu in Go geschrieben, schneller, mit Background-Workflows für mehrere Agenten gleichzeitig. Agent Skills, Hooks und Subagents bleiben erhalten, Extensions werden zu Antigravity Plugins. Enterprise-Kunden mit Gemini Code Assist Standard oder Enterprise behalten ihren Zugang. Open-Source-Nutzer sind weniger <mark class="vocab" data-translation="begeistert — enthusiastic / thrilled">begeistert</mark>: die Community hat über 6000 Pull Requests <mark class="vocab" data-translation="beigetragen — contributed">beigetragen</mark> — und bekommt nun ein Closed-Source-Produkt zurück.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">It's official today: Gemini CLI is shutting down for free and paid-tier users. Google replaces it with Antigravity CLI — rebuilt in Go, faster, with background workflows for running multiple agents simultaneously. Agent Skills, Hooks, and Subagents are kept; Extensions become Antigravity Plugins. Enterprise customers with Gemini Code Assist Standard or Enterprise retain their access. Open-source contributors are less thrilled: the community submitted over 6,000 pull requests — and gets a closed-source product back.</p>
+        </div>
+      </div>
+      <a class="source" href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="noopener">→ developers.googleblog.com · 18.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.181 · /config direkt aus dem Prompt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.181 bringt einen praktischen Slash-Command: Mit /config key=value kannst du jetzt jede Einstellung direkt aus dem Prompt heraus setzen — Thinking an oder aus, Verbose-Modus, das Modell, alles. Das funktioniert im interaktiven Modus, mit -p und im Remote Control. Es gibt außerdem eine neue Umgebungsvariable CLAUDE_CLIENT_PRESENCE_FILE: wenn du eine Marker-Datei anlegst und ihren Pfad dort einträgst, unterdrückt Claude Code Mobile-Push-Benachrichtigungen, solange du am Rechner sitzt — kein ungewolltes Klingeln mehr auf dem Handy.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.181 ships a handy slash command: /config key=value lets you set any setting directly from the prompt — thinking on or off, verbose mode, the model, anything. It works in interactive mode, with -p, and in Remote Control. There's also a new environment variable CLAUDE_CLIENT_PRESENCE_FILE: point it at a marker file and Claude Code will suppress mobile push notifications while you're at the machine — no more unwanted buzzing on your phone.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/config key=value</pre>
+<pre class="cmd-examples"><span class="com"># Thinking deaktivieren · Disable thinking</span>
+$ /config thinking=false
+
+<span class="com"># Modell wechseln · Switch model</span>
+$ /config model=claude-opus-4-8
+
+<span class="com"># Mobile-Pushs unterdrücken (Shell) · Suppress mobile push notifications (shell)</span>
+$ export CLAUDE_CLIENT_PRESENCE_FILE=~/.at-my-desk</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">einfrieren</div>
+        <div class="vocab-translation">to freeze · to suspend access</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Export-Stopp hat den Modell-Zugang über Nacht eingefroren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The export ban froze model access overnight.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausgerechnet</div>
+        <div class="vocab-translation">of all things · ironically enough</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ausgerechnet AWS hilft Microsoft, GitHub am Laufen zu halten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Of all companies, AWS is helping Microsoft keep GitHub running.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ablösen</div>
+        <div class="vocab-translation">to replace · to succeed / take over from</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Antigravity CLI löst das Gemini CLI heute offiziell ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Antigravity CLI officially takes over from Gemini CLI today.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">terminieren</div>
+        <div class="vocab-translation">to schedule · to set a time for</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst Tasks auf die frühen Morgenstunden terminieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can schedule tasks for the early morning hours.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Engpass</div>
+        <div class="vocab-translation">bottleneck · choke point</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Azure ist beim KI-Traffic zum echten Engpass geworden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Azure has become a real bottleneck for AI traffic.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Fass zum Überlaufen bringen</div>
+      <div class="idiom-meaning">to be the last straw · to push things over the edge — wörtlich: "to make the barrel overflow"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Traffic-Anstieg durch KI-Agenten hat das Fass zum Überlaufen gebracht — Microsoft musste AWS anrufen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The traffic surge from AI agents was the last straw — Microsoft had to call AWS."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Noch ein Breaking Change im Update, und das Fass läuft über."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"One more breaking change in the update and it'll be the last straw."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to throw a wrench in the works</div>
+      <div class="idiom-meaning">to sabotage or disrupt a plan — German equivalent: "einen Strich durch die Rechnung machen" (to draw a line through the calculation)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The export ban threw a wrench in Anthropic's international expansion plans."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die Export-Kontrollen haben Anthropics internationalem Wachstum einen Strich durch die Rechnung gemacht."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"A surprise deprecation always throws a wrench in the migration schedule."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Eine überraschende Deprecation macht dem Migrations-Plan immer einen Strich durch die Rechnung."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: foreignpolicy.com · techtimes.com · openai.com · 9to5mac.com · developers.googleblog.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #43 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
