@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-19",
+      "edition_number": 44,
+      "headlines": [
+        "Claude Code 2.1.183: Auto Mode sperrt destruktive Git- und IaC-Befehle automatisch",
+        "Anthropic Seoul: NAVER, Samsung SDS, LG und Nexon deployen Claude groß",
+        "OpenAI 2025: auditierte Zahlen zeigen 38,5 Mrd. $ Verlust vor dem geplanten IPO",
+        "Grok 4.3 landet auf Amazon Bedrock — 1-Millionen-Token-Kontext, konfigurierbares Reasoning",
+        "Gemini CLI ist seit gestern abgeklemmt — Antigravity CLI ist der Nachfolger"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-06-19T16:00:18Z"
+    },
+    {
       "date": "2026-06-18",
       "edition_number": 43,
       "headlines": [
