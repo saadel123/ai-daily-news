@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 19.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 19. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #44</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Sicherheitsnetz für Auto Mode: Claude Code sperrt jetzt destruktive Git-Befehle.</h1>
+    <p class="subtitle">Außerdem: Anthropic landet in Seoul, OpenAI verbrennt 38,5 Mrd. $, Grok 4.3 kommt auf AWS — und Googles Gemini CLI ist seit gestern Geschichte.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.183</strong>: Auto Mode sperrt destruktive Git- und IaC-Befehle automatisch</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic Seoul</strong>: NAVER, Samsung SDS, LG und Nexon deployen Claude groß</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI 2025</strong>: auditierte Zahlen zeigen 38,5 Mrd. $ Verlust vor dem geplanten IPO</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Grok 4.3</strong> landet auf Amazon Bedrock — 1-Millionen-Token-Kontext, konfigurierbares Reasoning</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Gemini CLI</strong> ist seit gestern abgeklemmt — Antigravity CLI ist der Nachfolger</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.183" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.183 · Auto Mode Safety</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.183 legt beim Auto Mode ein <mark class="vocab" data-translation="Sicherheitsnetz — safety net">Sicherheitsnetz</mark> ein: Befehle wie git reset --hard, git checkout -- . und git clean -fd werden jetzt automatisch <mark class="vocab" data-translation="blockiert — blocked / stopped">blockiert</mark>, wenn du nicht ausdrücklich darum gebeten hast, lokale Arbeit zu verwerfen. Genauso ist git commit --amend gesperrt, sobald der Commit nicht in dieser Session vom Agenten selbst stammt — das verhindert versehentliches Überschreiben deiner eigenen History. Auch destruktive IaC-Befehle wie terraform destroy, pulumi destroy und cdk destroy sind künftig geschützt, solange du den spezifischen Stack nicht explizit nennst. Als Bonus gibt es mit /config --help einen neuen Slash-Command, der alle <mark class="vocab" data-translation="Kurzschlüssel — shorthand keys / shortcuts">Kurzschlüssel</mark> der Config auflistet, und das neue Setting attribution.sessionUrl lässt dich den claude.ai-Link aus Commits und Pull Requests weglassen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.183 adds a safety net around auto mode: commands like git reset --hard, git checkout -- . and git clean -fd are now automatically blocked unless you explicitly asked the agent to discard local work. Similarly, git commit --amend is blocked when the commit wasn't made by the agent in the current session — preventing accidental history overwrites. Destructive IaC commands — terraform destroy, pulumi destroy, cdk destroy — are also protected unless you name the specific stack. As a bonus, /config --help is a new slash command that lists all available config shorthand keys, and the new attribution.sessionUrl setting lets you omit the claude.ai session link from commits and PRs in web and Remote Control sessions.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/config --help
+/config key=value</pre>
+        <dl class="cmd-flags">
+          <dt><code>--help</code></dt>
+          <dd>list all available shorthand keys for /config key=value syntax</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alle Config-Kurzschlüssel anzeigen · List all config shorthand keys</span>
+$ /config --help
+
+<span class="com"># Session-Link aus Commits und PRs entfernen · Omit session link from commits and PRs</span>
+$ /config attribution.sessionUrl=false</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.183" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Seoul · Korean AI Ecosystem</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat am 17. Juni sein Seoul-Büro <mark class="vocab" data-translation="eröffnet — opened / inaugurated">eröffnet</mark> — das dritte in der APAC-Region nach Tokio und Bengaluru. Dario Amodeis Team war persönlich vor Ort und brachte gleich ein ganzes Paket an Enterprise-Deals mit: NAVER deployt Claude Code quer durch seine gesamte Engineering-Organisation mit tausenden Entwicklern, Samsung SDS rollt Claude Cowork und Claude Code über Samsung Electronics aus, LG CNS bringt Claude in die LG-Gruppe. Nexon setzt Claude Code für die Live-Service-Spielentwicklung ein, und Channel Corp <mark class="vocab" data-translation="befeuert — powers / fuels">befeuert</mark> seine Channel-Talk-Plattform mit über 230.000 angeschlossenen Unternehmen. On top haben Anthropic und Koreas Ministerium für Wissenschaft und ICT ein MOU zur KI-Sicherheitskooperation <mark class="vocab" data-translation="unterzeichnet — signed">unterzeichnet</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic opened its Seoul office on June 17 — its third in APAC after Tokyo and Bengaluru — with Dario Amodei's team attending in person. The launch came loaded with enterprise deals: NAVER is rolling Claude Code out across its entire engineering organization (thousands of engineers), Samsung SDS is deploying Claude Cowork and Claude Code across Samsung Electronics, and LG CNS is bringing Claude into the LG Group. Nexon is using Claude Code for live-service game development, and Channel Corp is powering its Channel Talk platform — serving 230,000+ businesses — with Claude. To cap it all off, Anthropic signed an MOU with Korea's Ministry of Science and ICT on AI safety cooperation.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">→ anthropic.com · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/318496/20260616/openai-lost-385-billion-2025-audited-financials-expose-17b-azure-dependency.htm" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI 2025 · 38,5 Mrd. $ Verlust</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Geleakte, <mark class="vocab" data-translation="auditierte — audited (past participle)">auditierte</mark> Finanzdokumente zeigen: OpenAI hat 2025 bei einem Umsatz von 13 Mrd. $ stolze 38,5 Mrd. $ Nettoverlust eingefahren — der Verlust hat sich gegenüber 2024 fast verachtfacht. Die Gesamtkosten lagen bei 34 Mrd. $, davon allein 19,2 Mrd. $ für Forschung und Entwicklung. Besonders <mark class="vocab" data-translation="auffällig — striking / notable">auffällig</mark>: 17 Mrd. $ der Gesamtkosten flossen direkt zu Microsoft Azure — eine Abhängigkeit, die im geplanten IPO-Prospekt jetzt schwer wiegt. OpenAI hat ebenfalls ein vertrauliches S-1 eingereicht und peilt ein Nasdaq-Listing für Oktober 2026 bei einer Bewertung nahe 1 Bio. $ an.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Leaked, audited financial documents reveal OpenAI posted a $38.5B net loss in 2025 on $13B in revenue — losses nearly eight times wider than in 2024. Total costs hit $34B, including $19.2B on research and development alone. The most striking detail: $17B of that $34B went straight to Microsoft Azure, a dependency that sits heavy in the planned IPO prospectus. OpenAI has also confidentially filed a draft S-1, targeting a Nasdaq listing in October 2026 at a valuation nearing $1 trillion.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/318496/20260616/openai-lost-385-billion-2025-audited-financials-expose-17b-azure-dependency.htm" target="_blank" rel="noopener">→ techtimes.com · 16.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://x.ai/news/grok-amazon-bedrock" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Grok 4.3 · Amazon Bedrock · 1M Token</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI hat Grok 4.3 ab dem 18. Juni auf Amazon Bedrock verfügbar gemacht — das Modell läuft auf Mantle, Amazons neuem Inference-Engine für Preis-Leistung, und bringt einen 1-Millionen-Token-Kontext mit, der auch sehr große Codebasen oder lange Rechtsdokumente problemlos <mark class="vocab" data-translation="schluckt — swallows / handles (casual)">schluckt</mark>. Das Besondere ist das konfigurierbare Reasoning: du kannst zwischen keiner, niedriger, mittlerer und hoher Reasoning-Stufe wählen und damit Kosten und Latenz selbst <mark class="vocab" data-translation="austarieren — to balance / to fine-tune">austarieren</mark>. Grok 4.3 soll außerdem die niedrigste Halluzinationsrate unter den Frontier-Modellen haben und unterstützt Tool-Calling, Structured Output und Response-Streaming direkt out of the box.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI made Grok 4.3 available on Amazon Bedrock from June 18, running on Mantle — Amazon's new price-performance inference engine — with a 1-million-token context window that handles massive codebases and long legal documents without breaking a sweat. The standout feature is configurable reasoning: choose none, low, medium, or high reasoning effort to tune the trade-off between cost and depth. Grok 4.3 also claims the lowest hallucination rate among frontier models and supports tool calling, structured output, and response streaming out of the box.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news/grok-amazon-bedrock" target="_blank" rel="noopener">→ x.ai · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini CLI ist Geschichte · Antigravity CLI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Gestern, am 18. Juni, hat Google die Gemini CLI endgültig <mark class="vocab" data-translation="abgeklemmt — cut off / shut down (casual)">abgeklemmt</mark> — für Google AI Pro, Ultra und den kostenlosen Tier werden ab sofort keine Anfragen mehr bedient. Der Nachfolger heißt Antigravity CLI, kurz agy, und ist eine Go-Binary statt des früheren Node.js-Pakets; der alte gemini-Befehl existiert nicht mehr. Wer CI/CD-Pipelines, Skripte oder Automations auf der alten Gemini CLI aufgebaut hat, muss jetzt handeln. Die gute Nachricht: agy erkennt vorhandene Konfigurationen beim ersten Start automatisch und bietet eine interaktive Checkliste zur Migration an — unser heutiger Hack zeigt dir die genauen Befehle.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Yesterday, June 18, Google officially pulled the plug on Gemini CLI — no more requests served for Google AI Pro, Ultra, or the free tier. The replacement is Antigravity CLI, binary name agy, a Go binary that replaces the old Node.js package; the old gemini command is simply gone. If you have CI/CD pipelines, scripts, or automations built on the old Gemini CLI, you need to act now. The good news: agy detects existing configurations on first run and walks you through an interactive migration checklist — today's hack shows you the exact commands.</p>
+        </div>
+      </div>
+      <a class="source" href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="noopener">→ developers.googleblog.com · 18.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://antigravity.google/docs/gcli-migration" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini CLI → Antigravity CLI · Jetzt migrieren</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Wer gestern die Deadline verpasst hat oder jetzt erst merkt, dass Pipelines <mark class="vocab" data-translation="stillstehen — have stopped / are stalled">stillstehen</mark>, muss auf Antigravity CLI migrieren. Die Installation läuft über ein einziges Curl-Skript; der neue Binärname ist agy, nicht gemini. Beim ersten Start erkennt agy vorhandene Gemini-Konfigurationen automatisch und führt eine interaktive Checkliste durch. Plugins lassen sich mit einem Befehl importieren, und die Skills ziehen von .gemini/skills/ nach .agents/skills/ um. Zum Abschluss prüft agy doctor, ob alles <mark class="vocab" data-translation="sauber — clean / error-free">sauber</mark> ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">If you missed yesterday's deadline or just noticed pipelines have gone quiet, you need to migrate to Antigravity CLI. Installation is a single curl script; the new binary name is agy, not gemini. On first run, agy automatically detects existing Gemini configurations and walks you through an interactive checklist. Plugins import with one command, and skills move from .gemini/skills/ to .agents/skills/. Finally, agy doctor tells you whether everything is clean.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">curl -fsSL https://antigravity.google/cli/install.sh | bash
+agy
+agy plugin import gemini
+agy doctor</pre>
+        <dl class="cmd-flags">
+          <dt><code>plugin import gemini</code></dt>
+          <dd>import all installed Gemini CLI plugins into Antigravity</dd>
+          <dt><code>doctor</code></dt>
+          <dd>validate the installation and report any config issues</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Installieren · Install Antigravity CLI</span>
+$ curl -fsSL https://antigravity.google/cli/install.sh | bash
+
+<span class="com"># Zum ersten Mal starten — startet interaktive Migration · First run — triggers interactive migration</span>
+$ agy
+
+<span class="com"># Gemini-Plugins importieren · Import Gemini plugins</span>
+$ agy plugin import gemini
+
+<span class="com"># Alles sauber? · Check everything is clean</span>
+$ agy doctor</pre>
+      </section>
+      <a class="source" href="https://antigravity.google/docs/gcli-migration" target="_blank" rel="noopener">→ antigravity.google · 18.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">absichern</div>
+        <div class="vocab-translation">to safeguard · to secure</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Auto Mode ist jetzt gegen versehentliche Löschungen abgesichert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Auto mode is now safeguarded against accidental deletions.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eröffnen</div>
+        <div class="vocab-translation">to open · to inaugurate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat sein Seoul-Büro mit einem ganzen Paket an Enterprise-Deals eröffnet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic opened its Seoul office with an entire package of enterprise deals.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auditiert</div>
+        <div class="vocab-translation">audited</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die auditierten Zahlen zeigen, dass OpenAI 2025 weit mehr ausgegeben hat als eingenommen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The audited figures show OpenAI spent far more in 2025 than it brought in.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">austarieren</div>
+        <div class="vocab-translation">to balance · to fine-tune a trade-off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit konfigurierbarem Reasoning kannst du Kosten und Qualität selbst austarieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With configurable reasoning you can fine-tune the trade-off between cost and quality yourself.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ablösen</div>
+        <div class="vocab-translation">to replace · to succeed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Antigravity CLI löst die Gemini CLI vollständig ab — kein Patch, ein frischer Start.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Antigravity CLI fully replaces Gemini CLI — no patch, a clean start.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">da liegt der Hund begraben</div>
+      <div class="idiom-meaning">that's the crux of the matter · that's where the real problem lies — wörtlich: "there the dog is buried"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"17 Milliarden fließen direkt zu Azure — da liegt der Hund begraben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"17 billion goes straight to Azure — that's where the real problem lies."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die Tests laufen lokal, aber im CI schlägt alles fehl — da liegt der Hund begraben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Tests pass locally but CI blows up every time — that's where the real issue lies."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pull the plug</div>
+      <div class="idiom-meaning">to shut something down decisively — German equivalent: "den Stecker ziehen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Google pulled the plug on Gemini CLI on June 18 — no grace period, just gone."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Google hat am 18. Juni den Stecker bei der Gemini CLI gezogen — kein Puffer, einfach weg."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the load test fails at 50k req/s, we pull the plug and roll back."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Falls der Lasttest bei 50k Req/s scheitert, ziehen wir den Stecker und rollen zurück."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com, anthropic.com, techtimes.com, x.ai, developers.googleblog.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #44 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
