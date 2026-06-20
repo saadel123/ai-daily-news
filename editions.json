@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-20",
+      "edition_number": 44,
+      "headlines": [
+        "Claude Code Artifacts: Anthropic startet Beta — lebendige Dashboards direkt aus dem Terminal teilen",
+        "Billing-Pause: Anthropic stoppt Billing-Änderung — Agent SDK und claude -p bleiben im normalen Abo",
+        "OpenAI: GPT-5.5 Instant bringt klinische Gesundheits-KI gratis zu 230 Mio. Free-Tier-Nutzern",
+        "Grok für Office: xAI macht sein Add-In für Word, Excel & PowerPoint gratis für alle Microsoft-365-Nutzer",
+        "LifeSciBench: OpenAIs neuer Benchmark zeigt, dass KI zwei Drittel aller Lebenswissenschafts-Aufgaben noch verfehlt"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 4,
+      "listen_time_min": 6,
+      "generated_at": "2026-06-20T16:01:43Z"
+    },
+    {
       "date": "2026-06-19",
       "edition_number": 44,
       "headlines": [
