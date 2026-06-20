@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 20.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 20. Juni 2026</span>
+    <span>⏱ ~4 min lesen · ~6 min hören</span>
+    <span class="preview-tag">Edition #44</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Dashboards live teilen, Billing-Stopp und KI auf Rezept — Samstag packt voll aus.</h1>
+    <p class="subtitle">Artifacts verwandelt dein Terminal in eine lebendige Seite, Anthropic bremst eine unpopuläre Abrechnungsänderung, und OpenAI bringt Gesundheits-KI auf den Free-Tier.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code Artifacts</strong>: Anthropic startet Beta — lebendige Dashboards direkt aus dem Terminal teilen</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Billing-Pause</strong>: Anthropic stoppt Billing-Änderung — Agent SDK und <code>claude -p</code> bleiben im normalen Abo</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI</strong>: GPT-5.5 Instant bringt klinische Gesundheits-KI gratis zu 230 Mio. Free-Tier-Nutzern</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Grok für Office</strong>: xAI macht sein Add-In für Word, Excel &amp; PowerPoint gratis für alle Microsoft-365-Nutzer</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>LifeSciBench</strong>: OpenAIs neuer Benchmark zeigt, dass KI zwei Drittel aller Lebenswissenschafts-Aufgaben noch verfehlt</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code Artifacts · Live-Dashboards aus dem Terminal</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Claude Code Artifacts in die Beta <mark class="vocab" data-translation="geschickt — sent into / launched">geschickt</mark> — die neue Funktion verwandelt eine Claude-Code-Session direkt in eine lebendige, interaktive HTML-Seite, die du mit dem Team teilen kannst. Ob PR-Walkthrough, <mark class="vocab" data-translation="einsehbar — viewable / accessible (adjective)">einsehbares</mark> Projekt-Dashboard oder Release-Checkliste: Alles liegt auf einer privaten URL, die sich beim nächsten Push automatisch <mark class="vocab" data-translation="aktualisiert — updates / refreshes">aktualisiert</mark>, ohne ein neues Dokument zu erzeugen. Alte Versionen bleiben abrufbar, der Link bleibt stabil — dein Team sieht immer den aktuellen Stand, ohne jeweils manuell eine neue Datei zu bekommen. Im Beta ist das Feature auf Team- und Enterprise-Pläne beschränkt und läuft direkt aus dem Claude Code CLI und der Desktop-App.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic shipped Claude Code Artifacts in beta — the new feature turns a Claude Code session directly into a live, interactive HTML page you can share with your team. Whether it's a PR walkthrough, viewable project dashboard, or release checklist: everything lands at a private link that refreshes automatically with each push, without creating a separate document. Old versions stay accessible, the link stays stable — your team always sees the current state without manually receiving a new file each time. In beta the feature is limited to Team and Enterprise plans and runs straight from the Claude Code CLI and desktop app.</p>
+        </div>
+      </div>
+      <a class="source" href="https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises" target="_blank" rel="noopener">→ venturebeat.com · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Billing-Pause · Agent SDK bleibt im Abo</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Am 15. Juni sollte Anthropic das Billing für den Claude Agent SDK und <code>claude -p</code> aus dem normalen Abo herauslösen und auf eigene monatliche Credit-Pools umstellen — doch Entwickler haben laut <mark class="vocab" data-translation="Gegenwind — headwind / pushback (figurative)">Gegenwind</mark> gemacht, weil die Subscription-Caps bisher auch schweres Agent-Workload subventioniert haben. Noch am selben Tag, an dem die Änderung greifen sollte, hat Anthropic alle Subscriber per E-Mail <mark class="vocab" data-translation="beruhigt — reassured / calmed">beruhigt</mark>: „Nothing changes for now." Der offizielle Grund: Man will den Plan überarbeiten, damit er besser zu der Art passt, wie Nutzer Claude-Subscriptions tatsächlich nutzen. Bis auf Weiteres läuft der Agent SDK, <code>claude -p</code> und GitHub-Actions-Nutzung also weiter ganz normal aus dem Abo — kein separater Credit-Pool, keine neuen Kosten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">On June 15, Anthropic was set to split Agent SDK and <code>claude -p</code> usage out of regular subscriptions into per-user monthly credit pools — but developers pushed back hard, since subscription caps had been subsidizing heavy agent workloads. On the very day the change was set to go live, Anthropic emailed all subscribers to reassure them: "Nothing changes for now." The stated reason: the company wants to revise the plan to better match how users actually build with Claude subscriptions. Until further notice, Agent SDK, <code>claude -p</code>, and GitHub Actions usage continue drawing from normal subscription limits — no separate credit pool, no new costs.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/" target="_blank" rel="noopener">→ thenewstack.io · 15.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/improving-health-intelligence-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-5.5 Instant · Gesundheits-KI für alle</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat GPT-5.5 Instant am 18. Juni mit einem deutlichen Sprung in der Gesundheitskompetenz <mark class="vocab" data-translation="ausgerollt — rolled out (separable compound)">ausgerollt</mark> — für alle Nutzer, auch den Free-Tier. Laut OpenAI reduzierten sich Faktualitätsprobleme bei Gesundheitsantworten in zwei Monaten um 71 Prozent; das Modell erkennt jetzt Notfallsituationen zuverlässiger, erklärt Unsicherheiten klarer und fragt aktiv nach Kontext, bevor es antwortet. Mehr als 230 Millionen Menschen stellen ChatGPT jede Woche Gesundheitsfragen — für diese Nutzerbasis ist das ein erheblicher Schritt. Unabhängige Studien mahnen aber zur <mark class="vocab" data-translation="Vorsicht — caution / care">Vorsicht</mark>: Bei Erstdiagnosen liegen KI-Chatbots noch weit unter dem ärztlichen Standard.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI rolled out GPT-5.5 Instant on June 18 with a meaningful jump in health intelligence — for all users, free tier included. According to OpenAI, factuality issues in health responses dropped 71% over two months; the model now recognizes urgent situations more reliably, explains uncertainty more clearly, and proactively asks for context before answering. More than 230 million people ask ChatGPT health questions every week — for that user base, this is a significant step. Independent studies still urge caution: AI chatbots remain well below the clinical standard for initial diagnosis.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/improving-health-intelligence-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://blockchain.news/news/xai-grok-word-addin" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI Grok · Word, Excel, PowerPoint Add-In</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI hat Grok als kostenloses Add-In in Microsoft 365 <mark class="vocab" data-translation="integriert — integrated / embedded">integriert</mark> — zuerst für Word (18. Juni), kurz danach für Excel und PowerPoint. Das Side-Panel bringt Grok-gestütztes Research aus dem Web und Live-Daten direkt aus dem X-Netzwerk in das Dokument; Notizen lassen sich damit in ausformulierte Texte <mark class="vocab" data-translation="umwandeln — to convert / transform (separable verb)">umwandeln</mark>, und Inhalte aus E-Mail, SharePoint oder Google Drive können direkt <mark class="vocab" data-translation="eingebunden — incorporated / pulled in">eingebunden</mark> werden, ohne das Dokument zu verlassen. Das Add-In ist gratis für alle Microsoft-365-Nutzer und setzt keine SuperGrok-Subscription voraus. Damit zieht xAI nach einem ähnlichen Zug von Microsoft Copilot auf dem eigenen Terrain nach.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI integrated Grok as a free add-in for Microsoft 365 — first for Word (June 18), followed shortly by Excel and PowerPoint. The side panel brings Grok-powered research from the web and live X network data directly into your document; notes can be converted into polished text, and content from email, SharePoint, or Google Drive can be pulled in without ever leaving the document. The add-in is free for all Microsoft 365 users with no SuperGrok subscription required. With this move, xAI steps directly onto Microsoft Copilot's home turf.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blockchain.news/news/xai-grok-word-addin" target="_blank" rel="noopener">→ blockchain.news · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-life-sci-bench/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI LifeSciBench · KI besteht nur 1 von 3 Wissenschaftsaufgaben</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat am 17. Juni LifeSciBench vorgestellt — einen <mark class="vocab" data-translation="Maßstab — standard / benchmark (literal: measuring stick)">Maßstab</mark> mit 750 Aufgaben aus der realen Lebenswissenschafts-Forschung, entwickelt zusammen mit 173 promovierten Wissenschaftlerinnen und Wissenschaftlern. Das <mark class="vocab" data-translation="ernüchternde — sobering / disillusioning">ernüchternde</mark> Ergebnis: Selbst GPT-Rosalind, das beste teilnehmende Modell, löst nur etwa ein Drittel aller Aufgaben — der Benchmark deckt den gesamten wissenschaftlichen Prozess ab, von der Datenauswertung über das Protokolldesign bis zur Interpretation von Ergebnissen. Frontier-Modelle wie Claude Opus 4.8 und Gemini 3.5 Flash schneiden ebenfalls unter der Drittel-Marke ab. Für Teams, die KI in der Grundlagenforschung einsetzen, liefert LifeSciBench ein realistisches Bild davon, wo die Modelle heute wirklich stehen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI published LifeSciBench on June 17 — a benchmark with 750 tasks drawn from real life science research, built together with 173 PhD-level scientists. The sobering result: even GPT-Rosalind, the top-performing model, solves only about one third of all tasks — the benchmark covers the full scientific process, from data analysis to protocol design to interpretation of results. Frontier models including Claude Opus 4.8 and Gemini 3.5 Flash also score below the one-third mark. For teams deploying AI in fundamental research, LifeSciBench gives a realistic picture of where models actually stand today.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-life-sci-bench/" target="_blank" rel="noopener">→ openai.com · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Hack · CLAUDE_CLIENT_PRESENCE_FILE · kein Handy-Ping mehr</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.181 hat eine Umgebungsvariable mitgebracht, die viele Nutzer übersehen haben: Trägst du in deiner Shell-Config den Pfad zu einer Marker-Datei ein, die existiert, solange du am Rechner bist, schaltet Claude Code die Mobile-Push-Benachrichtigungen automatisch stumm — kein <mark class="vocab" data-translation="Ping — ping (English tech noun used in German)">Ping</mark> mehr auf dem Handy, während du ohnehin im Terminal sitzt. Das <mark class="vocab" data-translation="Einrichten — setting up / configuring">Einrichten</mark> dauert eine Minute: Datei anlegen, Variable dauerhaft in die Shell-Config <mark class="vocab" data-translation="eintragen — to add / enter into (a file)">eintragen</mark>, fertig. Wer mehrere Maschinen nutzt, kann die Variable je nach Rechner unterschiedlich konfigurieren — auf dem Laptop aktiv, auf dem Server-Account ohne.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.181 shipped an environment variable that many users missed: set it in your shell config pointing to a marker file that exists while you're at your machine, and Claude Code automatically silences mobile push notifications — no more pings on your phone while you're already in the terminal. Setup takes a minute: create the file, add the variable permanently to your shell config, done. Users on multiple machines can configure it differently per machine — active on the laptop, absent on the server account.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">export CLAUDE_CLIENT_PRESENCE_FILE=/path/to/marker-file</pre>
+        <dl class="cmd-flags">
+          <dt><code>CLAUDE_CLIENT_PRESENCE_FILE</code></dt>
+          <dd>path to a file that, when it exists on disk, tells Claude Code you are at your machine — mobile push notifications are suppressed while the file is present</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Marker-Datei anlegen und Variable dauerhaft setzen (zsh) · Create file and set var permanently (zsh)</span>
+$ touch ~/.claude-present && echo 'export CLAUDE_CLIENT_PRESENCE_FILE="$HOME/.claude-present"' >> ~/.zshrc
+
+<span class="com"># Für eine einzelne Session deaktivieren · Disable for one session only</span>
+$ unset CLAUDE_CLIENT_PRESENCE_FILE</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">anlegen</div>
+        <div class="vocab-translation">to create · to set up (a file, an account)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Leg dir zuerst eine Backup-Datei an, bevor du anfängst.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Create a backup file first before you start.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy gradually</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Team rollt das Feature schrittweise an alle Nutzer aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The team is gradually rolling out the feature to all users.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Gegenwind</div>
+        <div class="vocab-translation">headwind · pushback (figurative)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Pricing bekommt Gegenwind von der Developer-Community.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new pricing is getting pushback from the developer community.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ernüchternd</div>
+        <div class="vocab-translation">sobering · disillusioning</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Benchmark-Ergebnisse waren ehrlich gesagt ernüchternd.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">To be honest, the benchmark results were sobering.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eintragen</div>
+        <div class="vocab-translation">to enter · to add (to a file or list)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Trag die Variable in deine Shell-Config ein, damit sie dauerhaft gilt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Add the variable to your shell config so it's permanent.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Stecker ziehen</div>
+      <div class="idiom-meaning">to pull the plug · to shut something down abruptly — wörtlich: "to pull out the plug"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat kurz vor dem Launch den Stecker gezogen — die Billing-Änderung ist vorerst vom Tisch."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic pulled the plug just before launch — the billing change is off the table for now."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn das Feature weiter Gegenwind bekommt, müssen wir früher oder später den Stecker ziehen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the feature keeps getting pushback, we'll have to pull the plug sooner or later."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to push back</div>
+      <div class="idiom-meaning">to resist or object to something — German equivalent: "Gegenwind machen" / "sich querstellen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Developers pushed back hard on the billing change, and Anthropic listened."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Entwickler haben massiv Gegenwind gemacht, und Anthropic hat darauf gehört."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We pushed back on the deadline and got two more weeks."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben uns beim Termin quergestellt und zwei Wochen mehr rausgeholt."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: venturebeat.com · thenewstack.io · openai.com · blockchain.news · marktechpost.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #44 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
