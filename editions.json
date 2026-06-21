@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-21",
+      "edition_number": 45,
+      "headlines": [
+        "Project Fetch 2: Claude Opus 4.7 löst Roboter-Tasks 20× schneller als Menschen — völlig eigenständig",
+        "DeepMind AI-Control-Roadmap: eigene Agenten wie Insider-Bedrohungen überwachen, MITRE ATT&CK-Framework",
+        "NEJM AI: OpenAIs o3 löst 18 ungelöste seltene Kinderkrankheits-Diagnosen in 376 revisited Fällen",
+        "OpenAI × Molecule.one: GPT-5.4 als autonomer Chemiker verbessert Chan-Lam-Reaktion über 10.080 Wet-Lab-Versuche",
+        "ChatGPT unter 50 % Marktanteil erstmals seit Launch — Gemini 27,7 %, Claude 10,3 %"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-21T16:00:00Z"
+    },
+    {
       "date": "2026-06-20",
       "edition_number": 44,
       "headlines": [
