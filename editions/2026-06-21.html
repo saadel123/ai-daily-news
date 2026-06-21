@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 21.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 21. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #45</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Roboter, Chemiker, Kinderarzt: KI läuft dem Menschen auf allen Fronten davon.</h1>
+    <p class="subtitle">Außerdem: DeepMind behandelt eigene Agenten wie Insider-Bedrohungen — und ChatGPT verliert erstmals die Marktmehrheit.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Project Fetch 2</strong>: Claude Opus 4.7 löst Roboter-Tasks 20× schneller als Menschen — völlig eigenständig</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>DeepMind AI-Control-Roadmap</strong>: eigene Agenten wie Insider-Bedrohungen überwachen, MITRE ATT&amp;CK-Framework</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>NEJM AI</strong>: OpenAIs o3 löst 18 ungelöste seltene Kinderkrankheits-Diagnosen in 376 revisited Fällen</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI × Molecule.one</strong>: GPT-5.4 als autonomer Chemiker verbessert Chan-Lam-Reaktion über 10.080 Wet-Lab-Versuche</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT unter 50 %</strong>: Marktanteil erstmals seit Launch gefallen — Gemini 27,7 %, Claude 10,3 %</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/research/project-fetch-phase-two" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Project Fetch Phase 2 · Claude Opus 4.7 × Robotics</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat die zweite Phase von Project Fetch veröffentlicht — und Claude Opus 4.7 hat dabei alle Erwartungen <mark class="vocab" data-translation="übertreffen — to exceed / surpass">übertroffen</mark>: Das Modell hat Roboter-Tasks <mark class="vocab" data-translation="eigenständig — autonomously / independently">eigenständig</mark>, also komplett ohne menschliche Hilfe, abgeschlossen — und war dabei 20-mal schneller als das beste menschliche Team aus dem Vorjahr. Gleichzeitig produzierte Opus 4.7 zehnmal weniger Code als das KI-assistierte Human-Team. Die <mark class="vocab" data-translation="Kehrseite — downside / flip side">Kehrseite</mark>: den Ball tatsächlich zu "fetchen" — also präzise zum Startpunkt zurückzurollen — schafft Claude noch nicht, weil die feinfühlige Bewegungssteuerung fehlt. Ein beeindruckender Sprung, aber kein vollständiger Durchbruch.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic published Phase Two of Project Fetch — and Claude Opus 4.7 exceeded all expectations: the model completed robotics tasks entirely on its own, without any human assistance, and did so 20 times faster than the best human team from last year. It also produced ten times less code than the Claude-assisted human team. The catch: actually "fetching" the ball — precisely guiding it back to the start area — is still beyond Claude because fine-grained motion control remains a gap. An impressive leap, but not a complete breakthrough.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/research/project-fetch-phase-two" target="_blank" rel="noopener">→ anthropic.com/research · 18.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DeepMind · AI Control Roadmap · Rogue Agents</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Google DeepMind hat eine interne KI-Sicherheits-Roadmap veröffentlicht, die einen <mark class="vocab" data-translation="bemerkenswert — noteworthy / remarkable">bemerkenswerten</mark> Ansatz verfolgt: Eigene KI-Agenten werden wie potenzielle <mark class="vocab" data-translation="Innentäter — insider threat">Innentäter</mark> behandelt — ähnlich einem Mitarbeiter, der zwar Bürozugang hat, aber möglicherweise gegen die eigene Firma arbeitet. Das Framework baut auf MITRE ATT&amp;CK auf, um mögliche Angriffstaktiken systematisch zu erfassen und zu erkennen, bevor sie Schaden anrichten. DeepMind hat bereits einen internen Prototyp gebaut, der Coding-Agent-Trajectories asynchron überwacht und verdächtige Aktionen zur menschlichen Review <mark class="vocab" data-translation="weiterleiten — to escalate / forward">weiterleitet</mark>. Wichtig: Das ist keine Reaktion auf einen konkreten Vorfall — alles <mark class="vocab" data-translation="vorsorglich — precautionary">vorsorglich</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google DeepMind published an internal AI security roadmap that takes a striking approach: it treats its own AI agents as potential insider threats — like an employee who already has office access but might be working against the company. The framework builds on MITRE ATT&amp;CK to systematically map and detect potential attack tactics before they cause damage. DeepMind has already built an internal prototype that asynchronously monitors coding agent trajectories and escalates suspicious actions for human review. Importantly: this is not a reaction to any real incident — it's entirely precautionary.</p>
+        </div>
+      </div>
+      <a class="source" href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank" rel="noopener">→ deepmind.google · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/diagnose-rare-childhood-diseases/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI o3 · Rare Disease Diagnosis · NEJM AI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Forscher vom Boston Children's Hospital, Harvard und OpenAI haben o3 Deep Research auf 376 bisher <mark class="vocab" data-translation="ungelöst — unsolved / unresolved">ungelöste</mark> seltene Kinderkrankheitsfälle losgelassen — und in 18 davon eine endgültige Diagnose ermöglicht, die Spezialisten zuvor nicht stellen konnten. Das entspricht einer zusätzlichen Diagnose-Rate von 4,8 % bei Fällen, die bereits durch mehrere <mark class="vocab" data-translation="Fachärzte — medical specialists">Fachärzte</mark> analysiert worden waren. Die Studie erschien im NEJM AI und zeigt einen klaren klinischen Workflow: KI generiert Hypothesen, Ärzte prüfen und bestätigen. Kein Ersatz für Experten — aber ein echter Mehrwert bei den härtesten Fällen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Researchers from Boston Children's Hospital, Harvard and OpenAI ran o3 Deep Research against 376 previously unsolved rare childhood disease cases — and enabled a definitive diagnosis in 18 of them that specialists hadn't been able to make. That's an additional diagnostic yield of 4.8% on cases that had already gone through multiple rounds of expert review. The study appeared in NEJM AI and outlines a clear clinical workflow: AI generates leads, doctors review and confirm. Not a replacement for experts — but real value on the hardest cases.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/diagnose-rare-childhood-diseases/" target="_blank" rel="noopener">→ openai.com · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/accelerating-biological-research-in-the-wet-lab/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GPT-5.4 × Molecule.one · Wet Lab · Chan-Lam</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat zusammen mit dem polnischen Chemistry-Startup Molecule.one das erste öffentlich dokumentierte Beispiel geliefert, bei dem ein KI-Modell als nahezu autonomer Agent einen echten Wet-Lab-Workflow <mark class="vocab" data-translation="durchlaufen — to run through / complete">durchlaufen</mark> hat — und zwar erfolgreich: GPT-5.4 hat eine Chan-Lam-Kupplungsreaktion verbessert, mit der <mark class="vocab" data-translation="Chemiker — chemists">Chemiker</mark> seit Jahrzehnten zu kämpfen haben, über 10.080 Reaktionsversuche hinweg. Das Ergebnis wurde unabhängig <mark class="vocab" data-translation="validiert — validated / confirmed">validiert</mark> und im Peer-Review-Verfahren bestätigt. Für Teams in der Medikamenten-Entwicklung ist das ein konkreter Ausblick darauf, wo KI-Agenten in den nächsten Jahren tatsächlich eingesetzt werden könnten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI, together with Polish chemistry startup Molecule.one, published the first publicly documented instance of a frontier AI model acting as a near-autonomous agent in a real wet-lab chemistry workflow — and succeeding: GPT-5.4 improved a Chan-Lam coupling reaction that medicinal chemists have struggled with for decades, across 10,080 reaction attempts. The result was independently validated and confirmed through peer review. For drug discovery teams, this is a concrete preview of where AI agents could genuinely be deployed in the next few years.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/accelerating-biological-research-in-the-wet-lab/" target="_blank" rel="noopener">→ openai.com · 17.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT · Marktanteil unter 50 % · erstmals seit Launch</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Laut dem Sensor Tower State of AI 2026 Report ist ChatGPTs globaler <mark class="vocab" data-translation="Marktanteil — market share">Marktanteil</mark> unter KI-Assistenten erstmals seit dem Launch im November 2022 unter 50 % gefallen — auf 46,4 % Ende Mai. Gemini hält 27,7 %, Claude 10,3 %, Grok rund 5 %. ChatGPT hat immer noch über 1,1 Milliarden Monatsnutzer und bleibt die größte Plattform, aber der <mark class="vocab" data-translation="Vorsprung — lead / advantage">Vorsprung</mark> schmilzt. Als Treiber werden OpenAIs DoD-Deal und generell stärkere Konkurrenz von Google und Anthropic genannt — Nutzer <mark class="vocab" data-translation="abwandern — to migrate away / switch platforms (separable)">wandern</mark> nicht in Scharen ab, aber der Trend ist klar.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">According to Sensor Tower's State of AI 2026 report, ChatGPT's global share of AI assistant users fell below 50% for the first time since its November 2022 launch, landing at 46.4% by end of May. Gemini holds 27.7%, Claude 10.3%, Grok around 5%. ChatGPT still has over 1.1 billion monthly users and remains the largest platform, but its lead is shrinking. OpenAI's DoD deal and stronger competition from Google and Anthropic are cited as drivers — users aren't leaving in droves, but the trend is clear.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/" target="_blank" rel="noopener">→ techcrunch.com · 16.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.181 · CLAUDE_CLIENT_PRESENCE_FILE</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.181 hat eine Umgebungsvariable mitgebracht, die die meisten <mark class="vocab" data-translation="übersehen — to overlook / miss">übersehen</mark> haben: Zeig sie auf eine Marker-Datei — und Claude Code erkennt, dass du gerade am Rechner sitzt, und schickt dir keine mobilen Push-Benachrichtigungen mehr, solange die Datei existiert. Praktisch im <mark class="vocab" data-translation="Tagesgeschäft — day-to-day work / daily operations">Tagesgeschäft</mark>: kein Handy-Klingeln, wenn du ohnehin vor dem Terminal sitzt. Löscht du die Datei, laufen Push-Benachrichtigungen auf dem Handy automatisch wieder an.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.181 shipped an environment variable that most people missed: point it at a marker file and Claude Code knows you're at your machine — and stops sending you mobile push notifications for as long as the file exists. Handy for daily work: no phone buzzing when you're already at the terminal. Delete the file and push notifications on your phone automatically resume.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">CLAUDE_CLIENT_PRESENCE_FILE=&lt;path-to-marker-file&gt;</pre>
+<pre class="cmd-examples"><span class="com"># Einrichten: Marker-Datei anlegen und Variable setzen · Set up: create marker and export var</span>
+$ touch ~/.claude-presence &amp;&amp; export CLAUDE_CLIENT_PRESENCE_FILE=~/.claude-presence
+
+<span class="com"># Push wieder aktivieren: Datei löschen · Re-enable push: remove the marker file</span>
+$ rm ~/.claude-presence</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.181" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomously · independently</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude hat die Roboter-Tasks eigenständig abgeschlossen — kein Mensch hat eingegriffen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude completed the robotics tasks autonomously — no human intervention required.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Innentäter</div>
+        <div class="vocab-translation">insider threat · rogue insider</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">DeepMind plant für den Fall, dass ein KI-Agent wie ein Innentäter handelt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">DeepMind plans for the case where an AI agent acts like an insider threat.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">validiert</div>
+        <div class="vocab-translation">validated · independently confirmed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Ergebnis wurde von einem unabhängigen Labor validiert, bevor es veröffentlicht wurde.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The result was validated by an independent lab before publication.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abwandern</div>
+        <div class="vocab-translation">to migrate away · to switch platforms (separable)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nutzer wandern langsam von ChatGPT zu Gemini und Claude ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Users are slowly migrating away from ChatGPT to Gemini and Claude.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">vorsorglich</div>
+        <div class="vocab-translation">precautionary · as a precaution</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Sicherheitsframework wurde vorsorglich entwickelt, nicht als Reaktion auf einen Vorfall.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The security framework was developed precautionarily, not in response to any incident.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">jemandem den Rang ablaufen</div>
+      <div class="idiom-meaning">to steal someone's thunder · to overtake — wörtlich: "to run past someone's rank"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Gemini und Claude laufen ChatGPT langsam den Rang ab — unter 50 % Marktanteil zum ersten Mal."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Gemini and Claude are slowly stealing ChatGPT's thunder — below 50% market share for the first time."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das neue Framework hat dem alten Toolchain in kürzester Zeit den Rang abgelaufen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The new framework overtook the old toolchain in no time at all."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to endure something difficult without complaint — German equivalent: "in den sauren Apfel beißen" (to bite into the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sometimes you just have to bite the bullet and rewrite the whole test suite from scratch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Manchmal muss man einfach in den sauren Apfel beißen und die ganze Test-Suite von vorn schreiben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"She bit the bullet and gave the honest code review nobody wanted to hear."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Sie hat in den sauren Apfel gebissen und das ehrliche Code-Review geliefert, das niemand hören wollte."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · deepmind.google · openai.com · techcrunch.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #45 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
