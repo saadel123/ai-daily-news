@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 22.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 22. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #46</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Kein API-Key mehr: Anthropic macht Keyless Auth GA — und die KI-Architektur-Welt dreht sich.</h1>
+    <p class="subtitle">Shazeer wechselt zu OpenAI, GPT-5.6 steht in den Startlöchern, und Sentry-DSNs werden zum Einfallstor.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic WIF GA</strong>: Workload Identity Federation ersetzt statische API-Keys — AWS, GCP, Azure, GitHub Actions unterstützt</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Design-Update</strong>: Design-Systeme aus GitHub importieren, direktes Sync mit Claude Code via /design-sync</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>Noam Shazeer zu OpenAI</strong>: Transformer-Ko-Autor und Gemini-Co-Lead wechselt als Lead for AI Architecture Research</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>GPT-5.6 im Anflug</strong>: 1,5-Mio.-Token-Kontext, Alignment-Fix — Launch-Fenster ab heute offen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔴</span><span><strong>Agentjacking via Sentry</strong>: 85 % Erfolgsquote gegen Claude Code, Cursor, Codex — 2.388 Orgs betroffen</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://claude.com/blog/workload-identity-federation" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Workload Identity Federation GA</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Workload Identity Federation (WIF) für die Claude Platform in die General Availability <mark class="vocab" data-translation="gehoben — lifted / moved (to GA)">gehoben</mark> — ab sofort kein statischer API-Key mehr nötig. Stattdessen authentifizieren sich Workloads mit dem Identity, das sie sowieso schon haben: eine AWS-IAM-Role, einen GCP-Service-Account, eine Azure-Managed-Identity, ein GitHub-Actions-Token oder einen anderen OIDC-kompatiblen Provider. Die kurzlebigen Credentials <mark class="vocab" data-translation="laufen ab — expire (separable: ablaufen)">laufen automatisch ab</mark>, ohne manuelles Widerrufen. Dazu kommen Service Accounts, die jedem Workload einen eigenen <mark class="vocab" data-translation="Audit-Trail — audit trail (English compound used in German)">Audit-Trail</mark> geben — WIF gilt für alle Claude-API-Endpoints, inklusive SDKs und Claude Code.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has moved Workload Identity Federation (WIF) to general availability on the Claude Platform — no more static API keys required. Workloads now authenticate with the identity they already carry: an AWS IAM role, GCP service account, Azure managed identity, GitHub Actions token, or any OIDC-compliant provider. Short-lived credentials expire automatically, with no manual revocation needed. Service accounts give each workload its own identity, roles, and audit trail — WIF covers all Claude API endpoints, including the first-party SDKs and Claude Code.</p>
+        </div>
+      </div>
+      <a class="source" href="https://claude.com/blog/workload-identity-federation" target="_blank" rel="noopener">→ claude.com · 17.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Design · Design-Systeme, Code-Sync, Canvas</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat Claude Design am 17. Juni mit einem großen Update <mark class="vocab" data-translation="ausgestattet — equipped / furnished with">ausgestattet</mark>: Das Tool importiert jetzt Design-Systeme direkt aus GitHub-Repositories, Design-Dateien oder Uploads und baut danach ausschließlich mit den genehmigten Komponenten. Wer ein Design an Claude Code <mark class="vocab" data-translation="übergeben — hand off / pass on">übergeben</mark> will, nutzt den neuen Slash-Command, der die Design-Systems-Daten mit dem lokalen Codebase synchronisiert — kein manuelles Nachbauen mehr. Canvas-Editing läuft jetzt direkt im Browser, der Token-Verbrauch soll deutlich gesunken sein, und neue Connectors zu Adobe, Canva, Vercel und weiteren Plattformen <mark class="vocab" data-translation="abrunden — to round out / complete a package">runden</mark> das Update ab.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic shipped a major Claude Design update on June 17: the tool now imports design systems directly from GitHub repos, design files, or uploads and then builds exclusively with the approved components. Teams handing a design off to Claude Code use the new slash command that syncs design-system data with the local codebase — no rebuilding from scratch. Canvas editing runs directly in the browser, token usage reportedly dropped significantly, and new connectors to Adobe, Canva, Vercel and more round out the update.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/design-sync</pre>
+<pre class="cmd-examples"><span class="com"># Design-System mit lokalem Codebase synchronisieren · Sync design system with local codebase</span>
+$ /design-sync</pre>
+      </section>
+      <a class="source" href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work" target="_blank" rel="noopener">→ claude.com · 17.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://mlq.ai/news/openai-hires-transformer-co-inventor-noam-shazeer-away-from-google-deepmind/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Noam Shazeer · Lead for AI Architecture Research</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Noam Shazeer, Ko-Autor des Papers „Attention Is All You Need" (2017) und zuletzt Vice President of Engineering bei Google sowie Ko-Lead der Gemini-Modelle, hat am 18. Juni <mark class="vocab" data-translation="angekündigt — announced">angekündigt</mark>, als Lead for AI Architecture Research zu OpenAI zu wechseln. Google hatte ihn erst vor weniger als zwei Jahren im Rahmen der Character.AI-Akquisition (2,7 Mrd. $) zurückgeholt — ein <mark class="vocab" data-translation="teurer Rückschlag — costly setback">teurer Rückschlag</mark>. Sam Altman bezeichnete die Verpflichtung als Hire, den er „seit <mark class="vocab" data-translation="Anbeginn — the very beginning / inception">Anbeginn</mark> von OpenAI wollte". Mit Shazeer landet bei OpenAI nicht nur ein Architekt der Transformer-Ära, sondern auch tiefes Gemini-Insider-Wissen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Noam Shazeer, co-author of the 2017 paper "Attention Is All You Need" and most recently VP of Engineering at Google and co-lead of the Gemini models, announced on June 18 that he'll join OpenAI as Lead for AI Architecture Research. Google had recruited him back less than two years ago through the Character.AI acquisition for $2.7 billion — a costly reversal. Sam Altman called it a hire he "wanted since the very beginning of OpenAI." With Shazeer, OpenAI gains not just a transformer-era architect but also deep Gemini insider knowledge.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mlq.ai/news/openai-hires-transformer-co-inventor-noam-shazeer-away-from-google-deepmind/" target="_blank" rel="noopener">→ mlq.ai · 18.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-5.6 · 1,5 Mio. Token · Alignment-Fix</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat das Launch-Fenster für GPT-5.6 ab heute (22. Juni) <mark class="vocab" data-translation="geöffnet — opened">geöffnet</mark> — ein offizieller Announce steht noch aus, aber Chief Scientist Jakub Pachocki bezeichnete das Modell intern als bedeutende Verbesserung gegenüber GPT-5.5. Laut <mark class="vocab" data-translation="Berichten — reports / accounts">Berichten</mark> kommt GPT-5.6 mit einem 1,5-Mio.-Token-Kontextfenster (43 % mehr als GPT-5.5), einem erhöhten Reasoning-Budget und der ersten neu gestalteten Reward-Audit-Pipeline, die <mark class="vocab" data-translation="gezielt — specifically / deliberately / with intent">gezielt</mark> Alignment-Fehler aus dem Training verhindert. Der Polymarket-Wettmarkt steckt 40 % auf eine Veröffentlichung bis 28. Juni — bis du das liest, könnte es schon live sein.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI opened the launch window for GPT-5.6 starting today, June 22 — no official announcement yet, but Chief Scientist Jakub Pachocki described the model internally as a meaningful improvement over GPT-5.5. Reports indicate GPT-5.6 ships with a 1.5 million token context window (43% larger than GPT-5.5), a higher reasoning-effort budget, and a redesigned reward-audit pipeline specifically built to prevent the alignment failures that contaminated GPT-5.5's training. Polymarket has 40% staked on a release before June 28 — by the time you read this, it may already be live.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm" target="_blank" rel="noopener">→ techtimes.com · 21.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Agentjacking · Sentry MCP · Claude Code, Cursor, Codex</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Sicherheitsforscher von Tenet Security haben einen Angriff namens Agentjacking <mark class="vocab" data-translation="enthüllt — disclosed / revealed">enthüllt</mark>, der einen architektonischen Fehler in Sentrys MCP-Integration <mark class="vocab" data-translation="ausnutzt — exploits (ausnutzen, third-person singular)">ausnutzt</mark>: Ein Angreifer findet den öffentlichen DSN eines Projekts — oft im Frontend-Code sichtbar — und injiziert einen bösartigen Error-Event, den KI-Coding-Agenten wie Claude Code, Cursor oder Codex als legitime Remediation-Anweisung lesen. Die Erfolgsquote lag bei 85 % über alle getesteten Agenten, mit 2.388 betroffenen Organisationen. Sentry hat das Problem anerkannt, aber nicht an der <mark class="vocab" data-translation="Wurzel — root / at the root cause">Wurzel</mark> behoben — Entwickler sollten ihren Agenten daher keine Sentry-Fehler autonom abarbeiten lassen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Security researchers at Tenet Security disclosed an attack called Agentjacking that exploits an architectural flaw in Sentry's MCP integration: an attacker gets hold of a project's public DSN — often visible in frontend code — and injects a malicious error event that AI coding agents like Claude Code, Cursor, or Codex read as legitimate remediation guidance. The success rate was 85% across all tested agents, with 2,388 organizations found to be exposed. Sentry acknowledged the issue but declined to fix it at the root — developers should avoid letting their agents autonomously action Sentry errors.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html" target="_blank" rel="noopener">→ thehackernews.com · 20.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.183" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.183 · attribution.sessionUrl · /config --help</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit Version 2.1.183 hat Claude Code eine neue Einstellung, die den claude.ai-Session-Link aus Commits und Pull Requests <mark class="vocab" data-translation="herausnimmt — removes / takes out (herausnehmen)">herausnimmt</mark> — praktisch, wenn du im Browser oder über Remote Control arbeitest und nicht möchtest, dass interne Session-URLs ins Repository <mark class="vocab" data-translation="wandern — to migrate / end up in">wandern</mark>. Die Einstellung lässt sich direkt im Prompt über den Config-Shorthand setzen, ohne das settings.json manuell <mark class="vocab" data-translation="anzufassen — to touch / tamper with (anfassen)">anzufassen</mark>. Bonus aus demselben Release: /config --help zeigt dir alle verfügbaren Shorthand-Keys auf einen Blick.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.183 ships a setting that strips the claude.ai session link from commits and pull requests — handy when you work in the browser or via Remote Control and don't want internal session URLs leaking into the repository. You can set it on the fly directly from the prompt without touching settings.json. A neat bonus from the same release: /config --help lists every available shorthand key at a glance.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/config attribution.sessionUrl=false
+/config --help</pre>
+        <dl class="cmd-flags">
+          <dt><code>attribution.sessionUrl=false</code></dt>
+          <dd>omit the claude.ai session link from commit messages and PR bodies</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Session-URL aus Commits entfernen · Strip session URL from commits</span>
+$ /config attribution.sessionUrl=false
+
+<span class="com"># Alle verfügbaren Config-Keys anzeigen · List all available config keys</span>
+$ /config --help</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.183" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">ablösen</div>
+        <div class="vocab-translation">to replace · to succeed · to supersede</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">WIF löst den klassischen API-Key in Agenten-Pipelines nach und nach ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">WIF is gradually replacing the classic API key in agent pipelines.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einschleusen</div>
+        <div class="vocab-translation">to inject · to smuggle in</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Beim Agentjacking schleust ein Angreifer Befehle als Sentry-Fehler ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In an agentjacking attack, a hacker injects commands disguised as Sentry errors.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">schwindelerregend</div>
+        <div class="vocab-translation">dizzying · staggering · mind-boggling</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein Kontextfenster von 1,5 Millionen Tokens ist schlicht schwindelerregend.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A context window of 1.5 million tokens is simply staggering.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">lauern</div>
+        <div class="vocab-translation">to lurk · to lie in wait</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">In öffentlich sichtbaren DSNs lauert oft eine übersehene Sicherheitslücke.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">An overlooked security gap often lurks in publicly visible DSNs.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abhandenkommen</div>
+        <div class="vocab-translation">to go missing · to be lost</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn ein API-Key abhandenkommt, kann ein Angreifer in Minuten auf alle Daten zugreifen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">If an API key goes missing, an attacker can access all your data within minutes.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Steuer herumreißen</div>
+      <div class="idiom-meaning">to make a sharp course correction · wörtlich: "to yank the helm around"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI reißt mit GPT-5.6 das Steuer herum — der Alignment-Fix soll diesmal wirklich greifen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI is making a sharp course correction with GPT-5.6 — the alignment fix is meant to stick this time."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn dein Deploy gerade kollabiert, musst du manchmal einfach das Steuer herumreißen und rollbacken."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When your deploy is falling apart, sometimes you just have to make a sharp course correction and roll back."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to raise the bar</div>
+      <div class="idiom-meaning">to set a higher standard — German equivalent: "die Latte höher legen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Shazeer joining OpenAI raises the bar for what architecture research can look like at a frontier lab."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Shazeers Wechsel zu OpenAI legt die Latte für Architektur-Forschung in Frontier-Labs deutlich höher."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: claude.com · venturebeat.com · mlq.ai · techtimes.com · thehackernews.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #46 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
