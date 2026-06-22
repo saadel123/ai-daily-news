@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-22",
+      "edition_number": 46,
+      "headlines": [
+        "Anthropic WIF GA: Workload Identity Federation ersetzt statische API-Keys — AWS, GCP, Azure, GitHub Actions unterstützt",
+        "Claude Design-Update: Design-Systeme aus GitHub importieren, direktes Sync mit Claude Code via /design-sync",
+        "Noam Shazeer zu OpenAI: Transformer-Ko-Autor und Gemini-Co-Lead wechselt als Lead for AI Architecture Research",
+        "GPT-5.6 im Anflug: 1,5-Mio.-Token-Kontext, Alignment-Fix — Launch-Fenster ab heute offen",
+        "Agentjacking via Sentry: 85 % Erfolgsquote gegen Claude Code, Cursor, Codex — 2.388 Orgs betroffen"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-22T16:13:26Z"
+    },
+    {
       "date": "2026-06-21",
       "edition_number": 45,
       "headlines": [
