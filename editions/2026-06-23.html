@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 23. Juni 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 23. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #47</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>MCP-Auth per CLI, Open-Source-Compute-Milliarden und KI als Sicherheitsscanner.</h1>
+    <p class="subtitle">Außerdem: Fable 5 verliert seinen Gratis-Status, und Europa macht Ernst mit KI-Souveränität.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.186</strong>: claude mcp login/logout authentifiziert MCP-Server direkt aus der CLI — SSH-kompatibel</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Fable 5</strong>: Gratis-Fenster endet heute — API-Preise gelten ab sofort, US-Sperre bleibt</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Patch the Planet</strong>: GPT-5.5-Cyber patcht curl, Go und Python live — Trail of Bits dabei</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>SpaceX × Reflection AI</strong>: 6,3-Mrd.-$-Compute-Deal für offene KI-Modelle auf Colossus 2</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>NVIDIA ISC 2026</strong>: 35 Superrechner, 23 Länder, 800 Exaflops — Europas größtes KI-Infrastruktur-Jahr</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.186" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.186 · MCP Login/Logout per CLI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code bringt mit Version 2.1.186 zwei neue Befehle zum Anmelden und Abmelden von MCP-Servern — direkt aus der Kommandozeile, ohne das interaktive Menü zu öffnen. Besonders nützlich im SSH-Betrieb oder in Skripten ohne Browser: Der OAuth-Flow lässt sich vollständig über die Standardeingabe <mark class="vocab" data-translation="abwickeln — to handle / process a flow">abwickeln</mark>, was MCP-Authentifizierung in CI-Umgebungen endlich <mark class="vocab" data-translation="geradlinig — straightforward / uncomplicated">geradlinig</mark> macht. Als Bonus wird jetzt automatisch eine Claude-Antwort <mark class="vocab" data-translation="ausgelöst — triggered (past participle of auslösen)">ausgelöst</mark>, wenn du einen Bash-Befehl mit einem Ausrufezeichen <mark class="vocab" data-translation="einleitest — to prefix / kick off (separable verb)">einleitest</mark> — eine stille, aber merkliche Arbeitserleichterung für interaktive Debugging-Sessions.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.186 ships two new CLI commands to authenticate and deauthenticate MCP servers directly — no interactive menu needed. Particularly useful in SSH sessions or headless scripts: the full OAuth flow can be handled via stdin, making MCP auth viable in CI environments at last. As a bonus, a Claude response is now automatically triggered when you prefix a bash command with an exclamation mark — a quiet but noticeable quality-of-life win for interactive debugging sessions.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude mcp login [name]
+claude mcp logout [name]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--no-browser</code></dt>
+          <dd>complete OAuth via stdin — for SSH or headless environments</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># MCP-Server anmelden · Authenticate an MCP server</span>
+$ claude mcp login my-github-mcp
+
+<span class="com"># Headless über SSH, kein Browser · Headless over SSH, no browser</span>
+$ claude mcp login my-github-mcp --no-browser
+
+<span class="com"># Wieder abmelden · Log out</span>
+$ claude mcp logout my-github-mcp</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.186" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 22.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/pricing" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Fable 5 · Gratis-Fenster endet heute</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Das 13-tägige Gratis-Fenster für Claude Fable 5 in Pro-, Max-, Team- und Enterprise-Abonnements <mark class="vocab" data-translation="schließt sich — closes / comes to an end">schließt sich</mark> heute. Ab sofort werden Nutzungskosten nach API-Preis <mark class="vocab" data-translation="fällig — due / payable / charged">fällig</mark>: 10 Dollar pro Million Input-Tokens und 50 Dollar pro Million Output-Tokens — doppelt so teuer wie Opus 4.8. Da Fable 5 seit dem 12. Juni wegen einer US-Regierungsanordnung weiterhin gesperrt ist, gilt die Preisänderung zunächst nur auf dem Papier, aber sobald die Sperre fällt, greift der neue Tarif sofort. Wer Fable 5 für sein Team <mark class="vocab" data-translation="budgetiert — budgets / plans costs for">budgetiert</mark>, sollte die doppelten Token-Kosten gegenüber Opus 4.8 jetzt <mark class="vocab" data-translation="einkalkulieren — to factor in / account for in planning">einkalkulieren</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">The 13-day complimentary window for Claude Fable 5 in Pro, Max, Team, and Enterprise subscriptions officially ends today. From here on, access is billed at API rates: $10 per million input tokens and $50 per million output — double the price of Opus 4.8. Since Fable 5 remains blocked under the US government directive since June 12, the pricing change is technically moot for now — but once the suspension lifts, the new rates kick in immediately. Teams planning to use Fable 5 should factor those doubled token costs into their budgets now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/pricing" target="_blank" rel="noopener">→ anthropic.com · 23.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/patch-the-planet/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Patch the Planet · GPT-5.5-Cyber</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Mit Patch the Planet hat OpenAI eine Initiative <mark class="vocab" data-translation="ins Leben gerufen — launched / brought into being (lit: called into life)">ins Leben gerufen</mark>, die GPT-5.5-Cyber, Trail of Bits und HackerOne zusammenbringt, um kritische Open-Source-Projekte systematisch auf Sicherheitslücken zu <mark class="vocab" data-translation="durchforsten — to comb through / methodically scan">durchforsten</mark>. In einer ersten fünftägigen Sprintphase wurden über 30 Millionen Codezeilen in Projekten wie curl, Go, Python, Sigstore und dem Linux-Kernel analysiert — das System <mark class="vocab" data-translation="validierte — validated / verified dynamically">validierte</mark> Lücken dynamisch und generierte direkt testbare Patches. Dutzende Fixes wurden bereits gemergt; die dabei entstandenen Fuzzing- und Variant-Analysis-Workflows gehören dauerhaft den teilnehmenden Projekten. Mehr als 30 weitere Open-Source-Projekte haben ihre Teilnahme bereits <mark class="vocab" data-translation="zugesagt — pledged / committed to joining">zugesagt</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">With Patch the Planet, OpenAI launched an initiative pairing GPT-5.5-Cyber with Trail of Bits and HackerOne to systematically scan critical open-source projects for security vulnerabilities. In a first five-day sprint, the system analysed over 30 million lines across projects including curl, Go, Python, Sigstore, and the Linux kernel — dynamically validating issues and generating testable patches on the spot. Dozens of fixes have already been merged; the resulting fuzzing and variant-analysis workflows now permanently belong to the participating projects. More than 30 additional open-source projects have already confirmed their participation.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/patch-the-planet/" target="_blank" rel="noopener">→ openai.com · 22.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SpaceX × Reflection AI · 6,3 Mrd. $ Compute-Deal</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">SpaceX und das Open-Source-KI-Startup Reflection AI haben sich auf einen Compute-Vertrag über bis zu 6,3 Mrd. Dollar <mark class="vocab" data-translation="geeinigt — agreed / reached an agreement">geeinigt</mark> — 150 Millionen Dollar monatlich für Nvidia-GB300-Chips im Colossus-2-Rechenzentrum in Memphis, beginnend ab Juli. Reflection, das nach dem Fable-5-Ausfall gezielt amerikanische Open-Source-Alternativen zu <mark class="vocab" data-translation="geschlossenen — closed / proprietary">geschlossenen</mark> Frontier-Modellen bauen will, hat damit seine Compute-Grundlage für die nächsten drei Jahre <mark class="vocab" data-translation="gesichert — secured / locked in">gesichert</mark>. Für SpaceX ist es der vierte große Colossus-Mieter — nach Anthropic, Google und Cursor zeigt das, wie <mark class="vocab" data-translation="lukrativ — lucrative / commercially successful">lukrativ</mark> das Datenzentrum als kommerzielle Plattform geworden ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">SpaceX and open-source AI startup Reflection have agreed on a compute deal worth up to $6.3 billion — $150 million per month for Nvidia GB300 chips at the Colossus 2 data center in Memphis, starting in July. Reflection, which aims to build American open-source alternatives to closed frontier models after the Fable 5 shutdown, has now locked in its compute foundation for the next three years. For SpaceX, it's the fourth major Colossus tenant — after Anthropic, Google, and Cursor, confirming how lucrative Elon Musk's data center has become as a commercial platform.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html" target="_blank" rel="noopener">→ cnbc.com · 22.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>NVIDIA ISC 2026 · 35 KI-Superrechner in Europa</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Auf der ISC High Performance 2026 in Hamburg hat NVIDIA <mark class="vocab" data-translation="bekanntgegeben — announced / revealed (lit: made known)">bekanntgegeben</mark>, dass 35 neue KI-HPC-Superrechner in 23 europäischen Ländern in Bau sind — mit einer kombinierten Leistung von bis zu 800 KI-Exaflops. Die Systeme auf Blackwell- und Hopper-Architektur sollen über drei Millionen Forscher in Klimaforschung, Medizin, Quantencomputing und Clean Energy <mark class="vocab" data-translation="versorgen — to supply / serve / power (with resources)">versorgen</mark>. Das ist der Startschuss einer echten <mark class="vocab" data-translation="Aufholjagd — race to catch up (lit: catching-up hunt)">Aufholjagd</mark>: Europa ist entschlossen, die KI-Infrastrukturlücke gegenüber den USA zu schließen und KI-Souveränität ernst zu nehmen. Zu den beteiligten Zentren gehören das Barcelona Supercomputing Center, BavariaAI Blue Swan und das HLRS in Stuttgart.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">At ISC High Performance 2026 in Hamburg, NVIDIA announced that 35 new AI HPC supercomputers are being built across 23 European nations, delivering up to 800 AI exaflops of combined compute. The Blackwell- and Hopper-based systems will serve more than three million researchers in climate science, medicine, quantum computing, and clean energy. It marks the start of a determined race to close Europe's AI infrastructure gap with the US and take AI sovereignty seriously. Participating centres include Barcelona Supercomputing Center, BavariaAI's Blue Swan, and HLRS in Stuttgart.</p>
+        </div>
+      </div>
+      <a class="source" href="https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers" target="_blank" rel="noopener">→ nvidianews.nvidia.com · 22.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://openai.com/index/patch-the-planet/" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Hack: Git Pre-Push Security Scan mit KI</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Patch the Planet hat gezeigt, was passiert, wenn KI systematisch Millionen Codezeilen auf Sicherheitslücken <mark class="vocab" data-translation="abklopft — taps / checks for issues (like a doctor tapping for reflexes)">abklopft</mark>. Dieselbe Logik lässt sich heute noch in jeden Git-Workflow einbauen: Ein Pre-Push-Hook <mark class="vocab" data-translation="reicht weiter — forwards / passes on (separable: weiterreichen)">reicht</mark> den aktuellen Branch-Diff automatisch an ein Sprachmodell weiter, bevor der Push durchgeht — und du bekommst sofort Hinweise auf hardcodierte Credentials, SQL-Injection-Muster oder offene API-Keys. Null Infrastruktur, null <mark class="vocab" data-translation="Wartungsaufwand — maintenance overhead / upkeep effort">Wartungsaufwand</mark>, ein echtes erstes Sicherheitsnetz für jeden Commit. Kein Ersatz für vollständiges SAST, aber eine schnelle Hürde für kleines Geld.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Patch the Planet showed what happens when AI systematically taps through millions of lines of code for security gaps. The same logic can be wired into any git workflow today: a pre-push hook forwards the current branch diff to a language model before the push goes through — and you get instant hints about hardcoded credentials, SQL injection patterns, or exposed API keys. Zero infrastructure, zero maintenance overhead, and you have a first security gate on every commit. Not a substitute for full SAST, but a fast first hurdle for next to nothing.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/patch-the-planet/" target="_blank" rel="noopener">→ openai.com · 22.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">abwickeln</div>
+        <div class="vocab-translation">to handle · to process · to manage</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Den gesamten OAuth-Flow kannst du jetzt direkt über die Kommandozeile abwickeln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can now handle the entire OAuth flow directly from the command line.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">durchforsten</div>
+        <div class="vocab-translation">to comb through · to methodically scan</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Modell durchforstet den gesamten Codebase nach versteckten Sicherheitslücken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The model combs through the entire codebase looking for hidden security vulnerabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">fällig</div>
+        <div class="vocab-translation">due · payable · owed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ab heute werden für Fable 5 volle API-Kosten fällig — prüf deinen Budget-Plan.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Full API costs for Fable 5 are due from today — check your budget plan.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Aufholjagd</div>
+        <div class="vocab-translation">race to catch up · comeback chase</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Europa hat die Aufholjagd bei KI-Infrastruktur offiziell eingeläutet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Europe has officially kicked off its race to catch up on AI infrastructure.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Wartungsaufwand</div>
+        <div class="vocab-translation">maintenance overhead · upkeep effort</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein einfacher Git-Hook hat null Wartungsaufwand — einmal einrichten, fertig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A simple git hook has zero maintenance overhead — set it up once, done.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Hochtouren laufen</div>
+      <div class="idiom-meaning">to be running at full speed · to be in full swing — wörtlich: "to run at high revs"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Seit dem SpaceX-Deal läuft die Infrastruktur-Planung bei Reflection auf Hochtouren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Since the SpaceX deal, Reflection's infrastructure planning is running at full speed."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Europas KI-Infrastruktur-Ausbau läuft jetzt richtig auf Hochtouren — 35 Superrechner auf einmal."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Europe's AI infrastructure build-out is now running at full speed — 35 supercomputers at once."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to open the floodgates</div>
+      <div class="idiom-meaning">to release a flood of demand or activity by removing all barriers — German equivalent: "die Schleusen öffnen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The SpaceX compute deal opens the floodgates for serious open-source AI development."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der SpaceX-Compute-Deal öffnet die Schleusen für ernstzunehmende Open-Source-KI-Entwicklung."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Once the Fable 5 suspension lifts, it'll open the floodgates for enterprise demand."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Sobald die Fable-5-Sperre fällt, öffnen sich die Schleusen für Enterprise-Nachfrage."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · anthropic.com · openai.com · cnbc.com · nvidianews.nvidia.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #47 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
