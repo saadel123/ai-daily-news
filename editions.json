@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-23",
+      "edition_number": 47,
+      "headlines": [
+        "Claude Code 2.1.186: claude mcp login/logout authentifiziert MCP-Server direkt aus der CLI — SSH-kompatibel",
+        "Fable 5: Gratis-Fenster endet heute — API-Preise gelten ab sofort, US-Sperre bleibt",
+        "OpenAI Patch the Planet: GPT-5.5-Cyber patcht curl, Go und Python live — Trail of Bits dabei",
+        "SpaceX × Reflection AI: 6,3-Mrd.-$-Compute-Deal für offene KI-Modelle auf Colossus 2",
+        "NVIDIA ISC 2026: 35 Superrechner, 23 Länder, 800 Exaflops — Europas größtes KI-Infrastruktur-Jahr"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-06-23T16:16:36Z"
+    },
+    {
       "date": "2026-06-22",
       "edition_number": 46,
       "headlines": [
