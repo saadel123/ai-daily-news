@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-25",
+      "edition_number": 48,
+      "headlines": [
+        "Alibaba zapft Claude an: 25.000 Fake-Accounts, 29 Mio. Anfragen — größter Distillation-Angriff aller Zeiten",
+        "Claude Tag ist live: @Claude wird gemeinsames Slack-Teammitglied für Enterprise und Teams",
+        "OpenAI Jalapeño: erster eigener Chip mit Broadcom — LLM-Inferenz von Grund auf neu gedacht",
+        "Micron × Anthropic: Memory-Architektur-Partnership und Series-H-Investment für bessere Token-Economics",
+        "GitHub Copilot: Claude als Agent-Provider in JetBrains IDEs jetzt in der Public Preview"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-25T16:02:01Z"
+    },
+    {
       "date": "2026-06-23",
       "edition_number": 47,
       "headlines": [
