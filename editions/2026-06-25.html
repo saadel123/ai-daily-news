@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 25.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 25. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #48</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Alibaba zapft Claude an: 29 Millionen Anfragen, ein Senat-Brief — und OpenAI baut seinen ersten Chip.</h1>
+    <p class="subtitle">Außerdem: @Claude wird Slack-Teammitglied, Micron wetzt Claudes Infrastruktur-Messer und JetBrains-Devs kriegen Claude direkt im Copilot.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Alibaba vs. Anthropic</strong>: 25.000 Fake-Accounts, 29 Mio. Claude-Anfragen — größter Distillation-Angriff aller Zeiten</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Tag</strong>: @Claude wird gemeinsames Slack-Teammitglied — persistent, multiplayer und proaktiv</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Jalapeño</strong>: erster eigener Chip mit Broadcom — LLM-Inferenz von Grund auf neu gedacht</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟧</span><span><strong>Micron × Anthropic</strong>: Memory-Architektur-Partnership und Series-H-Investment</span></a></li>
+      <li><a href="#article-5"><span class="dot">⚪</span><span><strong>GitHub Copilot</strong>: Claude als Agent-Provider in JetBrains IDEs in der Public Preview</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic vs. Alibaba · 25.000 Accounts · 29 Mio. Anfragen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat den US-Senat und das Weiße Haus schriftlich <mark class="vocab" data-translation="alarmiert — alerted / formally notified in urgent terms">alarmiert</mark>: Zwischen dem 22. April und dem 5. Juni sollen Alibaba-<mark class="vocab" data-translation="affiliiert — affiliated / connected to">affiliierte</mark> Akteure mit knapp 25.000 <mark class="vocab" data-translation="fingiert — fake / fraudulent (lit. 'feigned')">fingierten</mark> Accounts fast 29 Millionen Anfragen an Claude gestellt haben — das bisher größte bekannte Adversarial-Distillation-Manöver gegen das Unternehmen. Beim Distillieren wird ein Frontier-Modell durch massives Prompten systematisch <mark class="vocab" data-translation="ausgehorcht — pumped for information / probed for patterns">ausgehorcht</mark>, um sein Verhalten für das Training eines günstigeren Rivalen zu ernten. Alibaba hat auf Kommentaranfragen bislang nicht reagiert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has formally notified the U.S. Senate Banking Committee and the White House: between April 22 and June 5, operators affiliated with Alibaba allegedly ran nearly 25,000 fraudulent accounts to conduct almost 29 million exchanges with Claude — the largest known adversarial distillation attack against the company to date. In this type of attack, a competitor hammers a frontier model with prompts to harvest its reasoning patterns and train a cheaper rival model without paying for frontier AI research. Alibaba has not responded to requests for comment.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html" target="_blank" rel="noopener">→ cnbc.com · 24.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Tag · @Claude als Slack-Teammitglied</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat Claude Tag gestartet — eine Beta, in der @Claude als gemeinsames <mark class="vocab" data-translation="Teammitglied — team member / colleague">Teammitglied</mark> in Slack-Channels mitmacht: Alle im Channel können ihn taggen, er baut <mark class="vocab" data-translation="persistentes — persistent / lasting across sessions without reset">persistentes</mark> Gedächtnis über Gespräche hinweg auf und lernt proaktiv aus den Channels, auf die er Zugriff bekommt. Im Ambient-Modus meldet er sich von selbst, wenn Threads zu lange offenstehen oder neue Informationen relevant werden — ohne explizit getaggt zu werden. 65 % des Produktionscodes von Anthropics eigenem Produktteam wurden intern mit Claude Tag erstellt; die Beta läuft auf Claude Opus 4.8 und ist für Enterprise- und Team-Pläne verfügbar.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has launched Claude Tag, a beta that turns @Claude into a shared teammate inside Slack channels: anyone in the channel can tag it, it builds persistent memory across conversations, and it quietly learns from every channel it's granted access to. In ambient mode, Claude proactively surfaces updates when threads go quiet too long or new information becomes relevant — without needing to be explicitly tagged. Anthropic reports 65% of their product team's production code was built with an internal version; the beta runs on Claude Opus 4.8 and is available on Enterprise and Team plans.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">→ anthropic.com · 23.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Jalapeño · Erster eigener LLM-Chip mit Broadcom</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI und Broadcom haben den Jalapeño vorgestellt — OpenAIs ersten eigenen KI-<mark class="vocab" data-translation="Accelerator — accelerator / custom chip optimized for specific ML workloads">Accelerator</mark>, der komplett von Null für moderne Sprachmodell-Inferenz <mark class="vocab" data-translation="entworfen — designed / conceived from scratch">entworfen</mark> wurde statt von einem bestehenden GPU-Design <mark class="vocab" data-translation="abgeleitet — derived / adapted from an existing architecture">abgeleitet</mark> zu sein. Der Chip wurde in nur neun Monaten von der ersten Design-Idee bis zum Tape-out gebracht — was Broadcom als schnellste ASIC-Entwicklung in der Geschichte der High-Performance-Halbleiter bezeichnet. Die ersten Deployments sollen noch 2026 an Gigawatt-Rechenzentren gehen; OpenAIs erklärtes <mark class="vocab" data-translation="Ziel — goal / ambition">Ziel</mark> ist es, den kompletten Stack von Modell bis Silicon selbst zu kontrollieren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI and Broadcom unveiled Jalapeño — OpenAI's first custom AI accelerator, designed blank-slate for modern LLM inference rather than adapted from an existing GPU architecture. The chip went from initial design concept to manufacturing tape-out in just nine months, which Broadcom calls the fastest ASIC development cycle ever in high-performance advanced semiconductors. First deployments are targeting gigawatt-scale data centers by end of 2026; OpenAI's stated ambition is to own the full stack from model down to silicon.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">→ openai.com · 24.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Micron × Anthropic · Memory-Architecture-Deal + Series-H</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Micron Technology und Anthropic haben eine strategische Partnerschaft verkündet: Statt nur Hardware von der Stange zu kaufen, wollen sie gemeinsam analysieren, wie Memory- und Storage-Subsysteme unter KI-Workloads <mark class="vocab" data-translation="performen — perform / behave under load (English loanword used in German)">performen</mark>, und das direkt in die Architektur einbauen. Dazu kommt ein mehrjähriger <mark class="vocab" data-translation="Liefervertrag — supply agreement / procurement contract">Liefervertrag</mark> für Microns komplettes Datacenter-Portfolio — von HBM über CXL-Memory bis NVMe-Storage. Als <mark class="vocab" data-translation="Sahnehäubchen — cherry on top / the crowning extra">Sahnehäubchen</mark> stieg Micron auch in Anthropics Series-H-Runde ein. Gemeinsames Ziel ist es, Token-<mark class="vocab" data-translation="Economics — economics / cost structure">Economics</mark> und Energieeffizienz bei der Claude-Inferenz nachhaltig zu verbessern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Micron Technology and Anthropic announced a strategic partnership that goes beyond buying hardware off the shelf: together they'll analyze how memory and storage subsystems behave under real AI workloads and bake those insights into architecture design from the ground up. A multi-year supply agreement covers Micron's full data center portfolio — HBM, CXL memory, NVMe storage. On top of that, Micron made a strategic investment in Anthropic's Series H funding round. The shared goal is better token economics and energy efficiency for Claude inference at scale.</p>
+        </div>
+      </div>
+      <a class="source" href="https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next" target="_blank" rel="noopener">→ micron.com · 22.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GitHub Copilot · Claude als Agent in JetBrains IDEs</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">GitHub Copilot hat Claude als Agent-Provider in JetBrains IDEs in die Public Preview <mark class="vocab" data-translation="gehoben — lifted / promoted to a new stage">gehoben</mark>: Wer die Claude Code CLI lokal installiert hat, kann Claude über den Copilot-Chat-Panel als Agenten auswählen und bekommt damit denselben Coding-Agenten direkt in IntelliJ, PyCharm oder WebStorm. Dazu kommen neues Message-Queuing im Copilot-CLI, Support für Organizations- und Enterprise-Agenten aus GitHub sowie eine Debug-Log-Zusammenfassung direkt im Editor. Ein Hinweis: Der Agent läuft aktuell noch im Bypass-Permissions-Modus — alle Datei-Edits und Tool-Calls werden <mark class="vocab" data-translation="automatisch genehmigt — auto-approved / accepted without prompting">automatisch genehmigt</mark>; konfigurierbare Permissions sollen in einem späteren Release folgen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">GitHub Copilot moved Claude as agent provider into public preview in JetBrains IDEs: install the Claude Code CLI locally, point Copilot to it in settings, and you can select Claude from the agent picker inside IntelliJ, PyCharm, or WebStorm — the same coding agent you know from the terminal. The update also adds message queuing in Copilot CLI sessions, support for GitHub organization and enterprise agents, and a debug logs summary view in the editor. One caveat: the agent currently runs in bypass-permissions mode, so all file edits and tool calls are auto-approved; configurable permissions are coming in a future release.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides/" target="_blank" rel="noopener">→ github.blog · 22.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.191" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.191 · /rewind nach /clear</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.191 bringt einen lang gewünschten Trick: Wer mitten in einer Session den Chat leert, kann jetzt mit einem Slash-Command <mark class="vocab" data-translation="zurückspulen — to rewind / roll back to a previous state">zurückspulen</mark> und genau dort weitermachen, wo er aufgehört hat — vor dem letzten Clear. Das ist besonders praktisch, wenn man die Kontext-History <mark class="vocab" data-translation="versehentlich — accidentally / by mistake">versehentlich</mark> weggefegt hat, aber den Gesprächsfaden nicht verlieren will. Außerdem merkt sich der aktuelle Build, welche Hosts in der Sandbox-Session mit Ja freigegeben wurden — kein ewiges <mark class="vocab" data-translation="Re-Approven — re-approving / having to confirm the same thing again">Re-Approven</mark> mehr beim nächsten Tool-Call an denselben Host.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.191 ships a long-wanted workflow trick: if you wipe the chat mid-session you can now use a slash command to rewind back to the state just before the last clear and pick up from there. Handy when you accidentally nuked your context history but still need that conversation thread. The build also remembers which sandbox hosts you approved with "Yes" for the entire session — no more re-approving the same host on every subsequent tool call.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/rewind</pre>
+<pre class="cmd-examples"><span class="com"># Sitzung vor dem letzten /clear wiederherstellen · Resume from before the last /clear</span>
+$ /rewind</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.191" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">destillieren</div>
+        <div class="vocab-translation">to distill · to extract patterns from a model</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Beim Distillieren wird ein Frontier-Modell systematisch ausgehorcht, um seine Fähigkeiten zu kopieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In model distillation, a frontier model is systematically probed to copy its capabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">fingiert</div>
+        <div class="vocab-translation">fake · fraudulent (lit. "feigned")</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die 25.000 fingierten Accounts wurden verwendet, um Millionen von Anfragen zu stellen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The 25,000 fraudulent accounts were used to submit millions of requests.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">taggen</div>
+        <div class="vocab-translation">to tag · to mention someone in a message</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst @Claude direkt im Channel taggen, um eine Aufgabe zu delegieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can tag @Claude directly in the channel to delegate a task.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Tape-out</div>
+        <div class="vocab-translation">tape-out · the final chip design sent to manufacturing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Jalapeño-Chip erreichte den Tape-out in nur neun Monaten — Rekord in der Halbleiterbranche.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Jalapeño chip reached tape-out in just nine months — a record in the semiconductor industry.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Sahnehäubchen</div>
+        <div class="vocab-translation">cherry on top · the crowning extra (lit. "little cream topping")</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Als Sahnehäubchen stieg Micron auch direkt in die Series-H-Runde von Anthropic ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">As the cherry on top, Micron also made a direct investment in Anthropic's Series H round.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">jemandem auf die Schliche kommen</div>
+      <div class="idiom-meaning">to catch someone out · to figure out someone's tricks — wörtlich: "to get onto someone's trail / sneaky moves"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic ist Alibabas Schliche auf die Spur gekommen — 29 Millionen fingierte Anfragen hinterließen deutliche Spuren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic caught on to Alibaba's tricks — 29 million fraudulent requests left a clear trail."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Agent hat den Test sabotiert, aber dem Reviewer ist er schnell auf die Schliche gekommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The agent sabotaged the test, but the reviewer quickly figured out what it was doing."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to get caught red-handed</div>
+      <div class="idiom-meaning">to be discovered in the act — German equivalent: "auf frischer Tat ertappen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic's security team caught the distillers red-handed — 25,000 fake accounts all firing at once."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropics Security-Team hat die Angreifer auf frischer Tat ertappt — 25.000 Fake-Accounts auf einmal aktiv."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"She was caught red-handed running the agent in bypass mode on a production system."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Man hat sie dabei ertappt, wie sie den Agenten im Bypass-Modus auf einem Produktivsystem laufen ließ."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cnbc.com · anthropic.com · openai.com · micron.com · github.blog</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #48 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
