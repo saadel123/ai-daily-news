@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 28.06.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 28. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #49</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>KI-Modelle werden Staatsangelegenheit — Freigaben, Grenzen und neue Maßstäbe.</h1>
+    <p class="subtitle">Heute: Mythos 5 öffnet sich für 100 vertrauenswürdige Partner, GPT-5.6 startet beschränkt, Codex läuft auf allen Plänen, Gemini wartet und Claude merkt sich, was du gelöscht hast.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Mythos 5 freigegeben</strong>: US-Regierung erlaubt Zugang für ~100 vertrauenswürdige Partner</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Economic Index Cadences</strong>: Anthropic befragt 9.700 Nutzer — Rhythmen, Jobs und Automatisierungsangst</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI GPT-5.6 Sol · Terra · Luna</strong>: drei neue Modelle, vorerst nur für Trusted Partners</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Codex Remote für alle bezahlten Pläne</strong> — Desktop per Handy steuern, QR-gesichert</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Gemini 3.5 Pro auf Juli verschoben</strong> — vier Google-Forscher wechseln zu Anthropic</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Mythos 5 · Teilfreigabe durch US-Regierung</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Die US-Regierung hat am 26. Juni <mark class="vocab" data-translation="grünes Licht geben — to give the green light / to approve">grünes Licht</mark> für eine eingeschränkte Freigabe von Mythos 5 gegeben: Rund 100 Firmen und Bundesbehörden — <mark class="vocab" data-translation="vorwiegend — predominantly / mostly">vorwiegend</mark> aus Anthropics Project-Glasswing-Netzwerk — dürfen jetzt auf das leistungsstärkste Modell von Anthropic zugreifen. Handelsminister Howard Lutnick bestätigte schriftlich, dass „geeignete <mark class="vocab" data-translation="Sicherheitsvorkehrungen — safety measures / safeguards">Sicherheitsvorkehrungen</mark> getroffen wurden." Fable 5, das etwas schwächere Geschwistermodell, bleibt vorerst global gesperrt — Gespräche zwischen Anthropic und der Regierung liefen noch über das Wochenende. Für Entwicklerinnen und Entwickler außerhalb des Glasswing-Kreises ändert sich damit noch nichts.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">The U.S. government approved a limited release of Mythos 5 on June 26: around 100 companies and federal agencies — mostly from Anthropic's Project Glasswing network — now have access to Anthropic's most capable model. Commerce Secretary Howard Lutnick confirmed in writing that "appropriate safeguards are in place." Fable 5, the slightly less powerful sibling, remains under a global ban for now, with negotiations between Anthropic and the government continuing through the weekend. For developers outside the Glasswing circle, nothing changes yet.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html" target="_blank" rel="noopener">→ cnbc.com · 26.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/research/economic-index-june-2026-report" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Economic Index · Cadences</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat am 26. Juni den neuesten Economic Index Report <mark class="vocab" data-translation="veröffentlicht — published / released">veröffentlicht</mark>, diesmal unter dem Titel „Cadences". Auf Basis einer Befragung von über 9.700 Nutzerinnen und Nutzern zeigt der Bericht, zu welchen Tageszeiten Menschen Claude nutzen, welche Art von Inhalten sie dabei erstellen und wie sie die wirtschaftlichen <mark class="vocab" data-translation="Auswirkungen — effects / impacts">Auswirkungen</mark> von KI auf ihre eigene Arbeit einschätzen. Interessant: Jüngere Beschäftigte und Frauen machen sich laut Bericht stärker Sorgen um Jobverluste durch Automatisierung, während erfahrenere Nutzerinnen und Nutzer eher Chancen sehen. Und über alle <mark class="vocab" data-translation="Demografien — demographics">Demografien</mark> hinweg gilt: Coding-Aufgaben sind die konstante Tagesstruktur im Claude-Nutzungsrhythmus.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic published its latest Economic Index report on June 26 — titled "Cadences." Drawing on a survey of over 9,700 users, it maps when people reach for Claude throughout the day, what kinds of outputs they produce, and how they perceive AI's economic impact on their own work. Notably, younger workers and women are more worried about automation-driven job losses, while more experienced users tend to see more opportunity. And across all demographics, one pattern holds firm: coding tasks are the consistent daily anchor in Claude usage rhythms.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/research/economic-index-june-2026-report" target="_blank" rel="noopener">→ anthropic.com · 26.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-5.6 Sol · Terra · Luna</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat am 26. Juni eine neue Modellfamilie vorgestellt: Sol, Terra und Luna — drei Modelle, die aber noch nicht für alle <mark class="vocab" data-translation="verfügbar — available">verfügbar</mark> sind. Sol ist das neue Flaggschiff für tiefes Reasoning und langfristige Agenten-Aufgaben, Terra liefert vergleichbare Leistung zu GPT-5.5 zu halb so hohen Kosten, und Luna ist das schnellste und günstigste Modell der Serie. Auf Druck der US-Regierung bleibt der Zugang vorerst auf „Trusted Partners" beschränkt — OpenAI stuft alle drei Modelle als High Risk in Cybersecurity und Biologie ein. In den kommenden Wochen soll die allgemeine <mark class="vocab" data-translation="Verfügbarkeit — availability / general access">Verfügbarkeit</mark> folgen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI unveiled a new model family on June 26: Sol, Terra, and Luna — just not for everyone yet. Sol is the new flagship for deep reasoning and long-horizon agent work; Terra matches GPT-5.5 performance at half the cost; Luna is the fastest and cheapest of the three. At the U.S. government's request, access is limited to "trusted partners" for now — OpenAI rates all three models as High in Cybersecurity and Bio/Chem risk under its Preparedness Framework. General availability is expected in the coming weeks.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">→ openai.com · 26.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/work-with-codex-from-anywhere/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Codex Remote · Allgemein verfügbar</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat Codex Remote am 25. Juni für alle bezahlten ChatGPT-Pläne <mark class="vocab" data-translation="freigegeben — released / opened up">freigegeben</mark> — von Plus über Business bis Enterprise und Education. Damit kannst du laufende Coding-Sessions auf deinem Mac oder Windows-Rechner direkt vom Handy aus starten, überwachen und einzelne Aktionen <mark class="vocab" data-translation="genehmigen — to approve / to authorize">genehmigen</mark>. Die Verbindung läuft jetzt über ein authentifiziertes QR-Pairing zwischen Mobilgerät und Rechner, sodass kein unbefugter Zugriff möglich ist. Praktisch für alle, die im Zug oder im Meeting kurz nachschauen wollen, was der Agent gerade im Hintergrund treibt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI opened Codex Remote to all paid ChatGPT plans on June 25 — Plus, Business, Enterprise, and Education. You can now start or continue coding sessions on your Mac or Windows host from your phone, review progress, and approve individual actions on the go. Connections use an authenticated QR pairing between your mobile device and the host, so no unauthorized access is possible. Perfect for anyone who wants to peek at what the agent is doing in the background while commuting or between meetings.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/work-with-codex-from-anywhere/" target="_blank" rel="noopener">→ openai.com · 25.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://cryptobriefing.com/google-delays-gemini-35-pro-launch-to-july-2026/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google · Gemini 3.5 Pro auf Juli verschoben</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google hat den Launch von Gemini 3.5 Pro auf Juli <mark class="vocab" data-translation="verschoben — postponed / delayed">verschoben</mark> — ursprünglich war er für Ende Juni geplant. Als Begründung nennt das Team mehr Zeit für Feedback aus den Unternehmens-Previews und weiteres Feintuning auf der Basis echter Nutzungsdaten. Gleichzeitig <mark class="vocab" data-translation="zeitgleich — simultaneously / at the same time">zeitgleich</mark> wurde bekannt, dass vier erfahrene Forscher aus dem Gemini-Team zu Anthropic gewechselt sind — ein stiller, aber deutlicher Hinweis auf den zunehmenden <mark class="vocab" data-translation="Talentkampf — talent war / race for the best engineers">Talentkampf</mark> zwischen den KI-Labs. Wer Gemini 3.5 Pro testen will, braucht vorerst einen Vertex-AI-Enterprise-Zugang.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google has pushed Gemini 3.5 Pro's public launch to July — originally slated for late June. The team cited more time to absorb enterprise preview feedback and further tuning on real-world usage data. At the same time, it emerged that four senior researchers from the Gemini team have moved to Anthropic — a quiet but clear signal of the intensifying talent war between the major AI labs. For now, Gemini 3.5 Pro stays behind a Vertex AI enterprise preview gate.</p>
+        </div>
+      </div>
+      <a class="source" href="https://cryptobriefing.com/google-delays-gemini-35-pro-launch-to-july-2026/" target="_blank" rel="noopener">→ cryptobriefing.com · 27.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.191" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.191 · /rewind — zurückspulen vor /clear</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.191 löst eine häufige <mark class="vocab" data-translation="Frustration — frustration (same in both languages, but worth knowing)">Frustration</mark>: Wer eine Session mit einem Clear-Befehl geleert hat und sich danach wünscht, den Kontext doch zu behalten — der kann jetzt mit dem Rewind-Befehl zurückspringen und ab dem Punkt vor dem Clear weitermachen. Der Befehl öffnet eine interaktive Auswahl aller Checkpoints, bis zu welchem Moment der Gesprächsverlauf wiederhergestellt werden soll. Kein verlorener Kontext, kein <mark class="vocab" data-translation="Neuschreiben — rewriting / starting over">Neuschreiben</mark> von Prompts — einfach zurückspulen und weitermachen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.191 solves a familiar frustration: if you cleared your session and then realized you still needed that conversation, you can now use the rewind command to jump back to just before the clear and carry on from there. The command opens an interactive checkpoint picker so you choose exactly how far back you want to go. No lost context, no rewriting prompts — just rewind and continue.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/rewind</pre>
+<pre class="cmd-examples"><span class="com"># Conversation-Checkpoint vor /clear wählen · Pick checkpoint before /clear</span>
+$ /rewind</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.191" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">Sicherheitsvorkehrung</div>
+        <div class="vocab-translation">safety precaution · safeguard</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Geeignete Sicherheitsvorkehrungen sind laut Minister nun getroffen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Appropriate safeguards are now in place, according to the secretary.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschoben</div>
+        <div class="vocab-translation">postponed · pushed back</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Launch wurde wegen weiterem Feintuning auf nächsten Monat verschoben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The launch was pushed to next month for additional fine-tuning.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Talentkampf</div>
+        <div class="vocab-translation">talent war · race for the best engineers</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Talentkampf zwischen den KI-Labs wird spürbar härter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The talent war between AI labs is getting noticeably fiercer.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">genehmigen</div>
+        <div class="vocab-translation">to approve · to authorize</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du genehmigst Aktionen direkt vom Handy aus, ohne am Rechner zu sitzen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You approve actions directly from your phone without sitting at your desk.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zeitgleich</div>
+        <div class="vocab-translation">simultaneously · at the same time</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zeitgleich mit dem Release gab es überraschende Personalwechsel bei Google.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">At the same time as the release, there were surprising staff changes at Google.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">jemanden im Regen stehen lassen</div>
+      <div class="idiom-meaning">to leave someone in the lurch · to abandon someone — wörtlich: "to let someone stand in the rain"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die US-Regierung lässt Entwickler außerhalb der Trusted-Partner-Liste erstmal im Regen stehen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The US government is leaving developers outside the trusted-partner list out in the cold for now."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Den alten Branch einfach im Regen stehen zu lassen ist keine Lösung — der sollte gemergt oder gelöscht werden."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Just leaving the old branch out in the cold isn't a solution — it should be merged or deleted."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to cut the red tape</div>
+      <div class="idiom-meaning">to eliminate bureaucratic obstacles — German equivalent: "den Bürokratieweg freimachen" or "Bürokratie abbauen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The Commerce Department finally cut the red tape on Mythos 5 — though only for about a hundred trusted partners."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Handelsministerium hat zumindest für 100 Partner den Bürokratieweg bei Mythos 5 freigemacht."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before we can ship, we need to cut the red tape around the security review process."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bevor wir deployen können, müssen wir den Bürokratieweg rund um den Security-Review aus dem Weg räumen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cnbc.com · anthropic.com · openai.com · cryptobriefing.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #49 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
