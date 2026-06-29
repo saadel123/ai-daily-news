@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 29.06.2026</title>
+<meta name="description" content="KI-News vom 29. Juni 2026: Fable 5 vor Rückkehr, LineShine #1 ohne GPU, Google drosselt Meta, Tokenmaxxing endet, Zhipu GLM-5.2 — Edition #50.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 29. Juni 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #50</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Fable 5 kommt bald zurück — und die Welt fragt sich, ob Europa sich das noch leisten kann.</h1>
+    <p class="subtitle">Außerdem: China übernimmt wieder die Supercomputer-Krone, Google kann Metas Rechenkapazitäts-Hunger nicht stillen, und Zhipu's GLM-5.2 ist das neue DeepSeek-Moment.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Fable 5</strong>: Rückkehr steht bevor — Österreich fordert Anthropic-Ansiedlung in der EU</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>LineShine</strong>: China wieder TOP500-#1 — 2 ExaFLOP/s rein auf CPU, kein Nvidia, kein AMD</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟣</span><span><strong>Google vs. Meta</strong>: Gemini-Kapazität reicht nicht — Meta-Projekte verzögert, Token-Sparen angeordnet</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Tokenmaxxing</strong> ist vorbei — Uber, Lindy und Co. bremsen KI-Ausgaben und fordern ROI</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Zhipu GLM-5.2</strong>: Open-Source, MIT-Lizenz, 1 Mio. Tokens — auf Opus-4.8-Niveau bei ⅕ der Kosten</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Fable 5 · Rückkehr steht bevor · EU-Souveränität</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Nach zwei Wochen US-Export-Sperre ist Claude Fable 5 laut Axios kurz vor der Rückkehr — die Trump-Administration könnte das Modell noch in dieser Woche wieder <mark class="vocab" data-translation="freigeben — to release / unblock (separable verb)">freigeben</mark>. Während Mythos 5 bereits für rund 100 US-Organisationen in der kritischen Infrastruktur wieder zugänglich ist, bleibt Fable für alle anderen — API-Entwickler, Claude-Code-User, internationale Subscriber — vorerst weiter <mark class="vocab" data-translation="gesperrt — blocked / restricted / offline">gesperrt</mark>. Österreichs Staatssekretär für Digitalisierung hat die EU-Kommission aufgefordert, Anthropic in der EU zu <mark class="vocab" data-translation="verankern — to anchor / embed / establish firmly">verankern</mark>, um sich von US-Exportkontrollen unabhängig zu machen. Die Situation zeigt, wie <mark class="vocab" data-translation="fragil — fragile / precarious">fragil</mark> die Infrastruktur für europäische KI-Nutzer ist, wenn ein Regierungsbeschluss über Nacht den Zugang zu Frontier-Modellen kappen kann.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">After two weeks of US export restrictions, Claude Fable 5 is close to coming back — the Trump administration could lift the block as early as this week, per Axios. While Mythos 5 has already been restored for around 100 US organizations defending critical infrastructure, Fable 5 remains offline for everyone else: API developers, Claude Code users, and international subscribers. Austria's State Secretary for Digitalization has written to the EU Commission urging member states to host Anthropic domestically, citing US export controls as the direct trigger. The situation underscores just how fragile frontier AI access has become when a single government directive can cut it off overnight.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon" target="_blank" rel="noopener">→ axios.com · 27.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.tomshardware.com/tech-industry/supercomputers/chinas-lineshine-supercomputer-dethrones-us-el-capitan-secures-first-place-in-top-500-list" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>LineShine · China TOP500-#1 · 2 ExaFLOP/s · kein GPU</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">China hat die TOP500-Liste <mark class="vocab" data-translation="zurückerobern — to reclaim / retake (separable verb)">zurückerobert</mark>: LineShine im Shenzhen National Supercomputing Centre führt die aktuelle Ausgabe mit 2,198 ExaFLOP/s an — das erste Mal seit 2017, dass ein chinesisches System ganz oben steht. Das Bemerkenswerte: LineShine läuft komplett ohne Nvidia und AMD, rein auf <mark class="vocab" data-translation="hausgemacht — home-grown / domestically built">hausgemachten</mark> 304-Kern-LX2-Prozessoren mit dem proprietären LingQi-Interconnect und Kylin OS. Die US-Exportkontrollen für Hochleistungs-Chips haben China offenbar dazu angetrieben, einen vollständig <mark class="vocab" data-translation="souverän — sovereign / independent">souveränen</mark> Compute-Stack zu bauen. Beim HPL-MxP-Benchmark für KI-Training liegt LineShine allerdings noch hinter drei US-GPU-Systemen — CPU-Only hat im Deep-Learning-Bereich noch echte <mark class="vocab" data-translation="Grenzen — limits / boundaries">Grenzen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">China has retaken the top spot on the TOP500 list: LineShine, at the National Supercomputing Centre in Shenzhen, leads the latest edition with 2.198 exaflops — the first Chinese system at number one since 2017. What's remarkable is that it runs entirely without Nvidia or AMD, using custom 304-core LX2 processors with a proprietary LingQi interconnect and Kylin OS. US export controls on high-performance chips apparently accelerated China's push to build a fully sovereign compute stack. That said, on the HPL-MxP AI training benchmark, LineShine still ranks behind three GPU-accelerated US systems — CPU-only architectures have real limits in deep learning.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.tomshardware.com/tech-industry/supercomputers/chinas-lineshine-supercomputer-dethrones-us-el-capitan-secures-first-place-in-top-500-list" target="_blank" rel="noopener">→ tomshardware.com · 24.06.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google × Meta · Gemini-Kapazitäts-Engpass · Projekte verzögert</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google hat Meta den Zugang zu seinen Gemini-Modellen beschränkt — nicht aus strategischen Gründen, sondern weil schlicht die Kapazität fehlt: Meta hatte deutlich mehr Computing-Power angefragt, als Google bereitstellen konnte. Der <mark class="vocab" data-translation="Engpass — bottleneck / capacity constraint">Engpass</mark> hat interne KI-Projekte bei Meta verzögert, und Mitarbeitende wurden angehalten, sparsamer mit KI-Tokens umzugehen. Mehrere andere Google-Kunden sind ebenfalls betroffen, aber Meta <mark class="vocab" data-translation="trifft es am härtesten — gets hit hardest">trifft es am härtesten</mark>, weil der Konzern mit seinen KI-Projekten besonders rechenintensiv arbeitet. Die Situation zeigt, dass selbst Milliarden-Dollar-Investitionen in Chips und Rechenzentren nicht schnell genug wachsen, um den <mark class="vocab" data-translation="explodierenden Bedarf — exploding / surging demand">explodierenden Bedarf</mark> zu decken.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google has restricted Meta's access to its Gemini models — not for strategic reasons, but simply because capacity ran out: Meta had requested far more computing power than Google could supply. The shortfall delayed some of Meta's internal AI projects, and staff were told to use AI tokens more efficiently. Several other Google clients have also been affected, though Meta is hit hardest given how compute-intensive its AI workloads are. The situation shows that even billion-dollar investments in chips and data centers aren't growing fast enough to meet surging demand.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html" target="_blank" rel="noopener">→ cnbc.com · 28.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Tokenmaxxing war gestern · Enterprise bremst · ROI gefragt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Tokenmaxxing — die Praxis, Entwickler ohne Budget-Deckel auf Frontier-Modelle <mark class="vocab" data-translation="loszulassen — to let loose / unleash (separable verb)">loszulassen</mark> — läuft ab. Uber hat sein gesamtes Jahres-KI-Budget in nur vier Monaten verbrannt und führt jetzt Spending-Tiers ein; der KI-Startup Lindy hat seinen kompletten Traffic von Claude auf DeepSeek umgestellt und erwartet, Millionen pro Jahr zu sparen. OpenAI und Anthropic, die beide von der Spend-at-all-costs-Mentalität der letzten Jahre profitiert haben, stehen nun unter Druck, ROI-getriebene Anforderungen zu erfüllen — <mark class="vocab" data-translation="ausgerechnet — of all times / of all things (ironic emphasis)">ausgerechnet</mark> kurz vor geplanten Börsengängen. Analysten warnen, dass die Wachstumsraten schwieriger zu <mark class="vocab" data-translation="halten — to sustain / maintain">halten</mark> sind, wenn Großkunden ihre Token-Ausgaben aktiv managen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Tokenmaxxing — letting developers run wild on frontier models with no budget ceiling — is fading. Uber burned through its entire annual AI budget in four months and is now introducing spending tiers; AI startup Lindy publicly switched all its traffic from Claude to DeepSeek, expecting to save millions per year. OpenAI and Anthropic, both prime beneficiaries of the spend-at-all-costs mentality, now face pressure to meet ROI-driven demands — of all times, right before their planned IPOs. Analysts warn growth rates will be harder to sustain as large enterprise customers actively manage their token spend.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html" target="_blank" rel="noopener">→ cnbc.com · 26.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Zhipu GLM-5.2 · MIT-Lizenz · 1 Mio. Tokens · DeepSeek-Moment</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Zhipu AI hat mit GLM-5.2 ein Frontier-Coding-Modell unter MIT-Lizenz veröffentlicht, das auf einem wichtigen agentic Benchmark nur einen Prozentpunkt hinter Anthropics Opus 4.8 liegt — bei rund einem Fünftel der Kosten. Das Modell kommt mit einem Millionen-Token-Context-Fenster, ist ohne regionale Sperren frei nutzbar und wurde released, als US-Export-Beschränkungen Anthropic und OpenAI im globalen Rollout <mark class="vocab" data-translation="bremsen — to slow down / to brake / to hold back">bremsten</mark>. Die Fachpresse spricht bereits vom DeepSeek-Moment für europäische und asiatische Entwickler — ein Open-Source-Modell, das plötzlich <mark class="vocab" data-translation="auf Augenhöhe — on equal footing / at eye level">auf Augenhöhe</mark> mit den Besten ist. Wer multimodale Agenten-Pipelines baut und Kosten sparen will, sollte GLM-5.2 definitiv <mark class="vocab" data-translation="durchrechnen — to crunch the numbers / work through">durchrechnen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Zhipu AI has released GLM-5.2, a frontier coding model under the MIT license, that sits within one percentage point of Anthropic's Opus 4.8 on a key agentic benchmark — at roughly one-fifth of the cost. The model ships with a one-million-token context window, carries no regional access restrictions, and landed precisely when US export controls were slowing Anthropic and OpenAI's global rollout. The tech press is already calling it a DeepSeek moment for European and Asian developers — an open-source model that's suddenly on equal footing with the best. If you build multimodal agent pipelines and care about cost, GLM-5.2 is worth running the numbers on.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html" target="_blank" rel="noopener">→ cnbc.com · 26.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.195" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.191–2.1.195 · /rewind vor /clear · Live-Autocomplete · –37 % CPU</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code hat zwischen Version 2.1.191 und 2.1.195 eine Reihe nützlicher Updates bekommen. Am wichtigsten: /rewind springt jetzt auch zu Stellen zurück, die vor einem /clear-Aufruf lagen — wer seinen Kontext versehentlich gecleart hat, kann damit wieder einsteigen, ohne von vorne anzufangen. Im Bash-Modus — dem Ausrufezeichen-Shortcut für direkte Shell-Befehle — gibt's jetzt Live-Autocomplete für Dateipfade, was das Navigieren im Terminal deutlich flüssiger macht. Obendrauf hat das Team den CPU-Verbrauch während Streaming-Responses um 37 % gesenkt, und die neue Einstellung autoMode.classifyAllShell leitet alle Shell-Befehle durch den Auto-Mode-Classifier, statt nur potenziell gefährliche Patterns zu prüfen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code picked up a string of quality-of-life improvements between versions 2.1.191 and 2.1.195. Biggest one: /rewind can now step back to conversation points before a /clear was run — if you accidentally nuked your context, you can re-enter instead of starting over. The bash-mode shortcut (the exclamation mark for running shell commands) now has live file path autocomplete, making terminal navigation noticeably smoother. On top of that, the team cut CPU usage during streaming responses by 37%, and the new autoMode.classifyAllShell setting routes all shell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.195" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24–26.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">verankern</div>
+        <div class="vocab-translation">to anchor · to embed firmly</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Österreich will Anthropic dauerhaft in der EU verankern, bevor weitere US-Sperren kommen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Austria wants to firmly anchor Anthropic in the EU before further US bans arrive.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausgerechnet</div>
+        <div class="vocab-translation">of all times · of all things (ironic)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ausgerechnet jetzt, wo der IPO naht, verlieren sie ihren größten Kunden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Of all times, right when the IPO is around the corner, they lose their biggest client.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auf Augenhöhe</div>
+        <div class="vocab-translation">on equal footing · at eye level</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GLM-5.2 ist jetzt auf Augenhöhe mit den besten Closed-Source-Modellen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GLM-5.2 is now on equal footing with the best closed-source models.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Engpass</div>
+        <div class="vocab-translation">bottleneck · capacity constraint</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Compute-Engpass bei Google trifft Meta am härtesten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The compute bottleneck at Google hits Meta the hardest.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zurückerobern</div>
+        <div class="vocab-translation">to reclaim · to retake</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">China hat die Supercomputer-Spitze nach fast einem Jahrzehnt zurückerobert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">China has reclaimed the top spot in supercomputing after nearly a decade.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf die Tube drücken</div>
+      <div class="idiom-meaning">to step on the gas · to hurry up — wörtlich: "press on the tube" (the accelerator)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn chinesische Open-Source-Modelle so schnell aufholen, muss Anthropic beim Fable-Launch echt auf die Tube drücken."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Chinese open-source models catching up this fast, Anthropic needs to really step on the gas for the Fable launch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben zwei Wochen Rückstand — ab jetzt heißt es auf die Tube drücken, sonst verpassen wir den Release."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We're two weeks behind — time to step on it, or we'll miss the release."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to be in the driver's seat</div>
+      <div class="idiom-meaning">to be in control · to have the upper hand — German: "das Steuer in der Hand haben" / "am Drücker sein"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Right now, open-source labs are in the driver's seat when it comes to cost-per-token."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Was Kosten pro Token angeht, haben gerade die Open-Source-Labs das Steuer in der Hand."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The enterprise is in the driver's seat now — they decide how much AI spend is acceptable."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Enterprise hat jetzt das Steuer in der Hand — sie entscheiden, wie viel KI-Budget noch akzeptabel ist."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: axios.com · tomshardware.com · cnbc.com · github.com/anthropics</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #50 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-06-29",
+      "edition_number": 50,
+      "headlines": [
+        "Fable 5 kurz vor Rückkehr — Österreich fordert Anthropic-Ansiedlung in der EU",
+        "LineShine: China wieder TOP500-#1 — 2 ExaFLOP/s rein auf CPU, kein Nvidia, kein AMD",
+        "Google drosselt Metas Gemini-Zugang wegen Compute-Engpass — Projekte verzögert",
+        "Tokenmaxxing war gestern: Unternehmen bremsen KI-Ausgaben und fordern ROI",
+        "Zhipu GLM-5.2: Open-Source-Modell auf Opus-4.8-Niveau bei einem Fünftel der Kosten"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-06-29T16:02:12Z"
+    },
+    {
       "date": "2026-06-28",
       "edition_number": 49,
       "headlines": [
