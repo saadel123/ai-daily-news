@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 01.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 01. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #51</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude Sonnet 5 ist live — und Fable 5 kehrt endlich weltweit zurück.</h1>
+    <p class="subtitle">Außerdem: Claude Science für Forscher, Google Nano Banana 2 Lite in 4 Sekunden und OpenAIs erster eigener Chip.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Sonnet 5</strong> ist das neue Standard-Modell in Claude Code — 1-Mio.-Token-Kontext, 2 $/10 $ per Mtok bis Ende August</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Fable 5 und Mythos 5</strong> zurück in 180+ Ländern — US-Exportkontrolle aufgehoben nach Safety-Fix</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟧</span><span><strong>Claude Science Workbench</strong> startet in Beta — 60+ Datenbanken, Multi-Agent für Labor-Pipelines</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Google Nano Banana 2 Lite</strong>: Bild in 4 Sekunden, 0,034 $ pro 1.000 Bilder — schnellstes Gemini Image-Modell</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI × Broadcom Jalapeño</strong>: erster eigener KI-Inference-Chip von OpenAI — 9 Monate von Null bis Tape-out</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Sonnet 5 · 1M Token · neues Default-Modell</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Claude Sonnet 5 live <mark class="vocab" data-translation="geschaltet — switched on / launched">geschaltet</mark> — das bisher <mark class="vocab" data-translation="agilste — most agentic / most action-ready">agilste</mark> Sonnet-Modell mit einem nativen Kontextfenster von einer Million Tokens. Sonnet 5 löst ab sofort Sonnet 4.6 als Standardmodell in Claude Code 2.1.197 ab und schlägt den Vorgänger in Reasoning, Tool-Use, Coding und Wissensarbeit deutlich. Bis zum 31. August gilt ein Einführungspreis von 2 Dollar pro Million Input-Tokens und 10 Dollar pro Million Output-Tokens. Für Teams, die regelmäßig mit langen Codebasen oder komplexen Agenten-Pipelines arbeiten, dürfte der Wechsel sofort <mark class="vocab" data-translation="spürbar — noticeable / palpable">spürbar</mark> sein.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has shipped Claude Sonnet 5 — their most agentic Sonnet model yet, with a native one-million-token context window. Sonnet 5 replaces Sonnet 4.6 as the default model in Claude Code 2.1.197, with clear improvements in reasoning, tool use, coding, and knowledge work. Introductory pricing of $2/$10 per MTok (input/output) runs through August 31. For teams working with large codebases or complex agent pipelines, the upgrade should be immediately noticeable.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">→ anthropic.com · 30.06.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.etvbharat.com/en/technology/anthropic-restores-access-to-claude-fable-5-mythos-5-after-us-lifts-export-controls-enn26070104964" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Fable 5 &amp; Mythos 5 · Rückkehr weltweit</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat den Zugang zu Fable 5 und Mythos 5 weltweit <mark class="vocab" data-translation="wiederhergestellt — restored / brought back">wiederhergestellt</mark> — nachdem das US-Handelsministerium die Exportkontrolle aufgehoben hat, die das Modell seit dem 12. Juni sperrte. Den <mark class="vocab" data-translation="Ausschlag geben — to be the deciding factor / to tip the scales">Ausschlag</mark> gab ein einzelner Safety-Filter, der die Jailbreak-Technik blockiert, die Amazon-Forscher entdeckt hatten; das CAISI des Commerce Departments hatte die Schutzmaßnahmen <mark class="vocab" data-translation="abgesegnet — approved / signed off on">abgesegnet</mark>. Fable 5 ist ab heute auf Claude.ai, der Claude Platform, Claude Code und Claude Cowork wieder für alle 180+ Länder verfügbar — AWS, Google Cloud und Microsoft Foundry folgen in Kürze. Temporäre Nutzungslimits bleiben <mark class="vocab" data-translation="vorerst — for now / for the time being">vorerst</mark> bestehen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has restored global access to Fable 5 and Mythos 5 — after the US Department of Commerce withdrew the export controls that had locked the model down since June 12. The deciding factor was a single safety filter blocking the jailbreak technique Amazon researchers had flagged; Commerce's CAISI reviewed the safeguards before the controls came off. Fable 5 is available again today on Claude.ai, the Claude Platform, Claude Code, and Claude Cowork across 180+ countries — AWS, Google Cloud, and Microsoft Foundry to follow soon. Temporary usage limits remain in place for now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.etvbharat.com/en/technology/anthropic-restores-access-to-claude-fable-5-mythos-5-after-us-lifts-export-controls-enn26070104964" target="_blank" rel="noopener">→ etvbharat.com · 01.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Science Workbench · Beta für Forschungsteams</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Anthropic hat Claude Science in die Beta-Phase <mark class="vocab" data-translation="geschickt — sent / moved into (here: launched into)">geschickt</mark> — eine KI-Workbench, die Wissenschaftlerinnen und Wissenschaftlern erlaubt, komplexe Forschungs-Pipelines mit über 60 wissenschaftlichen Datenbanken zu verbinden. Ein Haupt-Agent übernimmt die <mark class="vocab" data-translation="Steuerung — direction / control / management">Steuerung</mark> und <mark class="vocab" data-translation="delegiert — delegates / hands off">delegiert</mark> an spezialisierte Sub-Agenten für Genomik, Proteomik, Strukturbiologie oder Cheminformatik — oder an eigene Agenten, die ein Team selbst gebaut hat. Ein dedizierter Review-Agent <mark class="vocab" data-translation="prüft — audits / checks / verifies">prüft</mark> Zitate und Berechnungen unabhängig, bevor Ergebnisse publiziert werden. Das Produkt ist für Pro-, Max-, Team- und Enterprise-Pläne verfügbar; bis zu 50 Forschungsprojekte erhalten Grants von bis zu 30.000 Dollar.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Anthropic has launched Claude Science into beta — an AI workbench that lets researchers connect complex research pipelines to more than 60 scientific databases. A primary agent handles project direction and delegates to specialized sub-agents for genomics, proteomics, structural biology, or cheminformatics — or to custom agents a team has built themselves. A dedicated reviewer agent independently audits citations and calculations before any output reaches publication. The product is available on Pro, Max, Team, and Enterprise plans; up to 50 research projects can receive grants of up to $30,000.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener">→ anthropic.com · 30.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Google Nano Banana 2 Lite · Gemini 3.1 Flash-Lite Image</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google hat Nano Banana 2 Lite alias Gemini 3.1 Flash-Lite Image <mark class="vocab" data-translation="veröffentlicht — released / published">veröffentlicht</mark> — das schnellste und günstigste Modell in Googles Creative-Family. Es generiert ein Bild in Standardauflösung in unter vier Sekunden, ist damit 2,7-mal schneller als das Flash-Image-Modell, und kostet <mark class="vocab" data-translation="pauschal — at a flat rate / all-inclusive">pauschal</mark> 0,034 Dollar pro tausend Bilder. Das Modell ist sofort über Google AI Studio, die Gemini API und die Gemini Enterprise Agent Platform <mark class="vocab" data-translation="verfügbar — available / accessible">verfügbar</mark>. Verbesserte Charakter-<mark class="vocab" data-translation="Konsistenz — consistency">Konsistenz</mark> und lokalisiertes Text-Rendering machen es besonders für Enterprise-Image-Workflows interessant.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google has released Nano Banana 2 Lite, officially Gemini 3.1 Flash-Lite Image — the fastest and most affordable model in Google's creative family. It generates a standard-resolution image in under four seconds, 2.7× faster than the Flash Image model, at a flat rate of $0.034 per 1,000 images. The model is immediately available via Google AI Studio, the Gemini API, and the Gemini Enterprise Agent Platform. Improved character consistency and localized text rendering make it especially interesting for enterprise image workflows.</p>
+        </div>
+      </div>
+      <a class="source" href="https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations" target="_blank" rel="noopener">→ venturebeat.com · 30.06.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI × Broadcom · Jalapeño Inference Chip</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI und Broadcom haben Jalapeño vorgestellt — OpenAIs ersten eigenen Intelligence Processor für LLM-Inferenz, der von Grund auf für die Kernel, Memory-Bewegungen und Networking-Muster <mark class="vocab" data-translation="optimiert — optimized / tuned">optimiert</mark> wurde, die bei Frontier-Modellen am meisten zählen. Der Chip wurde in nur neun Monaten von Null bis zum <mark class="vocab" data-translation="Tape-out — tape-out (the final chip design milestone before mass manufacturing)">Tape-out</mark> entwickelt — ein Rekordtempo für Custom Silicon dieser Klasse. Erste Ingenieursmuster laufen ML-Workloads bereits auf <mark class="vocab" data-translation="Zieltakt — target frequency / target clock speed">Zieltakt</mark> und Zielverbrauch, darunter GPT-5.3-Codex-Spark. Die erste <mark class="vocab" data-translation="Großproduktion — mass production / large-scale production">Großproduktion</mark> ist für Ende 2026 geplant, mit Blick auf Gigawatt-Rechenzentren mit Microsoft und weiteren Partnern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI and Broadcom unveiled Jalapeño — OpenAI's first custom Intelligence Processor designed from the ground up for LLM inference, optimized around the kernels, memory movement, and networking patterns that matter most for frontier models. The chip went from zero to tape-out in just nine months — a record pace for custom silicon of this class. Early engineering samples are already running ML workloads including GPT-5.3-Codex-Spark at production target frequency and power. Initial large-scale deployment is planned for late 2026, targeting gigawatt-scale data centers with Microsoft and other partners.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">→ openai.com · 24.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.196" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.196 · Org-Standardmodell in /model</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.196 bringt Organisations-Standardmodelle direkt ins Terminal: Admins <mark class="vocab" data-translation="legen fest — set / define / establish (separable verb: festlegen)">legen</mark> das Modell einmal im Org Console <mark class="vocab" data-translation="legen fest — set / define / establish (separable verb: festlegen)">fest</mark> — danach zeigt der Slash-Command für jeden im Team automatisch "Org default" oder "Role default" an, wenn kein persönliches Modell gewählt ist. Dazu gibt es jetzt <mark class="vocab" data-translation="lesbare — readable / human-friendly">lesbare</mark> Standardnamen für Sessions, die das Wiederfinden und Anschreiben von Hintergrund-Agenten deutlich einfacher macht. Und ein kleines UX-Upgrade: Cmd- bzw. Strg-Klick auf Datei-<mark class="vocab" data-translation="Anhänge — attachments (singular: Anhang)">Anhänge</mark> im Chat öffnet sie direkt im Finder oder Explorer.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.196 brings org-level default models right into your terminal: admins set the model once in the org console, and from then on the slash command shows "Org default" (or "Role default") for everyone who hasn't picked their own. On top of that, sessions now get readable default names, making background agents much easier to find and message. And a small UX win: Cmd/Ctrl-click on file attachments in chat opens them directly in Finder or Explorer.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/model</pre>
+<pre class="cmd-examples"><span class="com"># Org-Standardmodell sehen, wenn kein persönliches gewählt ist · See "Org default" when no personal model is selected</span>
+$ /model
+
+<span class="com"># Persönliches Modell für die Session wählen · Pick a model for this session only</span>
+$ /model sonnet-5</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.196" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 29.06.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">agilste</div>
+        <div class="vocab-translation">most agentic · most action-ready</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Sonnet 5 ist Anthropics agilst Sonnet-Modell — ideal für komplexe Agenten-Pipelines.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Sonnet 5 is Anthropic's most agentic Sonnet model — ideal for complex agent pipelines.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Tape-out</div>
+        <div class="vocab-translation">tape-out · final chip design step before manufacturing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI und Broadcom haben den Tape-out für Jalapeño in nur neun Monaten erreicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI and Broadcom reached tape-out for Jalapeño in just nine months.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Steuerung</div>
+        <div class="vocab-translation">control · direction · management</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Steuerung komplexer Multi-Agent-Pipelines übernimmt Claude Science vollständig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude Science takes over full direction of complex multi-agent pipelines.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">pauschal</div>
+        <div class="vocab-translation">at a flat rate · all-inclusive</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google berechnet für Nano Banana 2 Lite pauschal 0,034 Dollar pro tausend Bilder.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google charges a flat $0.034 per thousand images for Nano Banana 2 Lite.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">festlegen</div>
+        <div class="vocab-translation">to set · to define · to establish</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Als Admin legst du das Standard-Modell einmal im Org Console fest — danach gilt es für das ganze Team.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">As an admin, you set the default model once in the org console — it then applies to the whole team.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">aus dem Stand heraus</div>
+      <div class="idiom-meaning">right from the get-go · from scratch, without a running start — wörtlich: "from a standing position"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI und Broadcom haben Jalapeño aus dem Stand heraus in neun Monaten von der Idee bis zum Tape-out gebracht."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI and Broadcom delivered Jalapeño from scratch to tape-out in just nine months — right from the get-go."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Den neuen Feature-Branch haben wir aus dem Stand heraus in einem einzigen Sprint fertig bekommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We shipped the new feature branch in a single sprint — right out of the gate."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to pass the baton</div>
+      <div class="idiom-meaning">to hand over responsibility to the next in line — German equivalent: "den Staffelstab weitergeben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sonnet 4.6 passes the baton to Sonnet 5 as Claude Code's new default model."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Sonnet 4.6 gibt den Staffelstab an Sonnet 5 als neues Standard-Modell in Claude Code weiter."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After the reorg, our senior devs passed the baton to the new AI-native team."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach der Umstrukturierung haben unsere Senior-Devs den Staffelstab ans neue KI-Team weitergegeben."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · etvbharat.com · venturebeat.com · openai.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #51 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

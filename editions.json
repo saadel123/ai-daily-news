@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-01",
+      "edition_number": 51,
+      "headlines": [
+        "Claude Sonnet 5 ist das neue Standard-Modell in Claude Code — 1-Mio.-Token-Kontext, 2 $/10 $ per Mtok bis Ende August",
+        "Fable 5 und Mythos 5 zurück in 180+ Ländern — US-Exportkontrolle aufgehoben nach Safety-Fix",
+        "Claude Science Workbench startet in Beta — 60+ Datenbanken, Multi-Agent für Labor-Pipelines",
+        "Google Nano Banana 2 Lite: Bild in 4 Sekunden, 0,034 $ pro 1.000 Bilder — schnellstes Gemini Image-Modell",
+        "OpenAI × Broadcom Jalapeño: erster eigener KI-Inference-Chip von OpenAI — 9 Monate von Null bis Tape-out"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-01T16:00:00Z"
+    },
+    {
       "date": "2026-06-29",
       "edition_number": 50,
       "headlines": [
