@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-05",
+      "edition_number": 52,
+      "headlines": [
+        "Claude Code 2.1.198: Claude im Browser ist GA — Subagenten laufen jetzt standardmäßig im Hintergrund und committen selbst",
+        "Anthropic × NVIDIA × Azure: Opus 4.8 und Haiku 4 auf GB300 Blackwell Ultra jetzt GA in Azure AI Foundry",
+        "Grok 4.5 in privater Beta bei SpaceX und Tesla — 1,5 Bio. Parameter, keine unabhängigen Benchmarks",
+        "Meta Watermelon: KI-Chef Wang sagt intern, Modell zieht mit GPT-5.5 gleich — 10× mehr Compute als Avocado",
+        "Meituan LongCat-2.0 enthüllt: war zwei Monate als Owl Alpha heimliche #1 auf OpenRouter — jetzt open source"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-05T16:00:00Z"
+    },
+    {
       "date": "2026-07-01",
       "edition_number": 51,
       "headlines": [
