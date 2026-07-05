@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 05.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 05. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #52</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Chrome-Debut, Blackwell-Power und Meituans heimliches Tier-1-Modell.</h1>
+    <p class="subtitle">Außerdem: Grok 4.5 in der stillen Beta, Meta trainiert im Verborgenen — und Slash-Skills lassen sich jetzt stapeln.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.198</strong>: Claude im Browser ist GA — Subagenten laufen jetzt standardmäßig im Hintergrund und committen selbst</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic × NVIDIA × Azure</strong>: Opus 4.8 und Haiku 4 auf GB300 Blackwell Ultra jetzt GA in Azure AI Foundry</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔴</span><span><strong>Grok 4.5</strong>: private Beta bei SpaceX und Tesla — 1,5 Bio. Parameter, keine unabhängigen Benchmarks</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Meta Watermelon</strong>: KI-Chef Wang sagt intern, Modell zieht mit GPT-5.5 gleich — 10× mehr Compute als Avocado</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟣</span><span><strong>Meituan LongCat-2.0</strong>: war zwei Monate als Owl Alpha heimliche #1 auf OpenRouter — jetzt open source</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.198" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.198 · Chrome GA · Subagenten im Hintergrund</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.198 bringt zwei große Neuigkeiten auf einmal: Claude im Chrome-Browser ist jetzt offiziell <mark class="vocab" data-translation="generally available — offiziell allgemein verfügbar, kein Lab-Status mehr">generally available</mark> — kein Lab-Tag mehr, kein Warnhinweis. Gleichzeitig laufen Subagenten jetzt <mark class="vocab" data-translation="standardmäßig — by default">standardmäßig</mark> im Hintergrund, was bedeutet, dass Claude weiterarbeitet und dich nur per <mark class="vocab" data-translation="Benachrichtigung — notification">Benachrichtigung</mark> informiert, wenn etwas Eingabe braucht. Wer einen Hintergrundagenten Code-Arbeit <mark class="vocab" data-translation="abschließen — to complete, to finish">abschließen</mark> lässt, bekommt von jetzt an automatisch einen Commit, Push und Draft-PR — ohne dass der Agent zwischendurch fragt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.198 delivers two big headlines at once: Claude in Chrome is now fully generally available — no lab tag, no caveats. At the same time, subagents now run in the background by default, meaning Claude keeps working and only surfaces a notification when something needs your input. Background agents finishing code work now automatically create a commit, push it, and open a draft PR — no mid-task prompts required.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.198" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 01.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × NVIDIA GB300 × Azure · Enterprise GA</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic, Microsoft und NVIDIA haben gemeinsam Claude Opus 4.8 und Haiku 4 als Generally Available auf Azure AI Foundry <mark class="vocab" data-translation="ankündigen — to announce">angekündigt</mark> — laufend auf dem brandneuen GB300 Blackwell Ultra, einem Rack-Scale-System mit 72 GPUs, 37 TB schnellem Speicher und 1.440 Petaflops bei FP4. Enterprise-Teams können damit <mark class="vocab" data-translation="eigenständig — independently, autonomously">eigenständig</mark> agierende Claude-Agenten direkt aus der Azure-Konsole <mark class="vocab" data-translation="bereitstellen — to deploy, to provision">bereitstellen</mark> — ohne eigene KI-Infrastruktur aufbauen zu müssen. Das Ganze läuft mit Azure-nativer Governance und <mark class="vocab" data-translation="Compliance — regulatory compliance">Compliance</mark>, die Teams aus regulierten Branchen bereits kennen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic, Microsoft and NVIDIA jointly announced that Claude Opus 4.8 and Claude Haiku 4 are generally available on Azure AI Foundry, running on the new GB300 Blackwell Ultra — a rack-scale system with 72 GPUs, 37TB of fast memory, and 1,440 petaflops at FP4. Enterprise teams can now deploy autonomous Claude agents directly from the Azure console without building their own AI infrastructure. The whole stack runs with Azure-native governance and compliance tooling that teams in regulated industries already know.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/" target="_blank" rel="noopener">→ blogs.nvidia.com · 01.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/319314/20260629/grok-45-enters-private-beta-spacex-tesla-no-public-access-no-independent-benchmark.htm" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>xAI · Grok 4.5 · Private Beta bei SpaceX &amp; Tesla</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">xAI hat Grok 4.5 in die private Beta bei SpaceX und Tesla <mark class="vocab" data-translation="schicken — to send, to dispatch">geschickt</mark> — 1,5 Billionen Parameter auf dem neuen V9-Fundament, plus zusätzlichem Training auf Cursor-Coding-Daten. Elon Musk <mark class="vocab" data-translation="behaupten — to claim, to assert">behauptet</mark> intern, das Modell treffe Claude Opus auf Benchmarks oder übertreffe ihn sogar, aber ein System Card oder <mark class="vocab" data-translation="unabhängig — independent">unabhängige</mark> Benchmarks fehlen komplett. Die Einbindung von Cursor-Daten <mark class="vocab" data-translation="aufwerfen — to raise (a question)">wirft</mark> außerdem Fragen auf — SpaceX kauft Cursor-Mutter Anysphere für 60 Mrd. $, was den Datentausch alles andere als neutral macht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">xAI has launched Grok 4.5 into private beta at SpaceX and Tesla — 1.5 trillion parameters on the new V9 foundation with supplemental training on Cursor coding data. Elon Musk claims internally that the model matches or even beats Claude Opus on benchmarks, but there is no system card and no independent verification anywhere in sight. The use of Cursor data raises additional questions, given that SpaceX is buying Cursor's parent Anysphere for $60B — which makes the data exchange anything but arm's-length.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/319314/20260629/grok-45-enters-private-beta-spacex-tesla-no-public-access-no-independent-benchmark.htm" target="_blank" rel="noopener">→ techtimes.com · 29.06.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://americanbazaaronline.com/2026/07/03/meta-ai-chief-says-watermelon-model-has-caught-up-to-gpt-5-5-484022/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meta · Watermelon · holt GPT-5.5 ein</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Metas Chief AI Officer Alexandr Wang hat beim internen Town Hall bekanntgegeben, dass das Trainingsmodell mit dem Codenamen Watermelon bei wichtigen Benchmarks mit GPT-5.5 <mark class="vocab" data-translation="gleichziehen — to draw level, to catch up">gleichzieht</mark> — und dabei zehnmal mehr Compute <mark class="vocab" data-translation="verbrauchen — to consume, to use up">verbraucht</mark> als der Vorgänger Avocado. Öffentliche Zahlen oder ein System Card gibt es nicht; Meta hat keine konkreten Benchmarks genannt, und OpenAI hat ebenfalls nicht kommentiert. Zuckerberg ließ beim selben Meeting <mark class="vocab" data-translation="durchblicken lassen — to hint, to let on">durchblicken</mark>, dass Metas KI-Wetten langsamer <mark class="vocab" data-translation="Früchte tragen — to bear fruit, to pay off">Früchte tragen</mark> als erhofft — Aufholen bleibt also teuer.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Meta's Chief AI Officer Alexandr Wang told an internal town hall that the model in training codenamed Watermelon is matching OpenAI's GPT-5.5 on key benchmarks — while burning ten times more compute than predecessor Avocado. There are no public figures or system card; Meta did not name specific benchmarks, and OpenAI declined to comment. Zuckerberg himself hinted at the same meeting that Meta's AI bets are materializing more slowly than hoped — confirming that catching up remains expensive.</p>
+        </div>
+      </div>
+      <a class="source" href="https://americanbazaaronline.com/2026/07/03/meta-ai-chief-says-watermelon-model-has-caught-up-to-gpt-5-5-484022/" target="_blank" rel="noopener">→ americanbazaaronline.com · 03.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meituan · LongCat-2.0 · Owl Alpha enthüllt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Meituan hat LongCat-2.0 open-source <mark class="vocab" data-translation="veröffentlichen — to release, to publish">veröffentlicht</mark> — und dabei <mark class="vocab" data-translation="enthüllen — to reveal, to unmask">enthüllt</mark>, dass es sich um Owl Alpha handelt, das geheimnisumwitterte Modell, das seit Ende April auf OpenRouter die Top-3 nach Volumen angeführt hat. Das 1,6-Billionen-Parameter-MoE-Modell mit 1-Mio.-Token-Kontextfenster wurde <mark class="vocab" data-translation="vollständig — entirely, completely">vollständig</mark> auf 50.000 chinesischen ASICs trainiert, läuft unter MIT-Lizenz und kostet in der Promo 0,30 $ pro Million Input-Tokens. Für Enterprise-Teams ohne US-Modell-Abhängigkeit ist LongCat-2.0 neben GLM-5.2 und DeepSeek V4-Pro jetzt eine ernsthafte Option.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Meituan open-sourced LongCat-2.0 — and revealed it as Owl Alpha, the mysterious model that had been leading OpenRouter's top-3 by volume since late April. The 1.6-trillion-parameter MoE model with a 1-million-token context window was trained entirely on 50,000 Chinese ASICs, ships under an MIT license, and costs $0.30 per million input tokens during the launch promo. For enterprise teams needing frontier-adjacent coding capability without US-origin model dependency, LongCat-2.0 joins GLM-5.2 and DeepSeek V4-Pro as a credible option.</p>
+        </div>
+      </div>
+      <a class="source" href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips" target="_blank" rel="noopener">→ venturebeat.com · 29.06.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.199" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.199 · Slash-Skills stapeln</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.199 bringt eine kleine, aber nützliche <mark class="vocab" data-translation="Verbesserung — improvement">Verbesserung</mark>: Gestapelte Slash-Skill-Aufrufe <mark class="vocab" data-translation="laden — to load">laden</mark> jetzt alle führenden Skills auf einmal — bis zu fünf in einer Kette. Vorher hat Claude Code immer nur den ersten Skill aus einer solchen Kette geladen und den Rest als normalen Prompt-Text <mark class="vocab" data-translation="behandeln — to treat, to handle">behandelt</mark>. Wer gleichzeitig Research und Visualisierung braucht, kann jetzt beide Skills zusammen aufrufen, ohne sie nacheinander eintippen zu müssen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.199 brings a small but handy improvement: stacked slash-skill invocations now load all leading skills at once — up to five in a chain. Previously Claude Code only loaded the first skill in a chain and treated the rest as plain prompt text. If you need deep research and data visualization at the same time, you can invoke both skills together without typing them one at a time.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/skill-1 /skill-2 [prompt]</pre>
+<pre class="cmd-examples"><span class="com"># Zwei Skills auf einmal laden · Load two skills at once</span>
+$ /deep-research /dataviz Visualize AI lab funding rounds in H1 2026
+
+<span class="com"># Bis zu 5 Skills in einer Kette · Chain up to 5 skills</span>
+$ /code-review /security-review /simplify Check this API handler</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.199" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 02.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">enthüllen</div>
+        <div class="vocab-translation">to reveal · to unmask</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Meituan hat nach zwei Monaten enthüllt, dass Owl Alpha ihr Modell war.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">After two months, Meituan revealed that Owl Alpha was their model all along.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">standardmäßig</div>
+        <div class="vocab-translation">by default · as standard</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Subagenten laufen jetzt standardmäßig im Hintergrund — ohne dass du etwas ändern musst.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Subagents now run in the background by default — no changes needed on your end.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">gleichziehen</div>
+        <div class="vocab-translation">to draw level · to catch up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Meta behauptet, beim Coding mit Watermelon mit GPT-5.5 gleichgezogen zu haben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Meta claims to have drawn level with GPT-5.5 on coding with Watermelon.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufwerfen</div>
+        <div class="vocab-translation">to raise (a question) · to bring up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Deal wirft Fragen zur Datenprovenienz auf, die bisher niemand beantwortet hat.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The deal raises questions about data provenance that nobody has answered yet.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">bereitstellen</div>
+        <div class="vocab-translation">to deploy · to provision</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst die Agenten jetzt direkt aus Azure heraus bereitstellen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can now deploy the agents directly from Azure.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the sack"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Meituan hat nach zwei Monaten die Katze aus dem Sack gelassen — Owl Alpha war ihr Modell."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After two months, Meituan finally let the cat out of the bag — Owl Alpha was their model."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lass die Katze noch nicht aus dem Sack — wir pitchen das Feature erst nächste Woche."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't let the cat out of the bag yet — we're pitching the feature next week."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to fly under the radar</div>
+      <div class="idiom-meaning">to go unnoticed, to operate without drawing attention — German equivalent: "unter dem Radar fliegen" / "unbemerkt bleiben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"LongCat-2.0 flew under the radar for two months while quietly topping OpenRouter."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"LongCat-2.0 ist zwei Monate unter dem Radar geflogen, während es OpenRouter anführte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The permission-mode rename flew under the radar until teams noticed their default had changed."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die Umbenennung des Permission-Modus ist unter dem Radar geflogen, bis Teams merkten, dass ihr Default sich geändert hatte."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · blogs.nvidia.com · techtimes.com · americanbazaaronline.com · venturebeat.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #52 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
