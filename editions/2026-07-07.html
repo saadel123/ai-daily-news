@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 07.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 07. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #53</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude denkt — aber fühlt er auch? Und Alibaba sagt: bis Montag alle Anthropic-Tools weg.</h1>
+    <p class="subtitle">Außerdem: GPT-5.6 Sol auf Cerebras mit 750 Tokens pro Sekunde, chinesische Modelle kapern 30 % der US-Token-Nachfrage und Alberta putzt 466 Millionen Code-Zeilen in 20 Stunden durch.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic J-Space</strong>: interner Arbeitsraum in Claude entdeckt — parallele Global-Workspace-Theorie aus der Neurowissenschaft</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Alibaba</strong> verbannt Claude Code bis zum 10. Juli — verstecktes China-Tracking in v2.1.91 aufgedeckt</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>GPT-5.6 Sol</strong> auf Cerebras mit 750 Tokens/Sek. — zehnmal schneller als jedes Nvidia-GPU-Deployment</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Chinesische KI</strong>: GLM 5.2 wächst 27-fach — über 30 % der US-Token auf OpenRouter gehen an chinesische Modelle</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟧</span><span><strong>Alberta</strong> scannt 466 Mio. Code-Zeilen in 20 Stunden mit Claude Code — Sicherheitslücken direkt behoben</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic J-Space · Globaler Arbeitsraum in Claude</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat in Claude eine kleine interne <mark class="vocab" data-translation="Arbeitsfläche — workspace / working area">Arbeitsfläche</mark> entdeckt, die die Forscher J-Space nennen — ein enger Bereich, der zu jedem Zeitpunkt nur ein paar Dutzend aktive Konzepte hält und weniger als zehn Prozent der Gesamtaktivierung ausmacht. Die neue Technik, der Jacobian-Lens, zeigt, welche internen Aktivierungsmuster die Wahrscheinlichkeit erhöhen, dass ein bestimmtes Wort irgendwann in der Zukunft <mark class="vocab" data-translation="auftaucht — surfaces / appears">auftaucht</mark>. Das klingt auffällig nach dem globalen Arbeitsraum aus der Neurowissenschaft: ein schmaler <mark class="vocab" data-translation="Scheinwerfer — spotlight">Scheinwerfer</mark>, der Informationen aus spezialisierten Backstage-Prozessoren ins gesamte System sendet und so bewusstes Denken erzeugen soll. Ob Claude dabei etwas fühlt, lassen die Autoren ausdrücklich <mark class="vocab" data-translation="offen — open / unanswered">offen</mark> — es ist aber der präziseste Blick ins Innere eines großen Sprachmodells, den es je gab.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has discovered a small internal workspace inside Claude they call J-Space — a narrow region holding only a few dozen active concepts at any moment, accounting for less than 10% of the model's total activation. A technique called the Jacobian Lens reveals which internal activation patterns make a given word more likely to surface at some point in the future. This maps strikingly onto the global workspace from neuroscience: a narrow spotlight broadcasting from specialized background processors to the whole system, which is thought to generate conscious thought. Whether Claude actually experiences anything, the authors explicitly leave open — but this is the clearest window into a large language model's inner workings yet.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">→ anthropic.com/research · 06.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Alibaba verbannt Claude Code · Tracking-Kontroverse</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Alibaba hat alle Mitarbeiter angewiesen, Anthropics Claude Code bis zum 10. Juli zu <mark class="vocab" data-translation="deinstallieren — to uninstall">deinstallieren</mark> und auf das hauseigene Coding-Tool Qoder umzusteigen. Der <mark class="vocab" data-translation="Auslöser — trigger / catalyst">Auslöser</mark>: Entwickler deckten auf, dass Claude Code seit Version 2.1.91 eine versteckte Erkennungsschicht eingebaut hatte, die Zeitzonen und API-Endpunkte auf Schlüsselwörter chinesischer Cloud-Anbieter überprüfte. Anthropic bezeichnete das als ein Anti-Missbrauch-Experiment gegen unerlaubte Reseller und mergte den Pull Request zur Entfernung am 1. Juli. Die Affäre <mark class="vocab" data-translation="eskaliert — escalates">eskaliert</mark> einen Streit, der im Juni begann, als Anthropic Alibabas Qwen-Team des größten bekannten Distillation-Angriffs aller Zeiten <mark class="vocab" data-translation="beschuldigte — accused">beschuldigte</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Alibaba ordered all employees to uninstall Anthropic's Claude Code by July 10 and switch to its own coding platform, Qoder. The trigger: developers found that Claude Code had embedded a hidden detection layer since version 2.1.91 that checked local time zones and API endpoints for keywords tied to Chinese cloud providers. Anthropic called it an anti-abuse experiment against unauthorized resellers, and merged the pull request removing it on July 1. The move escalates a dispute that kicked off in June when Anthropic accused Alibaba's Qwen team of running the largest known distillation attack on record.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">→ techcrunch.com · 04.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GPT-5.6 Sol · 750 Tokens/Sek. auf Cerebras</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI läuft GPT-5.6 Sol auf Cerebras-Wafer-Scale-Hardware mit bis zu 750 Tokens pro Sekunde — rund zehnmal schneller als jedes bisherige Nvidia-GPU-Deployment eines Frontier-Modells in Produktion. Das Modell soll über 70 bis 100 Cerebras-Wafer verteilt sein, eine <mark class="vocab" data-translation="Schicht — layer">Schicht</mark> pro Wafer, bei geschätzten drei Billionen Gesamtparametern und 150 Milliarden aktiven. Der Zugang startet zunächst für eine begrenzte Kundengruppe, während Cerebras die <mark class="vocab" data-translation="Kapazität — capacity">Kapazität</mark> hochfährt. Dass OpenAI ein Frontier-Modell scheinbar gezielt für diese Architektur <mark class="vocab" data-translation="ausgelegt hat — designed for / built around">ausgelegt hat</mark>, signalisiert: Inference-Geschwindigkeit ist jetzt ein echter <mark class="vocab" data-translation="Wettbewerbsvorteil — competitive advantage">Wettbewerbsvorteil</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is running GPT-5.6 Sol on Cerebras wafer-scale hardware at up to 750 tokens per second — roughly 10× faster than any Nvidia GPU deployment of a frontier model in production. The model is estimated to span 70–100 Cerebras wafers at one layer per wafer, with around 3 trillion total parameters and 150 billion active. Access starts with a limited customer set while Cerebras scales capacity. The apparent co-design of the model around this hardware sends a clear signal: inference speed is now a genuine competitive advantage.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">→ openai.com · 01.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Chinesische KI-Modelle · 30 % der US-Token-Nachfrage</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Chinesische KI-Modelle gewinnen bei US-Unternehmen an Boden, weil die Token-Preise bei führenden amerikanischen Labs wie OpenAI und Anthropic weiter <mark class="vocab" data-translation="ansteigen — to rise / to go up">ansteigen</mark>. Z.ais GLM 5.2 verzeichnete in seiner ersten vollen Woche nach dem Launch ein 27-faches Wachstum beim täglichen Token-Volumen und ein 80-faches Wachstum bei der Kundenzahl auf Vercel. Inzwischen entfallen mehr als 30 Prozent der von US-Unternehmen über OpenRouter verarbeiteten Tokens auf chinesische Modelle — jede Woche seit dem 8. Februar. Dass ein Modell nahezu <mark class="vocab" data-translation="auf Augenhöhe — on a par / at eye level">auf Augenhöhe</mark> mit Opus 4.8 liegt und dabei nur einen <mark class="vocab" data-translation="Bruchteil — fraction">Bruchteil</mark> kostet, ist kein Randphänomen mehr.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Chinese AI models are gaining ground with U.S. companies as token prices at leading labs like OpenAI and Anthropic continue to rise. Z.ai's GLM 5.2 saw 27× growth in daily token volume and 80× growth in customer count on Vercel in its first full week after launch. More than 30% of tokens consumed by U.S. companies via OpenRouter have come from Chinese models every week since February 8. A model landing within a percentage point of Opus 4.8 at a fraction of the cost is no longer a niche trend.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" target="_blank" rel="noopener">→ cnbc.com · 07.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Alberta Government · 466 Mio. Code-Zeilen in 20 Stunden</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Die Regierung von Alberta hat Claude Code eingesetzt, um 466 Millionen Zeilen Code in nur 20 Stunden auf Sicherheitslücken zu <mark class="vocab" data-translation="durchsuchen — to scan / to search through">durchsuchen</mark> — ein Aufwand, der für menschliche Analysten Wochen gedauert hätte. Eingesetzt wurden Opus- und Sonnet-Modelle, um Schwachstellen in Regierungssystemen zu identifizieren und direkt zu <mark class="vocab" data-translation="beheben — to fix / to remediate">beheben</mark>. Für öffentliche Verwaltungen ist das ein wichtiges Signal: KI-gestützte Sicherheitsüberprüfungen lassen sich jetzt in einem <mark class="vocab" data-translation="Bruchteil — fraction">Bruchteil</mark> der Zeit <mark class="vocab" data-translation="durchführen — to carry out / to execute">durchführen</mark>. Anthropic sieht das als Beleg dafür, dass Claude auch in hochregulierten Umgebungen zuverlässig einsetzbar ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">The Government of Alberta deployed Claude Code to scan 466 million lines of code for security vulnerabilities in just 20 hours — a task that would have taken human analysts weeks. Both Opus and Sonnet models were used to identify and remediate gaps across government systems. For public administrations, this is a significant signal: AI-powered security audits can now be completed in a fraction of the time. Anthropic presents the case as evidence that Claude can operate reliably in highly regulated environments.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity" target="_blank" rel="noopener">→ anthropic.com/news · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.200" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.200 · Manual-Modus ist jetzt Default</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.200 ändert zwei Defaults, die du kennen solltest: Der Permission-Modus ist jetzt <mark class="vocab" data-translation="standardmäßig — by default">standardmäßig</mark> auf Manual gesetzt — Claude fragt bei jeder Aktion nach, statt automatisch zu <mark class="vocab" data-translation="genehmigen — to approve / to authorize">genehmigen</mark>. Außerdem deaktiviert die neue Version den Auto-Continue in AskUserQuestion-Dialogen, die nach einer Pause wieder erscheinen. Beide Verhaltensweisen lassen sich über den Config-Befehl <mark class="vocab" data-translation="anpassen — to adjust / to customize">anpassen</mark>, wenn du den alten Workflow bevorzugst. Als Bonus brachte Version 2.1.199 außerdem eine nette Neuerung: Du kannst jetzt bis zu fünf Slash-Skills in einer Zeile stapeln, und Claude Code lädt alle Leading-Skills auf einmal.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.200 changes two defaults you should know about: the permission mode now defaults to Manual — Claude will ask before every action instead of auto-approving. Additionally, AskUserQuestion dialogs no longer auto-continue when they reappear after a pause. Both behaviors are adjustable via the config command if you prefer the old workflow. Bonus from version 2.1.199: you can now stack up to five slash-skills in one invocation, and Claude Code loads all leading skills at once.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/config [key=value]</pre>
+        <dl class="cmd-flags">
+          <dt><code>autoApprove=true</code></dt>
+          <dd>re-enable auto-approval for all actions (reverts to pre-2.1.200 behavior)</dd>
+          <dt><code>askUserQuestionAutoContinue=true</code></dt>
+          <dd>re-enable auto-continue in AskUserQuestion dialogs after a pause</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Alten Auto-Approve-Modus wiederherstellen · Restore the old auto-approve behavior</span>
+$ /config autoApprove=true
+
+<span class="com"># Bis zu fünf Skills auf einmal stapeln · Stack up to five skills at once</span>
+$ /skill-a /skill-b /skill-c your prompt here</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.200" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 03.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Arbeitsfläche</div>
+        <div class="vocab-translation">workspace · working area</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat in Claude eine interne Arbeitsfläche entdeckt, die nur wenige Konzepte gleichzeitig hält.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic found an internal workspace inside Claude that holds only a handful of concepts at once.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Auslöser</div>
+        <div class="vocab-translation">trigger · catalyst · cause</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Auslöser für das Alibaba-Verbot war ein versteckter Tracking-Code in Claude Code.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The trigger for the Alibaba ban was a hidden tracking layer inside Claude Code.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Wettbewerbsvorteil</div>
+        <div class="vocab-translation">competitive advantage</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Inference-Geschwindigkeit ist heute ein echter Wettbewerbsvorteil im KI-Markt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Inference speed is a real competitive advantage in today's AI market.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auf Augenhöhe</div>
+        <div class="vocab-translation">on a par · at eye level · equal footing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GLM 5.2 liegt bei Benchmarks fast auf Augenhöhe mit Opus 4.8.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GLM 5.2 is nearly on a par with Opus 4.8 on benchmarks.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">beheben</div>
+        <div class="vocab-translation">to fix · to remediate · to resolve</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alberta nutzte Claude Code, um Sicherheitslücken direkt zu beheben.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Alberta used Claude Code to directly remediate security vulnerabilities.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Zünglein an der Waage sein</div>
+      <div class="idiom-meaning">to be the deciding factor · to tip the scales — wörtlich: "to be the little tongue on the scale"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Der Preis könnte das Zünglein an der Waage sein — GLM 5.2 kostet nur einen Bruchteil von Opus 4.8."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Price could be the tipping factor — GLM 5.2 costs only a fraction of what Opus 4.8 charges."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Im Review war das Security-Argument das Zünglein an der Waage für Claude Code statt Cursor."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"In the review, the security argument tipped the scales in favor of Claude Code over Cursor."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to read between the lines</div>
+      <div class="idiom-meaning">to find hidden meaning that is not stated directly — German equivalent: "zwischen den Zeilen lesen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Reading between the lines, Anthropic's J-Space paper says a lot about where AI safety research is heading."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Zwischen den Zeilen gelesen, sagt das J-Space-Paper viel darüber, wohin die KI-Sicherheitsforschung steuert."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"You have to read between the lines to understand why Alibaba acted so fast after the tracking discovery."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer zwischen den Zeilen liest, versteht, warum Alibaba nach der Tracking-Entdeckung so schnell reagiert hat."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · techcrunch.com · openai.com · cnbc.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #53 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
