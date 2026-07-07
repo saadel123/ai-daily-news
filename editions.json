@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-07",
+      "edition_number": 53,
+      "headlines": [
+        "Anthropic J-Space: interner Arbeitsraum in Claude entdeckt — parallele Global-Workspace-Theorie aus der Neurowissenschaft",
+        "Alibaba verbannt Claude Code bis zum 10. Juli — verstecktes China-Tracking in v2.1.91 aufgedeckt",
+        "GPT-5.6 Sol auf Cerebras mit 750 Tokens/Sek. — zehnmal schneller als jedes Nvidia-GPU-Deployment",
+        "Chinesische KI: GLM 5.2 wächst 27-fach — 30 % der US-Token auf OpenRouter gehen an chinesische Modelle",
+        "Alberta scannt 466 Mio. Code-Zeilen in 20 Stunden mit Claude Code — Sicherheitslücken direkt behoben"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-07-07T16:05:00Z"
+    },
+    {
       "date": "2026-07-05",
       "edition_number": 52,
       "headlines": [
