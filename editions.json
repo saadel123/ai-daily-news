@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-08",
+      "edition_number": 54,
+      "headlines": [
+        "Claude Cowork: Web- und Mobile-Launch mit M365-Write-Tools und Government Desktop Beta",
+        "Anthropic × TeraWulf: 20-Jahres-Rechenzentrumslease in Kentucky — 19 Mrd. $ Vertragsvolumen",
+        "KI-Sicherheitsindex Sommer 2026: kein Labor über C+ — alle weichen Safety-Versprechen auf",
+        "OpenAI gpt-realtime-2.1: 25 % weniger Latenz für Voice Agents, konfigurierbares Reasoning",
+        "GPT-5.6 rollt ab 10. Juli zu ChatGPT Plus aus — 1,5-Mio.-Token-Kontext für Team-Pläne"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-08T16:00:00Z"
+    },
+    {
       "date": "2026-07-07",
       "edition_number": 53,
       "headlines": [

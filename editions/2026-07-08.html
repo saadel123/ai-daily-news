@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 08.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 08. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #54</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Safety-Zeugnis für alle KI-Labore: keines kommt über ein C+ — und Anthropic sichert sich zwei Jahrzehnte Compute.</h1>
+    <p class="subtitle">Außerdem: Claude Cowork zieht auf Web und Handy um, GPT-5.6 kommt endlich zu Plus-Usern, und OpenAIs neue Voice-API senkt die Latenz um ein Viertel.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Cowork</strong>: Web- und Mobile-Launch mit M365-Write-Tools und Government Desktop Beta</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic × TeraWulf</strong>: 20-Jahres-Rechenzentrumslease in Kentucky — 19 Mrd. $ Vertragsvolumen</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>KI-Sicherheitsindex Sommer 2026</strong>: kein Labor über C+ — alle weichen Safety-Versprechen auf</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>OpenAI gpt-realtime-2.1</strong>: 25 % weniger Latenz für Voice Agents, konfigurierbares Reasoning</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>GPT-5.6</strong> rollt ab 10. Juli zu ChatGPT Plus aus — 1,5-Mio.-Token-Kontext für Team-Pläne</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Cowork · Web, Mobile & Government Desktop</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Claude Cowork auf Web-Browser und Mobilgeräte <mark class="vocab" data-translation="ausgeweitet — expanded / scaled up">ausgeweitet</mark> — Remote Sessions starten, Dateien synchronisieren und den gemeinsamen Chat jetzt auf jedem Gerät nutzen. Dazu kommen Microsoft-365-Write-Tools, mit denen du direkt aus Cowork heraus E-Mails <mark class="vocab" data-translation="verfassen — to compose / to draft">verfasst</mark>, Kalender verwaltest und OneDrive- oder SharePoint-Dateien anlegst oder aktualisierst. Außerdem startet eine Public Beta von Claude for Government Desktop: FedRAMP-High-<mark class="vocab" data-translation="zertifiziert — certified / compliant">zertifiziert</mark>, mit manipulationssicheren Audit-Logs und <mark class="vocab" data-translation="Ausgabenkontrolle — spend governance / expenditure controls">Ausgabenkontrolle</mark> — Claude Code trifft den Public Sector.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has expanded Claude Cowork to the web browser and mobile — you can now start remote sessions, sync files, and access the shared Chat and Cowork home on any device. New Microsoft 365 write tools let you draft and send email, manage your calendar, and create or update OneDrive and SharePoint files directly from Cowork. Anthropic also launched a public beta of Claude for Government Desktop: FedRAMP High-certified, with tamper-evident audit logs and spend governance for public sector teams — Claude Code meets the public sector.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news" target="_blank" rel="noopener">→ anthropic.com · 08.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × TeraWulf · 20 Jahre · 19 Mrd. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat einen 20-Jahres-Mietvertrag am Justified-Data-Campus in Hawesville, Kentucky, <mark class="vocab" data-translation="abgeschlossen — concluded / signed">abgeschlossen</mark>. Das <mark class="vocab" data-translation="Vertragsvolumen — contract value / contracted revenue">Vertragsvolumen</mark> liegt laut TeraWulf-Pressemitteilung bei rund 19 Mrd. $. Ein solches Infrastructure-First-Commitment ist ein klares Signal: Anthropic denkt seine <mark class="vocab" data-translation="Rechenkapazität — compute capacity">Rechenkapazität</mark> in Jahrzehnten — in einer Branche, in der GPU-Zeit zum <mark class="vocab" data-translation="strategischen Engpass — strategic bottleneck">strategischen Engpass</mark> geworden ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has signed a 20-year lease at TeraWulf's Justified Data campus in Hawesville, Kentucky. TeraWulf says the deal is expected to generate approximately $19 billion in contracted revenue over the initial lease term. It's a clear infrastructure-first signal: Anthropic is planning its compute base in decades, not quarters — in an industry where GPU time has become the strategic bottleneck.</p>
+        </div>
+      </div>
+      <a class="source" href="https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack" target="_blank" rel="noopener">→ investors.terawulf.com · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://futureoflife.org/ai-safety-index-summer-2026/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>KI-Sicherheitsindex Sommer 2026 · kein Labor über C+</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Das Future of Life Institute hat seinen KI-Sicherheitsindex für den Sommer 2026 veröffentlicht — und das Ergebnis ist <mark class="vocab" data-translation="ernüchternd — sobering / disillusioning">ernüchternd</mark>. Kein großes Labor kommt über ein C+: Anthropic <mark class="vocab" data-translation="schneidet am besten ab — scores best / comes out on top">schneidet am besten ab</mark>, OpenAI und Google DeepMind erhalten je ein C, Meta ein D+, und SpaceXAI, DeepSeek sowie Mistral kassieren ein F. Die Gutachter kritisieren vor allem, dass alle vier führenden Firmen frühere Safety-Versprechen <mark class="vocab" data-translation="aufgeweicht — watered down / softened">aufgeweicht</mark> haben und nun aktiv Militärkooperationen anstreben — obwohl sie diese zuvor ausdrücklich <mark class="vocab" data-translation="ausgeschlossen — excluded / ruled out">ausgeschlossen</mark> hatten. Das freiwillige Sicherheitssystem erodiert, bevor Regierungen eine Alternative aufgebaut haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">The Future of Life Institute published its Summer 2026 AI Safety Index — and the results are sobering. No major lab scores above a C+: Anthropic leads with C+, OpenAI and Google DeepMind each receive a C, Meta gets D+, and SpaceXAI, DeepSeek, and Mistral all fail. Reviewers are especially critical of all four leading companies walking back earlier safety commitments and now actively seeking military partnerships — after previously banning them outright. The voluntary safety system is eroding before governments have built a durable alternative.</p>
+        </div>
+      </div>
+      <a class="source" href="https://futureoflife.org/ai-safety-index-summer-2026/" target="_blank" rel="noopener">→ futureoflife.org · 07.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-gpt-realtime/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI gpt-realtime-2.1 · 25 % weniger Latenz</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat am 6. Juli gpt-realtime-2.1 und gpt-realtime-2.1-mini in seiner API veröffentlicht — zwei neue Modelle für Low-Latency Voice Agents. Beide <mark class="vocab" data-translation="senken — reduce / lower">senken</mark> den p95-Latenzwert um mindestens 25 Prozent durch verbessertes Caching. Neu ist ein konfigurierbares Reasoning-Effort-Level: Entwickler bestimmen selbst, wie lange das Modell <mark class="vocab" data-translation="nachdenkt — reasons / deliberates">nachdenkt</mark>, bevor es antwortet. gpt-realtime-2.1 verbessert außerdem die Erkennung alphanumerischer Sequenzen — wichtig für Bestellnummern und Bestätigungscodes — und reagiert <mark class="vocab" data-translation="zuverlässiger — more reliably">zuverlässiger</mark> auf <mark class="vocab" data-translation="Unterbrechungen — interruptions">Unterbrechungen</mark> durch den Nutzer.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI released gpt-realtime-2.1 and gpt-realtime-2.1-mini on July 6 — two new Realtime API models built for low-latency voice agents. Both cut p95 latency by at least 25% through improved caching. A new configurable reasoning-effort level lets developers decide how much the model deliberates before responding. The 2.1 release also improves recognition of alphanumeric sequences — critical for order numbers and confirmation codes — and handles user interruptions more reliably.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-gpt-realtime/" target="_blank" rel="noopener">→ openai.com · 06.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GPT-5.6 · ChatGPT Plus ab 10. Juli</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI startet den breiteren <mark class="vocab" data-translation="Rollout — rollout (staged deployment to all users)">Rollout</mark> von GPT-5.6: Pro- und Enterprise-API-Zugang öffnet vom 7. bis 14. Juli, ChatGPT Plus <mark class="vocab" data-translation="folgt — follows / comes next">folgt</mark> am 10. Juli. Team-Pläne erhalten außerdem einen neuen 1,5-Mio.-Token-Kontext-Tier — mehr <mark class="vocab" data-translation="Spielraum — headroom / room to work">Spielraum</mark> für große Codebasen und lange Dokumente. Wer GPT-5.6 Sol, Terra und Luna bisher nur aus Trusted-Partner-Berichten kannte, kann die Modelle jetzt erstmals selbst ausprobieren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI is rolling out GPT-5.6 more broadly: Pro and Enterprise API access expands July 7–14, and ChatGPT Plus users get access on July 10. Team plans also receive a new 1.5M-token context tier — more headroom for large codebases and long documents. If you've only heard about GPT-5.6 Sol, Terra, and Luna from trusted-partner reports, you can now try them out firsthand.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">→ openai.com · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.203" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.203 · Login-Warning, Pause-Badge & MCP-Roots</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.203 bringt drei <mark class="vocab" data-translation="unscheinbare — inconspicuous / low-profile">unscheinbare</mark>, aber nützliche Verbesserungen. Erstens: Wenn dein Login <mark class="vocab" data-translation="abläuft — expires">abläuft</mark>, bekommst du jetzt rechtzeitig eine Warnung — damit laufende Background Sessions nicht mitten in der Arbeit einfrieren. Zweitens zeigt ein grauer ⏸-Badge in der Fußzeile jederzeit an, ob Manual Permission Mode aktiv ist — kein <mark class="vocab" data-translation="Rätselraten — guesswork / second-guessing">Rätselraten</mark> mehr. Und drittens: Alle zusätzlichen Arbeitsverzeichnisse der Session werden jetzt über MCP roots/list an verbundene MCP-Server <mark class="vocab" data-translation="weitergeleitet — forwarded / propagated">weitergeleitet</mark>, inklusive Change-Notifications — MCP-Server behalten so im Monorepo automatisch den Überblick.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.203 brings three quiet but useful improvements. First, you'll now get a timely warning before your login expires — so background sessions don't freeze mid-task and force a re-auth scramble. Second, a grey ⏸ badge in the footer always shows whether manual permission mode is active — no more guessing. Third, all additional working directories in the session are now forwarded to connected MCP servers via roots/list, including change notifications so MCP servers automatically stay oriented in a monorepo.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.203" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufweichen</div>
+        <div class="vocab-translation">to water down · to soften</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alle großen Labore haben ihre Safety-Commitments zuletzt aufgeweicht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">All major labs have recently watered down their safety commitments.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausweiten</div>
+        <div class="vocab-translation">to expand · to scale up</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude Cowork weitet sich jetzt auf Web-Browser und Mobilgeräte aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude Cowork is now expanding to web browsers and mobile devices.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ernüchternd</div>
+        <div class="vocab-translation">sobering · disillusioning</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Ergebnis des Safety-Index ist ernüchternd — kein Lab über C+.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Safety Index result is sobering — no lab above a C+.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Rechenkapazität</div>
+        <div class="vocab-translation">compute capacity · processing power</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic sichert sich mit dem 20-Jahres-Deal langfristige Rechenkapazität.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic locks in long-term compute capacity with the 20-year deal.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Vertragsvolumen</div>
+        <div class="vocab-translation">contract value · contracted revenue</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Vertragsvolumen des TeraWulf-Deals liegt bei rund 19 Milliarden Dollar.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The contract value of the TeraWulf deal is around 19 billion dollars.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Nummer sicher gehen</div>
+      <div class="idiom-meaning">to play it safe · to be on the safe side — wörtlich: "to go to number safe"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer KI-Regulierung nicht auf dem falschen Fuß erwischen will, geht am besten auf Nummer sicher und verfolgt den Safety Index regelmäßig."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If you don't want to be caught off guard by AI regulation, best play it safe and follow the Safety Index regularly."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beim Deploy gehen wir immer auf Nummer sicher — erst ein Feature Branch, dann Produktion."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When deploying, we always play it safe — feature branch first, then production."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to move the goalposts</div>
+      <div class="idiom-meaning">to change the rules mid-game, making agreed goals harder to reach — German equivalent: "die Messlatte verschieben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Critics say the AI labs keep moving the goalposts on safety commitments."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Kritiker sagen, die KI-Labore verschieben ständig die Messlatte bei Safety-Versprechen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The requirements keep changing — they're moving the goalposts again."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die Anforderungen ändern sich schon wieder — da wird mal wieder die Messlatte verschoben."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · investors.terawulf.com · futureoflife.org · openai.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #54 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
