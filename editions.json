@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-09",
+      "edition_number": 55,
+      "headlines": [
+        "Anthropic × Samsung: Gespräche über eigenen 2-nm-KI-Chip — Chipteam-Lead kam von OpenAI",
+        "GPT-5.6 Sol, Terra und Luna: alle drei Modelle heute öffentlich — Preise, Ultra-Modus und Subagenten",
+        "OpenAI GPT-Live: Echtzeit-Voice-Modell hört und spricht gleichzeitig — volle Duplex-Architektur",
+        "SpaceXAI: xAI schließt Rebrand zu SpaceXAI ab — Grok 4.5 jetzt öffentlich mit Cursor-Coding",
+        "Google verschiebt Gemini 3.5 Pro auf 17. Juli — 2-Mio.-Token-Kontext nach Komplett-Rebuild"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-09T16:00:00Z"
+    },
+    {
       "date": "2026-07-08",
       "edition_number": 54,
       "headlines": [

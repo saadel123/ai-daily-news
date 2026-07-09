@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 09.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 09. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #55</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Heute startet GPT-5.6 für alle — und xAI hört auf, xAI zu sein.</h1>
+    <p class="subtitle">Samsung-Chip-Gespräche, vollduplexe Voice-KI, ein Gemini-Rebuild und ein neuer Diagnose-Befehl für Claude Code: der Donnerstag hat es in sich.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic × Samsung</strong>: Gespräche über eigenen 2-nm-KI-Chip — Chipteam-Lead kam von OpenAI</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>GPT-5.6 Sol, Terra und Luna</strong>: alle drei Modelle heute öffentlich — Preise, Ultra-Modus und Subagenten</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI GPT-Live</strong>: Echtzeit-Voice-Modell hört und spricht gleichzeitig — volle Duplex-Architektur</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>SpaceXAI</strong>: xAI schließt Rebrand ab — Grok 4.5 jetzt öffentlich mit Cursor-Coding</span></a></li>
+      <li><a href="#article-5"><span class="dot">🔵</span><span><strong>Google</strong>: Gemini 3.5 Pro auf 17. Juli verschoben — 2-Mio.-Token-Kontext nach Komplett-Rebuild</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic × Samsung · 2-nm-Chip</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic verhandelt laut The Information mit Samsung über einen <mark class="vocab" data-translation="maßgeschneidert — custom-tailored / bespoke">maßgeschneiderten</mark> KI-Beschleuniger-Chip auf dem 2-nm-Prozess des koreanischen Konzerns — ein Schritt, der Anthropic unabhängiger von Nvidia machen soll. Das Vorhaben steckt noch in den <mark class="vocab" data-translation="Kinderschuhe — lit. baby shoes; fig. early stages (steckt in den Kinderschuhen = is in its infancy)">Kinderschuhen</mark>: offen ist, was der Chip leisten soll, wo er im Server sitzt und wie viel <mark class="vocab" data-translation="Rechenpower — computing power (English noun used as German)">Rechenpower</mark> er mitbringt. Anthropic hat dafür Clive Chan vom OpenAI-Chipteam geholt und spricht parallel mit dem britischen Startup Fractile sowie Microsoft. Samsung, SK Hynix und Micron hatten im Mai alle an der 65-Mrd.-$-Series-H-Runde teilgenommen — der Deal läge also nahe.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic is in early discussions with Samsung about manufacturing a custom AI accelerator chip on Samsung's 2nm process, according to The Information — a move designed to reduce Anthropic's dependence on Nvidia. Nothing is decided yet: the company hasn't settled on what the chip will do, how powerful it will be, or where it fits in a server. Anthropic hired Clive Chan from OpenAI's chip team to lead the effort and is also talking to UK startup Fractile and Microsoft. Samsung, SK Hynix, and Micron all participated in Anthropic's $65B Series H round in May, so a manufacturing deal wouldn't be a surprise.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener">→ techcrunch.com · 02.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-5.6 Sol, Terra &amp; Luna — öffentlicher Launch</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Nach zwölf Tagen White-House-Review hat OpenAI heute <mark class="vocab" data-translation="grünes Licht — green light (idiom for approval)">grünes Licht</mark> für den breiten Launch von GPT-5.6 bekommen. Drei Modelle gehen <mark class="vocab" data-translation="gleichzeitig — simultaneously / at the same time">gleichzeitig</mark> an den Start: Sol für schweres Reasoning und Agenten-Workloads, Terra als solides <mark class="vocab" data-translation="Alltagsmodell — everyday model / general-purpose model">Alltagsmodell</mark> zum halben Preis von GPT-5.5, und Luna für schnelle und günstige Tasks. Sol bringt außerdem einen Ultra-Modus mit, der mehrere Subagenten parallel <mark class="vocab" data-translation="orchestriert — orchestrates (from English: to orchestrate)">orchestriert</mark> — und auf Cerebras erreicht es bis zu 750 Tokens pro Sekunde. In der API: Sol bei 5 $/30 $ je Million Tokens, Terra bei 2,50 $/15 $ und Luna bei 1 $/6 $ Input/Output.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">After a twelve-day White House review, OpenAI has today received the green light for the broad launch of GPT-5.6. Three models go live simultaneously: Sol for heavy reasoning and agentic workloads, Terra as a solid everyday model at half the price of GPT-5.5, and Luna for fast and affordable tasks. Sol also ships a new ultra mode that orchestrates multiple subagents in parallel — and on Cerebras it hits up to 750 tokens per second. In the API: Sol at $5/$30 per million tokens, Terra at $2.50/$15, and Luna at $1/$6 input/output.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">→ openai.com · 09.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-Live — Vollduplex-Voice</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat GPT-Live vorgestellt — ein vollständig <mark class="vocab" data-translation="vollduplex — full-duplex (technical term: simultaneous bidirectional communication)">vollduplexes</mark> Sprachmodell, das gleichzeitig zuhört und antwortet, ohne auf das Ende eines Satzes warten zu müssen. Statt eine Abfolge einzelner Nachrichten abzuarbeiten, trifft GPT-Live viele Male pro Sekunde <mark class="vocab" data-translation="Gesprächsentscheidungen — conversation decisions (compound noun)">Gesprächsentscheidungen</mark>: reden, lauschen, <mark class="vocab" data-translation="pausieren — to pause (borrowed verb from English/Latin)">pausieren</mark> oder ein Tool aufrufen. GPT-Live-1 wird zum Standard für Bezahlnutzer, GPT-Live-1 mini übernimmt den Free-Tier — als <mark class="vocab" data-translation="Backbone — backbone (English noun used in German tech speech)">Backbone</mark> läuft im Hintergrund GPT-5.5 für Reasoning-intensive Anfragen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI has introduced GPT-Live — a fully full-duplex voice model that listens and speaks at the same time, without waiting for you to finish your sentence. Instead of processing a sequence of separate messages, GPT-Live makes conversational decisions many times per second: whether to speak, listen, pause, or call a tool. GPT-Live-1 becomes the default for paid users, GPT-Live-1 mini handles the free tier — with GPT-5.5 running in the background as the reasoning backbone for complex queries.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">→ openai.com · 08.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://gizmodo.com/xai-is-dead-long-live-spacexai-2000782034" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SpaceXAI · xAI-Rebrand + Grok 4.5 öffentlich</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">xAI hat seinen Rebrand zu SpaceXAI <mark class="vocab" data-translation="abgeschlossen — completed / finalized (past participle of abschließen)">abgeschlossen</mark>: das KI-Unternehmen von Elon Musk <mark class="vocab" data-translation="verschmilzt — merges / fuses (third person singular of verschmelzen)">verschmilzt</mark> offiziell mit SpaceX, nachdem SpaceX die Einheit im Februar übernommen hatte. Gleichzeitig ist Grok 4.5 aus der Closed Beta raus und für alle verfügbar — <mark class="vocab" data-translation="ausgelegt — designed for / built for (past participle of auslegen)">ausgelegt</mark> auf Coding, Agenten-Workflows und Office-Tasks, mit direktem Cursor-Know-how aus dem 60-Mrd.-$-Deal vom Juni. Für Musk ist der neue Name ein klares Signal: KI ist kein <mark class="vocab" data-translation="Seitenprojekt — side project / secondary venture">Seitenprojekt</mark> mehr, sondern das Kerngeschäft von SpaceX.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">xAI has completed its rebrand to SpaceXAI: Elon Musk's AI unit officially merges with SpaceX following the February acquisition. At the same time, Grok 4.5 has come out of closed beta and is now available to everyone — built for coding, agentic workflows, and office tasks, drawing directly on Cursor expertise from the $60B June deal. For Musk, the new name sends an unmistakable signal: AI is no longer a side project, it's SpaceX's core business.</p>
+        </div>
+      </div>
+      <a class="source" href="https://gizmodo.com/xai-is-dead-long-live-spacexai-2000782034" target="_blank" rel="noopener">→ gizmodo.com · 07.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google · Gemini 3.5 Pro auf 17. Juli verschoben</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Google hat Gemini 3.5 Pro auf den 17. Juli verschoben und dabei die komplette Basisarchitektur von Gemini 2.5 Pro <mark class="vocab" data-translation="über den Haufen werfen — to scrap / throw out the window (lit. to throw over the pile)">über den Haufen geworfen</mark>. Statt auf dem alten Fundament aufzusetzen, wurde eine frische Pretraining-Runde gestartet — die <mark class="vocab" data-translation="Schwachstellen — weak points / vulnerabilities">Schwachstellen</mark> lagen in mathematischem Reasoning, SVG-Generierung und Bildqualität. Die neue Version zielt auf ein 2-Millionen-Token-Kontext-Fenster und einen Deep-Think-Reasoning-Layer, der komplexe Aufgaben in Teilschritte zerlegt. Der Wettlauf mit GPT-5.6 und Fable 5 dürfte der <mark class="vocab" data-translation="Haupttreiber — main driver / primary motivator">Haupttreiber</mark> für den <mark class="vocab" data-translation="radikalen Schritt — drastic / radical move">radikalen Schritt</mark> sein.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Google has pushed Gemini 3.5 Pro to July 17 and scrapped the entire Gemini 2.5 Pro base architecture in the process. Rather than building on the existing foundation, the team started a fresh pretraining run — the weak points were mathematical reasoning, SVG generation, and image quality. The new version targets a 2-million-token context window and a Deep Think Reasoning Layer that breaks complex tasks into sub-steps. Competition from GPT-5.6 and Fable 5 is likely the main driver behind the drastic move.</p>
+        </div>
+      </div>
+      <a class="source" href="https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model" target="_blank" rel="noopener">→ hackernoon.com · 08.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.205" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.205 · /doctor — Setup-Check</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.205 bringt einen neuen Diagnose-Befehl, der einen vollständigen Selbst-Check der gesamten Installation durchführt — Konfigurationsdateien, MCP-Server-Verbindungen und typische <mark class="vocab" data-translation="Fehlerquellen — sources of errors / failure points">Fehlerquellen</mark> inklusive. Findet der Check ein Problem, versucht er es direkt zu beheben, ohne dass du manuell <mark class="vocab" data-translation="nachgraben — to dig around / investigate manually (separable verb)">nachgraben</mark> musst. Besonders hilfreich, wenn eine Session sich <mark class="vocab" data-translation="komisch verhält — behaves oddly / acts strangely">komisch verhält</mark> und du nicht weißt, wo du anfangen sollst. Das Release schützt außerdem im Auto-Modus Transcript-Dateien vor externen Manipulationen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.205 ships a new diagnostic command that runs a full self-test of your entire setup — config files, MCP server connections, and common failure points are all checked. If the check spots a problem, it tries to fix it on the spot, no manual digging required. Especially handy when a session is behaving oddly and you have no idea where to start. The release also adds automatic protection against tampering with transcript files in auto mode.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/doctor
+/checkup</pre>
+<pre class="cmd-examples"><span class="com"># Vollständiger Setup-Check · Full setup checkup</span>
+$ /doctor
+
+<span class="com"># Kurzform — identischer Check · Short alias — identical check</span>
+$ /checkup</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.205" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 08.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">maßgeschneidert</div>
+        <div class="vocab-translation">custom-tailored · bespoke</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein maßgeschneiderter Chip passt genau zum Workload von Claude.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A custom-tailored chip fits Claude's workload perfectly.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">in den Kinderschuhen stecken</div>
+        <div class="vocab-translation">to be in its infancy · to be at an early stage</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Samsung-Chip-Projekt steckt noch in den Kinderschuhen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Samsung chip project is still in its infancy.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">über den Haufen werfen</div>
+        <div class="vocab-translation">to scrap · to throw out the window</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google hat die alte Architektur kurzerhand über den Haufen geworfen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google simply scrapped the old architecture.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschmelzen</div>
+        <div class="vocab-translation">to merge · to fuse together</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">xAI und SpaceX sind zu SpaceXAI verschmolzen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">xAI and SpaceX have merged into SpaceXAI.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">gleichzeitig</div>
+        <div class="vocab-translation">simultaneously · at the same time</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">GPT-Live hört zu und antwortet gleichzeitig — kein Warten mehr.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">GPT-Live listens and responds simultaneously — no more waiting.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">in den Kinderschuhen stecken</div>
+      <div class="idiom-meaning">to be in its infancy · to be at an early stage — wörtlich: "to be stuck in baby shoes"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Chip-Projekt steckt noch in den Kinderschuhen — niemand weiß, was genau dabei rauskommt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The chip project is still in its infancy — nobody knows exactly what will come out of it."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Vor zwei Jahren steckte KI-gestütztes Coding noch in den Kinderschuhen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Two years ago, AI-assisted coding was still in its infancy."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to scrap something</div>
+      <div class="idiom-meaning">to discard or abandon a plan — German equivalent: "etwas über den Haufen werfen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Google scrapped the entire base architecture and started fresh."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Google hat die komplette Basisarchitektur über den Haufen geworfen und neu angefangen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We had to scrap the old design — it just wasn't working."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir mussten das alte Design über den Haufen werfen — es hat einfach nicht funktioniert."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · openai.com · gizmodo.com · hackernoon.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #55 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
