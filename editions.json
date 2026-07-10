@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-10",
+      "edition_number": 56,
+      "headlines": [
+        "Claude Reflect: Anthropic startet Spotify-Wrapped-Dashboard für KI-Gewohnheiten — mit Pausenerinnerungen",
+        "ChatGPT Work: OpenAI launcht Büro-Agenten für Dokumente, Tabellen, Präsentationen und Websites",
+        "Meta Muse Spark 1.1: Metas erstes kostenpflichtiges KI-Modell — multimodal, 1 Mio. Token, agentenbereit",
+        "GPT-5.6 × Microsoft 365: Copilot in Word, Excel und PowerPoint bekommt neues OpenAI-Flagship als Standard",
+        "Grok 4.5 GA: SpaceXAI-Modell auf Platz 4 im Intelligence Index — 5× Token-Effizienz, 2 $/6 $ pro Mio. Token"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-07-10T16:00:00Z"
+    },
+    {
       "date": "2026-07-09",
       "edition_number": 55,
       "headlines": [

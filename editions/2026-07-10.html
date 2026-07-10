@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 10.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 10. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #56</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Fünf Releases, ein Donnerstag, null Verschnaufpause.</h1>
+    <p class="subtitle">Claude Reflect analysiert deine KI-Gewohnheiten, ChatGPT Work erledigt deine Büroarbeit, Meta verlangt zum ersten Mal Geld für ein Modell — und Grok 4.5 landet mit Benchmark-Daten und Kampfpreis in der GA.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Reflect</strong>: Anthropic startet ein Spotify-Wrapped-Dashboard für deine KI-Nutzung — inklusive Pausenerinnerungen</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>ChatGPT Work</strong>: OpenAI launcht Büro-Agenten für Dokumente, Tabellen, Präsentationen und Websites</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Meta Muse Spark 1.1</strong>: Metas erstes kostenpflichtiges KI-Modell — multimodal, 1-Mio.-Token-Kontext, nativ agentenbereit</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>GPT-5.6 × Microsoft 365</strong>: Copilot in Word, Excel und PowerPoint bekommt OpenAIs neues Flagship als Standard</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Grok 4.5 GA</strong>: SpaceXAI veröffentlicht Benchmark-Daten — Platz 4 im Intelligence Index, 5× Token-Effizienz</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Reflect · Deine KI-Gewohnheiten auf einen Blick</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat gestern Claude Reflect vorgestellt — ein Dashboard, das zeigt, wie du Claude wirklich nutzt: beliebteste Themen, aktivster Tag, <mark class="vocab" data-translation="die Stoßzeit — peak hour, rush hour">Stoßzeiten</mark> und die Art der Aufgaben, die du delegierst, alles als visuelle Grafiken. Das Ganze funktioniert wie ein Spotify Wrapped für deine KI-Gewohnheiten: Du wählst einen <mark class="vocab" data-translation="der Zeitraum — timeframe, period">Zeitraum</mark> — Monat, Quartal, Halbjahr oder ganzes Jahr — und bekommst außerdem personalisierte Vorschläge, die deinen Workflow <mark class="vocab" data-translation="verbessern — to improve, to streamline">verbessern</mark> sollen. Wer merkt, dass er zu viel Zeit mit Claude verbringt, kann unter „Einstellungen › Fokus" Pausenerinnerungen und Ruhezeiten einrichten. Das Feature läuft als Beta für Free-, Pro- und Max-Nutzer und braucht aktivierten Speicher — der TechCrunch-Titel hat es treffend auf den Punkt gebracht: Anthropic verkauft uns damit still und leise das Mehr-KI-Nutzen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic launched Claude Reflect yesterday — a Spotify Wrapped-style dashboard that breaks down how you actually use Claude: top topics, most active day, peak hours, and types of tasks you delegate, all presented as visual graphs. You choose a timeframe — a month, a quarter, half a year, or a full year — and get personalised suggestions for streamlining your workflow. Users who want to moderate their Claude usage can set break nudges and quiet hours under Settings › Focus. It's available in beta for Free, Pro, and Max users who have Memory turned on — and TechCrunch captured the subtext perfectly: Anthropic is quietly selling you on using more AI.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news" target="_blank" rel="noopener">→ anthropic.com/news · 09.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://openai.com/index/chatgpt-work/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Work · OpenAIs Büro-Agent für fertige Arbeitsergebnisse</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">OpenAI hat gestern ChatGPT Work gelauncht — einen KI-Agenten, der komplexe Büroaufgaben <mark class="vocab" data-translation="eigenständig — autonomously, independently">eigenständig</mark> übernimmt: Dokumente schreiben, Tabellen befüllen, Präsentationen erstellen, Websites bauen. Der Agent zieht stundenlang Infos aus angebundenen Apps und Dateien, bricht die Aufgabe in Teilschritte runter und liefert fertige Ergebnisse — ohne dass du dazwischen eingreifen musst. Über geplante Tasks kannst du <mark class="vocab" data-translation="wiederkehrend — recurring">wiederkehrende</mark> Jobs einmalig, täglich oder triggerbasiert einrichten; neu ist auch ein Hosted-Websites-Feature, mit dem du Seiten direkt aus ChatGPT heraus veröffentlichst. Ab sofort für Pro-, Enterprise- und Edu-Abos verfügbar; Plus- und Business-Nutzer folgen in Kürze.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">OpenAI launched ChatGPT Work yesterday — an AI agent that handles complex office tasks autonomously: writing documents, filling spreadsheets, building presentations, and creating websites. It runs in the background for hours, pulling context from connected apps and files, breaking tasks into steps, and delivering finished results without you needing to step in. Scheduled Tasks let you queue recurring jobs to run once, on a schedule, or on trigger; a new Hosted Websites feature also lets you publish pages directly from within ChatGPT. Available now for Pro, Enterprise, and Edu subscribers; Plus and Business follow shortly.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/chatgpt-work/" target="_blank" rel="noopener">→ openai.com · 09.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Meta Muse Spark 1.1 · Metas erstes kostenpflichtiges KI-Modell</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Meta Superintelligence Labs hat gestern Muse Spark 1.1 veröffentlicht — und das ist ein echter Wendepunkt: Zum ersten Mal überhaupt verlangt Meta Geld für ein KI-Modell. Das Modell ist nativ multimodal, verarbeitet Text, Bilder, Video, PDFs und Audio in einem Kontext-Fenster von einer Million Token. Muse Spark 1.1 ist von Haus aus für die <mark class="vocab" data-translation="die Mehragentenorchestrierung — multi-agent orchestration">Mehragentenorchestrierung</mark> ausgelegt: Es kann als Hauptagent arbeiten und Aufgaben an Subagenten delegieren — oder selbst als Subagent in einem größeren System <mark class="vocab" data-translation="fungieren — to act as, to serve as">fungieren</mark>. Der Preis liegt bei 1,25 $/4,25 $ per Million Token über die Meta Model API, mit 20 Dollar Start-Guthaben — deutlich günstiger als die Frontier-Modelle der Konkurrenz.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Meta Superintelligence Labs released Muse Spark 1.1 yesterday — and it marks a genuine turning point: for the first time ever, Meta is charging money for an AI model. The model is natively multimodal, processing text, images, video, PDFs, and audio within a one-million-token context window. Muse Spark 1.1 is built from the ground up for multi-agent orchestration: it can act as a primary agent delegating to subagents, or serve as a subagent inside a larger system. Pricing is $1.25/$4.25 per million tokens on the Meta Model API, with $20 in free credits at signup — significantly cheaper than competing frontier models.</p>
+        </div>
+      </div>
+      <a class="source" href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" target="_blank" rel="noopener">→ ai.meta.com/blog · 09.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>GPT-5.6 × Microsoft 365 Copilot · Neues Standard-Modell in Word, Excel und PowerPoint</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI und Microsoft haben GPT-5.6 gestern offiziell als Standard-Modell für Microsoft 365 Copilot eingeführt — in Word, Excel, PowerPoint, Chat und Copilot Cowork. In Word soll weniger Hin-und-her beim Verfassen nötig sein; in Excel verspricht das Modell tiefere Analysen bei gleichzeitig niedrigerem Token-Verbrauch; in PowerPoint entstehen <mark class="vocab" data-translation="ausgewogen — balanced, well-rounded">ausgewogenere</mark> Präsentationen mit stärkerem Foliencontent. Die Ankündigung kam zu einem Zeitpunkt, als die <mark class="vocab" data-translation="die Zusammenarbeit — collaboration, partnership">Zusammenarbeit</mark> zwischen OpenAI und Microsoft öffentlich als <mark class="vocab" data-translation="angespannt — tense, strained">angespannt</mark> galt — das gemeinsame Rollout ist ein deutliches Signal, dass die Partnerschaft hält.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI and Microsoft yesterday made GPT-5.6 the preferred model across Microsoft 365 Copilot — in Word, Excel, PowerPoint, Chat, and Copilot Cowork. In Word, fewer drafting iterations are needed; in Excel, the model delivers deeper analysis at lower token cost; in PowerPoint, the results show richer slide content and better visual balance. The announcement came at a moment when the OpenAI–Microsoft relationship was publicly described as strained — making the joint rollout a clear signal that the partnership holds.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank" rel="noopener">→ openai.com · 09.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Grok 4.5 GA · Platz 4 im Intelligence Index, 5× Token-Effizienz</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">SpaceXAI hat Grok 4.5 gestern in die General Availability entlassen — jetzt <mark class="vocab" data-translation="vollständig — fully, completely">vollständig</mark> öffentlich im Grok Build, in Cursor auf allen Plänen und über die SpaceXAI API, EU noch ausgenommen. Auf dem Artificial Analysis Intelligence Index landet Grok 4.5 mit einem Score von 54 auf Platz 4 — hinter Claude Fable 5, Claude Opus 4.8 und GPT-5.5 — führt aber die Kategorie Tool-Use an. Was besonders auffällt: Grok 4.5 verbraucht bei vergleichbaren Aufgaben durchschnittlich 14.000 Output-Token, Opus 4.8 kommt auf 67.000 — das macht Grok 4.5 pro Task rund fünfmal günstiger. Der Preis liegt bei 2 $/6 $ per Million Token; der <mark class="vocab" data-translation="der Durchsatz — throughput">Durchsatz</mark> macht das Modell vor allem für Hochvolumen-Agentenaufgaben <mark class="vocab" data-translation="erschwinglich — affordable">erschwinglich</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">SpaceXAI moved Grok 4.5 to general availability yesterday — now fully public in Grok Build, in Cursor on all plans, and via the SpaceXAI API, with EU access still pending. On the Artificial Analysis Intelligence Index it scores 54 and ranks 4th — behind Claude Fable 5, Claude Opus 4.8, and GPT-5.5 — but leads the field in agentic tool use. What stands out is token efficiency: Grok 4.5 uses roughly 14,000 output tokens on tasks where Opus 4.8 uses 67,000, making it about 5× cheaper per task. Pricing is $2/$6 per million tokens — a combination that makes it particularly affordable for high-volume agentic workloads.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">→ x.ai/news · 09.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.206 · Agent-Monitor mit farbigen Status-Labels</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.206 überarbeitet den Agenten-Monitor komplett. Jede Zeile in der Übersicht zeigt jetzt ein farbiges Status-Wort — needs-input, working oder completed — plus eine vom Classifier generierte Zusammenfassung, was der Agent gerade tut, statt rohem Tool-Call-Text. Für blockierte Sessions öffnet das Peek-Fenster außerdem genau, was Claude von dir braucht. Mit Ctrl+X entfernst du abgeschlossene Sessions dauerhaft aus der Liste. Neu ist außerdem ein Gateway-Login-Endpoint: Mit dem Slash-Command Login kannst du dich jetzt direkt über Anthropic-betriebene Public-Gateway-Endpunkte authentifizieren, ohne über die Standard-API zu gehen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.206 fully overhauls the agent monitor. Every row now shows a colored status word — needs-input, working, or completed — plus a classifier-written summary of what the agent is doing, instead of raw tool call text. For blocked sessions, the peek view shows exactly what Claude needs from you. Ctrl+X permanently removes completed sessions from the list. Also new: a gateway login endpoint means you can now authenticate via Anthropic-operated public gateway endpoints directly from the Login slash command, without going through the standard API.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude agents</pre>
+<pre class="cmd-examples"><span class="com"># Agenten-Monitor öffnen und laufende Sessions sehen · Open agent monitor and view running sessions</span>
+$ claude agents
+
+<span class="com"># Abgeschlossene Session dauerhaft entfernen · Permanently remove a completed session</span>
+$ claude agents  <span class="com"># dann: Ctrl+X auf der gewünschten Zeile · then: Ctrl+X on the desired row</span></pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 09.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Stoßzeit</div>
+        <div class="vocab-translation">peak hour · rush hour · busy period</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude Reflect zeigt dir, zu welcher Stoßzeit du die meisten Nachrichten schickst.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude Reflect shows you which peak hours you send the most messages.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">eigenständig</div>
+        <div class="vocab-translation">autonomous · independent · self-directed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">ChatGPT Work erledigt Büroaufgaben eigenständig — ohne dass du eingreifen musst.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">ChatGPT Work handles office tasks autonomously — without you needing to step in.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Mehragentenorchestrierung</div>
+        <div class="vocab-translation">multi-agent orchestration</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Muse Spark 1.1 ist nativ auf Mehragentenorchestrierung ausgelegt — es kann als Hauptagent oder Subagent fungieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Muse Spark 1.1 is built natively for multi-agent orchestration — it can act as a primary agent or a subagent.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">angespannt</div>
+        <div class="vocab-translation">tense · strained · under strain</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Beziehung zwischen OpenAI und Microsoft galt zuletzt als angespannt — das gemeinsame Rollout widerspricht dem.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The OpenAI–Microsoft relationship was recently described as strained — the joint rollout contradicts that narrative.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">erschwinglich</div>
+        <div class="vocab-translation">affordable · within reach · reasonably priced</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit 2 $/6 $ per Million Token ist Grok 4.5 auch für große Agentenworkloads erschwinglich.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">At $2/$6 per million tokens, Grok 4.5 is affordable even for large agentic workloads.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Hochtouren laufen</div>
+      <div class="idiom-meaning">to be in full swing · to run at full capacity — wörtlich: "to run at high revs" (Motor-Metapher)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die KI-Industrie läuft diese Woche auf Hochtouren — fünf Major Releases in weniger als 24 Stunden."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The AI industry is in full swing this week — five major releases in less than 24 hours."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"ChatGPT Work läuft jetzt auf Hochtouren — der Agent erledigt stundenlang Aufgaben, ohne dass du etwas tun musst."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"ChatGPT Work is now running at full speed — the agent handles tasks for hours without you lifting a finger."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hit the ground running</div>
+      <div class="idiom-meaning">to start immediately at full speed without a warm-up phase — German equivalent: "aus dem Stand loslegen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Meta's Muse Spark 1.1 hit the ground running — top tool-use scores and competitive pricing on day one."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Muse Spark 1.1 legte aus dem Stand los — am ersten Tag bereits Bestwerte beim Tool-Use und ein Kampfpreis."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Grok 4.5 hit the ground running with independent benchmark data on the same day as GA launch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Grok 4.5 legte aus dem Stand los — am GA-Tag lagen sofort unabhängige Benchmark-Daten vor."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · openai.com · ai.meta.com · x.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #56 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
