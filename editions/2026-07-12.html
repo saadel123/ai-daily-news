@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 12.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 12. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #57</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Apple vs. OpenAI, SK Hynix an der Nasdaq — und Anthropics Fable-5-Klassifizierer unter der Lupe.</h1>
+    <p class="subtitle">Plus: Gemini 3.5 Pro mit neuen Leak-Details, Mistral Connectors sind GA und Claude Code kriegt einen vollständigen Setup-Check.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Fable 5 × US-Regierung</strong>: Anthropic trainiert Cyber-Klassifizierer, die Jailbreaks zu 99 % blocken</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>Apple verklagt OpenAI</strong>: Hardware-IP gestohlen — Siri wechselt ab Herbst zu Gemini</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>SK Hynix</strong>: 26,5 Mrd. $ Nasdaq-Debüt — größter ausländischer Börsengang der US-Geschichte</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Gemini 3.5 Pro in 5 Tagen</strong>: Deep-Think-Modus, 2-Mio.-Token-Kontext, Fable-Audio — neue Leaks</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Mistral Connectors GA</strong>: Admin-Kontrolle pro Workspace, Scoped API-Keys und MCP-Debugger</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Fable 5 · Cyber-Klassifizierer · 99 % Blockrate</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat gemeinsam mit dem US-Handelsministerium neue Cyber-<mark class="vocab" data-translation="Klassifizierer — classifier (ML component that labels or blocks content)">Klassifizierer</mark> für Fable 5 trainiert, die die bekannte Amazon-<mark class="vocab" data-translation="Bypass-Technik — bypass technique (method to circumvent safety filters)">Bypass-Technik</mark> in über 99 % der Fälle <mark class="vocab" data-translation="unterbinden — to suppress / to prevent">unterbinden</mark>. Das Ergebnis wurde vom CAISI, dem Commerce-Institut für KI-Standards, unabhängig <mark class="vocab" data-translation="validiert — validated / independently verified">validiert</mark>. Seit dem 7. Juli ist Fable 5 wieder in allen Subscription-Plänen buchbar — Pro, Max, Team und Enterprise. Bis heute Nacht läuft ein freies Zugangsfenster; danach gelten die regulären Plan-Limits.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic, working with the US Department of Commerce, trained new cyber classifiers for Fable 5 that suppress the known Amazon bypass technique in over 99% of cases. The results were independently validated by CAISI, Commerce's Center for AI Standards and Innovation. Since July 7, Fable 5 is bookable again on all subscription plans — Pro, Max, Team and Enterprise. A promotional access window closes tonight; standard plan limits apply from tomorrow.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">→ anthropic.com · 07.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Apple vs. OpenAI · Geheimnisdiebstahl · Siri → Gemini</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Apple hat am 10. Juli OpenAI wegen <mark class="vocab" data-translation="Betriebsgeheimnisse — trade secrets (legally protected confidential business information)">Diebstahls von Betriebsgeheimnissen</mark> verklagt — und bestätigt, dass das neue Siri ab Herbst auf Googles Gemini setzt statt auf ChatGPT. Im Mittelpunkt steht Tang Tan, OpenAIs Chief Hardware Officer, der zuvor bei Apple das Produkt-Design verantwortete. Apple wirft Tan und einem weiteren Ex-Mitarbeiter vor, <mark class="vocab" data-translation="vertrauliche IP — confidential intellectual property">vertrauliche Hardware-IP</mark> weitergegeben zu haben, um ein konkurrierendes KI-Gerät zu bauen. Die <mark class="vocab" data-translation="Klage — lawsuit / legal complaint">Klage</mark> trifft OpenAI zu einem ungünstigen Zeitpunkt — kurz vor dem geplanten Börsengang im Herbst 2026.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Apple filed a trade-secret lawsuit against OpenAI on July 10 and confirmed that the new Siri will run on Google Gemini from this fall rather than ChatGPT. Central to the case is Tang Tan, OpenAI's Chief Hardware Officer and former Apple product-design lead, who Apple alleges funneled confidential hardware IP to build a rival AI device alongside a second former employee. The timing is painful for OpenAI — the lawsuit lands just as the company is preparing its IPO for later in 2026.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html" target="_blank" rel="noopener">→ cnbc.com · 10.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SK Hynix · Nasdaq-IPO · 26,5 Mrd. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Der südkoreanische <mark class="vocab" data-translation="Speicherchip-Gigant — memory chip giant (large manufacturer of RAM and HBM chips)">Speicherchip-Gigant</mark> SK Hynix hat am 10. Juli an der Nasdaq 26,5 Mrd. $ eingesammelt und damit Alibabas Rekord aus dem Jahr 2014 gebrochen — größtes <mark class="vocab" data-translation="Börsen-Debüt — stock market debut / IPO listing">Börsendebüt</mark> eines ausländischen Unternehmens in den USA. SK Hynix hält über 50 % Marktanteil im HBM-Segment und ist für 2026 bereits <mark class="vocab" data-translation="ausverkauft — sold out (all capacity already allocated to buyers)">ausverkauft</mark>. Das Kapital fließt in neue Fertigungskapazitäten in Südkorea; der Ticker SKHY ist ab dem 13. Juli live.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">South Korean memory chip giant SK Hynix raised $26.5 billion in its Nasdaq debut on July 10, breaking Alibaba's 2014 record for the largest-ever US IPO by a foreign company. SK Hynix holds over 50% of the global HBM (High Bandwidth Memory) market and is fully sold out through 2026. The capital goes toward new manufacturing capacity in South Korea; the permanent ticker SKHY goes live on July 13.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank" rel="noopener">→ techcrunch.com · 10.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.geeky-gadgets.com/google-gemini-3-5-pro-leaks/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini 3.5 Pro · Deep Think · 2 Mio. Token · Fable-Audio</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Fünf Tage vor dem geplanten Launch am 17. Juli <mark class="vocab" data-translation="verdichten sich — are multiplying / intensifying (lit. becoming denser)">verdichten sich</mark> die Leaks zu Gemini 3.5 Pro. Mehrere Quellen beschreiben einen Deep-Think-Reasoning-Layer für mehrstufige Problemlösung, einen 2-Mio.-Token-Kontext, deutlich stärkeres SVG-Rendering und Fable-Integration für Sound und Musik direkt aus Prompts. Als API-Preise kursieren 12–15 $ pro Mio. Input-Token und 36–45 $ Output; Deep Think soll dem Ultra-Tarif (250 $/Monat) <mark class="vocab" data-translation="vorbehalten bleiben — to remain reserved / exclusive (not available to lower tiers)">vorbehalten bleiben</mark>. Achtung: Alle Feature-Details sind <mark class="vocab" data-translation="geleakt — leaked (unofficial information that escaped before official announcement)">geleakt</mark>, nicht offiziell von Google bestätigt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Five days ahead of the scheduled July 17 launch, Gemini 3.5 Pro leaks are stacking up fast. Multiple sources describe a Deep Think reasoning layer for multi-step problem-solving, a 2-million-token context, notably improved SVG rendering, and Fable integration for generating sound and music from prompts. Pricing leaks put API costs at $12–15/M input tokens and $36–45/M output; Deep Think is expected to be reserved for the Ultra tier ($250/month). Fair warning: all these details are leaked, not officially confirmed by Google.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.geeky-gadgets.com/google-gemini-3-5-pro-leaks/" target="_blank" rel="noopener">→ geeky-gadgets.com · 08.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://mistral.ai/news/more-control-over-connectors/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral Connectors GA · Scoped API-Keys · MCP-Debugger</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Mistral hat seine Connector-Plattform mit Enterprise-Features <mark class="vocab" data-translation="erweitert — extended / expanded">erweitert</mark>, die ab sofort allgemein verfügbar sind. Admins können jetzt pro Workspace oder Organisation einzelne Tools ein- oder ausschalten und API-Schlüssel mit Connector-Scopes ausstellen — was <mark class="vocab" data-translation="Impersonation — identity spoofing (where an automated call pretends to be a user)">Impersonation</mark> in automatisierten Workloads verhindert. Neu sind außerdem Multi-Account-Konnektoren, ein Debugger für kaputte MCP-Verbindungen und nativer Connector-Support in Vibe Code und Workflows. Debugger und Workflows-Integration sind noch im Public Preview.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Mistral has rolled out enterprise-grade Connector features that are now generally available. Admins can toggle individual tools on or off per workspace or org, and issue API keys with connector scopes to prevent impersonation in automated workloads. New additions include multi-account connectors, a debugger for diagnosing broken MCP connections, and native connector support inside Vibe Code and Workflows. The debugger and Workflows integration remain in public preview.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mistral.ai/news/more-control-over-connectors/" target="_blank" rel="noopener">→ mistral.ai · 07.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.206 · /doctor ist jetzt der vollständige Setup-Check</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.206 macht den Slash-Command zu einer vollständigen Setup-Prüfung — statt nur auf eingebettete CLAUDE.md-Dateien hinzuweisen, <mark class="vocab" data-translation="checkt — checks / inspects (English verb used as German)">checkt</mark> er jetzt Credentials, MCP-Verbindungen, Config-Einträge und potenzielle Konflikte. Ein Alias bleibt weiterhin aktiv, falls du an dem älteren Namen gewöhnt bist. Im gleichen Release hat der Verzeichniswechsel-Befehl die gleichen Pfad-Vorschläge bekommen wie Add-Dir — du siehst direkt, welche Ordner verfügbar sind. Und der kombinierte Commit-Push-PR-Befehl <mark class="vocab" data-translation="pusht automatisch — auto-pushes (commits and pushes in one command to the configured remote)">pusht automatisch</mark> zum konfigurierten Remote, nicht mehr nur zu Origin.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.206 turns the checkup slash command into a full setup health check — instead of just flagging checked-in CLAUDE.md files, it now inspects credentials, MCP connections, config entries, and potential conflicts. The old alias still works as a shortcut if you're used to it. In the same release, the directory-switch slash command picked up the same path suggestions as add-dir, so you can see which folders are available right in the completion menu. And the combined commit-push-PR slash command now auto-allows pushes to the repo's configured push remote — not just origin.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/doctor
+/checkup</pre>
+<pre class="cmd-examples"><span class="com"># Vollständige Setup-Prüfung · Full setup health check</span>
+$ /doctor
+
+<span class="com"># Alias für doctor · Alias for /doctor</span>
+$ /checkup</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.206" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 08.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Klage</div>
+        <div class="vocab-translation">lawsuit · legal complaint</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Apples Klage gegen OpenAI ist der Auftakt zu einem langen Rechtsstreit.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Apple's lawsuit against OpenAI is the start of a long legal dispute.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Debüt</div>
+        <div class="vocab-translation">the debut · first public appearance</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">SK Hynix feierte an der Nasdaq ein beeindruckendes Debüt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">SK Hynix made an impressive debut on the Nasdaq.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aussperren</div>
+        <div class="vocab-translation">to lock out · to exclude</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der neue Klassifizierer sperrt bekannte Jailbreak-Techniken in 99 % der Fälle aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new classifier locks out known jailbreak techniques in 99% of cases.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">leaken</div>
+        <div class="vocab-translation">to leak · to let information slip early</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Gemini-3.5-Pro-Specs sind schon geleakt — fünf Tage vor dem Launch.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Gemini 3.5 Pro specs have already leaked — five days before launch.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">absichern</div>
+        <div class="vocab-translation">to secure · to lock down</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit Scoped API-Keys lässt sich der Connector-Zugriff besser absichern.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With scoped API keys, connector access can be secured more tightly.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">jemanden auf frischer Tat ertappen</div>
+      <div class="idiom-meaning">to catch someone red-handed — wörtlich: "to catch someone at a fresh deed"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Apple sagt, die Ex-Mitarbeiter wurden beim Weitergeben von IP auf frischer Tat ertappt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Apple says former employees were caught red-handed passing on IP."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Den Race Condition auf frischer Tat ertappt — direkt beim Merge."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Caught the race condition red-handed — right at the merge."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to catch red-handed</div>
+      <div class="idiom-meaning">to catch someone in the act of wrongdoing — German equivalent: "jemanden auf frischer Tat ertappen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The audit team caught the data-exfiltration script red-handed in production."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Audit-Team hat das Daten-Exfiltrations-Skript in der Produktion auf frischer Tat ertappt."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · cnbc.com · techcrunch.com · geeky-gadgets.com · mistral.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #57 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

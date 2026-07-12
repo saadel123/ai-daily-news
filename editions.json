@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-12",
+      "edition_number": 57,
+      "headlines": [
+        "Fable 5 Sicherheits-Update: Cyber-Klassifizierer mit 99 % Blockrate — trainiert mit US-Handelsministerium",
+        "Apple verklagt OpenAI wegen Hardware-IP-Diebstahl — Siri wechselt ab Herbst zu Gemini",
+        "SK Hynix: 26,5 Mrd. $ Nasdaq-Debüt — größtes US-Börsendebüt eines ausländischen Unternehmens",
+        "Gemini 3.5 Pro in 5 Tagen: Deep-Think, 2 Mio. Token und Audio via Fable — neue Leaks",
+        "Mistral Connectors GA: Admin-Kontrolle pro Workspace, Scoped API-Keys und MCP-Debugger"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-12T16:00:00Z"
+    },
+    {
       "date": "2026-07-10",
       "edition_number": 56,
       "headlines": [
