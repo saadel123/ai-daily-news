@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-13",
+      "edition_number": 58,
+      "headlines": [
+        "Claude Code 2.1.207: Auto Mode auf Bedrock, Vertex AI und Foundry standardmäßig aktiv — opt-out per disableAutoMode",
+        "Anthropic überholt OpenAI beim Umsatz: 47 Mrd. $ Run-Rate vs. 25–33 Mrd. $",
+        "Mistral Robostral Navigate: erstes 8B-Robotik-Modell braucht nur eine RGB-Kamera — 76 % Erfolgsrate",
+        "DeepSeek-Deadline 24. Juli: deepseek-chat und deepseek-reasoner werden abgeschaltet — V4-Migration jetzt",
+        "China erwägt KI-Exportbeschränkungen für Alibaba, ByteDance und Z.ai"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-13T16:06:20Z"
+    },
+    {
       "date": "2026-07-12",
       "edition_number": 57,
       "headlines": [

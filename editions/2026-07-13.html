@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 13.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 13. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #58</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Cloud-Deployments bekommen Auto Mode — und Anthropic überholt OpenAI beim Umsatz.</h1>
+    <p class="subtitle">Dazu: Roboter navigieren mit einer einzigen Kamera, eine DeepSeek-Deadline rückt näher und Beijing zieht die Schrauben beim KI-Export an.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.207</strong>: Auto Mode auf Bedrock, Vertex AI und Foundry standardmäßig aktiv — opt-out per disableAutoMode</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong> überholt OpenAI beim Umsatz: 47 Mrd. $ Run-Rate vs. 25–33 Mrd. $</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟦</span><span><strong>Mistral Robostral Navigate</strong>: erstes 8B-Robotik-Modell braucht nur eine RGB-Kamera — 76 % Erfolgsrate</span></a></li>
+      <li><a href="#article-4"><span class="dot">⬛</span><span><strong>DeepSeek-Deadline 24. Juli</strong>: deepseek-chat und deepseek-reasoner werden abgeschaltet — V4-Migration jetzt</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>China</strong> erwägt KI-Exportbeschränkungen für Alibaba, ByteDance und Z.ai</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.207" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.207 · Auto Mode GA auf Cloud-Plattformen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.207 macht Auto Mode zur neuen <mark class="vocab" data-translation="standardmäßig — by default / out of the box">standardmäßigen</mark> Einstellung auf allen drei großen Cloud-Plattformen: Bedrock, Vertex AI und Foundry — wer ihn <mark class="vocab" data-translation="deaktivieren — to disable / deactivate">deaktiviert</mark>, setzt <code>disableAutoMode: true</code> in der <code>~/.claude/settings.json</code>. Gleichzeitig wechseln alle drei Plattformen als Default-Modell auf Claude Opus 4.8, was in bestehenden Deployments ein aufmerksames Auge auf die Kosten erfordert. Dazu gibt es eine neue Sicherheitsregel, die verhindert, dass Auto Mode die Session-Transcripts <mark class="vocab" data-translation="manipulieren — to tamper with / manipulate">manipuliert</mark>. Wer die Einstellung bisher über <code>settings.local.json</code> gesteuert hat, muss auf <code>~/.claude/settings.json</code> wechseln — der <code>settings.local.json</code>-Pfad wird ab jetzt <mark class="vocab" data-translation="ignoriert — ignored / not read">ignoriert</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.207 makes Auto Mode the new default on all three major cloud platforms — Bedrock, Vertex AI, and Foundry. To opt out, set <code>disableAutoMode: true</code> in <code>~/.claude/settings.json</code>. Simultaneously all three platforms switch their default model to Claude Opus 4.8, which means existing deployments should watch costs carefully. A new security rule blocks Auto Mode from tampering with session transcript files. Anyone who was managing this setting through <code>settings.local.json</code> needs to migrate to <code>~/.claude/settings.json</code> — that path is no longer read.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.207" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 11.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.thestreet.com/technology/anthropic-ipo-fable5-mythos-safety-classifier-block-jailbreak" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic überholt OpenAI · 47 Mrd. $ Run-Rate</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat OpenAI beim Jahresumsatz <mark class="vocab" data-translation="überholt — overtaken / passed (in a race)">überholt</mark> — laut Fortune kommt Anthropic auf eine annualisierte Umsatzrate von rund 47 Mrd. $, während OpenAI zwischen 25 und 33 Mrd. $ liegt. Der Haupttreiber ist Claude Code: der Coding-Agent ist in etwa acht Wochen von einer auf über 2,5 Mrd. $ Run-Rate <mark class="vocab" data-translation="gewachsen — grown / increased">gewachsen</mark>. Anthropics Business-Modell — große, wiederkehrende Enterprise-Verträge statt Consumer-Abos — erweist sich dabei als <mark class="vocab" data-translation="stabiler — more stable / sturdier">stabiler</mark> als erwartet. Anthropic ist außerdem seit Q4 2025 operativ <mark class="vocab" data-translation="profitabel — profitable">profitabel</mark>, was OpenAI bisher noch nicht erreicht hat.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic has overtaken OpenAI in annualized revenue — Fortune puts Anthropic's run rate at roughly $47 billion versus OpenAI's projected $25 to $33 billion. The main engine is Claude Code, which went from a $1 billion to over $2.5 billion annualized run rate in about eight weeks. Anthropic's business model — large, recurring enterprise contracts rather than consumer subscriptions — has proven more stable than expected. Anthropic has also been operationally profitable since Q4 2025, a milestone OpenAI has not yet reached.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.thestreet.com/technology/anthropic-ipo-fable5-mythos-safety-classifier-block-jailbreak" target="_blank" rel="noopener">→ thestreet.com · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://quasa.io/media/mistral-robostral-navigate-single-camera-8b-model-transforms-robot-autonomy" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral Robostral Navigate · Physik-AI mit einer Kamera</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Mistral hat mit Robostral Navigate sein erstes Modell für Embodied AI veröffentlicht — ein 8B-Modell, das Robotern <mark class="vocab" data-translation="eigenständig — autonomously / independently">eigenständig</mark> das Navigieren durch unbekannte Umgebungen beibringt, ausschließlich auf Basis einer einzigen RGB-Kamera ohne LiDAR oder Tiefensensoren. Das Modell nimmt ein Bild und einen Klartextbefehl wie "Geh durch den Korridor in den Lagerraum und steh vor dem zweiten Regal" entgegen und gibt daraus direkt Navigationsanweisungen aus. Im R2R-CE-Benchmark auf bisher ungesehenen Umgebungen erreicht es 76,6 % Erfolgsrate — trainiert komplett in der Simulation auf 400.000 Trajektorien in 6.000 einzigartigen Szenen. Für Logistik, Fertigung und Lieferdienste ist das ein <mark class="vocab" data-translation="Wendepunkt — turning point / game changer">Wendepunkt</mark> beim Einstieg in physische KI.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Mistral has released Robostral Navigate, its first model for embodied AI — an 8B model that teaches robots to navigate unknown environments autonomously, using only a single RGB camera with no LiDAR or depth sensors required. The model takes an image and a plain-language command such as "walk through the corridor into the supply room and stop in front of the second shelf," then outputs navigation commands directly. It achieves a 76.6% success rate on the R2R-CE benchmark in unseen environments, trained entirely in simulation on 400,000 trajectories across 6,000 unique scenes. For logistics, manufacturing, and delivery, it marks a meaningful entry point into physical AI.</p>
+        </div>
+      </div>
+      <a class="source" href="https://quasa.io/media/mistral-robostral-navigate-single-camera-8b-model-transforms-robot-autonomy" target="_blank" rel="noopener">→ quasa.io · 08.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.developersdigest.tech/blog/deepseek-chat-to-v4-migration-guide" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>DeepSeek · Deadline 24. Juli · V4-Migration jetzt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Am 24. Juli 2026 um 15:59 UTC werden <code>deepseek-chat</code> und <code>deepseek-reasoner</code> endgültig <mark class="vocab" data-translation="abgeschaltet — shut down / deprecated / turned off">abgeschaltet</mark> — jeder API-Call danach gibt einen Fehler zurück. Die <mark class="vocab" data-translation="Migration — migration / transition">Migration</mark> ist technisch eine Einzeiler-Änderung: <code>deepseek-chat</code> wird zu <code>deepseek-v4-pro</code>, <code>deepseek-reasoner</code> zu <code>deepseek-v4-flash</code> mit aktiviertem Thinking-Modus. Der wichtige Fallstrick: <code>deepseek-reasoner</code> landet auf Flash-Tier, nicht auf Pro — wer intensive Reasoning-Workloads hatte, sollte das Preis-Leistungs-Verhältnis neu <mark class="vocab" data-translation="kalkulieren — to calculate / assess / budget">kalkulieren</mark>. Beide V4-Modelle bringen einen 1-Mio.-Token-Kontext und Dual-Mode-Support mit — es lohnt sich, den Wechsel jetzt zu machen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">On July 24, 2026 at 15:59 UTC, <code>deepseek-chat</code> and <code>deepseek-reasoner</code> will be fully shut down — any API call after that point returns an error. The migration is technically a one-line change: <code>deepseek-chat</code> maps to <code>deepseek-v4-pro</code>, and <code>deepseek-reasoner</code> maps to <code>deepseek-v4-flash</code> with thinking mode enabled. The important gotcha: <code>deepseek-reasoner</code> lands on Flash-tier, not Pro — if you had heavy reasoning workloads, re-evaluate the cost-performance tradeoff. Both V4 models bring a 1M-token context window and dual-mode support — it's worth making the switch now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.developersdigest.tech/blog/deepseek-chat-to-v4-migration-guide" target="_blank" rel="noopener">→ developersdigest.tech · 08.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://finance.yahoo.com/technology/ai/articles/exclusive-beijing-looking-curbing-overseas-101644780.html" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>China · KI-Exportbeschränkungen · Alibaba, ByteDance, Z.ai</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Laut einem Reuters-Exklusiv hat Peking begonnen, mit Alibaba, ByteDance und Z.ai über mögliche Exportbeschränkungen für chinesische KI-Modelle zu sprechen — der Auslandszugang soll <mark class="vocab" data-translation="eingeschränkt — restricted / curtailed / limited">eingeschränkt</mark> werden, besonders für Frontier-Modelle, die noch nicht veröffentlicht sind. Als Rahmen wird ein dreistufiges System diskutiert: einfache Meldepflicht für Basis-Tools, Sicherheitsüberprüfung für fortgeschrittene Modelle und vollständige Sperrung für die leistungsstärksten Systeme. Der Auslöser: Peking besorgt sich, dass westliche Akteure chinesische Frontier-Modelle gegen eigene Interessen einsetzen könnten — ein direktes Echo auf die US-Exportkontrolle in die andere Richtung. Noch ist nichts beschlossen, und die Reichweite der Maßnahmen wird weiter ausgehandelt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">According to a Reuters exclusive, Beijing has begun holding talks with Alibaba, ByteDance, and Z.ai about potentially restricting overseas access to China's most advanced AI models — especially frontier systems not yet publicly released. A three-tier framework is being discussed: a simple filing requirement for basic tools, a security review for advanced models, and an outright overseas ban for the most capable frontier systems. The trigger: Beijing is concerned that Western actors could deploy Chinese frontier models against its own interests — a direct mirror image of US export controls, reversed. Nothing is decided yet, and the scope is still being negotiated.</p>
+        </div>
+      </div>
+      <a class="source" href="https://finance.yahoo.com/technology/ai/articles/exclusive-beijing-looking-curbing-overseas-101644780.html" target="_blank" rel="noopener">→ finance.yahoo.com · 07.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.202" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.202 · /review vs. /code-review: zwei Befehle, zwei Modi</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Mit v2.1.202 zieht Claude Code eine saubere Trennlinie zwischen zwei Review-Befehlen: Der eine macht einen schnellen Einzeldurchlauf — gut für Quick-Checks während der Entwicklung. Der andere schickt mehrere Agenten mit wählbarem Effort-Level in den Ring: low, medium, high oder max. Wer gründliche Reviews mit mehreren Perspektiven will — etwa bevor ein Branch auf main landet — greift zum zweiten Befehl und wählt den Effort je nach Criticality. Außerdem gibt es ab jetzt im Config-Menü eine neue Einstellung, die den Agent-Count in Ultracode-Workflows auf klein, mittel oder groß reguliert, damit du Token-Verbrauch und Laufzeit gezielt gegeneinander <mark class="vocab" data-translation="abwägen — to weigh up / balance (competing factors)">abwägst</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">With v2.1.202, Claude Code draws a clean line between two review commands: one does a fast single pass — good for quick checks during development. The other sends multiple agents in with a selectable effort level: low, medium, high, or max. For thorough, multi-perspective reviews before a branch lands on main, use the second command and pick the effort level according to criticality. There's also a new "Dynamic workflow size" option in the config menu that dials the agent count in ultracode workflows to small, medium, or large, so you can consciously trade off token spend against wall-clock time.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/review [pr-number]
+/code-review [effort] [pr-number]</pre>
+        <dl class="cmd-flags">
+          <dt><code>low</code></dt>
+          <dd>lightweight pass, fastest and cheapest</dd>
+          <dt><code>medium</code></dt>
+          <dd>balanced quality and cost</dd>
+          <dt><code>high</code></dt>
+          <dd>thorough multi-agent review, recommended for PRs before merge</dd>
+          <dt><code>max</code></dt>
+          <dd>deepest coverage, highest token cost</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Blitzschneller Einzeldurchlauf · Quick single-pass review</span>
+$ /review 42
+
+<span class="com"># Multi-Agenten-Review mit hohem Effort · Multi-agent review at high effort</span>
+$ /code-review high 42
+
+<span class="com"># Maximale Tiefe für kritische PRs · Maximum depth for critical PRs</span>
+$ /code-review max 42</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.202" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 06.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">standardmäßig</div>
+        <div class="vocab-translation">by default · out of the box</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Feature ist standardmäßig aktiviert — du musst nichts konfigurieren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new feature is enabled by default — you don't have to configure anything.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überholen</div>
+        <div class="vocab-translation">to overtake · to surpass (in a ranking)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat OpenAI beim Umsatz überholt — das hätten viele nicht erwartet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic has overtaken OpenAI in revenue — not something many expected.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abschalten</div>
+        <div class="vocab-translation">to shut down · to deprecate · to switch off</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der alte API-Endpunkt wird am 24. Juli endgültig abgeschaltet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The old API endpoint will be shut down for good on July 24th.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einschränken</div>
+        <div class="vocab-translation">to restrict · to limit · to curtail</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Behörde will den Auslandszugang zu Frontier-Modellen stark einschränken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The authority wants to heavily restrict overseas access to frontier models.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">migrieren</div>
+        <div class="vocab-translation">to migrate (systems, APIs, data)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alle Calls auf deepseek-v4-pro zu migrieren dauert buchstäblich eine Minute.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Migrating all calls to deepseek-v4-pro takes literally a minute.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Zepter übernehmen</div>
+      <div class="idiom-meaning">to take the scepter / to take the lead / to seize the top spot — wörtlich: "to take over the scepter"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat das Zepter übernommen — 47 Mrd. $ Run-Rate lassen OpenAI hinter sich."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic has taken the lead — a $47 billion run rate leaves OpenAI behind."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Seit dem letzten Release hat das neue Modell das Zepter auf fast allen Benchmarks übernommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Since the last release, the new model has taken the lead on almost every benchmark."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to move the goalposts</div>
+      <div class="idiom-meaning">to change the rules after the game has started — German equivalent: "die Messlatte verschieben" / "die Spielregeln ändern"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Beijing is moving the goalposts on overseas AI access — just as Chinese models were gaining global traction."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beijing verschiebt die Messlatte für den Auslandszugang zu KI — genau als chinesische Modelle global Fahrt aufnahmen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · thestreet.com · quasa.io · developersdigest.tech · finance.yahoo.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #58 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
