@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 14.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 14. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #59</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Team-Artifacts, TSMC auf Rekord und DeepSeek V4 offiziell live.</h1>
+    <p class="subtitle">Außerdem: Seedream 5.0 Pro zerlegt Renders schichtweise, und ein KI-Agent sammelt 100 Mio. $ eigenständig ein.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic Artifacts</strong>: Multiplayer-Editing und Public Sharing live — plus Claude Tag in Slack</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟠</span><span><strong>TSMC Q2 2026</strong>: Rekordquartal mit 39,6 Mrd. $ — KI-Nachfrage bricht Saisonmuster</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Seedream 5.0 Pro</strong>: ByteDances neues Bildmodell zerlegt Renders in bis zu zehn Ebenen</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>DeepSeek V4 GA</strong>: offiziell aus der Preview — 1-Mio.-Token-Kontext und Peak-Pricing aktiv</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>Lyzr SivaClaw</strong>: KI-Agent führt 130 Investor-Gespräche und holt $100 Mio. Series B rein</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://code.claude.com/docs/en/artifacts" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Artifacts · Multiplayer + Public Sharing + Claude Tag</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat Artifacts in Claude Code einen großen <mark class="vocab" data-translation="Sprung nach vorn machen — to make a big leap forward">Sprung nach vorn</mark> gemacht: Team- und Enterprise-Nutzer können Artifacts ab sofort <mark class="vocab" data-translation="öffentlich teilen — to share publicly (a file, page, or link)">öffentlich teilen</mark> — wer den Link hat, kommt rein, ganz ohne Claude-Account. Dazu gibt es Multiplayer-Editing, mit dem Teams ein Artifact <mark class="vocab" data-translation="gemeinsam bearbeiten — to co-edit / to work on together">gemeinsam bearbeiten</mark> können, während Updates live im Browser <mark class="vocab" data-translation="einspielen — to push in / to apply live (updates)">eingespielt</mark> werden. Neu ist außerdem, dass Claude Tag in Slack direkt Artifacts erstellen kann — kein App-Wechsel nötig. Wer stark auf Cowork setzt, bekommt damit den fehlenden Social Layer.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has made a significant leap with Artifacts in Claude Code: Team and Enterprise users can now share Artifacts publicly — anyone with the link can view them, no Claude account required. Multiplayer editing lets teams co-edit the same Artifact with updates pushed live in the browser. On top of that, Claude Tag in Slack can now build Artifacts directly from a conversation, no app switch needed. For teams leaning into Cowork, this is the missing social layer.</p>
+        </div>
+      </div>
+      <a class="source" href="https://code.claude.com/docs/en/artifacts" target="_blank" rel="noopener">→ code.claude.com · 14.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/320348/20260713/tsmc-sets-all-time-revenue-record-ai-demand-has-rewritten-its-calendar.htm" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>TSMC Q2 2026 · Umsatz-Rekord durch KI-Nachfrage</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">TSMC hat im zweiten Quartal 2026 einen neuen Umsatzrekord <mark class="vocab" data-translation="aufstellen — to set / to establish (a record or standard)">aufgestellt</mark>: rund 39,6 Mrd. US-Dollar — und das, obwohl der Juni historisch immer ein schwacher Monat war. Dieses Jahr wuchs der Umsatz im Juni sequenziell um 6,2 % weiter, weil die KI-Nachfrage den normalen Saisonrhythmus schlicht <mark class="vocab" data-translation="überlagern — to override / to supersede">überlagert</mark>. High-Performance-Computing, sprich KI-Chips, macht inzwischen mehr als doppelt so viel Umsatz wie das Smartphone-Segment — ein klarer <mark class="vocab" data-translation="Vorsprung — lead / advantage (over competitors)">Vorsprung</mark>. Der vollständige Q2-Bericht folgt am 16. Juli, dann stehen Margen und Ausblick im <mark class="vocab" data-translation="Mittelpunkt — center / focal point">Mittelpunkt</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">TSMC posted a new all-time revenue record in Q2 2026: roughly $39.6 billion — breaking four consecutive years of June revenue declines, because AI demand is now large enough to override the seasonal consumer calendar. High-performance computing, meaning AI chips, already generates more than double the revenue of the smartphone segment. The full Q2 earnings call is scheduled for July 16, when margin guidance and the forward outlook will take center stage.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/320348/20260713/tsmc-sets-all-time-revenue-record-ai-demand-has-rewritten-its-calendar.htm" target="_blank" rel="noopener">→ techtimes.com · 13.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.testingcatalog.com/bytedance-debuts-seedream-5-0-pro-with-advanced-reasoning/" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>ByteDance Seedream 5.0 Pro · Layer Separation</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">ByteDance hat Seedream 5.0 Pro <mark class="vocab" data-translation="veröffentlichen — to release / to publish">veröffentlicht</mark> — das neue Flagship-Bildmodell für Profis. Der größte Kniff ist das Layer Separation: Das Modell zerlegt ein Render in bis zu zehn transparente PNG-<mark class="vocab" data-translation="Ebene — layer (graphics / Photoshop / GIS)">Ebenen</mark>, die du direkt in Figma oder Photoshop ziehen, skalieren und austauschen kannst. Dazu kommen nativer Text in über zehn Sprachen, ein Infografik-Modus für <mark class="vocab" data-translation="dicht — dense / packed / information-rich">dichte</mark> Daten-Visualisierungen und <mark class="vocab" data-translation="kinoreif — cinema-grade / cinematic quality">kinoreife</mark> Lichtsimulation. Verfügbar auf der Dreamina-Plattform sowie über die Volcano-Engine- und Byteplus-APIs.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">ByteDance has released Seedream 5.0 Pro, its new flagship image model aimed at professionals. The standout feature is Layer Separation: the model breaks a render into up to ten transparent PNG layers you can drag, scale, and swap directly in Figma or Photoshop. Add native multi-language text in 10+ languages, an infographic mode for dense data visuals, and cinema-grade lighting simulation. The model is live on Dreamina and via the Volcano Engine and Byteplus APIs.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.testingcatalog.com/bytedance-debuts-seedream-5-0-pro-with-advanced-reasoning/" target="_blank" rel="noopener">→ testingcatalog.com · 09.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://explainx.ai/blog/deepseek-v4-official-release-peak-pricing-mid-july-2026" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>DeepSeek V4 · GA &amp; Peak-Pricing</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">DeepSeek V4 ist jetzt offiziell: Die Preview-Phase ist vorbei, V4-Pro und V4-Flash sind in die General Availability <mark class="vocab" data-translation="überführen — to move into / to transition to (a new phase or status)">überführt</mark>. Durch die gesamte Produktlinie gibt es jetzt einen 1-Mio.-Token-Kontext sowie verbesserte Performance bei Agentenaufgaben, Mathe und Code. Neu ist das <mark class="vocab" data-translation="Stoßzeit — peak hour / rush hour (Stoßzeit = surge period)">Stoßzeit</mark>-Pricing: 9–12 Uhr und 14–18 Uhr kostet der API-Aufruf doppelt so viel wie außerhalb dieser Zeiten. Die Legacy-Namen deepseek-chat und deepseek-reasoner werden am 24. Juli <mark class="vocab" data-translation="abschalten — to shut down / to switch off">abgeschaltet</mark> — also jetzt <mark class="vocab" data-translation="migrieren — to migrate (technical: switching systems or model names)">migrieren</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">DeepSeek V4 is now officially GA: the preview phase is over, and V4-Pro and V4-Flash have moved into general availability. The full lineup comes with a 1-million-token context window and improved performance for agent tasks, math, and code generation. New this release: peak-hour pricing — calls from 9 a.m. to noon and 2 to 6 p.m. cost twice the off-peak rate. Legacy names deepseek-chat and deepseek-reasoner are retired on July 24, so migrate now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://explainx.ai/blog/deepseek-v4-official-release-peak-pricing-mid-july-2026" target="_blank" rel="noopener">→ explainx.ai · 14.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Lyzr SivaClaw · $100 Mio. Series B per KI-Agent</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Lyzr, ein drei Jahre altes Startup aus New Jersey, hat seinen eigenen KI-Agenten SivaClaw für die Series B <mark class="vocab" data-translation="einspannen — to enlist / to put to work (literally: to harness)">eingespannt</mark> — und der hat <mark class="vocab" data-translation="abliefern — to deliver / to come through (colloquial)">abgeliefert</mark>. SivaClaw führte über 130 Investor-Gespräche, erstellte Investment-Memos und trackte sogar, welche Folien die Investoren am längsten offen hatten. Ergebnis: 100 Mio. $ <mark class="vocab" data-translation="einwerben — to raise / to bring in (funds, donations)">eingeworben</mark> bei rund 500 Mio. $ Bewertung — und 400 Mio. $ Interesse aus Silicon Valley, dem Nahen Osten und dem Finanzsektor, ohne dass ein einziger Gründer dafür nach Sand Hill Road fliegen musste. Der beste <mark class="vocab" data-translation="Beweis — proof / evidence">Beweis</mark>, dass das Produkt wirklich funktioniert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Lyzr, a three-year-old startup from New Jersey that builds enterprise AI agents, used its own agent SivaClaw to run its entire Series B — and it delivered. SivaClaw fielded over 130 investor conversations, drafted investment memos, and tracked which deck slides investors lingered on longest. The result: $100M raised at roughly a $500M valuation, with $400M in total interest from Silicon Valley, the Middle East, and financial-sector investors — no founder ever had to fly to Sand Hill Road for the classic coffee-meeting circuit. The best proof that the product actually works.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/" target="_blank" rel="noopener">→ techcrunch.com · 09.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.208 · Screen-Reader-Modus</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.208 bringt eine ganze Reihe von Accessibility-<mark class="vocab" data-translation="Verbesserung — improvement / enhancement">Verbesserungen</mark>. Die wichtigste: ein Screen-Reader-Modus, der die komplette Ausgabe auf Plain-Text <mark class="vocab" data-translation="reduzieren — to reduce / to strip down (to essentials)">reduziert</mark>, damit gängige Screen-Reader damit <mark class="vocab" data-translation="klarkommen — to cope with / to manage (colloquial, separable verb)">klarkommen</mark>. Dazu gibt es Vim-Insert-Remap-Support für Nutzer, die im Vim-Workflow bleiben wollen, und Mausklick-Unterstützung in <mark class="vocab" data-translation="Vollbild — fullscreen / full-screen mode">Vollbild</mark>-Menüs. Den Modus aktivierst du per Flag beim Start, per Umgebungsvariable oder über einen Eintrag in der Settings-Datei — alle drei Wege funktionieren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.208 ships a set of accessibility improvements. The headline feature: screen reader mode, which strips all output down to plain text so standard screen readers can parse it cleanly. There is also vim insert-mode remap support for users staying in a vim workflow, and mouse-click support in fullscreen menus. You can toggle screen reader mode with a flag at startup, an environment variable, or an entry in your settings file — all three work.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --ax-screen-reader</pre>
+        <dl class="cmd-flags">
+          <dt><code>--ax-screen-reader</code></dt>
+          <dd>enable plain-text rendering mode so screen readers can parse output cleanly</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Screen-Reader-Modus via Flag aktivieren · Enable via flag</span>
+$ claude --ax-screen-reader
+
+<span class="com"># Alternativ per Umgebungsvariable · Alternative via environment variable</span>
+$ CLAUDE_AX_SCREEN_READER=1 claude</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">öffentlich teilen</div>
+        <div class="vocab-translation">to share publicly · to make publicly accessible</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Artifact kannst du jetzt öffentlich teilen — kein Claude-Account nötig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can now share the artifact publicly — no Claude account needed.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überlagern</div>
+        <div class="vocab-translation">to override · to supersede · to superimpose</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die KI-Nachfrage überlagert bei TSMC den saisonalen Umsatzrückgang.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AI demand is overriding TSMC's seasonal revenue dip.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Ebene</div>
+        <div class="vocab-translation">layer · level (graphics, Photoshop, GIS)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Seedream 5.0 Pro trennt das Bild in bis zu zehn transparente Ebenen auf.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Seedream 5.0 Pro splits the image into up to ten transparent layers.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Stoßzeit</div>
+        <div class="vocab-translation">peak hour · rush hour · surge period</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zur Stoßzeit kostet die DeepSeek-V4-API doppelt so viel wie nachts.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">During peak hours, the DeepSeek V4 API costs twice the off-peak rate.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">abliefern</div>
+        <div class="vocab-translation">to deliver · to come through (colloquial)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Agent hat abgeliefert — 130 Investor-Gespräche ohne einen einzigen Flug.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The agent delivered — 130 investor conversations, zero flights.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">das Eisen schmieden, solange es heiß ist</div>
+      <div class="idiom-meaning">to strike while the iron is hot — wörtlich: "to forge the iron while it is still hot"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lyzr hat das Eisen geschmiedet, solange es heiß war — drei Wochen, 100 Millionen Dollar eingeworben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Lyzr struck while the iron was hot — three weeks, one hundred million dollars raised."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Jetzt auf DeepSeek V4 migrieren — das Eisen ist heiß, bevor der alte Modellname abgeschaltet wird."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Migrate to DeepSeek V4 now — strike while the iron is hot, before the old name shuts off on July 24."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to raise the bar</div>
+      <div class="idiom-meaning">to set a higher standard that others must now meet — German equivalent: "die Latte höher legen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"TSMC's record quarter raises the bar for every semiconductor maker on the planet."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"TSMCs Rekordquartal legt die Latte für die gesamte Halbleiterbranche höher."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Seedream's layer editing raises the bar — now every image model needs to match it."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Seedreams Schicht-Editor legt die Latte höher — jetzt muss jedes Bildmodell nachziehen."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: code.claude.com · techtimes.com · testingcatalog.com · explainx.ai · techcrunch.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #59 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
