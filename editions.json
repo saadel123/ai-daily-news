@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-15",
+      "edition_number": 60,
+      "headlines": [
+        "Claude for Teachers: Anthropic gibt verifizierten US-Lehrenden gratis Zugang zu Claude Pro — mit echtem Lehrplan-Connector",
+        "OpenAI Codex Micro: erstes OpenAI-Hardwareprodukt ist ein programmierbares Keypad für Coding-Agents — heute im Verkauf",
+        "Gemini Managed Agents: Hintergrundtasks, Remote-MCP und Credential-Refresh jetzt auf dem Free-Tier der Gemini API",
+        "Mistral: €4 Mrd. für Rechenzentren in Europa und industrielle KI bereits bei Airbus und BMW im Einsatz",
+        "OpenAI Smart Speaker: bildschirmloses ChatGPT-Gerät mit Kamera und Bewegungsmotor geleakt — Marktstart frühestens 2027"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-15T16:00:00Z"
+    },
+    {
       "date": "2026-07-14",
       "edition_number": 59,
       "headlines": [

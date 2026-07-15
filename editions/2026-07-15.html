@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 15.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 15. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #60</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude wird Lehrerin: Anthropic öffnet die Tür für US-Lehrende — und OpenAI bringt sein erstes Stück Hardware raus.</h1>
+    <p class="subtitle">Außerdem: Googles Agenten laufen jetzt im Hintergrund, Mistral steckt vier Milliarden in Rechenzentren und ein bildschirmloser ChatGPT-Speaker soll 2027 ins Wohnzimmer einziehen.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude for Teachers</strong>: Anthropic gibt verifizierten US-Lehrenden gratis Zugang zu Claude Pro — mit echtem Lehrplan-Connector</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>OpenAI Codex Micro</strong>: erstes OpenAI-Hardwareprodukt ist ein programmierbares Keypad für Coding-Agents — heute im Verkauf</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Gemini Managed Agents</strong>: Hintergrundtasks, Remote-MCP und Credential-Refresh jetzt auf dem Free-Tier der Gemini API</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Mistral</strong>: €4 Mrd. für Rechenzentren in Europa und industrielle KI bereits bei Airbus und BMW im Einsatz</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI Smart Speaker</strong>: bildschirmloses ChatGPT-Gerät mit Kamera und Bewegungsmotor geleakt — Marktstart frühestens 2027</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-for-teachers" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · Claude for Teachers</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat am 14. Juli "Claude for Teachers" gestartet — ein Programm, das <mark class="vocab" data-translation="verifiziert — verified (identity-checked)">verifizierten</mark> US-Lehrenden der Klassen K–12 gratis Zugang zu Premium-Claude-Funktionen gibt. Im Paket ist eine Bibliothek mit Unterrichts-Skills und ein Learning-Commons-Connector, der echte <mark class="vocab" data-translation="Lehrpläne — curricula / teaching plans">Lehrpläne</mark> wie OpenSciEd und Illustrative Mathematics direkt in Claude <mark class="vocab" data-translation="einbindet — integrates / embeds">einbindet</mark> — ausgerichtet auf die State Standards aller 50 US-Bundesstaaten. Schülerdaten werden nicht fürs Training genutzt, und ein K-12-Datenverarbeitungs-Addendum sorgt für <mark class="vocab" data-translation="Konformität — compliance / conformity">Konformität</mark> mit dem US-Bildungsdatenschutzgesetz FERPA. Wer mit Schulen oder Lehrkräften zusammenarbeitet, sollte das jetzt auf dem Radar haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic launched "Claude for Teachers" on July 14, giving verified US K-12 educators free access to premium Claude features. The package includes a library of teaching skills and a Learning Commons connector that pulls real classroom curricula — like OpenSciEd for science and Illustrative Mathematics — directly into Claude, aligned to academic standards in all 50 US states. Student data is not used for model training, and a K-12 Data Processing Addendum covers FERPA compliance. If you work with schools or districts, put this on your radar now.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-for-teachers" target="_blank" rel="noopener">→ anthropic.com/news · 14.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://thenextweb.com/news/openai-codex-micro-hardware-work-louder" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Codex Micro Keypad — erstes Hardware-Produkt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">OpenAI hat heute — <mark class="vocab" data-translation="pünktlich — on time / punctually">pünktlich</mark> zum 15. Juli — sein allererste Hardware-Produkt auf den Markt gebracht: das Codex Micro, ein kompaktes programmierbares Keypad, das zusammen mit Work Louder entwickelt wurde. Das Gerät hat 13 mechanische Tasten, einen Joystick, einen Drehknopf und sechs programmierbare <mark class="vocab" data-translation="Ebenen — layers (configurable levels in a device)">Ebenen</mark>, mit denen Entwickler Shortcuts und Agent-Aktionen direkt auf physische Tasten <mark class="vocab" data-translation="legen auf — to assign to / to map to a key">legen</mark> können. Eine RGB-Statusanzeige spiegelt den aktuellen Agent-Status in Echtzeit. Kein Consumer-Gerät — ein Präzisionswerkzeug für alle, die täglich tief in Codex stecken.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">OpenAI shipped its very first hardware product today — the Codex Micro, a compact programmable keypad co-built with Work Louder and launching right on schedule on July 15. The device packs 13 mechanical keys, a joystick, a rotary encoder, and six programmable layers, letting developers bind shortcuts and Codex agent actions to physical keys. A real-time RGB indicator mirrors the current agent state. Not a consumer play — a precision tool for developers who live inside Codex every single day.</p>
+        </div>
+      </div>
+      <a class="source" href="https://thenextweb.com/news/openai-codex-micro-hardware-work-louder" target="_blank" rel="noopener">→ thenextweb.com · 15.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google Gemini · Managed Agents mit Background-Tasks und Remote-MCP</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google hat die Managed Agents in der Gemini API erheblich <mark class="vocab" data-translation="ausgebaut — expanded / extended (feature set)">ausgebaut</mark>: Agent-Interaktionen laufen jetzt auf Wunsch <mark class="vocab" data-translation="asynchron — asynchronous (non-blocking, runs in background)">asynchron</mark> auf dem Server — kein dauerhafter HTTP-Stream mehr nötig. Managed Agents können jetzt auch Remote-MCP-Server direkt einbinden, Custom Functions auf Client-Seite ausführen und <mark class="vocab" data-translation="ablaufende — expiring (tokens, credentials running out)">ablaufende</mark> Credentials mittendrin austauschen, ohne den Sandbox-Zustand zu verlieren. Alles ist auf dem Free-Tier verfügbar und ab sofort über die Gemini Interactions API aktiv. Wer noch eigene Proxy-Middleware für den MCP-Zugriff baut, kann das jetzt weglassen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google has significantly expanded Managed Agents in the Gemini API: agent interactions can now run asynchronously on the server — no need to keep an HTTP connection alive for long-running tasks. Agents can also connect directly to remote MCP servers for private databases and internal APIs, run custom client-side functions alongside server-side tools, and rotate expiring credentials mid-session without losing sandbox filesystem state. Everything is available on the free tier via the Gemini Interactions API. If you're still writing proxy middleware to reach MCP from Gemini, you can drop it.</p>
+        </div>
+      </div>
+      <a class="source" href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/" target="_blank" rel="noopener">→ blog.google · 07.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Mistral · AI NOW Summit · €4 Mrd. Rechenzentren · Airbus & BMW</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Mistral hat beim AI NOW Summit in Paris eine Schippe draufgelegt: CEO Arthur Mensch gab bekannt, dass das Unternehmen inzwischen 1.000 <mark class="vocab" data-translation="Mitarbeitende — staff / employees (gender-neutral plural)">Mitarbeitende</mark> hat und 2026 auf Kurs für 1 Mrd. € Umsatz ist. Mit "Mistral Compute" folgt ein €4-Mrd.-Programm für <mark class="vocab" data-translation="Rechenzentren — data centers">Rechenzentren</mark> in Frankreich und Schweden — Ziel: 200 MW Kapazität bis 2027 und 1 GW bis 2030. Dazu kommt ein industrieller KI-Stack, der Mistral-Sprachmodelle mit <mark class="vocab" data-translation="Physik-Simulation — physics simulation (used in engineering)">Physik-Simulation</mark> (via Emmi AI) verbindet — bereits bei Airbus und BMW im Einsatz. Europas eigene KI-Infrastruktur wächst schneller, als viele erwartet hatten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Mistral went big at the AI NOW Summit in Paris: CEO Arthur Mensch announced the company now has 1,000 staff and is on track for €1 billion in revenue this year. The "Mistral Compute" program follows with a €4 billion investment in data centers in France and Sweden — targeting 200 MW of capacity by 2027 and 1 GW by 2030. On top of that, Mistral unveiled an industrial AI stack that combines language models with physics simulation (via the Emmi AI acquisition) — already running at Airbus and BMW. Europe's own AI infrastructure is growing faster than most people expected.</p>
+        </div>
+      </div>
+      <a class="source" href="https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai" target="_blank" rel="noopener">→ venturebeat.com · 14.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Screenless Smart Speaker · 2027</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Bloomberg und TechCrunch haben OpenAIs größeres Consumer-Hardware-Projekt <mark class="vocab" data-translation="geleakt — leaked (informally used in German tech journalism)">geleakt</mark>: ein <mark class="vocab" data-translation="bildschirmloses — screenless / without a display">bildschirmloses</mark> Smart-Speaker-Gerät, das sich autonom durchs Zimmer bewegen kann — mit Kamera, Bewegungssensor, Akku und ChatGPT Voice Mode. Das Gerät soll als vollwertiger <mark class="vocab" data-translation="KI-Hausgenosse — AI housemate / home AI companion">KI-Hausgenosse</mark> für Smart-Home-Steuerung, Antworten und Messaging dienen, liegt preislich zwischen 200 und 300 Dollar und kommt frühestens Anfang 2027 auf den Markt. Nicht zu verwechseln mit dem Codex Micro von heute: Das hier ist das Consumer-Play, das Jony Ive und Sam Altman gemeinsam entwickeln.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Bloomberg and TechCrunch leaked OpenAI's bigger consumer hardware project: a screenless smart speaker that moves around rooms autonomously — with a camera, motion sensors, a rechargeable battery, and ChatGPT Voice Mode built in. The device is designed to be a full AI home companion for smart-home control, answering questions, and messaging; it's priced in the $200–$300 range and won't ship before early 2027. Not to be confused with today's Codex Micro — this is the consumer play that Jony Ive and Sam Altman are co-developing together.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/" target="_blank" rel="noopener">→ techcrunch.com · 14.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.210" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.210 · Laufzeitzähler + Barrierefreiheitsmodus</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.210 bringt zwei nützliche Verbesserungen für den Alltag: Ein Live-<mark class="vocab" data-translation="Laufzeitzähler — elapsed-time counter / runtime display">Laufzeitzähler</mark> zeigt in der eingeklappten Tool-Summary-Zeile die <mark class="vocab" data-translation="verstrichene Zeit — elapsed time / time passed">verstrichene Zeit</mark> an — kein Rätselraten mehr, ob der Agent noch läuft oder hängt. Dazu kommt ein neuer <mark class="vocab" data-translation="Barrierefreiheitsmodus — accessibility mode (screen reader mode)">Barrierefreiheitsmodus</mark>, der die Ausgabe auf reinen Plaintext umschaltet — ideal für Screen-Reader-Nutzer und Setups ohne ANSI-Farben. Wer Permission-Regeln konfiguriert, bekommt außerdem beim Start eine Warnung, wenn bestimmte Tool-Typen in den Allow-Regeln stehen, die besser durch ihre sichereren Gegenstücke ersetzt werden sollten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.210 ships two practical daily improvements: a live elapsed-time counter now ticks on the collapsed tool summary line — no more guessing whether the agent is still running or has frozen. There's also a new accessibility mode that switches rendering to plain text — perfect for screen readers and no-ANSI setups. And if you configure permission rules, a startup warning now flags when certain tool types appear in your allow rules that should be replaced with their safer counterparts.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --ax-screen-reader</pre>
+        <dl class="cmd-flags">
+          <dt><code>--ax-screen-reader</code></dt>
+          <dd>start in plain-text accessibility mode — no ANSI color, no box-drawing, screen reader friendly</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Barrierefreiheitsmodus starten · Start in screen reader / plain-text mode</span>
+$ claude --ax-screen-reader
+
+<span class="com"># Alternativ per Umgebungsvariable · Alternative via environment variable</span>
+$ CLAUDE_AX_SCREEN_READER=1 claude</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.210" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Lehrplan</div>
+        <div class="vocab-translation">curriculum · teaching plan</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude for Teachers bindet echte Lehrpläne direkt in den Chat ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude for Teachers brings real curricula directly into the chat.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">asynchron</div>
+        <div class="vocab-translation">asynchronous · non-blocking</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Agent läuft jetzt asynchron — du schließt das Tab und er arbeitet einfach weiter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The agent runs asynchronously now — you close the tab and it keeps going.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Rechenkapazität</div>
+        <div class="vocab-translation">computing capacity · compute power</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mistral baut für 4 Mrd. € neue Rechenkapazität in Frankreich und Schweden auf.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Mistral is building €4 billion in new computing capacity across France and Sweden.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">bildschirmlos</div>
+        <div class="vocab-translation">screenless · display-free</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAIs Smart Speaker ist komplett bildschirmlos — die Stimme ist die gesamte Oberfläche.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI's smart speaker is completely screenless — voice is the entire interface.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">pünktlich</div>
+        <div class="vocab-translation">on time · punctually</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Codex Micro ist pünktlich zum angekündigten Launch-Datum erschienen — keine Überraschungen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The Codex Micro shipped right on time, exactly on the announced launch date — no surprises.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">eine Schippe drauflegen</div>
+      <div class="idiom-meaning">to up the ante · to add even more on top — wörtlich: "to put an extra shovel on"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mistral legt beim Rechenzentrum eine Schippe drauf — vier Milliarden Euro klingt nicht nach Experimenten."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Mistral is upping the ante on data centers — four billion euros doesn't sound like an experiment."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn der Wettbewerber heute shipt, müssen wir nächste Woche eine Schippe drauflegen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the competitor ships today, we need to up the ante next week."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to have skin in the game</div>
+      <div class="idiom-meaning">to have a personal stake in the outcome — German equivalent: "eigenes Geld im Spiel haben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI offered the US government a 5% stake worth $42 billion — that's putting real skin in the game."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI hat der US-Regierung ein 42-Mrd.-$-Paket angeboten — so hat man wirklich eigenes Geld im Spiel."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Invest your own savings in your startup — when you have skin in the game, every decision feels different."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Investier eigenes Geld in dein Startup — wenn du selbst dabei bist, triffst du andere Entscheidungen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · thenextweb.com · blog.google · venturebeat.com · techcrunch.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #60 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
