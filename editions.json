@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-16",
+      "edition_number": 61,
+      "headlines": [
+        "Claude Code Desktop: eingebauter Browser — Claude surft jetzt selbst durch Docs und Previews",
+        "Ode with Anthropic: 1,5-Mrd.-$-KI-Implementierungsfirma mit Blackstone und Goldman gestartet",
+        "Anthropic Plattform: Self-Service-HIPAA und Admin-API für Enterprise-Orgs jetzt in Beta",
+        "Hassabis fordert KI-FINRA: US-geführte Bewertungsbehörde soll Frontier-Modelle vor Launch testen",
+        "ChatGPT: Unified Search und 5.000-Zeichen-Custom-Instructions für alle Paid-User live"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-16T16:00:00Z"
+    },
+    {
       "date": "2026-07-15",
       "edition_number": 60,
       "headlines": [

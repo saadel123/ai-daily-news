@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 16.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 16. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #61</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude Code bekommt Augen. Und Anthropic eine eigene Baufirma.</h1>
+    <p class="subtitle">Außerdem: Hassabis will eine KI-BaFin, HIPAA per Self-Service und ChatGPT sucht jetzt überall gleichzeitig.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code Desktop</strong>: eingebauter Browser — Claude surft jetzt selbst durch Docs und Previews</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Ode with Anthropic</strong>: 1,5-Mrd.-$-KI-Implementierungsfirma mit Blackstone und Goldman gestartet</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟧</span><span><strong>Anthropic Plattform</strong>: Self-Service-HIPAA und Admin-API für Enterprise-Orgs jetzt in Beta</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Hassabis fordert KI-FINRA</strong>: US-geführte Bewertungsbehörde soll Frontier-Modelle vor Launch testen</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>ChatGPT</strong>: Unified Search und 5.000-Zeichen-Custom-Instructions für alle Paid-User live</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://code.claude.com/docs/en/whats-new/2026-w28" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code Desktop · Built-in Browser</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code Desktop hat jetzt einen eigenen Browser — Claude kann direkt Docs, Designs oder externe Seiten aufrufen und <mark class="vocab" data-translation="durchklicken — to click through (separable verb, common in German web/UI context)">durchklicken</mark>, genauso wie beim lokalen Dev-Server-Preview. Der Browser läuft <mark class="vocab" data-translation="sandboxed — sandboxed (English tech term adopted in German)">sandboxed</mark>, Sitzungen sind optional persistent, und Safety-Klassifizierer prüfen Aktionen auf externen Seiten. Öffnen kannst du ihn mit Cmd+Shift+B auf macOS beziehungsweise Ctrl+Shift+B auf Windows. Endlich schließt sich der <mark class="vocab" data-translation="Feedback-Loop — feedback loop (English compound used as German noun)">Feedback-Loop</mark>: Claude schreibt Code, schaut sich das Ergebnis an, klickt selbst durch und bessert nach — kein <mark class="vocab" data-translation="Kontextwechsel — context switch (developer term)">Kontextwechsel</mark> mehr nötig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code's desktop app now ships with a built-in browser — Claude can pull up docs, designs, or any external site, read and interact with pages the same way it does with local dev server previews. The browser is sandboxed, sessions are optionally persistent, and safety classifiers review actions on external sites. Open it with Cmd+Shift+B on macOS or Ctrl+Shift+B on Windows. The feedback loop is finally closed: Claude writes the code, looks at the result, clicks through, and fixes things — no manual context switch needed.</p>
+        </div>
+      </div>
+      <a class="source" href="https://code.claude.com/docs/en/whats-new/2026-w28" target="_blank" rel="noopener">→ code.claude.com · 10.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.businesswire.com/news/home/20260715205134/en/Anthropic-Blackstone-and-Hellman-Friedman-Introduce-Ode-with-Anthropic-an-Enterprise-AI-Services-Firm" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Ode with Anthropic · 1,5 Mrd. $ · KI-Implementierung</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat gestern gemeinsam mit Blackstone, Hellman & Friedman, Goldman Sachs und weiteren Investoren Ode gegründet — eine <mark class="vocab" data-translation="eigenständig — standalone / independent (adjective)">eigenständige</mark> KI-Implementierungsfirma mit 1,5 Mrd. $ Startkapital. Ode <mark class="vocab" data-translation="entsendet — deploys / dispatches (verb)">entsendet</mark> erfahrene KI-Ingenieure direkt in Unternehmen und baut <mark class="vocab" data-translation="maßgeschneidert — tailor-made / bespoke (adjective)">maßgeschneiderte</mark> Claude-Systeme für die spezifischen Abläufe jedes Kunden. Die Basis bildet Fractional AI, ein Applied-AI-Dienstleister, den Anthropic im Mai akquiriert hat. Die These dahinter: KI-Implementierung ist die nächste Billionen-Dollar-Kategorie — Modelle allein reichen für Unternehmen nicht mehr <mark class="vocab" data-translation="aus — out / enough (separable prefix: ausreichen = to suffice)">aus</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic yesterday co-founded Ode alongside Blackstone, Hellman & Friedman, Goldman Sachs, and other investors — a standalone AI implementation firm backed by $1.5B. Ode sends experienced AI engineers directly into enterprises and builds bespoke Claude systems tailored to each client's specific operations. The foundation is Fractional AI, an applied AI services firm Anthropic acquired in May. The thesis: AI implementation is the next trillion-dollar category — frontier models alone are no longer enough for enterprises to get there on their own.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.businesswire.com/news/home/20260715205134/en/Anthropic-Blackstone-and-Hellman-Friedman-Introduce-Ode-with-Anthropic-an-Enterprise-AI-Services-Firm" target="_blank" rel="noopener">→ businesswire.com · 15.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic Plattform · HIPAA Self-Serve · Admin-API</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Anthropic bringt zwei praktische Plattform-Updates für Enterprise-Teams. Ab sofort können Healthcare-Teams die HIPAA-BAA vollständig selbst <mark class="vocab" data-translation="freischalten — to enable / unlock / activate (separable verb)">freischalten</mark> — BAA prüfen, Implementation-Guide herunterladen und in einem einzigen Schritt aktivieren, ohne <mark class="vocab" data-translation="Vertragsprozess — contract process / negotiation workflow">Vertragsprozess</mark>. Parallel dazu ist eine Admin-API für alle Claude-Enterprise-Orgs in Beta: Mitglieder per E-Mail <mark class="vocab" data-translation="nachschlagen — to look up / to search for (separable verb)">nachschlagen</mark>, Rollen ändern, Einladungen verwalten und Gruppen administrieren — alles <mark class="vocab" data-translation="programmatisch — programmatically (adverb from Programm)">programmatisch</mark> über den Anthropic-SDK. Ein klarer Schritt weg vom manuellen Onboarding hin zu echter DevOps-Integration.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Anthropic ships two practical platform updates for enterprise teams. Healthcare orgs can now self-serve the HIPAA Business Associate Agreement entirely — review the BAA, download the implementation guide, and enable HIPAA configuration in one flow, no contract negotiation required. In parallel, an Admin API is now in beta for all Claude Enterprise organizations: look up members by email, change roles, manage invites, and administer groups — all programmatically via the Anthropic SDK. A clear step away from manual onboarding toward real DevOps integration.</p>
+        </div>
+      </div>
+      <a class="source" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">→ platform.claude.com · 14.–15.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Demis Hassabis · KI-FINRA · unabhängige Bewertungsbehörde</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google-DeepMind-Chef Demis Hassabis hat öffentlich für eine unabhängige KI-Bewertungsbehörde nach dem <mark class="vocab" data-translation="Vorbild — model / template / role model (noun)">Vorbild</mark> der US-Finanzaufsicht FINRA <mark class="vocab" data-translation="plädiert — advocated / called for (from plädieren: to make a case)">plädiert</mark>. Das vorgeschlagene <mark class="vocab" data-translation="Gremium — body / committee / panel (formal noun)">Gremium</mark> soll von der Industrie finanziert werden, unabhängige Technikexperten im Aufsichtsrat haben und Frontier-Modelle bis zu 30 Tage vor dem Launch auf Cybersicherheit, Biologie und andere Hochrisiko-Bereiche testen. Das Echo ist bemerkenswert: Sam Altman, Satya Nadella, Sundar Pichai und weitere CEOs haben sich öffentlich hinter die Idee gestellt. Ob daraus Regulierung wird, hängt stark von der US-Regierung ab.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google DeepMind CEO Demis Hassabis publicly called for an independent AI evaluation body modeled on FINRA, the US financial self-regulatory organization. The proposed body would be industry-funded, staffed with independent technical experts, and would test frontier models up to 30 days before release — focusing on cybersecurity, biology, and other high-risk domains. The reception has been striking: Sam Altman, Satya Nadella, Sundar Pichai, and other major CEOs have publicly backed the proposal. Whether it becomes actual regulation depends heavily on the US government's willingness to act.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/" target="_blank" rel="noopener">→ techcrunch.com · 14.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>ChatGPT · Unified Search · 5.000 Zeichen Custom Instructions</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat am 15. Juli zwei UX-Updates für ChatGPT <mark class="vocab" data-translation="ausgerollt — rolled out (past participle of ausrollen; common tech German)">ausgerollt</mark>, die viele Power-User schon länger vermisst haben. Die neue Unified Search findet frühere Chats, Projekte, Bilder und Dokumente in einer einzigen Suche — auf Web, iOS und Android gleichzeitig. Dazu wächst das Custom-Instructions-Limit von 1.500 auf 5.000 Zeichen für Plus-, Pro-, Enterprise- und Business-Nutzer. Kleine Updates, aber wer viel persönlichen Kontext <mark class="vocab" data-translation="reinpackt — packs in / stuffs in (colloquial separable verb)">reinpackt</mark>, merkt den <mark class="vocab" data-translation="Qualitätssprung — quality leap / significant improvement (compound noun)">Qualitätssprung</mark> sofort.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI rolled out two UX improvements to ChatGPT on July 15 that many power users have long wanted. The new unified search finds past chats, projects, images, and documents in a single search — across web, iOS, and Android at once. Custom instructions also got a limit bump from 1,500 to 5,000 characters for Plus, Pro, Enterprise, and Business users. Small wins on paper, but for anyone who packs a lot of personal context into their system prompt, the improvement is immediately noticeable.</p>
+        </div>
+      </div>
+      <a class="source" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">→ help.openai.com · 15.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://code.claude.com/docs/en/whats-new/2026-w28" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.205 · /doctor — die Volluntersuchung</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.205 macht den Slash-Command /doctor zur echten Volluntersuchung: Er prüft jetzt den kompletten Setup-Zustand und kann Probleme direkt beheben — fragt aber immer zuerst nach, bevor etwas geändert wird. Im Check enthalten sind die Installation, ungenutzte Skills und MCP-Server, doppelte CLAUDE.md-Inhalte sowie zu langsame Hooks. Wer seinen Claude-Code-Setup seit einer Weile nicht geprüft hat, sollte einmal kurz /doctor aufrufen — oft spart das <mark class="vocab" data-translation="unerwartete — unexpected (adjective)">unerwartete</mark> Token-Kosten. Das Alias /checkup macht dasselbe.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.205 turns /doctor into a real full checkup: it now diagnoses your setup and can actually fix problems — but always asks for confirmation before changing anything. The check covers installation health, unused skills and MCP servers eating context, duplicate CLAUDE.md content, and slow hooks. If you haven't audited your Claude Code setup in a while, a quick /doctor run is worth it — it often surfaces unexpected token costs. The alias /checkup does exactly the same thing.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/doctor
+/checkup</pre>
+<pre class="cmd-examples"><span class="com"># Vollständigen Setup-Check starten · Run a full setup checkup</span>
+$ /doctor
+
+<span class="com"># Identisches Alias — kürzer zu tippen · Identical alias — shorter to type</span>
+$ /checkup</pre>
+      </section>
+      <a class="source" href="https://code.claude.com/docs/en/whats-new/2026-w28" target="_blank" rel="noopener">→ code.claude.com · 10.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">durchklicken</div>
+        <div class="vocab-translation">to click through · to navigate by clicking</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude kann jetzt selbst durch deine App durchklicken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude can now click through your app on its own.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">maßgeschneidert</div>
+        <div class="vocab-translation">tailor-made · bespoke · custom-built</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Team baut maßgeschneiderte Systeme für jeden Kunden.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The team builds tailor-made systems for every client.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">freischalten</div>
+        <div class="vocab-translation">to enable · to unlock · to activate</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst HIPAA jetzt in einem einzigen Schritt freischalten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can now enable HIPAA in a single step.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Vorbild</div>
+        <div class="vocab-translation">model · template · role model</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das US-Finanzrecht dient hier als Vorbild für die KI-Regulierung.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">US financial law serves as the model for AI regulation here.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy (a feature or update)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI rollt das Update für alle Paid-User gleichzeitig aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI rolls out the update for all paid users simultaneously.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Schalter umlegen</div>
+      <div class="idiom-meaning">to flip the switch · to make a decisive change — wörtlich: "to put the switch around"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem neuen Self-Service-HIPAA kann jeder Admin einfach den Schalter umlegen, ohne IT-Ticket."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the new self-service HIPAA, any admin can just flip the switch without an IT ticket."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Nach dem Code-Review haben wir den Schalter umgelegt und das Feature live genommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"After the code review we flipped the switch and shipped the feature."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to kick the tires</div>
+      <div class="idiom-meaning">to test something before committing — German equivalent: "auf Herz und Nieren testen" (to test thoroughly, literally: "to test to the heart and kidneys")</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We kicked the tires on /doctor for a week before making it the recommended first step."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben /doctor eine Woche lang auf Herz und Nieren getestet, bevor wir ihn als ersten Schritt empfohlen haben."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before migrating to the Admin API, kick the tires in a staging org first."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Vor der Migration zur Admin-API lieber erst in einer Staging-Org auf Herz und Nieren testen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: code.claude.com · businesswire.com · platform.claude.com · techcrunch.com · help.openai.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #61 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
