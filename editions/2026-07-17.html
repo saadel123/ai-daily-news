@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 17.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 17. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #62</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude Code lernt Abstand halten — und Gemini 3.5 Pro sucht noch immer den Ausgang.</h1>
+    <p class="subtitle">Außerdem: Apple verklagt OpenAI, GPT-5.6 packt drei Modelle in eins, und Bonsai 27B läuft auf dem iPhone.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.212</strong>: /fork kopiert die Session in den Hintergrund — arbeite weiter, ohne den Faden zu verlieren</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Gemini 3.5 Pro</strong>: Dritter Deadline-Miss in Folge — Google prüft Notlösung 3.6 Flash als Platzhalter</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Apple vs. OpenAI</strong>: Klage wegen Diebstahl von Betriebsgeheimnissen durch Ex-Mitarbeiter</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>Bonsai 27B</strong>: Erster 27-Mrd.-Parameter-Model auf dem iPhone 17 Pro — 3,9 GB, 11 t/s</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>GPT-5.6</strong>: OpenAI schickt Sol, Luna und Terra ins Rennen — ChatGPT Work startet für alle</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.212" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.212 · /fork im Hintergrund</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">/fork <mark class="vocab" data-translation="erzeugt — creates / generates">erzeugt</mark> ab sofort eine Kopie der laufenden Session im Hintergrund, während du in der aktuellen weitermachst — der alte /fork, der einen In-Session-Subagenten öffnete, heißt ab sofort /subtask. Dazu kommt /resume als Session-Picker für vergangene und <mark class="vocab" data-translation="gelöschte — deleted / removed">gelöschte</mark> Sessions. Neu: ein Session-weites Limit von 200 WebSearch-Aufrufen und 200 Subagenten-Spawns — damit kommen <mark class="vocab" data-translation="Endlosschleifen — infinite loops (runaway loops)">Endlosschleifen</mark> endlich an eine Wand. MCP-Tool-Calls, die länger als zwei Minuten dauern, <mark class="vocab" data-translation="wandern — migrate / shift (here: move to background)">wandern</mark> automatisch in den Hintergrund, damit die Session nutzbar bleibt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">/fork now creates a copy of the running session as a background session while you keep working in the current one — the old /fork behavior (launching an in-session subagent) moves to /subtask. /resume opens a picker of past sessions, including deleted ones, and resumes them as background sessions. New: a session-wide cap of 200 WebSearch calls and 200 subagent spawns, so runaway loops finally hit a wall. MCP tool calls that run longer than two minutes are automatically moved to the background so the session stays usable.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/fork
+/subtask [prompt]
+/resume
+claude auto-mode reset [--yes]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--yes</code></dt>
+          <dd>skip the confirmation prompt when resetting auto-mode to defaults</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Aktuelle Session im Hintergrund kopieren · Fork current session to background</span>
+$ /fork
+
+<span class="com"># In-Session-Subagent starten (alter /fork) · Launch an in-session subagent</span>
+$ /subtask Schreib mir Tests für auth.ts
+
+<span class="com"># Vergangene Session fortsetzen · Resume a past or deleted session</span>
+$ /resume
+
+<span class="com"># Auto-Mode-Config zurücksetzen · Reset auto-mode config to defaults</span>
+$ claude auto-mode reset --yes</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.212" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 17.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Gemini 3.5 Pro · Dritter Deadline-Miss</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Googles nächstes Flaggschiff hat die dritte Deadline <mark class="vocab" data-translation="verpasst — missed / failed to meet">verpasst</mark> — die Neuentwicklung von Grund auf, mit der Google nach Fehlern in der rekursiven Tool-Ausführung und beim SVG-Rendering einen Neustart wagte, ist noch nicht bereit. Intern soll das Modell bei Benchmarks hinter GPT-5.6 Sol liegen und häufig <mark class="vocab" data-translation="halluzinieren — to hallucinate (LLM term)">halluzinieren</mark>. Als <mark class="vocab" data-translation="Notlösung — emergency workaround / stopgap">Notlösung</mark> erwägt Google die Veröffentlichung eines Gemini 3.6 Flash als Platzhalter, während das 2-Mio.-Token-Fenster-Modell mit Deep-Think-Funktion weiter <mark class="vocab" data-translation="ausreift — matures / reaches full readiness">ausreift</mark>. Ein dritter Slip in Folge — und das inmitten des Abgangs von vier Top-Forschern zu Anthropic und OpenAI in einer einzigen Woche.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google's next flagship missed its third consecutive deadline — the full ground-up rebuild, launched after structural failures in recursive tool-calling and SVG generation, still isn't ready. Internally, the model reportedly trails GPT-5.6 Sol on benchmarks and hallucinates frequently. As a stopgap, Google is considering releasing a Gemini 3.6 Flash as a placeholder while the 2-million-token-window model with Deep Think reasoning continues to mature. The third slip in a row — coming in the same week four top researchers departed for Anthropic and OpenAI.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm" target="_blank" rel="noopener">→ techtimes.com · 16.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Apple vs. OpenAI · Betriebsgeheimnisse</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Apple hat OpenAI in Nordkalifornien <mark class="vocab" data-translation="verklagt — sued / taken to court">verklagt</mark> — der Vorwurf: systematischer Diebstahl von <mark class="vocab" data-translation="Betriebsgeheimnissen — trade secrets / proprietary information">Betriebsgeheimnissen</mark> durch ehemalige Apple-Mitarbeiter. Im Kern steht Tang Tan, der frühere Apple-VP und heutige OpenAI-Hardware-Chef, der bei Vorstellungsgesprächen gezielt nach Apple-Interna gefragt haben soll. Hintergrund ist der 6,4-Mrd.-$-Kauf von Jony Ives Startup IO Products durch OpenAI und der Einstieg ins Hardware-Geschäft — direkte Konkurrenz zu iPhone und Mac. Ein <mark class="vocab" data-translation="Bruch — break / rupture / falling-out">Bruch</mark> einer Partnerschaft, die erst 2024 mit viel Applaus gestartet war.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Apple sued OpenAI in Northern California, alleging systematic theft of trade secrets by former Apple employees. Central to the complaint is Tang Tan — former Apple VP and now OpenAI's hardware chief — who allegedly directed candidates to share Apple secrets during job interviews. The backdrop: OpenAI's $6.4B acquisition of Jony Ive's startup IO Products and its push into consumer hardware, directly competing with iPhone and Mac. A dramatic rupture of a partnership that launched to great fanfare just two years ago.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener">→ techcrunch.com · 10.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://prismml.com/news/prismml-releases-bonsai-27b" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>PrismML Bonsai 27B · iPhone-tauglich</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Das Caltech-Startup PrismML hat Bonsai 27B veröffentlicht — ein multimodales 27-Mrd.-Parameter-Modell, das per 1-Bit-Quantisierung auf 3,9 GB <mark class="vocab" data-translation="schrumpft — shrinks / compresses">schrumpft</mark> und auf dem iPhone 17 Pro mit rund 11 Tokens pro Sekunde läuft. Die Basis ist Qwen3.6 27B; Text und Bilder werden akzeptiert, das Modell ist unter Apache 2.0 kostenlos verfügbar. Apple soll die Technologie aktiv <mark class="vocab" data-translation="evaluieren — to evaluate / assess">evaluieren</mark>. Trotz der extremen Kompression erreicht die 1-Bit-Variante noch über 90 Prozent der Full-Precision-Benchmark-Performance — ein ernstzunehmender Kandidat für lokale KI ganz ohne Cloud-<mark class="vocab" data-translation="Anbindung — connection / dependency">Anbindung</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Caltech startup PrismML released Bonsai 27B — a multimodal 27B-parameter model that shrinks to 3.9 GB through 1-bit quantization and runs at roughly 11 tokens per second on an iPhone 17 Pro. It's based on Qwen3.6 27B, accepts text and images, and is freely available under Apache 2.0. Apple is reportedly evaluating the technology. Despite the extreme compression, the 1-bit variant still achieves over 90% of full-precision benchmark performance — a serious contender for local AI inference with no cloud dependency.</p>
+        </div>
+      </div>
+      <a class="source" href="https://prismml.com/news/prismml-releases-bonsai-27b" target="_blank" rel="noopener">→ prismml.com · 14.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>GPT-5.6 · Sol, Luna, Terra</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat GPT-5.6 in drei <mark class="vocab" data-translation="Varianten — variants / flavors">Varianten</mark> herausgebracht: Sol für maximale Leistung beim Coding, Sicherheitsforschung und Biologie, Luna für Speed und Terra als <mark class="vocab" data-translation="ausgewogene — balanced / well-rounded">ausgewogene</mark> Mitte für den Arbeitsalltag. Gleichzeitig startete ChatGPT Work — ein Agent, der Kontext aus angebundenen Apps und Dateien zieht und direkt fertiges Dokument, Tabelle oder Präsentation produziert. GPT-5.6 ist ab sofort das Standardmodell in Microsoft 365 Copilot — in Word, Excel, PowerPoint, Chat und Cowork. Laut OpenAI ist Sol beim agentischen Coding 54 Prozent <mark class="vocab" data-translation="effizienter — more efficient (token-wise)">effizienter</mark> als sein Vorgänger.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI shipped GPT-5.6 in three flavors: Sol for maximum performance on coding, security research, and biology; Luna for speed; and Terra for a balanced everyday workload. Alongside the models, ChatGPT Work launched — an agent that pulls context from connected apps and files and produces finished documents, spreadsheets, and presentations directly. GPT-5.6 is now the default model in Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat, and Cowork. According to OpenAI, Sol is 54% more token-efficient on agentic coding tasks than its predecessor.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">→ openai.com · 09.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.208 · Screen Reader, Vim-Remaps, 7× CPU</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.208 bringt drei Power-User-Features auf einmal: einen Screen-Reader-Modus für barrierefreie Terminals — starte einfach mit dem neuen Flag oder setze die Env-Variable. Für Vim-Fans gibt es jetzt den Setting-Key vimInsertModeRemaps, mit dem du zum Beispiel jj auf Escape <mark class="vocab" data-translation="mappen — to map / bind a key">mappen</mark> kannst. Intern hat das Team die CPU-Auslastung pro Tool-Call um bis zu 7× <mark class="vocab" data-translation="reduziert — reduced / lowered">reduziert</mark> — wer viele Tools <mark class="vocab" data-translation="parallel — in parallel / concurrently">parallel</mark> fährt, wird das spüren. Bonus: CLAUDE_CODE_PROCESS_WRAPPER für Corporate-Umgebungen, die Claude in ein eigenes Launcher-Binary <mark class="vocab" data-translation="einbetten — to embed / wrap">einbetten</mark> müssen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.208 ships three power-user features at once: a screen-reader mode for accessible terminals — just start with the new flag or set the env variable. For vim users, there's now a vimInsertModeRemaps settings key so you can bind, say, jj to Escape. Under the hood, the team cut per-tool-call CPU overhead by up to 7× — anyone running many tools in parallel will notice. Bonus: CLAUDE_CODE_PROCESS_WRAPPER for corporate environments that need to wrap Claude in a custom launcher binary.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --ax-screen-reader [prompt]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--ax-screen-reader</code></dt>
+          <dd>enable screen-reader-friendly output (also: CLAUDE_AX_SCREEN_READER=1 or "axScreenReader": true in settings)</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Screen-Reader-Modus aktivieren · Enable screen reader mode</span>
+$ claude --ax-screen-reader
+
+<span class="com"># Alternativ per Env-Variable · Enable via environment variable instead</span>
+$ CLAUDE_AX_SCREEN_READER=1 claude
+
+<span class="com"># Eigenen Prozess-Wrapper setzen · Set a custom corporate launcher wrapper</span>
+$ export CLAUDE_CODE_PROCESS_WRAPPER=/usr/local/bin/my-launcher</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Platzhalter</div>
+        <div class="vocab-translation">placeholder · stopgap</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini 3.6 Flash soll als Platzhalter einspringen, bis 3.5 Pro fertig ist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini 3.6 Flash is supposed to step in as a placeholder until 3.5 Pro is ready.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Betriebsgeheimnis</div>
+        <div class="vocab-translation">trade secret · proprietary information</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Apples Klage dreht sich um gestohlene Betriebsgeheimnisse aus dem Hardware-Team.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Apple's lawsuit revolves around stolen trade secrets from the hardware team.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">schrumpfen</div>
+        <div class="vocab-translation">to shrink · to compress</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Per 1-Bit-Quantisierung schrumpft das Modell auf unter vier Gigabyte.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Through 1-bit quantization, the model shrinks to under four gigabytes.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausreifen</div>
+        <div class="vocab-translation">to mature · to reach full readiness</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das neue Modell muss noch ausreifen, bevor es für den Produktionseinsatz bereit ist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The new model still needs to mature before it's ready for production use.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">mappen</div>
+        <div class="vocab-translation">to map · to bind (a key)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Im Vim-Modus kannst du jj auf Escape mappen, ohne extra Plugins.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In vim mode you can map jj to Escape without any extra plugins.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Ball fallen lassen</div>
+      <div class="idiom-meaning">to drop the ball · to fumble an opportunity — wörtlich: "to let the ball fall"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Google hat bei Gemini 3.5 Pro dreimal den Ball fallen lassen — jetzt braucht es einen Notplan."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Google dropped the ball on Gemini 3.5 Pro three times — now they need a contingency plan."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lass beim Deploy den Ball nicht fallen — lieber einen Dry-Run vorher."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't drop the ball on the deploy — do a dry run first."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to get tangled up</div>
+      <div class="idiom-meaning">to become stuck in something complex — German equivalent: "sich verhaken"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The model got tangled up in a recursive tool-call loop and never returned."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Modell hat sich in einer rekursiven Tool-Call-Schleife verhakt und ist nie zurückgekommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I got tangled up in the config options and spent an hour going in circles."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich habe mich in den Config-Optionen verhakt und eine Stunde im Kreis gedreht."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · techtimes.com · techcrunch.com · prismml.com · openai.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #62 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

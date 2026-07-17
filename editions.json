@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-17",
+      "edition_number": 62,
+      "headlines": [
+        "Claude Code 2.1.212: /fork kopiert die Session in den Hintergrund — arbeite weiter, ohne den Faden zu verlieren",
+        "Gemini 3.5 Pro: Dritter Deadline-Miss in Folge — Google prüft Notlösung 3.6 Flash als Platzhalter",
+        "Apple vs. OpenAI: Klage wegen Diebstahl von Betriebsgeheimnissen durch Ex-Mitarbeiter",
+        "Bonsai 27B: Erster 27-Mrd.-Parameter-Model auf dem iPhone 17 Pro — 3,9 GB, 11 t/s",
+        "GPT-5.6: OpenAI schickt Sol, Luna und Terra ins Rennen — ChatGPT Work startet für alle"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-17T16:06:06Z"
+    },
+    {
       "date": "2026-07-16",
       "edition_number": 61,
       "headlines": [
