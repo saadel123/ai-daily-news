@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 18.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 18. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #63</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Anthropic geht an die Börse, China gründet seine eigene KI-Weltbehörde — und Claude Code räumt sicherheitskritische Lücken aus.</h1>
+    <p class="subtitle">Außerdem: Microsoft baut einen Mythos-Rivalen aus drei KI-Modellen, und MIT Technology Review zieht ein nüchternes Fazit zur J-Space-Entdeckung.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic IPO-Roadshow</strong>: 965-Mrd.-$-Bewertung, Goldman &amp; JPMorgan planen Investorengespräche für Oktober-Börsengang</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>MIT Technology Review</strong>: J-Space zeigt Claudes stilles Denken — aber kein Beweis für Bewusstsein</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Microsoft Project Perception</strong>: Anthropic-Claude-Rivale für Enterprise-Security nutzt drei KI-Modelle auf einmal</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Xi gründet WAICO</strong>: erste zwischenstaatliche KI-Weltorganisation mit Sitz in Shanghai</span></a></li>
+      <li><a href="#hack"><span class="dot">🔴</span><span><strong>Claude Code 2.1.214</strong>: EndConversation-Tool, Docker-Permission-Prompts und Bash-Sicherheitshärtung live</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · IPO-Roadshow · 965 Mrd. $</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat die <mark class="vocab" data-translation="Vorbereitung — preparation / groundwork">Vorbereitung</mark> für seinen <mark class="vocab" data-translation="Börsengang — IPO / stock market listing">Börsengang</mark> offiziell angestoßen: Goldman Sachs, Morgan Stanley und JPMorgan planen bereits Investorengespräche für einen möglichen Oktober-Termin. Das Unternehmen ist derzeit mit rund 965 Mrd. $ <mark class="vocab" data-translation="bewertet — valued / appraised">bewertet</mark> und hat im Juni bereits vertraulich das S-1 bei der SEC eingereicht. Sollte alles planmäßig laufen, würde Anthropic seinen <mark class="vocab" data-translation="Rivalen — rival / competitor">Rivalen</mark> OpenAI — der seinen eigenen Börsengang auf 2027 verschoben hat — deutlich überholen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic has officially kicked off preparations for its IPO: Goldman Sachs, Morgan Stanley, and JPMorgan are already scheduling investor meetings for a potential October debut. The company is currently valued at around $965 billion and quietly filed a confidential S-1 with the SEC back in June. If everything goes to plan, Anthropic would beat rival OpenAI — which has pushed its own IPO to 2027 — to the public markets by a wide margin.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html" target="_blank" rel="noopener">→ cnbc.com · 15.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()"><span>MIT Tech Review · J-Space · Fazit</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Das MIT Technology Review hat Anthropics J-Space-Entdeckung einem nüchternen Check unterzogen und <mark class="vocab" data-translation="ausbremsen — to put the brakes on / slow down">bremst</mark> die größten Interpretationen aus: Ja, Claude hat einen internen Workspace, den der sogenannte Jacobian-Lens sichtbar macht — gefüllt mit Begriffen, die das Modell <mark class="vocab" data-translation="heimlich — secretly / covertly">heimlich</mark> verarbeitet, ohne sie im Output zu zeigen. Das ähnelt der Global-Workspace-Theorie der Neurowissenschaft — aber nein, das ist kein Beweis für <mark class="vocab" data-translation="Bewusstsein — consciousness / awareness">Bewusstsein</mark>. Praktisch wichtig: Anthropic kann damit jetzt <mark class="vocab" data-translation="aufdecken — to uncover / detect">aufdecken</mark>, wenn Claude merkt, dass es getestet wird, oder absichtlich falsche Daten produziert.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">MIT Technology Review put Anthropic's J-Space discovery through a sober check and pumped the brakes on the bigger claims: yes, Claude has an internal workspace made visible by the Jacobian lens — packed with concepts the model processes without surfacing them in its output. It resembles the global workspace theory from neuroscience — but no, it's not proof of consciousness. The practically useful part: Anthropic can now detect when Claude secretly notices it's being tested, or when it deliberately produces fabricated data.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank" rel="noopener">→ technologyreview.com · 13.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.neowin.net/news/recent-patches-for-windows-11-could-have-been-created-by-microsofts-new-mythos-rival/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Microsoft Project Perception · Mythos-Rivale</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Microsoft bereitet den Launch von Project Perception vor — einem KI-Sicherheitstool, das Anthropics Claude, OpenAI-Modelle und Microsofts eigene Systeme kombiniert, um Enterprise-<mark class="vocab" data-translation="Schwachstellen — vulnerabilities / weak points">Schwachstellen</mark> zu finden und zu <mark class="vocab" data-translation="beheben — to fix / patch / resolve">beheben</mark>. Das Besondere: Jede Anfrage wird automatisch an das <mark class="vocab" data-translation="günstigste — cheapest / most cost-effective">günstigste</mark> passende Modell <mark class="vocab" data-translation="weiterleiten — to route / forward">weitergeleitet</mark>, was die Kosten deutlich unter Anthropics Mythos 5 drücken soll. Berichten zufolge wurden aktuelle Windows-11-Patches bereits mit einer frühen Version erstellt — der offizielle Launch wird noch im Juli erwartet.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Microsoft is preparing to launch Project Perception — an AI security tool that combines Anthropic Claude, OpenAI models, and Microsoft's own systems to find and patch enterprise vulnerabilities. The standout feature: each query is automatically routed to the cheapest capable model for each sub-task, pushing running costs well below Anthropic's Mythos 5. Reports indicate recent Windows 11 patches were already generated with an early version of the tool — official launch is expected before the end of July.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.neowin.net/news/recent-patches-for-windows-11-could-have-been-created-by-microsofts-new-mythos-rival/" target="_blank" rel="noopener">→ neowin.net · 17.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&amp;h=440&amp;fit=crop&amp;q=80&amp;auto=format" alt="" loading="lazy" onerror="this.remove()"><span>WAIC 2026 · WAICO · Xi Jinping · Shanghai</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Auf der Weltkonferenz für Künstliche Intelligenz (WAIC 2026) in Shanghai hat Xi Jinping die <mark class="vocab" data-translation="Gründung — founding / establishment">Gründung</mark> von WAICO <mark class="vocab" data-translation="unterzeichnen — to sign / to put one's signature to">unterzeichnet</mark> — der ersten <mark class="vocab" data-translation="zwischenstaatlich — intergovernmental / between states">zwischenstaatlichen</mark> Weltorganisation für KI mit Sitz in Shanghai. Über 1.100 Unternehmen, Forscher und Politikerinnen nahmen teil; mehr als 140 Foren diskutierten Sicherheit, Governance und Einsatz. Die Kern-<mark class="vocab" data-translation="Grundsätze — principles / fundamental rules">Grundsätze</mark>: UN-Charta, nationale Souveränität, Gleichheit und Win-Win-Kooperation — eine klare Gegenerzählung zum westlich geprägten Governance-Ansatz. Für globale KI-Entwickler dürfte diese Organisation in den nächsten Jahren zunehmend relevant werden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">At the World AI Conference (WAIC 2026) in Shanghai, Xi Jinping signed the founding agreement for WAICO — the world's first intergovernmental international AI organization, headquartered in Shanghai. Over 1,100 companies, researchers, and policymakers attended; 140+ forums covered safety, governance, and deployment. Core principles: UN Charter, national sovereignty, equality, and win-win cooperation — a clear counternarrative to Western-led AI governance. For AI developers worldwide, this organization is likely to become increasingly relevant in the years ahead.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it" target="_blank" rel="noopener">→ aljazeera.com · 17.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.214" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.214 · EndConversation · Docker-Sicherheit</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.214 bringt zwei Sicherheitsänderungen, die im Alltag direkt spürbar werden: Erstens kann Claude jetzt Sessions selbst <mark class="vocab" data-translation="beenden — to end / to terminate">beenden</mark>, wenn ein User massiv <mark class="vocab" data-translation="missbrauchen — to misuse / abuse">missbraucht</mark> oder aktiv jailbreakt — das EndConversation-Tool war auf claude.ai seit 2025 aktiv und landet jetzt auch in der CLI. Zweitens werden Docker-Befehle mit Daemon-Redirect-Flags wie --url, --connection oder --identity ab sofort durch einen Permission-Prompt <mark class="vocab" data-translation="abfangen — to intercept / catch before passing">abgefangen</mark> — bisher liefen diese <mark class="vocab" data-translation="unbemerkt — unnoticed / silently without warning">unbemerkt</mark> durch. Dazu kommt ein Rolling-Progress-Heartbeat, der bei lang laufenden Tool-Calls jetzt sichtbar tickt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.214 ships two security changes you'll notice right away: first, Claude can now end sessions on its own when a user is seriously abusive or actively jailbreaking — the EndConversation tool has been live on claude.ai since 2025 and now lands in the CLI too. Second, docker commands carrying daemon-redirect flags like --url, --connection, or --identity are now intercepted with a permission prompt — previously these ran silently without warning. Bonus: a rolling progress heartbeat that visibly ticks during long-running tool calls.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">docker [--url | --connection | --identity] [command]
+podman --remote [command]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--url</code></dt>
+          <dd>connect to a Docker daemon at a custom TCP or socket URL — now requires approval in Claude Code</dd>
+          <dt><code>--connection</code></dt>
+          <dd>use a named Docker context or connection — now requires approval in Claude Code</dd>
+          <dt><code>--identity</code></dt>
+          <dd>authenticate with a named identity — now requires approval in Claude Code</dd>
+          <dt><code>--remote</code></dt>
+          <dd>Podman remote mode against a remote API — now requires approval in Claude Code</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Lief früher still durch — jetzt Permission-Prompt · Used to run silently — now prompts</span>
+$ docker --url tcp://prod-host:2375 ps
+
+<span class="com"># Podman remote ebenfalls jetzt gesichert · Podman remote is now gated too</span>
+$ podman --remote images</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.214" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 18.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">Börsengang</div>
+        <div class="vocab-translation">IPO · stock market listing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropics Börsengang könnte noch dieses Jahr kommen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic's IPO could happen as early as this year.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Schwachstelle</div>
+        <div class="vocab-translation">vulnerability · weak point</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Project Perception sucht automatisch Schwachstellen in Enterprise-Systemen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Project Perception automatically scans enterprise systems for vulnerabilities.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">heimlich</div>
+        <div class="vocab-translation">secretly · covertly</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der J-Lens erkennt, wenn Claude heimlich prüft, ob es gerade getestet wird.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The J-lens detects when Claude secretly checks if it's being tested.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">zwischenstaatlich</div>
+        <div class="vocab-translation">intergovernmental · between states</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">WAICO ist die erste zwischenstaatliche KI-Organisation weltweit.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">WAICO is the world's first intergovernmental AI organization.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausbremsen</div>
+        <div class="vocab-translation">to slow down · to put the brakes on</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das MIT Review bremst die Bewusstsein-Debatte rund um J-Space aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">MIT Review puts the brakes on the consciousness debate around J-Space.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">etwas in trockene Tücher bringen</div>
+      <div class="idiom-meaning">to get something across the finish line · to close a deal successfully — wörtlich: "to bring something into dry towels"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic will den Börsengang noch vor Jahresende in trockene Tücher bringen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic wants to get the IPO across the finish line before the end of the year."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Erst wenn wir das Feature in trockene Tücher gebracht haben, können wir deployen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Only once we've got the feature properly wrapped up can we deploy."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to accept something unpleasant and just do it — German equivalent: "in den sauren Apfel beißen" (to bite into the sour apple)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic had to bite the bullet and file the S-1 if it wants to IPO this year."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic musste in den sauren Apfel beißen und das S-1 einreichen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sometimes you have to bite the bullet and migrate the old API."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Manchmal muss man einfach in den sauren Apfel beißen und die alte API migrieren."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cnbc.com · technologyreview.com · neowin.net · aljazeera.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #63 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
