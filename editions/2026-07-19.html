@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 19.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 19. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~3 min hören</span>
+    <span class="preview-tag">Edition #64</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude macht geteilte Dashboards lebendig — und tritt beim Skill-Auto-Run einen Schritt zurück.</h1>
+    <p class="subtitle">Außerdem: Google gibt NotebookLM einen neuen Namen mit Gemini-Power, und die Enterprise Admin API öffnet ihr Tor.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Artifacts</strong>: geteilte Dashboards rufen jetzt deine MCP-Daten live ab — Team und Enterprise</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Claude Code 2.1.215</strong>: /verify und /code-review laufen nicht mehr automatisch — du rufst sie selbst</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Gemini Notebook</strong>: Google benennt NotebookLM um — 30 Mio. Nutzer, Gemini 3.5 für AI Pro im Anflug</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟧</span><span><strong>Anthropic Enterprise Admin API</strong> in Beta: Mitglieder, Gruppen und Rollen programmatisch verwalten</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>Hack</strong>: claude auto-mode reset — eine Zeile, und die Auto-Mode-Konfiguration ist wieder sauber</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://docs.anthropic.com/en/release-notes/claude-io" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Artifacts · Live MCP · Dashboards</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic verwandelt statische Claude-Code-Artifacts in echte Live-Dashboards: <mark class="vocab" data-translation="geteilte Seiten — shared pages">Geteilte Seiten</mark> können jetzt bei jedem Aufruf deine MCP-Connector-Daten abfragen — ein Dashboard zeigt also immer den aktuellen Stand, nicht den Stand vom letzten Build. Jeder Aufruf läuft über die Verbindungen des <mark class="vocab" data-translation="Aufrufer — viewer / caller">Aufrufers</mark>, und Nutzer bestätigen den Zugriff beim ersten Connector-Call. Für Teams und Enterprise ist das ein echter <mark class="vocab" data-translation="Gamechanger — game changer (English noun used as German)">Gamechanger</mark>: Dashboards, PR-Walkthroughs und Reports bleiben aktuell, ohne dass jemand die Seite neu bauen muss. Okta-Provisioning erlaubt es Admins außerdem, Connector-Zugriff zentral für die ganze Organisation zu steuern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic is turning Claude Code's static artifacts into real live dashboards: shared pages can now call your MCP connector data on every view, so a dashboard always shows current state rather than the snapshot from the last build. Each call runs through the viewer's own connections, with users granting access before the first connector call. For Team and Enterprise users this is a genuine game changer — dashboards, PR walkthroughs, and reports stay fresh without anyone needing to rebuild the page. Admins can also provision connector access centrally for the whole organization via Okta.</p>
+        </div>
+      </div>
+      <a class="source" href="https://docs.anthropic.com/en/release-notes/claude-io" target="_blank" rel="noopener">→ docs.anthropic.com · 19.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.215" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.215 · /verify · /code-review</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Claude Code 2.1.215 ändert das Verhalten bei Skills: der Agent startet /verify und /code-review ab sofort nicht mehr <mark class="vocab" data-translation="von sich aus — on its own / unprompted">von sich aus</mark> — du rufst sie auf, wenn du sie brauchst. Das macht Sinn, denn automatisch <mark class="vocab" data-translation="angestoßene — triggered / kicked off">angestoßene</mark> Review-Skills haben manchmal unerwünschte Nebeneffekte erzeugt oder den eigentlichen Workflow verlangsamt. Wer auf automatische PR-Reviews angewiesen war, kann alternativ einen Kommentar im PR setzen, der Claude anweist, bei jedem Push zu reviewen. Eine kleine Verhaltensänderung, die den <mark class="vocab" data-translation="Arbeitsrhythmus — work rhythm / workflow cadence">Arbeitsrhythmus</mark> spürbar ruhiger macht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Claude Code 2.1.215 changes how skills behave: the agent no longer runs /verify and /code-review on its own — you invoke them when you need them. This makes sense, as auto-triggered review skills sometimes produced unwanted side effects or slowed the main workflow. Users who relied on automatic PR reviews can instead drop a comment in the PR instructing Claude to review on every push. A small behavioral change that meaningfully calms the workflow rhythm.</p>
+        </div>
+      </div>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.215" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 19.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://9to5google.com/2026/07/16/notebooklm-gemini-notebook/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google · NotebookLM → Gemini Notebook</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Google hat NotebookLM in Gemini Notebook <mark class="vocab" data-translation="umgetauft — renamed / rebranded (lit: re-baptized)">umgetauft</mark> — 30 Millionen Nutzer und über 600.000 Organisationen arbeiten bereits damit. Der neue Name passt zum Rest des Gemini-Ökosystems, und das Logo bekommt den vertrauten blauen Farbverlauf. Wer AI Ultra hat, rollt bereits Gemini 3.5 und die neue Antigravity-Engine ein, die sichere Code-Ausführung und Datenanalyse direkt im Notebook ermöglicht — AI-Pro-Nutzer kommen bald dran. Gemini Notebook bleibt ein eigenständiges Research-Tool, wird aber enger in Google Search AI Mode und andere Produkte eingebunden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Google has rebranded NotebookLM as Gemini Notebook — 30 million users and over 600,000 organizations are already on board. The new name fits the broader Gemini ecosystem, and the logo gets the familiar blue gradient. AI Ultra subscribers are already rolling out Gemini 3.5 and the new Antigravity engine, which enables secure code execution and data analysis directly in notebooks — AI Pro users are next. Gemini Notebook stays a standalone research tool but will integrate more tightly with Google Search AI Mode and other products.</p>
+        </div>
+      </div>
+      <a class="source" href="https://9to5google.com/2026/07/16/notebooklm-gemini-notebook/" target="_blank" rel="noopener">→ 9to5google.com · 16.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Enterprise Admin API · Beta</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Anthropic hat für alle Claude Enterprise Organisationen eine neue Admin API in die Beta gehoben: Admins können damit Mitglieder auflisten, per E-Mail <mark class="vocab" data-translation="nachschlagen — to look up / to search by">nachschlagen</mark>, Rollen ändern, Mitglieder entfernen, Einladungen verschicken und Gruppen verwalten — alles <mark class="vocab" data-translation="programmatisch — programmatically">programmatisch</mark>. Das macht es deutlich einfacher, große Orgs automatisch mit Identity-Providern zu synchronisieren, anstatt alles manuell im Dashboard zu klicken. Benutzerdefinierte Rollen lassen sich ebenfalls über die API auslesen. Wer heute noch manuell <mark class="vocab" data-translation="provisioniert — provisions (IT term used in German)">provisioniert</mark>, sollte die neue API unbedingt im Blick haben.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Anthropic has promoted a new Admin API to beta for all Claude Enterprise organizations: admins can list members, look them up by email, change roles, remove members, send and withdraw invites, and manage groups — all programmatically. This makes it much easier to auto-sync large organizations with identity providers rather than clicking through the dashboard manually. Custom roles can also be read via the API. Anyone still provisioning manually should definitely put this on their radar.</p>
+        </div>
+      </div>
+      <a class="source" href="https://docs.anthropic.com/en/release-notes/api" target="_blank" rel="noopener">→ docs.anthropic.com · 19.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.212" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.212 · auto-mode reset</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.212 hat neben dem bekannten Fork-Feature noch einen handlichen neuen Befehl <mark class="vocab" data-translation="mitgebracht — brought along / shipped with it">mitgebracht</mark>: auto-mode reset setzt die Auto-Mode-Konfiguration auf die <mark class="vocab" data-translation="Werksvorgaben — factory defaults">Werksvorgaben</mark> zurück — ein Aufruf genügt. Besonders praktisch, wenn Auto Mode sich nach einem Update anders verhält und du nicht weißt, welche Einstellung das <mark class="vocab" data-translation="verursacht hat — caused / triggered">verursacht hat</mark>. Einmal resetten, sauber von vorne anfangen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.212 — alongside the well-known fork feature — also shipped a handy new command: auto-mode reset restores the auto-mode configuration to its factory defaults in one call. Especially useful when auto mode behaves unexpectedly after an update and you can't pinpoint which setting is to blame. Reset once, start clean.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude auto-mode reset</pre>
+<pre class="cmd-examples"><span class="com"># Alle Auto-Mode-Einstellungen auf Standard zurücksetzen · Reset all auto-mode settings to defaults</span>
+$ claude auto-mode reset</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.212" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 17.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">umtaufen</div>
+        <div class="vocab-translation">to rename · to rebrand (lit: to re-baptize)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google tauft NotebookLM in Gemini Notebook um — der Name passt endlich zum Ökosystem.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google renames NotebookLM to Gemini Notebook — the name finally fits the ecosystem.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Aufruf</div>
+        <div class="vocab-translation">the call · the invocation (IT: method/API call)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Jeder Aufruf der Artifact-Seite zieht frische Daten aus deinen MCP-Connections.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Every call to the artifact page pulls fresh data from your MCP connections.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">anstoßen</div>
+        <div class="vocab-translation">to trigger · to kick off (also: to clink glasses)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Claude stößt /code-review nicht mehr automatisch an — du entscheidest, wann der Review startet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Claude no longer automatically kicks off /code-review — you decide when the review starts.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Werksvorgabe</div>
+        <div class="vocab-translation">the factory default · the out-of-box setting</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit claude auto-mode reset kehrst du in einer Sekunde zu den Werksvorgaben zurück.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With claude auto-mode reset you're back to factory defaults in one second.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">provisionieren</div>
+        <div class="vocab-translation">to provision (IT term, fully adopted in German)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Admins können Nutzer jetzt per API provisionieren, statt jeden Zugang manuell anzulegen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Admins can now provision users via API instead of creating each account manually.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">einen Schritt zurücktreten</div>
+      <div class="idiom-meaning">to step back · to take a step back — wörtlich: "to step one step backward" — used when you deliberately pull back from something that ran on autopilot</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Claude Code tritt beim Auto-Run einen Schritt zurück — du entscheidest jetzt, wann der Review startet."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Claude Code steps back on auto-run — you now decide when the review kicks off."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bevor du die Migration startest, tritt einen Schritt zurück und prüf noch mal den Plan."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before you start the migration, step back and double-check the plan."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to step back</div>
+      <div class="idiom-meaning">to pause and reconsider · to take a broader view — German equivalent: "einen Schritt zurücktreten" or "Abstand nehmen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Step back for a second — does auto-reviewing every commit actually help, or just add noise?"</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Tritt mal einen Schritt zurück — hilft automatisches Review bei jedem Commit wirklich, oder macht es nur Lärm?"</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"When the dashboard looks wrong, step back before you start debugging — maybe it just needs a refresh."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn das Dashboard komisch aussieht, tritt erst mal zurück, bevor du debuggst — vielleicht braucht es nur ein Refresh."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: docs.anthropic.com · github.com/anthropics/claude-code · 9to5google.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #64 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

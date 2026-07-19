@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-19",
+      "edition_number": 64,
+      "headlines": [
+        "Claude Artifacts: geteilte Dashboards rufen jetzt deine MCP-Daten live ab — Team und Enterprise",
+        "Claude Code 2.1.215: /verify und /code-review laufen nicht mehr automatisch — du rufst sie selbst",
+        "Google Gemini Notebook: NotebookLM umgetauft — 30 Mio. Nutzer, Gemini 3.5 für AI Pro im Anflug",
+        "Anthropic Enterprise Admin API in Beta: Mitglieder, Gruppen und Rollen programmatisch verwalten",
+        "Hack: claude auto-mode reset — eine Zeile, und die Auto-Mode-Konfiguration ist wieder sauber"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 3,
+      "generated_at": "2026-07-19T16:00:00Z"
+    },
+    {
       "date": "2026-07-18",
       "edition_number": 63,
       "headlines": [
