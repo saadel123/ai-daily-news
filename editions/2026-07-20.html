@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 20. Juli 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 20. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #65</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Fable 5 zieht in den Abo-Alltag ein — und Kimi K3 bricht den Open-Weight-Weltrekord.</h1>
+    <p class="subtitle">Außerdem: Thinking Machines' erstes Modell ist open-weight, NVIDIA bringt Roboter-KI auf den Edge und Current AI startet mit 400 Mio. $ für öffentliche KI-Infrastruktur.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Fable 5</strong> in Max und Team Premium ab heute: 50 % der Limits — Pro-Nutzer bekommen $100 Guthaben</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟠</span><span><strong>Kimi K3</strong>: Moonshot AIs 2,8-Billionen-Parameter-MoE schlägt Opus 4.8 — Open Weights am 27. Juli</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>NVIDIA Cosmos 3 Edge</strong>: 4B-Parameter-World-Model für Roboter direkt auf Jetson und RTX</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Thinking Machines Inkling</strong>: Mira Muratis erster Open-Weight-MoE mit 975 Mrd. Parametern</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>Current AI</strong>: $400 Mio. für gemeinnützige KI-Infrastruktur — Frankreich, DeepMind und Salesforce dabei</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://support.claude.com/en/articles/15424964-claude-fable-5-on-your-plan" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Fable 5 · jetzt in Max und Team Premium</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Ab heute ist Claude Fable 5 <mark class="vocab" data-translation="fester Bestandteil — permanent part, integral component">fester Bestandteil</mark> aller Max- und Team-Premium-Pläne — auf 50 % der normalen Nutzungslimits. Wer bisher auf ein Extra-Kontingent gewartet hat, kann Fable jetzt direkt aus dem Plan nutzen, ohne extra Credits verbrauchen zu müssen. Pro-Nutzer gehen dabei nicht <mark class="vocab" data-translation="leer ausgehen — to come away empty-handed">leer aus</mark>: Sie erhalten ein einmaliges <mark class="vocab" data-translation="Guthaben — credit balance, credit amount">Guthaben</mark> von 100 $ und behalten den Zugang über Credits. Die Nachfrage war seit dem Launch schwer <mark class="vocab" data-translation="vorherzusagen — to predict, to forecast">vorherzusagen</mark>; mit der heutigen Umstellung signalisiert Anthropic, dass die Kapazität jetzt gesichert ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Starting today, Claude Fable 5 is a permanent part of all Max and Team Premium plans — at 50% of the usual usage limits. If you've been waiting to use Fable without burning through extra credits, today's the day. Pro users won't be left empty-handed: they'll receive a one-time $100 credit and keep access to Fable through usage credits. Demand has been genuinely hard to predict since launch; today's change signals that Anthropic finally has capacity locked down.</p>
+        </div>
+      </div>
+      <a class="source" href="https://support.claude.com/en/articles/15424964-claude-fable-5-on-your-plan" target="_blank" rel="noopener">→ support.claude.com · 20.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Kimi K3 · 2,8-Bio.-Parameter-Open-Weight-Weltrekord</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Moonshot AI hat mit Kimi K3 das größte Open-Weight-Modell aller Zeiten <mark class="vocab" data-translation="veröffentlicht — released, published">veröffentlicht</mark> — 2,8 Billionen Parameter als Mixture-of-Experts-Architektur, nativ multimodal und mit 1-Millionen-Token-Kontext. Beim API-Launch am 16. Juli landet K3 auf Platz vier im globalen Frontier-Ranking, knapp hinter Fable 5 und GPT-5.6 Sol, aber vor Opus 4.8. Wer das Modell selbst hosten will, muss bis zum 27. Juli warten — dann erscheinen die Open Weights unter einer Modified-MIT-Lizenz. Zu $3 pro Million Input-Tokens ist K3 ein <mark class="vocab" data-translation="ernstzunehmend — to be taken seriously, serious contender">ernstzunehmender</mark> Kandidat für <mark class="vocab" data-translation="anspruchsvolle — demanding, sophisticated">anspruchsvolle</mark> Reasoning-Workloads.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Moonshot AI has shipped Kimi K3, the largest open-weight model ever — 2.8 trillion parameters in a mixture-of-experts architecture, natively multimodal with a 1M-token context window. At API launch on July 16, K3 lands fourth in the global frontier ranking — just behind Fable 5 and GPT-5.6 Sol, but ahead of Opus 4.8. Open weights arrive by July 27 under a Modified-MIT licence for self-hosting, pending the hardware a 2.8T MoE demands. At $3 per million input tokens, K3 is a serious contender for demanding reasoning workloads.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals" target="_blank" rel="noopener">→ bloomberg.com · 17.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>NVIDIA Cosmos 3 Edge · Physical AI on-device</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Nvidia hat Cosmos 3 Edge vorgestellt — ein 4-Milliarden-Parameter-World-Model, das direkt auf Jetson-Hardware, RTX-GPUs und DGX-Systemen <mark class="vocab" data-translation="läuft — runs, operates (here: executes on-device)">läuft</mark>, ohne Cloud-Verbindung. Das Modell verarbeitet Kamera- und Sensordaten lokal in Echtzeit und <mark class="vocab" data-translation="steuert — controls, steers">steuert</mark> damit physische Aktionen von Robotern und autonomen Fahrzeugen. 22 japanische Fertigungs- und Robotik-Unternehmen — darunter Fujitsu, Hitachi und Kawasaki Heavy Industries — treten dem Cosmos-<mark class="vocab" data-translation="Konsortium — consortium, coalition">Konsortium</mark> bei, um eigene Physical-AI-Modelle zu entwickeln. Jensen Huang <mark class="vocab" data-translation="begleitete — accompanied, presented alongside">begleitete</mark> den Launch mit einem zweitägigen Japan-Besuch.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Nvidia introduced Cosmos 3 Edge — a 4-billion-parameter world model that runs on-device on Jetson hardware, RTX GPUs and DGX systems with no cloud dependency. The model processes camera and sensor data locally in real time, translating that directly into physical actions for robots and autonomous vehicles. Twenty-two Japanese manufacturing and robotics companies — including Fujitsu, Hitachi and Kawasaki Heavy Industries — are joining the Cosmos coalition to co-develop their own physical AI foundation models. Jensen Huang accompanied the launch with a two-day visit to Japan.</p>
+        </div>
+      </div>
+      <a class="source" href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" target="_blank" rel="noopener">→ nvidianews.nvidia.com · 16.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://siliconangle.com/2026/07/15/mira-muratis-thinking-machines-drops-inkling-open-weights-model-anyone-can-access/" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Thinking Machines Inkling · 975B Open-Weight MoE</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Mira Muratis neues Lab Thinking Machines hat sein erstes Modell veröffentlicht: Inkling ist ein Mixture-of-Experts-System mit 975 Milliarden Gesamtparametern — pro Aufgabe werden davon rund 41 Milliarden <mark class="vocab" data-translation="aktiviert — activated, drawn on for a given task">aktiviert</mark>. Das Training umfasst 45 Billionen Token nativ multimodal: Text, Bild, Audio und Video. Inkling ist Open-Weight auf Hugging Face <mark class="vocab" data-translation="verfügbar — available, accessible">verfügbar</mark> und lässt sich über Thinking Machines' eigene Tinker-Plattform direkt <mark class="vocab" data-translation="finetunen — to fine-tune (English verb used in German dev speech)">finetunen</mark>. Das Modell ist bewusst kein fertiges Produkt, sondern ein <mark class="vocab" data-translation="Startpunkt — starting point, base to build from">Startpunkt</mark> für domänenspezifische Spezialisierung.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Mira Murati's new lab Thinking Machines has released its first model: Inkling is a mixture-of-experts system with 975 billion total parameters — about 41 billion of which are active for any given task. Training ran across 45 trillion tokens natively multimodal: text, image, audio and video. Inkling is open-weight on Hugging Face and can be fine-tuned directly through Thinking Machines' own Tinker platform. Rather than a finished product, Inkling is deliberately positioned as a starting point for domain-specific specialization.</p>
+        </div>
+      </div>
+      <a class="source" href="https://siliconangle.com/2026/07/15/mira-muratis-thinking-machines-drops-inkling-open-weights-model-anyone-can-access/" target="_blank" rel="noopener">→ siliconangle.com · 15.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Current AI · $400 Mio. für öffentliche KI-Infrastruktur</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Current AI ist eine <mark class="vocab" data-translation="gemeinnützige — nonprofit, charitable (adjective)">gemeinnützige</mark> Organisation, die zeigen will, dass KI im öffentlichen Interesse auch im großen <mark class="vocab" data-translation="Maßstab — scale, scope">Maßstab</mark> funktioniert. Mit $400 Mio. Finanzierungszusagen — darunter $100 Mio. von der französischen Regierung sowie Ford Foundation, MacArthur Foundation, DeepMind und Salesforce — baut die Organisation offene KI-Infrastruktur für alle. Zu den Projekten zählen Alpha Chat (ein Open-Source-Chatbot mit Hugging Face, Mozilla und MIT Media Lab) sowie Suno Sutra, ein Offline-Gerät für 22 indische Sprachen. CEO Ayah Bdeir setzt damit ein klares Signal gegen die <mark class="vocab" data-translation="Monopolisierung — monopolization, concentration of control">Monopolisierung</mark> von KI durch wenige Konzerne.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Current AI is a nonprofit out to prove that public-interest AI can work at scale. With $400M in committed funding — including $100M from the French government plus the Ford Foundation, MacArthur Foundation, DeepMind and Salesforce — the organization is building open AI infrastructure for everyone. Projects include Alpha Chat (an open-source chatbot co-built with Hugging Face, Mozilla and MIT Media Lab) and Suno Sutra, an offline device supporting 22 Indian languages. CEO Ayah Bdeir is staking a clear position against the monopolization of AI by a handful of companies.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/" target="_blank" rel="noopener">→ techcrunch.com · 19.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.208 · Screen-Reader-Modus für Barrierefreiheit</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.208 bringt einen eingebauten <mark class="vocab" data-translation="Barrierefreiheitsmodus — accessibility mode">Barrierefreiheitsmodus</mark> für Screenreader wie VoiceOver und NVDA: Spinner, ANSI-Farben und animierte Updates verschwinden, und stattdessen kommt klarer, <mark class="vocab" data-translation="linearer Plaintext — linear plain text, unformatted sequential output">linearer Plaintext</mark> raus. Ein Screenreader kann so sauber durch jede Ausgabe navigieren, ohne an Steuersequenzen zu <mark class="vocab" data-translation="hängen — to get stuck, to hang (informal)">hängen</mark>. Du kannst den Modus beim Starten per Flag aktivieren, als Umgebungsvariable in deiner Shell-Config hinterlegen oder dauerhaft in der Konfigurationsdatei einschalten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.208 ships a built-in accessibility mode for screen reader users — VoiceOver, NVDA, JAWS and friends. Spinners, ANSI color codes and animated text updates are switched off, replaced with plain linear text so any screen reader can navigate the output cleanly without tripping over control sequences. Set it at startup with a flag, export it as an environment variable in your shell config, or activate it permanently in settings.json.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude --ax-screen-reader</pre>
+        <dl class="cmd-flags">
+          <dt><code>--ax-screen-reader</code></dt>
+          <dd>disable spinners, ANSI colors, and animations; output plain linear text</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Flag beim Start setzen · Set the flag at startup</span>
+$ claude --ax-screen-reader
+
+<span class="com"># Dauerhaft als Umgebungsvariable · Permanently via env var</span>
+$ export CLAUDE_AX_SCREEN_READER=1</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.208" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 14.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">fester Bestandteil</div>
+        <div class="vocab-translation">permanent part · integral component</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Fable 5 wird fester Bestandteil meines täglichen Workflows.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Fable 5 becomes a permanent part of my daily workflow.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">leer ausgehen</div>
+        <div class="vocab-translation">to come away empty-handed</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Diesmal gehen die Pro-Nutzer nicht leer aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">This time the Pro users won't come away empty-handed.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">anspruchsvoll</div>
+        <div class="vocab-translation">demanding · sophisticated · challenging</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das ist eine anspruchsvolle Reasoning-Pipeline für unser Team.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">That's a demanding reasoning pipeline for our team.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wir rollen das neue Modell heute Nacht in die Produktion aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">We're rolling out the new model to production tonight.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">gemeinnützig</div>
+        <div class="vocab-translation">nonprofit · charitable</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Current AI ist als gemeinnützige Organisation strukturiert.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Current AI is structured as a nonprofit organization.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">einen Fuß in die Tür bekommen</div>
+      <div class="idiom-meaning">to get a foot in the door — wörtlich: "to get a foot into the door"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Thinking Machines bekommt mit Inkling einen Fuß in die Tür des Frontier-Modell-Markts."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Inkling, Thinking Machines gets a foot in the door of the frontier model market."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn dein erster Open-Source-Beitrag angenommen wird, hast du den Fuß in der Tür."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If your first open-source contribution gets accepted, you've got a foot in the door."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to hit the ground running</div>
+      <div class="idiom-meaning">to start fast and effectively from the very first moment — German equivalent: "sofort durchstarten"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Kimi K3 hit the ground running — fourth in the frontier ranking within hours of launch."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Kimi K3 startet sofort durch — innerhalb weniger Stunden auf Platz vier im Frontier-Ranking."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We need a new hire who can hit the ground running — no six-week onboarding ramp."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir brauchen jemanden, der sofort durchstartet — kein sechswöchiges Onboarding."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: support.claude.com · bloomberg.com · nvidianews.nvidia.com · siliconangle.com · techcrunch.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #65 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-20",
+      "edition_number": 65,
+      "headlines": [
+        "Claude Fable 5 in Max und Team Premium ab heute: 50 % der Limits — Pro-Nutzer bekommen $100 Guthaben",
+        "Kimi K3: Moonshot AIs 2,8-Billionen-Parameter-MoE schlägt Opus 4.8 — Open Weights am 27. Juli",
+        "NVIDIA Cosmos 3 Edge: 4B-Parameter-World-Model für Roboter direkt auf Jetson und RTX",
+        "Thinking Machines Inkling: Mira Muratis erster Open-Weight-MoE mit 975 Mrd. Parametern",
+        "Current AI: $400 Mio. für gemeinnützige KI-Infrastruktur — Frankreich, DeepMind und Salesforce dabei"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-20T16:00:00Z"
+    },
+    {
       "date": "2026-07-19",
       "edition_number": 64,
       "headlines": [
