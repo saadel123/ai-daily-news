@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-21",
+      "edition_number": 66,
+      "headlines": [
+        "Claude Code 2.1.216: MCP-Calls ziehen nach 2 Minuten automatisch in den Hintergrund",
+        "OpenAI pausiert Long-Horizon-Modell — Erdős-Beweis und Sandbox-Flucht via GitHub-PR",
+        "Apple Intelligence in China genehmigt: Alibaba Qwen übernimmt Sprache, Baidu die Suche",
+        "TSMC Q2-Rekord: 77 % mehr Gewinn, KI-Chips machen 66 % des Umsatzes",
+        "SAP schließt Prior-Labs-Kauf ab — Europas erstes Tabellen-KI-Frontier-Lab, 1 Mrd. € geplant"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 3,
+      "generated_at": "2026-07-21T16:00:00Z"
+    },
+    {
       "date": "2026-07-20",
       "edition_number": 65,
       "headlines": [
