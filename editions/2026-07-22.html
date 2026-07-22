@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Mittwoch, 22.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Mittwoch · 22. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #67</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>AMD steckt 5 Mrd. $ in Anthropic — und ChatGPT bekommt zum ersten Mal Werbung.</h1>
+    <p class="subtitle">Außerdem: Google startet drei neue Gemini-Modelle und kündigt Gemini-4-Pretraining an, Nadella nennt Fable "editorially controlled" — und Südkorea plant gratis KI für 51 Millionen Bürger.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>AMD × Anthropic</strong>: bis zu 5 Mrd. $ Investition — 2 GW Instinct-MI450-Chips ab H1 2027</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Nadella</strong> nennt Fable "editorially controlled" — Kritik an Anthropics neuen Sicherheitsfiltern</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>ChatGPT-Ads</strong> sind live — OpenAI öffnet Self-Serve-Ads-Manager für Advertiser</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>Gemini 3.6 Flash</strong> startet: 17 % günstiger, 1 Mio. Token — Gemini 4 im Pretraining</span></a></li>
+      <li><a href="#article-5"><span class="dot">🌍</span><span><strong>Südkorea</strong> plant "AI for All" — kostenloses Bürger-KI als erstes G20-Land bis Dezember</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>AMD × Anthropic · 5 Mrd. $ · 2 GW Chips</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">AMD und Anthropic haben heute einen Deal verkündet, der die Chip-Branche <mark class="vocab" data-translation="aufhorchen lassen — to make people take notice / sit up and listen">aufhorchen lässt</mark>: AMD investiert bis zu 5 Mrd. $ als strategische <mark class="vocab" data-translation="Beteiligung — equity stake / shareholding">Beteiligung</mark>, Anthropic kauft dafür bis zu 2 Gigawatt der neuen Instinct-MI450-GPUs — die erste Tranche startet im ersten Halbjahr 2027. Die Chips kommen in AMDs Helios-Rack-Lösungen zusammen mit EPYC-Venice-CPUs und Pensando-Netzwerk-Hardware. Für AMD ist es der erste direkte Einstieg bei Anthropic; für Anthropic bedeutet der Deal eine echte Alternative zu Nvidias <mark class="vocab" data-translation="Dominanz — dominance">Dominanz</mark> — und reichlich Rechenpower für das Training zukünftiger Claude-Modelle.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">AMD and Anthropic today announced a deal turning heads across the chip world: AMD commits up to $5B as a strategic equity stake, and Anthropic will in return purchase up to 2 gigawatts of AMD Instinct MI450 GPUs, with the first deliveries starting in H1 2027. The chips ship inside AMD Helios rack-scale solutions alongside EPYC Venice CPUs and Pensando networking. For AMD, it's the first direct stake in Anthropic; for Anthropic, the deal represents a real alternative to Nvidia's dominance — and a massive compute runway for training future Claude models.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank" rel="noopener">→ cnbc.com · 22.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/16/microsoft-ceo-says-anthropic-fable-request-policy-doesnt-make-sense.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Nadella · Fable "editorially controlled"</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Microsoft-CEO Satya Nadella hat in einem internen Copilot-Meeting scharfe Kritik an Fable geübt: "Wann hatte ein Kreativwerkzeug zuletzt so eine redaktionelle Kontrolle?" Hintergrund: Nach dem Export-Stopp im Juni und der Rückkehr von Fable am 1. Juli hat Anthropic neue Sicherheitsfilter eingeführt, die laut eigenen Angaben "einen etwas höheren Anteil harmloser Anfragen <mark class="vocab" data-translation="blockieren — to block / reject (a request)">blockieren</mark>" als zuvor. Für Microsoft, das Copilot auf Fable aufgebaut hat, <mark class="vocab" data-translation="trübt — clouds / tarnishes">trübt</mark> jeder abgefangene Request die Nutzererfahrung. Besonders <mark class="vocab" data-translation="pikant — pointed / ironic / noteworthy (figurative)">pikant</mark>: Microsoft investierte erst im November 5 Mrd. $ in Anthropic und verpflichtete sich zu 30 Mrd. $ auf Azure.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Microsoft CEO Satya Nadella aired sharp criticism of Fable in an internal Copilot engineering meeting: "When was the last time you had a creation tool that was so editorially controlled?" The backdrop: after the June export ban and Fable's return on July 1, Anthropic added new safety filters that, by its own admission, "flag a slightly higher fraction of harmless requests" than before. For Microsoft, which built Copilot on Fable, every intercepted request hurts the user experience. The criticism is especially pointed given that Microsoft invested $5B in Anthropic just last November and committed $30B to Azure in a separate deal.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/16/microsoft-ceo-says-anthropic-fable-request-policy-doesnt-make-sense.html" target="_blank" rel="noopener">→ cnbc.com · 16.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/testing-ads-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · ChatGPT-Werbung · Self-Serve-Ads</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat heute seinen Self-Serve-Ads-Manager für ChatGPT offiziell geöffnet — Advertiser können jetzt Kampagnen anlegen, Budgets setzen und Nutzer über den Gesprächskontext <mark class="vocab" data-translation="ansprechen — to target / address (an audience)">ansprechen</mark>, statt nur über Keywords. Gesponserte Blöcke erscheinen unterhalb der Antworten und sind auf Free- und Go-Nutzer <mark class="vocab" data-translation="beschränkt — limited / restricted">beschränkt</mark>; bezahlte Pläne bleiben werbefrei. Best Buy, Lowe's und VistaPrint sind als erste Partner an Bord. Sam Altman hatte Werbung 2024 noch als "letztes Mittel" bezeichnet — jetzt ist der <mark class="vocab" data-translation="Schritt — step / move">Schritt</mark> getan, und ChatGPT wandelt sich zur Werbeplattform für das Zeitalter der Conversational Search.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI officially opened its self-serve Ads Manager for ChatGPT today — advertisers can now create campaigns, set budgets, and target users based on conversational context rather than keywords. Sponsored blocks appear below responses and are limited to Free and Go plan users; paid plans stay ad-free. Best Buy, Lowe's, and VistaPrint are the first launch partners. Sam Altman called ads a "last resort" back in 2024 — that moment has now arrived, and ChatGPT is evolving into an ad platform for the conversational search era.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/testing-ads-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 22.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google · Gemini 3.6 Flash · Gemini 4 Pretraining</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Google hat drei neue Modelle auf einmal gestartet: Gemini 3.6 Flash, 3.5 Flash-Lite und 3.5 Flash Cyber. Das <mark class="vocab" data-translation="Flaggschiff — flagship">Flaggschiff</mark> der Runde, Gemini 3.6 Flash, kostet 1,50 $/7,50 $ pro Million Tokens und liefert durch kürzere Outputs eine effektive <mark class="vocab" data-translation="Kostenersparnis — cost saving">Kostenersparnis</mark> von rund 17 % gegenüber dem Vorgänger — bei gleichem 1-Mio.-Token-Kontext, eingebautem Computer-Use und einem Knowledge-Cutoff von März 2026. Flash Cyber ist auf Cybersecurity spezialisiert und vorerst nur für Behörden zugänglich. Was fehlt: Gemini 3.5 Pro hat seinen Termin erneut <mark class="vocab" data-translation="verfehlt — missed / fallen short of">verfehlt</mark> — stattdessen kündigt Google "das ambitionierteste Pretraining in der Firmengeschichte" für Gemini 4 an.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Google launched three new models at once: Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber. The headliner, Gemini 3.6 Flash, is priced at $1.50/$7.50 per million tokens and delivers roughly 17% savings in practice thanks to shorter outputs — keeping the same 1M-token context window, built-in Computer Use, and a knowledge cutoff pushed to March 2026. Flash Cyber is a security-tuned variant initially restricted to government users. Notably absent: Gemini 3.5 Pro has missed its target again — in its place, Google is announcing "the most ambitious pretraining run in company history" for Gemini 4.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/" target="_blank" rel="noopener">→ techcrunch.com · 21.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/321169/20260721/korea-pairs-ai-law-free-chatbot-23-million-quit-paying-chatgpt.htm" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Südkorea · AI for All · erstes G20-Land</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Südkorea will noch in diesem Jahr als erstes G20-Land eine kostenlose KI für alle Bürger starten — das Programm heißt "AI for All" und soll im September in die Beta gehen, mit vollem Betrieb bis Dezember. Betrieben wird der Chatbot von zwei oder drei privaten Unternehmen; mindestens 50 % der Kapazität muss auf einheimischen Modellen basieren, die <mark class="vocab" data-translation="Ausschreibung — public tender / call for bids">Ausschreibung</mark> läuft bis zum 11. August. Interessantes Detail: Rund 23 Millionen Südkoreaner nutzen aktuell ChatGPT, viele davon kostenpflichtig — die Regierung will sie mit einem überlegenen Angebot <mark class="vocab" data-translation="umlenken — to redirect / steer away">umlenken</mark>. Langfristig soll der Dienst ein proaktiver KI-Agent werden, der staatliche <mark class="vocab" data-translation="Sozialleistungen — welfare benefits / government benefits">Sozialleistungen</mark> eigenständig beantragt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">South Korea plans to become the first G20 nation to give every resident free AI access — the "AI for All" program targets a public beta in September and full service by December. Two or three private operators will run the service, with at least 50% of the capacity required to come from domestic AI models; the tender closes August 11. An interesting angle: roughly 23 million South Koreans currently use ChatGPT, many on paid plans — the government hopes a superior free alternative will steer them over. Long-term, the service aims to become a proactive AI agent that files government benefit applications on behalf of citizens.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/321169/20260721/korea-pairs-ai-law-free-chatbot-23-million-quit-paying-chatgpt.htm" target="_blank" rel="noopener">→ techtimes.com · 21.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.217 · Emoji-Shortcodes · Subagent-Limits</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.217 bringt zwei nützliche Neuerungen auf einmal. Im Prompt-Input funktionieren jetzt Emoji-Shortcodes: Gibst du einen Doppelpunkt gefolgt von einem Schlüsselwort ein, erscheint ein Vorschlag-Menü mit passenden Emojis — wer das <mark class="vocab" data-translation="abstellen — to disable / turn off (separable verb)">abstellen</mark> möchte, setzt emojiCompletionEnabled in der Config auf false. Wichtiger für Pipelines: Es gibt jetzt eine harte Obergrenze für gleichzeitige Subagenten, standardmäßig 20, und Subagenten dürfen per Default keine eigenen Subagenten mehr <mark class="vocab" data-translation="spawnen — to spawn / create (tech jargon)">spawnen</mark>. Wer tiefere Verschachtelungen braucht, öffnet das Limit über eine Env-Var — praktisch, um unkontrollierte <mark class="vocab" data-translation="Kaskaden — cascades / chain reactions">Kaskaden</mark> in großen Ultracode-Runs zu verhindern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.217 ships two handy updates at once. The prompt input now supports emoji shortcode autocomplete — type a colon followed by a keyword and a suggestion menu appears; disable it with emojiCompletionEnabled set to false in your config. More important for pipelines: there's now a hard cap on concurrent subagents (default 20), and subagents can no longer spawn their own subagents by default. You can raise the nesting depth limit via an environment variable — useful for preventing uncontrolled spawn cascades during large Ultracode runs.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=&lt;n&gt; claude [task]
+CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=&lt;depth&gt; claude [task]</pre>
+        <dl class="cmd-flags">
+          <dt><code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS</code></dt>
+          <dd>max subagents allowed to run simultaneously (default: 20)</dd>
+          <dt><code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code></dt>
+          <dd>how many levels deep subagents may spawn their own subagents (default: 0 = disabled)</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Limit hochsetzen für große parallele Runs · Raise cap for large parallel runs</span>
+$ CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=40 claude "run the full test suite in parallel"
+
+<span class="com"># Eine Spawn-Ebene erlauben · Allow one level of nested subagent spawning</span>
+$ CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1 claude "ultracode: migrate the entire repo"</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 21.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufhorchen lassen</div>
+        <div class="vocab-translation">to make people sit up and take notice</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der 5-Mrd.-Deal lässt die gesamte Chip-Branche aufhorchen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The $5B deal is making the entire chip industry sit up and take notice.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Beteiligung</div>
+        <div class="vocab-translation">equity stake · shareholding · investment</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">AMD sichert sich mit der strategischen Beteiligung einen Platz am KI-Tisch.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">AMD secures a seat at the AI table with its strategic equity stake.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Ausschreibung</div>
+        <div class="vocab-translation">public tender · call for bids · open tender</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Ausschreibung für Südkoreas nationalen KI-Chatbot läuft bis zum 11. August.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The tender for South Korea's national AI chatbot closes on August 11.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">pikant</div>
+        <div class="vocab-translation">ironic · pointed · noteworthy (figurative)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nadellas Kritik an Fable ist pikant — Microsoft hat 5 Mrd. $ in Anthropic gesteckt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Nadella's Fable criticism is especially pointed — Microsoft put $5B into Anthropic.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">umlenken</div>
+        <div class="vocab-translation">to redirect · to steer away · to divert</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Seoul will 23 Millionen ChatGPT-Nutzer mit dem Gratis-Angebot umlenken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Seoul wants to steer 23 million ChatGPT users toward its free alternative.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "to let the cat out of the sack"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"OpenAI lässt heute endlich die Katze aus dem Sack — ChatGPT bekommt Werbung."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"OpenAI finally let the cat out of the bag today — ChatGPT is getting ads."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem Leak haben sie die Katze viel zu früh aus dem Sack gelassen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With that leak they let the cat out of the bag way too early."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to put your money where your mouth is</div>
+      <div class="idiom-meaning">to back up words with action or money — German equivalent: "seinen Worten Taten folgen lassen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"AMD put its money where its mouth is — a $5 billion investment backing up its AI ambitions."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"AMD lässt seinen Worten Taten folgen — 5 Mrd. $ für die KI-Ambitionen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If you believe in the project, put your money where your mouth is."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn du wirklich ans Projekt glaubst, dann lass deinen Worten Taten folgen."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cnbc.com · openai.com · techcrunch.com · techtimes.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #67 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

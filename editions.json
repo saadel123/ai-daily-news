@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-22",
+      "edition_number": 67,
+      "headlines": [
+        "AMD investiert bis zu 5 Mrd. $ in Anthropic — 2 GW Instinct-MI450-Chips ab H1 2027",
+        "Nadella nennt Fable „editorially controlled“ — Kritik an Anthropics neuen Sicherheitsfiltern",
+        "ChatGPT-Ads sind live — OpenAI öffnet Self-Serve-Ads-Manager für Advertiser",
+        "Gemini 3.6 Flash startet: 17 % günstiger, 1 Mio. Token — Gemini 4 im Pretraining",
+        "Südkorea plant „AI for All“ — kostenloses Bürger-KI als erstes G20-Land bis Dezember"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-22T16:06:08Z"
+    },
+    {
       "date": "2026-07-21",
       "edition_number": 66,
       "headlines": [
