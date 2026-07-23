@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 23.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 23. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #68</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Code-Reviews im Hintergrund, Rekord-Vergleich und OpenAI baut sein größtes Rechenzentrum.</h1>
+    <p class="subtitle">Außerdem: EU öffnet Android für KI-Rivalen, Anthropic zahlt 1,5 Mrd. $ an Autoren und OpenAI launcht Presence für Enterprise-Agenten.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.218</strong>: /code-review läuft jetzt als Hintergrundagent — dein Chat bleibt frei</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong> zahlt 1,5 Mrd. $ — größter KI-Urheberrechtsvergleich aller Zeiten, Gericht abgenickt</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI Presence</strong>: Enterprise-Plattform für KI-Agenten via Voice und Chat live</span></a></li>
+      <li><a href="#article-4"><span class="dot">🔵</span><span><strong>EU zwingt Google</strong>, Android für KI-Rivalen zu öffnen — Gemini verliert sein Exklusiv-Recht</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟢</span><span><strong>OpenAI Project Camellia</strong>: 3,2-GW-Rechenzentrum in Georgia für bis zu 30 Mrd. $</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.218" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.218 · /code-review als Hintergrundagent</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code macht mit Version 2.1.218 einen wichtigen Schritt: /code-review läuft jetzt als <mark class="vocab" data-translation="Hintergrundagent — background subagent (runs without blocking your active conversation)">Hintergrundagent</mark>, sodass deine aktive Unterhaltung von Review-Rauschen verschont bleibt — <mark class="vocab" data-translation="gestapelt — stacked / queued up">gestapelte</mark> Slash-Commands bekommen so ein sauberes Review-Target. Außerdem <mark class="vocab" data-translation="startet — launches / triggers (separable: startet … nicht mehr)">startet</mark> /deep-research nicht mehr automatisch auf Claudes Initiative, du musst es selbst aufrufen. Skills mit Fork-Kontext laufen jetzt standardmäßig im Hintergrund, was bei langen Workflows echte Zeit spart. Alles in allem: mehr Kontrolle darüber, was wann und wo läuft.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.218 makes /code-review run as a background subagent, keeping your active conversation free from review noise — stacked slash commands now get their own clean review target. /deep-research also changes behavior: Claude no longer auto-launches it; you have to call it yourself. Skills with a fork context now default to running in the background, a win for long workflows you don't want to block. More control over what runs, when, and where.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/code-review [options]
+/deep-research</pre>
+<pre class="cmd-examples"><span class="com"># Review läuft im Hintergrund — Conversation bleibt clean · Review in background — conversation stays clean</span>
+$ /code-review
+
+<span class="com"># Ultra-Review mit Cloud-Agenten starten · Kick off ultra-depth cloud review</span>
+$ /code-review ultra
+
+<span class="com"># Deep Research: ab jetzt nur noch auf Aufruf · Deep research: manual only from now on</span>
+$ /deep-research</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.218" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 23.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://siliconangle.com/2026/07/20/anthropic-settles-authors-publishers-1-5-billion-landmark-copyright-case/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic · 1,5 Mrd. $ Urheberrechtsvergleich abgesegnet</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Ein US-Bundesrichter hat den historischen 1,5-Mrd.-$-Vergleich von Anthropic mit Autoren und Verlegern endgültig <mark class="vocab" data-translation="absegnen — to approve / to rubber-stamp (informal, separable verb)">abgesegnet</mark> — der größte <mark class="vocab" data-translation="Urheberrecht — copyright">Urheberrechtsvergleich</mark> in der Geschichte der KI-Branche. Rund 500.000 Werke aus Piratenbibliotheken wurden beim Training von Claude verwendet; die Urheber erhalten je Werk ca. 3.000 $. Anthropic ist nur für vergangene Trainingsaktivitäten geschützt — zukünftige Generierungen und neue Trainingsläufe bleiben anfechtbar. Ein Teil der Verlage hat sich aus dem Vergleich <mark class="vocab" data-translation="ausklinken — to opt out / to detach oneself (informal, separable verb)">ausgeklinkt</mark> und klagt weiter.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">A U.S. federal judge gave final approval to Anthropic's $1.5 billion settlement with authors and publishers — the largest AI copyright class-action payout on record. Around 500,000 works from pirate libraries were used to train Claude, with rights holders receiving roughly $3,000 per work. Anthropic's protection covers only past training activity; future generative outputs and new training runs remain open to legal challenge. A portion of publishers opted out and are pressing their own independent suits.</p>
+        </div>
+      </div>
+      <a class="source" href="https://siliconangle.com/2026/07/20/anthropic-settles-authors-publishers-1-5-billion-landmark-copyright-case/" target="_blank" rel="noopener">→ siliconangle.com · 20.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Presence · Enterprise-Agenten via Voice &amp; Chat</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat Presence gelauncht — eine Enterprise-Plattform, die Firmen helfen soll, KI-Agenten über Voice und Chat in ihre Workflows zu <mark class="vocab" data-translation="einbetten — to embed / to integrate">einbetten</mark>. Die Plattform <mark class="vocab" data-translation="bündeln — to bundle / to pool together">bündelt</mark> Unternehmensrichtlinien, Zugriffskontrollen, Eskalationsregeln und Pre-Deployment-Simulationen in einem System; der integrierte Codex-Assistent schlägt dann automatisch Verbesserungen auf Basis echter Produktionsdaten vor. Erste Kunden wie BBVA Mexico und SoftBank Corp. nutzen Presence bereits für Kundenservice und interne Prozesse. Die Deployments laufen über OpenAI Forward Deployed Engineers und ausgewählte Systemintegratoren.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI launched Presence, an enterprise platform for building, governing, and improving AI agents across voice and chat channels. The platform bundles company policies, access controls, escalation rules, and pre-deployment simulations into a single system; an integrated Codex assistant auto-proposes improvements from production session signals. Early customers including BBVA Mexico and SoftBank Corp. are already live for customer service and internal workflows. Deployments run through OpenAI Forward Deployed Engineers and select systems integrators.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">→ openai.com · 22.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/320760/20260716/eu-gives-rival-ai-assistants-system-level-android-access-google-reserved-gemini.htm" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>EU DMA · Android öffnet sich für KI-Rivalen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Die Europäische Kommission hat Google unter dem Digital Markets Act zu einem historischen Schritt <mark class="vocab" data-translation="zwingen — to force / to compel">gezwungen</mark>: Drittanbieter-KI-Assistenten bekommen dieselben System-Rechte auf Android, die bisher exklusiv Gemini <mark class="vocab" data-translation="vorbehalten — reserved for / exclusive to">vorbehalten</mark> waren — darunter Voice-Aktivierung, App-übergreifende Aktionen und Zugriff auf elf Android-Funktionsgruppen. Eine zweite Anordnung verpflichtet Google, anonymisierte Suchdaten zu fairen <mark class="vocab" data-translation="Konditionen — terms / conditions (business context)">Konditionen</mark> mit Konkurrenten zu teilen. Android 18 ist das Umsetzungsvehikel, die Preisgestaltung für Suchdaten muss bis Januar 2027 stehen. Es ist der bisher weitreichendste Interoperabilitätseingriff der EU in KI-Produkte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">The European Commission ordered Google, under the Digital Markets Act, to grant third-party AI assistants the same system-level Android capabilities it reserves for Gemini — including voice activation, cross-app actions, and access to 11 Android feature groups. A separate order requires Google to share anonymized Search data with rivals on regulated terms. Android 18 is the implementation vehicle, with search-data pricing to be finalized by January 2027. It is the most expansive interoperability intervention the EU has ever applied to AI products.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/320760/20260716/eu-gives-rival-ai-assistants-system-level-android-access-google-reserved-gemini.htm" target="_blank" rel="noopener">→ techtimes.com · 16.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://mlq.ai/news/openai-unveils-32gw-project-camellia-data-center-campus-in-effingham-county-georgia/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI Project Camellia · 3,2 GW · 30 Mrd. $ · Georgia</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">OpenAI hat Project Camellia angekündigt — einen 3,2-Gigawatt-Rechenzentrum-Campus in Effingham County, Georgia, der bei vollem Betrieb bis zu 30 Mrd. $ kosten soll. Es ist das erste Rechenzentrum, das OpenAI komplett selbst <mark class="vocab" data-translation="planen und bauen — to design and build (here: fully self-developed, no third-party)">plant und baut</mark>. Die ersten Megawatts gehen ab 2028 <mark class="vocab" data-translation="ans Netz gehen — to go online / to connect to the power grid">ans Netz</mark>, der Ausbau läuft bis 2032. OpenAI verpflichtet sich zu 80 Mio. $ in kommunalen Leistungen — Schulen, Gesundheit, lokale Firmen. Der Campus würde bei Vollbetrieb so viel Strom verbrauchen wie rund 2,4 Mio. US-Haushalte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">OpenAI announced Project Camellia — a 3.2-gigawatt data center campus in Effingham County, Georgia that could cost up to $30 billion at full scale, and is the first data center the company will design and build itself. Early megawatts are expected online in 2028, with the full build-out running through 2032. OpenAI is pledging $80 million in community benefits — education, healthcare, local businesses. At full capacity, the campus would draw as much power as roughly 2.4 million U.S. homes.</p>
+        </div>
+      </div>
+      <a class="source" href="https://mlq.ai/news/openai-unveils-32gw-project-camellia-data-center-campus-in-effingham-county-georgia/" target="_blank" rel="noopener">→ mlq.ai · 22.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.217 · Emoji-Shortcodes im Prompt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.217 bringt ein nettes Detail in den Prompt-Input: Emoji-Shortcodes per Autocomplete. Tippst du einen Doppelpunkt gefolgt von einem Teil des Kurznamens, öffnet sich eine <mark class="vocab" data-translation="Auswahlbox — picker / selection box (UI element for choosing from a list)">Auswahlbox</mark> mit passenden Emojis. Ein vollständiger Kurzcode fügt das Emoji direkt ein — kein Copy-Paste mehr aus einem Emoji-Picker. Wer das Feature nicht mag, kann es per Einstellung <mark class="vocab" data-translation="deaktivieren — to disable / to turn off">deaktivieren</mark>. Praktisch für alle, die Prompts oder Tick-Kommentare gerne mit etwas Atmosphäre <mark class="vocab" data-translation="würzen — to season / to spice up (here: add flavor or personality to text)">würzen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.217 adds emoji shortcode autocomplete to the prompt input. Type a colon followed by part of a name and a picker appears with matching emoji to insert inline. A complete shortcode inserts the emoji directly — no more copying from a separate picker. There's a setting to disable it entirely if you prefer clean text. A small quality-of-life touch for anyone who likes a bit of flavor in their prompts.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">:<shortcode>:</pre>
+        <dl class="cmd-flags">
+          <dt><code>emojiCompletionEnabled</code></dt>
+          <dd>set to false in /config to disable emoji shortcode autocomplete</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Herzchen einfügen · Insert a heart emoji</span>
+$ :heart:
+
+<span class="com"># Vorschlag-Menü öffnen · Open autocomplete suggestions</span>
+$ :hea</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 22.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">absegnen</div>
+        <div class="vocab-translation">to approve · to rubber-stamp</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Richter hat den Vergleich endlich abgesegnet.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The judge finally approved the settlement.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">bündeln</div>
+        <div class="vocab-translation">to bundle · to pool together</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Plattform bündelt Regeln und Rechte in einem einzigen System.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The platform bundles rules and permissions into a single system.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Urheberrecht</div>
+        <div class="vocab-translation">copyright</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Im KI-Recht dreht sich gerade fast alles ums Urheberrecht.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In AI law, nearly everything right now revolves around copyright.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausrollen</div>
+        <div class="vocab-translation">to roll out · to deploy</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI rollt Presence schrittweise an Enterprise-Kunden aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI is rolling out Presence to enterprise customers step by step.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">schlucken</div>
+        <div class="vocab-translation">to swallow · to absorb</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">30 Mrd. $ für ein Rechenzentrum — das muss man erst mal schlucken.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">30 billion for one data center — that takes some swallowing.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Quittung bekommen</div>
+      <div class="idiom-meaning">to face the consequences · to get what you deserve — wörtlich: "to receive the bill / receipt"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic hat mit dem 1,5-Mrd.-Vergleich die Quittung für das Scraping aus Piratenbibliotheken bekommen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic got the bill for scraping pirate libraries — $1.5 billion."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer Tech-Schulden ignoriert, bekommt irgendwann die Quittung."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Ignore technical debt long enough and you'll get the bill eventually."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to foot the bill</div>
+      <div class="idiom-meaning">to pay the full cost of something, often unexpectedly — German equivalent: "die Zeche zahlen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With Project Camellia, OpenAI is footing a $30 billion bill — just for one campus."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit Project Camellia zahlt OpenAI für ein einziges Rechenzentrum die Zeche von 30 Mrd. $."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"If the build goes over budget, the taxpayers end up footing the bill."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wenn das Projekt das Budget sprengt, zahlt am Ende der Steuerzahler die Zeche."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · siliconangle.com · openai.com · techtimes.com · mlq.ai</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #68 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

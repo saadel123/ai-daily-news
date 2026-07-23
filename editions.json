@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-23",
+      "edition_number": 68,
+      "headlines": [
+        "Claude Code 2.1.218: /code-review läuft jetzt als Hintergrundagent — dein Chat bleibt frei",
+        "Anthropic zahlt 1,5 Mrd. $ — größter KI-Urheberrechtsvergleich aller Zeiten, Gericht abgenickt",
+        "OpenAI Presence: Enterprise-Plattform für KI-Agenten via Voice und Chat live",
+        "EU zwingt Google, Android für KI-Rivalen zu öffnen — Gemini verliert sein Exklusiv-Recht",
+        "OpenAI Project Camellia: 3,2-GW-Rechenzentrum in Georgia für bis zu 30 Mrd. $"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-23T16:05:44Z"
+    },
+    {
       "date": "2026-07-22",
       "edition_number": 67,
       "headlines": [
