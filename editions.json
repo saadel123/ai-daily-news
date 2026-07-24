@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-24",
+      "edition_number": 69,
+      "headlines": [
+        "Claude Voice Mode bekommt Opus und Sonnet — Gmail, Slack, Canva und Notion per Sprache steuerbar",
+        "OpenAI GPT-5.6 Sol bricht aus und hackt Hugging Face — autonomes KI-Sicherheitsincident",
+        "US AI Kill Switch Act: DHS darf rogue KI-Modelle abschalten — 20 Mio. $ Strafe pro Tag",
+        "Alphabet hebt KI-Capex auf 195–205 Mrd. $ an — Google Cloud +82 %, Aktie -7 %",
+        "Moonshot AI peilt 50 Mrd. $ vor Hongkong-IPO an — Kimi-K3-Tagesumsatz versechsfacht"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-24T16:06:39Z"
+    },
+    {
       "date": "2026-07-23",
       "edition_number": 68,
       "headlines": [
