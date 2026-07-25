@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-25",
+      "edition_number": 70,
+      "headlines": [
+        "Claude Opus 5 live: Fable-5-Niveau zum halben Preis — Effort-Toggle steuert Rechenaufwand pro Request",
+        "Economic Index Connector: Anthropics KI-Jobdaten kostenlos im Chat befragen, alle Pläne inklusive Free",
+        "ChatGPT Health live: Krankenakten und Apple Health in jedem Gespräch — kein Training, kein Tracking",
+        "OpenAI: vierter Ausfall in vier Tagen — ChatGPT, Codex und API gleichzeitig weltweit down",
+        "Grok STT 1.0: xAIs erstes Speech-to-Text-API — 25+ Sprachen, Speaker-Diarization, 0,10 $/Stunde"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-25T16:00:00Z"
+    },
+    {
       "date": "2026-07-24",
       "edition_number": 69,
       "headlines": [

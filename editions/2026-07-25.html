@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 25.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 25. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #70</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Samstag: Opus 5 kommt, ChatGPT stolpert — und Sprache wird Text.</h1>
+    <p class="subtitle">Außerdem: Anthropic gibt den Wirtschafts-Index als kostenlosen Connector frei, OpenAI bringt deine Gesundheitsdaten in ChatGPT.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Opus 5</strong>: Fable-5-Niveau zum halben Preis — Effort-Toggle steuert Rechenaufwand pro Request</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Economic Index Connector</strong>: Anthropics KI-Jobdaten im Chat befragen — kostenlos für alle Pläne</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>ChatGPT Health</strong>: Krankenakten und Apple Health in jedem Gespräch — kein Training, kein Tracking</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Vierter OpenAI-Ausfall in vier Tagen</strong>: ChatGPT, Codex und API gleichzeitig weltweit down</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟤</span><span><strong>Grok STT 1.0</strong>: xAIs erstes Speech-to-Text — 25+ Sprachen, Diarization, 0,10 $/Stunde</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Opus 5 · Fable-5-Niveau, halber Preis</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat gestern Claude Opus 5 <mark class="vocab" data-translation="live geschaltet — gone live / flipped the switch">live geschaltet</mark> — das neue Modell kommt dem Fable-5-Niveau sehr nahe, kostet aber nur halb so viel: fünf Dollar pro Million Input-Tokens, 25 Dollar Output. Der entscheidende neue Regler ist der Effort-Toggle: mit Low, Medium oder High bestimmst du direkt, wie viel Rechenaufwand jeder einzelne Request <mark class="vocab" data-translation="schluckt — consumes / swallows up">schluckt</mark> — und damit auch, was er kostet. Auf Frontier-Bench und GDPval-AA setzt Opus 5 neue <mark class="vocab" data-translation="Bestmarken — benchmarks / best scores">Bestmarken</mark>; nur bei Cybersicherheits-Aufgaben liegt es noch hinter Mythos 5. Wer Claude Max nutzt, bekommt Opus 5 sofort als Default; Pro-User können schon heute damit arbeiten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic launched Claude Opus 5 yesterday — a model that gets very close to Fable 5 capability at half the price: $5 per million input tokens, $25 output. The key new control is the effort toggle: set it to Low, Medium, or High per request to dial in exactly how much compute — and cost — each call consumes. On Frontier-Bench and GDPval-AA, Opus 5 sets new state-of-the-art scores; only on cybersecurity tasks does it still trail Mythos 5. Claude Max users get Opus 5 as the immediate default; Pro users can start today too.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener">→ anthropic.com · 24.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/anthropic-economic-index-connector" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Anthropic Economic Index Connector · kostenlos für alle</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic hat den Economic Index Connector <mark class="vocab" data-translation="veröffentlicht — released / published">veröffentlicht</mark> — ein kostenloser Connector für alle Claude-Pläne, auch den Free-Tier. Damit kannst du Anthropics <mark class="vocab" data-translation="Datensatz — dataset">Datensatz</mark> zu realen KI-Nutzungsmustern quer durch die Wirtschaft direkt im Chat auf Englisch befragen: Welche Berufe nutzen KI am meisten? Wie viel Prozent der Aufgaben in meiner Branche sind bereits <mark class="vocab" data-translation="automatisiert — automated">automatisiert</mark>? Der Connector ist in einer Minute im Connector-Menü aktiviert und funktioniert mit jedem Claude-Modell — nichts zu installieren, kein API-Key nötig.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic released the Economic Index Connector — free for all Claude plans, including free accounts. It makes Anthropic's dataset of real AI usage patterns across the economy queryable in plain English directly in chat: which occupations use AI the most? What share of tasks in my industry are already automated? Activate it from the Connectors menu in about a minute — it works with any Claude model and there's nothing to install, no API key needed.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/anthropic-economic-index-connector" target="_blank" rel="noopener">→ anthropic.com · 22.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/index/health-in-chatgpt/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>ChatGPT Health · Krankenakten &amp; Apple Health</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI hat ChatGPT Health in den USA für alle eingeloggten User ab 18 Jahren <mark class="vocab" data-translation="ausgerollt — rolled out / deployed">ausgerollt</mark> — auf Web und iOS, quer durch alle Pläne von Free bis Pro. Du verbindest deine Krankenakte und Apple Health, und ChatGPT zieht dann Laborwerte, Medikamente, Schlaf- und <mark class="vocab" data-translation="Aktivitätsdaten — activity data">Aktivitätsdaten</mark> in jedes beliebige Gespräch rein. Wichtig: Gesundheitsdaten werden weder fürs Training noch für Werbung genutzt, und ChatGPT fragt immer erst nach, bevor es auf deine Daten <mark class="vocab" data-translation="zugreift — accesses / draws on">zugreift</mark>. Ein ernsthafter Schritt Richtung persönlicher Gesundheits-KI — mit klaren Privatsphäre-Leitplanken.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI rolled out Health in ChatGPT across the US for all logged-in users 18 and older — on web and iOS, across every plan from Free to Pro. Connect your medical records and Apple Health, and ChatGPT pulls lab results, medications, sleep, and activity data into any conversation. Key privacy note: health data is never used for training or ads, and ChatGPT always asks permission before accessing your data. A serious step toward personal health AI — with clear guardrails.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/health-in-chatgpt/" target="_blank" rel="noopener">→ openai.com · 24.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · Vierter Ausfall in vier Tagen</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Heute früh ist OpenAI wieder <mark class="vocab" data-translation="ausgefallen — gone down / failed">ausgefallen</mark> — ChatGPT, Codex und die komplette API gleichzeitig, weltweit. Nutzer sahen „too many concurrent requests" im Chat, bei den APIs kamen 503-Fehler. Es ist der vierte <mark class="vocab" data-translation="Ausfall — outage / failure">Ausfall</mark> innerhalb von vier Tagen; OpenAI hat ihn nach rund einer Stunde eingedämmt. Für Entwickler, die OpenAI-APIs in Produktionssystemen einsetzen, sollte das ein Weckruf sein: Fallbacks auf alternative Anbieter sind kein Nice-to-have, sondern <mark class="vocab" data-translation="Pflicht — necessity / must-have">Pflicht</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Early this morning, OpenAI went down again — ChatGPT, Codex, and the full API simultaneously, worldwide. Users hit "too many concurrent requests" in chat; API callers received 503 errors. It's the fourth outage in four days; OpenAI contained it in roughly an hour. For developers running OpenAI APIs in production systems this should be a wake-up call: fallbacks to alternative providers are not a nice-to-have — they're a necessity.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/" target="_blank" rel="noopener">→ bleepingcomputer.com · 25.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://x.ai/news/grok-stt-and-tts-apis" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Grok STT 1.0 · xAI Speech-to-Text-API</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">xAI hat mit Grok STT 1.0 seine erste Speech-to-Text-API <mark class="vocab" data-translation="veröffentlicht — released / shipped">veröffentlicht</mark> — und sie kommt direkt mit ernsthaften Features: 25+ Sprachen, Wort-genaue Timestamps, Speaker-Diarization und ein WebSocket-Endpoint für Echtzeit-<mark class="vocab" data-translation="Transkription — transcription">Transkription</mark>. Der Preis ist wettbewerbsfähig: 0,10 Dollar pro Stunde im Batch-Modus, 0,20 Dollar für Streaming. Für Podcast-Verarbeitung, Meeting-Protokolle und mehrsprachige Pipelines ist das eine echte Alternative zu <mark class="vocab" data-translation="etablierten — established / incumbent">etablierten</mark> Diensten. Das Modell enthält Inverse Text Normalization — Zahlen, Daten und Währungen kommen sauber als Text raus.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">xAI launched its first speech-to-text API, Grok STT 1.0 — and it arrives with serious features: 25+ languages, word-level timestamps, speaker diarization, and a WebSocket endpoint for real-time transcription. Pricing is competitive: $0.10 per hour in batch mode, $0.20 for streaming. For podcast processing, meeting transcripts, and multilingual pipelines this is a genuine alternative to established services. The model includes Inverse Text Normalization — numbers, dates, and currencies come out cleanly formatted.</p>
+        </div>
+      </div>
+      <a class="source" href="https://x.ai/news/grok-stt-and-tts-apis" target="_blank" rel="noopener">→ x.ai · 23.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.219 · Opus 5 als Default + strictAllowlist</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.219 stellt Claude Opus 5 als neues Default-Modell ein — mit Millionen-Token-Kontext und Fast Mode für zehn Dollar Input, 50 Dollar Output pro Mio. Tokens. Neu dazu kommt das strictAllowlist-Setting in der settings.json: Hosts, die nicht auf der Liste stehen, werden in Sandbox-Befehlen ohne Rückfrage <mark class="vocab" data-translation="blockiert — blocked silently">blockiert</mark> — praktisch für Teams, die strikte Netzwerkkontrolle brauchen, ohne bei jedem Tool-Call <mark class="vocab" data-translation="unterbrochen — interrupted">unterbrochen</mark> zu werden. Die Agenten-Delegation ist außerdem tiefer verankert: der Agent-Tool-Eintrag im System Prompt beschreibt jetzt formal, dass Claude Code komplexe Aufgaben an eigenständige Sub-Agenten <mark class="vocab" data-translation="delegieren — to delegate / hand off">delegieren</mark> kann.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.219 sets Claude Opus 5 as the new default model — with a million-token context and Fast Mode at $10 input / $50 output per million tokens. New alongside it: the strictAllowlist setting in settings.json — hosts not on the list are blocked without prompting in sandboxed commands, handy for teams that need strict network control without interruptions on every tool call. Agent delegation is also more formally anchored: the Agent tool entry in the system prompt now explicitly describes that Claude Code can hand off complex tasks to independent subagents.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">sandbox.network.strictAllowlist [in .claude/settings.json]</pre>
+        <dl class="cmd-flags">
+          <dt><code>[]</code></dt>
+          <dd>empty array — block all non-allowlisted hosts silently in sandboxed commands</dd>
+          <dt><code>["host", "*.domain.com"]</code></dt>
+          <dd>array of exact hostnames or wildcard patterns to allow without prompting</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Nur GitHub API und PyPI erlauben · Allow only GitHub API and PyPI</span>
+$ cat .claude/settings.json
+{
+  "sandbox": {
+    "network": { "strictAllowlist": ["api.github.com", "*.pypi.org"] }
+  }
+}
+
+<span class="com"># Alle Hosts stumm blockieren · Block all non-listed hosts silently</span>
+$ cat .claude/settings.json
+{ "sandbox": { "network": { "strictAllowlist": [] } } }</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">abwägen</div>
+        <div class="vocab-translation">to weigh up · to consider carefully</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Beim Effort-Toggle musst du kurz abwägen: willst du Tiefe oder Geschwindigkeit?</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With the effort toggle you have to weigh up quickly: do you want depth or speed?</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">ausfallen</div>
+        <div class="vocab-translation">to go down · to fail (of a service)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn eine API viermal in vier Tagen ausfällt, baust du besser einen Fallback ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">When an API goes down four times in four days, you'd better build in a fallback.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">befragen</div>
+        <div class="vocab-translation">to query · to ask questions of</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Du kannst den Economic Index direkt im Chat befragen — kein SQL nötig.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">You can query the Economic Index directly in chat — no SQL needed.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einschränken</div>
+        <div class="vocab-translation">to restrict · to limit</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Mit der strictAllowlist schränkst du den Netzwerkzugriff in der Sandbox gezielt ein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">With the strictAllowlist you deliberately restrict network access in the sandbox.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">umwandeln</div>
+        <div class="vocab-translation">to convert · to transform</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das STT-Modell wandelt gesprochene Zahlen und Daten sauber in formatierten Text um.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The STT model cleanly converts spoken numbers and dates into formatted text.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Finger in die Wunde legen</div>
+      <div class="idiom-meaning">to put your finger on the sore spot · to point out the core problem — wörtlich: "to lay the finger in the wound"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Vier Ausfälle in vier Tagen — das legt den Finger in die Wunde: OpenAIs Infrastruktur wächst schneller als ihre Reliability."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Four outages in four days — that puts the finger right on the sore spot: OpenAI's infrastructure is growing faster than their reliability."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Post-Mortem legt den Finger in die Wunde — das Problem lag nicht im Code, sondern im Deployment-Prozess."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The post-mortem puts the finger right on the sore spot — the issue was not in the code but in the deployment process."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to accept something unpleasant and get on with it — German equivalent: "in den sauren Apfel beißen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"At some point you have to bite the bullet and add fallback providers to your OpenAI integration."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Irgendwann musst du in den sauren Apfel beißen und Fallback-Provider in deine OpenAI-Integration einbauen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We bit the bullet and migrated to Opus 5 — at half the price, it was a no-brainer."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir haben in den sauren Apfel gebissen und auf Opus 5 migriert — beim halben Preis war das klar."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · openai.com · bleepingcomputer.com · x.ai</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #70 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
