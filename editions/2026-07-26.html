@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Sonntag, 26.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Sonntag · 26. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~5 min hören</span>
+    <span class="preview-tag">Edition #71</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Agenten-Netzwerke werden tiefer, Open Weights werden schwerer — willkommen in KW 30.</h1>
+    <p class="subtitle">Plus: Anthropic träumt laut von Robotern, Poolside liefert das stärkste quelloffene Coding-Modell aus dem Westen, und ein japanisches Startup lässt KI-Agenten Hacker jagen.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Code 2.1.219</strong>: Subagenten bis Tiefe 3 und strenge Netzwerk-Allowlist per Default</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic &amp; Physical Intelligence</strong>: Akquisitionsgerücht macht Robotik-Ambitionen sichtbar — CEO dementiert</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟠</span><span><strong>Kimi K3 Open Weights live</strong>: 2,8-Billionen-Parameter-Modell auf Hugging Face — 1,4 TB zum Selbst-Hosten</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Poolside Laguna S 2.1</strong>: Open-Weight-Coding-Modell schlägt Rivalen mit zehnfach größerer Parameterzahl</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Sakana Fugu-Cyber</strong>: KI-Orchestrierung für Cybersecurity — 86,9 % auf CyberGym, Zugang per Antrag</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.219 · Subagenten Tiefe 3</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Claude Code 2.1.219 hebt die maximale <mark class="vocab" data-translation="Verschachtelungstiefe — nesting depth (how many levels deep agents can spawn agents)">Verschachtelungstiefe</mark> für Subagenten auf drei — bisher war nach der ersten Ebene Schluss. Das bedeutet: Ein Agent kann jetzt Agenten <mark class="vocab" data-translation="spawnen — to spawn (start a new agent or subprocess)">spawnen</mark>, die selbst wieder Agenten spawnen, und das dreifach tief. Neu dabei: eine Sandbox-Einstellung blockt alle nicht explizit erlaubten Hosts für Sandbox-Befehle, ohne extra Prompt. Außerdem gibt es den DirectoryAdded-Hook, der <mark class="vocab" data-translation="feuert — fires (triggers or activates automatically)">feuert</mark>, wenn du im Lauf einer Session ein neues Working Directory <mark class="vocab" data-translation="registrierst — registers / adds to the active session">registrierst</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Claude Code 2.1.219 raises the maximum nesting depth for subagents to three — previously one level was the limit. That means an agent can now spawn agents that themselves spawn agents, three levels deep. New: a sandbox network setting silently blocks all non-allowlisted hosts in sandboxed commands with no extra prompts. There is also a new DirectoryAdded hook that fires whenever a new working directory is registered mid-session.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=&lt;depth&gt;  claude</pre>
+        <dl class="cmd-flags">
+          <dt><code>CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH</code></dt>
+          <dd>max nesting depth for spawned subagents (default: 3, previous default was 1)</dd>
+          <dt><code>sandbox.network.strictAllowlist</code></dt>
+          <dd>in settings.json — deny non-allowlisted hosts in sandboxed commands without a prompt</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Tiefe auf 1 zurücksetzen (altes Verhalten) · Revert to single-level nesting</span>
+$ CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1 claude
+
+<span class="com"># Strikte Netzwerkliste im Projekt aktivieren · Enable strict network allowlist</span>
+$ echo '{"sandbox":{"network":{"strictAllowlist":true}}}' &gt;&gt; .claude/settings.json</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic × Physical Intelligence · Gerücht</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Ein Wochenend-<mark class="vocab" data-translation="Gerücht — rumor">Gerücht</mark> hat die KI-Szene auf X kurz aufgewühlt: Anthropic soll kurz davor stehen, Physical Intelligence (π.ai) zu übernehmen — das San Franciscoer Startup, das allgemeine Lernalgorithmen für Roboter <mark class="vocab" data-translation="entwickelt — develops / builds">entwickelt</mark>. Der CEO von Physical Intelligence <mark class="vocab" data-translation="dementierte — denied / publicly refuted">dementierte</mark> die Spekulation zügig, aber die Reaktionen zeigten, wie logisch die Kombi wirkt: Anthropics Reasoning-Power gepaart mit körperlicher Welterfahrung. Auch ohne Deal <mark class="vocab" data-translation="signalisiert — signals / indicates">signalisiert</mark> das Gerücht, dass Physical AI das nächste große Frontier-Feld sein könnte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">A weekend rumor set AI Twitter briefly ablaze: Anthropic was said to be close to acquiring Physical Intelligence (π.ai), the San Francisco startup building general-purpose learning systems for robots. Physical Intelligence's CEO denied the speculation quickly, but the reaction showed how natural the combination feels — Anthropic's reasoning power paired with hands-on world experience. Even without a deal, the rumor signals that physical AI might be the next big frontier.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/" target="_blank" rel="noopener">→ techcrunch.com · 21.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.kimi.com/blog/kimi-k3" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Kimi K3 · 2,8-Billionen Open Weights live</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Moonshots Kimi K3 <mark class="vocab" data-translation="Gewichte — weights (the stored parameters of a trained neural network)">Gewichte</mark> sind in der Nacht auf Montag auf Hugging Face erschienen — 2,8 Billionen Parameter und damit die größte Open-Weight-Veröffentlichung der Geschichte. Technisch <mark class="vocab" data-translation="feuern — fire (activate, of the expert nodes in a mixture-of-experts model)">feuern</mark> nur 16 von 896 Experten pro Token, was den aktiven Rechenaufwand auf rund 50 Mrd. Parameter drückt — weit handlicher, als die Gesamtzahl vermuten lässt. Das Download-Paket misst knapp 600 GB in MXFP4; wer wirklich selbst hosten will, braucht aber etwa 1,4 TB schnellen Speicher. Der Modified-MIT-Schein erlaubt kommerzielle Nutzung — und wer sich aus chinesischen API-Anbietern lieber <mark class="vocab" data-translation="heraushält — stays out of / keeps away from">heraushält</mark>, kann den Dienst jetzt komplett in eigenen Händen behalten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Moonshot's Kimi K3 weights landed on Hugging Face overnight — 2.8 trillion parameters, the largest open-weight release in history. Technically only 16 of 896 experts fire per token, bringing active compute down to roughly 50 billion parameters — far more manageable than the headline number suggests. The download footprint is around 600 GB in MXFP4, but self-hosting requires about 1.4 TB of fast memory. The Modified MIT license allows commercial use — and for anyone who would rather not route traffic through a Chinese API provider, running Kimi K3 on-prem is now a genuine option.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.kimi.com/blog/kimi-k3" target="_blank" rel="noopener">→ kimi.com · 27.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://poolside.ai/blog/introducing-laguna-s-2-1" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Poolside Laguna S 2.1 · stärkstes West-Open-Weight</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Poolside hat Laguna S 2.1 als quelloffenes Coding-Modell <mark class="vocab" data-translation="veröffentlicht — released / published">veröffentlicht</mark> — 118 Mrd. Parameter insgesamt, aber als Mixture-of-Experts-Architektur aktiviert es nur 8 Mrd. Parameter pro Token. Das reicht, um auf Terminal-Bench 2.1 und SWE-Bench Pro Modelle zu schlagen, die zehnmal so groß sind — ein beachtlicher <mark class="vocab" data-translation="Leistungssprung — performance leap / jump in capability">Leistungssprung</mark> für ein West-Open-Weight. Ein Kontextfenster von einer Million Tokens, separater Thinking-Mode und die kostenlose Nutzung über OpenCode machen es zum stärksten quelloffenen Coding-Modell aus dem Westen. Wer eine DGX Spark <mark class="vocab" data-translation="besitzt — owns / has">besitzt</mark>, kann es auf einem einzigen Node laufen lassen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Poolside released Laguna S 2.1 as an open-weight coding model — 118 billion parameters total, but as a Mixture-of-Experts architecture it activates only 8 billion parameters per token. That is enough to beat models ten times its size on Terminal-Bench 2.1 and SWE-Bench Pro — a remarkable performance leap for a Western open-weight. A one-million-token context window, a separate thinking mode, and free access through OpenCode round out what is currently the most capable open-weight coding model from the Western world. A single NVIDIA DGX Spark is enough to run it.</p>
+        </div>
+      </div>
+      <a class="source" href="https://poolside.ai/blog/introducing-laguna-s-2-1" target="_blank" rel="noopener">→ poolside.ai · 22.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.marktechpost.com/2026/07/25/sakana-ai-releases-fugu-cyber-orchestration-model-cybergym-cti-realm/" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Sakana Fugu-Cyber · KI-Orchestrierung für Cybersecurity</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Sakana AIs Fugu-Cyber ist kein klassisches LLM — es ist ein <mark class="vocab" data-translation="Orchestrierungssystem — orchestration system (coordinates multiple agents as one)">Orchestrierungssystem</mark>, das mehrere Spezialagenten koordiniert und dabei nach außen wie ein einziges Modell wirkt. Das Ergebnis: 86,9 % auf CyberGym und 72,1 % auf CTI-REALM, vergleichbar mit GPT-5.5-Cyber und Claude Mythos Preview. Der Fokus liegt auf zwei <mark class="vocab" data-translation="Abläufen — workflows / processes">Abläufen</mark>: Schwachstellen in komplexen Codebasen verifizieren und Threat-Intelligence-Reports in Detection-Regeln verwandeln. Zugang ist <mark class="vocab" data-translation="gesperrt — gated / restricted (requires manual approval)">gesperrt</mark>: manuelle Genehmigung erforderlich, kein EU/EEA-Zugang, keine veröffentlichten Gewichte, nur Token Plan.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Sakana AI's Fugu-Cyber is not a classic LLM — it is an orchestration system that coordinates multiple specialised agents while presenting a single API to the outside world. The result: 86.9% on CyberGym and 72.1% on CTI-REALM, benchmarking alongside GPT-5.5-Cyber and Claude Mythos Preview. The focus is two defensive workflows: verifying real-world vulnerabilities in complex codebases, and turning threat-intelligence reports into detection rules. Access is gated: manual approval required, no EU/EEA access, no published weights, Token Plan only.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.marktechpost.com/2026/07/25/sakana-ai-releases-fugu-cyber-orchestration-model-cybergym-cti-realm/" target="_blank" rel="noopener">→ marktechpost.com · 25.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.217 · Budget-Stopp und Emoji-Shortcodes</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.217 bringt drei praktische Ergänzungen. Erstens: Emoji-Shortcodes direkt im Chat — gib einfach Doppelpunkt plus Wortname ein, und Claude ersetzt es durch das passende Emoji, <mark class="vocab" data-translation="konfigurierbar — configurable (can be turned on or off in settings)">konfigurierbar</mark> in den Settings. Zweitens: Ein Budget-Flag stoppt jetzt auch Hintergrund-Subagenten, wenn das Dollar-Limit <mark class="vocab" data-translation="aufgebraucht — used up / depleted (the budget is exhausted)">aufgebraucht</mark> ist — kein unerwarteter Kostenschub mehr. Drittens: die maximale Zahl paralleler Subagenten liegt per Default bei 20 und lässt sich per <mark class="vocab" data-translation="Umgebungsvariable — environment variable">Umgebungsvariable</mark> steuern.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.217 ships three practical additions. First: emoji shortcodes right in the chat — just type a colon followed by the emoji name and Claude substitutes the right emoji; configurable in settings. Second: a budget flag now also stops background subagents when the dollar limit is spent — no more surprise cost spikes. Third: the maximum number of concurrent subagents defaults to 20 and can be tuned via environment variable.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude [--max-budget-usd &lt;amount&gt;] [options]</pre>
+        <dl class="cmd-flags">
+          <dt><code>--max-budget-usd &lt;amount&gt;</code></dt>
+          <dd>stop all agents including background subagents once total USD spend hits this limit</dd>
+          <dt><code>CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS</code></dt>
+          <dd>cap the number of subagents running in parallel (default: 20)</dd>
+          <dt><code>emojiCompletionEnabled</code></dt>
+          <dd>settings.json key — set to false to disable the :shortcode: → emoji autocomplete</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Budgetgrenze setzen, alle Agenten stoppen wenn erreicht · Stop all agents at budget cap</span>
+$ claude --max-budget-usd 2.50
+
+<span class="com"># Parallele Subagenten begrenzen · Limit concurrent subagents</span>
+$ CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS=5 claude</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 21.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">Gewichte</div>
+        <div class="vocab-translation">weights · model parameters</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Kimi K3 hat seine Gewichte auf Hugging Face veröffentlicht — 2,8 Billionen Parameter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Kimi K3 published its weights on Hugging Face — 2.8 trillion parameters.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Gerücht</div>
+        <div class="vocab-translation">rumor · unconfirmed report</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Gerücht über eine Anthropic-Übernahme hat die Community auf X aufgewühlt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The rumor about an Anthropic acquisition stirred up the community on X.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">verschachteln</div>
+        <div class="vocab-translation">to nest · to embed within layers</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">In Claude Code kannst du Agenten jetzt drei Ebenen tief verschachteln.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">In Claude Code you can now nest agents three levels deep.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">Schwachstelle</div>
+        <div class="vocab-translation">vulnerability · weak point</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Fugu-Cyber sucht automatisch nach Schwachstellen in komplexen Codebasen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Fugu-Cyber automatically hunts for vulnerabilities in complex codebases.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">selbst hosten</div>
+        <div class="vocab-translation">to self-host · to run on own infrastructure</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Dank Open Weights kannst du Kimi K3 jetzt selbst hosten, ohne Chinese API.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Thanks to open weights, you can now self-host Kimi K3, no Chinese API required.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Katze aus dem Sack lassen</div>
+      <div class="idiom-meaning">to let the cat out of the bag — wörtlich: "die Katze aus dem Sack lassen" · reveal something that was supposed to stay secret</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem Akquisitionsgerücht hat jemand die Katze aus dem Sack gelassen — auch wenn der CEO dementiert."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Someone let the cat out of the bag with that acquisition rumor — even if the CEO denied it."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Leak hat die Katze aus dem Sack gelassen, bevor Moonshot offiziell ankündigen konnte."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The leak let the cat out of the bag before Moonshot could make an official announcement."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to throw down the gauntlet</div>
+      <div class="idiom-meaning">to issue a challenge or invite competition — German equivalent: "den Fehdehandschuh hinwerfen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"By dropping 2.8 trillion open-weight parameters, Moonshot threw down the gauntlet at every closed API provider."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit 2,8 Billionen Open-Weight-Parametern hat Moonshot den Fehdehandschuh vor jeden geschlossenen API-Anbieter geworfen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Poolside threw down the gauntlet to proprietary coding models by releasing Laguna S 2.1 open-weight."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Poolside hat mit der Open-Weight-Veröffentlichung von Laguna S 2.1 den Fehdehandschuh vor proprietäre Coding-Modelle geworfen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: github.com · techcrunch.com · kimi.com · poolside.ai · marktechpost.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #71 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

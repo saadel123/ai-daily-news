@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-26",
+      "edition_number": 71,
+      "headlines": [
+        "Claude Code 2.1.219: Subagenten bis Tiefe 3 und strenge Netzwerk-Allowlist per Default",
+        "Anthropic & Physical Intelligence: Akquisitionsgerücht macht Robotik-Ambitionen sichtbar — CEO dementiert",
+        "Kimi K3 Open Weights live: 2,8-Billionen-Parameter-Modell auf Hugging Face — 1,4 TB zum Selbst-Hosten",
+        "Poolside Laguna S 2.1: Open-Weight-Coding-Modell schlägt Rivalen mit zehnfach größerer Parameterzahl",
+        "Sakana Fugu-Cyber: KI-Orchestrierung für Cybersecurity — 86,9 % auf CyberGym, Zugang per Antrag"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 5,
+      "generated_at": "2026-07-26T16:05:54Z"
+    },
+    {
       "date": "2026-07-25",
       "edition_number": 70,
       "headlines": [
