@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Montag, 27. Juli 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Montag · 27. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #72</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>OpenAIs Rechenzentrum-Traum: Nvidia springt mit 250 Mrd. $ als Bürge ein.</h1>
+    <p class="subtitle">Außerdem: Anthropic forscht für 200 Mio. $ an der KI-Jobwende, Gemini 3.5 Pro ist 67 Tage überfällig — und das Weiße Haus macht bis August Dampf.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic</strong> legt 200 Mio. $ auf den Tisch — Economic Futures Research Fund für externe KI-Jobforschung</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>Nvidia</strong> will OpenAI mit 250-Mrd.-$-Bürgschaft unter die Arme greifen — 10-GW-Datencenter in Ohio</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Gemini 3.5 Pro</strong> nach 67 Tagen überfällig — Google startet stattdessen Pretraining für Gemini 4</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Weißes Haus</strong> will bis 1. August KI-Framework: 30-Tage-NSA-Review vor Frontier-Releases</span></a></li>
+      <li><a href="#hack"><span class="dot">💡</span><span><strong>DeepSeek V4 Stable</strong>: neue API-IDs, altes deepseek-chat eingestellt — Aufpreis zu Stoßzeiten beachten</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/economic-futures-research-fund-agenda" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · Economic Futures Research Fund · 200 Mio. $</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic richtet den Economic Futures Research Fund ein und stellt 200 Millionen Dollar bereit, um externe Forschung zu den wirtschaftlichen <mark class="vocab" data-translation="Auswirkungen — effects / impacts">Auswirkungen</mark> von KI zu <mark class="vocab" data-translation="fördern — to fund / to support">fördern</mark>. Gefördert werden ausschließlich Projekte zwischen einer und dreißig Millionen Dollar — gefragt sind Universitäten, Forschungsinstitute und NGOs mit nachgewiesenem Track Record bei groß angelegten Feldexperimenten. Fünf Bereiche stehen im Fokus: wie KI die Arbeit auf Unternehmensebene <mark class="vocab" data-translation="umgestaltet — reshapes / transforms">umgestaltet</mark>, wie Karrierewechsel gelingen, wie Sozialsysteme modernisiert werden müssen, wie Beschäftigte am KI-Wachstum <mark class="vocab" data-translation="teilhaben — to participate in / to share in">teilhaben</mark> können und welche öffentlichen Investitionen wirklich wirken. Anthropic zeigt damit, dass die Verantwortung für die KI-Jobwende keine PR-Floskel ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic is establishing the Economic Futures Research Fund with $200 million to support external research on AI's economic impacts. The fund exclusively backs projects in the $1–30 million range — targeting universities, policy institutes, and nonprofits with a proven track record in large-scale field experiments. Five research areas are in focus: how AI reshapes work at the firm level, how people navigate career transitions, how income support systems need modernizing, how workers can build a stake in AI-driven growth, and which public investments actually deliver results. It's a concrete signal that Anthropic is serious about owning the economic consequences of the AI transition.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/economic-futures-research-fund-agenda" target="_blank" rel="noopener">→ anthropic.com · 22.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Nvidia × OpenAI · 500 Mrd. $ · Ohio</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Nvidia verhandelt laut Wall Street Journal über eine <mark class="vocab" data-translation="Bürgschaft — surety / financial guarantee">Bürgschaft</mark> von 250 Milliarden Dollar für OpenAIs Ohio-Projekt — ein 10-Gigawatt-Rechenzentrum auf dem Gelände einer ehemaligen Urananreicherungsanlage in Piketon. Da OpenAI kein Investment-Grade-Rating hat, braucht das Projekt einen <mark class="vocab" data-translation="Bürgen — guarantor">Bürgen</mark>, damit SoftBanks Energiearm Schulden zu günstigen <mark class="vocab" data-translation="Konditionen — terms / conditions (financial)">Konditionen</mark> aufnehmen kann. Für Nvidia bedeutet das jahrelange <mark class="vocab" data-translation="gesicherte — secured / locked in">gesicherte</mark> Chip-Nachfrage; für OpenAI ist es der erste echte Schritt raus aus der Abhängigkeit von Microsofts Compute-Infrastruktur. Das Gesamtvolumen des Campus liegt bei mindestens 500 Milliarden Dollar — eines der größten Infrastrukturprojekte der Geschichte.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Nvidia is reportedly in talks to provide a $250 billion financial guarantee for OpenAI's Ohio mega-project — a 10-gigawatt data center campus on the site of a former uranium enrichment plant in Piketon. Because OpenAI lacks an investment-grade credit rating, it needs a guarantor so SoftBank's energy subsidiary can raise debt on favorable terms. For Nvidia, the deal locks in years of chip demand; for OpenAI, it's the first real move toward controlling its own compute rather than perpetually renting from Microsoft. The full campus is estimated to cost at least $500 billion — one of the largest infrastructure projects in history.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says" target="_blank" rel="noopener">→ bloomberg.com · 26.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://tech-insider.org/au/gemini-3-5-pro-67-days-delay-2026/" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Gemini 3.5 Pro · 67 Tage überfällig · Gemini 4 im Pretraining</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Gemini 3.5 Pro ist inzwischen 67 Tage <mark class="vocab" data-translation="überfällig — overdue (lit. past due)">überfällig</mark> — Google hat drei Deadlines verstreichen lassen, weil das neu aufgebaute Modell bei internen Coding-Tests und Halluzinationsraten die Messlatte nicht traf. Statt weiter zu warten, hat Google bereits mit dem Pretraining von Gemini 4 begonnen; CEO Sundar Pichai kündigte monatliche Releases als neues Ziel an. Für Entwickler bleibt vorerst 3.6 Flash als Workhorse, während Vorhersagemärkte August als wahrscheinlichsten Release-Monat für 3.5 Pro <mark class="vocab" data-translation="handeln — to trade / to bet on (market term)">handeln</mark>. Der Markt hat die schlechten Nachrichten schon längst <mark class="vocab" data-translation="eingepreist — priced in (financial term)">eingepreist</mark> — nach dem Bloomberg-Bericht fiel die Alphabet-Aktie um 4,4 Prozent.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Gemini 3.5 Pro is now 67 days overdue — Google has let three deadlines slip because the rebuilt model kept missing internal benchmarks on coding performance and hallucination rates. Rather than keep waiting, Google has already kicked off pretraining for Gemini 4; CEO Sundar Pichai framed monthly releases as the new north star. For developers in the meantime it's all Flash, while prediction markets price August as the most likely window for 3.5 Pro to finally ship. The market had the bad news priced in well before Bloomberg broke the story — Alphabet shares fell 4.4% that day.</p>
+        </div>
+      </div>
+      <a class="source" href="https://tech-insider.org/au/gemini-3-5-pro-67-days-delay-2026/" target="_blank" rel="noopener">→ tech-insider.org · 25.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Weißes Haus · 30-Tage-NSA-Review · 1. August Deadline</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Das Weiße Haus hat sich mit Anthropic, OpenAI und Google auf einen <mark class="vocab" data-translation="freiwilligen — voluntary">freiwilligen</mark> Rahmen verständigt, der bis zum 1. August stehen soll: Frontier-Modelle müssen der Regierung 30 Tage vor dem Release Zugang geben, damit die NSA sie in einem <mark class="vocab" data-translation="vertraulichen — classified / confidential">vertraulichen</mark> Benchmarking-Prozess prüfen kann. GPT-5.6 hat den Test bereits absolviert — zwölf Tage Regierungsbegutachtung, bevor das Modell öffentlich ging. Die Regeln sind formal <mark class="vocab" data-translation="unverbindlich — non-binding / without obligation">unverbindlich</mark>; wer sich verweigert, riskiert Reputationsschäden und schärfere gesetzliche Einschränkungen. Das Pikante: Laut Financial Times wurden die Regeln in enger Zusammenarbeit mit den Laboren <mark class="vocab" data-translation="entworfen — drafted / designed">entworfen</mark>, die sie einhalten sollen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">The White House has aligned with Anthropic, OpenAI, and Google on a voluntary framework due by August 1: frontier models must give the government 30 days of pre-release access so the NSA can run them through a classified benchmarking process. GPT-5.6 has already done the run — twelve days of government review before going public. The rules are formally non-binding; labs that opt out risk reputational damage and potentially stricter legislation down the road. The twist, per the Financial Times: the rules were drafted in close collaboration with the very labs they are meant to hold accountable.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" target="_blank" rel="noopener">→ techtimes.com · 24.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://www.sitepoint.com/deepseek-v4-released-whats-new-in-the-latest-model-2026/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>DeepSeek V4 Stable · neue API-IDs · Peak Pricing</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">DeepSeek hat sein V4-Modell am 24. Juli in den <mark class="vocab" data-translation="Regelbetrieb — production / regular service operation">Regelbetrieb</mark> überführt und die alten Endpoints gleichzeitig <mark class="vocab" data-translation="eingestellt — discontinued / retired">eingestellt</mark>: deepseek-chat und deepseek-reasoner liefern jetzt Fehler. Zwei neue IDs ersetzen sie — deepseek-v4-pro für Reasoning-intensive Aufgaben und deepseek-v4-flash für schnelle, günstige Produktion, beide mit 1-Millionen-Token-Kontext. Der wichtigste Punkt für die Kostenkalkulation: Zu Stoßzeiten gilt ein <mark class="vocab" data-translation="Aufpreis — surcharge / peak-hour premium">Aufpreis</mark>, der Preis variiert also nach Tageszeit — Batch-Jobs in Randzeiten zu schedulen zahlt sich aus.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">DeepSeek moved V4 into stable production on July 24 and simultaneously retired the old endpoints: deepseek-chat and deepseek-reasoner now return errors. Two new IDs replace them — deepseek-v4-pro for reasoning-heavy tasks and deepseek-v4-flash for fast, cheap production workloads, both with a 1-million-token context window. The key flag for cost planning: there's a peak-hour surcharge, so pricing fluctuates by time of day — scheduling batch jobs during off-peak hours pays off.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.sitepoint.com/deepseek-v4-released-whats-new-in-the-latest-model-2026/" target="_blank" rel="noopener">→ sitepoint.com · 24.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Bürgschaft</div>
+        <div class="vocab-translation">surety · financial guarantee</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Nvidia springt als Bürge ein, damit OpenAI ohne Investment-Grade-Rating an günstige Kredite kommt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Nvidia is stepping in as guarantor so OpenAI can access cheap credit without an investment-grade rating.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überfällig</div>
+        <div class="vocab-translation">overdue · past due</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini 3.5 Pro ist bereits drei Monate überfällig — der nächste Termin soll August sein.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini 3.5 Pro is three months overdue — the next target window is apparently August.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">freiwillig</div>
+        <div class="vocab-translation">voluntary · optional</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der KI-Sicherheitsrahmen ist freiwillig, aber wer nicht mitmacht, riskiert schärfere Gesetze.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The AI safety framework is voluntary, but companies that opt out risk stricter legislation.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Aufpreis</div>
+        <div class="vocab-translation">surcharge · premium pricing</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Zu Stoßzeiten gilt ein Aufpreis — wer das Budget im Griff haben will, plant lieber in Randzeiten.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">There's a surcharge during peak hours — if you want predictable costs, plan for off-peak times.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einpreisen</div>
+        <div class="vocab-translation">to price in · to factor into the market</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Der Markt hatte die schlechten Benchmarks schon eingepreist, bevor Bloomberg den Bericht veröffentlichte.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The market had already priced in the bad benchmarks well before Bloomberg broke the story.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Biegen oder Brechen</div>
+      <div class="idiom-meaning">by hook or by crook · come what may — wörtlich: "bending or breaking"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Weiße Haus will den KI-Rahmen auf Biegen oder Brechen bis zum 1. August finalisieren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The White House wants the AI framework finalized by August 1, come what may."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wir müssen das Release auf Biegen oder Brechen heute noch rauskriegen — kein Aufschub mehr."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"We have to ship today no matter what — no more delays."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to kick the can down the road</div>
+      <div class="idiom-meaning">to defer a problem instead of solving it — German equivalent: "auf die lange Bank schieben"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Three missed deadlines later, Google is still kicking the Gemini 3.5 Pro can down the road."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Google schiebt Gemini 3.5 Pro immer wieder auf die lange Bank — nach drei Verschiebungen wartet der Markt nicht mehr geduldig."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Don't kick that tech debt down the road — it compounds fast."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Den Tech-Debt solltest du nicht auf die lange Bank schieben — der wächst schneller, als du denkst."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: anthropic.com · bloomberg.com · tech-insider.org · techtimes.com · sitepoint.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #72 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

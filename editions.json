@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-27",
+      "edition_number": 72,
+      "headlines": [
+        "Anthropic legt 200 Mio. $ auf den Tisch — Economic Futures Research Fund für externe KI-Jobforschung",
+        "Nvidia will OpenAI mit 250-Mrd.-$-Bürgschaft unter die Arme greifen — 10-GW-Datencenter in Ohio",
+        "Gemini 3.5 Pro nach 67 Tagen überfällig — Google startet stattdessen Pretraining für Gemini 4",
+        "Weißes Haus will bis 1. August KI-Framework: 30-Tage-NSA-Review vor Frontier-Releases",
+        "DeepSeek V4 Stable: neue API-IDs, altes deepseek-chat eingestellt — Aufpreis zu Stoßzeiten beachten"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-27T16:07:22Z"
+    },
+    {
       "date": "2026-07-26",
       "edition_number": 71,
       "headlines": [
