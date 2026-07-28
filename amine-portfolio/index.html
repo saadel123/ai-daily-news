@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine — Logistics Professional</title>
+  <meta name="description" content="Portfolio and resume of Amine, a logistics and supply chain professional." />
+
+  <!-- =========================================================
+       AMINE — RESUME / PORTFOLIO LANDING PAGE
+       This is a single self-contained file (HTML + CSS in one).
+       To update: search for the word "EDIT" in the comments below,
+       or just replace the placeholder text between the tags.
+       ========================================================= -->
+
+  <style>
+    :root {
+      --bg:        #0f1720;
+      --surface:   #16212e;
+      --surface-2: #1e2c3c;
+      --text:      #e7eef6;
+      --muted:     #9fb0c3;
+      --accent:    #f5a524;   /* logistics amber */
+      --accent-2:  #38bdf8;   /* sky blue */
+      --line:      #263548;
+      --radius:    16px;
+      --maxw:      960px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- Nav ---------- */
+    header.nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(15,23,32,0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 62px;
+    }
+    .brand { font-weight: 700; letter-spacing: .5px; font-size: 1.1rem; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; gap: 22px; }
+    .nav-links a { color: var(--muted); font-size: .95rem; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    @media (max-width: 620px) { .nav-links { display: none; } }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      padding: 80px 0 64px;
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .avatar {
+      width: 130px; height: 130px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; font-weight: 700; color: #0f1720;
+    }
+    .hero h1 { font-size: 2.4rem; line-height: 1.15; margin-bottom: 6px; }
+    .hero .role { color: var(--accent); font-weight: 600; font-size: 1.15rem; }
+    .hero p.tagline { color: var(--muted); margin-top: 14px; max-width: 52ch; }
+    .hero-actions { margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 11px 20px; border-radius: 10px;
+      font-weight: 600; font-size: .95rem; border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--accent); color: #0f1720; }
+    .btn-primary:hover { text-decoration: none; opacity: .9; }
+    .btn-ghost { border-color: var(--line); color: var(--text); }
+    .btn-ghost:hover { text-decoration: none; border-color: var(--accent-2); }
+    @media (max-width: 620px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 48px; }
+      .avatar { margin: 0 auto; }
+      .hero-actions { justify-content: center; }
+    }
+
+    /* ---------- Sections ---------- */
+    section { padding: 52px 0; border-top: 1px solid var(--line); }
+    .section-title {
+      font-size: 1.5rem; margin-bottom: 6px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::before {
+      content: ""; width: 26px; height: 3px; border-radius: 3px;
+      background: var(--accent);
+    }
+    .section-sub { color: var(--muted); margin-bottom: 28px; }
+
+    /* ---------- About ---------- */
+    .about p { color: var(--muted); max-width: 68ch; }
+    .about p + p { margin-top: 14px; }
+
+    /* ---------- Stats ---------- */
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-top: 8px; }
+    .stat {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 20px; text-align: center;
+    }
+    .stat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+    .stat .label { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+    @media (max-width: 620px) { .stats { grid-template-columns: repeat(2,1fr); } }
+
+    /* ---------- Skills ---------- */
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      background: var(--surface-2); border: 1px solid var(--line);
+      padding: 8px 14px; border-radius: 999px; font-size: .9rem; color: var(--text);
+    }
+
+    /* ---------- Experience (timeline) ---------- */
+    .timeline { position: relative; margin-left: 8px; }
+    .tl-item {
+      position: relative; padding: 0 0 30px 28px;
+      border-left: 2px solid var(--line);
+    }
+    .tl-item:last-child { border-left: 2px solid transparent; padding-bottom: 0; }
+    .tl-item::before {
+      content: ""; position: absolute; left: -8px; top: 4px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--accent); border: 3px solid var(--bg);
+    }
+    .tl-item h3 { font-size: 1.1rem; }
+    .tl-item .meta { color: var(--accent-2); font-size: .9rem; margin: 2px 0 8px; }
+    .tl-item p { color: var(--muted); }
+
+    /* ---------- Cards / projects ---------- */
+    .cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 22px;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: .95rem; }
+    @media (max-width: 620px) { .cards { grid-template-columns: 1fr; } }
+
+    /* ---------- Contact ---------- */
+    .contact-grid { display: flex; flex-wrap: wrap; gap: 14px; }
+    .contact-item {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 12px; padding: 14px 18px; flex: 1 1 200px;
+    }
+    .contact-item .k { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .5px; }
+    .contact-item .v { font-weight: 600; margin-top: 2px; }
+
+    /* ---------- Footer ---------- */
+    footer { text-align: center; padding: 32px 0; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <!-- EDIT: brand / name -->
+      <div class="brand">Amine<span>.</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Highlights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <div class="wrap">
+    <section class="hero" style="border-top:none;">
+      <!-- EDIT: initials (or replace this div with an <img> of a photo) -->
+      <div class="avatar">A</div>
+      <div>
+        <!-- EDIT: full name -->
+        <h1>Amine El Placeholder</h1>
+        <!-- EDIT: job title -->
+        <div class="role">Logistics &amp; Supply Chain Professional</div>
+        <!-- EDIT: short intro line -->
+        <p class="tagline">
+          Results-driven logistics specialist with a track record of optimizing
+          transport routes, cutting delivery times, and keeping supply chains
+          moving smoothly from warehouse to last mile.
+        </p>
+        <div class="hero-actions">
+          <!-- EDIT: link to a real CV/PDF or update the mailto -->
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#" onclick="return false;">Download CV</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <div class="wrap">
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <p class="section-sub">A quick overview</p>
+      <!-- EDIT: bio paragraphs -->
+      <p>
+        I'm a logistics professional with hands-on experience across warehousing,
+        freight coordination, inventory management, and distribution planning.
+        I enjoy turning complex operations into simple, reliable processes.
+      </p>
+      <p>
+        Over the years I've worked with teams to reduce costs, improve on-time
+        delivery, and make the most of limited resources — always with an eye on
+        safety, accuracy, and customer satisfaction.
+      </p>
+    </section>
+  </div>
+
+  <!-- ===================== STATS ===================== -->
+  <div class="wrap">
+    <section style="border-top:none; padding-top:0;">
+      <div class="stats">
+        <!-- EDIT: quick numbers -->
+        <div class="stat"><div class="num">5+</div><div class="label">Years experience</div></div>
+        <div class="stat"><div class="num">98%</div><div class="label">On-time delivery</div></div>
+        <div class="stat"><div class="num">20%</div><div class="label">Cost reduction</div></div>
+        <div class="stat"><div class="num">10+</div><div class="label">Team members led</div></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== SKILLS ===================== -->
+  <div class="wrap">
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Tools &amp; areas of expertise</p>
+      <!-- EDIT: add/remove chips -->
+      <div class="chips">
+        <span class="chip">Supply Chain Management</span>
+        <span class="chip">Warehouse Operations</span>
+        <span class="chip">Route Optimization</span>
+        <span class="chip">Inventory Control</span>
+        <span class="chip">Freight &amp; Customs</span>
+        <span class="chip">ERP / WMS Systems</span>
+        <span class="chip">Fleet Coordination</span>
+        <span class="chip">Team Leadership</span>
+        <span class="chip">Excel &amp; Data Analysis</span>
+        <span class="chip">Vendor Relations</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <div class="wrap">
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">Where I've worked</p>
+      <div class="timeline">
+        <!-- EDIT: one .tl-item per role -->
+        <div class="tl-item">
+          <h3>Logistics Coordinator</h3>
+          <div class="meta">Company Name · 2023 — Present</div>
+          <p>Coordinate daily shipments, manage carrier relationships, and track
+             KPIs to keep deliveries on schedule and within budget.</p>
+        </div>
+        <div class="tl-item">
+          <h3>Warehouse Supervisor</h3>
+          <div class="meta">Company Name · 2020 — 2023</div>
+          <p>Led a team handling receiving, storage, and dispatch. Improved
+             inventory accuracy and streamlined the picking workflow.</p>
+        </div>
+        <div class="tl-item">
+          <h3>Logistics Assistant</h3>
+          <div class="meta">Company Name · 2019 — 2020</div>
+          <p>Supported order processing and documentation, learning the
+             fundamentals of end-to-end supply chain operations.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== HIGHLIGHTS ===================== -->
+  <div class="wrap">
+    <section id="projects">
+      <h2 class="section-title">Highlights</h2>
+      <p class="section-sub">Selected achievements</p>
+      <div class="cards">
+        <!-- EDIT: achievement cards -->
+        <div class="card">
+          <h3>Route optimization project</h3>
+          <p>Redesigned delivery routes and cut average transit time by 18% while
+             lowering fuel costs across the fleet.</p>
+        </div>
+        <div class="card">
+          <h3>Warehouse layout redesign</h3>
+          <p>Reorganized storage zones to speed up picking and reduce handling
+             errors during peak season.</p>
+        </div>
+        <div class="card">
+          <h3>Supplier onboarding</h3>
+          <p>Built a simple vendor scorecard that improved on-time supplier
+             performance and reduced stockouts.</p>
+        </div>
+        <div class="card">
+          <h3>Inventory accuracy</h3>
+          <p>Introduced cycle counting that raised inventory accuracy to 99% and
+             cut month-end reconciliation time.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <div class="wrap">
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Let's connect</p>
+      <div class="contact-grid">
+        <!-- EDIT: contact details -->
+        <a class="contact-item" href="mailto:amine@example.com">
+          <div class="k">Email</div>
+          <div class="v">amine@example.com</div>
+        </a>
+        <a class="contact-item" href="tel:+000000000">
+          <div class="k">Phone</div>
+          <div class="v">+00 000 000 000</div>
+        </a>
+        <a class="contact-item" href="#" onclick="return false;">
+          <div class="k">LinkedIn</div>
+          <div class="v">/in/amine</div>
+        </a>
+        <div class="contact-item">
+          <div class="k">Location</div>
+          <div class="v">City, Country</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Amine El Placeholder · Logistics Professional
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
