@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-28",
+      "edition_number": 73,
+      "headlines": [
+        "Claude Shared Chats: Hunderte geteilter Links in Google indexiert — API-Keys und Personendaten öffentlich sichtbar",
+        "Anthropic verdoppelt Politikspende auf 40 Mio. $ — Public First Action für überparteiliche KI-Regulierung",
+        "Open-Weight-Debatte: Nvidia-Brief von 50+ Firmen unterzeichnet — Anthropic verweigert die Unterschrift",
+        "Lobbying-Rekord: OpenAI verdoppelt auf 2,22 Mio. $, Anthropic verdreifacht auf 3,53 Mio. $ in H1 2026",
+        "Claude Code 2.1.217: Emoji-Kürzel-Autocomplete im Prompt — :heart: löst das Dropdown aus"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-28T16:00:00Z"
+    },
+    {
       "date": "2026-07-27",
       "edition_number": 72,
       "headlines": [

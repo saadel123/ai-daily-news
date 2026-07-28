@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Dienstag, 28.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Dienstag · 28. Juli 2026</span>
+    <span>⏱ ~2 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #73</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Geteilte Chats in Google, Nvidia-Brief und Lobbying-Rekorde — ein voller Dienstag.</h1>
+    <p class="subtitle">Hunderte Claude-Links wurden gecrawlt, 50+ Firmen streiten sich um Open Weights, und KI-Labore überholen Big Tech beim Lobbying.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Shared Chats</strong>: Hunderte geteilter Links in Google indexiert — API-Keys und Personendaten öffentlich sichtbar</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟧</span><span><strong>Anthropic</strong> verdoppelt Politikspende auf 40 Mio. $ — Public First Action für überparteiliche KI-Regulierung</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>Open-Weight-Debatte</strong>: Nvidia-Brief von 50+ Firmen unterzeichnet — Anthropic verweigert die Unterschrift</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟢</span><span><strong>Lobbying-Rekord</strong>: OpenAI verdoppelt auf 2,22 Mio. $, Anthropic verdreifacht auf 3,53 Mio. $ in H1 2026</span></a></li>
+      <li><a href="#hack"><span class="dot">🟧</span><span><strong>Claude Code 2.1.217</strong>: Emoji-Kürzel-Autocomplete im Prompt — <code>:heart:</code> löst das Dropdown aus</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Claude Shared Chats · Google crawlt mit</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Wer Claude-Chats je geteilt hat, sollte heute in den Account-Einstellungen die eigenen geteilten Links prüfen: Hunderte von claude.ai/share-Seiten fehlte das übliche <mark class="vocab" data-translation="noindex-Tag — the HTML meta tag that tells search-engine crawlers not to index a page">noindex-Tag</mark>, weshalb Google-Bots den Inhalt <mark class="vocab" data-translation="gecrawlt — crawled (English loanword, standard in German developer talk)">gecrawlt</mark> haben — darunter API-Keys, Login-Daten und in manchen Fällen Kinder-Daten und Krankenakten. Anthropic <mark class="vocab" data-translation="beteuert — insists / asserts firmly">beteuert</mark>, das sei kein Bug: Der Share-Link ist von Design her öffentlich, sobald er verschickt wird. Alte geteilte Chats lassen sich im Bereich „Shared Chats" der Kontoeinstellungen einzeln <mark class="vocab" data-translation="widerrufen — to revoke / to retract">widerrufen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">If you've ever shared a Claude chat link, open your account settings and check your shared links today: hundreds of claude.ai/share pages were missing the standard noindex tag, so Google's bots crawled the full content — including API keys, credentials, and in some cases children's data and health records. Anthropic insists this isn't a bug: a share link is public by design the moment you send it. Old shared chats can be revoked individually under "Shared Chats" in your account settings.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" target="_blank" rel="noopener">→ techcrunch.com · 27.07.2026</a>
+    </article>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.anthropic.com/news/donation-public-first-action" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic · 40 Mio. $ für KI-Regulierungslobby</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Anthropic <mark class="vocab" data-translation="überweist — wires / transfers money (separable verb in the past tense: hat überwiesen)">überweist</mark> nochmals 20 Mio. $ an Public First Action und bringt die Gesamtzusage damit auf 40 Mio. $. Die <mark class="vocab" data-translation="überparteiliche — bipartisan (crossing party lines)">überparteiliche</mark> Organisation unterstützt Kandidaten aus beiden US-Parteien, die sich für KI-Schutzmaßnahmen einsetzen, und betreibt öffentliche Aufklärung über Risiken mächtiger KI-Modelle. Seit dem ersten Scheck im Februar hat sich die Lage mit Frontier-Modellen wie Fable 5 und Mythos 5 weiter <mark class="vocab" data-translation="verschärft — intensified / become more acute (from 'scharf' = sharp)">verschärft</mark>, weshalb Anthropic nachlegt. Das Geld darf laut Unternehmenssprecherin nicht direkt zur Kandidatenunterstützung eingesetzt werden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Anthropic wired another $20M to Public First Action, bringing its total commitment to $40M. The bipartisan group backs candidates from both US parties who support AI safeguards and runs public education campaigns on the risks of powerful AI. Since the first payment in February, the landscape has intensified — Fable 5 and Mythos 5 raise the stakes — so Anthropic is doubling down. A company spokesperson confirmed the funds cannot be used directly for candidate support.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.anthropic.com/news/donation-public-first-action" target="_blank" rel="noopener">→ anthropic.com · 22.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.axios.com/2026/07/27/nvidia-anthropic-openai-open-weight-debate" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Open-Weight-Debatte · Nvidia-Brief vs. Anthropic-Nein</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Nvidia hat einen offenen Brief vorgelegt, den inzwischen über 50 Firmen — darunter Microsoft, Meta, Google und OpenAI — <mark class="vocab" data-translation="unterzeichnet haben — have signed (a document or letter)">unterzeichnet haben</mark>. Das Papier <mark class="vocab" data-translation="plädiert — argues in favour of / makes the case for (from the courtroom)">plädiert</mark> für Open-Weight-Modelle als defensive Stärke, nicht als Sicherheitsrisiko. Anthropic-CEO Dario Amodei hält dagegen: Einmal freigegebene Modell-<mark class="vocab" data-translation="Gewichte — weights (of a neural network, Plural)">Gewichte</mark> lassen sich nicht mehr zurückrufen — wer die Datei hat, hat das Modell, egal was der Entwickler danach entscheidet. Der Streit <mark class="vocab" data-translation="flammt auf — flares up (separable: 'auf·flammen', vivid image of a sudden flame)">flammt auf</mark>, während die Hugging-Face-Affäre noch frisch ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Nvidia published an open letter that over 50 companies — including Microsoft, Meta, Google, and OpenAI — have now signed. The letter makes the case for open-weight models as a defensive asset, not a security liability. Anthropic CEO Dario Amodei disagrees: once model weights are released they can't be recalled — whoever holds the file holds the model, full stop. The debate is flaring up while the Hugging Face incident is still fresh.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.axios.com/2026/07/27/nvidia-anthropic-openai-open-weight-debate" target="_blank" rel="noopener">→ axios.com · 27.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/21/openai-anthropic-ai-lobbying-spending-q2-2026.html" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI & Anthropic · Lobbying-Rekord in Washington</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">OpenAI hat seinen Lobbying-<mark class="vocab" data-translation="Etat — budget (formal register, often used for public or organisational budgets)">Etat</mark> auf ein Rekord-Hoch von 2,22 Mio. $ im ersten Halbjahr 2026 <mark class="vocab" data-translation="verdoppelt — doubled (past participle of 'verdoppeln')">verdoppelt</mark> — Anthropic sogar verdreifacht auf 3,53 Mio. $. Beide Labore <mark class="vocab" data-translation="werben — lobby / cultivate support (here: to advocate, not the basic 'to advertise')">werben</mark> in Washington für ihre Positionen zu KI-Regulierung, Rechenzentren, Urheberrecht und Offenlegungspflichten, während Börsengänge und mächtigere Modelle die Einsätze erhöhen. <mark class="vocab" data-translation="Zeitgleich — simultaneously / at the same time (slightly formal, written-register adverb)">Zeitgleich</mark> ziehen klassische Tech-Konzerne wie Apple und Google ihr Lobbying-Budget zurück — KI-Labore überholen Big Tech in der Lobbying-Rangliste erstmals.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">OpenAI doubled its lobbying budget to a record $2.22M in H1 2026 — Anthropic nearly tripled its own to $3.53M. Both labs are spending in Washington on AI regulation, data centers, copyright, and disclosure requirements, while IPOs and ever-more-powerful models raise the stakes. Simultaneously, traditional tech giants like Apple and Google are pulling back their lobbying spend — AI labs are outpacing Big Tech in DC influence for the first time.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/21/openai-anthropic-ai-lobbying-spending-q2-2026.html" target="_blank" rel="noopener">→ cnbc.com · 21.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()"><span>Claude Code 2.1.217 · Emoji-Kürzel im Prompt</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Claude Code 2.1.217 bringt Emoji-Kürzel-Autocomplete direkt ins Prompt-Eingabefeld: Tipp ein Kürzel wie `:heart:` und ein Dropdown mit passenden Emojis <mark class="vocab" data-translation="klappt auf — pops open / unfolds (separable verb: auf·klappen)">klappt auf</mark>, genau wie in Slack oder GitHub. Das Feature lässt sich per Einstellungsdatei <mark class="vocab" data-translation="deaktivieren — to deactivate / switch off">deaktivieren</mark>, wenn man lieber ohne arbeitet. Außerdem <mark class="vocab" data-translation="mahnt — warns / cautions (more formal and emphatic than 'warnt')">mahnt</mark> Claude Code jetzt, wenn Transkript-Schreibvorgänge <mark class="vocab" data-translation="fehlschlagen — to fail / go wrong (separable: 'schlägt fehl')">fehlschlagen</mark> oder das Session-Speichern durch eine geerbte Umgebungsvariable stumm deaktiviert wird.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.217 adds emoji shortcode autocomplete in the prompt input field: type a shortcode like <code>:heart:</code> and a dropdown pops up with matching emojis, just like Slack or GitHub. The feature can be toggled off via your settings file if you prefer to skip it. Claude Code also now warns when transcript writes fail or when session saving has been silently disabled by an inherited environment variable — finally surfacing those quiet config mistakes.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">:emoji-name:   # im Prompt-Eingabefeld · in the prompt input</pre>
+        <dl class="cmd-flags">
+          <dt><code>emojiCompletionEnabled</code></dt>
+          <dd>boolean in settings.json; set to false to disable the emoji shortcode dropdown</dd>
+        </dl>
+<pre class="cmd-examples"><span class="com"># Emoji-Dropdown auslösen · Trigger emoji dropdown</span>
+:heart:  →  ❤️
+
+<span class="com"># Feature deaktivieren · Disable in settings.json</span>
+{ "emojiCompletionEnabled": false }</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.217" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 21.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">widerrufen</div>
+        <div class="vocab-translation">to revoke · to retract</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Vergiss nicht, alte Claude-Share-Links zu widerrufen, bevor sie in Suchmaschinen auftauchen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Don't forget to revoke old Claude share links before they show up in search engines.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">überparteilich</div>
+        <div class="vocab-translation">bipartisan · across party lines</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Eine überparteiliche Koalition unterstützt die neuen KI-Schutzgesetze im Kongress.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A bipartisan coalition is backing the new AI safeguard bills in Congress.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Gewichte</div>
+        <div class="vocab-translation">the weights (of a neural network)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Einmal veröffentlichte Modell-Gewichte lassen sich nicht mehr zurückrufen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Once released, model weights can't be recalled.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">der Etat</div>
+        <div class="vocab-translation">the budget · the appropriation</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">OpenAI hat seinen Lobbying-Etat im ersten Halbjahr glatt verdoppelt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">OpenAI straight-up doubled its lobbying budget in the first half of the year.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">fehlschlagen</div>
+        <div class="vocab-translation">to fail · to go wrong (separable verb)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Wenn Transkript-Schreibvorgänge fehlschlagen, gibt Claude Code jetzt eine Warnung aus.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">When transcript writes fail, Claude Code now surfaces a warning.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf Nummer Sicher gehen</div>
+      <div class="idiom-meaning">to play it safe · to take no chances — wörtlich: "to go on the safe number" (as in: picking the guaranteed-safe option)</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bei Shared Links hätte man besser auf Nummer Sicher gehen und noindex setzen sollen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With shared links, the safe play would have been to set noindex from the start."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Bevor wir Open Weights freigeben, gehen wir auf Nummer Sicher und prüfen alles intern."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Before releasing open weights, we're playing it safe and auditing everything internally first."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to read the fine print</div>
+      <div class="idiom-meaning">to carefully read the small-print terms before agreeing — German equivalent: "das Kleingedruckte lesen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Always read the fine print on share features — that link was public the moment you clicked 'Share'."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Lies immer das Kleingedruckte bei Teilen-Features — der Link war öffentlich, sobald du auf 'Teilen' geklickt hast."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I didn't read the fine print and now my API key is in Google."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das Kleingedruckte nicht gelesen — und jetzt liegt mein API-Key bei Google."</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: techcrunch.com · anthropic.com · axios.com · cnbc.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #73 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
