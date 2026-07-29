@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-29",
+      "edition_number": 74,
+      "headlines": [
+        "MCP 2026-07-28: Stateless-Kern, neue Extensions für Apps, Tasks und Enterprise Auth",
+        "Claude Mythos knackt HAWK und AES — Kryptanalyse in 60 Stunden statt zwei Jahren",
+        "1.178 KI-Mitarbeitende fordern globale Bremse — Anthropic und OpenAI endorsen offiziell",
+        "Open Secure AI Alliance: Nvidia + 37 Firmen, NOOA Open Source — ohne OpenAI, Google, Anthropic",
+        "ChatGPT Voice steuert jetzt Codex und Work im Desktop — Coding per Sprache für Plus/Pro"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-29T16:07:00Z"
+    },
+    {
       "date": "2026-07-28",
       "edition_number": 73,
       "headlines": [
