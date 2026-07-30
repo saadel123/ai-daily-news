@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-30",
+      "edition_number": 75,
+      "headlines": [
+        "Gemini Robotics 2: Ganzkörper-Koordination, Fingerfertigkeit, Multi-Robot-Kollaboration — heute live",
+        "Act + Hush Security: KI-Agenten erben stale Credentials — 90 Mio. $ für Abhilfe nach dem Hugging-Face-Hack",
+        "TRAINS morgen live: OpenAI, Anthropic, Google, Microsoft, xAI machen mit — Meta kneift",
+        "Qualcomm × Modular: 3,9-Mrd.-$-Kauf abgeschlossen — Mojo und MAX kommen auf Snapdragon",
+        "Kimi K3 Lizenz: Revenue-Klausel und Attribution-Pflicht überraschen Cloud-Betreiber"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-30T16:00:00Z"
+    },
+    {
       "date": "2026-07-29",
       "edition_number": 74,
       "headlines": [
