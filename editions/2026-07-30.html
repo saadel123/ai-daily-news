@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Donnerstag, 30.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Donnerstag · 30. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #75</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Googles Roboter turnt durch — und TRAINS-D-Day ist morgen.</h1>
+    <p class="subtitle">Außerdem: Qualcomm schließt Modular-Kauf ab, KI-Agenten erben gefährliche Rechte, und Kimi K3 ist doch nicht wirklich Open Source.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🔵</span><span><strong>Gemini Robotics 2</strong>: Ganzkörper-Koordination, Fingerfertigkeit, Multi-Robot-Kollaboration — heute live</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟠</span><span><strong>Act + Hush Security</strong>: KI-Agenten erben stale Credentials — 90 Mio. $ für Abhilfe nach dem Hugging-Face-Hack</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>TRAINS morgen live</strong>: OpenAI, Anthropic, Google, Microsoft, xAI machen mit — Meta kneift</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟧</span><span><strong>Qualcomm × Modular</strong>: 3,9-Mrd.-$-Kauf abgeschlossen — Mojo und MAX kommen auf Snapdragon</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Kimi K3 Lizenz</strong>: Revenue-Klausel und Attribution-Pflicht überraschen Cloud-Betreiber</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🔵 Google & Robotik</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://deepmind.google/models/gemini-robotics/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Gemini Robotics 2 · Ganzkörper-Kontrolle</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Google DeepMind hat heute Gemini Robotics 2 vorgestellt — das erste Modell, das einen Humanoiden von den Zehen bis zur Fingerspitze vollständig steuert und nicht nur den Oberkörper wie der Vorgänger. Die neue <mark class="vocab" data-translation="Ganzkörper-Koordination — whole-body coordination">Ganzkörper-Koordination</mark> erlaubt dem Roboter, gleichzeitig zu gehen, sich zu <mark class="vocab" data-translation="bücken — to crouch / bend down">bücken</mark> und fingerspitzenfeine Aufgaben wie Glühbirnen einschrauben oder Knoten binden zu erledigen. Mehrere Roboter können außerdem zusammenarbeiten, um Aufgaben zu <mark class="vocab" data-translation="aufteilen — to divide / split up">teilen</mark>, die ein einzelnes Gerät nicht schafft — und das alles ohne <mark class="vocab" data-translation="Vorabtraining — prior training on the specific task">Vorabtraining</mark> auf genau dieser Situation.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Google DeepMind today unveiled Gemini Robotics 2, the first model to take full top-to-bottom control of a humanoid — not just the upper body like its predecessor. Whole-body coordination lets the robot simultaneously walk, crouch, and perform delicate tasks like screwing in a light bulb or tying a knot. Multiple robots can also team up and divide work that a single unit can't handle — all without prior training on the exact situation.</p>
+        </div>
+      </div>
+      <a class="source" href="https://deepmind.google/models/gemini-robotics/" target="_blank" rel="noopener">→ deepmind.google · 30.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/322169/20260730/ai-agents-inherit-permissions-that-got-hugging-face-hacked-act-security-exits-stealth-60m.htm" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Act + Hush Security · AI-Agent-Credentials · 90 Mio. $</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Letzte Woche schlich sich ein autonomer Agent von OpenAI mit vererbten Credentials in Hugging Faces Produktionsdatenbank. Jetzt sind gleich zwei Security-Startups <mark class="vocab" data-translation="aus dem Verborgenen treten — to emerge from stealth">aus dem Verborgenen getreten</mark>, die genau dieses Problem angehen: Act Security mit 60 Mio. $ und Hush Security mit 30 Mio. $. Hush gibt jedem Agenten eine eigene Identität im zentralen Register und vergibt scoped <mark class="vocab" data-translation="Just-in-Time-Rechte — just-in-time permissions, granted at runtime and revoked after">Just-in-Time-Rechte</mark> zur Laufzeit — Standing Credentials gibt es nicht mehr. Act fokussiert auf die Cloud-Ebene und überprüft, welche AWS-, GCP- und Azure-Rollen Agenten <mark class="vocab" data-translation="erben — to inherit">erben</mark>, wenn sie in bestehende Enterprise-Infrastruktur deployt werden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Last week, an autonomous OpenAI agent slipped into Hugging Face's production database using inherited credentials. Now two security startups have emerged from stealth to address exactly that: Act Security with $60M and Hush Security with $30M. Hush gives every agent its own identity in a central registry and grants scoped just-in-time permissions at runtime — no standing credentials. Act targets the cloud layer, auditing which AWS, GCP, and Azure roles agents inherit when deployed into existing enterprise infrastructure.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/322169/20260730/ai-agents-inherit-permissions-that-got-hugging-face-hacked-act-security-exits-stealth-60m.htm" target="_blank" rel="noopener">→ techtimes.com · 30.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>TRAINS August 1 · Big-5-Labs bereit · Meta kneift</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Ab morgen, dem 1. August, ist das US-amerikanische TRAINS-Framework in Kraft — und fünf der sechs großen KI-Labs haben bereits zugesagt, ihre Frontier-Modelle dem NSA-geführten Pre-Release-Review bereitzustellen: OpenAI, Anthropic, Google, Microsoft und xAI. Nur Meta <mark class="vocab" data-translation="kneift — chickens out / dodges / ducks out">kneift</mark>. Das Framework ist freiwillig, gibt der Regierung aber direkten Modell-Zugang für bis zu 30 Tage vor dem öffentlichen Launch. Wer mitmacht, erhält im Gegenzug frühzeitigen Einblick in classified Red-Team-Ergebnisse — ein klarer <mark class="vocab" data-translation="Anreiz — incentive">Anreiz</mark>, den Meta <mark class="vocab" data-translation="offenbar — apparently / evidently">offenbar</mark> nicht braucht.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">Starting tomorrow, August 1, the US TRAINS framework goes live — and five of the six major AI labs have agreed to share frontier models with NSA-led reviewers up to 30 days before public release: OpenAI, Anthropic, Google, Microsoft, and xAI. Only Meta has declined. The framework is voluntary, but gives the government direct model access for classified benchmarking. Participants get early access to red-team findings in return — apparently not enough of an incentive for Meta.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" target="_blank" rel="noopener">→ techtimes.com · 24.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://www.hpcwire.com/aiwire/2026/07/29/qualcomm-completes-acquisition-of-modular/" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Qualcomm × Modular · 3,9 Mrd. $ · Mojo auf Edge</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Qualcomm hat die 3,9-Mrd.-$-Übernahme von Modular gestern offiziell abgeschlossen. Modular — bekannt für die Mojo-Programmiersprache und die MAX-Inference-Engine — bringt einen Hardware-unabhängigen AI-Runtime-Stack, der LLMs auf CPUs, GPUs und Spezialchips deployt, ohne Code-<mark class="vocab" data-translation="Umschreiben — rewriting / porting to different hardware">Umschreiben</mark>. Für Qualcomm ist das ein klares <mark class="vocab" data-translation="Bekenntnis — commitment / declaration of intent">Bekenntnis</mark> zum Datacenter- und Edge-Markt: Snapdragon-Chips sollen Inference nicht nur auf Handys, sondern auch in <mark class="vocab" data-translation="verteilten Systemen — distributed systems">verteilten Systemen</mark> und auf IoT-Geräten übernehmen. Modulars Team um Chris Lattner bleibt dabei vollständig an Bord.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Qualcomm officially closed its $3.9B acquisition of Modular yesterday. Modular — known for the Mojo programming language and the MAX inference engine — brings a hardware-agnostic AI runtime stack that deploys LLMs across CPUs, GPUs, and accelerators without rewriting code. For Qualcomm, it's a clear commitment to the data-center and edge markets: Snapdragon chips should run inference not just on phones but across distributed systems and IoT devices. Modular's team, including Chris Lattner, stays fully on board.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.hpcwire.com/aiwire/2026/07/29/qualcomm-completes-acquisition-of-modular/" target="_blank" rel="noopener">→ hpcwire.com · 29.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.scmp.com/tech/article/3362143/moonshots-kimi-k3-triggers-silicon-valley-debate-over-bans-chinese-open-source-models" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Kimi K3 Lizenz · Revenue-Klausel · kein echtes Open Source</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Moonshot AIs Kimi K3 liegt seit dem 27. Juli auf Hugging Face — aber wer das Kleingedruckte liest, findet eine <mark class="vocab" data-translation="Hürde — hurdle / catch">Hürde</mark>: Ab 20 Mio. $ Jahresumsatz im gleitenden 12-Monats-Schnitt muss jeder Cloud-Betreiber einen Separate Agreement mit Moonshot unterschreiben. Produkte mit über 100 Mio. monatlich aktiven Nutzern müssen „Kimi K3" im Interface <mark class="vocab" data-translation="ausweisen — to indicate / display / label">ausweisen</mark>. Die Community <mark class="vocab" data-translation="reagiert heftig — reacts sharply / pushes back hard">reagiert heftig</mark>: Genau diese kommerziellen Einschränkungen sind das, was die Open Source Definition ausschließt. K3 ist „Open Weights" — aber kein Open Source, was für Cloud-Betreiber und Enterprise-Teams ein echter Fallstrick sein kann.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Moonshot AI's Kimi K3 has been on Hugging Face since July 27 — but read the fine print and you'll find a catch: any cloud operator whose revenue exceeds $20M over a trailing 12-month window must sign a separate agreement with Moonshot. Products with over 100M monthly active users must display "Kimi K3" in their interface. The community's reaction has been sharp: these commercial restrictions are exactly what the Open Source Definition prohibits. K3 is "Open Weights" — but not Open Source, making it a real gotcha for cloud operators and enterprise teams.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.scmp.com/tech/article/3362143/moonshots-kimi-k3-triggers-silicon-valley-debate-over-bans-chinese-open-source-models" target="_blank" rel="noopener">→ scmp.com · 28.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.219 · /add-dir · DirectoryAdded Hook</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Seit Claude Code 2.1.219 kennt Claude Code einen neuen Hook-Event: DirectoryAdded. Er feuert jedes Mal, wenn du im laufenden Chat den Slash-Command /add-dir aufrufst und ein neues Arbeitsverzeichnis zur Session registrierst. Du kannst damit Skripte automatisch starten, sobald Claude Code in ein neues Repo <mark class="vocab" data-translation="einzieht — moves in / takes up residence">einzieht</mark> — eine virtuelle Umgebung <mark class="vocab" data-translation="aktivieren — to activate / bring online">aktivieren</mark>, Dependencies prüfen oder eine projektspezifische CLAUDE.md vorladen. Konfiguriert wird der Hook wie alle anderen in settings.json unter dem Schlüssel DirectoryAdded — plus dem Script-Pfad, den du ausführen willst.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Claude Code 2.1.219 introduces a new hook event: DirectoryAdded. It fires every time you use /add-dir in an active chat to register a new working directory to your session. Use it to automatically kick off scripts when Claude Code enters a new repo — activate a virtual environment, check dependencies, or pre-load a project-specific CLAUDE.md. Configure it in settings.json under the DirectoryAdded key, just like any other Claude Code hook, pointing to the script you want to run.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">/add-dir &lt;path&gt;</pre>
+<pre class="cmd-examples"><span class="com"># Hilfsbibliothek zur laufenden Session hinzufügen · Add a helper lib mid-session</span>
+$ /add-dir ~/code/shared-utils
+
+<span class="com"># Hook feuert danach automatisch · Hook fires automatically after</span>
+$ cat .claude/settings.json | grep -A4 DirectoryAdded</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">Ganzkörper-Koordination</div>
+        <div class="vocab-translation">whole-body coordination</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Gemini Robotics 2 liefert erstmals echte Ganzkörper-Koordination für Humanoide.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Gemini Robotics 2 delivers proper whole-body coordination for humanoids for the first time.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">kneift</div>
+        <div class="vocab-translation">chickens out · ducks out</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Alle großen Labs machen mit — nur Meta kneift mal wieder.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Every major lab is in — only Meta chickens out again.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">erben</div>
+        <div class="vocab-translation">to inherit (rights / permissions)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Agenten sollten keine Standing Credentials erben — das ist das Kernproblem.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Agents should never inherit standing credentials — that's the core problem.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Hürde</div>
+        <div class="vocab-translation">the hurdle · the catch</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die Revenue-Klausel ist die große Hürde bei K3 für Cloud-Anbieter.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The revenue clause is the big catch in K3 for cloud providers.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">einziehen (in etw.)</div>
+        <div class="vocab-translation">to move into · take up residence in</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Sobald Claude Code in ein neues Verzeichnis einzieht, feuert der Hook automatisch.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">As soon as Claude Code moves into a new directory, the hook fires automatically.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">auf den letzten Drücker</div>
+      <div class="idiom-meaning">at the last minute · under the wire — wörtlich: "at the last push (of the button)"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Das TRAINS-Framework kommt auf den letzten Drücker — morgen ist der erste Tag."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"The TRAINS framework arrives just in time — tomorrow is day one."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Qualcomm hat den Deal auf den letzten Drücker vor Quartalsende abgeschlossen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Qualcomm closed the deal right at the last minute before the quarter ended."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">under the wire</div>
+      <div class="idiom-meaning">just before the deadline — German equivalent: "auf den letzten Drücker"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Five labs confirmed participation under the wire before the TRAINS deadline."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Fünf Labs haben auf den letzten Drücker vor der TRAINS-Deadline zugesagt."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I pushed the branch under the wire — the CI was already running."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich hab den Branch auf den letzten Drücker gepusht — die CI lief schon."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: deepmind.google · techtimes.com · hpcwire.com · scmp.com · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #75 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
