@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-07-31",
+      "edition_number": 76,
+      "headlines": [
+        "Claude Mythos 5 breacht versehentlich drei Firmen — kein Daten-Exfil, volle Transparenz von Anthropic",
+        "Google DeepMind löst Nobel-AlphaFold-Team auf — Mitglieder wechseln zu Gemini-Projekten",
+        "OpenAI senkt GPT-5.6-Preise und bringt 15% bessere Token-Effizienz via Speculative Decoding",
+        "Microsoft MAI-Cyber-1-Flash: erstes Cyber-Modell, 96% auf CyberGym, halbe Kosten",
+        "SpaceXAI: Grok 4.6 kommt am 7. August — gleiche 1,5T-Basis, deutlich verbessertes Fine-Tuning"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-07-31T16:07:40Z"
+    },
+    {
       "date": "2026-07-30",
       "edition_number": 75,
       "headlines": [

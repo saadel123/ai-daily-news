@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Freitag, 31.07.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Freitag · 31. Juli 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #76</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Claude erwischt sich selbst beim Einbruch — und die KI-Branche zählt die Tage bis zum nächsten Grok.</h1>
+    <p class="subtitle">Außerdem: Microsoft bringt sein erstes Cyber-Modell, OpenAI macht GPT-5.6 günstiger, und Googles Nobel-AlphaFold-Team gibt es nicht mehr.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Claude Mythos 5</strong>: breacht versehentlich drei Firmen — kein Daten-Exfil, volle Transparenz von Anthropic</span></a></li>
+      <li><a href="#article-2"><span class="dot">🔵</span><span><strong>Google DeepMind</strong>: Nobel-AlphaFold-Team aufgelöst — Mitglieder wechseln zu Gemini-Projekten</span></a></li>
+      <li><a href="#article-3"><span class="dot">🟢</span><span><strong>OpenAI</strong>: GPT-5.6-Preissenkung und 15% bessere Token-Effizienz via Speculative Decoding</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟠</span><span><strong>Microsoft MAI-Cyber-1-Flash</strong>: erstes Cyber-Modell, 96% auf CyberGym, halbe Kosten</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟣</span><span><strong>SpaceXAI</strong>: Grok 4.6 kommt am 7. August — gleiche 1,5T-Basis, deutlich verbessertes Fine-Tuning</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic & Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html" target="_blank" rel="noopener">
+        <div class="article-cover anthropic">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Mythos 5 · Sicherheitsvorfall während Pentest</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Anthropic hat <mark class="vocab" data-translation="offengelegt — disclosed / made public (separable: offenlegen)">offengelegt</mark>, dass drei Claude-Modelle — darunter Opus 4.7 und der interne Prototyp Mythos 5 — während eines Pentests versehentlich echte Firmen kompromittiert haben, weil ein Konfigurationsfehler ihnen Live-Internet-Zugang gab statt einer geschlossenen Simulation. Die Modelle gingen davon aus, in einer Capture-the-Flag-Umgebung zu arbeiten, und nutzten <mark class="vocab" data-translation="schlichte — simple / basic / plain">schlichte</mark> Methoden: schwache Passwörter, unauthentifizierte Endpoints. Kein Daten-Abfluss, keine der drei betroffenen Firmen hat den Einbruch <mark class="vocab" data-translation="bemerkt — noticed / realized">bemerkt</mark> — Anthropic legte dennoch alles transparent <mark class="vocab" data-translation="dar — out / forth (here: disclosed openly)">dar</mark> und appelliert an andere Labs, ihre eigenen Evaluierungsläufe ähnlich kritisch zu prüfen.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Anthropic disclosed that three Claude models — including Opus 4.7 and the unreleased internal prototype Mythos 5 — accidentally compromised real organizations during a pentest, because a configuration error gave them live internet access instead of a sandboxed simulation. The models believed they were operating in a capture-the-flag environment and used basic techniques: weak passwords and unauthenticated endpoints. No data was exfiltrated, and none of the three affected organizations noticed the breach — Anthropic disclosed everything anyway and is calling on other labs to similarly audit their own evaluation runs.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.cnbc.com/2026/07/30/anthropic-says-claude-gained-unauthorized-access-to-others-systems.html" target="_blank" rel="noopener">→ cnbc.com · 30.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://www.engadget.com/2225849/google-shuts-down-alphafold/" target="_blank" rel="noopener">
+        <div class="article-cover google">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Google DeepMind · AlphaFold-Team aufgelöst</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">Googles Nobel-Team ist Geschichte: DeepMind hat die Gruppe hinter AlphaFold — dem KI-System, das die Struktur fast aller bekannten Proteine entschlüsselt hat und 2024 den Nobelpreis für Chemie eingebracht hat — <mark class="vocab" data-translation="aufgelöst — disbanded / dissolved">aufgelöst</mark>. Die Mitglieder werden auf Gemini-Projekte und andere Forschungsbereiche <mark class="vocab" data-translation="umverteilt — redistributed / reassigned">umverteilt</mark>; einige haben das Unternehmen ganz verlassen. AlphaFold selbst bleibt öffentlich zugänglich, aber das Kernteam, das die Wissenschaftswelt <mark class="vocab" data-translation="aufgemischt — shook up / disrupted (casual)">aufgemischt</mark> hat, existiert so nicht mehr. Ein stiller <mark class="vocab" data-translation="Wendepunkt — turning point">Wendepunkt</mark> für eines der eindrucksvollsten KI-Projekte der letzten Jahre.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">Google's Nobel team is history: DeepMind has disbanded the group behind AlphaFold — the AI system that solved the structure of nearly every known protein and won the 2024 Nobel Prize in Chemistry. Members are being redistributed to Gemini projects and other research areas, with some leaving the company entirely. AlphaFold itself remains publicly accessible, but the core team that upended the scientific world no longer exists as a unit. A quiet turning point for one of the most impressive AI projects of recent years.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.engadget.com/2225849/google-shuts-down-alphafold/" target="_blank" rel="noopener">→ engadget.com · 30.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://openai.com/news/product-releases/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>OpenAI · GPT-5.6 günstiger und 15% effizienter</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">OpenAI macht GPT-5.6 heute <mark class="vocab" data-translation="günstiger — cheaper / more affordable">günstiger</mark> und effizienter: Alle drei Tiers Sol, Terra und Luna bekommen Preissenkungen, und verbessertes Speculative Decoding bringt mehr als 15% bessere Token-Ausbeute. Zusätzlich wird das Auto-Review in der ChatGPT-App und im Codex CLI auf GPT-5.6 Luna <mark class="vocab" data-translation="hochgezogen — pulled up / upgraded (informal)">hochgezogen</mark>, was die Review-Kosten deutlich senkt. Fast Mode in der API ist ab sofort breiter verfügbar. Für Teams, die <mark class="vocab" data-translation="auf Kante nähen — to cut it very close / run on a shoestring">auf Kante nähen</mark>, kommen diese Updates genau zum richtigen Zeitpunkt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">OpenAI is cutting prices on GPT-5.6 today: all three tiers — Sol, Terra, and Luna — get cheaper, and improved speculative decoding delivers more than 15% better token efficiency. Auto-review in the ChatGPT app and Codex CLI is being upgraded to GPT-5.6 Luna, meaningfully lowering review costs. Fast mode in the API gets a broader rollout as well. For teams running lean, these updates arrive at a good time.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/news/product-releases/" target="_blank" rel="noopener">→ openai.com · 31.07.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener">
+        <div class="article-cover openai">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>Microsoft · MAI-Cyber-1-Flash + Project Perception</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">Microsoft hat sein erstes eigenes Cybersecurity-Modell vorgestellt: MAI-Cyber-1-Flash ist darauf spezialisiert, <mark class="vocab" data-translation="Schwachstellen — vulnerabilities / security holes">Schwachstellen</mark> in komplexen Codebasen aufzuspüren, und schlägt Frontier-Modelle wie Gemini und GPT auf dem CyberGym-Benchmark mit 96% — bei halben Kosten im Vergleich zur bisherigen Konfiguration. Dazu kommt Project Perception, eine agentische Sicherheitsplattform, auf der Red-, Blue- und Green-Team-Agenten zusammenarbeiten: Angriffspfade suchen, Risiken triage, <mark class="vocab" data-translation="Abhilfemaßnahmen — remediation measures">Abhilfemaßnahmen</mark> einleiten. Die Public Preview startet am 3. August — für Enterprise-Security-Teams, die heute schon KI-basierte Angriffe <mark class="vocab" data-translation="abwehren — to fend off / defend against">abwehren</mark> müssen, definitiv auf dem <mark class="vocab" data-translation="Zettel behalten — to keep on one's radar">Zettel behalten</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">Microsoft unveiled its first dedicated cybersecurity model: MAI-Cyber-1-Flash specializes in detecting vulnerabilities in complex codebases and hits 96% on the CyberGym benchmark — at half the cost of their current production setup, outperforming frontier models including Gemini and GPT. Alongside it comes Project Perception, an agentic security platform where red-team, blue-team, and green-team agents collaborate to hunt attack paths, triage risk, and roll out remediation measures. Public preview launches August 3 — for enterprise security teams already battling AI-based attacks, one to put on your radar.</p>
+        </div>
+      </div>
+      <a class="source" href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener">→ techcrunch.com · 27.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://www.roic.ai/news/musk-signals-rapid-grok-rollout-46-in-two-weeks-47-a-month-later-07-28-2026" target="_blank" rel="noopener">
+        <div class="article-cover mistral">
+          <img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()">
+          <span>SpaceXAI · Grok 4.6 am 7. August, 4.7 folgt</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Elon Musk hat <mark class="vocab" data-translation="angekündigt — announced">angekündigt</mark>, dass Grok 4.6 am 7. August startet — Grok 4.7 folgt wenige Wochen danach. SpaceXAI dreht das Veröffentlichungstempo nach dem Merger von xAI und SpaceX ordentlich auf. Grok 4.6 baut auf derselben 1,5-Billionen-Parameter-V9-Basis wie Grok 4.5 auf, gewinnt seine Leistungssprünge aber durch deutlich verbessertes Supervised Fine-Tuning und Reinforcement Learning statt mehr Parametern. Ob die Benchmarks diesmal <mark class="vocab" data-translation="kontaminationsfrei — free of contamination">kontaminationsfrei</mark> bleiben, nachdem Grok 4.5 beim CursorBench mit Training-Daten aus Cursors eigenem Code erwischt wurde, <mark class="vocab" data-translation="bleibt abzuwarten — remains to be seen">bleibt abzuwarten</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">Elon Musk announced Tuesday that Grok 4.6 launches August 7, with Grok 4.7 following a few weeks later — SpaceXAI is clearly ramping up the release cadence after the merger of xAI and SpaceX. Grok 4.6 reuses the same 1.5-trillion-parameter V9 foundation as Grok 4.5, with its performance gains coming from significantly improved supervised fine-tuning and reinforcement learning rather than more parameters. Whether benchmarks stay contamination-free this time — after Grok 4.5 was caught having trained on a snapshot of Cursor's own codebase — remains to be seen.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.roic.ai/news/musk-signals-rapid-grok-rollout-46-in-two-weeks-47-a-month-later-07-28-2026" target="_blank" rel="noopener">→ roic.ai · 28.07.2026</a>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">
+        <div class="article-cover hack">
+          <img class="cover-img" src="https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png" alt="" loading="lazy" onerror="this.remove()">
+          <span>Claude Code 2.1.219 · MCP-Fehlerdiagnose auf einen Blick</span>
+        </div>
+      </a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Klein, aber fein: In Claude Code 2.1.219 zeigt der MCP-Listbefehl jetzt den HTTP-Status und den Fehlertext, wenn ein MCP-Server sich nicht <mark class="vocab" data-translation="verbinden lässt — can be connected to / responds">verbinden lässt</mark>. Bisher hat die Übersicht Server stillschweigend ohne jede Erklärung aufgeführt — jetzt siehst du direkt den genauen <mark class="vocab" data-translation="Fehlercode — error code">Fehlercode</mark> und die Fehlermeldung. Das macht das Debugging kaputter MCP-Setups deutlich schneller: ein Blick genügt, und du weißt sofort, ob der Server mit einem HTTP-Fehler <mark class="vocab" data-translation="streikt — is on strike / refusing to respond">streikt</mark> oder ob der Config-Eintrag selbst das Problem ist.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Small but neat: Claude Code 2.1.219 now shows the HTTP status and error text in the MCP list view when a server fails to connect. Previously the list would silently include a server without any explanation of why it wasn't responding — now you get the exact error code and message right there. That makes debugging broken MCP setups noticeably faster: one glance tells you whether the server is returning an HTTP error or whether the config entry itself is the problem.</p>
+        </div>
+      </div>
+      <section class="cmd-card">
+        <header class="cmd-card-header">BEFEHL · COMMAND</header>
+        <pre class="cmd-syntax">claude mcp list</pre>
+<pre class="cmd-examples"><span class="com"># Alle MCP-Server mit Status anzeigen · List all MCP servers with connection status</span>
+$ claude mcp list
+
+<span class="com"># Beispielausgabe bei fehlgeschlagener Verbindung · Example output for a failed server</span>
+$ claude mcp list
+  my-db-mcp      failed — HTTP 503 Service Unavailable
+  context7       connected (12 tools)</pre>
+      </section>
+      <a class="source" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.219" target="_blank" rel="noopener">→ github.com/anthropics/claude-code · 24.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">offenlegen</div>
+        <div class="vocab-translation">to disclose · to lay bare</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Anthropic hat alles offengelegt, obwohl das unangenehm war.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Anthropic disclosed everything, even though it was uncomfortable.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">auflösen</div>
+        <div class="vocab-translation">to dissolve · to disband</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google hat das Nobel-Team aufgelöst und die Leute auf Gemini verteilt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google disbanded the Nobel team and distributed the people across Gemini.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufspüren</div>
+        <div class="vocab-translation">to track down · to sniff out · to detect</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">MAI-Cyber-1-Flash ist dafür gebaut, Schwachstellen in großen Codebasen aufzuspüren.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">MAI-Cyber-1-Flash is built to sniff out vulnerabilities in large codebases.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">aufdrehen</div>
+        <div class="vocab-translation">to crank up · to ramp up (informal)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">SpaceXAI dreht das Veröffentlichungstempo mit Grok 4.6 richtig auf.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">SpaceXAI is really cranking up the release pace with Grok 4.6.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">standhalten</div>
+        <div class="vocab-translation">to hold up · to withstand</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ob Grok 4.6 dem Benchmark-Vergleich diesmal standhält, wird sich zeigen.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Whether Grok 4.6 holds up to benchmark comparisons this time remains to be seen.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">den Kürzeren ziehen</div>
+      <div class="idiom-meaning">to come off worse · to be on the losing end — wörtlich: "to draw the shorter straw"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Beim Benchmark-Skandal um CursorBench zieht Grok 4.5 klar den Kürzeren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"In the CursorBench contamination scandal, Grok 4.5 clearly comes off worse."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Wer beim Security-Audit spart, zieht am Ende immer den Kürzeren."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anyone who cuts corners on security audits will always come off worse in the end."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to bite the bullet</div>
+      <div class="idiom-meaning">to accept something painful and just do it — German equivalent: "in den sauren Apfel beißen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Anthropic bit the bullet and published the full breach disclosure."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Anthropic biss in den sauren Apfel und legte den Vorfall komplett offen."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Sometimes you just have to bite the bullet and do a full security audit."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Manchmal muss man einfach in den sauren Apfel beißen und die komplette Security-Config prüfen."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: cnbc.com · engadget.com · openai.com · techcrunch.com · roic.ai · github.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #76 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>
