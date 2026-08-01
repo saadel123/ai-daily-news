@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily — Samstag, 01.08.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><a href="../index.html" style="color: inherit; text-decoration: none">AI Daily</a></div>
+  <div class="meta">
+    <span class="date">Samstag · 1. August 2026</span>
+    <span>⏱ ~3 min lesen · ~4 min hören</span>
+    <span class="preview-tag">Edition #77</span>
+  </div>
+  <div class="controls">
+    <select id="speed" title="Lesegeschwindigkeit">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+    </select>
+    <select id="voice-de" title="Deutsche Stimme"></select>
+    <select id="voice-en" title="English voice"></select>
+    <button id="stop" title="Stop">⏹</button>
+    <button id="theme" title="Theme">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>$15 Mrd. für Anthropics Texas-Rechenzentrum — und die EU zieht ihre KI-Transparenzpflicht durch.</h1>
+    <p class="subtitle">Außerdem: OpenAI öffnet GPT-5.6 Sol für 100.000 Forscher, NAVER und NVIDIA bauen Koreas Gigawatt-KI-Factory, das Weiße Haus liefert seinen KI-Framework pünktlich zum Deadline — und FLUX 3 springt multimodal in die Early Access.</p>
+  </div>
+
+  <section class="glance">
+    <h2>📋 Heute auf einen Blick · At a glance</h2>
+    <ul>
+      <li><a href="#article-1"><span class="dot">🟧</span><span><strong>Anthropic + Texas</strong>: 15-Mrd.-$-Kredit für 1,6-GW-Rechenzentrum — Google sichert mit 20&nbsp;% Eigenkapital ab</span></a></li>
+      <li><a href="#article-2"><span class="dot">🟢</span><span><strong>OpenAI Forscher-Programm</strong>: 100.000 Wissenschaftler bekommen GPT-5.6 Sol Pro kostenlos</span></a></li>
+      <li><a href="#article-3"><span class="dot">🔵</span><span><strong>EU AI Act</strong>: Ab 2. August Transparenzpflichten für alle generativen KI-Systeme in Europa</span></a></li>
+      <li><a href="#article-4"><span class="dot">🟣</span><span><strong>NAVER × NVIDIA × Brookfield</strong>: 200-MW-Expansion für Koreas Sovereign-AI-Factory in Sejong</span></a></li>
+      <li><a href="#article-5"><span class="dot">🟠</span><span><strong>Weißes Haus</strong>: NSA-Benchmarking und freiwilliger 30-Tage-Early-Access für Frontier-Models live</span></a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🟧 Anthropic &amp; Claude</h2>
+
+    <article class="article" id="article-1">
+      <a class="article-cover-link" href="https://finance.yahoo.com/technology/ai/articles/banks-talks-lend-15-billion-182522516.html" target="_blank" rel="noopener"><div class="article-cover anthropic"><img class="cover-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Anthropic + Texas · $15 Mrd. Rechenzentrum</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a1-de" title="Vorlesen">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a1-de">Morgan Stanley führt ein <mark class="vocab" data-translation="Konsortium — consortium (group of lenders or partners)">Konsortium</mark> aus Banken an, das Nexus Data Centers 15 Mrd. $ leihen soll — aufgeteilt in einen 14-Mrd.-$-Bridgeloan und eine revolvierende Kreditlinie. Das Geld fließt in einen Datencenter-Campus in Hubbard, Texas, der ausschließlich für Anthropic gebaut wird. Google springt als Bürge ein und erhält dafür rund 20 Prozent <mark class="vocab" data-translation="Eigenkapital — equity (ownership stake)">Eigenkapital</mark> an dem Projekt sowie an dem dazugehörigen 1,6-GW-Gaskraftwerk. Ein Data-Center-Deal in dieser <mark class="vocab" data-translation="Größenordnung — order of magnitude / scale">Größenordnung</mark> ist selbst nach den Maßstäben des KI-Booms <mark class="vocab" data-translation="außergewöhnlich — extraordinary / exceptional">außergewöhnlich</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a1-en" title="Read aloud">🔊</button> English</div>
+          <p class="tts-text" id="a1-en">Morgan Stanley is leading a consortium of banks set to lend Nexus Data Centers $15 billion — structured as a $14 billion bridge loan paired with a revolving credit facility. The money goes toward a data center campus in Hubbard, Texas, built exclusively for Anthropic. Google steps in as guarantor and gets roughly 20% equity in the project and the attached 1.6 GW natural-gas power plant. Even by AI-boom standards, this is an extraordinary scale for a single data center deal.</p>
+        </div>
+      </div>
+      <a class="source" href="https://finance.yahoo.com/technology/ai/articles/banks-talks-lend-15-billion-182522516.html" target="_blank" rel="noopener">→ finance.yahoo.com · 30.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">🌐 Allgemein · General AI</h2>
+
+    <article class="article" id="article-2">
+      <a class="article-cover-link" href="https://openai.com/index/chatgpt-for-academic-researchers/" target="_blank" rel="noopener"><div class="article-cover openai"><img class="cover-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI · ChatGPT für 100.000 Forscher</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a2-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a2-de">OpenAI startet ein neues Programm, das 100.000 Wissenschaftlerinnen und Wissenschaftler kostenlosen Zugang zu GPT-5.6 Sol Pro gibt — dem <mark class="vocab" data-translation="stärksten — most capable / most powerful">stärksten</mark> Modell im GPT-5.6-Portfolio. In der ersten Phase in diesem Sommer werden zunächst 10.000 Plätze <mark class="vocab" data-translation="vergeben — allocated / awarded">vergeben</mark>, mit Ausbau auf die volle Zahl bis 2027. Jedes Team von bis zu vier Personen kann gemeinsam auf das Modell zugreifen und erhält zusätzlich persönliche Unterstützung durch OpenAI. Ziel ist, wissenschaftliche Entdeckungen in Biologie, Mathematik und Ingenieurwesen zu <mark class="vocab" data-translation="beschleunigen — accelerate / speed up">beschleunigen</mark>.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a2-en">🔊</button> English</div>
+          <p class="tts-text" id="a2-en">OpenAI is launching a new program giving 100,000 scientists free access to GPT-5.6 Sol Pro — the most capable model in the GPT-5.6 lineup. The first cohort of 10,000 is being seated this summer, scaling to the full number through 2027. Teams of up to four people share a single account and get hands-on support from OpenAI. The goal is to accelerate scientific discovery in biology, mathematics, and engineering.</p>
+        </div>
+      </div>
+      <a class="source" href="https://openai.com/index/chatgpt-for-academic-researchers/" target="_blank" rel="noopener">→ openai.com · 30.07.2026</a>
+    </article>
+
+    <article class="article" id="article-3">
+      <a class="article-cover-link" href="https://www.digitalapplied.com/blog/eu-ai-act-august-2026-transparency-obligations-agency-checklist" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>EU AI Act · Transparenzpflichten ab 2. August 2026</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a3-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a3-de">Ab dem 2. August 2026 <mark class="vocab" data-translation="in Kraft treten — to come into effect / enter into force">treten</mark> die Transparenzpflichten des EU AI Act <mark class="vocab" data-translation="in Kraft treten — to come into effect / enter into force">in Kraft</mark> — und zwar für alle Anbieter und Deployer generativer KI-Systeme in Europa. Nutzer müssen darüber informiert werden, dass sie mit einer KI interagieren; synthetische Inhalte wie Bilder, Videos und Audio müssen maschinenlesbar als KI-generiert markiert werden; und Deepfakes müssen sichtbar <mark class="vocab" data-translation="als solche gekennzeichnet — labeled as such">als solche gekennzeichnet</mark> sein. Für Systeme, die bereits vor dem Stichtag auf dem Markt waren, gilt eine <mark class="vocab" data-translation="Übergangsfrist — grace period / transitional period">Übergangsfrist</mark> bis zum 2. Dezember 2026. Das betrifft nicht nur Hochrisiko-Systeme, sondern jede Firma, die generative KI für öffentliche Inhalte einsetzt.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a3-en">🔊</button> English</div>
+          <p class="tts-text" id="a3-en">From August 2, 2026, the EU AI Act's transparency obligations come into force for all providers and deployers of generative AI systems in Europe. Users must be told they're interacting with an AI; synthetic content like images, video, and audio must be machine-readable marked as AI-generated; and deepfakes must be visibly labeled as such. Systems already on the market before the deadline get a grace period until December 2, 2026. This applies not just to high-risk systems but to any company using generative AI for public-facing content.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.digitalapplied.com/blog/eu-ai-act-august-2026-transparency-obligations-agency-checklist" target="_blank" rel="noopener">→ digitalapplied.com · 01.08.2026</a>
+    </article>
+
+    <article class="article" id="article-4">
+      <a class="article-cover-link" href="https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout" target="_blank" rel="noopener"><div class="article-cover mistral"><img class="cover-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>NAVER × NVIDIA × Brookfield · 200 MW Sovereign AI Korea</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a4-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a4-de">NAVER, NVIDIA und Brookfield haben die Erweiterung von Koreas nationaler KI-Infrastruktur <mark class="vocab" data-translation="bekanntgegeben — announced / disclosed">bekanntgegeben</mark>: Die NVIDIA-DSX-AI-Factory in Sejong soll auf 200 MW <mark class="vocab" data-translation="wachsen — to grow / scale up">wachsen</mark> — mit einem ersten Cluster von 55 MW, der 2027 ans Netz geht. Auf dieser Infrastruktur werden die nächste Generation von NAVERs HyperCLOVA X und eine KI-Agent-Plattform für den koreanischen Markt laufen. Korea <mark class="vocab" data-translation="positioniert sich — positions itself / establishes itself">positioniert sich</mark> damit als eines der ersten Länder weltweit, das KI-Infrastruktur explizit als nationale <mark class="vocab" data-translation="Ressource — resource (strategic asset)">Ressource</mark> aufbaut — finanziert über Brookfields globale Infrastruktur-Fonds.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a4-en">🔊</button> English</div>
+          <p class="tts-text" id="a4-en">NAVER, NVIDIA, and Brookfield announced an expansion of Korea's national AI infrastructure: the NVIDIA DSX AI factory in Sejong is set to scale to 200 MW, with the first 55 MW cluster coming online in 2027. The next generation of NAVER's HyperCLOVA X and an AI agent platform for the Korean market will run on this infrastructure. Korea is positioning itself as one of the first countries to explicitly treat AI infrastructure as a national resource — financed through Brookfield's global infrastructure funds.</p>
+        </div>
+      </div>
+      <a class="source" href="https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout" target="_blank" rel="noopener">→ nvidianews.nvidia.com · 27.07.2026</a>
+    </article>
+
+    <article class="article" id="article-5">
+      <a class="article-cover-link" href="https://vorplabs.com/ai-regulatory-updates/frontier-model-review-framework" target="_blank" rel="noopener"><div class="article-cover google"><img class="cover-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>Weißes Haus · KI-Framework · NSA-Benchmarking live</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#a5-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="a5-de">Das Weiße Haus hat heute — pünktlich zum 1. August — den freiwilligen Framework für die Überprüfung von Frontier-KI-Modellen <mark class="vocab" data-translation="vorgelegt — submitted / delivered / presented">vorgelegt</mark>, den Trumps Executive Order vom 2. Juni <mark class="vocab" data-translation="verlangt hatte — had required / called for">verlangt hatte</mark>. Herzstück ist ein geheimes NSA-Benchmarking-Verfahren, das ermittelt, ob ein Modell als "Covered Frontier Model" mit gefährlichen Cyber-Fähigkeiten eingestuft wird. Ergänzend gibt es einen freiwilligen Early-Access-Pfad: Entwickler können der Regierung bis zu 30 Tage vor dem Release Modellzugang <mark class="vocab" data-translation="gewähren — to grant / provide">gewähren</mark> und gemeinsam Trusted Partners auswählen. Was heute noch freiwillig ist, dürfte langfristig zur Erwartungshaltung werden.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#a5-en">🔊</button> English</div>
+          <p class="tts-text" id="a5-en">The White House delivered — right on August 1 — the voluntary framework for reviewing frontier AI models that Trump's June 2 executive order had called for. At its core is a classified NSA benchmarking process that determines whether a model qualifies as a "covered frontier model" with dangerous cyber capabilities. Alongside it sits a voluntary early-access path: developers can give the government up to 30 days of model access before public release and jointly select trusted partners for early evaluation. What is voluntary today is likely to become the expected norm over time.</p>
+        </div>
+      </div>
+      <a class="source" href="https://vorplabs.com/ai-regulatory-updates/frontier-model-review-framework" target="_blank" rel="noopener">→ vorplabs.com · 01.08.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💡 Hack des Tages · Tip of the day</h2>
+    <article class="article" id="hack">
+      <a class="article-cover-link" href="https://www.winbuzzer.com/2026/07/28/black-forest-labs-launches-flux-3-behind-an-early-access-gat-xcxwbn/" target="_blank" rel="noopener"><div class="article-cover hack"><img class="cover-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=440&fit=crop&q=80&auto=format" alt="" loading="lazy" onerror="this.remove()"><span>FLUX 3 · Black Forest Labs · Video + Audio + Robotics</span></div></a>
+      <div class="article-body">
+        <div class="lang de">
+          <div class="lang-flag"><button class="speak-btn" data-lang="de" data-target="#h1-de">🔊</button> Deutsch</div>
+          <p class="tts-text" id="h1-de">Black Forest Labs hat FLUX 3 in Early Access gestartet — das erste Modell des Studios, das gemeinsam auf Bilder, Videos mit nativem Audio und Roboter-Aktionen trainiert wurde. Du gibst eine Textbeschreibung ein, und das Modell generiert daraus ein bis zu 20 Sekunden langes Video inklusive synchronem Ton — oder eine Roboteraktionssequenz für Physical-AI-Setups. FLUX 3 Image und der Open-Weight-Dev-Release folgen laut Black Forest Labs in den nächsten Wochen beziehungsweise später in 2026. Zugang gibt es aktuell nur per <mark class="vocab" data-translation="Bewerbung — application / request for access">Bewerbung</mark> über das Developer-Portal — der Link ist in der Quelle unten.</p>
+        </div>
+        <div class="lang en">
+          <div class="lang-flag"><button class="speak-btn" data-lang="en" data-target="#h1-en">🔊</button> English</div>
+          <p class="tts-text" id="h1-en">Black Forest Labs launched FLUX 3 into early access — the studio's first model jointly trained on images, video with native audio, and robot actions. Feed it a text description and it generates up to 20 seconds of video with synchronized audio — or a robot action sequence for physical AI setups. FLUX 3 Image and the open-weight Dev release follow in the coming weeks and later in 2026 respectively. Access is currently by application only through the developer portal — link in the source below.</p>
+        </div>
+      </div>
+      <a class="source" href="https://www.winbuzzer.com/2026/07/28/black-forest-labs-launches-flux-3-behind-an-early-access-gat-xcxwbn/" target="_blank" rel="noopener">→ winbuzzer.com · 28.07.2026</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">📚 Vokabel-Highlights</h2>
+    <div class="vocab-grid">
+
+      <div class="vocab-card">
+        <div class="vocab-word">das Konsortium</div>
+        <div class="vocab-translation">the consortium · group of lenders or partners</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Ein Konsortium aus Banken finanziert das neue Rechenzentrum in Texas.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">A consortium of banks is financing the new data center in Texas.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">in Kraft treten</div>
+        <div class="vocab-translation">to come into effect · to enter into force</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Die EU-Transparenzpflichten treten morgen in Kraft.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The EU transparency obligations come into effect tomorrow.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">vorgelegt</div>
+        <div class="vocab-translation">submitted · presented · delivered on time</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Das Weiße Haus hat den KI-Framework heute pünktlich vorgelegt.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">The White House delivered the AI framework on time today.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">absichern</div>
+        <div class="vocab-translation">to back · to secure · to hedge (a financial risk)</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Google sichert den Deal mit seiner Bonität ab.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Google backs the deal with its credit rating.</span>
+        </div>
+      </div>
+
+      <div class="vocab-card">
+        <div class="vocab-word">die Übergangsfrist</div>
+        <div class="vocab-translation">the grace period · transitional period</div>
+        <div class="vocab-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">Bestehende Systeme haben bis Dezember eine Übergangsfrist.</span>
+        </div>
+        <div class="vocab-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">Existing systems have a grace period until December.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-header">💬 Redewendung · Idiom of the day</h2>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">die Weichen stellen</div>
+      <div class="idiom-meaning">to set the course · to lay the groundwork — wörtlich: "to set the railway switches"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Mit dem 15-Mrd.-$-Deal stellt Anthropic die Weichen für die nächste Trainingsdimension."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"With the $15B deal, Anthropic sets the course for the next training dimension."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Die Entscheidung für den neuen Stack stellt die Weichen für die nächsten zwei Jahre."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Choosing the new stack sets the course for the next two years."</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="idiom-card">
+      <div class="idiom-headword">to go out on a limb</div>
+      <div class="idiom-meaning">to take a bold risk · to stick your neck out — German equivalent: "sich weit aus dem Fenster lehnen"</div>
+      <div class="idiom-examples">
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"Morgan Stanley is going out on a limb with a $14B bridge loan — but Google's guarantee limits the risk."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Morgan Stanley lehnt sich mit dem 14-Mrd.-$-Bridgeloan weit aus dem Fenster — aber Googles Bürgschaft begrenzt das Risiko."</span>
+        </div>
+        <div class="idiom-example en">
+          <button class="speak-btn" data-lang="en">🔊</button>
+          <span class="tts-text">"I'll go out on a limb and say this voluntary framework will be mandatory in two years."</span>
+        </div>
+        <div class="idiom-example de">
+          <button class="speak-btn" data-lang="de">🔊</button>
+          <span class="tts-text">"Ich lehne mich mal weit aus dem Fenster: dieser freiwillige Framework wird in zwei Jahren Pflicht."</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Quellen · Sources: finance.yahoo.com · openai.com · digitalapplied.com · nvidianews.nvidia.com · vorplabs.com · winbuzzer.com</p>
+  <p style="margin-top: 10px"><a href="../index.html">← Zurück zum Archiv · Back to archive</a></p>
+  <p style="margin-top: 10px">Edition #77 · automatisch generiert um 18:00 Europe/Berlin aus aktuellen Quellen.</p>
+  <p style="margin-top: 10px"><span class="heart">✦</span> Made with care for slow reading and fast learning.</p>
+</footer>
+
+<script src="../assets/site.js?v=3" defer></script>
+
+</body>
+</html>

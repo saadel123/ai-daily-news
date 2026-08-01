@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-08-01",
+      "edition_number": 77,
+      "headlines": [
+        "Anthropic baut in Texas: 15-Mrd.-$-Kredit für 1,6-GW-Rechenzentrum — Google sichert mit 20 % Eigenkapital ab",
+        "OpenAI ChatGPT for Academic Researchers: 100.000 Wissenschaftler bekommen GPT-5.6 Sol Pro kostenlos",
+        "EU AI Act: Ab 2. August gelten Transparenzpflichten für alle generativen KI-Systeme in Europa",
+        "NAVER + NVIDIA + Brookfield: 200-MW-Expansion für Koreas Sovereign-AI-Factory in Sejong",
+        "Weißes Haus liefert KI-Framework: NSA-Benchmarking und freiwilliger 30-Tage-Early-Access für Frontier-Models"
+      ],
+      "story_count": 5,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 3,
+      "listen_time_min": 4,
+      "generated_at": "2026-08-01T16:05:52Z"
+    },
+    {
       "date": "2026-07-31",
       "edition_number": 76,
       "headlines": [
