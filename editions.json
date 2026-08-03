@@ -1,6 +1,23 @@
 {
   "editions": [
     {
+      "date": "2026-08-03",
+      "edition_number": 78,
+      "headlines": [
+        "OpenAI Astra löst zehn offene Mathe-Probleme — Lean-4-Proofs auf GitHub für rund 2.000 $",
+        "Alibaba Qwen3.8-Max: 2,4-Billionen-MoE schlägt GPT-5.6 Sol auf PaperBench — Arena-Platz 4",
+        "München verurteilt Suno: KI-Training ohne Lizenz ist Urheberrechtsverletzung — europäisches Novum",
+        "Hugging Face CEO fordert radikale Transparenz und Haftung nach OpenAI-Hack",
+        "Hack: Claude Code 2.1.219 — Standard-Workflow-Größe dauerhaft per Config festlegen"
+      ],
+      "story_count": 4,
+      "vocab_count": 5,
+      "idiom_count": 2,
+      "reading_time_min": 2,
+      "listen_time_min": 4,
+      "generated_at": "2026-08-03T16:06:23Z"
+    },
+    {
       "date": "2026-08-01",
       "edition_number": 77,
       "headlines": [
